@@ -16,7 +16,7 @@ import configs from '../config.main.json'
 // const USDT_DECIMALS= 6
 
 function App() {
-  const [nativeNetwork, setNativeNetwor] = useState('ETH')
+  const [nativeNetwork, setNativeNetwor] = useState('BSC')
   const [provider, setProvider] = useState(undefined);
   const [signer, setSigner] = useState(undefined);
   const [salerContract, setSalerContract] = useState(undefined);
@@ -25,9 +25,6 @@ function App() {
   const [signerAddress, setSignerAddress] = useState(undefined);
   const [amount, setAmount] = useState(0)
   const [globalConfigs, setGlobalConfigs] = useState(undefined)
-  const [boughtTokens, setBoughtTokens] = useState(0)
-  const [tokenPriceInUsdt, setTokenPriceInUsdt] = useState()
-  const [totalSold, setTotalSold] = useState(0)
   // const [network, setNetwork] = useState(null);
 
   function isValidNumber() {
@@ -44,21 +41,6 @@ function App() {
   }
   
 
-  useEffect(() => {
-
-    const loadBoughtTokens  = async () => {
-      const key = Web3.utils.soliditySha3(signerAddress, globalConfigs?.BSC?.targetToken?.symbol);
-      const purchaseInfo = await salerContract.buyerPurchases(key)
-      const tokenPrice = await salerContract.tokenPriceInUsdt()
-      const totalSold = await salerContract.totalsold()
-      debugger
-      setBoughtTokens( formatUnits(purchaseInfo['amount'], 18))
-      setTokenPriceInUsdt( formatUnits(tokenPrice, 6).toString())
-      setTotalSold( formatUnits(totalSold, 18))
-
-    }
-    loadBoughtTokens()
-  }, [salerContract])
 
   useEffect(() => {
       setGlobalConfigs(configs)
@@ -96,7 +78,6 @@ function App() {
             });
           
             // provider.on("network", (newNetwork, oldNetwork) => {
-            //   debugger
             //   console.log("Network changed from", oldNetwork, "to", newNetwork);
             //   if (oldNetwork && newNetwork.chainId !== oldNetwork.chainId) {
             //     // Network ID has changed, reload the window
@@ -208,7 +189,7 @@ function App() {
     try{
       if(await checkNetwork() && isValidNumber()){
         const wei = toWei(amount)
-        const tx = await salerContract.connect(signer).buyTokens(globalConfigs.targetToken.symbol, {value: wei})
+        const tx = await salerContract.connect(signer).buyTokens({value: wei})
         await tx.wait();
         console.log("Tokens bought successfully.");
       }

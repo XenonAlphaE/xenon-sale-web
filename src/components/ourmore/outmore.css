@@ -1,0 +1,16 @@
+.outmore-videos-wrapper {
+    overflow-x: auto; /* Make the section scrollable on the X-axis */
+    white-space: nowrap; /* Prevent wrapping of child elements */
+  }
+  
+  .outmore-iframe-container {
+    display: flex; /* Arrange child elements in a row */
+    flex-direction: row; /* Ensure the flex container direction is row */
+  }
+  
+  .outmore-iframe-wrapper {
+    padding: 10px;
+    flex-shrink: 0; /* Prevent the iframes from shrinking */
+    margin-right: 10px; /* Optional: Add some space between the iframes */
+  }
+  

@@ -1,18 +1,18 @@
 @media screen and (max-width: 400px) {
-  #features {
+  #whitepaper {
     padding: 20px;
-    width: 111%;
+    width: 100%;
   }
   #about,
   #services,
-  #testimonials,
+  #tokenomics,
   #team,
   #contact,
   #footer {
-    width: 111%;
+    width: 100%;
   }
 
-  #portfolio {
-    width: 110%;
+  #roadmap {
+    width: 100%;
   }
 }

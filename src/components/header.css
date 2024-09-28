@@ -1,0 +1,38 @@
+.header-logo-container{
+    width: 550px;
+    max-width: 550px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header-logo-container{
+        width: '100%';
+        margin: '0px auto';
+    }
+
+    .walletBox {
+      
+        width: 100%;
+        max-width: 100%;
+     
+    }
+
+    .header-logo-container{
+        width: 100%;
+        max-width: 100%;
+    }
+
+}
+
+.form-control-custom {
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    outline-color:#fff;
+}
+
+.form-control-custom::placeholder {
+    color: white;
+}
+  

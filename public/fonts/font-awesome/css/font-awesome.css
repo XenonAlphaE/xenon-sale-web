@@ -11,6 +11,13 @@
   font-weight: normal;
   font-style: normal;
 }
+
+
+
+@font-face {
+  font-family: 'Sausages';
+  src: url('../../fonts/Sausages_Font_Family/Sausages\ Regular\ 400.otf');
+}
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;

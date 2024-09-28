@@ -1,0 +1,67 @@
+.tokenomics {
+    background: url(/public/img/wienerdog/tokenomics-bg.svg) no-repeat 50% 50% / cover;
+    letter-spacing: .8px;
+    position: relative;
+}
+
+#tokenomics {
+    padding: 26% 0;
+}
+
+#tokenomics i {
+    color: #e6e6e6;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.story-fart {
+    position: absolute;
+    right: 0%;
+    top: -80%;
+    transform: rotate(20deg) scale(.7);
+}
+
+@media (min-width: 1025px) {
+    .col-lg-5 {
+        flex: 0 0 auto;
+        width: 41.66666667%;
+    }
+}
+
+.tokenomics .tokenomics-info {
+    background: rgba(0, 0, 0, .2);
+    border-radius: 24px;
+    max-width: 505px;
+    padding: 25px;
+}
+
+.tokenomics .tokenomics-info ul {
+    padding: 0;
+    margin: 0;
+}
+
+.tokenomics .tokenomics-info ul li {
+    font-size: 20px;
+    color: #fff;
+    line-height: 180%;
+}
+
+.section-title {
+    text-align: center;
+    font-family: Sausages, sans-serif;
+    color: #fff;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 400;
+    flex-wrap: wrap;
+}
+
+.tokenomics .tokenomics-info ul li {
+    font-size: 20px;
+    color: #fff;
+    line-height: 180%;
+}
+
+.ms-4 {
+    margin-left: 3.5rem !important;
+}

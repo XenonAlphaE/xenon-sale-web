@@ -1,0 +1,281 @@
+.dashboard {
+    padding: 120px 0 105px;
+    color: #e9d5c5;
+    background: rgba(0, 0, 0, .6);
+}
+
+.pt-4 {
+    padding-top: 1.5rem !important;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+.mt-5 {
+    margin-top: 3rem !important;
+}
+
+.justify-content-between {
+    justify-content: space-between !important;
+}
+
+@media (min-width: 1025px) {
+    .col-lg-7 {
+        flex: 0 0 auto;
+        width: 58.33333333%;
+    }
+}
+
+@media (min-width: 768px) {
+    .justify-content-md-end {
+        justify-content: flex-end !important;
+    }
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.mt-4 {
+    margin-top: 1.5rem !important;
+}
+
+@media (min-width: 1025px) {
+    .col-lg-12 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}
+
+.dashboard h1 {
+    color: #9022ff;
+    font-size: 50px;
+    margin: auto;
+    max-width: 700px;
+    font-weight: 400;
+}
+
+.text-dark {
+    color: black !important;
+    opacity: 1;
+}
+
+.pb-3 {
+    padding-bottom: 1rem !important;
+}
+
+.text-start {
+    text-align: left !important;
+}
+
+.pe-2 {
+    padding-right: .5rem !important;
+}
+
+.m-0 {
+    margin: 0 !important;
+}
+
+@media (min-width: 1200px) {
+    h1, .h1 {
+        font-size: 2.5rem;
+    }
+}
+
+.font-16 {
+    font-size: 16px !important;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.text-grey {
+    color: rgba(83, 83, 83 , 1) !important;
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+.dashboard .box-wrap {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.dashboard .box-wrap .boxCustom {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        color: #fff;
+        border-radius: 20px;
+        border: .5px solid rgba(255, 255, 255, .4);
+        background: rgba(255, 255, 255, .2);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        box-shadow: 2px 4px 12px #00000014;
+        width: 100%;
+        margin: 0 auto;
+}
+
+.dashboard .box-wrap .boxCustom .title {
+    letter-spacing: 1.4px;
+    color: #878787;
+}
+
+.font-14 {
+    font-size: 14px !important;
+}
+
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+
+.mb-1 {
+    margin-bottom: .25rem !important;
+}
+
+.d-inline-block {
+    display: inline-block !important;
+}
+
+.font-30 {
+    font-size: 30px !important;
+}
+
+.dashboard .box-wrap .boxCustom h2 {
+    color: #171717;
+    font-weight: 400;
+}
+
+.mt-2 {
+    margin-top: .5rem !important;
+}
+
+.font-12 {
+    font-size: 12px !important;
+}
+
+.ms-2 {
+    margin-left: .5rem !important;
+}
+
+.d-inline-block {
+    display: inline-block !important;
+}
+
+.brands-carosuel {
+    width: 100%;
+}
+
+.p-0 {
+    padding: 0 !important;
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.mt-3 {
+    margin-top: 1rem !important;
+}
+
+.dashboard .box-wrap .boxCustom ul li {
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    list-style: none;
+    margin-bottom: 3px;
+}
+
+.me-1 {
+    margin-right: .25rem !important;
+}
+
+.mb-3 {
+    margin-bottom: 1rem !important;
+}
+
+@media (min-width: 1025px) {
+    .col-lg-8 {
+        flex: 0 0 auto;
+        width: 66.66666667%;
+    }
+}
+
+.dashboard .chart-wrapper {
+    background: linear-gradient(344deg, rgba(255, 255, 255, .0980392157) 38.35%, rgba(255, 255, 255, .3960784314) 159.55%);
+    border-radius: 20px;
+    border: 3px solid #878787;
+    box-shadow: 0 0 10px #0c5d9e1a;
+    min-height: 431px;
+}
+
+.px-3 {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+}
+
+.dashboard .chart-wrapper h4 {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    font-family: Nunito Sans, sans-serif;
+}
+
+@media (min-width: 768px) {
+    .mb-md-5 {
+        margin-bottom: 3rem !important;
+    }
+}
+
+.mt-3 {
+    margin-top: 1rem !important;
+}
+
+.dashboard .chart-wrapper .graph-parent {
+    height: 450px;
+    width: 900px;
+}
+
+.col {
+    flex: 1 0 0%;
+}
+
+.ngx-charts-outer {
+    width: 884px; 
+    height: 400px
+}
+
+.ngx-charts {
+    width :884px ;
+    height : 400px;
+}
+
+.dashboard .chart-wrapper .graph-parent {
+    height: 450px;
+    width: 900px;
+}
+
+@media (min-width: 1025px) {
+    .col-lg-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+}
+
+.stake-text img {
+    height: 18px;
+}
+
+.text-decoration-n {
+    text-decoration: none;
+}

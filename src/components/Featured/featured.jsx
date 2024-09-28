@@ -1,32 +1,31 @@
 import React from "react";
+import {useI18nSection} from "../../utils/languageUtils";
+
 
 export const Featured = () => {
+  const sectionText = useI18nSection('features')
+
   return (
-    <div class="container text-center">
-      <h1 className="setion_title text-center">Featured In</h1>
-      <div class="row justify-content-center d-none d-lg-flex block-top">
-        <div class="col-sm-3 text-center">
-          <img src="img/feature1.svg" alt="Logo 1" class="img-fluid" />
+    <div className=" text-center pd-top-100">
+      <h1 className="setion_title text-center text-while">{sectionText.title}</h1>
+      <div className="row justify-content-center d-none d-lg-flex block-top">
+        <div className="col-sm-2 text-center">
+          <img src="img/wienerdog//finbold.png" alt="Logo 1" className="img-fluid" />
         </div>
-        <div class="col-sm-3 text-center">
-          <img src="img/feature2.svg" alt="Logo 2" class="img-fluid" />
+        <div className="col-sm-2 text-center">
+          <img src="img/wienerdog/bitcoin.png" alt="Logo 2" className="img-fluid" />
         </div>
-        <div class="col-sm-3 text-center">
-          <img src="img/feature3.svg" alt="Logo 3" class="img-fluid" />
+        <div className="col-sm-2 text-center">
+          <img src="img/wienerdog/newsbtc.png" alt="Logo 3" className="img-fluid" />
         </div>
-        <div class="col-sm-3 text-center">
-          <img src="img/feature4.svg" alt="Logo 4" class="img-fluid" />
+        <div className="col-sm-2 text-center">
+          <img src="img/wienerdog/cyptonews.png" alt="Logo 4" className="img-fluid" />
         </div>
-      </div>
-      <div className="row block-bottom">
-        <div class="col-sm-4 text-center">
-          <img src="img/feature5.svg" alt="Logo 5" class="img-fluid" />
+        <div className="col-sm-2 text-center">
+          <img src="img/wienerdog/inside.png" alt="Logo 5" className="img-fluid" />
         </div>
-        <div class="col-sm-4 text-center">
-          <img src="img/feature6.svg" alt="Logo 6" class="img-fluid" />
-        </div>
-        <div class="col-sm-4 text-center">
-          <img src="img/feature7.svg" alt="Logo 7" class="img-fluid" />
+        <div className="col-sm-2 text-center">
+          <img src="img/wienerdog/techno.png" alt="Logo 6" className="img-fluid" />
         </div>
       </div>
     </div>

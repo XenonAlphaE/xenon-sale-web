@@ -1,0 +1,52 @@
+/* Currencies selection */
+.curr-dropdown-container {
+  position: relative;
+  width: 100%;
+}
+
+.curr-custom-dropdown{
+  border: solid 2px #fff;
+  box-sizing: border-box;
+  background: transparent;
+}
+
+.curr-dropdown-content {
+  color:rgb(186, 139, 249);
+  text-decoration-color: rgb(186, 139, 249);
+  display: none;
+  position: absolute;
+  top: calc(100% + 10px); /* Adjusted position with 10px padding */
+  left: 50;
+  background-color: #000;
+  border: 1px solid #000;
+  box-shadow: 0 4px 8px rgba(6, 6, 80, 0.1);
+  padding: 10px 10px; /* Added padding */
+  z-index: 10000000000;
+  width: max-content; 
+}
+
+.curr-dropdown-content.open {
+  display: block;
+}
+
+.curr-dropdown-item {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+  margin-top: 5;
+  margin-bottom: 5;
+}
+
+.curr-dropdown-item:hover {
+    color: #f2f2f2;
+}
+
+.curr-dropdown-item span {
+  margin-left: 5px;
+  font-size: large;
+}
+
+.curr-dropdown-icon{
+  color: #fff
+}

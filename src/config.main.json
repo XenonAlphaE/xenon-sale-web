@@ -1,8 +1,23 @@
 {
-    "salePrice":"0.00022",
-    "endSaleTime":"2024-08-08T00:00:00Z",
-    "directSaler":"0xccC1E4225060A4A79633c350f0496c43e9286ecd",
+
+    "targetToken":{
+        "address":"",
+        "decimals":18,
+        "symbol": "WAI",
+        "tokenPrice":"0.00073"
+    },
+    "previousRaised":5009043.52,
+    "previousSoldTokens":0,
+    "endSaleTime":"2024-08-17T19:10:00Z",
     "BSC": {
+        "RPC_APIs":[
+            "https://go.getblock.io/9d303968e701495f94960609c5a45f9b",
+            "https://go.getblock.io/c14e8147bff147b5b6c403e5c42f59cf",
+            "https://go.getblock.io/135104eb43bf49e19b5521f18492e143",
+            "https://go.getblock.io/9b26ce18f15840e885a684c1feadb4bb",
+            "https://go.getblock.io/034491513a56490a97956e1814de0904",
+            "https://go.getblock.io/99ad88f7c5d54f6e8f98eed7518c40e8"
+        ],
         "USDT_Price": "https://www.binance.com/api/v3/ticker/price?symbol=BNBUSDT",
         "NetworkName": "BNB Smart Chain Mainnet",
         "ChainId": 56,
@@ -471,28 +486,23 @@
         ],
         "salers": [
             {
-                "address": "0x44AaB45384AAD1b1a14c80E3F30Ef620c4228695",
+                "address": "0x35da8781dd7b9c1194da8b837a802f6323fdfe99",
                 "abi": [
                     {
                         "inputs": [
-                            {
-                                "internalType": "address",
-                                "name": "_tokenaddress",
-                                "type": "address"
-                            },
-                            {
-                                "internalType": "uint256",
-                                "name": "_tokenrate",
-                                "type": "uint256"
-                            },
                             {
                                 "internalType": "address",
                                 "name": "_usdtAddress",
                                 "type": "address"
                             },
                             {
+                                "internalType": "address",
+                                "name": "_bnbPriceFeedAddress",
+                                "type": "address"
+                            },
+                            {
                                 "internalType": "uint256",
-                                "name": "_tokenPriceInUsdt",
+                                "name": "_bnbFeedPriceDecimals",
                                 "type": "uint256"
                             }
                         ],
@@ -571,6 +581,25 @@
                     },
                     {
                         "inputs": [],
+                        "name": "bnbFeedPriceDecimals",
+                        "outputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "",
+                                "type": "uint256"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "string",
+                                "name": "tokenSymbol",
+                                "type": "string"
+                            }
+                        ],
                         "name": "buyTokens",
                         "outputs": [],
                         "stateMutability": "payable",
@@ -582,6 +611,11 @@
                                 "internalType": "uint256",
                                 "name": "_usdtAmountDecimals",
                                 "type": "uint256"
+                            },
+                            {
+                                "internalType": "string",
+                                "name": "tokenSymbol",
+                                "type": "string"
                             }
                         ],
                         "name": "buyTokensWithUSDT",
@@ -592,9 +626,9 @@
                     {
                         "inputs": [
                             {
-                                "internalType": "address",
+                                "internalType": "bytes32",
                                 "name": "",
-                                "type": "address"
+                                "type": "bytes32"
                             }
                         ],
                         "name": "buyerPurchases",
@@ -617,31 +651,11 @@
                         "inputs": [
                             {
                                 "internalType": "address",
-                                "name": "buyer",
+                                "name": "newOwner",
                                 "type": "address"
                             }
                         ],
-                        "name": "claimTokens",
-                        "outputs": [],
-                        "stateMutability": "nonpayable",
-                        "type": "function"
-                    },
-                    {
-                        "inputs": [],
-                        "name": "defaultAutoClaim",
-                        "outputs": [
-                            {
-                                "internalType": "bool",
-                                "name": "",
-                                "type": "bool"
-                            }
-                        ],
-                        "stateMutability": "view",
-                        "type": "function"
-                    },
-                    {
-                        "inputs": [],
-                        "name": "endSale",
+                        "name": "changeOwner",
                         "outputs": [],
                         "stateMutability": "nonpayable",
                         "type": "function"
@@ -650,29 +664,64 @@
                         "inputs": [
                             {
                                 "internalType": "address",
-                                "name": "_buyer",
+                                "name": "_address",
                                 "type": "address"
+                            },
+                            {
+                                "internalType": "string",
+                                "name": "tokenSymbol",
+                                "type": "string"
                             }
                         ],
-                        "name": "getBoughtTokens",
-                        "outputs": [
+                        "name": "claimAllTokens",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "address",
+                                "name": "_address",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "string",
+                                "name": "tokenSymbol",
+                                "type": "string"
+                            },
                             {
                                 "internalType": "uint256",
-                                "name": "",
+                                "name": "_amount",
                                 "type": "uint256"
                             }
                         ],
-                        "stateMutability": "view",
+                        "name": "claimTokens",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "string",
+                                "name": "tokenSymbol",
+                                "type": "string"
+                            }
+                        ],
+                        "name": "endSale",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
                         "type": "function"
                     },
                     {
                         "inputs": [],
-                        "name": "isAllowClaim",
+                        "name": "getBNBPrice",
                         "outputs": [
                             {
-                                "internalType": "bool",
+                                "internalType": "int256",
                                 "name": "",
-                                "type": "bool"
+                                "type": "int256"
                             }
                         ],
                         "stateMutability": "view",
@@ -699,14 +748,8 @@
                         "type": "function"
                     },
                     {
-                        "inputs": [
-                            {
-                                "internalType": "bool",
-                                "name": "_isAllowClaim",
-                                "type": "bool"
-                            }
-                        ],
-                        "name": "setAllowClaim",
+                        "inputs": [],
+                        "name": "takeFunds",
                         "outputs": [],
                         "stateMutability": "nonpayable",
                         "type": "function"
@@ -714,101 +757,41 @@
                     {
                         "inputs": [
                             {
-                                "internalType": "bool",
-                                "name": "_autoClaim",
-                                "type": "bool"
+                                "internalType": "bytes32",
+                                "name": "",
+                                "type": "bytes32"
                             }
                         ],
-                        "name": "setAutoClaim",
-                        "outputs": [],
-                        "stateMutability": "nonpayable",
-                        "type": "function"
-                    },
-                    {
-                        "inputs": [
+                        "name": "tokenInfoMap",
+                        "outputs": [
+                            {
+                                "internalType": "bool",
+                                "name": "isAllowClaim",
+                                "type": "bool"
+                            },
+                            {
+                                "internalType": "bool",
+                                "name": "isAutoClaim",
+                                "type": "bool"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "priceInUsd",
+                                "type": "uint256"
+                            },
                             {
                                 "internalType": "address",
-                                "name": "_newTokenAddress",
+                                "name": "tokenAddress",
                                 "type": "address"
-                            }
-                        ],
-                        "name": "setTokenAddress",
-                        "outputs": [],
-                        "stateMutability": "nonpayable",
-                        "type": "function"
-                    },
-                    {
-                        "inputs": [
+                            },
+                            {
+                                "internalType": "uint104",
+                                "name": "tokenDecimals",
+                                "type": "uint104"
+                            },
                             {
                                 "internalType": "uint256",
-                                "name": "_newPrice",
-                                "type": "uint256"
-                            }
-                        ],
-                        "name": "setTokenPrice",
-                        "outputs": [],
-                        "stateMutability": "nonpayable",
-                        "type": "function"
-                    },
-                    {
-                        "inputs": [
-                            {
-                                "internalType": "uint256",
-                                "name": "_newPriceInUsdt",
-                                "type": "uint256"
-                            }
-                        ],
-                        "name": "setTokenPriceInUsdt",
-                        "outputs": [],
-                        "stateMutability": "nonpayable",
-                        "type": "function"
-                    },
-                    {
-                        "inputs": [],
-                        "name": "token",
-                        "outputs": [
-                            {
-                                "internalType": "contract IERC20",
-                                "name": "",
-                                "type": "address"
-                            }
-                        ],
-                        "stateMutability": "view",
-                        "type": "function"
-                    },
-                    {
-                        "inputs": [],
-                        "name": "tokenPriceInUsdt",
-                        "outputs": [
-                            {
-                                "internalType": "uint256",
-                                "name": "",
-                                "type": "uint256"
-                            }
-                        ],
-                        "stateMutability": "view",
-                        "type": "function"
-                    },
-                    {
-                        "inputs": [],
-                        "name": "tokenprice",
-                        "outputs": [
-                            {
-                                "internalType": "uint256",
-                                "name": "",
-                                "type": "uint256"
-                            }
-                        ],
-                        "stateMutability": "view",
-                        "type": "function"
-                    },
-                    {
-                        "inputs": [],
-                        "name": "totalsold",
-                        "outputs": [
-                            {
-                                "internalType": "uint256",
-                                "name": "",
+                                "name": "totalsold",
                                 "type": "uint256"
                             }
                         ],
@@ -824,6 +807,49 @@
                             }
                         ],
                         "name": "transferOwnership",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "string",
+                                "name": "key",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "bool",
+                                "name": "_isAllowClaim",
+                                "type": "bool"
+                            },
+                            {
+                                "internalType": "bool",
+                                "name": "_defaultAutoClaim",
+                                "type": "bool"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "_priceInUsd",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "address",
+                                "name": "_tokenAddress",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "_totalSold",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint104",
+                                "name": "_tokenDecimals",
+                                "type": "uint104"
+                            }
+                        ],
+                        "name": "updateTokenInfo",
                         "outputs": [],
                         "stateMutability": "nonpayable",
                         "type": "function"
@@ -846,6 +872,14 @@
         ]
     },
     "ETH": {
+        "RPC_APIs":[
+            "https://go.getblock.io/fb2085562f08470c8aa5ee32f139cca8",
+            "https://go.getblock.io/972ee685c1d94bb4ba888cfca58e3697",
+            "https://go.getblock.io/964d8a931b2345e4b62395bcf88aa858",
+            "https://go.getblock.io/aa0611a735ad4775bad2247467cb5977",
+            "https://go.getblock.io/3c6fa5803c2243459e59a4224a91d1c1",
+            "https://go.getblock.io/e1dcf1f6998a4dd09db8edc6ba11cdae"
+        ],
         "USDT_Price": "https://www.binance.com/api/v3/ticker/price?symbol=ETHUSDT",
         "NetworkName": "Ethereum Mainnet",
         "ChainId": 1,
@@ -1524,7 +1558,390 @@
             }
         ],
         "salers": [
-            
+            {
+                "address":"0x35da8781dd7b9c1194da8b837a802f6323fdfe99",
+                "abi": [
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "address",
+                                "name": "_usdtAddress",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "address",
+                                "name": "_ethPriceFeedAddress",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "_ethFeedPriceDecimals",
+                                "type": "uint256"
+                            }
+                        ],
+                        "stateMutability": "nonpayable",
+                        "type": "constructor"
+                    },
+                    {
+                        "anonymous": false,
+                        "inputs": [
+                            {
+                                "indexed": true,
+                                "internalType": "address",
+                                "name": "previousOwner",
+                                "type": "address"
+                            },
+                            {
+                                "indexed": true,
+                                "internalType": "address",
+                                "name": "newOwner",
+                                "type": "address"
+                            }
+                        ],
+                        "name": "OwnershipTransferred",
+                        "type": "event"
+                    },
+                    {
+                        "anonymous": false,
+                        "inputs": [
+                            {
+                                "indexed": false,
+                                "internalType": "address",
+                                "name": "sender",
+                                "type": "address"
+                            },
+                            {
+                                "indexed": false,
+                                "internalType": "uint256",
+                                "name": "totalvalue",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "Sell",
+                        "type": "event"
+                    },
+                    {
+                        "anonymous": false,
+                        "inputs": [
+                            {
+                                "indexed": false,
+                                "internalType": "contract IERC20",
+                                "name": "newToken",
+                                "type": "address"
+                            }
+                        ],
+                        "name": "TokenAddressUpdated",
+                        "type": "event"
+                    },
+                    {
+                        "anonymous": false,
+                        "inputs": [
+                            {
+                                "indexed": false,
+                                "internalType": "address",
+                                "name": "buyer",
+                                "type": "address"
+                            },
+                            {
+                                "indexed": false,
+                                "internalType": "uint256",
+                                "name": "amount",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "TokensClaimed",
+                        "type": "event"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "string",
+                                "name": "tokenSymbol",
+                                "type": "string"
+                            }
+                        ],
+                        "name": "buyTokens",
+                        "outputs": [],
+                        "stateMutability": "payable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "_usdtAmountDecimals",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "string",
+                                "name": "tokenSymbol",
+                                "type": "string"
+                            }
+                        ],
+                        "name": "buyTokensWithUSDT",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "bytes32",
+                                "name": "",
+                                "type": "bytes32"
+                            }
+                        ],
+                        "name": "buyerPurchases",
+                        "outputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "amount",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "bool",
+                                "name": "claimed",
+                                "type": "bool"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "address",
+                                "name": "newOwner",
+                                "type": "address"
+                            }
+                        ],
+                        "name": "changeOwner",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "address",
+                                "name": "_address",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "string",
+                                "name": "tokenSymbol",
+                                "type": "string"
+                            }
+                        ],
+                        "name": "claimAllTokens",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "address",
+                                "name": "_address",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "string",
+                                "name": "tokenSymbol",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "_amount",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "claimTokens",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "string",
+                                "name": "tokenSymbol",
+                                "type": "string"
+                            }
+                        ],
+                        "name": "endSale",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [],
+                        "name": "ethFeedPriceDecimals",
+                        "outputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "",
+                                "type": "uint256"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [],
+                        "name": "getEthPrice",
+                        "outputs": [
+                            {
+                                "internalType": "int256",
+                                "name": "",
+                                "type": "int256"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [],
+                        "name": "owner",
+                        "outputs": [
+                            {
+                                "internalType": "address",
+                                "name": "",
+                                "type": "address"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [],
+                        "name": "renounceOwnership",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [],
+                        "name": "takeFunds",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "bytes32",
+                                "name": "",
+                                "type": "bytes32"
+                            }
+                        ],
+                        "name": "tokenInfoMap",
+                        "outputs": [
+                            {
+                                "internalType": "bool",
+                                "name": "isAllowClaim",
+                                "type": "bool"
+                            },
+                            {
+                                "internalType": "bool",
+                                "name": "isAutoClaim",
+                                "type": "bool"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "priceInUsd",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "address",
+                                "name": "tokenAddress",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "uint104",
+                                "name": "tokenDecimals",
+                                "type": "uint104"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "totalsold",
+                                "type": "uint256"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "address",
+                                "name": "newOwner",
+                                "type": "address"
+                            }
+                        ],
+                        "name": "transferOwnership",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "string",
+                                "name": "key",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "bool",
+                                "name": "_isAllowClaim",
+                                "type": "bool"
+                            },
+                            {
+                                "internalType": "bool",
+                                "name": "_defaultAutoClaim",
+                                "type": "bool"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "_priceInUsd",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "address",
+                                "name": "_tokenAddress",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "_totalSold",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint104",
+                                "name": "_tokenDecimals",
+                                "type": "uint104"
+                            }
+                        ],
+                        "name": "updateTokenInfo",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [],
+                        "name": "usdtAddress",
+                        "outputs": [
+                            {
+                                "internalType": "contract IETH_USDT",
+                                "name": "",
+                                "type": "address"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    }
+                ]
+            }
         ]
     }
 }
