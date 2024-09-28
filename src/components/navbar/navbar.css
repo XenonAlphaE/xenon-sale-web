@@ -5,7 +5,8 @@
   justify-content: space-between;
   align-items: center;
   /* background-color: transparent; */
-  padding: 3rem;
+  /* padding: 3rem; */
+  padding-top: 20px;
   position: relative;
   transition: top 0.3s ease; /* Add transition for smoother effect */
   /* box-shadow: 0 4px 8px #0000, 0 6px 20px #0000001f; */
@@ -16,13 +17,15 @@
 }
 
 .appnav-navbar.sticky {
+  box-sizing: border-box;
   position: fixed;
   top: 0;
   width: 100%;
+  padding-right: 20px;
 }
 
 .appnav-navbar.scrolled {
-  background-color: rgba(0, 0, 0, .4);
+  background-color: rgb(245, 136, 45);
   box-shadow: 0 4px 8px #0000, 0 6px 20px #0000001f;
   border-image-source: radial-gradient(121.49% 277.08% at 0% 0%, rgba(255, 255, 255, .44) 0%, rgba(255, 255, 255, .05) 100%);
   -webkit-backdrop-filter: blur(30px);
@@ -37,7 +40,7 @@
 
 .appnav-logo {
   display: block;
-  height: auto;
+  height: 80px;
   max-width: 100%;
 }
 
@@ -99,7 +102,7 @@
 }
 
 .appnav-navbar-menu a:hover {
-  color: rgb(186, 139, 249);
+  color: rgb(85, 186, 102);
 }
 
 
@@ -118,10 +121,10 @@
 .appnav-login {
   min-height: 46px;
   width: 130px;
-  border-radius: 23px;
-  background: rgb(186, 139, 249);
-  color: #fff;
-  border: none;
+  /* border-radius: 23px; */
+  background: rgb(245, 136, 45);
+  color: black;
+  border: solid 3px black;
   padding: 0.5rem 1rem;
   cursor: pointer;
 }
@@ -207,7 +210,7 @@
   position: absolute;
   top: calc(100% + 10px); /* Adjusted position with 10px padding */
   left: -80px;
-  background-color: #000;
+  background-color: rgb(245, 136, 45);
   border: 1px solid #000;
   box-shadow: 0 4px 8px rgba(6, 6, 80, 0.1);
   padding: 20px 10px; /* Added padding */
@@ -227,7 +230,8 @@
 }
 
 .lang-dropdown-item:hover {
-  background-color: #f2f2f2;
+  background-color: #000;
+  color : white;
 }
 
 .lang-dropdown-item span {
