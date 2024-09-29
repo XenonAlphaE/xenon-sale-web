@@ -419,7 +419,7 @@ export const Header = () => {
                     <div className="mt-3 padding-top-20 text-center">
                       <a style={{textDecorationColor:"#fff" ,color:"#fff", textDecoration:'underline'}} href="https://widget.wert.io/default/widget/?commodity=ETH%3AEthereum" target="_blank">Not enough ETH? Top up now</a>
 
-                      <p translate="" className="font-18 text-center m-0 mt-2"> <img src="/img/wienerdog/token.svg" style={{ 'height': '35px' }} />Powered by <a target="_blank" href='https://web3paymentsolutions.io/' className=" "><img src="./img/wienerdog/W3P_Black.svg" alt="" className="poweredByIcon" /></a></p>
+                      <p translate="" className="font-18 text-center m-0 mt-2"> <img src="/img/flockers/token.svg" style={{ 'height': '35px' }} />Powered by <a target="_blank" href='https://web3paymentsolutions.io/' className=" "><img src="./img/wienerdog/W3P_Black.svg" alt="" className="poweredByIcon" /></a></p>
                     </div>
                   </div>
                 
