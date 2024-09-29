@@ -9,7 +9,6 @@ import configs from '../config.main.json';
 import { useCountdown } from '../services/utils';
 import { useTokenInfo, getUserPurchaseInfo } from '../services/token-service';
 import { useI18nSection } from "../utils/languageUtils";
-import HeaderIcon from './HeaderIcon'
 import ProgressBar from './ProgressBar';
 import './header.css'
 import CurrencyDropdown from './currency-dropdown/CurrencyDropdown';
@@ -231,24 +230,35 @@ export const Header = () => {
       <div style={{ paddingLeft: '12px', paddingRight: '12px', display: 'flex' }}>
         <div className="bannerSec">
           <Row style={{ flex: 1 }}>
-            <Col md={7} sm={12} className='col-xs-12'>
-                <div style={{width: '100%', paddingLeft: '5%', paddingTop:"5%"}}> 
-                  <h1>
-                    <span className='font-66' style={{color: '#fff', fontFamily:'Sausages,sans-serif' }}>WienerAI</span>
-                    <br/>
-                    <span className='font-66' style={{color: '#fff', fontFamily:'Sausages,sans-serif'}}>Part Dog, Part Sausage, Part</span>
-                    <br/>
-                    <span className='font-66' style={{color: '#fff', fontFamily:'Sausages,sans-serif'}}>AI Trading Bot</span>
-                    <div>
-                      <img className='sausage-img mt-4' src='img/wienerdog/sausage.png' />
-                    </div>
-                  </h1>
-                </div>
-                <div style={{width: '100%', display:'flex', justifyContent:'center'}}>
+            <Col md={7} sm={12} className='col-xs-12' style={{position:'relative'}}>
+                <div className='intro-content'> 
+                  <div>
+                    <p className='font-30' style={{ fontFamily:'Sausages,sans-serif'}}>8471% staking REWARDS                    </p>
+                    <p className='font-30' style={{ fontFamily:'Sausages,sans-serif'}}>$FLOCK. the people's meme coin. </p>
+                    <p className='font-30' style={{ fontFamily:'Sausages,sans-serif', maxWidth: 654, margin: 0}}>The Flockerz revolutionary Vote-To-Earn platform puts the POWER in your hands. Buy early presale NOW to earn MASSIVE rewards! </p>
 
-                  <div className='header-logo-container' > 
-                    <HeaderIcon/>
                   </div>
+                  <div style={{display:'flex', fontSize: 24, flexWrap:'wrap', gap: 10}}>
+                      <div style={{display: 'flex', backgroundColor:'rgb(32, 69, 202)', padding: '10px 15px', borderRadius: '28px'}}>
+                          <img src='/img/flockers/circle.svg'/>
+                          <span style={{color:'white', paddingLeft: 8}}>EARN BY VOTING</span>
+                      </div>
+                      <div style={{display: 'flex', backgroundColor:'rgb(32, 69, 202)', padding: '10px 15px', borderRadius: '25px'}}>
+                          <img src='/img/flockers/circle.svg'/>
+                          <span style={{color:'white', paddingLeft: 8}}>HUGE EARLY REWARDS</span>
+                      </div>
+                      <div style={{display: 'flex', backgroundColor:'rgb(32, 69, 202)', padding: '10px 15px', borderRadius: '25px'}}>
+                          <img src='/img/flockers/circle.svg'/>
+                          <span style={{color:'white', paddingLeft: 8}}>YOU OWN THE FUTURE  </span>
+                      </div>
+                      <div style={{display: 'flex', backgroundColor:'rgb(32, 69, 202)', padding: '10px 15px', borderRadius: '25px'}}>
+                          <img src='/img/flockers/circle.svg'/>
+                          <span style={{color:'white', paddingLeft: 8}}>AND MORE...</span>
+                      </div>
+                  </div>
+                </div>
+                <div className='hero-img'>
+                    <img width={400} height={500} src="/img/flockers/hero.gif" /> 
                 </div>
             </Col>
             <Col md={5} sm={12} className='col-xs-12' style={{ display: 'flex',flexDirection: "column", alignContent: 'center' }} id='buyForm'>

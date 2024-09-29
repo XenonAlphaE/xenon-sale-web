@@ -9,7 +9,6 @@ import configs from '../config.main.json';
 import { useCountdown } from '../services/utils';
 import { useTokenInfo, getUserPurchaseInfo } from '../services/token-service';
 import { useI18nSection } from "../utils/languageUtils";
-import HeaderIcon from './HeaderIcon'
 import ProgressBar from './ProgressBar';
 import './header.css'
 import CurrencyDropdown from './currency-dropdown/CurrencyDropdown';
@@ -239,7 +238,6 @@ export const HeaderClaim = () => {
                 <div style={{width: '100%', display:'flex', justifyContent:'center'}}>
 
                   <div className='header-logo-container' > 
-                    <HeaderIcon/>
                   </div>
                 </div>
             </Col>
