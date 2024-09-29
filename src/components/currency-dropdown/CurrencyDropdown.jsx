@@ -38,7 +38,7 @@ const CurrencyDropdown = ({ title, items , walletETH}) => {
         <button
           type="button"
           onClick={toggleDropdown}
-          className="btn btn-primary w-100 curr-custom-dropdown">  <img style={{marginRight: 5}} src={NETWORK_OTIONS[currentNetwork].img} width={26} height={26}/> {currentNetworkName} <img style={{marginLeft: 5}} src='/img/wienerdog/angle-down.svg ' width={12} height={12}/></button>
+          className="w-100 curr-custom-dropdown">  <img style={{marginRight: 5}} src={NETWORK_OTIONS[currentNetwork].img} width={26} height={26}/> {currentNetworkName} <img style={{marginLeft: 5}} src='/img/wienerdog/angle-down.svg ' width={12} height={12}/></button>
       <div className={`curr-dropdown-content ${isOpen ? 'open' : ''}`}>
         {nerNetworkOptionKeys.map((networkKey) => (
           <div key={networkKey} className="curr-dropdown-item" onClick={() => {selectItemOnclick(networkKey)}}>

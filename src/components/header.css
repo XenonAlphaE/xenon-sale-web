@@ -25,14 +25,74 @@
 }
 
 .form-control-custom {
-    background-color: transparent;
-    border: 2px solid #fff;
+    width: 100%;
+    background-color: rgb(77, 108, 195);
+    border: 2px solid #000;
     border-radius: 20px;
     color: #fff;
-    outline-color:#fff;
+    outline:none;
 }
 
 .form-control-custom::placeholder {
     color: white;
 }
-  
+
+.connection-btn{
+    border: solid 4px black;
+    align-items: center;
+    background-clip: border-box;
+    background-color: rgb(80, 184, 97);
+    background-image: none;
+    background-origin: padding-box;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: flex;
+    font-family: Sausages, sans-serif;
+    font-feature-settings: normal;
+    font-kerning: auto;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    font-size-adjust: none;
+    font-stretch: 100%;
+    font-style: normal;
+    font-variant-alternates: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-variant-position: normal;
+    font-variation-settings: normal;
+    font-weight: 400;
+    height: 60px;
+    justify-content: center;
+    letter-spacing: 0.5px;
+    line-height: 21.4286px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    min-height: 45px;
+    min-width: 100px;
+    overflow-x: visible;
+    overflow-y: visible;
+    padding-block-end: 10px;
+    padding-block-start: 10px;
+    padding-bottom: 10px;
+    padding-inline-end: 10px;
+    padding-inline-start: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    text-align: center;
+    text-indent: 0px;
+    text-rendering: auto;
+    text-shadow: none;
+    text-size-adjust: 100%;
+    text-transform: none;
+    width: 213.922px;
+    word-spacing: 0px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-border-image: none;
+}

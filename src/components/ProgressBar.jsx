@@ -8,7 +8,7 @@ const ProgressBar = ({ percentage }) => {
     width: '100%',
     // backgroundColor: bgColor || '',
     borderColor:'#eee  ',
-    border: 'solid 1px',
+    border: 'solid 2px',
     borderRadius: '15px',
     height: 30,
     overflow:'hidden',
@@ -19,7 +19,7 @@ const ProgressBar = ({ percentage }) => {
   const barStyle = {
     width: `${percentage}%`,
     height: '100%',
-    backgroundColor:'rgb(204, 187, 242)',
+    backgroundColor: 'orange',
     transition: 'width 0.3s ease',
   };
 

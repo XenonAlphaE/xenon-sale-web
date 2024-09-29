@@ -124,7 +124,7 @@ a:focus,
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  background-image: url(../img/wienerdog/hero.gif);
+  background-image: url(../img/flockers/banner-desktop-lg.png);
   background-repeat: no-repeat;
   background-position: center;
 
@@ -970,14 +970,15 @@ input[type=range] {
 }
 
 .walletBox {
-  color: white;
-  border-radius: 20px;
+  box-sizing: border-box;
+  color: black;
+  border: solid 10px #000;
   min-height: 460px;
   width: 100%;
   max-width: 500px;
   padding: 20px;
   margin: 0 auto 10px;
-  background: linear-gradient(0deg, rgba(172, 142, 235, .4), rgba(172, 142, 235, .4)), linear-gradient(0deg, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4));;
+  background: #fefefe96;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1016,9 +1017,10 @@ flex: 1;
 } */
 
 .counter {
-  background: rgb(150, 108, 242)  ;
+  background: rgb(77, 108, 195);
   padding: 0;
-  border-radius: 12px;
+  /* border-radius: 12px; */
+  border: solid 4px #000;
   width: 100%;
   justify-content: center !important;
 }
@@ -1027,7 +1029,7 @@ flex: 1;
   min-width: 60px;
     width: 20%;
     padding: 8px 5px;
-    color: #fff;
+    color: yellow;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -1045,8 +1047,15 @@ flex: 1;
 }
 
 .value {
-  font-size: 26px;
+  font-size: 36px;
     line-height: 35px;
+    -webkit-text-stroke: 2px black; /* Option 1: Stroke border */
+
+}
+.indicator{
+  -webkit-text-stroke: 2px black; /* Option 1: Stroke border */
+  font-size: 20px;
+
 }
 
 .title-wallet {
@@ -1068,7 +1077,7 @@ flex: 1;
   content: "";
   width: 20%;
   height: 1px;
-  background: #ffffff;
+  background: #000;
   position: absolute;
   left: 0;
   top: 50%;
@@ -1101,14 +1110,13 @@ flex: 1;
 }
 
 .btn-wallet {
+  font-size: 1.3em;
   box-sizing:  border-box !important;
   width: 50%;
   max-width: 100%;
   height: 50px;
   padding: 6px;
-  border-radius: 30px;
-  /* border: 2px solid #878787; */
-  color: #5b23d4;
+  border: 2px solid #000;
   font-weight: 700;
   background-color: #fff;
   transition: all .2s;
@@ -1118,13 +1126,13 @@ flex: 1;
 
 .selected{
   color: #fff;
-  background-color: #ba8bf9;
-  border-color: #ba8bf9;
+  background-color: orange;
+  /* border-color: #ba8bf9; */
 }
 
 .btn-wallet:focus {
-  background: #ba8bf9;
-  color: #fff;
+  background: #fff;
+  color: black;
   opacity: 1;
 }
 
@@ -1151,8 +1159,8 @@ flex: 1;
   padding: 8px 15px;
   font-size: 18px;
   font-weight: 500;
-  background-color: #fff;
-  border: 1px solid #878787;
+  /* background-color: #fff; */
+  /* border: 1px solid #878787; */
   color: #6a6a6a;
 }
 

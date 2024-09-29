@@ -31,7 +31,7 @@ const App = () => {
   return (
     <div id="container">
       <Navbar />
-      <HeaderClaim />
+      <Header/>
       <OutMore />
       <MediaContainer /> 
       <Featured />

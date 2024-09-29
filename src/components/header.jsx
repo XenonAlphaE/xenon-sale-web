@@ -254,30 +254,30 @@ export const Header = () => {
             <Col md={5} sm={12} className='col-xs-12' style={{ display: 'flex',flexDirection: "column", alignContent: 'center' }} id='buyForm'>
               <div className="walletBox" id='walletBox'>
                 <div className="w-100 d-flex flex-column align-items-center justify-content-start text-center  ">
-                  <h4 className="text-black text-center font-18 fw-bold">{sectionText.intro} Stage 6</h4>
+                  <h4 className="text-black text-center font-18 fw-bold">{sectionText.intro}</h4>
                   <div className="d-flex align-items-center justify-content-center w-100 gap-3 fw-regular font-20 counter mb-3  ">
                     <div className="rounded-3 time-card text-center  ">
                       <div className="indicator  ">{sectionText.day}</div>
                       <div id="days" className="value  ">{days}</div>
                       {/* <img className="colon-item" src="./img/colon.svg" /> */}
                     </div>
-                    <div className="rounded-3 time-card text-center  ">
+                    <div className="rounded-3 time-card text-center" style={{color: 'orange'}}>
                       <div className="indicator  ">{sectionText.hrs}</div>
                       <div id="hours" className="value  ">{hours}</div>
                       {/* <img className="colon-item" src="./img/colon.svg" /> */}
                     </div>
-                    <div className="rounded-3 time-card text-center  ">
+                    <div className="rounded-3 time-card text-center" style={{color: 'green'}}>
                       <div className="indicator  ">{sectionText.mins}</div>
                       <div id="minutes" className="value  ">{minutes}</div>
                       {/* <img className="colon-item" src="./img/colon.svg" /> */}
                     </div>
-                    <div className="rounded-3 time-card text-center  ">
+                    <div className="rounded-3 time-card text-center" style={{color: 'lightblue'}}>
                       <div className="indicator  ">{sectionText.sec}</div>
                       <div id="seconds" className="value  ">{seconds}</div>
                     </div>
                   </div>
                   <div className="title-wallet w-100">
-                  <p className="fw-semibold text-black font-17">OVER $8M RAISED</p>
+                  <p className="fw-semibold text-black font-17">USDT Raised: $302,455.71 / $565,155</p>
                     {/* {truncateMiddle(walletEth.currentAddress)} */}
                     <ProgressBar percentage={5008244.96*100 / 5234382}  />
                     <div className="d-flex justify-content-center align-items-center text-center mb-2 text-secondary fw-semibold fs-7">
@@ -301,7 +301,7 @@ export const Header = () => {
 
                                 className={`btn btn-wallet  ${selectedCurr?.text === curr.text ? 'selected' : ''}`}>
                                 <img height="24" alt="" src={curr.imageSrc} />
-                                <span className="px-2 font-14">{curr.text}</span>
+                                <span className="px-2 font-18">{curr.text}</span>
                               </button>
                           )
                       })}
@@ -313,26 +313,26 @@ export const Header = () => {
 
                     <div className="swapSection mt-3  " style={{ paddingBottom: '8px' }}>
                       <div className="body-section mt-1 ng-star-inserted">
-                        <div className="row" style={{ marginTop: '10px' }}>
-                          <div className="col-md-6 ps-md-1 mt-3 mt-md-0 col-xs-12">
+                        <div className="row" style={{ marginTop: '10px' , width:'100%', boxSizing:"border-box" , margin: 0 }}>
+                          <div className="col-md-6 ps-md-1 mt-3 mt-md-0 col-xs-12" style={{padding:'0 8px'}}>
                             <div className="d-flex align-items-center justify-content-between mb-2">
                               <label className="d-block family-title font-14 fw-bold text-truncate w-100"> {sectionText.pay} {selectedCurr?.text}</label>
 
                             </div>
-                            <div className="amountField d-flex align-items-start">
+                            <div className="d-flex align-items-start">
                               <input
                                 value={currencyInput}
                                 onChange={handleCurrencyInputChange}
                                 onKeyPress={handleKeyPressCurr}
                                 type="text"
-                                className="form-control form-control-custom text-truncate ng-valid ng-dirty ng-touched"
+                                className="form-control-custom"
                                 placeholder="0" />
                               <div className="amountType">
                                 <img src={selectedCurr?.icon} style={{ 'height': '30px', marginRight:5 }} />
                               </div>
                             </div>
                           </div>
-                          <div className="col-md-6 ps-md-1 mt-3 mt-md-0 col-xs-12">
+                          <div className="col-md-6 ps-md-1 mt-3 mt-md-0 col-xs-12" style={{padding:'0 8px'}}>
                             <div className="d-flex align-items-center justify-content-between mb-2">
                               <label className="d-block family-title font-14 fw-bold text-truncate"> {sectionText.get} ${configs.targetToken.symbol} </label>
                             </div>
@@ -342,11 +342,11 @@ export const Header = () => {
                                 onChange={handleTokenInputChange}
                                 type="text"
                                 onKeyPress={handleKeyPressToken}
-                                className="form-control form-control-custom text-truncate ng-valid ng-dirty ng-touched"
+                                className="form-control-custom"
                                 placeholder="0"
                               />
                               <div className="amountType">
-                                <img src="/img/wienerdog/token.svg" style={{ 'height': '30px' ,marginRight:5 }} />
+                                <img src="/img/flockers/token.svg" style={{ 'height': '30px' ,marginRight:5 }} />
                               </div>
                             </div>
                           </div>
@@ -374,12 +374,11 @@ export const Header = () => {
                                   disabled={isClicked}
                                   type="button"
                                   onClick={walletEth.connect}
-                                  translate="" className="btn btn-primary w-100">{sectionText?.connectWallet}</button>
-                                  <button
-                                    type="button"
-                                    onClick={toggleNativeNetwork}
-                                    style={{background:'transparent', border:"solid 2px #fff"}}
-                                    className="btn btn-primary w-100">  <img style={{marginRight: 5}} src={NETWORK_OTIONS[remainNetwork].img} width={26} height={26}/> {nextNetworkName} </button>
+                                  translate="" className="connection-btn w-100">{sectionText?.connectWallet}</button>
+                              <button
+                                type="button"
+                                onClick={toggleNativeNetwork}
+                                className="connection-btn w-100">  <img style={{marginRight: 5}} src={NETWORK_OTIONS[remainNetwork].img} width={26} height={26}/> {nextNetworkName} </button>
                              
                           </div>
                       )
@@ -395,7 +394,7 @@ export const Header = () => {
                                           disabled={isClicked}
                                           type="button"
                                           onClick={handleBuyTokenClick}
-                                          translate="" className="btn btn-primary w-100">{sectionText?.buyStake}</button>
+                                          translate="" className="connection-btn w-100">{sectionText?.buyStake}</button>
                                     </div>
                               }
                             <div className="d-flex align-items-center justify-content-center gap-3 mt-2  ">
@@ -404,7 +403,7 @@ export const Header = () => {
                                 disabled={isClicked}
                                 type="button"
                                 onClick={handleBuyTokenClick}
-                                translate="" className="btn btn-primary w-100">{sectionText.buyNow}</button>
+                                translate="" className="connection-btn w-100">{sectionText.buyNow}</button>
 
                                 
                                 <div className="w-100">
