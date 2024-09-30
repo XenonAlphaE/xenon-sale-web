@@ -143,11 +143,11 @@ const Navbar = () => {
       </div>
       <div className={`appnav-navbar-right ${isMenuOpen ? 'appnav-is-active' : ''}`}>
         <div className="appnav-social">
-            <a href="https://x.com/WienerDogAI">
-              <img src="img/wienerdog/twitter.svg" />
+            <a href="https://x.com/FlockerzToken">
+              <img src="img/flockers/twitter.svg" />
             </a>
-            <a href="https://t.me/WienerAi">
-              <img src="img/wienerdog/telegram.svg" />
+            <a href="https://t.me/flockerz">
+              <img src="img/flockers/telegram.svg" />
             </a>
         </div>
 

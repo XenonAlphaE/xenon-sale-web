@@ -233,7 +233,7 @@ export const Header = () => {
             <Col md={7} sm={12} className='col-xs-12' style={{position:'relative'}}>
                 <div className='intro-content'> 
                   <div>
-                    <p className='font-30' style={{ fontFamily:'Sausages,sans-serif'}}>8471% staking REWARDS                    </p>
+                    <p className='font-30' style={{ fontFamily:'Sausages,sans-serif', lineBreak: 18}}>8471% staking REWARDS                    </p>
                     <p className='font-30' style={{ fontFamily:'Sausages,sans-serif'}}>$FLOCK. the people's meme coin. </p>
                     <p className='font-30' style={{ fontFamily:'Sausages,sans-serif', maxWidth: 654, margin: 0}}>The Flockerz revolutionary Vote-To-Earn platform puts the POWER in your hands. Buy early presale NOW to earn MASSIVE rewards! </p>
 
