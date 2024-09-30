@@ -23,9 +23,9 @@ export const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="col-12 col-lg-12 text-center">
-              <h3 translate="" className="font-14 text-light mb-0">{sectionText?.sub}</h3>
-              <p translate="" className="para font-14 px-sm-3 pt-2 pb-0 text-light ">{sectionText?.text}</p>
+              <img  src='/img/flockers/token.svg' width={112} height={112}/>
               <p translate="" className="para font-20 text-white">{sectionText?.copyRight}</p>
+              <p translate="" className="para font-14 px-sm-3 pt-2 pb-0 text-light ">{sectionText?.text}</p>
             </div>
           </div>
         </div>

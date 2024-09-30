@@ -133,19 +133,23 @@ const Navbar = () => {
       </div>
       
       <div className={`appnav-navbar-menu ${isMenuOpen ? 'appnav-is-active' : ''}`}>
+        <a href="/whitepaper.pdf">{sectionText.about}</a>
+        <a href="/whitepaper.pdf">{sectionText.tokenomics}</a>
         <a href="/whitepaper.pdf">{sectionText.whitePaper}</a>
+        {/* <a href="/whitepaper.pdf">{sectionText.tokenomics}</a> */}
+        {/* <a href="/whitepaper.pdf">{sectionText.whitePaper}</a> */}
         {/* <Dropdown title={sectionText.about} items={aboutItems} /> */}
         <a href="/audit.pdf">{sectionText.audit}</a>
       </div>
       <div className={`appnav-navbar-right ${isMenuOpen ? 'appnav-is-active' : ''}`}>
-        {/* <div className="appnav-social">
+        <div className="appnav-social">
             <a href="https://x.com/WienerDogAI">
               <img src="img/wienerdog/twitter.svg" />
             </a>
             <a href="https://t.me/WienerAi">
               <img src="img/wienerdog/telegram.svg" />
             </a>
-        </div> */}
+        </div>
 
         <div className="appnav-lang-login-container">
           <button onClick={scrollToBuySection} className="appnav-login">{displayBtn}</button>
