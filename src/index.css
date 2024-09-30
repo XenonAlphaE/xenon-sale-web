@@ -3,6 +3,7 @@ body {
   font-family: Sausages,sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(77, 108, 195);
 }
 
 code {
@@ -11,5 +12,5 @@ code {
 }
 
 #container {
-  background : url(/public/img/wienerdog/main-bg.png) no-repeat 0 0/cover
+  /* background : url(/public/img/wienerdog/main-bg.png) no-repeat 0 0/cover */
 }

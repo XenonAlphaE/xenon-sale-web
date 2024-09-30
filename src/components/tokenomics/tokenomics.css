@@ -1,7 +1,20 @@
 .tokenomics {
-    background: url(/public/img/wienerdog/tokenomics-bg.svg) no-repeat 50% 50% / cover;
+    /* background: url(/public/img/wienerdog/tokenomics-bg.svg) no-repeat 50% 50% / cover; */
     letter-spacing: .8px;
     position: relative;
+}
+
+.bottom-img{
+    position: absolute;
+    bottom: 100px;
+    right: 20px;
+    width: 100px;
+    height: 200px;
+}
+
+.tokenomics .bottom-img img{
+    width: 250px;
+    height: 400px;
 }
 
 #tokenomics {
@@ -29,32 +42,85 @@
 }
 
 .tokenomics .tokenomics-info {
-    background: rgba(0, 0, 0, .2);
+    position: relative;
+    width: 100%;
     border-radius: 24px;
-    max-width: 505px;
+    /* max-width: 505px; */
     padding: 25px;
 }
-
-.tokenomics .tokenomics-info ul {
-    padding: 0;
-    margin: 0;
+.tokenomics .tokenomics-info .info-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    justify-content: start;
+    /* background: rgba(0, 0, 0, .2); */
 }
 
-.tokenomics .tokenomics-info ul li {
-    font-size: 20px;
-    color: #fff;
-    line-height: 180%;
+.tokenomics .tokenomics-info .info-cards .info-card{
+    max-width: 250px;
 }
 
-.section-title {
+.tokenomics .tokenomics-info .info-cards .info-card .section-heading{
+color: rgb(240, 185, 11);
+font-size: 24px;
+font-weight: 500;
+text-align: center;
+}
+
+
+.tokenomics .tokenomics-info .info-cards .info-card .section-desc{
+color: rgb(193, 218, 234);
+font-size: 16px;
+font-weight: 400;
+}
+
+
+
+.tokenomics .section-title {
+    background-color: rgb(193, 218, 234);
     text-align: center;
     font-family: Sausages, sans-serif;
-    color: #fff;
+    color: rgb(240, 185, 11);
     font-size: 50px;
     text-transform: uppercase;
     font-weight: 400;
     flex-wrap: wrap;
+    padding:  5px 20px;
+    border: solid 4px black;
+    margin: 40px 0;
+    -webkit-text-stroke: 2px black;
+    transform: rotate(-5deg);
 }
+
+
+@media (max-width: 768px) {
+    .tokenomics .tokenomics-info .info-cards{
+        justify-content: center;
+        /* background: rgba(0, 0, 0, .2); */
+    }
+
+    .tokenomics .tokenomics-info .info-cards .info-card{
+        max-width: 100%;
+    }
+
+    .bottom-img{
+        position: absolute;
+        bottom: 100px;
+        right: 50px;
+        /* width: 100px; */
+        /* height: 200px; */
+    }
+    
+    .tokenomics .bottom-img img{
+        width: 150px;
+        height: 300px;
+    }
+}
+
+
+/* 
+
 
 .tokenomics .tokenomics-info ul li {
     font-size: 20px;
@@ -64,4 +130,4 @@
 
 .ms-4 {
     margin-left: 3.5rem !important;
-}
+} */

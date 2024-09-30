@@ -32,14 +32,14 @@ const App = () => {
     <div id="container">
       <Navbar />
       <Header/>
-      <OutMore />
-      <MediaContainer /> 
-      <Featured />
-      <About />
-      <Rewards />
+      {/* <OutMore /> */}
+      {/* <MediaContainer />  */}
+      {/* <Featured /> */}
+      {/* <About /> */}
+      {/* <Rewards /> */}
       <TokenNomics />
-      <RoadMap /> 
-      <Faqs />
+      {/* <RoadMap />  */}
+      {/* <Faqs /> */}
       <Footer /> 
     </div>
   );
