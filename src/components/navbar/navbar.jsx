@@ -133,13 +133,13 @@ const Navbar = () => {
       </div>
       
       <div className={`appnav-navbar-menu ${isMenuOpen ? 'appnav-is-active' : ''}`}>
-        <a href="/whitepaper.pdf">{sectionText.about}</a>
-        <a href="/whitepaper.pdf">{sectionText.tokenomics}</a>
-        <a href="/whitepaper.pdf">{sectionText.whitePaper}</a>
+        <a href="#about">{sectionText.about}</a>
+        <a href="#tokenomics">{sectionText.tokenomics}</a>
+        <a href="/white-paper.pdf">{sectionText.whitePaper}</a>
         {/* <a href="/whitepaper.pdf">{sectionText.tokenomics}</a> */}
         {/* <a href="/whitepaper.pdf">{sectionText.whitePaper}</a> */}
         {/* <Dropdown title={sectionText.about} items={aboutItems} /> */}
-        <a href="/audit.pdf">{sectionText.audit}</a>
+        <a href="/solid-proof.pdf">{sectionText.audit}</a>
       </div>
       <div className={`appnav-navbar-right ${isMenuOpen ? 'appnav-is-active' : ''}`}>
         <div className="appnav-social">

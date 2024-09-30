@@ -35,7 +35,7 @@ const App = () => {
       {/* <OutMore /> */}
       {/* <MediaContainer />  */}
       {/* <Featured /> */}
-      {/* <About /> */}
+      <About />
       {/* <Rewards /> */}
       <TokenNomics />
       {/* <RoadMap />  */}
