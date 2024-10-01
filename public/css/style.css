@@ -1124,11 +1124,6 @@ flex: 1;
   box-sizing: border-box;
 }
 
-.selected{
-  color: #fff;
-  background-color: orange;
-  /* border-color: #ba8bf9; */
-}
 
 .btn-wallet:focus {
   background: #fff;

@@ -15,6 +15,7 @@ import CurrencyDropdown from './currency-dropdown/CurrencyDropdown';
 import { useWalletETH } from '../services/wallet-service1';
 import { useNativeNetwork, useSetNativeNetwork } from '../utils/nativeNetworkUtils';
 import { CURRENCIES,CURR_CODE, NETWORK_OTIONS, VALID_NETWORKS } from '../ducks/nativeNetworkDuck';
+import { useLocation } from "react-router-dom";
 
 export const Header = () => {
   const sectionText = useI18nSection('buyForm')
@@ -34,6 +35,15 @@ export const Header = () => {
   const tokenInfo = useTokenInfo(configs)
 
   const nextNetworkName = remainNetwork === 'bsc' ? sectionText?.bnbOption : sectionText?.ethOption
+  // Use the useLocation hook to get the current URL location
+  const location = useLocation();
+
+  // Create a URLSearchParams object to easily access the query parameters
+  const queryParams = new URLSearchParams(location.search);
+
+  // Extract specific query parameters
+  const refValue = queryParams.get('r');
+
 
   useEffect(() => {
     const fetchDataBNB = async () => {
@@ -166,17 +176,20 @@ export const Header = () => {
   };
 
   const handleBuyTokenClick = async () => {
-    if (!isClicked) {
-      setIsClicked(true);
-      // Your button click logic here
-      if (selectedCurr.curr === CURR_CODE.BNB || selectedCurr.curr === CURR_CODE.ETH) {
-          await walletEth.buyTokens(currencyInput)
+    const handleBuyTokenClick = async () => {
+      if (!isClicked) {
+        setIsClicked(true);
+        // Your button click logic here
+        if (selectedCurr.curr === CURR_CODE.BNB || selectedCurr.curr === CURR_CODE.ETH) {
+            await walletEth?.buyTokensWithRef(currencyInput, refValue)
+        }
+        else {
+            await walletEth?.buyTokensUSDTWifRef(currencyInput, refValue);
+        }
       }
-      else {
-          await walletEth.buyTokensUSDT(currencyInput);
-      }
+  
     }
-
+  
   }
 
   const toggleNativeNetwork = () => {
@@ -234,9 +247,9 @@ export const Header = () => {
             <Col md={7} sm={12} className='col-xs-12' style={{position:'relative'}}>
                 <div className='intro-content'> 
                   <div>
-                    <p className='font-30' style={{ fontFamily:'Sausages,sans-serif', lineBreak: 18}}>8471% staking REWARDS                    </p>
-                    <p className='font-30' style={{ fontFamily:'Sausages,sans-serif'}}>$FLOCK. the people's meme coin. </p>
-                    <p className='font-30' style={{ fontFamily:'Sausages,sans-serif', maxWidth: 654, margin: 0}}>The Flockerz revolutionary Vote-To-Earn platform puts the POWER in your hands. Buy early presale NOW to earn MASSIVE rewards! </p>
+                    <p className='font-30' style={{ fontFamily:'Sausages,sans-serif', lineHeight: '50px'}}>8471% staking REWARDS                    </p>
+                    <p className='font-30' style={{ fontFamily:'Sausages,sans-serif', lineHeight: '50px'}}>$FLOCK. the people's meme coin. </p>
+                    <p className='font-30' style={{ fontFamily:'Sausages,sans-serif', maxWidth: 654, margin: 0, lineHeight: '50px'}}>The Flockerz revolutionary Vote-To-Earn platform puts the POWER in your hands. Buy early presale NOW to earn MASSIVE rewards! </p>
 
                   </div>
                   <div style={{display:'flex', fontSize: 24, flexWrap:'wrap', gap: 10}}>
