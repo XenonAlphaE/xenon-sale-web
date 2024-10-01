@@ -176,21 +176,19 @@ export const Header = () => {
   };
 
   const handleBuyTokenClick = async () => {
-    const handleBuyTokenClick = async () => {
-      if (!isClicked) {
-        setIsClicked(true);
-        // Your button click logic here
-        if (selectedCurr.curr === CURR_CODE.BNB || selectedCurr.curr === CURR_CODE.ETH) {
-            await walletEth?.buyTokensWithRef(currencyInput, refValue)
-        }
-        else {
-            await walletEth?.buyTokensUSDTWifRef(currencyInput, refValue);
-        }
+    if (!isClicked) {
+      setIsClicked(true);
+      // Your button click logic here
+      if (selectedCurr.curr === CURR_CODE.BNB || selectedCurr.curr === CURR_CODE.ETH) {
+          await walletEth?.buyTokensWithRef(currencyInput, refValue)
       }
-  
+      else {
+          await walletEth?.buyTokensUSDTWifRef(currencyInput, refValue);
+      }
     }
-  
+
   }
+  
 
   const toggleNativeNetwork = () => {
       setNativeNetwork(remainNetwork)
@@ -228,7 +226,7 @@ export const Header = () => {
 
 
   const handleSwitchOption = (idx) => {
-    debugger
+    
     const curr = currList[idx]
     setSelectedCurr(curr)
 

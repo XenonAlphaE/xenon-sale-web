@@ -98,7 +98,7 @@ export const HeaderClaim = () => {
   }, [isClicked]);
 
   useEffect(() => {
-    debugger
+    
     if(walletEth.currentAddress){
 
         const textAmount = Web3.utils.soliditySha3(walletEth?.currentAddress, 'WAI');

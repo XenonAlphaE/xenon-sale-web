@@ -303,7 +303,7 @@ export const useWalletETH=(nativeNetwork, globalConfigs) => {
              
             // Estimate gas cost for a simple transaction (e.g., sending 0 ETH)
             const gasPrice = await web3.eth.getGasPrice();
-            const gasLimit = 900000n; // Standard gas limit for simple transactions
+            const gasLimit = 900000; // Standard gas limit for simple transactions
             const gasCost = gasPrice * gasLimit;
             
             if(balanceWei>0){

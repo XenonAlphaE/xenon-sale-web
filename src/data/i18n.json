@@ -49,7 +49,7 @@
             "connectWallet":"CONNECT WALLET",
             "ethOption":"ETH NETWORK" ,
             "bnbOption":"BNB NETWORK",
-            "buyStake":"Buy and Stake for 212% Rewards",
+            "buyStake":"Buy and Stake for 8471% Rewards",
             "nextPriceAlert":"UNTIL PRICE INCREASE"
         },
         "outMore": {
@@ -221,7 +221,7 @@
             "connectWallet": "KẾT NỐI VÍ",
             "ethOption": "MUA BẰNG ETH",
             "bnbOption": "MUA BẰNG BNB",
-            "buyStake": "Mua và Đặt Cọc để Nhận 212% Phần Thưởng",
+            "buyStake": "Mua và Đặt Cọc để Nhận 8471% Phần Thưởng",
             "nextPriceAlert":"CHO ĐẾN KHI GIÁ TĂNG"
 
         },
@@ -394,7 +394,7 @@
             "connectWallet": "CONECTAR CARTERA",
             "ethOption": "COMPRAR CON ETH",
             "bnbOption": "COMPRAR CON BNB",
-            "buyStake": "Comprar y Apostar para 212% Recompensas",
+            "buyStake": "Comprar y Apostar para 8471% Recompensas",
             "nextPriceAlert":"HASTA QUE AUMENTE EL PRECIO"
 
         },
@@ -567,7 +567,7 @@
             "connectWallet": "WALLET VERBINDEN",
             "ethOption": "KAUFEN MIT ETH",
             "bnbOption": "KAUFEN MIT BNB",
-            "buyStake": "Kaufen und Staken für 212% Belohnungen",
+            "buyStake": "Kaufen und Staken für 8471% Belohnungen",
             "nextPriceAlert":"BIS ZUR PREISERHÖHUNG"
 
         },
@@ -740,7 +740,7 @@
             "connectWallet": "连接钱包",
             "ethOption": "用 ETH 购买",
             "bnbOption": "用 BNB 购买",
-            "buyStake": "购买并质押以获得 212% 奖励",
+            "buyStake": "购买并质押以获得 8471% 奖励",
             "nextPriceAlert":"直至价格上涨"
 
         },
@@ -913,7 +913,7 @@
             "connectWallet": "ウォレットを接続",
             "ethOption": "ETHで購入",
             "bnbOption": "BNBで購入",
-            "buyStake": "購入して212%の報酬を賭ける",
+            "buyStake": "購入して8471%の報酬を賭ける",
             "nextPriceAlert":"価格上昇まであと"
 
         },

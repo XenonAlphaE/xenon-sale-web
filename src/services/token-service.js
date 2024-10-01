@@ -31,7 +31,7 @@ function getRandomItemFromArray(input, defaultValue = null) {
         return
     }
     const key = Web3.utils.soliditySha3(address, globalConfigs?.targetToken?.symbol);
-
+    
     const getPurchasInfoBSC =  async (key) => {
         const provider = new Web3.providers.HttpProvider(getRandomItemFromArray(globalConfigs.BSC?.RPC_APIs) || '');
         const web3Instance = new Web3(provider);
@@ -41,7 +41,9 @@ function getRandomItemFromArray(input, defaultValue = null) {
             salerInfo.address
         )    
         
+        
         const tokenInfo = await contract.methods.buyerPurchases(key).call();
+        
         return tokenInfo
     }
 
@@ -166,7 +168,7 @@ export const useTokenInfo=(globalConfigs) => {
             salerInfo.address
         )
         const tokenKey = Web3.utils.soliditySha3("Token", globalConfigs?.targetToken?.symbol);
-    
+        
         const tokenInfo = await contract.methods.tokenInfoMap(tokenKey).call();
         return tokenInfo
     }

@@ -92,7 +92,7 @@ const nativeNetworkReducer = (state = initialState, action) => {
         return { ...state, network: action.payload };
 
     case SET_CURRENT_ADDRESS:
-      debugger
+      
       return { ...state, currentAddress: action.payload };
 
     default:
