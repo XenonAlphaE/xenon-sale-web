@@ -3,8 +3,8 @@
     "targetToken":{
         "address":"",
         "decimals":18,
-        "symbol": "WAI",
-        "tokenPrice":"0.00073"
+        "symbol": "FLOCK",
+        "tokenPrice":"0.0056559"
     },
     "previousRaised":5009043.52,
     "previousSoldTokens":0,
