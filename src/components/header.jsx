@@ -215,6 +215,7 @@ export const Header = () => {
 
 
   const handleSwitchOption = (idx) => {
+    debugger
     const curr = currList[idx]
     setSelectedCurr(curr)
 
@@ -309,7 +310,7 @@ export const Header = () => {
                           return(
                               <button key={idx} onClick={() => handleSwitchOption(idx)}
 
-                                className={`btn btn-wallet  ${selectedCurr?.text === curr.text ? 'selected' : ''}`}>
+                                className={`btn btn-wallet  ${selectedCurr?.text === curr?.text ? 'selected' : ''}`}>
                                 <img height="24" alt="" src={curr.imageSrc} />
                                 <span className="px-2 font-18">{curr.text}</span>
                               </button>

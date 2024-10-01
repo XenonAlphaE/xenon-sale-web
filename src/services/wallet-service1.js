@@ -1,8 +1,7 @@
-import { ethers,parseEther,Network, parseUnits ,BigNumberish, formatUnits} from 'ethers';
+import { ethers,parseEther,Network, parseUnits,formatUnits } from 'ethers';
 import Decimal from 'decimal.js';
 import {useState, useEffect, useMemo} from 'react'
 import Web3 from 'web3';
-import { config } from '@fortawesome/fontawesome-svg-core';
 import { useNativeNetwork, useSetCurrentAddress, useSetNativeNetwork } from '../utils/nativeNetworkUtils';
 import { NETWORK_OTIONS, VALID_NETWORKS } from '../ducks/nativeNetworkDuck';
 
@@ -78,6 +77,8 @@ export const useWalletETH=(nativeNetwork, globalConfigs) => {
     const [currentProvider, setCurrentProvider] = useState(undefined)
 
     const [maxAmount, setMaxAmount] = useState(0)
+    const [spenableAmount, setSpenableAmount] = useState(0)
+
     const [maxUsdt, setMaxUsdt] = useState(0)
     const [bnbPrice, setBnbPrice] = useState(0);
     const [ethPrice, setEthPrice] = useState(0);
@@ -154,6 +155,7 @@ export const useWalletETH=(nativeNetwork, globalConfigs) => {
 
 
     const connectWallet = async () => {
+        
         if(window.ethereum !== undefined){
             const ethereum = window.ethereum;
 
@@ -252,7 +254,7 @@ export const useWalletETH=(nativeNetwork, globalConfigs) => {
     }
 
     const getMaxUSDT = async () => {
-        debugger
+        
         if(!currentProvider || !signer?.address){
             return 0
         }
@@ -298,19 +300,37 @@ export const useWalletETH=(nativeNetwork, globalConfigs) => {
             // Get the balance in Wei
             const balanceWei = await web3.eth.getBalance(currentAddress);
     
+             
             // Estimate gas cost for a simple transaction (e.g., sending 0 ETH)
             const gasPrice = await web3.eth.getGasPrice();
-            const gasLimit = 500000; // Standard gas limit for simple transactions
+            const gasLimit = 900000n; // Standard gas limit for simple transactions
             const gasCost = gasPrice * gasLimit;
-    
-            // Convert the balance to Ether and subtract the gas cost
-            const balanceEther = web3.utils.fromWei(balanceWei, 'ether');
-            const spendableAmount = parseFloat(balanceEther) - parseFloat(web3.utils.fromWei(gasCost.toString(), 'ether'));
-    
-            return spendableAmount >= 0 ? spendableAmount.toFixed(6) : 0;
+            
+            if(balanceWei>0){
+
+                // Convert the balance to Ether and subtract the gas cost
+                const balanceEther = web3.utils.fromWei(balanceWei, 'ether');
+                const spendableAmount = parseFloat(balanceEther) - parseFloat(web3.utils.fromWei(gasCost.toString(), 'ether'));
+
+                return{
+                    max: parseFloat(balanceEther).toFixed(3),
+                    spenable: parseFloat(spendableAmount).toFixed(3)
+                }
+
+            }
+            else{
+                return{
+                    max: 0,
+                    spenable: 0
+                }
+            }
+
         } else {
             // console.error('MetaMask is not installed');
-            return 0;
+            return{
+                max: 0,
+                spenable: 0
+            }
         }
     };
 
@@ -320,9 +340,7 @@ export const useWalletETH=(nativeNetwork, globalConfigs) => {
         let salerContract = null;
         let usdtContract = null;
         let usdtDecimals = 0;
-        let claimContract = null;
-
-        if(chainId === 1n || chainId === 11155111n ){
+        if(chainId === 1n ||chainId === 11155111n ){
             const salerInfo = globalConfigs.ETH['salers'][0]
             salerContract = new ethers.Contract(
                 salerInfo.address,
@@ -334,13 +352,6 @@ export const useWalletETH=(nativeNetwork, globalConfigs) => {
                 globalConfigs['ETH']['USDT_Abi'],
                 currentProvider
             )
-            if(globalConfigs['ETH']['claimContract']){
-                claimContract = new ethers.Contract(
-                    globalConfigs['ETH']['claimContract']?.address,
-                    globalConfigs['ETH']['claimContract']?.abi,
-                    currentProvider
-                )
-            }
 
             usdtDecimals = globalConfigs['ETH']['USDT_Decimals']
         }
@@ -357,24 +368,18 @@ export const useWalletETH=(nativeNetwork, globalConfigs) => {
                 globalConfigs['BSC']['USDT_Abi'],
                 currentProvider
             )
-            if(globalConfigs['BSC']['claimContract']){
-                claimContract = new ethers.Contract(
-                    globalConfigs['BSC']['claimContract']?.address,
-                    globalConfigs['BSC']['claimContract']?.abi,
-                    currentProvider
-                )
-            }
+
             usdtDecimals = globalConfigs['BSC']['USDT_Decimals']
         }
 
 
-        return{salerContract, usdtContract, usdtDecimals, claimContract}
+        return{salerContract, usdtContract, usdtDecimals}
 
 
     }
 
 
-    const buyTokens = async (amount)  => {
+    const buyTokens= async (amount)  => {
         try{
             if(!signer) return;
 
@@ -398,26 +403,25 @@ export const useWalletETH=(nativeNetwork, globalConfigs) => {
         }
     }
 
-    const claimTokens = async (amount, tokenAmount)  => {
+
+    const buyTokensWithRef = async (amount, ref)  => {
         try{
             if(!signer) return;
 
             if(isValidNumber( amount )){
                 const currentNetwork = await currentProvider.getNetwork();
                 const chainId = currentNetwork.chainId.valueOf() 
-                const {claimContract} = getContracts(chainId)
+                const {salerContract} = getContracts(chainId)
 
-                if(!claimContract){
+                if(!salerContract){
                     return
                 }
-                const tokenWei = toWei(tokenAmount)
                 const wei = toWei(amount)
-
-                const tx = await claimContract.connect(signer).claimTokens(globalConfigs?.targetToken?.tokenSymbol, tokenWei, globalConfigs?.targetToken?.address, {value: wei})
+                const tx = await salerContract.connect(signer).buyTokensWifRef(globalConfigs?.targetToken?.symbol,ref ? ref : "", {value: wei})
                 await tx.wait();
-                console.log("Tokens claimed successfully.");
-
+                // console.log("Tokens bought successfully.");
             }
+            // window.location.reload();
         }
         catch(error){
             //   console.error("Error:", error.message);
@@ -485,9 +489,9 @@ export const useWalletETH=(nativeNetwork, globalConfigs) => {
     }
         
     const getAvailableBalances = async () => {
-        
-        const allAmount = await getAllAmount();
-        setMaxAmount(allAmount);
+        const {max, spenable} = await getAllAmount();
+        setMaxAmount(max);
+        setSpenableAmount(spenable)
         
         const allUsdt = await getMaxUSDT();
         setMaxUsdt(allUsdt)
@@ -532,6 +536,46 @@ export const useWalletETH=(nativeNetwork, globalConfigs) => {
         }
     }
    
+
+    const buyTokensUSDTWifRef = async (amount, ref) => {
+        try{
+            if(!signer) return;
+            if(isValidNumber(amount)){
+                
+                const currentNetwork = await currentProvider.getNetwork();
+                const chainId = currentNetwork.chainId.valueOf() 
+                const {salerContract,usdtDecimals} = getContracts(chainId)
+                
+                if(!salerContract){
+                    return
+                }
+                
+                if(chainId === 1n){
+                    
+                    await approveUSDT_ETH(amount,chainId);
+
+                }
+                if(chainId === 56n){
+                    
+                    await approveUSDT_BSC(amount, chainId);
+
+                }
+                
+
+                const usdtAmount = parseUnits(amount, usdtDecimals); // Set the allowance amount (1000 USDT in this case)
+                const tx = await salerContract.connect(signer).buyTokensByUsdtWifRef(usdtAmount, globalConfigs?.targetToken?.symbol, ref ? ref:"");
+                await tx.wait();
+                console.log("Buy Tokens successfully!");
+
+                // await buyTokensBySpecificAmountUSDT(amount);
+                // window.location.reload();
+            }
+        }
+        catch(error){
+            // console.error("Error during buying:", error.message);
+        }
+    }
+   
     
     return {
         // buyTokens, buyTokensUSDT, approveUSDT_BSC, approveUSDT_ETH,
@@ -539,16 +583,18 @@ export const useWalletETH=(nativeNetwork, globalConfigs) => {
         provider: currentProvider,
         tokenPriceInUsdt: globalConfigs?.targetToken?.tokenPrice,
         maxAmount,
+        spenableAmount,
         maxUsdt,
         bnbPrice,
         ethPrice,
-        claimTokens,
         //  getMaxUSDT , 
         getAvailableBalances, 
         buyTokens,
+        buyTokensWithRef,
         swicthNativeNetwork,
         connect: connectWallet,
-        buyTokensUSDT
+        buyTokensUSDT,
+        buyTokensUSDTWifRef
         //  wasAddedToken, claimTokens, airdropTokens, directBuyTokensUSDT, 
-    }
+        }
 }
