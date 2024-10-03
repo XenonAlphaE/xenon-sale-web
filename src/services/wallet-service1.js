@@ -585,7 +585,7 @@ export const useWalletETH=(nativeNetwork, globalConfigs) => {
             const currentNetwork = await currentProvider.getNetwork();
             const chainId = currentNetwork.chainId.valueOf() 
             const wei = toWei(amount)
-            debugger
+            
             if(targetChain != Number(chainId)){
                 await currentProvider.send("wallet_switchEthereumChain", [{ chainId: "0x" + targetChain.toString(16) }]);
 

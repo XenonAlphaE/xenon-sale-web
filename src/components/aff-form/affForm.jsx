@@ -42,6 +42,7 @@ export const AffForm = () => {
             setRefStringHashed(refStrHashed)
             setRefString(refStr);
             const refInfos = await getUserRefInfo(configs, refStr,refStrHashed)
+            
             console.log(refInfos)
             setBscRefInfo(refInfos.bsc)
             setEthRefInfo(refInfos.eth)
@@ -102,6 +103,54 @@ export const AffForm = () => {
         setLastReload(new Date().getTime())
 
     }
+
+    const EthRefView = () => {
+        const isAbleToActiveEth = ethRefInfo?.owner === walletEth.currentAddress || ethRefInfo?.owner ==="0x0000000000000000000000000000000000000000";
+        
+        return(
+            isAbleToActiveEth ?
+            <div className={`aff-link ${ethRefInfo?.active ? "active": ""}`}>
+                        
+                <span className='aff-link-text'> <img width={40} height={40} style={{marginRight:10}} src='/img/wienerdog/ETH.svg' alt='Copy ETH'/> {shortenText(ethRefURL)} </span>
+                {
+                    ethRefInfo?.active ? 
+                    <button onClick={() => copyToClipboard(ethRefURL)} className='aff-cpy-btn'><img src="/img/copy-svgrepo-com.svg" alt="Copy Action" width={20} height={20} /> Copy   </button>
+                    :
+                    <button className='aff-active-btn' onClick={registerEth}>
+                        Active {`${configs.ETH.addRefFee}`} <img width={20} height={20} src='/img/wienerdog/ETH.svg' alt='Active ETH'/></button>
+                }
+
+            </div>
+            :
+            <div>  <img width={20} height={20} src='/img/wienerdog/ETH.svg' alt='Active ETH'/> This address is not qualified to active contribution link</div>
+        )
+
+
+    }
+
+    const BscRefView = () => {
+        const isAbleToActive = bscRefInfo?.owner === walletEth.currentAddress || bscRefInfo?.owner ==="0x0000000000000000000000000000000000000000";
+        
+        return(
+            isAbleToActive ?
+            <div className={`aff-link ${bscRefInfo?.active ? "active": ""}`}>
+                <span className='aff-link-text'><img width={40} height={40} style={{marginRight:10}} src='/img/wienerdog/icon@bnb1.svg' alt='Copy BNB'/>  {shortenText(ethRefURL)}</span>
+
+                {
+                bscRefInfo?.active ?
+                <button className='aff-cpy-btn' onClick={() => copyToClipboard(ethRefURL)}>
+                    <img src="/img/copy-svgrepo-com.svg" alt="Copy Action" width={20} height={20} /> Copy  </button>
+                :
+                <button className='aff-active-btn' onClick={registerBsc}>
+                    Active {`${configs.BSC.addRefFee}`} <img width={20} height={20} src='/img/wienerdog/icon@bnb1.svg' alt='Active BNB'/></button>
+                }
+
+            </div> 
+            :
+            <div> <img width={20} height={20} src='/img/wienerdog/icon@bnb1.svg' alt='Copy BNB'/>  This address is not qualified to active contribution link</div>
+        )
+
+    }
     
     
     return (
@@ -131,34 +180,12 @@ export const AffForm = () => {
                 </div>
                 }
 
-                {walletEth.currentAddress && ethRefInfo?.owner &&
+                {walletEth.currentAddress &&
                 <div className='aff-actions'>
-                    <div className={`aff-link ${ethRefInfo?.active ? "active": ""}`}>
-                        
-                        <span class='aff-link-text'> <img width={40} height={40} style={{marginRight:10}} src='/img/wienerdog/ETH.svg' alt='Copy ETH'/> {shortenText(ethRefURL)} </span>
-                        {
-                            ethRefInfo?.active ? 
-                            <button onClick={() => copyToClipboard(ethRefURL)} class='aff-cpy-btn'><img src="/img/copy-svgrepo-com.svg" alt="Copy Action" width={20} height={20} /> Copy   </button>
-                            :
-                            <button class='aff-active-btn' onClick={registerEth}>
-                                Active {`${configs.ETH.addRefFee}`} <img width={20} height={20} src='/img/wienerdog/ETH.svg' alt='Active ETH'/></button>
-                        }
 
-                    </div>
-
-                    <div className={`aff-link ${bscRefInfo?.active ? "active": ""}`}>
-                      <span class='aff-link-text'><img width={40} height={40} style={{marginRight:10}} src='/img/wienerdog/icon@bnb1.svg' alt='Copy BNB'/>  {shortenText(ethRefURL)}</span>
-
-                      {
-                        bscRefInfo?.active ?
-                        <button class='aff-cpy-btn' onClick={() => copyToClipboard(ethRefURL)}>
-                            <img src="/img/copy-svgrepo-com.svg" alt="Copy Action" width={20} height={20} /> Copy  </button>
-                        :
-                        <button class='aff-active-btn' onClick={registerBsc}>
-                            Active {`${configs.BSC.addRefFee}`} <img width={20} height={20} src='/img/wienerdog/icon@bnb1.svg' alt='Active BNB'/></button>
-                      }
-
-                    </div>     
+                    
+                    <EthRefView/>
+                    <BscRefView/>
                 </div>
                 }
 

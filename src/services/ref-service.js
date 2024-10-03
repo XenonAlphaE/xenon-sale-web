@@ -21,9 +21,15 @@ export const getUserRefInfo =  async (globalConfigs, refString, refStringHashed)
         )    
         
         
-        const tokenInfo = await contract.methods.refInfos(key).call();
-        
-        return tokenInfo
+        try{
+
+            const tokenInfo = await contract.methods.refInfos(key).call();
+            
+            return tokenInfo
+        }
+        catch{
+            return {}
+        }
     }
 
     const getRefInfoETH =  async (key) => {
@@ -35,13 +41,29 @@ export const getUserRefInfo =  async (globalConfigs, refString, refStringHashed)
             salerInfo.address,
         )
         
-        const tokenInfo = await contract.methods.refInfos(key).call();
-        return tokenInfo
+        try{
+            const tokenInfo = await contract.methods.refInfos(key).call();
+            return tokenInfo
+        }
+        catch{
+            return {}
+        }
+        
     }
-    const [purchaseBSC, purchaseETH] = await Promise.all([getRefInfoBSC(refStringHashed), getRefInfoETH(refStringHashed)]);
 
-    // const purchaseBSC = await getPurchasInfoBSC(key);
-    // const purchaseETH = await getPurchasInfoETH(key);
-    debugger
-    return {bsc: purchaseBSC, eth: purchaseETH};
+    
+    // const purchaseBSC = await getRefInfoBSC(refStringHashed)
+    // const purchaseETH = await getRefInfoETH(refStringHashed)
+    try{
+
+        const [purchaseBSC, purchaseETH] = await Promise.all([getRefInfoBSC(refStringHashed), getRefInfoETH(refStringHashed)]);
+    
+        // const purchaseBSC = await getPurchasInfoBSC(key);
+        // const purchaseETH = await getPurchasInfoETH(key);
+        
+        return {bsc: purchaseBSC, eth: purchaseETH};
+    }
+    catch{
+        return {bsc: {}, eth: {}};
+    }
 }

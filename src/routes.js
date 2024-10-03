@@ -8,7 +8,7 @@ import AffPage from './pages/affPage';
 function AppRoutes(){
   return (<Routes>
     <Route path="/" element={<App />} />
-    <Route path="/staking" element={<Staking />} />
+    {/* <Route path="/staking" element={<Staking />} /> */}
     <Route path="/community" element={<AffPage />} />
       {/* Catch-all route for any other path */}
   </Routes>

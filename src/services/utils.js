@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
 export function shortenText(text) {
+  if(!text) {
+    return "";
+  }
+  
   if (text.length <= 10) return text; // If the text is too short, no need to modify it
   const prefix = text.slice(0, 14);    // Get the first 6 characters
   const suffix = text.slice(-4);      // Get the last 4 characters
