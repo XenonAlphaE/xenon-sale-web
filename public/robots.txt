@@ -1,6 +1,6 @@
 # Allow all web crawlers to access everything
 User-agent: *
-Allow: /
+Allow: /favicon.ico
 
 # Disallow web crawlers from accessing the admin and private directories
 Disallow: /admin/
