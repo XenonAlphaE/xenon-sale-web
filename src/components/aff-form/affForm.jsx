@@ -122,7 +122,7 @@ export const AffForm = () => {
 
             </div>
             :
-            <div>  <img width={20} height={20} src='/img/wienerdog/ETH.svg' alt='Active ETH'/> This address is not qualified to active contribution link</div>
+            <div>  <img width={20} height={20} src='/img/wienerdog/ETH.svg' alt='Active ETH'/> We are verifying your address to active contribution link</div>
         )
 
 
@@ -147,7 +147,7 @@ export const AffForm = () => {
 
             </div> 
             :
-            <div> <img width={20} height={20} src='/img/wienerdog/icon@bnb1.svg' alt='Copy BNB'/>  This address is not qualified to active contribution link</div>
+            <div> <img width={20} height={20} src='/img/wienerdog/icon@bnb1.svg' alt='Copy BNB'/>  We are verifying your address to active contribution link</div>
         )
 
     }
