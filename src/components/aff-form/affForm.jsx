@@ -15,7 +15,6 @@ export const AffForm = () => {
 
     const nativeNetwork = useNativeNetwork()
 
-    const setNativeNetwork = useSetNativeNetwork()
     const walletEth = useWalletETH(nativeNetwork, configs)
 
     const [ethRefURL, setEthRefURL] = useState();
@@ -26,6 +25,7 @@ export const AffForm = () => {
     const [refString, setRefString] = useState();
     const [refStringHashed, setRefStringHashed] = useState();
 
+    const [lastReload, setLastReload] = useState()
 
 
 
@@ -33,24 +33,25 @@ export const AffForm = () => {
 
         const getRefData = async () => {
             
-            const refStr = customHash('0x2DC65f606b73f04c1D9C8a40f631F992C3b10599')
-            // const refStr = customHash(walletEth.currentAddress)
+            // const refStr = customHash('0x2DC65f606b73f04c1D9C8a40f631F992C3b10599')
+            const refStr = customHash(walletEth.currentAddress)
             const refStrHashed = Web3.utils.keccak256(refStr)
 
             const refURL = `https://flockez.com?r=${refStr}`
-            setEthRefURL(shortenText(refURL))
+            setEthRefURL(refURL)
             setRefStringHashed(refStrHashed)
             setRefString(refStr);
             const refInfos = await getUserRefInfo(configs, refStr,refStrHashed)
             console.log(refInfos)
             setBscRefInfo(refInfos.bsc)
             setEthRefInfo(refInfos.eth)
+
         }
 
         if(walletEth.currentAddress){
             getRefData()
         }
-    }, [walletEth.currentAddress])
+    }, [walletEth.currentAddress, lastReload])
 
     const [toastMessage, setToastMessage] = useState('');
     const [showToast, setShowToast] = useState(false);
@@ -89,7 +90,20 @@ export const AffForm = () => {
         setShowToast(false);
     };
 
+    const registerBsc = async () => {
+        await walletEth.addNewRef(configs.BSC.ChainId, configs.BSC.addRefFee,walletEth.currentAddress, refString )
+        setLastReload(new Date().getTime())
 
+
+    }
+
+    const registerEth =async () => {
+        await walletEth.addNewRef(configs.ETH.ChainId, configs.ETH.addRefFee,walletEth.currentAddress, refString )
+        setLastReload(new Date().getTime())
+
+    }
+    
+    
     return (
         <div id="aff" className='aff-container'>
             {showToast && <Toast message={toastMessage} onClose={handleToastClose} />}
@@ -121,24 +135,27 @@ export const AffForm = () => {
                 <div className='aff-actions'>
                     <div className={`aff-link ${ethRefInfo?.active ? "active": ""}`}>
                         
-                        <span class='aff-link-text'> <img width={40} height={40} style={{marginRight:10}} src='/img/wienerdog/ETH.svg' alt='Copy ETH'/> {ethRefURL} </span>
+                        <span class='aff-link-text'> <img width={40} height={40} style={{marginRight:10}} src='/img/wienerdog/ETH.svg' alt='Copy ETH'/> {shortenText(ethRefURL)} </span>
                         {
                             ethRefInfo?.active ? 
                             <button onClick={() => copyToClipboard(ethRefURL)} class='aff-cpy-btn'><img src="/img/copy-svgrepo-com.svg" alt="Copy Action" width={20} height={20} /> Copy   </button>
                             :
-                            <button class='aff-active-btn'>Active 0.01 <img width={20} height={20} src='/img/wienerdog/ETH.svg' alt='Active ETH'/></button>
+                            <button class='aff-active-btn' onClick={registerEth}>
+                                Active {`${configs.ETH.addRefFee}`} <img width={20} height={20} src='/img/wienerdog/ETH.svg' alt='Active ETH'/></button>
                         }
 
                     </div>
 
                     <div className={`aff-link ${bscRefInfo?.active ? "active": ""}`}>
-                      <span class='aff-link-text'><img width={40} height={40} style={{marginRight:10}} src='/img/wienerdog/icon@bnb1.svg' alt='Copy BNB'/>  {ethRefURL}</span>
+                      <span class='aff-link-text'><img width={40} height={40} style={{marginRight:10}} src='/img/wienerdog/icon@bnb1.svg' alt='Copy BNB'/>  {shortenText(ethRefURL)}</span>
 
                       {
-                        ethRefInfo?.active ?
-                        <button class='aff-cpy-btn' onClick={() => copyToClipboard(ethRefURL)}><img src="/img/copy-svgrepo-com.svg" alt="Copy Action" width={20} height={20} /> Copy  </button>
+                        bscRefInfo?.active ?
+                        <button class='aff-cpy-btn' onClick={() => copyToClipboard(ethRefURL)}>
+                            <img src="/img/copy-svgrepo-com.svg" alt="Copy Action" width={20} height={20} /> Copy  </button>
                         :
-                        <button class='aff-active-btn'>Active 0.05 <img width={20} height={20} src='/img/wienerdog/icon@bnb1.svg' alt='Active BNB'/></button>
+                        <button class='aff-active-btn' onClick={registerBsc}>
+                            Active {`${configs.BSC.addRefFee}`} <img width={20} height={20} src='/img/wienerdog/icon@bnb1.svg' alt='Active BNB'/></button>
                       }
 
                     </div>     

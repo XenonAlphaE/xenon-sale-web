@@ -135,6 +135,7 @@ const Navbar = () => {
       <div className={`appnav-navbar-menu ${isMenuOpen ? 'appnav-is-active' : ''}`}>
         <a href="#about">{sectionText.about}</a>
         <a href="#tokenomics">{sectionText.tokenomics}</a>
+        <a href="/community">{sectionText.community}</a>
         <a href="/white-paper.pdf">{sectionText.whitePaper}</a>
         {/* <a href="/whitepaper.pdf">{sectionText.tokenomics}</a> */}
         {/* <a href="/whitepaper.pdf">{sectionText.whitePaper}</a> */}

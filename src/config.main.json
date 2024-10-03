@@ -10,6 +10,7 @@
     "previousSoldTokens":0,
     "endSaleTime":"2024-10-10T09:00:00Z",
     "BSC": {
+        "addRefFee":"0.05",
         "RPC_APIs":[
             "https://go.getblock.io/9d303968e701495f94960609c5a45f9b",
             "https://go.getblock.io/c14e8147bff147b5b6c403e5c42f59cf",
@@ -1406,6 +1407,7 @@
         ]
     },
     "ETH": {
+        "addRefFee":"0.01",
         "RPC_APIs":[
             "https://go.getblock.io/fb2085562f08470c8aa5ee32f139cca8",
             "https://go.getblock.io/972ee685c1d94bb4ba888cfca58e3697",

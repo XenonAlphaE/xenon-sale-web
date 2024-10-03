@@ -1,3 +1,5 @@
+/* global BigInt */
+
 import { ethers,parseEther,Network, parseUnits,formatUnits } from 'ethers';
 import Decimal from 'decimal.js';
 import {useState, useEffect, useMemo} from 'react'
@@ -577,6 +579,29 @@ export const useWalletETH=(nativeNetwork, globalConfigs) => {
     }
    
     
+    const addNewRef = async (targetChain, amount, address, refString) => {
+        try{
+            
+            const currentNetwork = await currentProvider.getNetwork();
+            const chainId = currentNetwork.chainId.valueOf() 
+            const wei = toWei(amount)
+            debugger
+            if(targetChain != Number(chainId)){
+                await currentProvider.send("wallet_switchEthereumChain", [{ chainId: "0x" + targetChain.toString(16) }]);
+
+                // await currentProvider.send("wallet_switchEthereumChain", [{ chainId: `0x${targetChain}` }]);
+            }
+            const {salerContract} = getContracts(BigInt(targetChain))
+    
+            const tx = await salerContract.connect(signer).addRefAddress(address, refString, {value: wei});
+            await tx.wait();
+            console.log("Add new ref succeeded.")
+        }
+        catch{
+
+        }
+
+    }
     return {
         // buyTokens, buyTokensUSDT, approveUSDT_BSC, approveUSDT_ETH,
         currentAddress: signer?.address, 
@@ -594,7 +619,8 @@ export const useWalletETH=(nativeNetwork, globalConfigs) => {
         swicthNativeNetwork,
         connect: connectWallet,
         buyTokensUSDT,
-        buyTokensUSDTWifRef
+        buyTokensUSDTWifRef,
+        addNewRef
         //  wasAddedToken, claimTokens, airdropTokens, directBuyTokensUSDT, 
         }
 }

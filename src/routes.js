@@ -9,7 +9,7 @@ function AppRoutes(){
   return (<Routes>
     <Route path="/" element={<App />} />
     <Route path="/staking" element={<Staking />} />
-    <Route path="/affiliate" element={<AffPage />} />
+    <Route path="/community" element={<AffPage />} />
       {/* Catch-all route for any other path */}
   </Routes>
 );
