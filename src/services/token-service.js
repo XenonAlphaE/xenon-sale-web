@@ -3,27 +3,8 @@ import Web3 from 'web3';
 
 import { ethers,parseEther,Network, parseUnits , formatUnits} from 'ethers';
 import Decimal from 'decimal.js';
+import { getRandomItemFromArray } from './utils';
 
-function getRandomItemFromArray(input, defaultValue = null) {
-    // Check if input is undefined or null (falsy)
-    if (input === undefined || input === null) {
-      throw new TypeError('Input cannot be undefined or null');
-    }
-  
-    // Convert input to an array (if not already)
-    const list = Array.isArray(input) ? input : [input];
-  
-    // Check if the array is empty
-    if (list.length === 0) {
-      return defaultValue;
-    }
-  
-    // Get a random index within the list length
-    const randomIndex = Math.floor(Math.random() * list.length);
-  
-    // Return the item at the random index
-    return list[randomIndex];
-  }
 
   
   export const getUserPurchaseInfo =  async (globalConfigs, address) => {

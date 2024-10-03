@@ -1,5 +1,8 @@
 {
     "en": {
+        "aff":{
+            "connectWallet":"CONNECT WALLET"
+        },
         "staking": {
             "header": "WELCOME TO PLAYDOGE STAKING",
             "subTitle": "The distribution of $PLAY token rewards will occur at a rate of 3938 $PLAY per Ethereum (ETH) block and will be disbursed over 2 years.",

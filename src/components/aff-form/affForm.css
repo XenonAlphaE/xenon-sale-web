@@ -1,0 +1,176 @@
+.aff-container{
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.aff-form{
+    border: solid 1px black;
+    padding: 20px;
+    border-radius: 20px;
+    min-height: 200px;
+    width: 50%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.aff-intro{
+    font-family: Arial, sans-serif; 
+    line-height: 1.5; 
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+}
+
+.aff-actions {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.aff-actions .connection-btn{
+    max-width: 800px;
+    border: solid 4px black;
+    align-items: center;
+    background-clip: border-box;
+    background-color: rgb(80, 184, 97);
+    background-image: none;
+    background-origin: padding-box;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: flex;
+    font-family: Sausages, sans-serif;
+    font-feature-settings: normal;
+    font-kerning: auto;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    font-size-adjust: none;
+    font-stretch: 100%;
+    font-style: normal;
+    font-variant-alternates: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-variant-position: normal;
+    font-variation-settings: normal;
+    font-weight: 400;
+    height: 60px;
+    justify-content: center;
+    letter-spacing: 0.5px;
+    line-height: 21.4286px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    min-height: 45px;
+    min-width: 100px;
+    overflow-x: visible;
+    overflow-y: visible;
+    padding-block-end: 10px;
+    padding-block-start: 10px;
+    padding-bottom: 10px;
+    padding-inline-end: 10px;
+    padding-inline-start: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    text-align: center;
+    text-indent: 0px;
+    text-rendering: auto;
+    text-shadow: none;
+    text-size-adjust: 100%;
+    text-transform: none;
+    width: 213.922px;
+    word-spacing: 0px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-border-image: none;
+}
+
+
+.aff-link {
+    width: 70%;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .aff-link.active {
+    background-color: #fff;
+    border-color: #ffa500;
+  }
+  
+  /* Text styling for the link */
+  .aff-link-text {
+    color: #666; /* Gray color for non-active */
+    opacity: 0.5; /* Hazy effect for non-active links */
+  }
+  
+  .aff-link.active .aff-link-text {
+    color: #000; /* Normal color for active */
+    opacity: 1;   /* Fully visible when active */
+  }
+  
+  /* Button styling */
+  .aff-active-btn {
+    padding: 8px 16px;
+    background-color: #fff;
+    border: solid 2px #ffa500;
+    border-radius: 3px;
+    color: #ffa500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    opacity: 1; /* Always visible */
+  }
+  
+  .aff-active-btn:hover {
+    background-color: #ff7f00; /* Darker orange on hover */
+    border: solid 2px #ff7f00;
+
+    color :white;
+  }
+  
+
+  .aff-cpy-btn {
+    padding: 8px 16px;
+    background-color: #ffa500;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    opacity: 1; /* Always visible */
+  }
+  
+  .aff-cpy-btn:hover {
+    background-color: #ff7f00; /* Darker orange on hover */
+  }
+
+
+/* mobile Styles */
+@media (max-width: 680px) {
+    .aff-container{
+        min-height: 600px;
+    }
+
+    .aff-form .connection-btn{
+        max-width: 100%;
+    }
+
+}
