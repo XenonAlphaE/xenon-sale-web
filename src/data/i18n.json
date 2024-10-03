@@ -196,6 +196,7 @@
             "claimRewards": "Nhận Phần Thưởng"
         },
         "nav": {
+            "community":"CỘNG ĐỒNG",
             "staking": "ĐẶT CỌC",
             "whitePaper": "SÁCH TRẮNG",
             "tokenomics": "KINH TẾ HỌC TOKEN",
@@ -369,6 +370,7 @@
             "claimRewards": "Reclamar Recompensas"
         },
         "nav": {
+            "community":"COMUNIDAD",
             "staking": "APUESTA",
             "whitePaper": "LIBRO BLANCO",
             "tokenomics": "TOKENOMICS",
@@ -542,6 +544,7 @@
             "claimRewards": "Belohnungen Einfordern"
         },
         "nav": {
+            "community":"GEMEINSCHAFT",
             "staking": "EINSATZ",
             "whitePaper": "WEIßBUCH",
             "tokenomics": "TOKENOMICS",
@@ -715,6 +718,7 @@
             "claimRewards": "领取奖励"
         },
         "nav": {
+            "community":"社区",
             "staking": "质押",
             "whitePaper": "白皮书",
             "tokenomics": "代币经济学",
@@ -888,6 +892,7 @@
             "claimRewards": "報酬を請求する"
         },
         "nav": {
+            "community":"コミュニティ",
             "staking": "ステーキング",
             "whitePaper": "ホワイトペーパー",
             "tokenomics": "トケノミクス",
