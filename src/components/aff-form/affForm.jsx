@@ -67,15 +67,12 @@ export const AffForm = () => {
         });
     };
 
-    useEffect(() => {
-       console.log('HEV06BWRSY', Web3.utils.keccak256('HEV06BWRSY') )
-    }, [])
+    // useEffect(() => {
+    //    console.log('HEV06BWRSY', Web3.utils.keccak256('HEV06BWRSY') )
+    // }, [])
 
     useEffect( () => {
-        const arr = ['0xF12C1022D55E2de9D5CF3261cbF0E628E38ef5Ef',
-        '0x2DC65f606b73f04c1D9C8a40f631F992C3b10599',
-        '0x768397E752880E3Ae21035716126165eb97Ed5f1']
-
+        const arr = ['0xD9bA68eB66C03FC7f46CAC78f9ae05c56fb4C457']
         console.log('-=======================-')
         for(const val of arr){
             const refStr = customHash(val)
@@ -117,12 +114,12 @@ export const AffForm = () => {
                     <button onClick={() => copyToClipboard(ethRefURL)} className='aff-cpy-btn'><img src="/img/copy-svgrepo-com.svg" alt="Copy Action" width={20} height={20} /> Copy   </button>
                     :
                     <button className='aff-active-btn' onClick={registerEth}>
-                        Active {`${configs.ETH.addRefFee}`} <img width={20} height={20} src='/img/wienerdog/ETH.svg' alt='Active ETH'/></button>
+                        { sectionText?.active} {`${configs.ETH.addRefFee}`} <img width={20} height={20} src='/img/wienerdog/ETH.svg' alt='Active ETH'/></button>
                 }
 
             </div>
             :
-            <div>  <img width={20} height={20} src='/img/wienerdog/ETH.svg' alt='Active ETH'/> We are verifying your address to active contribution link</div>
+            <div>  <img width={20} height={20} src='/img/wienerdog/ETH.svg' alt='Active ETH'/> {sectionText?.loadingMsg}</div>
         )
 
 
@@ -142,15 +139,26 @@ export const AffForm = () => {
                     <img src="/img/copy-svgrepo-com.svg" alt="Copy Action" width={20} height={20} /> Copy  </button>
                 :
                 <button className='aff-active-btn' onClick={registerBsc}>
-                    Active {`${configs.BSC.addRefFee}`} <img width={20} height={20} src='/img/wienerdog/icon@bnb1.svg' alt='Active BNB'/></button>
+                    {sectionText?.active} {`${configs.BSC.addRefFee}`} <img width={20} height={20} src='/img/wienerdog/icon@bnb1.svg' alt='Active BNB'/></button>
                 }
 
             </div> 
             :
-            <div> <img width={20} height={20} src='/img/wienerdog/icon@bnb1.svg' alt='Copy BNB'/>  We are verifying your address to active contribution link</div>
+            <div> <img width={20} height={20} src='/img/wienerdog/icon@bnb1.svg' alt='Copy BNB'/>  {sectionText?.loadingMsg}</div>
         )
 
     }
+
+    // Function to replace placeholders with <strong> elements
+    const replacePlaceholders = (text, strongText) => {
+        return text.split(/(\{strong\d+\})/g).map((part, i) => {
+        if (part.match(/\{strong\d+\}/)) {
+            const key = part.slice(1, -1); // Get 'strong1', 'strong2', etc.
+            return <strong key={i}>{strongText[key]}</strong>;
+        }
+        return part;
+        });
+    };
     
     
     return (
@@ -159,15 +167,15 @@ export const AffForm = () => {
             <input type='text' value={refStringHashed} style={{display:"none"}} />
             <div className='aff-form'>
                 <div className='aff-intro'>
-                      <h2 style={{color: '#ffa500'}}>Join Our Community and Earn Rewards!</h2>
-                      
-                      <p>
-                          We’re excited to <strong>celebrate your contributions</strong> as we work together to grow and enhance our community. Your efforts are invaluable in helping us thrive.
-                      </p>
-                      
-                      <p>
-                          Share your <strong>unique contribution link</strong> with friends and invite them to join. As a token of our appreciation, you’ll <strong>earn commissions</strong> for every contribution made through your link. It's our way of saying <strong>thank you</strong> for supporting and participating in our journey!
-                      </p>
+                    {/* Render heading with dynamic style */}
+                    <h2 style={{ color: sectionText?.heading?.style?.color }}>{sectionText?.heading?.text}</h2>
+
+                    {/* Render paragraphs with placeholders replaced */}
+                    {sectionText?.paragraphs?.map((para, index) => (
+                    <p key={index}>
+                        {replacePlaceholders(para.text, para.strong)}
+                    </p>
+                    ))}
                 </div>
 
                 {!walletEth.currentAddress && 

@@ -1,7 +1,31 @@
 {
     "en": {
-        "aff":{
-            "connectWallet":"CONNECT WALLET"
+        "aff": {
+            "connectWallet": "CONNECT WALLET",
+            "loadingMsg": "We are verifying your address to active contribution link",
+            "active": "Active",
+            "heading": {
+                "text": "Join Our Community and Earn Rewards!",
+                "style": {
+                    "color": "#ffa500"
+                }
+            },
+            "paragraphs": [
+                {
+                    "text": "We’re excited to {strong1} as we work together to grow and enhance our community. Your efforts are invaluable in helping us thrive.",
+                    "strong": {
+                        "strong1": "celebrate your contributions"
+                    }
+                },
+                {
+                    "text": "Share your {strong1} with friends and invite them to join. As a token of our appreciation, you’ll {strong2} for every contribution made through your link. It's our way of saying {strong3} for supporting and participating in our journey!",
+                    "strong": {
+                        "strong1": "unique contribution link",
+                        "strong2": "earn commissions",
+                        "strong3": "thank you"
+                    }
+                }
+            ]
         },
         "staking": {
             "header": "WELCOME TO PLAYDOGE STAKING",
@@ -29,7 +53,7 @@
             "buyNow": "BUY NOW",
             "audit": "AUDIT",
             "about": "ABOUT",
-            "community":"FRIENDS",
+            "community": "FRIENDS",
             "about1": "What is WienerAI",
             "about2": "How To Buy",
             "about3": "FAQ"
@@ -50,11 +74,11 @@
             "buyMax": "BUY MAX",
             "warning": "Please install Metamask to buy",
             "link": "click here",
-            "connectWallet":"CONNECT WALLET",
-            "ethOption":"ETH NETWORK" ,
-            "bnbOption":"BNB NETWORK",
-            "buyStake":"Buy and Stake for 8471% Rewards",
-            "nextPriceAlert":"UNTIL PRICE INCREASE"
+            "connectWallet": "CONNECT WALLET",
+            "ethOption": "ETH NETWORK",
+            "bnbOption": "BNB NETWORK",
+            "buyStake": "Buy and Stake for 8471% Rewards",
+            "nextPriceAlert": "UNTIL PRICE INCREASE"
         },
         "outMore": {
             "info1": {
@@ -176,6 +200,33 @@
         }
     },
     "vi": {
+        "aff": {
+            "connectWallet": "KẾT NỐI VÍ",
+            "loadingMsg": "Chúng tôi đang xác minh địa chỉ của bạn để kích hoạt liên kết đóng góp",
+            "active": "Kích hoạt",
+            "heading": {
+                "text": "Tham gia Cộng đồng của Chúng tôi và Nhận Phần thưởng!",
+                "style": {
+                    "color": "#ffa500"
+                }
+            },
+            "paragraphs": [
+                {
+                    "text": "Chúng tôi rất vui mừng được {strong1} khi chúng ta cùng nhau phát triển và nâng cao cộng đồng của mình. Những nỗ lực của bạn là vô giá trong việc giúp chúng tôi phát triển.",
+                    "strong": {
+                        "strong1": "ăn mừng những đóng góp của bạn"
+                    }
+                },
+                {
+                    "text": "Chia sẻ {strong1} của bạn với bạn bè và mời họ tham gia. Như một biểu hiện lòng biết ơn, bạn sẽ {strong2} cho mỗi đóng góp được thực hiện qua liên kết của bạn. Đó là cách chúng tôi nói {strong3} bạn đã hỗ trợ và tham gia hành trình của chúng tôi!",
+                    "strong": {
+                        "strong1": "liên kết đóng góp độc đáo",
+                        "strong2": "kiếm được hoa hồng",
+                        "strong3": "lời cảm ơn"
+                    }
+                }
+            ]
+        },
         "staking": {
             "header": "CHÀO MỪNG ĐẾN VỚI WIENERAI STAKING",
             "subTitle": "Phân phối phần thưởng token $WAI sẽ diễn ra với tỷ lệ 3938 $WAI mỗi khối Ethereum (ETH) và sẽ được phát hành trong vòng 2 năm.",
@@ -196,7 +247,7 @@
             "claimRewards": "Nhận Phần Thưởng"
         },
         "nav": {
-            "community":"CỘNG ĐỒNG",
+            "community": "CỘNG ĐỒNG",
             "staking": "ĐẶT CỌC",
             "whitePaper": "SÁCH TRẮNG",
             "tokenomics": "KINH TẾ HỌC TOKEN",
@@ -227,8 +278,7 @@
             "ethOption": "MUA BẰNG ETH",
             "bnbOption": "MUA BẰNG BNB",
             "buyStake": "Mua và Đặt Cọc để Nhận 8471% Phần Thưởng",
-            "nextPriceAlert":"CHO ĐẾN KHI GIÁ TĂNG"
-
+            "nextPriceAlert": "CHO ĐẾN KHI GIÁ TĂNG"
         },
         "outMore": {
             "info1": {
@@ -350,6 +400,33 @@
         }
     },
     "es": {
+        "aff": {
+            "connectWallet": "CONECTAR BILLETERA",
+            "loadingMsg": "Estamos verificando tu dirección para activar el enlace de contribución",
+            "active": "Activo",
+            "heading": {
+                "text": "¡Únete a Nuestra Comunidad y Gana Recompensas!",
+                "style": {
+                    "color": "#ffa500"
+                }
+            },
+            "paragraphs": [
+                {
+                    "text": "Estamos emocionados de {strong1} mientras trabajamos juntos para hacer crecer y mejorar nuestra comunidad. Tus esfuerzos son invaluables para ayudarnos a prosperar.",
+                    "strong": {
+                        "strong1": "celebrar tus contribuciones"
+                    }
+                },
+                {
+                    "text": "Comparte tu {strong1} con amigos e invítalos a unirse. Como muestra de nuestro agradecimiento, {strong2} por cada contribución realizada a través de tu enlace. ¡Es nuestra manera de decir {strong3} por apoyar y participar en nuestro viaje!",
+                    "strong": {
+                        "strong1": "enlace de contribución único",
+                        "strong2": "ganarás comisiones",
+                        "strong3": "gracias"
+                    }
+                }
+            ]
+        },
         "staking": {
             "header": "BIENVENIDO A WIENERAI STAKING",
             "subTitle": "La distribución de las recompensas de tokens $WAI ocurrirá a una tasa de 3938 $WAI por bloque de Ethereum (ETH) y se distribuirá durante 2 años.",
@@ -370,7 +447,7 @@
             "claimRewards": "Reclamar Recompensas"
         },
         "nav": {
-            "community":"COMUNIDAD",
+            "community": "COMUNIDAD",
             "staking": "APUESTA",
             "whitePaper": "LIBRO BLANCO",
             "tokenomics": "TOKENOMICS",
@@ -401,8 +478,7 @@
             "ethOption": "COMPRAR CON ETH",
             "bnbOption": "COMPRAR CON BNB",
             "buyStake": "Comprar y Apostar para 8471% Recompensas",
-            "nextPriceAlert":"HASTA QUE AUMENTE EL PRECIO"
-
+            "nextPriceAlert": "HASTA QUE AUMENTE EL PRECIO"
         },
         "outMore": {
             "info1": {
@@ -524,6 +600,33 @@
         }
     },
     "de": {
+        "aff": {
+            "connectWallet": "WALLET VERBINDEN",
+            "loadingMsg": "Wir überprüfen Ihre Adresse, um den Beitragslink zu aktivieren",
+            "active": "Aktiv",
+            "heading": {
+                "text": "Treten Sie unserer Gemeinschaft bei und verdienen Sie Belohnungen!",
+                "style": {
+                    "color": "#ffa500"
+                }
+            },
+            "paragraphs": [
+                {
+                    "text": "Wir freuen uns, Ihre {strong1}, während wir zusammenarbeiten, um unsere Gemeinschaft zu wachsen und zu verbessern. Ihre Bemühungen sind von unschätzbarem Wert.",
+                    "strong": {
+                        "strong1": "Beiträge zu feiern"
+                    }
+                },
+                {
+                    "text": "Teilen Sie Ihren {strong1} mit Freunden und laden Sie sie ein. Als Zeichen unserer Wertschätzung erhalten Sie {strong2} für jeden Beitrag, der über Ihren Link geleistet wird. Es ist unsere Art, {strong3} für Ihre Unterstützung zu sagen.",
+                    "strong": {
+                        "strong1": "einzigartigen Beitragslink",
+                        "strong2": "Provisionen",
+                        "strong3": "Danke"
+                    }
+                }
+            ]
+        },
         "staking": {
             "header": "WILLKOMMEN BEI WIENERAI STAKING",
             "subTitle": "Die Verteilung der $WAI Token-Belohnungen erfolgt mit einer Rate von 3938 $WAI pro Ethereum (ETH) Block und wird über 2 Jahre ausgezahlt.",
@@ -544,7 +647,7 @@
             "claimRewards": "Belohnungen Einfordern"
         },
         "nav": {
-            "community":"GEMEINSCHAFT",
+            "community": "GEMEINSCHAFT",
             "staking": "EINSATZ",
             "whitePaper": "WEIßBUCH",
             "tokenomics": "TOKENOMICS",
@@ -575,8 +678,7 @@
             "ethOption": "KAUFEN MIT ETH",
             "bnbOption": "KAUFEN MIT BNB",
             "buyStake": "Kaufen und Staken für 8471% Belohnungen",
-            "nextPriceAlert":"BIS ZUR PREISERHÖHUNG"
-
+            "nextPriceAlert": "BIS ZUR PREISERHÖHUNG"
         },
         "outMore": {
             "info1": {
@@ -698,6 +800,33 @@
         }
     },
     "zh": {
+        "aff": {
+            "connectWallet": "连接钱包",
+            "loadingMsg": "我们正在验证您的地址以激活贡献链接",
+            "active": "激活",
+            "heading": {
+                "text": "加入我们的社区，赚取奖励！",
+                "style": {
+                    "color": "#ffa500"
+                }
+            },
+            "paragraphs": [
+                {
+                    "text": "我们非常高兴能够{strong1}，因为我们一起努力发展和提升我们的社区。您的努力对我们的发展至关重要。",
+                    "strong": {
+                        "strong1": "庆祝您的贡献"
+                    }
+                },
+                {
+                    "text": "将您的{strong1}分享给朋友并邀请他们加入。作为我们感谢的一种方式，您将为通过您的链接所做的每一笔贡献{strong2}。这是我们表达{strong3}的方式。",
+                    "strong": {
+                        "strong1": "独特贡献链接",
+                        "strong2": "获得佣金",
+                        "strong3": "感谢"
+                    }
+                }
+            ]
+        },
         "staking": {
             "header": "欢迎来到 WIENERAI 质押",
             "subTitle": "$WAI 代币奖励的分配将以每个以太坊 (ETH) 区块 3938 $WAI 的速度进行，并将在 2 年内分发。",
@@ -718,7 +847,7 @@
             "claimRewards": "领取奖励"
         },
         "nav": {
-            "community":"社区",
+            "community": "社区",
             "staking": "质押",
             "whitePaper": "白皮书",
             "tokenomics": "代币经济学",
@@ -749,8 +878,7 @@
             "ethOption": "用 ETH 购买",
             "bnbOption": "用 BNB 购买",
             "buyStake": "购买并质押以获得 8471% 奖励",
-            "nextPriceAlert":"直至价格上涨"
-
+            "nextPriceAlert": "直至价格上涨"
         },
         "outMore": {
             "info1": {
@@ -872,6 +1000,33 @@
         }
     },
     "jp": {
+        "aff": {
+            "connectWallet": "ウォレットを接続",
+            "loadingMsg": "アドレスを確認して貢献リンクを有効にしています",
+            "active": "アクティブ",
+            "heading": {
+                "text": "コミュニティに参加して報酬を獲得しよう！",
+                "style": {
+                    "color": "#ffa500"
+                }
+            },
+            "paragraphs": [
+                {
+                    "text": "私たちは、{strong1}に興奮しています。コミュニティの成長と改善に向けて共に取り組んでいます。あなたの努力は、私たちの成功にとって非常に重要です。",
+                    "strong": {
+                        "strong1": "あなたの貢献を祝う"
+                    }
+                },
+                {
+                    "text": "{strong1}を友達と共有して、参加を招待してください。感謝の気持ちとして、リンクを通じて行われたすべての貢献に対して{strong2}を獲得します。それは、私たちの旅をサポートしてくれたことへの{strong3}のしるしです。",
+                    "strong": {
+                        "strong1": "ユニークな貢献リンク",
+                        "strong2": "コミッション",
+                        "strong3": "感謝"
+                    }
+                }
+            ]
+        },
         "staking": {
             "header": "WIENERAI ステーキングへようこそ",
             "subTitle": "$WAI トークン報酬の配布は、イーサリアム (ETH) ブロックごとに 3938 $WAI のレートで行われ、2 年間にわたって分配されます。",
@@ -892,7 +1047,7 @@
             "claimRewards": "報酬を請求する"
         },
         "nav": {
-            "community":"コミュニティ",
+            "community": "コミュニティ",
             "staking": "ステーキング",
             "whitePaper": "ホワイトペーパー",
             "tokenomics": "トケノミクス",
@@ -923,8 +1078,7 @@
             "ethOption": "ETHで購入",
             "bnbOption": "BNBで購入",
             "buyStake": "購入して8471%の報酬を賭ける",
-            "nextPriceAlert":"価格上昇まであと"
-
+            "nextPriceAlert": "価格上昇まであと"
         },
         "outMore": {
             "info1": {
