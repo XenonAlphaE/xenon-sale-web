@@ -39,26 +39,13 @@ export const About = () => {
 
                     <div className="col-12 col-md-7 " style={{position:'relative'}}>
                         <div className="about-content">
-                            <p>
-                            The future of decentralization has arrived.
-                            </p>
-                            <p>
-                            In the chaotic PVP world of meme coins, where every key decision is made by a single leader, FLOCKERZ empowers its community—known as 'The Flock'—to guide the project to the promised land.
-                            </p>
-                            <p>
-                            At the core of FLOCKERZ lies Flocktopia, a revolutionary DAO.
-
-</p>
-                            <p>
-                            Here, every holder not only has a voice but earns rewards through our groundbreaking Vote-To-Earn mechanism.
-
-</p>
-                            <p>
-                            Now YOU get to decide the path of the $FLOCK.
-
-</p>
+                            <p>{sectionText?.description1}</p>
+                            <p>{sectionText?.description2}</p>
+                            <p>{sectionText?.description3}</p>
+                            <p>{sectionText?.description4}</p>
+                            <p>{sectionText?.description5}</p>
                             <div className='btn-container'>
-                                <button className='buy-btn' onClick={scrollToBuySection}>  Buy $FLOCK Presale NOW! </button>
+                                <button className='buy-btn' onClick={scrollToBuySection}>  {sectionText?.buyNow} </button>
                             </div>
                         </div>
                         <img className='about-content-welcome' src='/img/flockers/welcome-about.png' />

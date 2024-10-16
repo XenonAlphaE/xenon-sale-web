@@ -15,7 +15,7 @@ import CurrencyDropdown from './currency-dropdown/CurrencyDropdown';
 import { useWalletETH } from '../services/wallet-service1';
 import { useNativeNetwork, useSetNativeNetwork } from '../utils/nativeNetworkUtils';
 import { CURRENCIES,CURR_CODE, NETWORK_OTIONS, VALID_NETWORKS } from '../ducks/nativeNetworkDuck';
-import { useLocation } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 
 export const Header = () => {
   const sectionText = useI18nSection('buyForm')
@@ -245,27 +245,27 @@ export const Header = () => {
             <Col md={7} sm={12} className='col-xs-12' style={{position:'relative'}}>
                 <div className='intro-content'> 
                   <div>
-                    <p className='font-30' style={{ fontFamily:'Sausages,sans-serif', lineHeight: '50px'}}>8471% staking REWARDS                    </p>
-                    <p className='font-30' style={{ fontFamily:'Sausages,sans-serif', lineHeight: '50px'}}>$FLOCK. the people's meme coin. </p>
-                    <p className='font-30' style={{ fontFamily:'Sausages,sans-serif', maxWidth: 654, margin: 0, lineHeight: '50px'}}>The Flockerz revolutionary Vote-To-Earn platform puts the POWER in your hands. Buy early presale NOW to earn MASSIVE rewards! </p>
+                    <p className='font-30' style={{ fontFamily:'Sausages,sans-serif', lineHeight: '50px'}}>{sectionText?.para1}           </p>
+                    <p className='font-30' style={{ fontFamily:'Sausages,sans-serif', lineHeight: '50px'}}>{sectionText?.para2}    </p>
+                    <p className='font-30' style={{ fontFamily:'Sausages,sans-serif', maxWidth: 654, margin: 0, lineHeight: '50px'}}>{sectionText?.para3}    </p>
 
                   </div>
                   <div style={{display:'flex', fontSize: 24, flexWrap:'wrap', gap: 10}}>
                       <div style={{display: 'flex', backgroundColor:'rgb(32, 69, 202)', padding: '10px 15px', borderRadius: '28px'}}>
                           <img src='/img/flockers/circle.svg'/>
-                          <span style={{color:'white', paddingLeft: 8}}>EARN BY VOTING</span>
+                          <span style={{color:'white', paddingLeft: 8}}>{sectionText?.note1}   </span>
                       </div>
                       <div style={{display: 'flex', backgroundColor:'rgb(32, 69, 202)', padding: '10px 15px', borderRadius: '25px'}}>
                           <img src='/img/flockers/circle.svg'/>
-                          <span style={{color:'white', paddingLeft: 8}}>HUGE EARLY REWARDS</span>
+                          <span style={{color:'white', paddingLeft: 8}}>{sectionText?.note2} </span>
                       </div>
                       <div style={{display: 'flex', backgroundColor:'rgb(32, 69, 202)', padding: '10px 15px', borderRadius: '25px'}}>
                           <img src='/img/flockers/circle.svg'/>
-                          <span style={{color:'white', paddingLeft: 8}}>YOU OWN THE FUTURE  </span>
+                          <span style={{color:'white', paddingLeft: 8}}>{sectionText?.note3}   </span>
                       </div>
                       <div style={{display: 'flex', backgroundColor:'rgb(32, 69, 202)', padding: '10px 15px', borderRadius: '25px'}}>
                           <img src='/img/flockers/circle.svg'/>
-                          <span style={{color:'white', paddingLeft: 8}}>AND MORE...</span>
+                          <span style={{color:'white', paddingLeft: 8}}>{sectionText?.note4}</span>
                       </div>
                   </div>
                 </div>

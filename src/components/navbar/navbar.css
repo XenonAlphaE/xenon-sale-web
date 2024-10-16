@@ -216,6 +216,9 @@
   padding: 20px 10px; /* Added padding */
   z-index: 1000;
   width: max-content; 
+  height: 220px;
+  max-height: 220px;
+  overflow-y: auto;
 }
 
 .lang-dropdown-content.open {
@@ -236,6 +239,10 @@
 
 .lang-dropdown-item span {
   margin-right: 5px;
+}
+
+.lang-dropdown-item a {
+  color : white;
 }
 
 .lang-dropdown-icon{
@@ -303,6 +310,9 @@
     padding: 20px 10px; /* Added padding */
     z-index: 1000;
     width: max-content; 
+    height: 220px;
+    max-height: 220px;
+    overflow-y: auto;
   }
 
   .appnav-navbar-menu,

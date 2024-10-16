@@ -6,7 +6,9 @@ import i18nData from '../data/i18n.json'
 const SET_LANGUAGE = 'language/SET_LANGUAGE'; // New action type for setting language
 
 // Valid ranges for language and speed
-const VALID_LANGUAGES = ['en', 'zh', 'es', 'ge', 'jp', 'de', 'vi']; // Example valid language codes
+const VALID_LANGUAGES = ['en', 'zh', 'es', 'ge', 'jp', 'de', 'vi', 'fr', 'it', 'pt', 'ru', 'ar', 'hi', 'ko', 'th', 'nl', 'tr',
+  'el', 'sv', 'he', 'uk', 'ms', 'id', 'fa', 'bn', 'ta', 'pl'
+]; // Example valid language codes
 
  // Helper function to get the browser's default language
 const getBrowserLanguage = () => {
@@ -15,16 +17,16 @@ const getBrowserLanguage = () => {
 };
 
 // Determine the initial language
-const determineInitialLanguage = () => {
-  const storedLanguage = localStorage.getItem('language');
-  if (storedLanguage && VALID_LANGUAGES.includes(storedLanguage)) {
-    return storedLanguage;
-  }
+const determineInitialLanguage = () => {  
+  // const storedLanguage = localStorage.getItem('language');
+  // if (storedLanguage && VALID_LANGUAGES.includes(storedLanguage)) {
+  //   return storedLanguage;
+  // }
 
-  const browserLanguage = getBrowserLanguage();
-  if (VALID_LANGUAGES.includes(browserLanguage)) {
-    return browserLanguage;
-  }
+  // const browserLanguage = getBrowserLanguage();
+  // if (VALID_LANGUAGES.includes(browserLanguage)) {
+  //   return browserLanguage;
+  // }
 
   return 'en'; // Default to 'en' if browser language is not valid
 };
