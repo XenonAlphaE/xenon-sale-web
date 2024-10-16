@@ -221,6 +221,11 @@
   overflow-y: auto;
 }
 
+.lang-dropdown-content a {
+  color : white;
+}
+
+
 .lang-dropdown-content.open {
   display: block;
 }
@@ -241,9 +246,6 @@
   margin-right: 5px;
 }
 
-.lang-dropdown-item a {
-  color : white;
-}
 
 .lang-dropdown-icon{
   color: #fff
