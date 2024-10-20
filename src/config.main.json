@@ -4,11 +4,11 @@
         "address":"",
         "decimals":18,
         "symbol": "FLOCK",
-        "tokenPrice":"0.005724"
+        "tokenPrice":"0.0058161"
     },
     "previousRaised":5009043.52,
     "previousSoldTokens":0,
-    "endSaleTime":"2024-10-20T09:00:00Z",
+    "endSaleTime":"2024-10-22T09:00:00Z",
     "BSC": {
         "addRefFee":"0.05",
         "RPC_APIs":[
