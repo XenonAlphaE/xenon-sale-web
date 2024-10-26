@@ -299,7 +299,7 @@ export const Header = () => {
                     </div>
                   </div>
                   <div className="title-wallet w-100">
-                  <p className="fw-semibold text-black font-17">USDT Raised: $1,036,255.42 / $1,248,139</p>
+                  <p className="fw-semibold text-black font-17">USDT Raised: $1,083,348.42 / $1,336,793</p>
                     {/* {truncateMiddle(walletEth.currentAddress)} */}
                     <ProgressBar percentage={5008244.96*100 / 5234382}  />
                     <div className="d-flex justify-content-center align-items-center text-center mb-2 text-secondary fw-semibold fs-7">
