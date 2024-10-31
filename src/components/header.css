@@ -3,26 +3,6 @@
     max-width: 550px;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .header-logo-container{
-        width: '100%';
-        margin: '0px auto';
-    }
-
-    .walletBox {
-      
-        width: 100%;
-        max-width: 100%;
-     
-    }
-
-    .header-logo-container{
-        width: 100%;
-        max-width: 100%;
-    }
-
-}
 
 .form-control-custom {
     width: 100%;
@@ -103,7 +83,10 @@
     right: -30px !important; 
       z-index: 1000;
 }
-
+.hero-img img{
+    width: 400px;
+    height: 500px;
+}
 .intro-content{
     position: relative;
      width: 100%;
@@ -162,3 +145,29 @@
     background-color: orange;
     /* border-color: #ba8bf9; */
   }
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header-logo-container{
+        width: '100%';
+        margin: '0px auto';
+    }
+
+    .walletBox {
+      
+        width: 100%;
+        max-width: 100%;
+     
+    }
+
+    .header-logo-container{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero-img img{
+        width: 150px;
+        height: 200px;
+    }
+}

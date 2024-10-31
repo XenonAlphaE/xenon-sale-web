@@ -193,3 +193,19 @@
     padding: 0.5rem 1rem;
     cursor: pointer;
   }
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-content-wtf{
+        right: 20px;
+
+        width: 180px;
+        height: 200px;
+    }
+
+    .img-banner .banner-img1 {
+        box-sizing: border-box;
+        max-height: 200px;
+    }
+}

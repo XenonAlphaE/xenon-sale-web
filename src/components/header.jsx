@@ -270,7 +270,7 @@ export const Header = () => {
                   </div>
                 </div>
                 <div className='hero-img'>
-                    <img width={400} height={500} src="/img/flockers/hero.gif" /> 
+                    <img  src="/img/flockers/hero.gif" /> 
                 </div>
             </Col>
             <Col md={5} sm={12} className='col-xs-12' style={{ display: 'flex',flexDirection: "column", alignContent: 'center' }} id='buyForm'>
