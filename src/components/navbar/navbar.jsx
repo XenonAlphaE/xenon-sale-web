@@ -283,11 +283,9 @@ const Navbar = () => {
             </div>
             <div className={`lang-dropdown-content ${isLanguageOpen ? 'open' : ''}`}>
               {Object.keys(languageOptions).map((language) => (
-                <a href={`/${language}`}>
+                <a href={`/${language}`} key={language}>
                 <div key={language} className="lang-dropdown-item" 
-                
-                // onClick={() => handleChangeLanguage(language)}
-                >
+                                >
                     <span className={languageOptions[language].flag}></span>
                     <span>{languageOptions[language].name}</span>
                  
