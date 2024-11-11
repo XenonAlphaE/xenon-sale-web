@@ -229,13 +229,55 @@ export const Header = () => {
       <div className="intro-content">
           
           <div className="intro-content-left">
-            <h1>
-            {sectionText?.para1}
-            </h1>
-            <div className="document-refs">
-              <a className="whitepaper" href="/whitepaper.pdf" target="_blank" >  {sectionText?.whitePaper}</a>
-              <a className="auditlink" href="/audit.pdf" target="_blank">{sectionText?.audit}</a>
+            <div className="intro-heading1">
+                <h3> 
+                  1207% staking REWARDS
+                </h3> 
+                <div className="heading1-bottom" />
             </div>
+
+            <div className="intro-section-container">
+              <div className="intro-section-bg">
+                <h2>
+                    $FLOCK. the people's meme coin.
+                </h2>
+
+                <h5>
+                    The Flockerz revolutionary <span style={{color:'rgb(77, 108, 195)'}}>Vote-To-Earn </span>platform puts the POWER in your hands. Buy early presale NOW to earn MASSIVE rewards!
+
+                </h5>
+                <div className="intro-tags-container">
+                    <div className="tag-content"><img src="/img/flockers/circle.svg"/> <span >EARN BY VOTING   </span> </div>
+                    <div className="tag-content"><img src="/img/flockers/circle.svg"/> <span >HUGE EARLY REWARDS </span> </div>
+                    <div className="tag-content"><img src="/img/flockers/circle.svg"/> <span >YOU OWN THE FUTURE  </span> </div>
+                    <div className="tag-content"><img src="/img/flockers/circle.svg"/> <span >AND MORE...  </span> </div>
+                </div>
+                <button className="intro-button-buynow">
+                      join the $FLOCK! 
+                </button>
+                <div className="content-bg-color"></div>
+              </div>
+            </div>
+
+            <div className="intro-socials">
+                <a>
+                  <img src="/img/flockers/telegram.svg"/>
+                </a>
+                <a>
+                  <img src="/img/flockers/telegram.svg"/>
+                </a>
+                <a>
+                  <img src="/img/flockers/telegram.svg"/>
+                </a>
+                <a>
+                  <img src="/img/flockers/telegram.svg"/>
+                </a>
+            </div>
+
+            {/* <div className='intro-img'> */}
+            <img className='intro-img'  src="/img/flockers/hero.gif" /> 
+            {/* </div> */}
+
           </div>
           <div className="intro-content-right">
               <div className="walletBox" id='walletBox'>
@@ -318,7 +360,7 @@ export const Header = () => {
                                 className="input-control-custom"
                                 placeholder="0" />
                               <div className="amountType">
-                                <img src='/token.svg' style={{ 'height': '30px', marginRight:5 }} />
+                                <img src='/img/flockers/token.svg' style={{ 'height': '30px', marginRight:5 }} />
                               </div>
                             </div>
                           </div>
@@ -349,7 +391,7 @@ export const Header = () => {
                   <div className="external-info">
                     <a style={{textDecorationColor:"#000" ,color:"#000", textDecoration:'underline'}} href="https://widget.wert.io/default/widget/?commodity=ETH%3AEthereum" target="_blank">Not enough ETH? Top up now</a>
 
-                    <p translate="" className="font-18 text-center m-0 mt-2">Powered by <a target="_blank" href='https://web3paymentsolutions.io/' className=" "><img src="/W3P_Black.svg" alt="" style={{height:25}} /></a></p>
+                    <p translate="" className="font-18 text-center m-0 mt-2"><img src="/img/flockers/token.svg" style={{ 'height': '35px' }} /> Powered by <a target="_blank" href='https://web3paymentsolutions.io/' className=" "><img src="/img/flockers/W3P_Black.svg" alt="" style={{height:25}} /></a></p>
                   </div>
               </div>
                   

@@ -19,7 +19,7 @@ export const ProgressBar = ({ percentage }) => {
   const barStyle = {
     width: `${percentage}%`,
     height: '100%',
-    backgroundColor: 'orange',
+    backgroundColor: 'rgb(245, 136, 45)',
     transition: 'width 0.3s ease',
   };
 
