@@ -1,3 +1,7 @@
-export default function Page() {
-    return <h1></h1>
-  }
+import App from './client-components/app/App'
+
+
+export default async function Page() {
+
+    return <App/>
+}
