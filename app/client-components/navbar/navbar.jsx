@@ -254,14 +254,14 @@ export const Navbar = () => {
         <a href="#features">{sectionText?.whitePaper}</a>
       </div>
       <div className={`appnav-navbar-right`}>
-        <div className="appnav-social">
+        {/* <div className="appnav-social">
             <a href="https://x.com/Doge2014token">
               <img src="/img/flockers/twitter.svg" />
             </a>
             <a href="https://t.me/officialdoge2014token">
               <img src="/img/flockers/telegram.svg" />
             </a>
-        </div>
+        </div> */}
 
         <div className="appnav-lang-login-container">
           <button onClick={scrollToBuySection} className="appnav-login">{sectionText?.buyNow}</button>
@@ -297,14 +297,14 @@ export const Navbar = () => {
         {/* <a href={`/community/en`}>Staking</a>
         <a href={`/community/en`}>Leaderboard</a> */}
         <a href="#howtobuy" onClick={toggleMenu}>{sectionText?.airdrop}</a>
-        <div style={{boxSizing:'border-box'}} >
+        {/* <div style={{boxSizing:'border-box'}} >
             <a className='social-icon' href="https://x.com/Doge2014token" target='_blank'>
               <img src="/navbar/twitter-circle.svg" />
             </a>
             <a className='social-icon'  href="https://t.me/officialdoge2014token" target='_blank'>
               <img src="/navbar/telegram-circle.svg" />
             </a>
-          </div>
+          </div> */}
         <div className="appnav-lang-dropdown">
           <div className="appnav-lang-custom-dropdown" onClick={toggleLanguageDrpdwn}>
             <span className={languageOptions[currentLanguage].flag}></span>
