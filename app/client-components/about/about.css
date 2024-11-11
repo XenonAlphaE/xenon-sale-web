@@ -1,0 +1,23 @@
+.about-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(77, 108, 195);
+    padding: 40px 12px;
+    
+}
+.about-bg-outer{
+    width: 100%;
+    background: url(../../../public/img/flockers/about-img.svg) no-repeat bottom right / contain;
+    min-height: 570px;
+}
+.about-bg-inner{
+    padding: 40px;
+    background: #c1daea;
+    -webkit-clip-path: polygon(0% 0%, 97% 0%, -19% 190%, 0% 100%);
+    clip-path: polygon(0% 0%, 97% 0%, -19% 190%, 0% 100%);
+    min-height: 570px;
+
+}

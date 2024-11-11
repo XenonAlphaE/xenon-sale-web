@@ -5,6 +5,7 @@ import "./App.css";
 // import Navbar from "../navbar/navbar";
 import { Header } from "../header/header";
 import { Navbar } from "../navbar/navbar";
+import { About } from "../about/about";
 // import { Carousel } from "../carousel/carousel";
 // import { FeaturesGrid } from "../features/features";
 // import { HowToBuy } from "../howtobuy/howtobuy";
@@ -34,6 +35,7 @@ const App = () => {
     <div>
       <Navbar />
       <Header/>
+      <About />
     </div>
   );
 };
