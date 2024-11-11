@@ -3,8 +3,8 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 // import Navbar from "../navbar/navbar";
-// import { Header } from "../header/header";
-// import { Navbar } from "../navbar/navbar";
+import { Header } from "../header/header";
+import { Navbar } from "../navbar/navbar";
 // import { Carousel } from "../carousel/carousel";
 // import { FeaturesGrid } from "../features/features";
 // import { HowToBuy } from "../howtobuy/howtobuy";
@@ -32,14 +32,8 @@ const App = () => {
 
   return (
     <div>
-      {/* <Navbar />
-      <Header />
-      <Carousel />
-      <FeaturesGrid/>
-      <HowToBuy />
-      <Tokenomics />
-      <Roadmap/>
-      <Footer /> */}
+      <Navbar />
+      <Header/>
     </div>
   );
 };

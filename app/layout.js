@@ -70,6 +70,8 @@ export default function RootLayout({ children }) {
         <meta httpEquiv="Cache-Control" content="max-age=0, no-cache, no-store, must-revalidate" />
         <meta httpEquiv="Pragma" content="no-cache" />
         <meta httpEquiv="Expires" content="0" />
+        <link rel="stylesheet" type="text/css" href="/css/bootstrap.css" />
+
 
         <link rel="icon" type="image/png" href="/img/flockers/favicon.png"/>
         <link rel="icon" type="image/svg+xml" href="/img/flockers/favicon.svg"/>
@@ -104,7 +106,7 @@ export default function RootLayout({ children }) {
         <link rel="alternate" hrefLang="x-default" href="https://flockez.com/" />
 
 
-        <link rel="canonical" href="https://dog2014.com/" />
+        <link rel="canonical" href="https://flockez.com/" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css" />
 
         {/* Add the schema markup here */}
@@ -112,6 +114,13 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
         />
+
+        <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css" />
+        <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css" />
+        <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet" />
        {/* Load Google Analytics */}
         <script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
@@ -132,6 +141,9 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <ReduxProvider>{children}</ReduxProvider>
+        <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+
       </body>
     </html>
   );

@@ -39,10 +39,6 @@ export const Header = () => {
   const location = useLocation();
 
   // Create a URLSearchParams object to easily access the query parameters
-  const queryParams = new URLSearchParams(location.search);
-
-  // Extract specific query parameters
-  const refValue = queryParams.get('r');
 
 
   useEffect(() => {
