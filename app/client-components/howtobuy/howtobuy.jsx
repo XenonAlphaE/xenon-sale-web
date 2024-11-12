@@ -5,7 +5,7 @@ import React from 'react';
 import { useI18nSection } from '../../../redux/utils/languageUtils';
 
 import './howtobuy.css';
-
+import {Carousel} from '../carousel/carousel'
 export const HowToBuy = () => {
     const sectionText = useI18nSection('howtobuy')
 
@@ -25,8 +25,8 @@ export const HowToBuy = () => {
 
   return (
     <div id="howtobuy" className='howtobuy-container'>
-
-    
+        <h2>How to buy</h2>
+        <Carousel/> 
     </div>
   );
 };

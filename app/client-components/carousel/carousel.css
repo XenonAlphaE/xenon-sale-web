@@ -1,0 +1,31 @@
+.carousel {
+  width: 100%;
+  /* overflow: scroll; */
+  position: relative;
+}
+
+.carousel-track {
+  width: 100%;
+  position: relative;
+  /* overflow-x: scroll; */
+  /* width: max-content; */
+  transition: transform 0.5s ease;
+  overflow: hidden;
+}
+
+.carousel-cards{
+  position: relative;
+  width: max-content;
+  display: flex;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+
+}
+
+.carousel-card {
+  min-width: 700px;
+  scroll-snap-align: start; /* Snap to each card */
+  flex: none;
+  text-align: center;
+  padding: 10px;
+}

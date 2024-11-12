@@ -203,6 +203,7 @@ export const Navbar = () => {
       setIsMobile(window.innerWidth <= 1024); // Adjust the breakpoint as needed
     };
     const handleScroll = () => {
+      debugger
       if (window.scrollY === 0) {
         setIsScrolled(false);
       } else {
