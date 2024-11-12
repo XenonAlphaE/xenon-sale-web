@@ -114,7 +114,7 @@
 }
 
 .appnav-navbar-menu a {
-  /* padding: 5px 5px; */
+  transform: scaleY(1.5);    /* Increase height by 1.5 times */
   color: #fff;
   cursor: pointer;
   text-decoration: none;

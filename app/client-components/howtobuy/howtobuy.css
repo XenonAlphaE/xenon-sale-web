@@ -1,0 +1,12 @@
+
+.howtobuy-container{
+    width: 100%;
+    padding: 120px 12px;
+    /* padding: 36px 24px; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(77, 108, 195);
+}
