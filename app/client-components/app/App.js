@@ -10,7 +10,7 @@ import { About } from "../about/about";
 // import { FeaturesGrid } from "../features/features";
 // import { HowToBuy } from "../howtobuy/howtobuy";
 // import { Tokenomics } from "../tokenomics/tokenomics";
-// import { Roadmap } from "../roadmap/roadmap";
+import { Roadmap } from "../roadmap/roadmap";
 // import { Footer } from "../footer/footer";
 // import { useParams } from "react-router-dom";
 // import { useSetLanguage } from "../../../redux/utils/languageUtils";
@@ -36,6 +36,7 @@ const App = () => {
       <Navbar />
       <Header/>
       <About />
+      <Roadmap />
     </div>
   );
 };

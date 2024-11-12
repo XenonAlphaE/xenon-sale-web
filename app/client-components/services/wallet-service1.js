@@ -18,7 +18,7 @@ export const CONST = {
 }
 export function isValidNumber( amount) {
     // Check for empty string
-    if (!amount) {
+    if (!!!amount) {
       return false;
     }
   
