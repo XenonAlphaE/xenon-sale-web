@@ -11,7 +11,8 @@ import { About } from "../about/about";
 import { HowToBuy } from "../howtobuy/howtobuy";
 import { Tokenomics } from "../tokenomics/tokenomics";
 import { Roadmap } from "../roadmap/roadmap";
-// import { Footer } from "../footer/footer";
+import { Footer } from "../footer/footer";
+import { FAQ } from "../faq/faq";
 // import { useParams } from "react-router-dom";
 // import { useSetLanguage } from "../../../redux/utils/languageUtils";
 
@@ -39,6 +40,8 @@ const App = () => {
       <Roadmap />
       <Tokenomics />
       <HowToBuy />
+      <FAQ/>
+      <Footer />
     </div>
   );
 };
