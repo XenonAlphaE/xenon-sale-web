@@ -7,9 +7,9 @@ export const Carousel = () => {
   const scrollContainerRef = useRef(null);
 
   const items = [
-    { title: 'Step 1', details: 'Latest news and updates from the crypto world.' },
-    { title: 'Step 2', details: 'Comprehensive insights on cryptocurrencies and blockchain.' },
-    { title: 'Step 3', details: 'Stay informed with the latest in cryptocurrency.' },
+    { title: 'Step 1', details: 'Latest news and updates from the crypto world.', outerClass: "carousel-card-1-outer", innerClass:"carousel-card-1-inner" },
+    { title: 'Step 2', details: 'Latest news and updates from the crypto world.', outerClass: "carousel-card-2-outer", innerClass:"carousel-card-2-inner" },
+    { title: 'Step 3', details: 'Latest news and updates from the crypto world.', outerClass: "carousel-card-3-outer", innerClass:"carousel-card-3-inner" },
   ];
 
   // Duplicate items for continuous scroll effect
@@ -17,7 +17,7 @@ export const Carousel = () => {
 
   ];
 
-  const scrollAmount = 700; // Width of each item in pixels
+  const scrollAmount = 850; // Width of each item in pixels
 
   const scrollLeft = () => {
     if (scrollContainerRef.current) {
@@ -90,12 +90,15 @@ export const Carousel = () => {
     <div className="carousel">
       <div className="carousel-track" ref={scrollContainerRef}>
         <div className="carousel-cards">
-          {duplicatedItems.map((item, index) => (
-            <div key={index} className="carousel-card">
-              <h3 className="carousel-card-header">{item.title}</h3>
-              <p className="carousel-card-details">{item.details}</p>
-            </div>
-          ))}
+            {duplicatedItems.map((item, index) => (
+                <div key={index} className={item.outerClass}>
+                  <div className={item.innerClass}>
+                    <h3 className="carousel-card-header">{item.title}</h3>
+                    <p className="carousel-card-details">{item.details}</p>
+                  </div>
+                </div>
+            ))}
+          
         </div>
       </div>
       <div className="carousel-controls">

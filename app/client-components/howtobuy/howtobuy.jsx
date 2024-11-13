@@ -25,7 +25,9 @@ export const HowToBuy = () => {
 
   return (
     <div id="howtobuy" className='howtobuy-container'>
-        <h2>How to buy</h2>
+      <div className='howtobuy-heading-wrapper'>
+        <h3>Become a Flocker</h3>
+      </div>
         <Carousel/> 
     </div>
   );
