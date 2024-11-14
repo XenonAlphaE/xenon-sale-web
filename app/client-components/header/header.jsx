@@ -18,6 +18,7 @@ import { useTokenInfo, getUserPurchaseInfo } from '../services/token-service';
 import {CurrencyDropdown} from "../currency-dropdown/CurrencyDropdown";
 import configs from '../config.main.json'
 import './header.css'
+import './header.mobile.css'
 
 export const Header = () => {
   const sectionText = useI18nSection('buyForm')
@@ -237,7 +238,6 @@ export const Header = () => {
             </div>
 
             <div className="intro-section-container">
-              <div className="intro-section-bg">
                 <h2>
                     $FLOCK. the people's meme coin.
                 </h2>
@@ -255,6 +255,7 @@ export const Header = () => {
                 <button className="intro-button-buynow">
                       join the $FLOCK! 
                 </button>
+              <div className="intro-section-bg">
                 <div className="content-bg-color"></div>
               </div>
             </div>
@@ -396,9 +397,6 @@ export const Header = () => {
               </div>
                   
           </div>
-
-
-
 
       </div>
     </div>

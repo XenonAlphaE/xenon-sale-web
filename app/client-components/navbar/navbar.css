@@ -289,6 +289,9 @@
 
 /* Responsive Styles */
 @media (max-width: 1024px) {
+  .appnav-navbar{
+    width: 100%;
+  }
   .nav-container{
     width: 100%;
     max-width: 100%;
