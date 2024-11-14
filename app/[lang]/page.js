@@ -1,22 +1,13 @@
-export async function generateMetadata({ params }) {
+import App from '../client-components/app/App'
 
-    const lang = (await params).lang
-    console.log(lang)
-    return {
-      title: 'FlockerZ: Revolutionary Vote-To-Earn Meme Coin | Crypto Presale',
-      description: 'Join the $FLOCK, where every Flocker has a voice...',
-      openGraph: {
-        title: 'FlockerZ: Revolutionary Vote-To-Earn Meme Coin',
-        description: 'Join the $FLOCK, where every Flocker has a voice...',
-      },
-      htmlAttributes: {
-        lang: lang || 'en',
-      },
-    };
-  }
-
-
+export async function generateStaticParams() {
+    const languages = ['en', 'vi', 'es', 'zh', 'de', 'jp', 'fr', 'it', 'pt', 'ru', 'ar', 'hi', 'ko', 'th', 'nl', 'tr', 'el', 'sv', 'he', 'uk', 'ms', 'id', 'fa', 'bn', 'ta', 'pl']
+    return languages.map((lang) => ({
+      lang, // This should match the name of the parameter in your filename
+    }));
+}
+   
 export default async function Page({ params }) {
     const lang = (await params).lang
-    return <div>My Post: {lang}</div>
-  }
+    return <App/>
+}

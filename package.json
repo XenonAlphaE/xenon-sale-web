@@ -37,9 +37,7 @@
     "nextbuild": "next build",
     "nextstart": "next start"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
+
   "browserslist": {
     "production": [
       ">0.2%",
