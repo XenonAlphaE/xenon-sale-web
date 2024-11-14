@@ -2,6 +2,7 @@
 
 import React, { useRef, useState, useEffect } from 'react';
 import './carousel.css';
+import './carousel.mobile.css';
 
 export const Carousel = () => {
   const scrollContainerRef = useRef(null);

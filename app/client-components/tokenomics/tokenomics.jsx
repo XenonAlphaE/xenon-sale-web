@@ -1,6 +1,7 @@
 import React from "react";
 import { useLanguage, useI18nSection } from "../../../redux/utils/languageUtils";
 import './tokenomics.css'
+import './tokenomics.mobile.css'
 
 export const Tokenomics = () => {
   const tokenomicsSection = useI18nSection('tokenomics')

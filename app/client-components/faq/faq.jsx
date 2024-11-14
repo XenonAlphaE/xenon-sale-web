@@ -2,6 +2,7 @@
 
 import React, { useRef, useState, useEffect } from 'react';
 import './faq.css';
+import './faq.mobile.css';
 
 export const FAQ = () => {
   return (
