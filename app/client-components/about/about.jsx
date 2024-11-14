@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import "./about.css";
+import "./about.mobile.css";
 import { useLanguage, useI18nSection } from "../../../redux/utils/languageUtils";
 
 export const About = () => {
@@ -54,10 +55,10 @@ export const About = () => {
                     <img className='about-zap' src='/img/flockers/zap-img.svg' />
 
                 </div>
-            <div className='about-bg-outer'>
+                <div className='about-bg-outer'>
+                </div>
                 <div className='about-bg-inner'>
                 </div>
-            </div>
           </div>
         </div>
     );

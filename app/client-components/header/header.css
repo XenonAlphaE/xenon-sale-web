@@ -191,7 +191,7 @@
   column-gap: 16px;
   row-gap: 8px;
   flex-wrap: wrap;
-  max-width: 600px;
+  max-width: 70%;
 }
 .intro-tags-container   .tag-content{
   display: flex;
@@ -299,8 +299,8 @@
 
 
 .intro-socials{
-  padding-top: 50px;
-  padding-left: 50px;
+  padding-top: 80px;
+  padding-left: 80px;
   display: flex;
   column-gap: 24px;
 }

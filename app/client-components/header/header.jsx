@@ -265,13 +265,13 @@ export const Header = () => {
                   <img src="/img/flockers/telegram.svg"/>
                 </a>
                 <a>
-                  <img src="/img/flockers/telegram.svg"/>
+                  <img src="/img/flockers/social_twitter.svg"/>
                 </a>
                 <a>
-                  <img src="/img/flockers/telegram.svg"/>
+                  <img src="/img/flockers/audit.png"/>
                 </a>
                 <a>
-                  <img src="/img/flockers/telegram.svg"/>
+                  <img src="/img/flockers/solid-proof.png"/>
                 </a>
             </div>
 
