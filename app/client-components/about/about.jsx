@@ -34,11 +34,31 @@ export const About = () => {
       }, []);
     return (
         <div className='about-container' id="about">
-            <div className='about-bg-outer'>
-                <div className='about-bg-inner'>
+            <div className='about-content'>
+                <div className='about-text'>
+                    <p>{sectionText?.description1}</p>
+                    <p>{sectionText?.description2}</p>
+                    <p>{sectionText?.description3}</p>
+                    <p>{sectionText?.description4}</p>
+                    <p>{sectionText?.description5}</p>
+                    <div className='about-buttons'>
+
+                      <button className='about-buynow' onClick={scrollToBuySection}>  {sectionText?.buyNow} </button>
+                    </div>
+
+                    <img className='about-welcome' src='/img/flockers/welcome-about.png' />
 
                 </div>
+                <div className='about-imgs'>
+                    <img className='about-king' src='/img/flockers/king-img.gif' />
+                    <img className='about-zap' src='/img/flockers/zap-img.svg' />
+
+                </div>
+            <div className='about-bg-outer'>
+                <div className='about-bg-inner'>
+                </div>
             </div>
+          </div>
         </div>
     );
 };
