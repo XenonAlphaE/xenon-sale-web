@@ -7,7 +7,7 @@ export const Carousel = () => {
   const scrollContainerRef = useRef(null);
 
   const items = [
-    { title: 'Step 1', details: 'Latest news and updates from the crypto world.', outerClass: "carousel-card-1-outer", innerClass:"carousel-card-1-inner" },
+    { title: '01: Connect Your Nest', details: 'Perch your MetaMask (desktop) wallet on this site using the widget at the top. You can scoop up $FLOCK with ETH, BNB, USDT, or even your flockerz-brained bank card.', outerClass: "carousel-card-1-outer", innerClass:"carousel-card-1-inner" },
     { title: 'Step 2', details: 'Latest news and updates from the crypto world.', outerClass: "carousel-card-2-outer", innerClass:"carousel-card-2-inner" },
     { title: 'Step 3', details: 'Latest news and updates from the crypto world.', outerClass: "carousel-card-3-outer", innerClass:"carousel-card-3-inner" },
   ];
@@ -104,6 +104,7 @@ export const Carousel = () => {
       <div className="carousel-controls">
         <button onClick={scrollLeft} className="carousel-button">◀</button>
         <button onClick={scrollRight} className="carousel-button">▶</button>
+        <button onClick={scrollLeft} className="carousel-buynow">Buy and Stake Now FOR 1093%!</button>
       </div>
     </div>
   );
