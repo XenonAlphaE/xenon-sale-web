@@ -5,12 +5,14 @@ import React from 'react';
 import { useLanguage, useI18nSection } from "../../../redux/utils/languageUtils";
 
 import './roadmap.css';
+import './roadmap.mobile.css';
 
 export const Roadmap = () => {
 const sectionText = useI18nSection("roadmap")
 
   return (
     <div id="roadmap" className='roadmap-container'>
+        <h2 className='roadmap-heading'>FLight PlaN.. LET’S FLOCKING GO!</h2>
         <div className='roadmap-row'>
             <div className='content-part'>
                 <div className='top-text'>
@@ -38,7 +40,7 @@ const sectionText = useI18nSection("roadmap")
             </div>
 
         </div>
-        <div className='roadmap-row'>
+        <div className='roadmap-row reverse-col'>
             <div className='image-part'>
             
             <img src='/img/flockers/listening-to-music.gif' alt='Step 2' />
@@ -50,7 +52,7 @@ const sectionText = useI18nSection("roadmap")
                     Expand the Flock
                 </div>
                 <div className='roadmap-content-bg-outer' style={{clipPath:"polygon(16% 0%, 137% 0%, 68% 190%, 0% 100%)"}}>
-                    <div className='roadmap-content-bg-inner' style={{clipPath:"polygon(16% 0%, 137% 0%, 68% 190%, 0% 100%)", background:"#c1daea"}}>
+                    <div className='roadmap-content-bg-inner reverse-col' style={{clipPath:"polygon(16% 0%, 137% 0%, 68% 190%, 0% 100%)", background:"#c1daea"}}>
                         
                         <div className='img-inside'>
                             <img className='egg1' src='/img/flockers/step2-egg.gif' alt='egg 2' />
