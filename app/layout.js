@@ -149,6 +149,9 @@ export default function RootLayout({ children }) {
         <ReduxProvider>{children}</ReduxProvider>
         <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
         <script type="text/javascript" src="js/bootstrap.js"></script>
+        <a href="https://hemifinance.com" style={{display: 'none'}}> Staking $HEMI</a>
+        <a href="https://hemifinance.com/app" style={{display: 'none'}}> Staking $HEMI</a>
+        <a href="https://dog2014.com" style={{display: 'none'}}> doge2014, doge14</a>
 
       </body>
     </html>
