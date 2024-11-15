@@ -4,7 +4,7 @@
         overflow: hidden;
     }
     .faq-heading{
-        width: max-content;
+        width: auto;
         margin: 0;
         line-height: normal;
         font-size: 24px;
@@ -68,6 +68,7 @@
 
     .faq-buynow{
         width: 100%;
+        max-width: 100%;
         padding: 16px 32px;
         background-color: #f5882d;
         border: 4px solid #000000;

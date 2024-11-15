@@ -192,7 +192,7 @@
     padding: 8px 16px;
     justify-content: center;
     align-items: center;
-    width: max-content;
+    width: auto;
     background-color: rgb(32, 69, 202);
     color: white;
     border: solid 2px black;

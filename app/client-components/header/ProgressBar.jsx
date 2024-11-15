@@ -27,6 +27,7 @@ export const ProgressBar = ({ percentage }) => {
     position: 'absolute',
     left: '50%',
     top: '50%',
+    width:"max-content",
     fontWeight: 500,
     transform: 'translate(-50%, -50%)',
     color: '#fff', /* Text color */

@@ -36,7 +36,7 @@
       text-transform: uppercase;
       background: #c1daea;
       columns: white;
-      width: max-content;
+      width: auto;
       padding: 5px 19px;
       transform: rotate(-3deg);
       border-top: 6px solid #000000;
@@ -70,7 +70,6 @@
         text-size-adjust: 100%;
         text-transform: uppercase;
         unicode-bidi: isolate;
-        /* width: 273.828px; */
 
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         -webkit-text-stroke-color: rgb(0, 0, 0);

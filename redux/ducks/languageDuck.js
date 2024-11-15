@@ -1,61 +1,61 @@
 // languageDuck.js
 // Redux Duck for managing language
 import en from '../../locales/en.json';
-// import vi from '../../locales/vi.json';
-// import zh from '../../locales/zh.json';
-// import es from '../../locales/es.json';
-// import ge from '../../locales/ge.json';
-// import jp from '../../locales/jp.json';
-// import de from '../../locales/de.json';
-// import fr from '../../locales/fr.json';
-// import it from '../../locales/it.json';
-// import pt from '../../locales/pt.json';
-// import ru from '../../locales/ru.json';
-// import ar from '../../locales/ar.json';
-// import hi from '../../locales/hi.json';
-// import ko from '../../locales/ko.json';
-// import th from '../../locales/th.json';
-// import nl from '../../locales/nl.json';
-// import tr from '../../locales/tr.json';
-// import el from '../../locales/el.json';
-// import sv from '../../locales/sv.json';
-// import he from '../../locales/he.json';
-// import uk from '../../locales/uk.json';
-// import ms from '../../locales/ms.json';
-// import id from '../../locales/id.json';
-// import fa from '../../locales/fa.json';
-// import bn from '../../locales/bn.json';
-// import ta from '../../locales/ta.json';
-// import pl from '../../locales/pl.json';
+import vi from '../../locales/vi.json';
+import zh from '../../locales/zh.json';
+import es from '../../locales/es.json';
+import ge from '../../locales/ge.json';
+import jp from '../../locales/jp.json';
+import de from '../../locales/de.json';
+import fr from '../../locales/fr.json';
+import it from '../../locales/it.json';
+import pt from '../../locales/pt.json';
+import ru from '../../locales/ru.json';
+import ar from '../../locales/ar.json';
+import hi from '../../locales/hi.json';
+import ko from '../../locales/ko.json';
+import th from '../../locales/th.json';
+import nl from '../../locales/nl.json';
+import tr from '../../locales/tr.json';
+import el from '../../locales/el.json';
+import sv from '../../locales/sv.json';
+import he from '../../locales/he.json';
+import uk from '../../locales/uk.json';
+import ms from '../../locales/ms.json';
+import id from '../../locales/id.json';
+import fa from '../../locales/fa.json';
+import bn from '../../locales/bn.json';
+import ta from '../../locales/ta.json';
+import pl from '../../locales/pl.json';
 
 const i18nData = {
   en,
-  // vi,
-  // zh,
-  // es,
-  // ge,
-  // jp,
-  // de,
-  // fr,
-  // it,
-  // pt,
-  // ru,
-  // ar,
-  // hi,
-  // ko,
-  // th,
-  // nl,
-  // tr,
-  // el,
-  // sv,
-  // he,
-  // uk,
-  // ms,
-  // id,
-  // fa,
-  // bn,
-  // ta,
-  // pl,
+  vi,
+  zh,
+  es,
+  ge,
+  jp,
+  de,
+  fr,
+  it,
+  pt,
+  ru,
+  ar,
+  hi,
+  ko,
+  th,
+  nl,
+  tr,
+  el,
+  sv,
+  he,
+  uk,
+  ms,
+  id,
+  fa,
+  bn,
+  ta,
+  pl,
 }
 // Action types
 const SET_LANGUAGE = 'language/SET_LANGUAGE'; // New action type for setting language

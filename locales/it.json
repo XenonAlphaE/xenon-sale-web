@@ -105,17 +105,20 @@
         "total": "Fornitura Token"
     },
     "faqs": {
-        "heading": "Cosa succede, Madre Flockerz?",
+        "heading": "Ciao, Flockers!",
         "title1": "Cos'è $FLOCK?",
-        "title2": "Posso guadagnare ricompense durante la prevendita?",
+        "title2": "Posso guadagnare ricompense durante il presale?",
         "title3": "Cosa rende Flockerz così unico?",
-        "title4": "Come compro la prevendita?",
-        "desc1": "Flockerz ($FLOCK) sta tracciando un nuovo percorso nella decentralizzazione. È la moneta meme Vote-To-Earn mai vista prima, dove TU hai il potere di controllare il destino del progetto, guadagnando ricompense per i tuoi voti. I possessori sono al volante, votando su tutte le nuove proposte relative al futuro successo del progetto e alla crescita della comunità. Ciò significa che non c'è un solo leader, ma un gruppo di persone simili che lavorano insieme per rendere grande $FLOCK e guadagnando ricompense folli per la loro partecipazione.",
-        "desc2": "SÌ! La prevendita Flockerz ($FLOCK) è l'inizio della rivoluzione, e presto potrai guadagnare premi fantastici solo per aver partecipato.",
-        "desc3": "Non siamo solo un altro token meme. Flockerz ti permette di guadagnare attraverso i tuoi voti, mettendo i veri Flockers al comando di tutto. Il nostro obiettivo è diffondere l'idea di una comunità decentralizzata che guadagna insieme. Con $FLOCK, stai acquistando il diritto di influenzare il futuro della piattaforma.",
-        "desc4": "Acquistare la prevendita è semplice come un battito d'ali! Collega il tuo portafoglio, scegli la valuta di pagamento, quindi partecipa alla prevendita. È tutto qui!"
+        "title4": "Come posso acquistare il presale?",
+        "desc1": "Flockerz ($FLOCK) sta aprendo nuove strade nella decentralizzazione. È la prima moneta meme di tipo Vote-To-Earn, dove SEI TU a controllare il destino del progetto, guadagnando ricompense per i tuoi voti. I possessori sono al comando, votando su tutte le nuove proposte relative al successo futuro del progetto e alla crescita della comunità. Ciò significa che non c'è un singolo leader, solo un gruppo di persone con la stessa visione che lavora insieme per rendere $FLOCK grande, e guadagnando incredibili ricompense per la loro partecipazione.",
+        "desc2": "ASSOLUTAMENTE! Il presale Flockerz ($FLOCK) è progettato per permettere agli early adopters del progetto di guadagnare ricompense enormi semplicemente acquistando e mettendo in staking i loro token durante il presale. Con un APY generoso e un orizzonte di staking di 2 anni, chi partecipa al presale può rilassarsi e godersi ricompense passive per la loro partecipazione al presale, mentre utilizzano anche il loro voto per votare e guadagnare!",
+        "desc3": "Mai prima d'ora una comunità di monete meme è stata responsabile di ogni singola decisione importante relativa al progetto. E sicuramente, nessun DAO di monete meme ha premiato la propria comunità per aver espresso il proprio voto sulla blockchain. I possessori di Flockerz ($FLOCK) stanno tracciando una nuova strada in questo spazio.",
+        "desc4": "Per acquistare il presale Flockerz ($FLOCK), consulta la guida all'acquisto sopra! Ottieni un wallet come Best Wallet, procurati un po' di criptovaluta (o paga con carta), seleziona la quantità desiderata e vola! Il nostro widget è alimentato da Web3Payments, garantendo che il tuo acquisto sia sicuro grazie alla tecnologia Web3Toolkit.",
+        "buynow": "Acquista e Staka Ora per il 1048%!"
     },
     "footer": {
-        "rights": "Tutti i diritti riservati @Flockerz"
+        "sub": "DISCLAIMER",
+        "text": "Gli investimenti in criptovalute comportano un alto rischio di volatilità. Sii consapevole delle implicazioni fiscali, poiché i profitti potrebbero essere soggetti a imposte sul reddito o altre tasse nella tua giurisdizione. Le normative sulle criptovalute possono variare, quindi assicurati di comprendere le regole nel tuo paese. Fai ricerche approfondite e investi solo ciò che puoi permetterti di perdere.",
+        "copyRight": "Copyright 2024 — Big Bird"
     }
 }

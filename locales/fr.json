@@ -107,20 +107,21 @@
         "total": "Offre Totale de Tokens"
     },
     "faqs": {
-        "heading": "Quoi de neuf, Mère Flockers ?",
+        "heading": "Quoi de neuf, Mother Flockerz ?",
         "title1": "Qu'est-ce que $FLOCK ?",
-        "title2": "Puis-je Gagner des Récompenses Pendant la Prévente ?",
-        "title3": "Qu'est-ce qui Rend Flockerz si Unique ?",
-        "title4": "Comment Acheter en Prévente ?",
-        "desc1": "Flockerz ($FLOCK) ouvre de nouvelles voies dans la décentralisation. C'est la première monnaie meme Vote To Earn, où VOUS avez le pouvoir de contrôler le destin du projet, tout en gagnant des récompenses pour vos votes. Les détenteurs sont aux commandes, votant sur toutes les nouvelles propositions liées au succès futur du projet et à la croissance de la communauté. Cela signifie qu'il n'y a pas de leader unique, juste un groupe de personnes partageant les mêmes idées travaillant ensemble pour rendre $FLOCK grand, et gagnant des récompenses folles pour leur participation.",
-        "desc2": "OUI ! La prévente Flockerz ($FLOCK) est conçue pour permettre aux premiers adoptants du projet de gagner d'énormes récompenses simplement en achetant et en stakant leurs tokens pendant la prévente. Avec des récompenses exceptionnelles en staking disponibles, c'est une occasion à ne pas manquer.",
-        "desc3": "Flockerz est unique en son genre car il donne le pouvoir de vote aux membres de sa communauté pour déterminer l'avenir du projet. Les tokens FLOCK sont également conçus pour être un instrument Vote-To-Earn, permettant aux membres de gagner des récompenses.",
-        "desc4": "Pour acheter $FLOCK en prévente, vous devez connecter votre portefeuille Metamask ou un autre portefeuille Web3, puis choisir le réseau Ethereum ou BNB. Après avoir connecté votre portefeuille, vous pourrez acheter des tokens FLOCK en suivant les instructions simples."
+        "title2": "Puis-je gagner des récompenses pendant la présale ?",
+        "title3": "Qu'est-ce qui rend Flockerz si unique ?",
+        "title4": "Comment acheter pendant la présale ?",
+        "desc1": "Flockerz ($FLOCK) ouvre de nouvelles voies dans la décentralisation. C'est la première monnaie meme de type Vote To Earn, où VOUS avez le pouvoir de contrôler le destin du projet, tout en gagnant des récompenses pour vos votes. Les détenteurs sont aux commandes, votant sur toutes les nouvelles propositions liées au succès futur du projet et à la croissance de la communauté. Cela signifie qu'il n'y a pas de leader unique, seulement un groupe de personnes partageant les mêmes idées travaillant ensemble pour rendre $FLOCK génial, et gagnant des récompenses incroyables pour leur participation.",
+        "desc2": "OUI ! La présale de Flockerz ($FLOCK) est conçue pour permettre aux premiers utilisateurs du projet de gagner des récompenses massives en achetant et en mettant en jeu leurs tokens pendant la présale. Avec un APY généreux et une période de staking de 2 ans, les participants à la présale peuvent s'asseoir et profiter de récompenses passives pour leur participation à la présale, tout en utilisant leur vote pour voter et gagner !",
+        "desc3": "Jamais auparavant une communauté de meme coin n'a eu le contrôle de toutes les décisions majeures concernant le projet. Et certainement, aucune DAO de meme coin n'a récompensé sa communauté pour avoir voté sur la blockchain. Les détenteurs de Flockerz ($FLOCK) ouvrent une nouvelle voie dans l'espace.",
+        "desc4": "Pour acheter la présale de Flockerz ($FLOCK), consultez le guide d'achat pratique ci-dessus ! Obtenez un portefeuille tel que Best Wallet, obtenez des crypto-monnaies (ou payez par carte), sélectionnez le montant souhaité et décollez ! Notre widget est alimenté par Web3Payments, garantissant que votre achat est sécurisé par la technologie Web3Toolkit.",
+        "buynow": "Achetez et Stakez maintenant POUR 1048% !"
     },
     "footer": {
-        "terms": "Conditions Générales",
-        "privacy": "Politique de Confidentialité",
-        "cookie": "Politique de Cookies",
-        "copyright": "Copyright © Flockerz 2024"
+        "sub": "AVERTISSEMENT",
+        "text": "Les investissements en cryptomonnaies comportent un risque élevé de volatilité. Soyez conscient des implications fiscales, car les bénéfices peuvent être soumis à des taxes sur les plus-values ou d'autres taxes dans votre juridiction. Les régulations des cryptomonnaies peuvent varier, assurez-vous donc de comprendre les règles en vigueur dans votre région. Faites des recherches approfondies et investissez uniquement ce que vous pouvez vous permettre de perdre.",
+        "copyRight": "Copyright 2024 — Big Bird"
     }
+   
 }

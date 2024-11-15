@@ -28,7 +28,7 @@
 }
 
 .tokenomics-text h3{
-    width: max-content;
+    width: auto;
     font-size: 54px;
     background: #c1daea;
     border: 4px solid #000000;
