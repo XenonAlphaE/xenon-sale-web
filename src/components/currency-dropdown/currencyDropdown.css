@@ -80,7 +80,7 @@
   box-shadow: 0 4px 8px rgba(6, 6, 80, 0.1);
   padding: 10px 10px; /* Added padding */
   z-index: 10000000000;
-  width: max-content; 
+  width: auto; 
 }
 
 .curr-dropdown-content.open {

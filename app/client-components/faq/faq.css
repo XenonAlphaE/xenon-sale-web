@@ -1,0 +1,135 @@
+.faq-container{
+    width: 100%;
+    padding: 120px 12px;
+    background-color: rgb(77, 108, 195);
+    display: flex;
+}
+.faq-images{
+    flex: 0 0 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.faq-content{
+    flex: 0 0 60%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    padding: 0px 16px;
+}
+
+.faq-card-1{
+    width: 100%;
+    height: 322px;
+    padding: 66px 70px 35px 100px;
+    background: transparent url(../../../public/img/flockers/faq-one.png) no-repeat 0 0;
+    background-size: 100% 100%;
+}
+
+.faq-card-2{
+    width: 100%;
+    height: 275px;
+    padding: 40px 53px 64px 100px;
+    background: transparent url(../../../public/img/flockers/faq-two.png) no-repeat 0 0;
+    background-size: 100% 100%;
+}
+
+.faq-card-3{
+    width: 100%;
+    height: 265px;
+    padding: 74px 91px 41px 100px;
+    background: transparent url(../../../public/img/flockers/faq-three.png) no-repeat 0 0;
+    background-size: 100% 100%;
+}
+
+.faq-card-4{
+    width: 100%;
+    height: 265px;
+    padding: 44px 70px 41px 130px;
+    background: transparent url(../../../public/img/flockers/faq-four.png) no-repeat 0 0;
+    background-size: 100% 100%;
+}
+.faq-heading{
+    width: auto;
+    font-size: 54px;
+    background: #c1daea;
+    border: 4px solid #000000;
+    color: #f0b90b;
+    -webkit-text-stroke: 8px black;
+    font-weight: 500;
+    padding: 5px 30px;
+    transform: rotate(-3deg);
+    font-family: badaboom-bb, sans-serif;
+    paint-order: stroke fill;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.faq-title{
+
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    display: block;
+    font-family: 'badaboom-bb', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 38.4px;
+    margin-block-end: 8px;
+    margin-block-start: 0px;
+    margin-bottom: 8px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    margin-top: 0px;
+    text-align: start;
+    text-size-adjust: 100%;
+    unicode-bidi: isolate;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+.faq-detail{
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    display: block;
+    font-family: 'HeyComic', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-bottom: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    text-align: start;
+    text-size-adjust: 100%;
+    unicode-bidi: isolate;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.faq-images img{
+    width: 100%;
+}
+
+.faq-buynow{
+    padding: 16px 32px;
+    background-color: #f5882d;
+    border: 4px solid #000000;
+    color: #fff;
+    font-weight: 500;
+    -webkit-text-stroke: 3px black;
+    paint-order: stroke;
+    letter-spacing: 2px;
+    max-width: 100%;
+    font-size: 22px;
+    border-bottom-left-radius: 16px;
+    border-top-right-radius: 16px;
+    text-transform: uppercase;
+    transform: rotate(6deg);
+}

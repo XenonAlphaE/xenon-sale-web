@@ -1,0 +1,25 @@
+
+@media (max-width: 1024px) {
+    .tokenomics-container{
+        width: 100%;
+        padding: 120px 12px;
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: rgb(77, 108, 195);
+        position: relative;
+        padding-bottom: 200px;
+    }
+    .tokenomics-text h3{
+        font-size: xx-large;
+    }
+    .tks-content-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .tks-bottom-img{
+        position: absolute;
+        width: 100px;
+        bottom: -10px;
+        left: 60%;
+    }
+}
