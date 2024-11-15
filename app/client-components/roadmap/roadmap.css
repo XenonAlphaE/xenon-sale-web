@@ -178,12 +178,12 @@
     unicode-bidi: isolate;
     /* width: 484px; */
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    
-    span{
-        color: rgb(233, 106, 0);
-        padding-right: 2px;
-    }
 }
+.text-inside li   span{
+    color: rgb(233, 106, 0);
+    padding-right: 2px;
+}
+
 
 .top-text{
     display: flex;

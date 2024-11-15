@@ -4,34 +4,35 @@ import './tokenomics.css'
 import './tokenomics.mobile.css'
 
 export const Tokenomics = () => {
-  const tokenomicsSection = useI18nSection('tokenomics')
+  const sectionText = useI18nSection('tokenomics')
 
   return (
     <section id="tokenomics" className="tokenomics-container">
 
         <div className="tokenomics-text">
-            <h3>flockenomics</h3>
+            <h3>{sectionText?.heading}</h3>
             <div className="tks-content-grid  ">
                 <div className="tks-content-card">
-                    <p className="tks-content-card-title"> Flock Vault (25%)</p>
-                    <p className="tks-content-card-desc"> 25% is stored in the DAO Vault. This is the $FLOCK treasure chest, used to collectively allocate the Kingdom’s vast riches. The more you vote, the more you earn.</p>
+                    <p className="tks-content-card-title"> {sectionText?.title1}</p>
+                    <p className="tks-content-card-desc"> {sectionText?.item1}</p>
                 </div>
                 <div className="tks-content-card">
-                    <p className="tks-content-card-title"> Flock Vault (25%)</p>
-                    <p className="tks-content-card-desc"> 25% is stored in the DAO Vault. This is the $FLOCK treasure chest, used to collectively allocate the Kingdom’s vast riches. The more you vote, the more you earn.</p>
+                    <p className="tks-content-card-title"> {sectionText?.title2}</p>
+                    <p className="tks-content-card-desc"> {sectionText?.item2}</p>
                 </div>
                 <div className="tks-content-card">
-                    <p className="tks-content-card-title"> Flock Vault (25%)</p>
-                    <p className="tks-content-card-desc"> 25% is stored in the DAO Vault. This is the $FLOCK treasure chest, used to collectively allocate the Kingdom’s vast riches. The more you vote, the more you earn.</p>
+                    <p className="tks-content-card-title"> {sectionText?.title3}</p>
+                    <p className="tks-content-card-desc"> {sectionText?.item3}</p>
                 </div>
                 <div className="tks-content-card">
-                    <p className="tks-content-card-title"> Flock Vault (25%)</p>
-                    <p className="tks-content-card-desc"> 25% is stored in the DAO Vault. This is the $FLOCK treasure chest, used to collectively allocate the Kingdom’s vast riches. The more you vote, the more you earn.</p>
+                    <p className="tks-content-card-title"> {sectionText?.title4}</p>
+                    <p className="tks-content-card-desc"> {sectionText?.item4}</p>
                 </div>
                 <div className="tks-content-card">
-                    <p className="tks-content-card-title"> Flock Vault (25%)</p>
-                    <p className="tks-content-card-desc"> 25% is stored in the DAO Vault. This is the $FLOCK treasure chest, used to collectively allocate the Kingdom’s vast riches. The more you vote, the more you earn.</p>
+                    <p className="tks-content-card-title"> {sectionText?.title5}</p>
+                    <p className="tks-content-card-desc"> {sectionText?.item5}</p>
                 </div>
+                
             </div>
         </div>
         <div className="tokenomics-img" >

@@ -14,7 +14,7 @@ import { Roadmap } from "../roadmap/roadmap";
 import { Footer } from "../footer/footer";
 import { FAQ } from "../faq/faq";
 // import { useParams } from "react-router-dom";
-// import { useSetLanguage } from "../../../redux/utils/languageUtils";
+import { useSetLanguage } from "../../../redux/utils/languageUtils";
 
 // export const scroll = new SmoothScroll('a[href*="#"]', {
 //   speed: 1000,
@@ -22,12 +22,12 @@ import { FAQ } from "../faq/faq";
 // });
 
 const App = () => {
-  // const setLanguage = useSetLanguage()
+  const setLanguage = useSetLanguage()
 
-  // useEffect( () => {
-  //   const langInput = document.getElementById("current-lang")
-  //   setLanguage(langInput?.value || 'en')
-  // }, [])
+  useEffect( () => {
+    const langInput = document.getElementById("current-lang")
+    setLanguage(langInput?.value || 'en')
+  }, [])
   // useEffect(() => {
   //   setLandingPageData(JsonData);
   // }, []);

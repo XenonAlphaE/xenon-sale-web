@@ -54,7 +54,74 @@
         "note3": "YOU OWN THE FUTURE",
         "note4": "AND MORE...",
         "buyBtn": "join the $FLOCK!"
-    }
+    },
+    "about": {
+        "description1": "The future of decentralization has arrived.",
+        "description2": "In the chaotic PVP world of meme coins, where every key decision is made by a single leader, FLOCKERZ empowers its community—known as 'The Flock'—to guide the project to the promised land.",
+        "description3": "At the core of FLOCKERZ lies Flocktopia, a revolutionary DAO.",
+        "description4": "Here, every holder not only has a voice but earns rewards through our groundbreaking Vote-To-Earn mechanism.",
+        "description5": "Now YOU get to decide the path of the $FLOCK.",
+        "buyNow": "Buy $FLOCK Presale NOW!"
+    },
+    "roadmap":{
+        "heading":"FLight PlaN.. LET’S FLOCKING GO!",
+        "toptext1":"Take Flight",
+        "toptext2":"Expand the Flock",
+        "toptext3":"The Great Migration",
+        "heading1":"Step 1",
+        "heading2":"Step 2",
+        "heading3":"Step 3",
+        "step1_desc1":"Nest Security Audit:",
+        "step1_desc1_1":"Secure the $FLOCK contract with thorough audits before takeoff.",
+        "step1_desc2":"Presale Takeoff:",
+        "step1_desc2_1":"The flock spreads its wings as $FLOCK presale launches, marking our ascent.",
+        "step1_desc3":"Global Flock Squawk:",
+        "step1_desc3_1":"Launch a worldwide marketing campaign, rallying Flockerz from every corner of the globe for a powerful flight.",
 
-   
+        "step2_desc1":"Flock Expansion:",
+        "step2_desc1_1":"As word spreads, more Flockerz join the flight, growing our community.",
+        "step2_desc2":"Signal Boost:",
+        "step2_desc2_1":"Influential voices amplify $FLOCK, attracting a larger, enthusiastic flock.",
+        "step2_desc3":"Domination:",
+        "step2_desc3_1":"$FLOCK takes over the Ethereum skies, becoming the talk of the treetops.",
+
+        "step3_desc1":"Token Listing: ",
+        "step3_desc1_1":"The long wait is over—the flock lands on global exchange platforms. $FLOCK is now ready for public trading.",
+        "step3_desc2":"Kingdom Expansion:",
+        "step3_desc2_1":"With the flock united, continue to grow the $FLOCK community, taking the crypto world by storm.",
+        "step3_desc3":"Vote to Earn Mechanism: ",
+        "step3_desc3_1":"Introduce the vote-to-earn system, rewarding Flockerz for their participation and wisdom."
+
+    },
+    "tokenomics": {
+        "heading": "FLOCKENOMICS",
+        "title1": "Early Bird Catch (20%)",
+        "title2": "Token Breeding (25%)",
+        "title3": "Flock Vault (25%)",
+        "title4": "Exchanges Fuel (10%)",
+        "title5": "Bird Calls (20%)",
+        "item1": "Early birds get the worm! 20% of the nest is set aside for those who swooped in during the presale.",
+        "item2": "A hefty 25% is tucked away for staking. Loyal birds can lay their $FLOCK tokens and watch them hatch into juicy rewards",
+        "item3": "25% is stored in the DAO Vault. This is the $FLOCK treasure chest, used to collectively allocate the Kingdom’s vast riches. The more you vote, the more you earn.",
+        "item4": "We’ve got 10% reserved to keep the skies smooth for our CEX and DEX flights.",
+        "item5": "A full 20% is earmarked for marketing, spreading the word far and wide with squawks, tweets.",
+        "total": "Token Supply"
+    },
+    "faqs":{
+        "heading":"What’s Up, Mother Flockerz?",
+        "title1":"What Is $FLOCK?",
+        "title2":"Can I Earn Rewards During Presale?",
+        "title3":"What Makes Flockerz So Unique?",
+        "title4":"How Do I Buy Presale?",
+        "desc1":"Flockerz ($FLOCK) is breaking new ground in decentralization. It is the first-of-its-kind Vote To Earn meme coin, where YOU have the power to control the destiny of the project, while earning rewards for your votes. Holders are in the driver’s seat, voting on all new proposals related to the future success of the project, and the growth of the community. This means there is no one leader, just a group of likeminded people working together to make $FLOCK great, and earning crazy rewards for their participation.",
+        "desc2":"YES! The Flockerz presale ($FLOCK) is designed to allow early adopters of the project to earn massive rewards for simply buying and staking their tokens during presale. With a generous APY, and a 2-year staking horizon, presale stakers can sit back and enjoy passive rewards for their presale participation, while also utilizing their vote in order to vote to earn!",
+        "desc3":"Never before has a meme coin community been in charge of every single major decision related to the project. And certainly, no meme coin DAO has rewarded its community for casting their votes on the blockchain. Flockerz ($FLOCK) holders are blazing a new trail in the space.",
+        "desc4":"To buy the Flockerz presale ($FLOCK), check out the handy dandy buying guide above! Get a wallet such as Best Wallet, get some crypto (or pay by card), select your desired amount, and fly! Our widget is powered by Web3Payments ensuring your purchase is secured by Web3Toolkit technology.",
+        "buynow":"Buy and Stake Now FOR 1048%!"
+    },
+    "footer": {
+        "sub": "DISCLAIMER",
+        "text": "Cryptocurrency investments carry a high risk of volatility. Be aware of the tax implications, as profits may be subject to capital gains or other taxes in your jurisdiction. Cryptocurrency regulations can vary, so ensure you understand the rules in your area. Conduct thorough research and invest only what you can afford to lose.",
+        "copyRight": "Copyright 2024 — Big Bird"
+    }   
 }
