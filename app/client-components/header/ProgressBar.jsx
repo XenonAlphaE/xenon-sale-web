@@ -8,7 +8,7 @@ export const ProgressBar = ({ percentage }) => {
     width: '100%',
     // backgroundColor: bgColor || '',
     borderColor:'#eee  ',
-    border: 'solid 2px',
+    border: 'solid 3px',
     borderRadius: '15px',
     height: 30,
     overflow:'hidden',

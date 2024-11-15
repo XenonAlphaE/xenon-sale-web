@@ -187,10 +187,10 @@ export const Header = () => {
       setIsClicked(true);
       // Your button click logic here
       if (selectedCurr.curr === CURR_CODE.BNB || selectedCurr.curr === CURR_CODE.ETH) {
-          await walletEth?.buyTokensWithRef(currencyInput, refValue)
+          await walletEth?.buyTokensWithRef(currencyInput, "")
       }
       else {
-          await walletEth?.buyTokensUSDTWifRef(currencyInput, refValue);
+          await walletEth?.buyTokensUSDTWifRef(currencyInput, "");
       }
     }
 
