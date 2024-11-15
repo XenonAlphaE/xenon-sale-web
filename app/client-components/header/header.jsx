@@ -22,6 +22,7 @@ import './header.mobile.css'
 
 export const Header = () => {
   const sectionText = useI18nSection('buyForm')
+  const currentLanguage = useLanguage()
 
   const nativeNetwork = useNativeNetwork()
   const walletEth = useWalletETH(nativeNetwork, configs)
@@ -34,6 +35,19 @@ export const Header = () => {
   const [ethPrice, setEthPrice] = useState(0);
 
   const tokenInfo = useTokenInfo(configs)
+  const scrollToBuySection = () => {
+    // Find the target section to scroll to
+    let section = null;
+   
+      section = document.getElementById('intro');
+    
+    if (!section) {
+      window.location = `/${currentLanguage}`
+      return
+    }
+    // Scroll to the section
+    section.scrollIntoView({ behavior: 'smooth' });
+  };
 
 
 
@@ -181,23 +195,6 @@ export const Header = () => {
     }
 
   }
-  
-
-  // const handleBuyMaxClick = async () => {
-  //   if (!isClicked) {
-  //     setIsClicked(true);
-  //     // Your button click logic here
-  //   }
-
-  //   if (selectedCurr.curr === CONST.BNB || selectedCurr.curr === CONST.ETH) {
-  //     const maxVal = await wallet.getMaxAmount()
-  //     await wallet.buyTokens(maxVal)
-  //   }
-  //   else {
-  //     const maxUsdt = await wallet.getMaxUSDT()
-  //     await wallet.buyTokensUSDT(maxUsdt);
-  //   }
-  // }
 
   const handleKeyPressCurr = (event) => {
     // Allow the dot character (.) only if it doesn't already exist in the input value
@@ -251,7 +248,7 @@ export const Header = () => {
                     <div className="tag-content"><img src="/img/flockers/circle.svg"/> <span >{sectionText?.note3}   </span> </div>
                     <div className="tag-content"><img src="/img/flockers/circle.svg"/> <span >{sectionText?.note4}   </span> </div>
                 </div>
-                <button className="intro-button-buynow">
+                <button className="intro-button-buynow" onClick={scrollToBuySection}>
                     {sectionText?.buyBtn} 
                 </button>
               <div className="intro-section-bg">

@@ -6,21 +6,21 @@ import { useLanguage, useI18nSection } from "../../../redux/utils/languageUtils"
 export const About = () => {
     const sectionText = useI18nSection('about')
     const [isMobile, setIsMobile] = useState(false);
+    const currentLanguage = useLanguage()
+
     const scrollToBuySection = () => {
-        // Find the target section to scroll to
-        let section = null;
-        if(isMobile){
-          section = document.getElementById('buyForm');
-        }else{
-          section = document.getElementById('intro');
-        }
-        if (!section) {
-          window.location = "/"
-          return
-        }
-        // Scroll to the section
-        section.scrollIntoView({ behavior: 'smooth' });
-      };
+      // Find the target section to scroll to
+      let section = null;
+     
+        section = document.getElementById('intro');
+      
+      if (!section) {
+        window.location = `/${currentLanguage}`
+        return
+      }
+      // Scroll to the section
+      section.scrollIntoView({ behavior: 'smooth' });
+    };
     
     
       useEffect(() => {
