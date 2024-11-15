@@ -232,28 +232,27 @@ export const Header = () => {
           <div className="intro-content-left">
             <div className="intro-heading1">
                 <h3> 
-                  1207% staking REWARDS
+                  {sectionText?.para1}
                 </h3> 
                 <div className="heading1-bottom" />
             </div>
 
             <div className="intro-section-container">
                 <h2>
-                    $FLOCK. the people's meme coin.
+                  {sectionText?.para2}
                 </h2>
 
                 <h5>
-                    The Flockerz revolutionary <span style={{color:'rgb(77, 108, 195)'}}>Vote-To-Earn </span>platform puts the POWER in your hands. Buy early presale NOW to earn MASSIVE rewards!
-
+                  {sectionText?.para3} <span style={{color:'rgb(77, 108, 195)'}}>{sectionText?.para3_1} </span>{sectionText?.para3_2}
                 </h5>
                 <div className="intro-tags-container">
-                    <div className="tag-content"><img src="/img/flockers/circle.svg"/> <span >EARN BY VOTING   </span> </div>
-                    <div className="tag-content"><img src="/img/flockers/circle.svg"/> <span >HUGE EARLY REWARDS </span> </div>
-                    <div className="tag-content"><img src="/img/flockers/circle.svg"/> <span >YOU OWN THE FUTURE  </span> </div>
-                    <div className="tag-content"><img src="/img/flockers/circle.svg"/> <span >AND MORE...  </span> </div>
+                    <div className="tag-content"><img src="/img/flockers/circle.svg"/> <span >{sectionText?.note1}   </span> </div>
+                    <div className="tag-content"><img src="/img/flockers/circle.svg"/> <span >{sectionText?.note2}   </span> </div>
+                    <div className="tag-content"><img src="/img/flockers/circle.svg"/> <span >{sectionText?.note3}   </span> </div>
+                    <div className="tag-content"><img src="/img/flockers/circle.svg"/> <span >{sectionText?.note4}   </span> </div>
                 </div>
                 <button className="intro-button-buynow">
-                      join the $FLOCK! 
+                    {sectionText?.buyBtn} 
                 </button>
               <div className="intro-section-bg">
                 <div className="content-bg-color"></div>
@@ -261,16 +260,16 @@ export const Header = () => {
             </div>
 
             <div className="intro-socials">
-                <a>
+                <a  href="https://t.me/flockerz" target="_blank" >
                   <img src="/img/flockers/telegram.svg"/>
                 </a>
-                <a>
+                <a  href="https://x.com/FlockerzToken" target="_blank" >
                   <img src="/img/flockers/social_twitter.svg"/>
                 </a>
-                <a>
+                <a  href="https://coinsult.net/projects/flockerz/" target="_blank" >
                   <img src="/img/flockers/audit.png"/>
                 </a>
-                <a>
+                <a  href="/solid-proof.pdf" target="_blank" >
                   <img src="/img/flockers/solid-proof.png"/>
                 </a>
             </div>
@@ -283,7 +282,7 @@ export const Header = () => {
           <div className="intro-content-right">
               <div className="walletBox" id='walletBox'>
                   <div className="walletBox-info">
-                    <p className="walletBox-heading">BUY $FLOCK PRESALE</p>
+                    <p className="walletBox-heading">{sectionText?.intro}</p>
                     <div className="counter-container  ">
                       <div className="time-card  ">
                         <div className="indicator  ">{sectionText?.day}</div>
@@ -333,7 +332,7 @@ export const Header = () => {
                     
                           <div className="input-container" >
                             <div className="input-lable">
-                              <label className=""> {selectedCurr?.pay} ETH  </label>
+                              <label className=""> {sectionText?.pay} {selectedCurr?.text}  </label>
                             </div>
                             <div className="input-amount">
                               <input
@@ -350,7 +349,7 @@ export const Header = () => {
                           </div>
                           <div className="input-container" >
                             <div className="input-lable">
-                              <label className=""> {selectedCurr?.get} Doge2014     </label>
+                              <label className=""> {sectionText?.get} $FLOCK     </label>
                             </div>
                             <div className="input-amount">
                               <input

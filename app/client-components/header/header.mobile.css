@@ -67,8 +67,8 @@
         row-gap: 24px;
     }
       
-      .intro-socials img{
-        width: 60px;
+    .intro-socials img{
+        width: 80px;
       }
 
 
@@ -98,5 +98,8 @@
         justify-content: space-evenly;
     }
 
-    
+    .swapSection{
+        flex-direction: column;
+        row-gap: 16px;
+    }
 }

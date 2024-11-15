@@ -1,16 +1,11 @@
 'use client'; // This component will run on the client side
 
 import React, { useState, useEffect } from 'react';
-// import Dropdown from './dropdown';
 import { useLanguage, useI18nSection } from "../../../redux/utils/languageUtils";
-// import { useNavigate, useParams } from 'react-router-dom';
 import './navbar.css';
-// import { useCurrentAddress } from '../../utils/nativeNetworkUtils';
-// import {truncateMiddle} from '../../services/wallet-service'
 
 
 export const Navbar = () => {
-  // const navigate = useNavigate();
   const languageOptions = {
     en: {
       flag: "fi fi-gb width-size",
@@ -145,21 +140,6 @@ export const Navbar = () => {
   };
   const currentLanguage = useLanguage()
 
-  
-  // const {lang} = useParams()
-  
-  // const handleNavigation = () => {
-  //   // Preserve the current path and search query, then append the hash
-  //   navigate(`${window.location.pathname}${window.location.search}#tokenomics`);
-
-  //   // Scroll to the element with the ID 'tokenomics'
-  //   const targetElement = document.getElementById('tokenomics');
-  //   if (targetElement) {
-  //     targetElement.scrollIntoView({ behavior: 'smooth' });
-  //   }
-  // };
-
-
   // const currentAddress = useCurrentAddress()
   const [isMobile, setIsMobile] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -246,13 +226,12 @@ export const Navbar = () => {
         </div>
       
       <div className={`appnav-navbar-menu`}>
-       
-        <a href={`/${currentLanguage}`}>{sectionText?.about}</a>
+        <a href={`/${currentLanguage}`}>{sectionText?.home}</a>
+        <a href="#about">{sectionText?.about}</a>
         <a href="#roadmap">{sectionText?.roadmap}</a>
         <a href="#tokenomics">{sectionText?.tokenomics}</a>
-        <a href="#features">{sectionText?.features}</a>
-        <a href="#features">{sectionText?.howtobuy}</a>
-        <a href="#features">{sectionText?.whitePaper}</a>
+        <a href="#faqs">{sectionText?.faq}</a>
+        <a href="/white-paper.pdf" target='_blank'>{sectionText?.whitePaper}</a>
       </div>
       <div className={`appnav-navbar-right`}>
         {/* <div className="appnav-social">
@@ -277,11 +256,9 @@ export const Navbar = () => {
                 <a href={`/${language}`} key={language}>
                 <div  className="lang-dropdown-item" 
                 
-                // onClick={() => handleChangeLanguage(language)}
                 >
                     <span className={languageOptions[language].flag}></span>
                     <span>{languageOptions[language].name.toUpperCase()}</span>
-                 
                 </div>
                 </a>
               ))}
@@ -292,20 +269,12 @@ export const Navbar = () => {
 
       {isMobile && <div className={`appnav-navbar-menu-mobile ${isMenuOpen ? 'appnav-is-active' : ''}`}>
         <a href={`/${currentLanguage}`}>{sectionText?.home}</a>
-        <a href="#features" onClick={toggleMenu}>{sectionText?.features}</a>
+        <a href="#about" onClick={toggleMenu}>{sectionText?.about}</a>
+        <a href="#roadmap" onClick={toggleMenu}>{sectionText?.roadmap}</a>
         <a href="#tokenomics" onClick={toggleMenu}>{sectionText?.tokenomics}</a>
-        <a href="#roadmap" onClick={toggleMenu} >{sectionText?.roadmap}</a>
-        {/* <a href={`/community/en`}>Staking</a>
-        <a href={`/community/en`}>Leaderboard</a> */}
-        <a href="#howtobuy" onClick={toggleMenu}>{sectionText?.airdrop}</a>
-        {/* <div style={{boxSizing:'border-box'}} >
-            <a className='social-icon' href="https://x.com/Doge2014token" target='_blank'>
-              <img src="/navbar/twitter-circle.svg" />
-            </a>
-            <a className='social-icon'  href="https://t.me/officialdoge2014token" target='_blank'>
-              <img src="/navbar/telegram-circle.svg" />
-            </a>
-          </div> */}
+        <a href="#faqs" onClick={toggleMenu}>{sectionText?.faq}</a>
+        <a href="/white-paper.pdf" target='_blank'>{sectionText?.whitePaper}</a>
+
         <div className="appnav-lang-dropdown">
           <div className="appnav-lang-custom-dropdown" onClick={toggleLanguageDrpdwn}>
             <span className={languageOptions[currentLanguage].flag}></span>
@@ -315,8 +284,6 @@ export const Navbar = () => {
             {Object.keys(languageOptions).map((language) => (
               <a href={`/${language}`} key={language}>
               <div  className="lang-dropdown-item" 
-              
-              // onClick={() => handleChangeLanguage(language)}
               >
                   <span className={languageOptions[language].flag}></span>
                   <span>{languageOptions[language].name}</span>

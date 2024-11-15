@@ -17,18 +17,20 @@
         "tokenomics": "TOKENOMICS",
         "features": "FEATURES",
         "buyNow": "BUY NOW",
+        "faq": "FAQS",
         "audit": "AUDIT",
         "roadmap": "ROADMAP",
         "airdrop": "AIRDROP",
         "about": "ABOUT"
     },
     "buyForm": {
-        "processText":"Until sold out",
+        "intro": "BUY $FLOCK PRESALE",
         "day": "Days",
         "hrs": "Hours",
-        "mins": "Mins",
-        "sec": "Secs",
-        "funRaised": "USDT Raised",
+        "mins": "Minutes",
+        "sec": "Seconds",
+        "funRaised": "",
+        "wallet": "YOUR Wallet",
         "boughtAmount": "YOUR PURCHASED",
         "stakeableAmount": "YOUR STAKEABLE",
         "pay": "Pay with",
@@ -40,75 +42,19 @@
         "connectWallet": "CONNECT WALLET",
         "ethOption": "ETH NETWORK",
         "bnbOption": "BNB NETWORK",
-        "buyStake": "Buy and Stake for 924% Rewards",
-        "nextPriceAlert": "Next Price Increase In",
-        "para1": "Introducing Doge2014 - celebrating 10 years of Dogecoin!",
-        "audit": "AUDIT",
-        "whitePaper": "WHITE PAPER"
-    },
-    "features":{
-        "heading": "OUR FEATURES",
-        "title1": "Stake-to-Earn Rewards",
-        "title2": "Easy Wallet Integration",
-        "title3": "Secure and Transparent",
-        "title4": "Hold to Celebrate",
-        "item1": "Stake your Doge2014 tokens to earn passive rewards while celebrating the legacy of Dogecoin's journey from 2014.",
-        "item2": "Seamlessly add Doge2014 in your EVM wallet such as MetaMask and start staking to celebrate Dogecoin's ten-year milestone.",
-        "item3": "Enjoy secure and transparent staking on Ethereum's blockchain, celebrating ten years of Dogecoin's impact.",
-        "item4": "Celebrate ten years of Dogecoin by simply holding Doge2014 tokens and enjoy being part of the community."
-    },
-
-    "howtobuy": {
-        "heading": "HOW TO BUY",
-        "title1": "Connect Wallet",
-        "title2": "Participate in Presale",
-        "title3": "Claim Tokens",
-        "item1": "To purchase Doge2014 Token you need to connect your wallet, which involves approving the contract on your wallet",
-        "item2": "Visit our presale platform and follow the instructions to purchase Doge2014 tokens using your preferred cryptocurrency.",
-        "item3": "Once the presale is complete, you will be able to claim your Doge2014 tokens into your wallet address.",
-        "buyNow": "BUY NOW"
-    },
-    "tokenomics": {
-        "heading": "TOKENOMICS",
-        "title1": "100 Billion tokens",
-        "title2": "0.000348 USD",
-        "title3": "60%",
-        "title4": "25%",
-        "title5": "10%",
-        "title6": "5%",
-        "item1": "Total Supply",
-        "item2": "Listing Price",
-        "item3": "Presale",
-        "item3_1": "Allocation",
-        "item4": "Staking",
-        "item4_1": "Allocation",
-        "item5": "Liquidity",
-        "item5_1": "Allocation",
-        "item6": "Marketing",
-        "item6_1": "Allocation"
-    },
-    "roadmap":{
-        "heading": "ROADMAP",
-        "title1": "Phase one",
-        "title2": "Phase two",
-        "title3": "Phase three",
-        "title4": "Phase four",
-        "item1": "Initiate the Doge2014 project with a token presale to celebrate Dogecoin and build a strong community foundation.",
-        "item2": "Expand the Doge2014 community through marketing campaigns, partnerships, and social media engagement.",
-        "item3": "Officially launch the Doge2014 token on major cryptocurrency exchanges, ensuring widespread accessibility and adoption.",
-        "item4": "Celebrate major achievements with the community and plan for future developments and enhancements to the Doge2014 ecosystem."
-    },
-    "footer": {
-        "sub": "DISCLAIMER",
-        "text": "Cryptocurrency investments carry a high risk of volatility. Be aware of the tax implications, as profits may be subject to capital gains or other taxes in your jurisdiction. Cryptocurrency regulations can vary, so ensure you understand the rules in your area. Conduct thorough research and invest only what you can afford to lose.",
-        "copyRight": "Copyright 2024 — Big Bird"
-    },
-    "about": {
-        "description1": "The future of decentralization has arrived.",
-        "description2": "In the chaotic PVP world of meme coins, where every key decision is made by a single leader, FLOCKERZ empowers its community—known as 'The Flock'—to guide the project to the promised land.",
-        "description3": "At the core of FLOCKERZ lies Flocktopia, a revolutionary DAO.",
-        "description4": "Here, every holder not only has a voice but earns rewards through our groundbreaking Vote-To-Earn mechanism.",
-        "description5": "Now YOU get to decide the path of the $FLOCK.",
-        "buyNow": "Buy $FLOCK Presale NOW!"
+        "buyStake": "Buy and Stake for 8471% Rewards",
+        "nextPriceAlert": "UNTIL PRICE INCREASE",
+        "para1": "1207% staking REWARDS",
+        "para2": "$FLOCK. the people's meme coin. ",
+        "para3": "The Flockerz revolutionary",
+        "para3_1": " Vote-To-Earn",
+        "para3_2": " platform puts the POWER in your hands. Buy early presale NOW to earn MASSIVE rewards! ",
+        "note1": "EARN BY VOTING",
+        "note2": "HUGE EARLY REWARDS",
+        "note3": "YOU OWN THE FUTURE",
+        "note4": "AND MORE...",
+        "buyBtn": "join the $FLOCK!"
     }
+
+   
 }

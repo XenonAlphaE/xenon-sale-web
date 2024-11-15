@@ -12,6 +12,12 @@ export async function generateMetadata() {
   return {
     title: metadata?.title,
     description: metadata?.description,
+
+    icons: {
+      icon: { rel: 'icon', type: 'image/png', url: '/img/flockers/favicon.png' },
+      icon: { rel: 'icon', type: 'image/svg+xml', url: '/img/flockers/favicon.svg' },
+      icon: { rel: 'icon', type: 'image/x-icon', url: '/img/flockers/favicon.svg' },
+    },
     keywords: 'FLOCKERZ, $FLOCK, $FLOCK-TOKEN, FLOCKER, FLOCKEZ, floker coin, flockers coin, flokerz coin', // Add keywords here
     robots: 'index, follow', // Add robots directives here
     openGraph: {
@@ -36,6 +42,9 @@ export async function generateMetadata() {
       title: metadata?.openGraph?.title,
       description: metadata?.openGraph?.description,
       image: 'https://flockez.com/img/flockers/OG.png', // Path to your Open Graph image,
+    },
+    alternates: {
+      canonical: 'https://flockez.com/', // Set the canonical URL
     },
   };
 }
@@ -72,9 +81,6 @@ export default function RootLayout({ children }) {
         <meta httpEquiv="Expires" content="0" />
         <link rel="stylesheet" type="text/css" href="/css/bootstrap.css" />
 
-
-        <link rel="icon" type="image/png" href="/img/flockers/favicon.png"/>
-        <link rel="icon" type="image/svg+xml" href="/img/flockers/favicon.svg"/>
 
         {/* <!-- Metadata for language versions --> */}
         <link rel="alternate" hrefLang="en" href="https://flockez.com/en" />   
