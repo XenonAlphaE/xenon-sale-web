@@ -1,13 +1,9 @@
-# Allow all web crawlers to access everything
+# *
 User-agent: *
-Allow: /favicon.ico
+Allow: /
 
-# Disallow web crawlers from accessing the admin and private directories
-Disallow: /admin/
-Disallow: /private/
-Disallow: /*.pdf$
-Disallow: /*.doc$
+# Host
+Host: https://flockez.com
 
-
-# Sitemap location
+# Sitemaps
 Sitemap: https://flockez.com/sitemap.xml

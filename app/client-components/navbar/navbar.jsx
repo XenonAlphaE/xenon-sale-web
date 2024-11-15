@@ -234,14 +234,6 @@ export const Navbar = () => {
         <a href="/white-paper.pdf" target='_blank'>{sectionText?.whitePaper}</a>
       </div>
       <div className={`appnav-navbar-right`}>
-        {/* <div className="appnav-social">
-            <a href="https://x.com/Doge2014token">
-              <img src="/img/flockers/twitter.svg" />
-            </a>
-            <a href="https://t.me/officialdoge2014token">
-              <img src="/img/flockers/telegram.svg" />
-            </a>
-        </div> */}
 
         <div className="appnav-lang-login-container">
           <button onClick={scrollToBuySection} className="appnav-login">{sectionText?.buyNow}</button>

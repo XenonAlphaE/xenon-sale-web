@@ -109,10 +109,9 @@ export default function RootLayout({ children }) {
         <link rel="alternate" hrefLang="bn" href="https://flockez.com/bn" />   
         <link rel="alternate" hrefLang="ta" href="https://flockez.com/ta" />   
         <link rel="alternate" hrefLang="pl" href="https://flockez.com/pl" />   
-        <link rel="alternate" hrefLang="x-default" href="https://flockez.com/" />
+        <link rel="alternate" hrefLang="x-default" href="https://flockez.com/en" />
 
 
-        <link rel="canonical" href="https://flockez.com/" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css" />
 
         {/* Add the schema markup here */}
