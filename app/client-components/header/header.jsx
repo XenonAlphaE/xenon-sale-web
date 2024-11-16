@@ -96,8 +96,7 @@ export const Header = () => {
   const [totalBought, setTotalBought] = useState(0);
 
 
-  const endSaleTime = useMemo(() => new Date(configs['endSaleTime']).getTime(), []); // Memoize endSaleTime
-  const { days, hours, minutes, seconds } = useCountdown(endSaleTime);
+  const { days, hours, minutes, seconds } = useCountdown();
   // const wallet = useWallet(network, configs);
   const [tokenInput, setTokenInput] = useState('');
 

@@ -1,5 +1,24 @@
 import React, { useState, useEffect } from 'react';
 
+function nearestDayDivisibleBy3(targetHour) {
+  const today = new Date();
+  let day = today.getUTCDate(); // Get the current day of the month in UTC
+  
+  // Calculate the nearest future day divisible by 3
+  let offset = 3 - (day % 3); // Days to add to reach a future day divisible by 3
+  if (offset === 3) {
+    offset = 0; // If today is divisible by 3, offset should be 0
+  }
+  const nearestDay = day + offset; // Compute the nearest future day
+  
+  // Set the nearest day with the specified target hour in UTC
+  today.setUTCDate(nearestDay);
+  today.setUTCHours(targetHour, 0, 0, 0); // Set the target hour in UTC
+  
+  return today.toISOString(); // Return the time in Zulu (UTC) format
+}
+
+
 export function shortenText(text) {
   if(!text) {
     return "";
@@ -47,12 +66,12 @@ export function customHash(hex) {
   return result.slice(0, 10); // Return only the first 10 characters
 }
 
-export const useCountdown = (futureTime) => {
+export const useCountdown = () => {
   const calculateTimeLeft = () => {
     // console.log('Future Time:', futureTime);
     const currentTime = new Date().getTime();
     // console.log('Current Time:', currentTime);
-    
+    const futureTime = new Date(nearestDayDivisibleBy3(9)).getTime()
     const difference = futureTime - currentTime;
     // console.log('Difference:', difference);
     let timeLeft = {days: 0,
