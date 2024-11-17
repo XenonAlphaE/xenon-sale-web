@@ -1,0 +1,40 @@
+@media (max-width: 1024px) {
+
+
+.roadmap-heading{
+        margin: 0;
+        
+        display: block;
+        font-family: 'badaboom-bb', sans-serif;
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 44px;
+        position: static;
+       
+    
+}
+.roadmap-row{
+    display: flex;
+    flex-direction: column;
+}
+
+.roadmap-content-bg-inner {
+    flex-direction: column;
+}
+
+
+.top-text{
+    right: 5%;
+    top:-20px;
+}
+
+.reverse-col{
+    flex-direction: column-reverse;
+}
+
+.roadmap-content-bg-inner.reverse-col h3{
+    text-align: center;
+}
+
+
+}

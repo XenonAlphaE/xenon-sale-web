@@ -1,0 +1,129 @@
+{
+    "metadata": {
+        "title": "FLOCKERZ: 革新的なVote-To-Earnミームコイン | 暗号通貨プレセール",
+        "description": "$FLOCKに参加し、全てのFlockerが発言権を持つ場所へ。コミュニティの手に力を取り戻す画期的なVote-To-Earnプラットフォーム、Flocktopiaを発見しよう。報酬を獲得し、未来を形作り、革命の一部になろう。",
+        "openGraph": {
+            "title": "FLOCKERZ: 革新的なVote-To-Earnミームコイン | 暗号通貨プレセール",
+            "description": "$FLOCKに参加し、全てのFlockerが発言権を持つ場所へ。コミュニティの手に力を取り戻す画期的なVote-To-Earnプラットフォーム、Flocktopiaを発見しよう。報酬を獲得し、未来を形作り、革命の一部になろう。",
+            "url": "https://flockez.com/ja",
+            "locale": "ja_JP"
+        }
+    },
+    "nav": {
+        "home": "ホーム",
+        "staking": "ステーキング",
+        "howtobuy": "購入方法",
+        "whitePaper": "ホワイトペーパー",
+        "tokenomics": "トークンエコノミクス",
+        "features": "特徴",
+        "buyNow": "今すぐ購入",
+        "faq": "よくある質問",
+        "audit": "監査",
+        "roadmap": "ロードマップ",
+        "airdrop": "エアドロップ",
+        "about": "について"
+    },
+    "buyForm": {
+        "intro": "$FLOCK プレセール購入",
+        "day": "日",
+        "hrs": "時間",
+        "mins": "分",
+        "sec": "秒",
+        "funRaised": "調達されたUSDT",
+        "wallet": "あなたのウォレット",
+        "boughtAmount": "購入済み",
+        "stakeableAmount": "ステーキング可能額",
+        "pay": "支払い方法",
+        "get": "受け取る",
+        "buyNow": "今すぐ購入",
+        "buyMax": "最大購入",
+        "warning": "購入するにはMetamaskをインストールしてください",
+        "link": "ここをクリック",
+        "connectWallet": "ウォレットを接続",
+        "ethOption": "ETH ネットワーク",
+        "bnbOption": "BNB ネットワーク",
+        "buyStake": "購入して8471%の報酬を得る",
+        "nextPriceAlert": "価格上昇まで",
+        "para1": "1207%のステーキング報酬",
+        "para2": "$FLOCK。人民のミームコイン。",
+        "para3": "Flockerz革命的な",
+        "para3_1": "Vote-To-Earn",
+        "para3_2": "プラットフォームは、あなたの手に力をもたらします。プレセールを今すぐ購入して巨大な報酬を得よう！",
+        "note1": "投票で稼ぐ",
+        "note2": "巨大な初期報酬",
+        "note3": "あなたが未来を作る",
+        "note4": "そしてさらに...",
+        "buyBtn": "$FLOCKに参加！"
+    },
+    "about": {
+        "description1": "分散化の未来が到来しました。",
+        "description2": "ミームコインの混沌としたPVP世界では、すべての重要な決定が一人のリーダーによって行われていますが、FLOCKERZはそのコミュニティである「The Flock」に力を与え、プロジェクトを約束された地へと導きます。",
+        "description3": "FLOCKERZの中心にはFlocktopiaという革命的なDAOがあります。",
+        "description4": "ここでは、すべての保有者が声を持つだけでなく、画期的なVote-To-Earnメカニズムを通じて報酬を得ることができます。",
+        "description5": "今、あなたが$FLOCKの進む道を決めます。",
+        "buyNow": "$FLOCK プレセール今すぐ購入！"
+    },
+    "roadmap": {
+        "heading": "FLight PlaN.. LET’S FLOCKING GO!",
+        "toptext1": "飛び立つ",
+        "toptext2": "Flockの拡大",
+        "toptext3": "大移動",
+        "heading1": "ステップ 1",
+        "heading2": "ステップ 2",
+        "heading3": "ステップ 3",
+        "step1_desc1": "巣のセキュリティ監査:",
+        "step1_desc1_1": "$FLOCK契約をしっかりと監査して、出発前にセキュリティを確保します。",
+        "step1_desc2": "プレセールの開始:",
+        "step1_desc2_1": "$FLOCKプレセールが開始され、Flockは羽を広げます。",
+        "step1_desc3": "世界的なFlockの広がり:",
+        "step1_desc3_1": "世界中のFlockerzが集まるためのグローバルなマーケティングキャンペーンを展開します。",
+
+        "step2_desc1": "Flockの拡大:",
+        "step2_desc1_1": "口コミで広まり、さらに多くのFlockerzが参加し、コミュニティが成長します。",
+        "step2_desc2": "シグナルブースト:",
+        "step2_desc2_1": "影響力のある声が$FLOCKを広め、より多くの熱心なFlockerzを惹きつけます。",
+        "step2_desc3": "支配:",
+        "step2_desc3_1": "$FLOCKがEthereumの空を制圧し、話題になります。",
+
+        "step3_desc1": "トークン上場: ",
+        "step3_desc1_1": "長い待機が終わり、Flockはグローバルな取引所で取引可能となります。",
+        "step3_desc2": "王国の拡大:",
+        "step3_desc2_1": "Flockが団結し、$FLOCKコミュニティが成長を続け、暗号世界を席巻します。",
+        "step3_desc3": "Vote to Earnメカニズム: ",
+        "step3_desc3_1": "投票システムを導入し、Flockerzに参加と知恵に対して報酬を提供します。"
+    },
+    "tokenomics": {
+        "heading": "FLOCKENOMICS",
+        "title1": "早起きの鳥が捕まえる (20%)",
+        "title2": "トークン育成 (25%)",
+        "title3": "Flock Vault (25%)",
+        "title4": "取引所用資金 (10%)",
+        "title5": "鳥の鳴き声 (20%)",
+        "item1": "早起きの鳥が卵をゲット！プレセールで参加した人々のために20%を確保。",
+        "item2": "25%はステーキング用に確保され、忠実な鳥たちは$FLOCKトークンを育てて報酬を得ます。",
+        "item3": "25%はDAO Vaultに保管され、$FLOCKの宝箱として使用されます。投票するほど報酬が増えます。",
+        "item4": "10%は取引所用に確保されています。",
+        "item5": "20%はマーケティングに使われ、広く告知されます。",
+        "total": "トークン供給量"
+    },
+    "faqs": {
+        "heading": "どうも、母親Flockerz！",
+        "buynow":"今すぐ購入してステーク！1048％獲得！",
+        "title1": "$FLOCKとは？",
+        "title2": "プレセールで報酬を得られますか？",
+        "title3": "Flockerzの特徴は何ですか？",
+        "title4": "プレセールの購入方法は？",
+        "desc1": "Flockerz($FLOCK)は分散化の新たな道を切り開いています。これは、あなたがプロジェクトの運命を制御し、投票で報酬を得る世界初のVote-To-Earnミームコインです。",
+        "desc2": "はい！Flockerzプレセール($FLOCK)は、プロジェクトを早期にサポートしたユーザーに素晴らしい報酬を提供します。",
+        "desc3": "これまでにない革新的なVote-To-Earn機能により、$FLOCKを持っている人は、どこにいても報酬を得ることができます。",
+        "desc4": "MetaMaskウォレットを用意し、購入ページから簡単に購入できます。"
+    },
+    
+        "footer": {
+            "sub": "免責事項",
+            "text": "暗号通貨への投資は高いボラティリティリスクを伴います。利益はあなたの管轄区域でキャピタルゲイン税やその他の税金の対象となる可能性があるため、税務への影響について認識しておく必要があります。暗号通貨に関する規制は地域によって異なるため、地域の規則を理解していることを確認してください。十分に調査を行い、失っても構わない金額だけを投資するようにしましょう。",
+            "copyRight": "Copyright 2024 — Big Bird"
+        }
+    
+    
+}
