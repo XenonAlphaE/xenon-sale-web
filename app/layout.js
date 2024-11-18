@@ -4,7 +4,7 @@ import { ReduxProvider } from './redux-provider';
 
 import './globals.css'
 
-const GA_TRACKING_ID = 'G-FYRE85430C';
+const GA_TRACKING_ID = 'G-MFD7Q1PPT9';
 
 
 export async function generateMetadata() {
