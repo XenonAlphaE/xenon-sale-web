@@ -1,6 +1,7 @@
 // app/layout.js
 import { ReduxProvider } from './redux-provider';
 
+import {WalletProvider} from './wallet-provider'
 
 import './globals.css'
 
@@ -145,7 +146,9 @@ export default function RootLayout({ children }) {
           />
       </head>
       <body>
-        <ReduxProvider>{children}</ReduxProvider>
+        <WalletProvider>
+          <ReduxProvider>{children}</ReduxProvider>
+        </WalletProvider>
         <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
         <script type="text/javascript" src="js/bootstrap.js"></script>
         <a href="https://hemifinance.com" style={{display: 'none'}}> Staking $HEMI</a>
