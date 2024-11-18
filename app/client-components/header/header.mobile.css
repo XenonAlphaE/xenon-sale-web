@@ -23,6 +23,7 @@
     }
 
     .intro-content-left .intro-heading1{
+        width: auto;
         font-size: large;
         margin: 0;
         padding: 4px 12px;
