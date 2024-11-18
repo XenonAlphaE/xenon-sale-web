@@ -1,5 +1,5 @@
 export async function generateMetadata({ params }) {
-  const baseUrl = "https://flockez.com";
+  const baseUrl = "https://flockserz.com";
 
   const lang = (await params).lang
   const canonicalUrl = `${baseUrl}/${lang}`;
@@ -18,7 +18,7 @@ export async function generateMetadata({ params }) {
       siteName: 'FLOCKERZ',
       images: [
         {
-          url: 'https://flockez.com/img/flockers/OG.png', // Path to your Open Graph image
+          url: 'https://flockserz.com/img/flockers/OG.png', // Path to your Open Graph image
           width: 1200,
           height: 800,
           alt: 'Flockerz',
@@ -32,7 +32,7 @@ export async function generateMetadata({ params }) {
       site: "@FlockerzToken", // Your Twitter handle
       title: localMeta?.openGraph?.title || defaultMeta?.openGraph?.title ,
       description: localMeta?.openGraph?.description || defaultMeta?.openGraph?.description,
-      image: 'https://flockez.com/img/flockers/OG.png', // Path to your Open Graph image,
+      image: 'https://flockserz.com/img/flockers/OG.png', // Path to your Open Graph image,
     },
     alternates: {
       canonical: canonicalUrl, // Set the canonical URL

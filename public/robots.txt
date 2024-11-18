@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://flockez.com
+Host: https://flockserz.com
 
 # Sitemaps
-Sitemap: https://flockez.com/sitemap.xml
+Sitemap: https://flockserz.com/sitemap.xml
