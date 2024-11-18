@@ -4,19 +4,21 @@ function nearestDayDivisibleBy3(targetHour) {
   const today = new Date();
   let day = today.getUTCDate(); // Get the current day of the month in UTC
   
-  // Calculate the nearest future day divisible by 3
-  let offset = 3 - (day % 3); // Days to add to reach a future day divisible by 3
-  if (offset === 3) {
-    offset = 0; // If today is divisible by 3, offset should be 0
+  // Calculate the offset to the next day divisible by 3
+  let offset = (3 - (day % 3)) % 3; // Days to add to reach the next divisible-by-3 day
+  if (offset === 0) {
+    offset = 3; // Always ensure the day is in the future
   }
-  const nearestDay = day + offset; // Compute the nearest future day
   
+  const nearestDay = day + offset; // Compute the nearest future day
+
   // Set the nearest day with the specified target hour in UTC
   today.setUTCDate(nearestDay);
   today.setUTCHours(targetHour, 0, 0, 0); // Set the target hour in UTC
-  
+
   return today.toISOString(); // Return the time in Zulu (UTC) format
 }
+
 
 
 export function shortenText(text) {
