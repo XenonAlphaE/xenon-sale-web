@@ -4,8 +4,6 @@ import React, { useState, useEffect,useMemo } from "react";
 import {ProgressBar} from './ProgressBar'
 import { useLanguage, useI18nSection } from "../../../redux/utils/languageUtils";
 
-import { Navbar, Nav, Container, Row, Col, Card } from 'react-bootstrap';
-
 import {useNativeNetwork, useSetNativeNetwork} from '../../../redux/utils/nativeNetworkUtils'
 import { CURRENCIES,CURR_CODE, NETWORK_OTIONS, VALID_NETWORKS } from '../../../redux/ducks/nativeNetworkDuck';
 import {useWalletETH} from '../services/wallet-service2'

@@ -2,10 +2,20 @@
 
 import React, { useState, useEffect } from 'react';
 import { useLanguage, useI18nSection } from "../../../redux/utils/languageUtils";
+import { truncateMiddle } from '../services/wallet-service';
 import './navbar.css';
+import {
+  useConnectModal,
+  useAccountModal,
+  useChainModal,
+} from '@rainbow-me/rainbowkit';
+import { useAccount } from 'wagmi'
 
 
 export const Navbar = () => {
+  const { openAccountModal } = useAccountModal();
+  const currAccount = useAccount()
+
   const languageOptions = {
     en: {
       flag: "fi fi-gb width-size",
@@ -162,18 +172,24 @@ export const Navbar = () => {
   }
 
 
-  const scrollToBuySection = () => {
-    // Find the target section to scroll to
-    let section = null;
-   
-      section = document.getElementById('intro');
-    
-    if (!section) {
-      window.location = `/${currentLanguage}`
-      return
+  const scrollToBuySection = async () => {
+    if(!!currAccount.address){
+      openAccountModal();
     }
-    // Scroll to the section
-    section.scrollIntoView({ behavior: 'smooth' });
+    else{
+
+      // Find the target section to scroll to
+      let section = null;
+     
+        section = document.getElementById('intro');
+      
+      if (!section) {
+        window.location = `/${currentLanguage}`
+        return
+      }
+      // Scroll to the section
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
     toggleMenu()
   };
 
@@ -236,7 +252,7 @@ export const Navbar = () => {
       <div className={`appnav-navbar-right`}>
 
         <div className="appnav-lang-login-container">
-          <button onClick={scrollToBuySection} className="appnav-login">{sectionText?.buyNow}</button>
+          <button onClick={scrollToBuySection} className="appnav-login">{ !!currAccount?.address  ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button>
           
           <div className="appnav-lang-dropdown">
             <div className="appnav-lang-custom-dropdown" onClick={toggleLanguageDrpdwn}>
@@ -285,7 +301,7 @@ export const Navbar = () => {
             ))}
           </div>
         </div>
-        <button onClick={scrollToBuySection} className="appnav-login">{sectionText?.buyNow}</button>
+        <button onClick={scrollToBuySection} className="appnav-login">{ !!currAccount?.address  ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button>
 
       </div>
       }
