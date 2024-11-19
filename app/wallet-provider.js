@@ -70,7 +70,6 @@ export const WalletProvider = ({ children }) => {
         <QueryClientProvider client={queryClient}>
             <RainbowKitProvider theme={darkTheme()} modalSize='compact'>
                 {children}
-                <ConnectButton />;
             </RainbowKitProvider>
         </QueryClientProvider>
       </WagmiProvider>
