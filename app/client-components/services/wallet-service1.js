@@ -60,7 +60,6 @@ export const calculateBNBNeeded = (tokenAmount, bnbToUsdtRate, tokenToUsdtRate) 
     }
     return bnbAmount;
 };
-const toWei = ether => parseEther(ether)
 
 export const truncateMiddle = (text) => {
     const maxLength = 6;

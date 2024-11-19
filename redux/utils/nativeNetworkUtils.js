@@ -1,28 +1,37 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { selectNativeNetworkState , selectCurrentAddress, setNetwork,setCurrentAddress } from '../ducks/nativeNetworkDuck'; // Import the selector from the Redux Duck
+import { useAccount, useChainId } from 'wagmi'
 
 
-// Custom hook to retrieve the current language
+// // Custom hook to retrieve the current language
 export const useNativeNetwork = () => {
-    return useSelector(selectNativeNetworkState);
+    const chainId = useChainId()
+    switch(chainId){
+        case 1:
+            return"eth";
+        case 56:
+            return"bsc";
+        default:
+            return"eth";
+    }
   };
 
-export const useCurrentAddress = () => {
-    return useSelector(selectCurrentAddress);
-};
-// Custom hook for setting 
-export const useSetNativeNetwork = () => {
-    const dispatch = useDispatch();
-    return (key) => {
-        dispatch(setNetwork(key));
-    };
-};
+// export const useCurrentAddress = () => {
+//     return useSelector(selectCurrentAddress);
+// };
+// // Custom hook for setting 
+// export const useSetNativeNetwork = () => {
+//     const dispatch = useDispatch();
+//     return (key) => {
+//         dispatch(setNetwork(key));
+//     };
+// };
 
-// Custom hook for setting 
-export const useSetCurrentAddress = () => {
-    const dispatch = useDispatch();
-    return (address) => {
-        dispatch(setCurrentAddress(address));
-    };
-};
+// // Custom hook for setting 
+// export const useSetCurrentAddress = () => {
+//     const dispatch = useDispatch();
+//     return (address) => {
+//         dispatch(setCurrentAddress(address));
+//     };
+// };
 
