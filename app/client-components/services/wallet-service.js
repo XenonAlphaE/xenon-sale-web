@@ -4,10 +4,12 @@ import {useState, useEffect, useMemo} from 'react'
 import Web3 from 'web3';
 
 export function isValidNumber( amount) {
+    
     // Check for empty string
     if (!amount) {
       return false;
     }
+    
   
     // Attempt to convert the value to a number using parseFloat
     const numberValue = parseFloat(amount);
@@ -47,7 +49,7 @@ export const calculateBNBNeeded = (tokenAmount, bnbToUsdtRate, tokenToUsdtRate) 
     }
     return bnbAmount;
 };
-const toWei = ether => parseEther(ether)
+export const toWei = ether => parseEther(ether)
 
 export const truncateMiddle = (text) => {
     const maxLength = 6;

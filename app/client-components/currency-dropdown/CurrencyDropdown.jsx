@@ -17,13 +17,12 @@ export const CurrencyDropdown = ({ walletETH}) => {
 
 
   const currentNetwork = useNativeNetwork()
-  const nerNetworkOptionKeys = Object.keys(NETWORK_OTIONS).filter(key => key !== currentNetwork)
   const currentNetworkName = currentNetwork === 'bsc' ? sectionText?.bnbOption : sectionText?.ethOption
 
 
 
   const toggleDropdown = () => {
-    setIsOpen(!isOpen);
+    walletETH.swicthNativeNetwork()    
   };
 
   const selectItemOnclick = (key) => {
@@ -41,14 +40,14 @@ export const CurrencyDropdown = ({ walletETH}) => {
           type="button"
           onClick={toggleDropdown}
           className="w-100 curr-custom-dropdown">  <img style={{marginRight: 5}} src={NETWORK_OTIONS[currentNetwork].img} width={20} height={20}/> {currentNetworkName} &#9660;</button>
-      <div className={`curr-dropdown-content ${isOpen ? 'open' : ''}`}>
+      {/* <div className={`curr-dropdown-content ${isOpen ? 'open' : ''}`}>
         {nerNetworkOptionKeys.map((networkKey) => (
           <div key={networkKey} className="curr-dropdown-item" onClick={() => {selectItemOnclick(networkKey)}}>
             <img src={NETWORK_OTIONS[networkKey].img} width={26} height={26} />
             <span>{NETWORK_OTIONS[networkKey].name}</span>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };
