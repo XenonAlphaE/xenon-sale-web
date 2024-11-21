@@ -5,7 +5,7 @@ import {WalletProvider} from './wallet-provider'
 
 import './globals.css'
 
-const GA_TRACKING_ID = 'G-MFD7Q1PPT9';
+const GA_TRACKING_ID = 'G-FYRE85430C';
 
 
 export async function generateMetadata() {
