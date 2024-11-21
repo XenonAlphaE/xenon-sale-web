@@ -37,7 +37,7 @@ export const AffForm = () => {
             const refStr = customHash(walletEth.currentAddress)
             const refStrHashed = Web3.utils.keccak256(refStr)
 
-            const refURL = `https://flockserz.com?r=${refStr}`
+            const refURL = `https://flockez.com?r=${refStr}`
             setEthRefURL(refURL)
             setRefStringHashed(refStrHashed)
             setRefString(refStr);
