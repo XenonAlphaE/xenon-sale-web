@@ -1,0 +1,164 @@
+{
+    "ar": {
+        "flag": "fi fi-sa width-size",
+        "name": "العربية",
+        "selectLanguage": "",
+        "locale": "ar_SA"
+    },
+    "bn": {
+        "flag": "fi fi-bd width-size",
+        "name": "বাংলা",
+        "selectLanguage": "",
+        "locale": "bn_BD"
+    },
+    "de": {
+        "flag": "fi fi-de width-size",
+        "name": "Deutsch",
+        "selectLanguage": "",
+        "locale": "de_DE"
+    },
+    "el": {
+        "flag": "fi fi-gr width-size",
+        "name": "Ελληνικά",
+        "selectLanguage": "",
+        "locale": "el_GR"
+    },
+    "en": {
+        "flag": "fi fi-gb width-size",
+        "name": "English",
+        "selectLanguage": "",
+        "locale": "en_US"
+    },
+    "es": {
+        "flag": "fi fi-es width-size",
+        "name": "Español",
+        "selectLanguage": "",
+        "locale": "es_ES"
+    },
+    "fa": {
+        "flag": "fi fi-ir width-size",
+        "name": "فارسی",
+        "selectLanguage": "",
+        "locale": "fa_IR"
+    },
+    "fr": {
+        "flag": "fi fi-fr width-size",
+        "name": "Français",
+        "selectLanguage": "",
+        "locale": "fr_FR"
+    },
+    "he": {
+        "flag": "fi fi-il width-size",
+        "name": "עברית",
+        "selectLanguage": "",
+        "locale": "he_IL"
+    },
+    "hi": {
+        "flag": "fi fi-in width-size",
+        "name": "हिन्दी",
+        "selectLanguage": "",
+        "locale": "hi_IN"
+    },
+    "id": {
+        "flag": "fi fi-id width-size",
+        "name": "Bahasa Indonesia",
+        "selectLanguage": "",
+        "locale": "id_ID"
+    },
+    "it": {
+        "flag": "fi fi-it width-size",
+        "name": "Italiano",
+        "selectLanguage": "",
+        "locale": "it_IT"
+    },
+    "jp": {
+        "flag": "fi fi-jp width-size",
+        "name": "日本語",
+        "selectLanguage": "",
+        "locale": "ja_JP"
+    },
+    "ka": {
+        "flag": "fi fi-ge width-size",
+        "name": "ქართული",
+        "selectLanguage": "",
+        "locale": "ka_GE"
+    },
+    "ko": {
+        "flag": "fi fi-kr width-size",
+        "name": "한국어",
+        "selectLanguage": "",
+        "locale": "ko_KR"
+    },
+    "ms": {
+        "flag": "fi fi-my width-size",
+        "name": "Bahasa Melayu",
+        "selectLanguage": "",
+        "locale": "ms_MY"
+    },
+    "nl": {
+        "flag": "fi fi-nl width-size",
+        "name": "Nederlands",
+        "selectLanguage": "",
+        "locale": "nl_NL"
+    },
+    "pl": {
+        "flag": "fi fi-pl width-size",
+        "name": "Polski",
+        "selectLanguage": "",
+        "locale": "pl_PL"
+    },
+    "pt": {
+        "flag": "fi fi-pt width-size",
+        "name": "Português",
+        "selectLanguage": "",
+        "locale": "pt_PT"
+    },
+    "ru": {
+        "flag": "fi fi-ru width-size",
+        "name": "Русский",
+        "selectLanguage": "",
+        "locale": "ru_RU"
+    },
+    "sv": {
+        "flag": "fi fi-se width-size",
+        "name": "Svenska",
+        "selectLanguage": "",
+        "locale": "sv_SE"
+    },
+    "ta": {
+        "flag": "fi fi-in width-size",
+        "name": "தமிழ்",
+        "selectLanguage": "",
+        "locale": "ta_IN"
+    },
+    "th": {
+        "flag": "fi fi-th width-size",
+        "name": "ไทย",
+        "selectLanguage": "",
+        "locale": "th_TH"
+    },
+    "tr": {
+        "flag": "fi fi-tr width-size",
+        "name": "Türkçe",
+        "selectLanguage": "",
+        "locale": "tr_TR"
+    },
+    "uk": {
+        "flag": "fi fi-ua width-size",
+        "name": "Українська",
+        "selectLanguage": "",
+        "locale": "uk_UA"
+    },
+    "vi": {
+        "flag": "fi fi-vn width-size",
+        "name": "Tiếng Việt",
+        "selectLanguage": "",
+        "locale": "vi_VN"
+    },
+    "zh": {
+        "flag": "fi fi-cn width-size",
+        "name": "中文",
+        "selectLanguage": "",
+        "locale": "zh_ZH"
+    }
+}
