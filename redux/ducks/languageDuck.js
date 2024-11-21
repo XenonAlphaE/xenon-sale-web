@@ -4,7 +4,7 @@ import en from '../../locales/en.json';
 import vi from '../../locales/vi.json';
 import zh from '../../locales/zh.json';
 import es from '../../locales/es.json';
-import ge from '../../locales/ge.json';
+import ka from '../../locales/ka.json';
 import jp from '../../locales/jp.json';
 import de from '../../locales/de.json';
 import fr from '../../locales/fr.json';
@@ -33,7 +33,7 @@ const i18nData = {
   vi,
   zh,
   es,
-  ge,
+  ka,
   jp,
   de,
   fr,
@@ -61,11 +61,7 @@ const i18nData = {
 const SET_LANGUAGE = 'language/SET_LANGUAGE'; // New action type for setting language
 
 // Valid ranges for language and speed
-const VALID_LANGUAGES = ['en','vi', 'zh','es', 'ge', 'jp', 'de','fr', 'it', 'pt', 
-    'ru', 'ar', 'hi', 'ko', 'th', 'nl',
-    'tr', 'el', 'sv', 'he', 'uk', 'ms',
-    'id', 'fa', 'bn', 'ta', 'pl'
-]; // Example valid language codes
+const VALID_LANGUAGES = ['ar', 'bn', 'de', 'el', 'en', 'es', 'fa', 'fr', 'he', 'hi', 'id', 'it', 'jp', 'ka', 'ko', 'ms', 'nl', 'pl', 'pt', 'ru', 'sv', 'ta', 'th', 'tr', 'uk', 'vi', 'zh']; // Example valid language codes
 
  // Helper function to get the browser's default language
 const getBrowserLanguage = () => {
