@@ -1,6 +1,7 @@
 // app/layout.js
 import { ReduxProvider } from './redux-provider';
 
+import {WalletProvider} from './wallet-provider'
 
 import './globals.css'
 
@@ -95,6 +96,7 @@ export default function RootLayout({ children }) {
         <link rel="alternate" hrefLang="ru" href="https://flockez.com/ru" />   
         <link rel="alternate" hrefLang="ar" href="https://flockez.com/ar" />   
         <link rel="alternate" hrefLang="hi" href="https://flockez.com/hi" />   
+        <link rel="alternate" hrefLang="ka" href="https://flockez.com/ka" />   
         <link rel="alternate" hrefLang="ko" href="https://flockez.com/ko" />   
         <link rel="alternate" hrefLang="th" href="https://flockez.com/th" />   
         <link rel="alternate" hrefLang="nl" href="https://flockez.com/nl" />   
@@ -145,7 +147,9 @@ export default function RootLayout({ children }) {
           />
       </head>
       <body>
-        <ReduxProvider>{children}</ReduxProvider>
+        <WalletProvider>
+          <ReduxProvider>{children}</ReduxProvider>
+        </WalletProvider>
         <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
         <script type="text/javascript" src="js/bootstrap.js"></script>
         <a href="https://hemifinance.com" style={{display: 'none'}}> Staking $HEMI</a>

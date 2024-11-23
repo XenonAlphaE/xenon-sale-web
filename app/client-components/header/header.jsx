@@ -4,11 +4,9 @@ import React, { useState, useEffect,useMemo } from "react";
 import {ProgressBar} from './ProgressBar'
 import { useLanguage, useI18nSection } from "../../../redux/utils/languageUtils";
 
-import { Navbar, Nav, Container, Row, Col, Card } from 'react-bootstrap';
-
 import {useNativeNetwork, useSetNativeNetwork} from '../../../redux/utils/nativeNetworkUtils'
 import { CURRENCIES,CURR_CODE, NETWORK_OTIONS, VALID_NETWORKS } from '../../../redux/ducks/nativeNetworkDuck';
-import {useWalletETH} from '../services/wallet-service1'
+import {useWalletETH} from '../services/wallet-service2'
 import {useCountdown} from '../services/utils'
 import {
   calculateUSDNeeded, calculateTokenOutput,
@@ -25,8 +23,8 @@ export const Header = () => {
   const currentLanguage = useLanguage()
 
   const nativeNetwork = useNativeNetwork()
-  const walletEth = useWalletETH(nativeNetwork, configs)
 
+  const walletEth = useWalletETH(nativeNetwork, configs)
   const currList = CURRENCIES[nativeNetwork]
   const [selectedCurr, setSelectedCurr] = useState();
 
@@ -182,6 +180,7 @@ export const Header = () => {
   };
 
   const handleBuyTokenClick = async () => {
+    
     if (!isClicked) {
       setIsClicked(true);
       // Your button click logic here
