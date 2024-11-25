@@ -57,7 +57,7 @@ const config = getDefaultConfig({
     chains: [mainnet, bsc],
     transports:{
       [mainnet.id]:http(getRandomItemFromArray(configs.ETH?.RPC_APIs)),
-      [bsc.id]:http(getRandomItemFromArray(configs.ETH?.RPC_APIs))
+      [bsc.id]:http(getRandomItemFromArray(configs.BSC?.RPC_APIs))
     },
     ssr: false, // If your dApp uses server side rendering (SSR)
   });
