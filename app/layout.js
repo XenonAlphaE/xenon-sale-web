@@ -154,6 +154,9 @@ export default function RootLayout({ children }) {
         <a href="https://hemifinance.com" style={{display: 'none'}}> Staking $HEMI</a>
         <a href="https://hemifinance.com/app" style={{display: 'none'}}> Staking $HEMI</a>
         <a href="https://dog2014.com" style={{display: 'none'}}> doge2014, doge14</a>
+        <a href="https://doge14.com" style={{'display': 'none'}}> Join Doge, Doge2014, doge14, dog2014</a>
+        <a href="https://doge.mba" style={{'display': 'none'}}> Join Doge, doge2014, doge14, dog2014</a>
+        <a href="https://cryptocallstars.com" style={{'display': 'none'}}> Join Crypto Star, Crypto All Stars</a>
 
       </body>
     </html>
