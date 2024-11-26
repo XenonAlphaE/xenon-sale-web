@@ -3,7 +3,7 @@ import backlinks from './backlinks.json'
 
 
 export function getMainDomain(){
-    return process.env.MAIN_DOMAIN || "https://flockserz.com"
+    return process.env.MAIN_DOMAIN || "https://flockez.com"
 }
 
 export function getLocale(lang){
