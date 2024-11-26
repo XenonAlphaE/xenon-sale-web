@@ -1,8 +1,8 @@
 import App from '../client-components/app/App'
-
+import { getLangKeys } from '../server-util';
 export async function generateStaticParams() {
   
-    const languages = ['ar', 'bn', 'de', 'el', 'en', 'es', 'fa', 'fr', 'he', 'hi', 'id', 'it', 'jp', 'ka', 'ko', 'ms', 'nl', 'pl', 'pt', 'ru', 'sv', 'ta', 'th', 'tr', 'uk', 'vi', 'zh'];
+    const languages = getLangKeys()
     return languages.map((lang) => ({
       lang, // This should match the name of the parameter in your filename
     }));

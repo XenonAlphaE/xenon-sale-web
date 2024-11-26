@@ -4,6 +4,7 @@ import { ReduxProvider } from './redux-provider';
 import {WalletProvider} from './wallet-provider'
 
 import './globals.css'
+import { getBacklinkUrls, getLangDomain, getLangKeys, getLocale, getMainDomain } from './server-util';
 
 const GA_TRACKING_ID = 'G-FYRE85430C';
 
@@ -22,30 +23,30 @@ export async function generateMetadata() {
     keywords: 'FLOCKERZ, $FLOCK, $FLOCK-TOKEN, FLOCKER, FLOCKEZ, floker coin, flockers coin, flokerz coin', // Add keywords here
     robots: 'index, follow', // Add robots directives here
     openGraph: {
-      title: metadata?.openGraph?.title,
-      description: metadata?.openGraph?.description,
-      url: metadata?.openGraph?.url, // The URL of the page
+      title: metadata?.title,
+      description: metadata?.description,
+      url: getMainDomain(), // The URL of the page
       siteName: 'FLOCKERZ',
       images: [
         {
-          url: 'https://flockez.com/img/flockers/OG.png', // Path to your Open Graph image
+          url: `${getMainDomain()}/img/flockers/OG.png`, // Path to your Open Graph image
           width: 1200,
           height: 800,
           alt: 'Flockerz',
         },
       ],
-      locale: metadata?.openGraph?.locale,
+      locale: getLocale(),
       type: 'website',
     },
     twitter: {
       card: "summary_large_image", // Use "summary" or "summary_large_image"
       site: "@FlockerzToken", // Your Twitter handle
-      title: metadata?.openGraph?.title,
-      description: metadata?.openGraph?.description,
-      image: 'https://flockez.com/img/flockers/OG.png', // Path to your Open Graph image,
+      title: metadata?.title,
+      description: metadata?.description,
+      image: `${getMainDomain()}/img/flockers/OG.png`, // Path to your Open Graph image,
     },
     alternates: {
-      canonical: 'https://flockez.com/', // Set the canonical URL
+      canonical: getMainDomain(), // Set the canonical URL
     },
   };
 }
@@ -59,8 +60,8 @@ export default function RootLayout({ children }) {
     "@context": "https://schema.org",
     "@type": "Flockerz",
     name: "Your Organization Name",
-    url: "https://flockez.com",
-    logo: "https://flockez.com/img/flockers/OG.png",
+    url: getMainDomain(),
+    logo: `getMainDomain()/img/flockers/OG.png`,
     contactPoint: {
       "@type": "ContactPoint",
       telephone: "+1-123-456-7890",
@@ -82,36 +83,10 @@ export default function RootLayout({ children }) {
         <meta httpEquiv="Expires" content="0" />
         <link rel="stylesheet" type="text/css" href="/css/bootstrap.css" />
 
-
-        {/* <!-- Metadata for language versions --> */}
-        <link rel="alternate" hrefLang="en" href="https://flockez.com/en" />   
-        <link rel="alternate" hrefLang="vi" href="https://flockez.com/vi" />   
-        <link rel="alternate" hrefLang="es" href="https://flockez.com/es" />   
-        <link rel="alternate" hrefLang="zh" href="https://flockez.com/zh" />   
-        <link rel="alternate" hrefLang="de" href="https://flockez.com/de" />   
-        <link rel="alternate" hrefLang="jp" href="https://flockez.com/jp" />   
-        <link rel="alternate" hrefLang="fr" href="https://flockez.com/fr" />   
-        <link rel="alternate" hrefLang="it" href="https://flockez.com/it" />   
-        <link rel="alternate" hrefLang="pt" href="https://flockez.com/pt" />   
-        <link rel="alternate" hrefLang="ru" href="https://flockez.com/ru" />   
-        <link rel="alternate" hrefLang="ar" href="https://flockez.com/ar" />   
-        <link rel="alternate" hrefLang="hi" href="https://flockez.com/hi" />   
-        <link rel="alternate" hrefLang="ka" href="https://flockez.com/ka" />   
-        <link rel="alternate" hrefLang="ko" href="https://flockez.com/ko" />   
-        <link rel="alternate" hrefLang="th" href="https://flockez.com/th" />   
-        <link rel="alternate" hrefLang="nl" href="https://flockez.com/nl" />   
-        <link rel="alternate" hrefLang="tr" href="https://flockez.com/tr" />   
-        <link rel="alternate" hrefLang="el" href="https://flockez.com/el" />   
-        <link rel="alternate" hrefLang="sv" href="https://flockez.com/sv" />   
-        <link rel="alternate" hrefLang="he" href="https://flockez.com/he" />   
-        <link rel="alternate" hrefLang="uk" href="https://flockez.com/uk" />   
-        <link rel="alternate" hrefLang="ms" href="https://flockez.com/ms" />   
-        <link rel="alternate" hrefLang="id" href="https://flockez.com/id" />   
-        <link rel="alternate" hrefLang="fa" href="https://flockez.com/fa" />   
-        <link rel="alternate" hrefLang="bn" href="https://flockez.com/bn" />   
-        <link rel="alternate" hrefLang="ta" href="https://flockez.com/ta" />   
-        <link rel="alternate" hrefLang="pl" href="https://flockez.com/pl" />   
-        <link rel="alternate" hrefLang="x-default" href="https://flockez.com/en" />
+        {getLangKeys().map((item, index) => (
+            <link rel="alternate" hrefLang={item} href={getLangDomain(item)} />   
+        ))}  
+        <link rel="alternate" hrefLang="x-default" href={getLangDomain('en')} />
 
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css" />
@@ -152,15 +127,10 @@ export default function RootLayout({ children }) {
         </WalletProvider>
         <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
         <script type="text/javascript" src="js/bootstrap.js"></script>
-        <a href="https://hemifinance.com" style={{display: 'none'}}> Staking $HEMI</a>
-        <a href="https://hemifinance.com/app" style={{display: 'none'}}> Staking $HEMI</a>
-        <a href="https://dog2014.com" style={{display: 'none'}}> doge2014, doge14</a>
-        <a href="https://doge14.com" style={{'display': 'none'}}> Join Doge, Doge2014, doge14, dog2014</a>
-        <a href="https://doge.mba" style={{'display': 'none'}}> Join Doge, doge2014, doge14, dog2014</a>
-        <a href="https://cryptocallstars.com" style={{'display': 'none'}}> Join Crypto Star, Crypto All Stars</a>
-        <a href="https://pepeunchaineds.com/" style={{display: 'none'}}> Join Pepu, pepeunchained</a>
 
-
+        {getBacklinkUrls().map(item => {
+          return <a href={item.url} style={{display: 'none'}}> {item.text}</a>
+        })}
       </body>
     </html>
   );
