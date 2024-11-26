@@ -61,7 +61,7 @@ export default function RootLayout({ children }) {
     "@type": "Flockerz",
     name: "Your Organization Name",
     url: getMainDomain(),
-    logo: `getMainDomain()/img/flockers/OG.png`,
+    logo: `${getMainDomain()}/img/flockers/favicon.svg`,
     contactPoint: {
       "@type": "ContactPoint",
       telephone: "+1-123-456-7890",
