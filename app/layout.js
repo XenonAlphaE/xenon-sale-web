@@ -6,7 +6,7 @@ import {WalletProvider} from './wallet-provider'
 import './globals.css'
 import { getBacklinkUrls, getLangDomain, getLangKeys, getLocale, getMainDomain } from './server-util';
 
-const GA_TRACKING_ID = 'G-FYRE85430C';
+const GA_TRACKING_ID = '';
 
 
 export async function generateMetadata() {
@@ -16,20 +16,19 @@ export async function generateMetadata() {
     description: metadata?.description,
 
     icons: {
-      icon: { rel: 'icon', type: 'image/png', url: '/img/flockers/favicon.png' },
-      icon: { rel: 'icon', type: 'image/svg+xml', url: '/img/flockers/favicon.svg' },
-      icon: { rel: 'icon', type: 'image/x-icon', url: '/img/flockers/favicon.svg' },
+      icon: { rel: 'icon', type: 'image/svg+xml', url: '/img/frenz/token.svg' },
+      icon: { rel: 'icon', type: 'image/x-icon', url: '/img/frenz/token.svg' },
     },
-    keywords: 'FLOCKERZ, $FLOCK, $FLOCK-TOKEN, FLOCKER, FLOCKEZ, floker coin, flockers coin, flokerz coin', // Add keywords here
+    keywords: 'frenz with money, frenz money, frenz coin,  FRENZWITHMONEY', // Add keywords here
     robots: 'index, follow', // Add robots directives here
     openGraph: {
       title: metadata?.title,
       description: metadata?.description,
       url: getMainDomain(), // The URL of the page
-      siteName: 'FLOCKERZ',
+      siteName: 'FRENZWITHMONEY',
       images: [
         {
-          url: `${getMainDomain()}/img/flockers/OG.png`, // Path to your Open Graph image
+          url: `${getMainDomain()}/img/frenz/OG.png`, // Path to your Open Graph image
           width: 1200,
           height: 800,
           alt: 'Flockerz',
@@ -40,10 +39,10 @@ export async function generateMetadata() {
     },
     twitter: {
       card: "summary_large_image", // Use "summary" or "summary_large_image"
-      site: "@FlockerzToken", // Your Twitter handle
+      site: "@FRENZWITHMONEY", // Your Twitter handle
       title: metadata?.title,
       description: metadata?.description,
-      image: `${getMainDomain()}/img/flockers/OG.png`, // Path to your Open Graph image,
+      image: `${getMainDomain()}/img/frenz/OG.png`, // Path to your Open Graph image,
     },
     alternates: {
       canonical: getMainDomain(), // Set the canonical URL
@@ -58,10 +57,10 @@ export default function RootLayout({ children }) {
 
    const schemaMarkup = {
     "@context": "https://schema.org",
-    "@type": "Flockerz",
+    "@type": "FRENZWITHMONEY",
     name: "Your Organization Name",
     url: getMainDomain(),
-    logo: `${getMainDomain()}/img/flockers/favicon.svg`,
+    logo: `${getMainDomain()}/img/frenz/token.svg`,
     contactPoint: {
       "@type": "ContactPoint",
       telephone: "+1-123-456-7890",
@@ -69,7 +68,7 @@ export default function RootLayout({ children }) {
     },
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://duckduckgo.com/?q=flockerz",
+      target: "https://duckduckgo.com/?q=FRENZWITHMONEY",
       "query-input": "required name=search_term_string",
     },
   };

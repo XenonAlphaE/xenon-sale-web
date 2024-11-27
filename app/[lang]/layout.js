@@ -15,10 +15,10 @@ export async function generateMetadata({ params }) {
       title: localMeta?.title || defaultMeta?.title,
       description: localMeta?.description || defaultMeta?.description,
       url: getLangDomain(lang), // The URL of the page
-      siteName: 'FLOCKERZ',
+      siteName: 'FRENZWITHMONEY',
       images: [
         {
-          url: `${getMainDomain()}/img/flockers/OG.png`, // Path to your Open Graph image
+          url: `${getMainDomain()}/img/frenz/OG.png`, // Path to your Open Graph image
           width: 1200,
           height: 800,
           alt: 'Flockerz',
@@ -29,10 +29,10 @@ export async function generateMetadata({ params }) {
     },
     twitter: {
       card: "summary_large_image", // Use "summary" or "summary_large_image"
-      site: "@FlockerzToken", // Your Twitter handle
+      site: "@FRENZWITHMONEY", // Your Twitter handle
       title: localMeta?.title || defaultMeta?.title ,
       description: localMeta?.description || defaultMeta?.description,
-      image: `${getMainDomain()}/img/flockers/OG.png`, // Path to your Open Graph image,
+      image: `${getMainDomain()}/img/frenz/OG.png`, // Path to your Open Graph image,
     },
     alternates: {
       canonical: canonicalUrl, // Set the canonical URL
