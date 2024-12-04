@@ -18,7 +18,7 @@ export async function generateMetadata({ params }) {
       siteName: 'zapsdefi',
       images: [
         {
-          url: `${getMainDomain()}/img/zappy/OG.jpg`, // Path to your Open Graph image
+          url: `${getMainDomain()}/img/zappy/OG.jpeg`, // Path to your Open Graph image
           width: 1200,
           height: 800,
           alt: 'ZAPSDEFI',
@@ -32,7 +32,7 @@ export async function generateMetadata({ params }) {
       site: "@zap_defi", // Your Twitter handle
       title: localMeta?.title || defaultMeta?.title ,
       description: localMeta?.description || defaultMeta?.description,
-      url: `${getMainDomain()}/img/zappy/OG.jpg`, // Path to your Open Graph image
+      url: `${getMainDomain()}/img/zappy/OG.jpeg`, // Path to your Open Graph image
     },
     alternates: {
       canonical: canonicalUrl, // Set the canonical URL
