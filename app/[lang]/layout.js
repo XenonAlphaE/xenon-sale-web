@@ -15,13 +15,13 @@ export async function generateMetadata({ params }) {
       title: localMeta?.title || defaultMeta?.title,
       description: localMeta?.description || defaultMeta?.description,
       url: getLangDomain(lang), // The URL of the page
-      siteName: 'FRENZWITHMONEY',
+      siteName: 'zapsdefi',
       images: [
         {
-          url: `${getMainDomain()}/img/frenz/OG.png`, // Path to your Open Graph image
+          url: `${getMainDomain()}/img/zappy/OG.jpg`, // Path to your Open Graph image
           width: 1200,
           height: 800,
-          alt: 'Flockerz',
+          alt: 'ZAPSDEFI',
         },
       ],
       locale:getLocale(lang),
@@ -29,10 +29,10 @@ export async function generateMetadata({ params }) {
     },
     twitter: {
       card: "summary_large_image", // Use "summary" or "summary_large_image"
-      site: "@FRENZWITHMONEY", // Your Twitter handle
+      site: "@zap_defi", // Your Twitter handle
       title: localMeta?.title || defaultMeta?.title ,
       description: localMeta?.description || defaultMeta?.description,
-      image: `${getMainDomain()}/img/frenz/OG.png`, // Path to your Open Graph image,
+      url: `${getMainDomain()}/img/zappy/OG.jpg`, // Path to your Open Graph image
     },
     alternates: {
       canonical: canonicalUrl, // Set the canonical URL

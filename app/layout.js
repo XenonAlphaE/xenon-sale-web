@@ -16,22 +16,21 @@ export async function generateMetadata() {
     description: metadata?.description,
 
     icons: {
-      icon: { rel: 'icon', type: 'image/svg+xml', url: '/img/frenz/token.svg' },
-      icon: { rel: 'icon', type: 'image/x-icon', url: '/img/frenz/token.svg' },
+      icon: { rel: 'icon', type: 'image/png', url: '/img/zappy/zap-logo2.png' },
     },
-    keywords: 'frenz with money, frenz money, frenz coin,  FRENZWITHMONEY', // Add keywords here
+    keywords: 'zap defi, zappy, zappy defi,zap presale, zappy presale, zap defi presale', // Add keywords here
     robots: 'index, follow', // Add robots directives here
     openGraph: {
       title: metadata?.title,
       description: metadata?.description,
       url: getMainDomain(), // The URL of the page
-      siteName: 'FRENZWITHMONEY',
+      siteName: 'zapsdefi',
       images: [
         {
-          url: `${getMainDomain()}/img/frenz/OG.png`, // Path to your Open Graph image
+          url: `${getMainDomain()}/img/zappy/OG.jpg`, // Path to your Open Graph image
           width: 1200,
           height: 800,
-          alt: 'Flockerz',
+          alt: 'ZAPSDEFI',
         },
       ],
       locale: getLocale(),
@@ -39,10 +38,10 @@ export async function generateMetadata() {
     },
     twitter: {
       card: "summary_large_image", // Use "summary" or "summary_large_image"
-      site: "@FRENZWITHMONEY", // Your Twitter handle
+      site: "@zap_defi", // Your Twitter handle
       title: metadata?.title,
       description: metadata?.description,
-      image: `${getMainDomain()}/img/frenz/OG.png`, // Path to your Open Graph image,
+      url: `${getMainDomain()}/img/zappy/OG.jpg`, // Path to your Open Graph image
     },
     alternates: {
       canonical: getMainDomain(), // Set the canonical URL
@@ -57,10 +56,10 @@ export default function RootLayout({ children }) {
 
    const schemaMarkup = {
     "@context": "https://schema.org",
-    "@type": "FRENZWITHMONEY",
+    "@type": "zapsdefi",
     name: "Your Organization Name",
     url: getMainDomain(),
-    logo: `${getMainDomain()}/img/frenz/token.svg`,
+    logo: `${getMainDomain()}/img/zappy/zap-logo2.png'`,
     contactPoint: {
       "@type": "ContactPoint",
       telephone: "+1-123-456-7890",
@@ -68,7 +67,7 @@ export default function RootLayout({ children }) {
     },
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://duckduckgo.com/?q=FRENZWITHMONEY",
+      target: "https://duckduckgo.com/?q=zappydefi",
       "query-input": "required name=search_term_string",
     },
   };
