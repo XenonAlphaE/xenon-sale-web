@@ -6,7 +6,7 @@
   align-items: center;
   /* background-color: transparent; */
   /* padding: 3rem; */
-  background-color: transparent;
+  background-color: white;
   padding: 16px;
   
   position: relative;
@@ -37,7 +37,7 @@
 
 
 .appnav-navbar.scrolled {
-  background-color: rgb(245, 136, 45);
+  background-color: rgb(222, 203, 224);
   box-shadow: 0 4px 8px #0000, 0 6px 20px #0000001f;
   border-image-source: radial-gradient(121.49% 277.08% at 0% 0%, rgba(255, 255, 255, .44) 0%, rgba(255, 255, 255, .05) 100%);
   -webkit-backdrop-filter: blur(30px);
@@ -147,18 +147,21 @@
   display: flex;
   flex-direction: row; /* Stack items vertically */
   align-items: center;
+  column-gap: 8px;
 }
 
 .appnav-login {
-  min-height: 46px;
-  width: 130px;
+  /* min-height: 46px; */
+  /* width: 130px; */
   /* border-radius: 23px; */
-  background: rgb(245, 136, 45);
+  /* background: rgb(245, 136, 45); */
   color: black;
   border: solid 3px black;
-  padding: 0.5rem 1rem;
+  padding: 1px 11px;
+  border-radius: 4px;
   cursor: pointer;
   font-weight: 900;
+  text-decoration: none;
 }
 
 .appnav-social a {
@@ -224,7 +227,7 @@
 /* Language selection */
 .appnav-lang-dropdown {
   position: relative;
-  margin-left: 24px;
+  /* margin-left: 24px; */
 
 }
 
@@ -232,16 +235,16 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-  color: #fff;
+  color: #000;
 }
 
 .appnav-lang-custom-dropdown span {
   margin-right: 5px;
-  color: #fff;
+  color: #000;
 }
 
 .lang-dropdown-content {
-  color:#fff;
+  color:#000;
   display: none;
   position: absolute;
   top: calc(100% + 10px); /* Adjusted position with 10px padding */

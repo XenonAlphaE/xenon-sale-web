@@ -99,7 +99,7 @@ export const Navbar = () => {
 
       <div className="appnav-navbar-brand">
         <a href="/">
-          <img src="/img/flockers/logo.svg" alt="Brand Logo" className="appnav-logo" />
+          <img src="/img/wepe/token.svg" alt="Brand Logo" className="appnav-logo" />
         </a>
         <button className="appnav-menu-toggle" onClick={toggleMenu}>
           <div className={`appnav-hamburger ${isMenuOpen ? 'appnav-is-active' : ''}`}>
@@ -113,15 +113,17 @@ export const Navbar = () => {
       <div className={`appnav-navbar-menu`}>
         <a href={`/${currentLanguage}`}>{sectionText?.home}</a>
         <a href="#about">{sectionText?.about}</a>
-        <a href="#roadmap">{sectionText?.roadmap}</a>
+        <a href="#roadmap">{sectionText?.howtobuy}</a>
         <a href="#tokenomics">{sectionText?.tokenomics}</a>
         <a href="#faqs">{sectionText?.faq}</a>
-        <a href="/white-paper.pdf" target='_blank'>{sectionText?.whitePaper}</a>
+        {/* <a href="/white-paper.pdf" target='_blank'>{sectionText?.whitePaper}</a> */}
       </div>
       <div className={`appnav-navbar-right`}>
 
         <div className="appnav-lang-login-container">
-          <button onClick={scrollToBuySection} className="appnav-login">{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button>
+          <a  href="#" className="appnav-login" style={{background:"rgb(255, 211, 96)"}}>{sectionText?.audit}</a>
+          <a href="#" className="appnav-login" style={{background:"rgb(197, 35, 237)"}}>{sectionText?.whitePaper}</a>
+          <button onClick={scrollToBuySection} className="appnav-login" style={{background:"rgb(51, 255, 0)"}}>{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button>
 
           <div className="appnav-lang-dropdown">
             <div className="appnav-lang-custom-dropdown" onClick={toggleLanguageDrpdwn}>

@@ -16,9 +16,10 @@ export async function generateMetadata() {
     description: metadata?.description,
 
     icons: {
-      icon: { rel: 'icon', type: 'image/png', url: '/img/zappy/zap-logo2.png' },
+      icon: { rel: 'icon', type: 'image/png', url: '/img/wepe/token.svg' },
+      icon: { rel: 'icon', type: 'image/x-icon', url: '/img/wepe/favicon.ico' },
     },
-    keywords: 'zap defi, zappy, zappy defi,zap presale, zappy presale, zap defi presale', // Add keywords here
+    keywords: 'WEPE Token, WEPE, WEPE Presale, WEPE Dex, Wall Street Pepe', // Add keywords here
     robots: 'index, follow', // Add robots directives here
     openGraph: {
       title: metadata?.title,
@@ -27,7 +28,7 @@ export async function generateMetadata() {
       siteName: 'zapsdefi',
       images: [
         {
-          url: `${getMainDomain()}/img/zappy/OG.jpeg`, // Path to your Open Graph image
+          url: `${getMainDomain()}/img/wepe/OG.jpeg`, // Path to your Open Graph image
           width: 1200,
           height: 800,
           alt: 'ZAPSDEFI',
@@ -41,7 +42,7 @@ export async function generateMetadata() {
       site: "@zap_defi", // Your Twitter handle
       title: metadata?.title,
       description: metadata?.description,
-      url: `${getMainDomain()}/img/zappy/OG.jpeg`, // Path to your Open Graph image
+      url: `${getMainDomain()}/img/wepe/OG.jpeg`, // Path to your Open Graph image
     },
     alternates: {
       canonical: getMainDomain(), // Set the canonical URL
@@ -59,7 +60,7 @@ export default function RootLayout({ children }) {
     "@type": "zapsdefi",
     name: "Your Organization Name",
     url: getMainDomain(),
-    logo: `${getMainDomain()}/img/zappy/zap-logo2.png'`,
+    logo: `${getMainDomain()}/img/wepe/token.svg'`,
     contactPoint: {
       "@type": "ContactPoint",
       telephone: "+1-123-456-7890",
