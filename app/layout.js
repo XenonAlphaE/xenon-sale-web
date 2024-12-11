@@ -4,7 +4,7 @@ import { ReduxProvider } from './redux-provider';
 import {WalletProvider} from './wallet-provider'
 
 import './globals.css'
-import { getBacklinkUrls, getLangDomain, getLangKeys, getLocale, getMainDomain } from './server-util';
+import { getBacklinkUrls, getLangDomain, getLangKeys, getLocale, getMainDomain, getSiteName, getTwiter, getOG } from './server-util';
 
 const GA_TRACKING_ID = '';
 
@@ -25,13 +25,13 @@ export async function generateMetadata() {
       title: metadata?.title,
       description: metadata?.description,
       url: getMainDomain(), // The URL of the page
-      siteName: 'zapsdefi',
+      siteName: getSiteName(),
       images: [
         {
-          url: `${getMainDomain()}/img/wepe/OG.jpeg`, // Path to your Open Graph image
+          url: getOG(), // Path to your Open Graph image
           width: 1200,
           height: 800,
-          alt: 'ZAPSDEFI',
+          alt: getSiteName(),
         },
       ],
       locale: getLocale(),
@@ -39,10 +39,10 @@ export async function generateMetadata() {
     },
     twitter: {
       card: "summary_large_image", // Use "summary" or "summary_large_image"
-      site: "@zap_defi", // Your Twitter handle
+      site: getTwiter(), // Your Twitter handle
       title: metadata?.title,
       description: metadata?.description,
-      url: `${getMainDomain()}/img/wepe/OG.jpeg`, // Path to your Open Graph image
+      image: getOG(), // Path to your Open Graph image,
     },
     alternates: {
       canonical: getMainDomain(), // Set the canonical URL
