@@ -7,7 +7,7 @@ import { useLanguage, useI18nSection } from "../../../redux/utils/languageUtils"
 import {useNativeNetwork, useSetNativeNetwork} from '../../../redux/utils/nativeNetworkUtils'
 import { CURRENCIES,CURR_CODE, NETWORK_OTIONS, VALID_NETWORKS } from '../../../redux/ducks/nativeNetworkDuck';
 import {useWalletETH} from '../services/wallet-service2'
-import {useCountdown} from '../services/utils'
+import {useCountdown, formatTokenNumber} from '../services/utils'
 import {
   calculateUSDNeeded, calculateTokenOutput,
   calculateTokensForBNB, calculateBNBNeeded, isValidNumber, truncateMiddle
@@ -303,9 +303,9 @@ export const Header = () => {
                     <p className="total-raised">{sectionText?.funRaised}: $5,012,043.57/ $5,601,303</p>
                       {/* {truncateMiddle(walletEth.currentAddress)} */}
                       <ProgressBar percentage={1481523.67*100 / 1630831}  />
-                      <p className="user-purchased-info">{sectionText.boughtAmount} ${configs?.targetToken?.symbol} = {totalBought}</p>
+                      <p className="user-purchased-info">{sectionText.boughtAmount} ${configs?.targetToken?.symbol} = {formatTokenNumber(totalBought)}</p>
                       {/* <img className="img-fluid ms-2 cursor-pointer" src="./img/info-icon.svg" /> */}
-                      <p className="user-purchased-info">{sectionText.stakeableAmount} ${configs?.targetToken?.symbol} = {totalBought}</p>
+                      <p className="user-purchased-info">{sectionText.stakeableAmount} ${configs?.targetToken?.symbol} = {formatTokenNumber(totalBought)}</p>
                         {/* <img className="img-fluid ms-2 cursor-pointer" src="./img/info-icon.svg" /> */}
 
                       <div className="dashTitle">1 {configs?.targetToken?.symbol} = ${configs?.targetToken?.tokenPrice} </div>

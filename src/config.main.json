@@ -2093,6 +2093,10 @@
                 "type": "event"
             }
         ],
+        "referToken":{
+            "address":"",
+            "abi":[]
+        },
         "salers": [
             {
                 "address":"0x6EA5925DB09973786259092cFA8AE4116A44Ce2C",
