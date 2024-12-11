@@ -1,4 +1,4 @@
-import { getLangDomain, getLocale, getMainDomain } from "../server-util";
+import { getLangDomain, getLocale, getSiteName, getTwiter, getOG } from '../server-util';
 
 export async function generateMetadata({ params }) {
   const lang = (await params).lang
@@ -15,13 +15,13 @@ export async function generateMetadata({ params }) {
       title: localMeta?.title || defaultMeta?.title,
       description: localMeta?.description || defaultMeta?.description,
       url: getLangDomain(lang), // The URL of the page
-      siteName: 'FLOCKERZ',
+      siteName: getSiteName(),
       images: [
         {
-          url: `${getMainDomain()}/img/flockers/OG.png`, // Path to your Open Graph image
+          url: getOG(), // Path to your Open Graph image
           width: 1200,
           height: 800,
-          alt: 'Flockerz',
+          alt: getSiteName(),
         },
       ],
       locale:getLocale(lang),
@@ -29,10 +29,10 @@ export async function generateMetadata({ params }) {
     },
     twitter: {
       card: "summary_large_image", // Use "summary" or "summary_large_image"
-      site: "@FlockerzToken", // Your Twitter handle
+      site: getTwiter(), // Your Twitter handle
       title: localMeta?.title || defaultMeta?.title ,
       description: localMeta?.description || defaultMeta?.description,
-      image: `${getMainDomain()}/img/flockers/OG.png`, // Path to your Open Graph image,
+      image: getOG(), // Path to your Open Graph image,
     },
     alternates: {
       canonical: canonicalUrl, // Set the canonical URL
