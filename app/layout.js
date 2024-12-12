@@ -68,7 +68,7 @@ export default function RootLayout({ children }) {
     },
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://duckduckgo.com/?q=zappydefi",
+      target: "https://duckduckgo.com/?q=wepe",
       "query-input": "required name=search_term_string",
     },
   };
