@@ -303,9 +303,9 @@ export const Header = () => {
                         <div id="seconds" className="value  " style={{color: 'green'}} >{seconds}</div>
                       </div>
                     </div>
-                    <ProgressBar percentage={1481523.67*100 / 1630831}  />
+                    <ProgressBar percentage={7877785.67*100 / 8056623}  />
 
-                    <p className="total-raised">{sectionText?.funRaised}: $3,018,553.18/ $3,301,303</p>
+                    <p className="total-raised">{sectionText?.funRaised}: $7,877,785.55 / $8,056,623</p>
                       {/* {truncateMiddle(walletEth.currentAddress)} */}
                       <p className="user-purchased-info">{sectionText.boughtAmount} ${configs?.targetToken?.symbol} = {totalBought}</p>
                       {/* <img className="img-fluid ms-2 cursor-pointer" src="./img/info-icon.svg" /> */}
