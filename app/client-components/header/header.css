@@ -69,6 +69,7 @@
   padding: 40px 16px;
   flex-direction: column;
   row-gap: 16px;
+  align-items: center;
 }
 
 .intro-content-mid .tag-list .tag-item{

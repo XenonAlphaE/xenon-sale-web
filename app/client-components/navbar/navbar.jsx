@@ -40,6 +40,25 @@ export const Navbar = () => {
     setIsLanguageOpen(!isLanguageOpen);
   }
 
+  const mobileBuyNow = () => {
+    if (!!currAccount.address) {
+      openAccountModal();
+    }
+    else {
+
+      // Find the target section to scroll to
+      let section = null;
+
+      section = document.getElementById('intro');
+
+      if (!section) {
+        window.location = `/${currentLanguage}`
+        return
+      }
+      // Scroll to the section
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 
   const scrollToBuySection = async () => {
     if (!!currAccount.address) {
@@ -101,6 +120,9 @@ export const Navbar = () => {
         <a href="/">
           <img src="/img/wepe/token.svg" alt="Brand Logo" className="appnav-logo" />
         </a>
+
+        <button onClick={mobileBuyNow} className="buy-btn-mobile" style={{background:"rgb(51, 255, 0)"}}>{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button>
+
         <button className="appnav-menu-toggle" onClick={toggleMenu}>
           <div className={`appnav-hamburger ${isMenuOpen ? 'appnav-is-active' : ''}`}>
             <span></span>
@@ -122,7 +144,7 @@ export const Navbar = () => {
 
         <div className="appnav-lang-login-container">
           <a  href="https://coinsult.net/projects/wall-street-pepe/" className="appnav-login" target='_blank' style={{background:"rgb(255, 211, 96)"}}>{sectionText?.audit}</a>
-          <a href="#" className="appnav-login" target='_blank' style={{background:"rgb(197, 35, 237)"}}>{sectionText?.whitePaper}</a>
+          <a href="/img/wepe/whitepaper.pdf" className="appnav-login" target='_blank' style={{background:"rgb(197, 35, 237)"}}>{sectionText?.whitePaper}</a>
           <button onClick={scrollToBuySection} className="appnav-login" style={{background:"rgb(51, 255, 0)"}}>{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button>
 
           <div className="appnav-lang-dropdown">
@@ -152,7 +174,7 @@ export const Navbar = () => {
         <a href="#roadmap" onClick={toggleMenu}>{sectionText?.roadmap}</a>
         <a href="#tokenomics" onClick={toggleMenu}>{sectionText?.tokenomics}</a>
         <a href="#faqs" onClick={toggleMenu}>{sectionText?.faq}</a>
-        <a href="/white-paper.pdf" target='_blank'>{sectionText?.whitePaper}</a>
+        <a href="/img/wepe/whitepaper.pdf" style={{color:"rgb(197, 35, 237)"}} target='_blank'>{sectionText?.whitePaper}</a>
 
         <div className="appnav-lang-dropdown">
           <div className="appnav-lang-custom-dropdown" onClick={toggleLanguageDrpdwn}>
@@ -172,7 +194,6 @@ export const Navbar = () => {
             ))}
           </div>
         </div>
-        <button onClick={scrollToBuySection} className="appnav-login">{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button>
 
       </div>
       }

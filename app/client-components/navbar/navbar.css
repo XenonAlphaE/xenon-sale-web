@@ -61,6 +61,10 @@
   align-items: center;
 }
 
+.buy-btn-mobile{
+  display: none;
+}
+
 .appnav-logo {
   display: block;
   /* height: 54px; */
@@ -302,10 +306,16 @@
 
   .appnav-navbar-brand {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     width: 100%;
   }
 
+  .buy-btn-mobile{
+    display: block;
+    height: 50px;
+    border-radius: 4px;
+  }
 
 
   .appnav-logo {
@@ -331,7 +341,7 @@
   .appnav-menu-toggle {
     display: block;
     order: 2; /* Hamburger on the right */
-    margin-left: auto;
+    /* margin-left: auto; */
   }
 
   .appnav-lang-login-container {
@@ -405,7 +415,7 @@
   .appnav-navbar-menu-mobile a {
       font-size: 24px;
       text-decoration: none;
-      color: white;
+      color: black;
       font-weight: 700;
       padding: 10px 0px;
       border-bottom: solid 1px white;

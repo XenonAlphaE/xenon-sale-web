@@ -22,14 +22,8 @@
         padding-bottom: 100px;
     }
 
-    .intro-content-left .intro-heading1{
-        width: auto;
-        font-size: large;
-        margin: 0;
-        padding: 4px 12px;
-        border-top: 6px solid #000000;
-        border-left: 6px solid #000000;
-        border-right: 6px solid #000000;
+    .intro-content-mid .heading1{
+        width: 100%;
     }
 
 

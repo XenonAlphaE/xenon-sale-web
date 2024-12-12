@@ -12,7 +12,7 @@ import { getRandomItemFromArray } from './utils';
         return
     }
     const key = Web3.utils.soliditySha3(address, globalConfigs?.targetToken?.symbol);
-    console.log("usr key" + key)
+    // console.log("usr key" + key)
     const getPurchasInfoBSC =  async (key) => {
         const provider = new Web3.providers.HttpProvider(getRandomItemFromArray(globalConfigs.BSC?.RPC_APIs) || '');
         const web3Instance = new Web3(provider);
@@ -44,7 +44,7 @@ import { getRandomItemFromArray } from './utils';
 
     // const purchaseBSC = await getPurchasInfoBSC(key);
     // const purchaseETH = await getPurchasInfoETH(key);
-    debugger
+    
     if(!purchaseBSC || !purchaseETH){
         return;
     }
@@ -149,7 +149,7 @@ export const useTokenInfo=(globalConfigs) => {
             salerInfo.address
         )
         const tokenKey = Web3.utils.soliditySha3("Token", globalConfigs?.targetToken?.symbol);
-        console.log("tokenKey " + tokenKey)
+        // console.log("tokenKey " + tokenKey)
         const tokenInfo = await contract.methods.tokenInfoMap(tokenKey).call();
         return tokenInfo
     }

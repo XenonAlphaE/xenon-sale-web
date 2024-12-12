@@ -118,7 +118,7 @@ export const Header = () => {
       }
 
       try {
-        debugger
+        
         const info = await getUserPurchaseInfo(configs, walletEth.currentAddress)
         if (info) {
           setTotalBought(info)
@@ -260,15 +260,11 @@ export const Header = () => {
                   </div>
                   <div className="tag-item">
                     <img  src="/img/wepe/wobs-icon.svg"  className="tag-icon"/>
-                    WEPE Community: Choose rich together!
+                    WEPE Token Insights: Trade like a pro!
                   </div>
                   <div className="tag-item">
                     <img  src="/img/wepe/wobs-icon.svg"  className="tag-icon"/>
-                    WEPE Community: Choose rich together!
-                  </div>
-                  <div className="tag-item">
-                    <img  src="/img/wepe/wobs-icon.svg"  className="tag-icon"/>
-                    WEPE Community: Choose rich together!
+                    WEPE Picks: Mad degen plays!
                   </div>
 
 
