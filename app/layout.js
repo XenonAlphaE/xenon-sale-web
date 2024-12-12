@@ -6,7 +6,7 @@ import {WalletProvider} from './wallet-provider'
 import './globals.css'
 import { getBacklinkUrls, getLangDomain, getLangKeys, getLocale, getMainDomain, getSiteName, getTwiter, getOG } from './server-util';
 
-const GA_TRACKING_ID = '';
+const GA_TRACKING_ID = 'G-LJLVSX3D6T';
 
 
 export async function generateMetadata() {
