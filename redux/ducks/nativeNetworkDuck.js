@@ -36,12 +36,10 @@ export const CURRENCIES = {
     bsc:[
         { text: 'BNB', imageSrc: '/img/flockers/icon@bnb1.svg', icon:"/img/flockers/icon@bnb1.svg", curr: CURR_CODE.BNB },
         { text: 'USDT', imageSrc: '/img/flockers/usdt.svg',  icon:"/img/flockers/usdt.svg",curr: CURR_CODE.USDT },
-        { text: 'CARD', imageSrc: '/img/flockers/card.svg', icon:"/img/flockers/usdt.svg", curr: CURR_CODE.USDT },
     ],
     eth:[
         { text: 'ETH', imageSrc: '/img/flockers/ETH.svg', icon:"/img/flockers/ETH.svg", curr: CURR_CODE.ETH },
         { text: 'USDT', imageSrc: '/img/flockers/usdt.svg',  icon:"/img/flockers/usdt.svg",curr: CURR_CODE.USDT },
-        { text: 'CARD', imageSrc: '/img/flockers/card.svg', icon:"/img/flockers/usdt.svg", curr: CURR_CODE.USDT },
     ]
 
 

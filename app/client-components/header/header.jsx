@@ -118,7 +118,7 @@ export const Header = () => {
       }
 
       try {
-        
+        debugger
         const info = await getUserPurchaseInfo(configs, walletEth.currentAddress)
         if (info) {
           setTotalBought(info)
@@ -226,89 +226,96 @@ export const Header = () => {
           
           <div className="intro-content-left">
             <div className="intro-heading1">
-                <h3> 
-                  {sectionText?.para1}
-                </h3> 
-                <div className="heading1-bottom" />
+                    $WEPE Token
+
             </div>
 
-            <div className="intro-section-container">
-                <h2>
-                  {sectionText?.para2}
-                </h2>
-
-                <h5>
-                  {sectionText?.para3} <span style={{color:'rgb(77, 108, 195)'}}>{sectionText?.para3_1} </span>{sectionText?.para3_2}
-                </h5>
-                <div className="intro-tags-container">
-                    <div className="tag-content"><img src="/img/flockers/circle.svg"/> <span >{sectionText?.note1}   </span> </div>
-                    <div className="tag-content"><img src="/img/flockers/circle.svg"/> <span >{sectionText?.note2}   </span> </div>
-                    <div className="tag-content"><img src="/img/flockers/circle.svg"/> <span >{sectionText?.note3}   </span> </div>
-                    <div className="tag-content"><img src="/img/flockers/circle.svg"/> <span >{sectionText?.note4}   </span> </div>
-                </div>
-                <button className="intro-button-buynow" onClick={scrollToBuySection}>
-                    {sectionText?.buyBtn} 
-                </button>
-              <div className="intro-section-bg">
-                <div className="content-bg-color"></div>
-              </div>
+            <div className="intro-heading2">
+                    WALL STREET
+            </div>
+            <div className="intro-heading3">
+                    PEPE
             </div>
 
-            <div className="intro-socials">
-                <a  href="https://t.me/flockerz" target="_blank" >
-                  <img src="/img/flockers/telegram.svg"/>
-                </a>
-                <a  href="https://x.com/FlockerzToken" target="_blank" >
-                  <img src="/img/flockers/social_twitter.svg"/>
-                </a>
-                <a  href="https://coinsult.net/projects/flockerz/" target="_blank" >
-                  <img src="/img/flockers/audit.png"/>
-                </a>
-                <a  href="/solid-proof.pdf" target="_blank" >
-                  <img src="/img/flockers/solid-proof.png"/>
-                </a>
-            </div>
+            <img className="btm-img" src="/img/wepe/wepe-mascot.gif"/>
+            <img className="arrow1"  src="/img/wepe/left-arrow-1.svg"/>
+            <img className = "arrow2" src="/img/wepe/left-arrow-2.svg"/>
 
-            {/* <div className='intro-img'> */}
-            <img className='intro-img'  src="/img/flockers/hero.gif" /> 
-            {/* </div> */}
+           
 
           </div>
+          <div className="intro-content-mid">
+              <h2 className="heading1">
+                  Trade Like Pepe. Buy $WEPE!
+              </h2>
+
+              <p className="heading2">
+                  Wall Street Pepe hates that whales are hiding in insider groups. So he decided to make his own. Join the WEPE Token Army - frogs strong together!
+
+              </p>
+              <div className="tag-list">
+                  <div className="tag-item">
+                    <img  src="/img/wepe/wobs-icon.svg"  className="tag-icon"/>
+                    WEPE Community: Choose rich together!
+                  </div>
+                  <div className="tag-item">
+                    <img  src="/img/wepe/wobs-icon.svg"  className="tag-icon"/>
+                    WEPE Community: Choose rich together!
+                  </div>
+                  <div className="tag-item">
+                    <img  src="/img/wepe/wobs-icon.svg"  className="tag-icon"/>
+                    WEPE Community: Choose rich together!
+                  </div>
+                  <div className="tag-item">
+                    <img  src="/img/wepe/wobs-icon.svg"  className="tag-icon"/>
+                    WEPE Community: Choose rich together!
+                  </div>
+
+
+              </div >    
+              <div className="next-nav">
+                  <h2>JOIN WEPE ARMY </h2>
+                  <img src="/img/wepe/arrow-banner.svg" />
+                  <img src="/img/wepe/home_arrow.svg" />
+
+              </div>
+          </div>
+
           <div className="intro-content-right">
               <div className="walletBox" id='walletBox'>
                   <div className="walletBox-info">
                     <p className="walletBox-heading">{sectionText?.intro}</p>
+                    <div className="dashTitle">1 ${configs?.targetToken?.symbol} = ${configs?.targetToken?.tokenPrice} </div>
                     <div className="counter-container  ">
                       <div className="time-card  ">
                         <div className="indicator  ">{sectionText?.day}</div>
                         <div id="days" className="value  ">{days}</div>
                         {/* <img className="colon-item" src="./img/colon.svg" /> */}
                       </div>
-                      <div className="time-card" style={{color: 'orange'}} >
+                      <div className="time-card" >
                         <div className="indicator  ">{sectionText?.hrs}</div>
-                        <div id="hours" className="value  ">{hours}</div>
+                        <div id="hours" className="value  " style={{color: 'red'}} >{hours}</div>
                         {/* <img className="colon-item" src="./img/colon.svg" /> */}
                       </div>
-                      <div className="time-card" style={{color: 'green'}}>
+                      <div className="time-card" >
                         <div className="indicator  ">{sectionText?.mins}</div>
-                        <div id="minutes" className="value  ">{minutes}</div>
+                        <div id="minutes" className="value  " style={{color: 'blue'}} >{minutes}</div>
                         {/* <img className="colon-item" src="./img/colon.svg" /> */}
                       </div>
-                      <div className="time-card" style={{color: 'lightblue'}} >
+                      <div className="time-card"  >
                         <div className="indicator  ">{sectionText?.sec}</div>
-                        <div id="seconds" className="value  ">{seconds}</div>
+                        <div id="seconds" className="value  " style={{color: 'green'}} >{seconds}</div>
                       </div>
                     </div>
+                    <ProgressBar percentage={1481523.67*100 / 1630831}  />
 
                     <p className="total-raised">{sectionText?.funRaised}: $3,018,553.18/ $3,301,303</p>
                       {/* {truncateMiddle(walletEth.currentAddress)} */}
-                      <ProgressBar percentage={1481523.67*100 / 1630831}  />
                       <p className="user-purchased-info">{sectionText.boughtAmount} ${configs?.targetToken?.symbol} = {totalBought}</p>
                       {/* <img className="img-fluid ms-2 cursor-pointer" src="./img/info-icon.svg" /> */}
                       <p className="user-purchased-info">{sectionText.stakeableAmount} ${configs?.targetToken?.symbol} = {totalBought}</p>
                         {/* <img className="img-fluid ms-2 cursor-pointer" src="./img/info-icon.svg" /> */}
 
-                      <div className="dashTitle">1 {configs?.targetToken?.symbol} = ${configs?.targetToken?.tokenPrice} </div>
                   </div>
                   <div className="swapArea">
                     <div className="currencies-list">
@@ -355,7 +362,7 @@ export const Header = () => {
                                 className="input-control-custom"
                                 placeholder="0" />
                               <div className="amountType">
-                                <img src='/img/flockers/token.svg' style={{ 'height': '30px', marginRight:5 }} />
+                                <img src='/img/wepe/token.svg' style={{ 'height': '30px', marginRight:5 }} />
                               </div>
                             </div>
                           </div>
@@ -386,7 +393,7 @@ export const Header = () => {
                   <div className="external-info">
                     <a style={{textDecorationColor:"#000" ,color:"#000", textDecoration:'underline'}} href="https://widget.wert.io/default/widget/?commodity=ETH%3AEthereum" target="_blank">Not enough ETH? Top up now</a>
 
-                    <p translate="" className="font-18 text-center m-0 mt-2"><img src="/img/flockers/token.svg" style={{ 'height': '35px' }} /> Powered by <a target="_blank" href='https://web3paymentsolutions.io/' className=" "><img src="/img/flockers/W3P_Black.svg" alt="" style={{height:25}} /></a></p>
+                    <p translate="" className="font-18 text-center m-0 mt-2"><img src="/img/wepe/token.svg" style={{ 'height': '35px' }} /> Powered by <a target="_blank" href='https://web3paymentsolutions.io/' className=" "><img src="/img/flockers/W3P_Black.svg" alt="" style={{height:25}} /></a></p>
                   </div>
               </div>
                   

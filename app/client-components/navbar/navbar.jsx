@@ -121,8 +121,8 @@ export const Navbar = () => {
       <div className={`appnav-navbar-right`}>
 
         <div className="appnav-lang-login-container">
-          <a  href="#" className="appnav-login" style={{background:"rgb(255, 211, 96)"}}>{sectionText?.audit}</a>
-          <a href="#" className="appnav-login" style={{background:"rgb(197, 35, 237)"}}>{sectionText?.whitePaper}</a>
+          <a  href="https://coinsult.net/projects/wall-street-pepe/" className="appnav-login" target='_blank' style={{background:"rgb(255, 211, 96)"}}>{sectionText?.audit}</a>
+          <a href="#" className="appnav-login" target='_blank' style={{background:"rgb(197, 35, 237)"}}>{sectionText?.whitePaper}</a>
           <button onClick={scrollToBuySection} className="appnav-login" style={{background:"rgb(51, 255, 0)"}}>{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button>
 
           <div className="appnav-lang-dropdown">

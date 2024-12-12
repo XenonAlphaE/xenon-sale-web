@@ -3,8 +3,8 @@
     "targetToken":{
         "address":"",
         "decimals":18,
-        "symbol": "FLOCK",
-        "tokenPrice":"0.0061259"
+        "symbol": "WEPE",
+        "tokenPrice":"0.000213"
     },
     "previousRaised":5009043.52,
     "previousSoldTokens":0,

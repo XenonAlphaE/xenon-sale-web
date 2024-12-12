@@ -36,12 +36,12 @@ const App = () => {
     <div>
       <Navbar />
       <Header/>
-      <About />
+       {/* <About />
       <Roadmap />
       <Tokenomics />
-      {/* <HowToBuy /> */}
-      <FAQ/>
-      <Footer /> 
+       <HowToBuy /> 
+       <FAQ/>
+      <Footer />    */}
       
     </div>
   );
