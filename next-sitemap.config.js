@@ -1,10 +1,10 @@
 // next-sitemap.config.js
 
 module.exports = {
-    siteUrl: 'https://frenzwith.com', // Replace with your domain
+    siteUrl: 'https://wepetoken.com', // Replace with your domain
     generateRobotsTxt: true, // Generates robots.txt file along with sitemap
     changefreq: 'daily',
-    priority: 0.7,
+    priority: 0.9,
     sitemapSize: 7000,
 };
   
