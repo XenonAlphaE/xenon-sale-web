@@ -105,6 +105,12 @@ export const useWalletETH=( inputNetwork , globalConfigs) => {
             usdtDecimals = globalConfigs.BSC['USDT_Decimals']
         }
 
+        if(nativeNetwork==='base'){
+            salerInfo = globalConfigs.BASE['salers'][0]
+            usdtAbi = globalConfigs.BASE['USDT_Abi']
+            usdtAddress = globalConfigs.BASE['USDT_Address']
+            usdtDecimals = globalConfigs.BASE['USDT_Decimals']
+        }
 
         return{salerInfo, usdtAddress, usdtDecimals, usdtAbi}
 
@@ -120,7 +126,7 @@ export const useWalletETH=( inputNetwork , globalConfigs) => {
             if(isValidNumber( amount )){
                 
                 const {salerInfo} = getContracts()
-
+                
                 if(!salerInfo){
                     return
                 }
@@ -233,7 +239,7 @@ export const useWalletETH=( inputNetwork , globalConfigs) => {
                 }
                 
                 const usdtAmount = parseUnits(amount, usdtDecimals); // Set the allowance amount (1000 USDT in this case)
-
+                
                 const approvalTx = await writeContractAsync({
                     abi: usdtAbi,
                     address: usdtAddress,
@@ -241,6 +247,7 @@ export const useWalletETH=( inputNetwork , globalConfigs) => {
                     args:[salerInfo.address, usdtAmount]
                 })
 
+                // await approvalTx.wait();
                 // await approvalTx.wait();
                 console.log("New allowance set successfully!" + approvalTx);
 

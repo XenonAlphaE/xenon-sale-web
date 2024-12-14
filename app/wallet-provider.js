@@ -11,6 +11,7 @@ import { WagmiProvider } from 'wagmi';
 import {
   mainnet,
   bsc,
+  base
 } from 'wagmi/chains';
 import {
   QueryClientProvider,
@@ -54,10 +55,11 @@ const config = getDefaultConfig({
     connectors,
     appName: 'RainbowKit App',
     projectId: 'f4fcaa8162f29cf1ca29a266f69ae98a',
-    chains: [mainnet, bsc],
+    chains: [mainnet, bsc, base],
     transports:{
       [mainnet.id]:http(getRandomItemFromArray(configs.ETH?.RPC_APIs)),
-      [bsc.id]:http(getRandomItemFromArray(configs.BSC?.RPC_APIs))
+      [bsc.id]:http(getRandomItemFromArray(configs.BSC?.RPC_APIs)),
+      [base.id]:http(getRandomItemFromArray(configs.BASE?.RPC_APIs)),
     },
     ssr: false, // If your dApp uses server side rendering (SSR)
   });

@@ -35,6 +35,7 @@
         "link": "click here",
         "connectWallet": "CONNECT WALLET",
         "ethOption": "ETH NETWORK",
+        "switchOption": "SWITCH NETWORK",
         "bnbOption": "BNB NETWORK",
         "buyStake": "Buy and Stake for 8471% Rewards",
         "nextPriceAlert": "UNTIL PRICE INCREASE",
