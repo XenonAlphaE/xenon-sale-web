@@ -126,12 +126,12 @@ export const useWalletETH=( inputNetwork , globalConfigs) => {
             if(isValidNumber( amount )){
                 
                 const {salerInfo} = getContracts()
-                debugger
+                
                 if(!salerInfo){
                     return
                 }
                 const wei = toWei(amount)
-                debugger
+                
                 const tx = await writeContractAsync({
                     abi: salerInfo.abi,
                     address: salerInfo.address,
@@ -249,7 +249,7 @@ export const useWalletETH=( inputNetwork , globalConfigs) => {
 
 
                 // await approvalTx.wait();
-                // console.log("New allowance set successfully!" + approvalTx);
+                console.log("New allowance set successfully!" + approvalTx);
 
                 // const tx = await salerContract.connect(signer).buyTokensByUsdtWifRef(usdtAmount, globalConfigs?.targetToken?.symbol, ref ? ref:"");
                 const tx = await writeContractAsync({
@@ -259,7 +259,7 @@ export const useWalletETH=( inputNetwork , globalConfigs) => {
                     args:[usdtAmount, globalConfigs?.targetToken?.symbol, ref ? ref:""]
                 })
                 // await tx.wait();
-                // console.log("Buy Tokens successfully!" + tx);
+                console.log("Buy Tokens successfully!" + tx);
 
                 // await buyTokensBySpecificAmountUSDT(amount);
                 // window.location.reload();
