@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://frenzwith.com
+Host: https://wepetoken.com
 
 # Sitemaps
-Sitemap: https://frenzwith.com/sitemap.xml
+Sitemap: https://wepetoken.com/sitemap.xml
