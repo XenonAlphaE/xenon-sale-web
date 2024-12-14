@@ -305,7 +305,7 @@ export const Header = () => {
                     </div>
                     <ProgressBar percentage={11457475.67*100 / 11540268}  />
 
-                    <p className="total-raised">{sectionText?.funRaised}:  $18,691,973.3 / $19,683,461</p>
+                    <p className="total-raised">{sectionText?.funRaised}:  $20,352,005.99 / $20,847,124</p>
                       {/* {truncateMiddle(walletEth.currentAddress)} */}
                       <p className="user-purchased-info">{sectionText.boughtAmount} ${configs?.targetToken?.symbol} = {totalBought}</p>
                       {/* <img className="img-fluid ms-2 cursor-pointer" src="./img/info-icon.svg" /> */}
