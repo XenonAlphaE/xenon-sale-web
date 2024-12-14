@@ -28,6 +28,21 @@ import { getRandomItemFromArray } from './utils';
         return tokenInfo
     }
 
+    const getPurchasInfoBase =  async (key) => {
+        const provider = new Web3.providers.HttpProvider(getRandomItemFromArray(globalConfigs.BASE?.RPC_APIs) || '');
+        const web3Instance = new Web3(provider);
+        const salerInfo = globalConfigs.BASE['salers'][0]
+        const contract = new web3Instance.eth.Contract(
+            salerInfo.abi,
+            salerInfo.address
+        )    
+        
+        
+        const tokenInfo = await contract.methods.buyerPurchases(key).call();
+        
+        return tokenInfo
+    }
+
     const getPurchasInfoETH =  async (key) => {
         const provider = new Web3.providers.HttpProvider( getRandomItemFromArray(globalConfigs.ETH?.RPC_APIs) || '');
         const web3Instance = new Web3(provider);
@@ -40,23 +55,24 @@ import { getRandomItemFromArray } from './utils';
         const tokenInfo = await contract.methods.buyerPurchases(key).call();
         return tokenInfo
     }
-    const [purchaseBSC, purchaseETH] = await Promise.all([getPurchasInfoBSC(key), getPurchasInfoETH(key)]);
+    const [purchaseBSC, purchaseETH, purchaseBASE] = await Promise.all([getPurchasInfoBSC(key), getPurchasInfoETH(key), getPurchasInfoBase(key)]);
 
     // const purchaseBSC = await getPurchasInfoBSC(key);
     // const purchaseETH = await getPurchasInfoETH(key);
     
-    if(!purchaseBSC || !purchaseETH){
+    if(!purchaseBSC || !purchaseETH || !purchaseBASE){
         return;
     }
     
     const decimal1 = new Decimal(formatUnits(purchaseBSC['amount'], globalConfigs?.targetToken?.decimals));
     const decimal2 = new Decimal(formatUnits(purchaseETH['amount'], globalConfigs?.targetToken?.decimals));
+    const decimal3 = new Decimal(formatUnits(purchaseBASE['amount'], globalConfigs?.targetToken?.decimals));
 
     // const bigNumber1 = BigNumberish.from(purchaseBSC['amount']); // String representation
     // const bigNumber2 = BigNumberish.from(purchaseETH['amount']);
 
 
-    const totalBought = decimal1.add(decimal2)
+    const totalBought = decimal1.add(decimal2).add(decimal3)
     return totalBought.toFixed(2).toString();
 }
 
@@ -149,7 +165,7 @@ export const useTokenInfo=(globalConfigs) => {
             salerInfo.address
         )
         const tokenKey = Web3.utils.soliditySha3("Token", globalConfigs?.targetToken?.symbol);
-        // console.log("tokenKey " + tokenKey)
+        console.log("tokenKey " + tokenKey)
         const tokenInfo = await contract.methods.tokenInfoMap(tokenKey).call();
         return tokenInfo
     }

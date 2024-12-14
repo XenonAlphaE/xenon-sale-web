@@ -180,7 +180,7 @@ export const Header = () => {
   };
 
   const handleBuyTokenClick = async () => {
-    
+    debugger
     if (!isClicked) {
       setIsClicked(true);
       // Your button click logic here

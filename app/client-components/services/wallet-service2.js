@@ -105,6 +105,12 @@ export const useWalletETH=( inputNetwork , globalConfigs) => {
             usdtDecimals = globalConfigs.BSC['USDT_Decimals']
         }
 
+        if(nativeNetwork==='base'){
+            salerInfo = globalConfigs.BASE['salers'][0]
+            usdtAbi = globalConfigs.BASE['USDT_Abi']
+            usdtAddress = globalConfigs.BASE['USDT_Address']
+            usdtDecimals = globalConfigs.BASE['USDT_Decimals']
+        }
 
         return{salerInfo, usdtAddress, usdtDecimals, usdtAbi}
 
@@ -120,12 +126,12 @@ export const useWalletETH=( inputNetwork , globalConfigs) => {
             if(isValidNumber( amount )){
                 
                 const {salerInfo} = getContracts()
-
+                debugger
                 if(!salerInfo){
                     return
                 }
                 const wei = toWei(amount)
-                
+                debugger
                 const tx = await writeContractAsync({
                     abi: salerInfo.abi,
                     address: salerInfo.address,
@@ -241,8 +247,9 @@ export const useWalletETH=( inputNetwork , globalConfigs) => {
                     args:[salerInfo.address, usdtAmount]
                 })
 
+
                 // await approvalTx.wait();
-                console.log("New allowance set successfully!" + approvalTx);
+                // console.log("New allowance set successfully!" + approvalTx);
 
                 // const tx = await salerContract.connect(signer).buyTokensByUsdtWifRef(usdtAmount, globalConfigs?.targetToken?.symbol, ref ? ref:"");
                 const tx = await writeContractAsync({
@@ -252,14 +259,14 @@ export const useWalletETH=( inputNetwork , globalConfigs) => {
                     args:[usdtAmount, globalConfigs?.targetToken?.symbol, ref ? ref:""]
                 })
                 // await tx.wait();
-                console.log("Buy Tokens successfully!" + tx);
+                // console.log("Buy Tokens successfully!" + tx);
 
                 // await buyTokensBySpecificAmountUSDT(amount);
                 // window.location.reload();
             }
         }
         catch(error){
-            console.error("Error during buying:", error.message);
+            // console.error("Error during buying:", error.message);
         }
     }
    

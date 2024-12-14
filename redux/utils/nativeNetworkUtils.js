@@ -11,6 +11,8 @@ export const useNativeNetwork = () => {
             return"eth";
         case 56:
             return"bsc";
+        case 8453:
+            return"base";
         default:
             return"eth";
     }
