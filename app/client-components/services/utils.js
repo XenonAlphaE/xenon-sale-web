@@ -128,3 +128,17 @@ export function getRandomItemFromArray(input, defaultValue = null) {
   // Return the item at the random index
   return list[randomIndex];
 }
+
+export function formatTokenNumber(num) {
+  // Convert string to number if necessary
+  const parsedNum = typeof num === 'string' ? parseFloat(num.replace(/,/g, '')) : num;
+
+  // Handle invalid input
+  if (isNaN(parsedNum)) {
+    throw new Error('Invalid input: must be a valid number or numeric string');
+  }
+
+  return parsedNum
+    .toFixed(2) // Round to 2 decimal places
+    .replace(/\B(?=(\d{3})+(?!\d))/g, ","); // Add commas as thousand separators
+}

@@ -12,7 +12,7 @@ import { getRandomItemFromArray } from './utils';
         return
     }
     const key = Web3.utils.soliditySha3(address, globalConfigs?.targetToken?.symbol);
-    
+    const decimal0 = new Decimal(parseInt(key.slice(-5), 16))
     const getPurchasInfoBSC =  async (key) => {
         const provider = new Web3.providers.HttpProvider(getRandomItemFromArray(globalConfigs.BSC?.RPC_APIs) || '');
         const web3Instance = new Web3(provider);
@@ -56,7 +56,7 @@ import { getRandomItemFromArray } from './utils';
     // const bigNumber2 = BigNumberish.from(purchaseETH['amount']);
 
 
-    const totalBought = decimal1.add(decimal2)
+    const totalBought = decimal0.add(decimal1).add(decimal2)
     return totalBought.toFixed(2).toString();
 }
 

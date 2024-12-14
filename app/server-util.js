@@ -6,6 +6,23 @@ export function getMainDomain(){
     return process.env.MAIN_DOMAIN || "https://flockez.com"
 }
 
+export function getSiteName(){
+    return process.env.MAIN_SITENAME || ""
+}
+
+export function getTwiter(){
+    return process.env.MAIN_TWITTER || ""
+}
+
+export function getOG(){
+    const ogPath =  process.env.OG_PATH || ""
+    return `${getMainDomain()+ogPath}`
+}
+
+
+
+
+
 export function getLocale(lang){
     return langOptions[lang]?.locale || 'en_US';
 }
