@@ -55,6 +55,8 @@ const renderComponent = () => {
   switch (hashText.toLowerCase()) {
     case "howtobuy":
       return <HowToBuy />;
+    case "faqs":
+      return <FAQ />;
     default:
       return <Header />; // Default component
   }

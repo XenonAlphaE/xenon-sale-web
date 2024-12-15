@@ -2,6 +2,7 @@
 
 import React, { useRef, useState, useEffect } from 'react';
 import { useLanguage, useI18nSection } from "../../../redux/utils/languageUtils";
+import { BuyForm } from '../buyform/buyform';
 
 import './faq.css';
 import './faq.mobile.css';
@@ -11,6 +12,15 @@ export const FAQ = () => {
   const sectionText = useI18nSection('faqs')
   const currentLanguage = useLanguage()
 
+  const [selectedIdx, setSelectedIdx] = useState()
+  const handleSelectItem = (idx) => {
+    if(idx === selectedIdx){
+      setSelectedIdx('')
+    }
+    else{
+      setSelectedIdx(idx)
+    }
+  }
   const scrollToBuySection = () => {
     // Find the target section to scroll to
     let section = null;
@@ -27,31 +37,106 @@ export const FAQ = () => {
   
   return (
     <div id='faqs' className="faq-container">
-        <div className='faq-images'>
-            <img src="/img/flockers/poof.svg" alt=""  style={{width:"60%"}}/>
-            <img src="/img/flockers/join_us_desktop.gif" alt="" />
-            <button  onClick={scrollToBuySection} className="faq-buynow">{sectionText?.buynow}</button>
-            </div>
         <div className='faq-content'>
-            <h2 className='faq-heading'>{sectionText?.heading}
-            </h2>
-            <div className='faq-card-1'>
-                <h3 className='faq-title'>{sectionText?.title1}</h3>
-                <p className='faq-detail'>{sectionText?.desc1}</p>
+
+            <div className="faq-content-left column-arrage">
+                <h2 className='faq-heading'>WEPE Token FAQs </h2>
+                <div className='list-items'>
+
+                    <div className='list-item'>
+                        <div
+                          className={`list-item-title  ${selectedIdx === 0 ? 'active' : ''}`}
+                          onClick={() => handleSelectItem(0)}
+                            style={{backgroundColor:"rgb(255, 229, 151)"}}>
+
+                            What is WEPE Token?
+
+                          <div  className={`list-item-number  ${selectedIdx === 0 ? 'active' : ''}`} />
+                        </div>
+
+                        <div className={`list-item-content  ${selectedIdx === 0 ? 'active' : ''}`}>
+                        WEPE Token is the meme coin of Wall Street Pepe, who’s tired of whale groups controlling the crypto markets. So he’s creating his own - the WEPE Army! WEPE makes the calls that turn frogs into whales, transforming your trading game.
+                        </div>
+                    </div>
+                    <div className='list-item'>
+                        <div     className={`list-item-title  ${selectedIdx === 1 ? 'active' : ''}`}
+                          onClick={() => handleSelectItem(1)} style={{backgroundColor:"rgb(255, 229, 151)"}}>
+
+                            Why join the WEPE Army?
+
+                          <div  className={`list-item-number  ${selectedIdx === 1 ? 'active' : ''}`} />
+                        </div>
+
+                        <div className={`list-item-content  ${selectedIdx === 1 ? 'active' : ''}`}>
+                        WEPE Token is built to let meme coin degens trade with the wit, swagger, and confidence of WEPE himself. $WEPE token holders become part of the movement and get access to WEPE's exclusive trading calls and insights. Joining the WEPE Army could be your path to financial freedom!
+
+                        </div>
+                    </div>
+
+                    <div className='list-item'>
+                        <div 
+                          className={`list-item-title  ${selectedIdx === 2 ? 'active' : ''}`}
+                          onClick={() => handleSelectItem(2)}
+                          style={{backgroundColor:"rgb(255, 229, 151)"}} >
+
+                              When do I get my tokens?
+
+
+                          <div
+                          className={`list-item-number  ${selectedIdx === 2 ? 'active' : ''}`}
+
+                          />
+                        </div>
+
+                        <div 
+                            className={`list-item-content  ${selectedIdx === 2 ? 'active' : ''}`}>
+                            You can claim your $WEPE tokens once the presale has ended and the token is launched. You’ll just need to connect the same wallet you used to buy and click claim.
+                          </div>
+                    </div>
+
+                    <div className='list-item'>
+                        <div 
+                          className={`list-item-title  ${selectedIdx === 3 ? 'active' : ''}`}
+                          onClick={() => handleSelectItem(3)}
+                          style={{backgroundColor:"rgb(255, 229, 151)"}} >
+
+                              How do I know WEPE token is safe?
+
+
+
+                          <div
+                          className={`list-item-number  ${selectedIdx === 3 ? 'active' : ''}`}
+
+                          />
+                        </div>
+
+                        <div 
+                            className={`list-item-content  ${selectedIdx === 3 ? 'active' : ''}`}>
+
+                            $WEPE The WEPE Token site is built by huge Pepe fans using cutting edge technology to facilitate token swaps. You can also stake your $WEPE tokens securely.
+                        </div>
+                    </div>
+                </div>
+                
+
             </div>
-            <div className='faq-card-2'>
-                <h3 className='faq-title'>{sectionText?.title2}</h3>
-                <p className='faq-detail'>{sectionText?.desc2}</p>
+            <div className="faq-content-mid column-arrage">
+                <img className='faq-img1' src='/img/wepe/wepenomics.gif' />
+                <img className='faq-img2' src='/img/wepe/about-img.gif' />
+
+                <div className='card'>
+                  "If I could be a rich WEPE or a poor WEPE, I’d choose rich every time!"
+
+
+                </div>
             </div>
-            <div className='faq-card-3'>
-                <h3 className='faq-title'>{sectionText?.title3}</h3>
-                <p className='faq-detail'>{sectionText?.desc3}</p>
+
+
+            <div className="faq-content-right">
+                <BuyForm />
+                      
             </div>
-            <div className='faq-card-4'>
-                <h3 className='faq-title'>{sectionText?.title4}</h3>
-                <p className='faq-detail'>{sectionText?.desc4}</p>
             </div>
-        </div>
     </div>
   );
 };

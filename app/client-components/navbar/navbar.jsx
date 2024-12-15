@@ -136,7 +136,7 @@ export const Navbar = () => {
         <a href={`/${currentLanguage}`}>{sectionText?.home}</a>
         <a href="#about">{sectionText?.about}</a>
         <a href="#howtobuy">{sectionText?.howtobuy}</a>
-        <a href="#tokenomics">{sectionText?.tokenomics}</a>
+        {/* <a href="#tokenomics">{sectionText?.tokenomics}</a> */}
         <a href="#faqs">{sectionText?.faq}</a>
         {/* <a href="/white-paper.pdf" target='_blank'>{sectionText?.whitePaper}</a> */}
       </div>
@@ -171,8 +171,8 @@ export const Navbar = () => {
       {isMobile && <div className={`appnav-navbar-menu-mobile ${isMenuOpen ? 'appnav-is-active' : ''}`}>
         <a href={`/${currentLanguage}`}>{sectionText?.home}</a>
         <a href="#about" onClick={toggleMenu}>{sectionText?.about}</a>
-        <a href="#howtobuy">{sectionText?.howtobuy}</a>
-        <a href="#tokenomics" onClick={toggleMenu}>{sectionText?.tokenomics}</a>
+        <a href="#howtobuy" onClick={toggleMenu}>{sectionText?.howtobuy}</a>
+        {/* <a href="#tokenomics" onClick={toggleMenu}>{sectionText?.tokenomics}</a> */}
         <a href="#faqs" onClick={toggleMenu}>{sectionText?.faq}</a>
         <a href="/img/wepe/whitepaper.pdf" style={{color:"rgb(197, 35, 237)"}} target='_blank'>{sectionText?.whitePaper}</a>
 
