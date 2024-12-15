@@ -28,6 +28,38 @@ const App = () => {
     const langInput = document.getElementById("current-lang")
     setLanguage(langInput?.value || 'en')
   }, [])
+
+  const [hashText, setHashText] = useState("");
+
+  useEffect(() => {
+    // Function to update the hash text
+    const updateHashText = () => {
+      const hash = window.location.hash; // Get the part after #
+      setHashText(hash ? hash.substring(1) : ""); // Remove the leading # or set to empty string if no hash
+    };
+
+    // Set the initial hash value
+    updateHashText();
+
+    // Add event listener to listen for hash changes
+    window.addEventListener("hashchange", updateHashText);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener("hashchange", updateHashText);
+    };
+  }, []);
+
+// Function to render the component based on hash
+const renderComponent = () => {
+  switch (hashText.toLowerCase()) {
+    case "howtobuy":
+      return <HowToBuy />;
+    default:
+      return <Header />; // Default component
+  }
+};
+
   // useEffect(() => {
   //   setLandingPageData(JsonData);
   // }, []);
@@ -35,11 +67,12 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      <Header/>
+      {renderComponent()}
+      {/* <HowToBuy />  */}
+      {/* <Header/> */}
        {/* <About />
       <Roadmap />
       <Tokenomics />
-       <HowToBuy /> 
        <FAQ/>
       <Footer />    */}
       
