@@ -22,14 +22,14 @@ export const HowToBuy = () => {
         // Scroll to the section
         section.scrollIntoView({ behavior: 'smooth' });
       };
-const handleSelectItem = (idx) => {
-  if(idx === selectedIdx){
-    setSelectedIdx('')
-  }
-  else{
-    setSelectedIdx(idx)
-  }
-}
+    const handleSelectItem = (idx) => {
+      if(idx === selectedIdx){
+        setSelectedIdx('')
+      }
+      else{
+        setSelectedIdx(idx)
+      }
+    }
   return (
     <div id="howtobuy" className='howtobuy-container'>
         <h2 className='howtobuy-heading'>How To Buy WEPE Token</h2>

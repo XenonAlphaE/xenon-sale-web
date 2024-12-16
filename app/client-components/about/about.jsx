@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import "./about.css";
 import "./about.mobile.css";
+import { BuyForm } from '../buyform/buyform';
+
 import { useLanguage, useI18nSection } from "../../../redux/utils/languageUtils";
 
 export const About = () => {
@@ -36,30 +38,38 @@ export const About = () => {
     return (
         <div className='about-container' id="about">
             <div className='about-content'>
-                <div className='about-text'>
-                    <p>{sectionText?.description1}</p>
-                    <p>{sectionText?.description2}</p>
-                    <p>{sectionText?.description3}</p>
-                    <p>{sectionText?.description4}</p>
-                    <p>{sectionText?.description5}</p>
-                    <div className='about-buttons'>
+                <div className="about-content-left column-arrage">
+                    <h2 className='about-heading'>WEPE Token </h2>
+  
+                    <div className='card-item'>
+                        <div
+                          className={`card-item-title `}
+                          
+                            >
 
-                      <button className='about-buynow' onClick={scrollToBuySection}>  {sectionText?.buyNow} </button>
+                            What is WEPE Token?
+
+                          <div  className={`card-item-number `} />
+                        </div>
+
+                        <div className={`card-item-content `}>
+                        WEPE Token is the meme coin of Wall Street Pepe, who’s tired of whale groups controlling the crypto markets. So he’s creating his own - the WEPE Army! WEPE makes the calls that turn frogs into whales, transforming your trading game.
+                        </div>
                     </div>
+                
 
-                    <img className='about-welcome' src='/img/flockers/welcome-about.png' />
+                    
+                </div>
+                <div className="about-content-mid column-arrage">
+                    <img src='/img/wepe/WHALE.gif' width={'100%'} />
+                </div> 
 
-                </div>
-                <div className='about-imgs'>
-                    <img className='about-king' src='/img/flockers/king-img.gif' />
-                    <img className='about-zap' src='/img/flockers/zap-img.svg' />
 
+                <div className="about-content-right">
+                    <BuyForm />
+                          
                 </div>
-                <div className='about-bg-outer'>
-                </div>
-                <div className='about-bg-inner'>
-                </div>
-          </div>
+            </div>
         </div>
     );
 };

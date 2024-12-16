@@ -1,116 +1,90 @@
-.about-container{
+/* Header Section */
+.about-container {
+    position: relative;
+    display: table;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(98, 124, 197);
-    padding: 120px 12px;
-
-}
-.about-bg-outer{
-    z-index: -1;
-    width: 100%;
-    background: url(../../../public/img/flockers/about-img.svg) no-repeat bottom right / contain;
-    min-height: 570px;
-    position: absolute;
-    top : 0;
-    bottom: 0;
-}
-.about-bg-inner{
-    z-index: -1;
-    width: 100%;
-    padding: 40px;
-    background: #c1daea;
-    -webkit-clip-path: polygon(0% 0%, 97% 0%, -19% 190%, 0% 100%);
-    clip-path: polygon(0% 0%, 97% 0%, -19% 190%, 0% 100%);
-    min-height: 570px;
-    position: absolute;
-    top : 0;
-    bottom: 0;
+    /* height: 100vh; */
+    height: auto;
+    padding: 120px 0 40px;
+    /* min-height: 890px; */
+    overflow: hidden;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    min-height: 1100px;
+    background-image: url('../../../public/img/wepe/chapter_one_hero.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
 }
 
-.about-content{
-
+.about-content {
+    max-width: 100%;
     display: flex;
     flex-direction: row;
-    width: 100%;
-    position: relative;
-    z-index: 1;
-}
-
-.about-text{
-    flex: 1;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 120px;
-    display: flex;
-    position: relative;
-    flex-direction: column;
     justify-content: center;
-}
+    column-gap: 8px;
+}  
 
-.about-text p{
-        box-sizing: border-box;
-        color: rgb(0, 0, 0);
-        display: block;
-        font-family: 'HeyComic', sans-serif;
-        font-size: 22px;
-        font-weight: 700;
-        line-height: 32px;
-        margin-block-end: 18px;
-        margin-block-start: 0px;
-        margin-bottom: 18px;
-        margin-inline-end: 0px;
-        margin-inline-start: 0px;
-        margin-top: 0px;
-        text-align: start;
-        text-size-adjust: 100%;
-        unicode-bidi: isolate;
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);    
-}
-
-.about-buttons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.about-buynow{
-    padding: 16px 32px;
-    background: rgb(245, 136, 45);
-    color: black;
-    border: solid 3px black;
-    cursor: pointer;
-    font-size: xx-large;
-    transform: rotate(-3deg);
+.about-heading{
+  font-size: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: black;
+  text-shadow: -4px -2px 1px #FFFFFF;
+  font-family: FuzzyBubbles, sans-serif;
 
 }
-.about-imgs{
-    flex: 1;
-    z-index: 100;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  
+.about-content-left, 
+.about-content-mid, 
+.about-content-right{
+  position: relative;
+  flex: 1;
+  display: flex;
+  font-family: FuzzyBubbles, sans-serif;
+  padding: 8px 16px;
+
+}
+.about-content-left{
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+.about-content-mid{
+  justify-content: center;
+  align-items: center;
 }
 
-
-.about-welcome{
-    width: 400px;
-    position: absolute;
-    top: -60px;
-    left: 200px;
-    z-index: 1;
+.about-content-left .card-item{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transform: rotate(-7deg);
 }
 
-.about-king{
-    height: 570px;
+.about-content-left .card-item-title{
+  font-size: 40px;
+  width: 100%;
+  background-color: #eeb5fa;
+
+  position: relative;
+  color: #000;
+  border: solid 4px black;
+  box-shadow: 0 4px #00000040;
+  padding: 12px 12px;
+  cursor: pointer;
+  font-weight: 800;
 }
 
-.about-zap{
-    width: 300px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
+.about-content-left .card-item-content{
+  padding: 8px;
+  width: 90%;
+  font-size: x-large;
+  border: solid 2px black;
+  background-color: white;
+  color: #000;
+  display: block;
 }

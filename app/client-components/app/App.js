@@ -57,6 +57,8 @@ const renderComponent = () => {
       return <HowToBuy />;
     case "faqs":
       return <FAQ />;
+    case "about":
+      return <About />;
     default:
       return <Header />; // Default component
   }

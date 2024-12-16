@@ -136,7 +136,7 @@ export const FAQ = () => {
                 <BuyForm />
                       
             </div>
-            </div>
+        </div>
     </div>
   );
 };
