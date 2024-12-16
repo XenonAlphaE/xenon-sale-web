@@ -29,22 +29,9 @@
         "warning": "Please install Metamask to buy",
         "link": "click here",
         "connectWallet": "CONNECT WALLET",
-        "ethOption": "ETH NETWORK",
         "switchOption": "SWITCH NETWORK",
-        "bnbOption": "BNB NETWORK",
-        "baseOption": "BASE NETWORK",
         "buyStake": "Buy and Stake for 1235% Rewards",
-        "nextPriceAlert": "UNTIL PRICE INCREASE",
-        "para1": "1207% staking REWARDS",
-        "para2": "$FLOCK. the people's meme coin. ",
-        "para3": "The Flockerz revolutionary",
-        "para3_1": " Vote-To-Earn",
-        "para3_2": " platform puts the POWER in your hands. Buy early presale NOW to earn MASSIVE rewards! ",
-        "note1": "EARN BY VOTING",
-        "note2": "HUGE EARLY REWARDS",
-        "note3": "YOU OWN THE FUTURE",
-        "note4": "AND MORE...",
-        "buyBtn": "join the $FLOCK!"
+        "nextPriceAlert": "UNTIL PRICE INCREASE"
     },
     "header":{
         "cardTitle":"Trade Like Pepe. Buy $WEPE!",

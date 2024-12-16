@@ -1,1 +1,73 @@
-{}
+{
+    "metadata": {
+        "title": "WEPE Token | Wall Street Pepe Token | WEPE Presale",
+        "description": "O token Wall Street Pepe (WEPE) está lançando o Wepe Dex, a troca de memes para traders degens. Compre o token $WEPE na pré-venda para negociar como o Pepe. - o Exército WEPE!"
+    },
+    "nav": {
+        "home": "INÍCIO",
+        "howtobuy": "COMO COMPRAR",
+        "whitePaper": "WHITE PAPER",
+        "buyNow": "COMPRE $WEPE",
+        "faq": "PERGUNTAS FREQUENTES",
+        "audit": "AUDITORIA",
+        "about": "SOBRE"
+    },
+    "buyForm": {
+        "intro": "COMPRAR $WEPE NA PRÉ-VENDA",
+        "day": "Dias",
+        "hrs": "Horas",
+        "mins": "Minutos",
+        "sec": "Segundos",
+        "funRaised": "USDT Arrecadado",
+        "wallet": "SUA Carteira",
+        "boughtAmount": "SUA COMPRA",
+        "stakeableAmount": "SEU MONTANTE A SER STAKADO",
+        "pay": "Pagar com",
+        "get": "Receber",
+        "buyNow": "COMPRE AGORA",
+        "buyMax": "COMPRE O MÁXIMO",
+        "warning": "Por favor, instale o Metamask para comprar",
+        "link": "clique aqui",
+        "connectWallet": "CONECTAR CARTEIRA",
+        "switchOption": "TROCAR REDE",
+        "buyStake": "Compre e Stake para 1235% de Recompensas",
+        "nextPriceAlert": "ATÉ O AUMENTO DE PREÇO"
+    },
+    "header": {
+        "cardTitle": "Negocie como o Pepe. Compre $WEPE!",
+        "cardContent": "Wall Street Pepe odeia que os whales (grandes investidores) fiquem escondidos em grupos internos. Então ele decidiu criar o seu próprio. Junte-se ao Exército do Token WEPE - rãs fortes juntas!",
+        "item1": "Comunidade WEPE: Fique rico junto!",
+        "item2": "Insights do Token WEPE: Negocie como um profissional!",
+        "item3": "Escolhas do WEPE: Jogadas malucas de degens!",
+        "join": "ENTRE PARA O EXÉRCITO WEPE"
+    },
+    "about": {
+        "title": "O que é o Token WEPE?",
+        "desc": "O Token WEPE é o meme coin de Wall Street Pepe, que está cansado dos grupos de whales controlando os mercados de criptomoedas. Então ele está criando o seu próprio - o Exército WEPE! O WEPE faz as jogadas que transformam rãs em whales, revolucionando seu jogo de negociação."
+    },
+    "howtobuy": {
+        "heading": "Como Comprar o Token WEPE",
+        "title1": "Obtenha uma Carteira",
+        "desc1": "O Exército WEPE já tem carteiras? 🤔 Mas se não, tente o MetaMask ou Best Wallet. Você também pode comprar $WEPE diretamente em ‘Tokens Futuramente Disponíveis’ no Best Wallet.",
+        "title2": "Financiar a Carteira",
+        "desc2": "Carregue ETH, BNB ou USDT em sua carteira para trocar por tokens $WEPE. Envie um pouco mais de ETH ou BNB para pagar as taxas de gás. Se isso for incômodo, use um cartão bancário.",
+        "title3": "Comprar & Stake",
+        "desc3": "Para comprar $WEPE, conecte sua carteira ao site. Selecione o método de pagamento e a quantidade para comprar. Confirme a transação. Stake $WEPE se você quiser aquele retorno de APY doce!"
+    },
+    "faqs": {
+        "heading": "PERGUNTAS FREQUENTES SOBRE O TOKEN WEPE",
+        "title1": "O que é o Token WEPE?",
+        "title2": "Por que entrar no Exército WEPE?",
+        "title3": "Quando recebo meus tokens?",
+        "title4": "Como saber se o token WEPE é seguro?",
+        "desc1": "O Token WEPE é o meme coin de Wall Street Pepe, que está cansado dos grupos de whales controlando os mercados de criptomoedas. Então ele está criando o seu próprio - o Exército WEPE! O WEPE faz as jogadas que transformam rãs em whales, revolucionando seu jogo de negociação.",
+        "desc2": "O Token WEPE foi criado para permitir que os degens de meme coin negociem com a inteligência, confiança e atitude do próprio WEPE. Os detentores de tokens $WEPE se tornam parte do movimento e têm acesso exclusivo às chamadas e insights de negociação do WEPE. Entrar para o Exército WEPE pode ser o seu caminho para a liberdade financeira!",
+        "desc3": "Você pode reivindicar seus tokens $WEPE assim que a pré-venda terminar e o token for lançado. Você só precisa conectar a mesma carteira que usou para comprar e clicar em 'Reivindicar'.",
+        "desc4": "O site do Token $WEPE foi desenvolvido por grandes fãs de Pepe, utilizando tecnologia de ponta para facilitar a troca de tokens. Você também pode stakar seus tokens $WEPE com segurança.",
+        "card": "Se eu pudesse ser um WEPE rico ou um WEPE pobre, escolheria ser rico sempre!"
+    },
+    "footer": {
+        "title": "ISENÇÃO DE RESPONSABILIDADE",
+        "text": "Isenção de responsabilidade: WEPE, o Wall Street Pepe, é uma sátira de meme coin sobre os temas de investimentos degenerados no setor financeiro e cripto. Entre, mas não aposte tudo. Conversa de rico e bravata não é conselho financeiro (NFA). Faça sua própria pesquisa (DYOR)."
+    }
+}

@@ -1,1 +1,73 @@
-{}
+{
+    "metadata": {
+        "title": "WEPE Token | Wall Street Pepe Token | Presale WEPE",
+        "description": "Token Wall Street Pepe (WEPE) menghadirkan Wepe Dex, platform pertukaran ultimate untuk trading meme coin degen. Beli token $WEPE di presale untuk trading seperti Pepe. - Tentara WEPE!"
+    },
+    "nav": {
+        "home": "BERANDA",
+        "howtobuy": "CARA MEMBELI",
+        "whitePaper": "WHITE PAPER",
+        "buyNow": "BELI $WEPE",
+        "faq": "FAQ",
+        "audit": "AUDIT",
+        "about": "TENTANG"
+    },
+    "buyForm": {
+        "intro": "BELI $WEPE PRESALE",
+        "day": "Hari",
+        "hrs": "Jam",
+        "mins": "Menit",
+        "sec": "Detik",
+        "funRaised": "USDT Terkumpul",
+        "wallet": "DOMPET ANDA",
+        "boughtAmount": "PEMBELIAN ANDA",
+        "stakeableAmount": "JUMLAH YANG DAPAT DITARUH",
+        "pay": "Bayar dengan",
+        "get": "Terima",
+        "buyNow": "BELI SEKARANG",
+        "buyMax": "BELI MAX",
+        "warning": "Harap pasang Metamask untuk membeli",
+        "link": "klik di sini",
+        "connectWallet": "SAMBUNGKAN DOMPET",
+        "switchOption": "GANTI JARINGAN",
+        "buyStake": "Beli dan Stake untuk 1235% Reward",
+        "nextPriceAlert": "Hingga Kenaikan Harga"
+    },
+    "header": {
+        "cardTitle": "Trade Seperti Pepe. Beli $WEPE!",
+        "cardContent": "Wall Street Pepe benci karena para whale bersembunyi di kelompok insider. Jadi dia memutuskan untuk membuat kelompoknya sendiri. Bergabunglah dengan Tentara WEPE - katak kuat bersama!",
+        "item1": "Komunitas WEPE: Pilih kaya bersama!",
+        "item2": "Wawasan Token WEPE: Trade seperti pro!",
+        "item3": "Pilihan WEPE: Permainan degen gila!",
+        "join": "BERGABUNG DENGAN TENTARA WEPE"
+    },
+    "about": {
+        "title": "Apa itu WEPE Token?",
+        "desc": "WEPE Token adalah meme coin dari Wall Street Pepe, yang bosan dengan kelompok whale yang mengendalikan pasar crypto. Jadi dia membuat miliknya sendiri - Tentara WEPE! WEPE membuat keputusan yang mengubah katak menjadi whale, mengubah cara trading Anda."
+    },
+    "howtobuy": {
+        "heading": "Cara Membeli WEPE Token",
+        "title1": "Dapatkan Dompet",
+        "desc1": "Tentara WEPE sudah punya dompet? 🤔 Jika belum, coba MetaMask atau Best Wallet. Anda bahkan bisa membeli $WEPE langsung di ‘Upcoming Tokens’ di Best Wallet.",
+        "title2": "Isi Dompet",
+        "desc2": "Isi ETH, BNB, atau USDT ke dompet Anda untuk menukarnya dengan token $WEPE. Kirim sedikit ETH atau BNB ekstra untuk membayar biaya gas. Jika itu merepotkan, gunakan saja kartu bank.",
+        "title3": "Beli & Stake",
+        "desc3": "Untuk membeli $WEPE, hubungkan dompet Anda ke situs ini. Pilih metode pembayaran dan jumlah yang ingin dibeli. Konfirmasi transaksi. Stake $WEPE jika Anda ingin APY yang manis!"
+    },
+    "faqs": {
+        "heading": "FAQ Token WEPE",
+        "title1": "Apa itu WEPE Token?",
+        "title2": "Mengapa bergabung dengan Tentara WEPE?",
+        "title3": "Kapan saya akan mendapatkan token saya?",
+        "title4": "Bagaimana saya tahu token WEPE aman?",
+        "desc1": "WEPE Token adalah meme coin dari Wall Street Pepe, yang bosan dengan kelompok whale yang mengendalikan pasar crypto. Jadi dia membuat miliknya sendiri - Tentara WEPE! WEPE membuat keputusan yang mengubah katak menjadi whale, mengubah cara trading Anda.",
+        "desc2": "WEPE Token dibuat untuk memungkinkan para degen meme coin trading dengan kecerdasan, gaya, dan kepercayaan diri ala WEPE. Pemegang token $WEPE menjadi bagian dari gerakan dan mendapatkan akses ke panggilan trading dan wawasan eksklusif dari WEPE. Bergabung dengan Tentara WEPE bisa jadi jalan Anda menuju kebebasan finansial!",
+        "desc3": "Anda dapat mengklaim token $WEPE Anda setelah presale berakhir dan token diluncurkan. Anda hanya perlu menghubungkan dompet yang sama yang Anda gunakan untuk membeli dan klik klaim.",
+        "desc4": "$WEPE Situs WEPE Token dibangun oleh para penggemar Pepe besar dengan teknologi mutakhir untuk memfasilitasi pertukaran token. Anda juga dapat stake token $WEPE Anda dengan aman.",
+        "card": "Jika saya bisa menjadi WEPE kaya atau WEPE miskin, saya akan memilih menjadi kaya setiap saat!"
+    },
+    "footer": {
+        "title": "DISCLAIMER",
+        "text": "Disclaimer: WEPE, Wall Street Pepe, adalah satire meme coin tentang tema investasi degen di dunia keuangan dan crypto. Masuklah, tapi jangan pertaruhkan semuanya. Pembicaraan kaya dan keberanian adalah NFA. DYOR."
+    }
+}

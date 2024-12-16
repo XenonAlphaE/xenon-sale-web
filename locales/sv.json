@@ -1,1 +1,73 @@
-{}
+{
+    "metadata": {
+        "title": "WEPE Token | Wall Street Pepe Token | WEPE Presale",
+        "description": "Wall Street Pepe-token (WEPE) levererar Wepe Dex, den ultimata degen meme coin handelsplattformen. Köp $WEPE-token i presale för att handla som Pepe. - WEPE-armén!"
+    },
+    "nav": {
+        "home": "HEM",
+        "howtobuy": "HUR MAN KÖPER",
+        "whitePaper": "VIT PAPPE",
+        "buyNow": "KÖP $WEPE",
+        "faq": "FAQ",
+        "audit": "AUDIT",
+        "about": "OM"
+    },
+    "buyForm": {
+        "intro": "KÖP $WEPE PRESALE",
+        "day": "Dagar",
+        "hrs": "Timmar",
+        "mins": "Minuter",
+        "sec": "Sekunder",
+        "funRaised": "USDT Insamlat",
+        "wallet": "DIN Plånbok",
+        "boughtAmount": "DIN KÖPTA",
+        "stakeableAmount": "DIN STAKABLE",
+        "pay": "Betala med",
+        "get": "Mottag",
+        "buyNow": "KÖP NU",
+        "buyMax": "KÖP MAX",
+        "warning": "Vänligen installera Metamask för att köpa",
+        "link": "klicka här",
+        "connectWallet": "ANSLUT PLÅNBOK",
+        "switchOption": "BYT NÄTVERK",
+        "buyStake": "Köp och stake för 1235% Belöningar",
+        "nextPriceAlert": "TILL PRISET ÖKAR"
+    },
+    "header": {
+        "cardTitle": "Handla som Pepe. Köp $WEPE!",
+        "cardContent": "Wall Street Pepe hatar att valar gömmer sig i insidergrupper. Så han bestämde sig för att skapa sin egen. Gå med i WEPE Token-armén - grodor starka tillsammans!",
+        "item1": "WEPE-community: Välj rik tillsammans!",
+        "item2": "WEPE Token Insights: Handla som en proffs!",
+        "item3": "WEPE Picks: Galna degen-spel!",
+        "join": "GÅ MED I WEPE-ARMÉN"
+    },
+    "about": {
+        "title": "Vad är WEPE Token?",
+        "desc": "WEPE Token är meme-coinen från Wall Street Pepe, som är trött på att valgrupper kontrollerar kryptomarknaderna. Så han skapar sin egen - WEPE-armén! WEPE gör besluten som förvandlar grodor till valar och omvandlar ditt handelsspel."
+    },
+    "howtobuy": {
+        "heading": "Hur man köper WEPE Token",
+        "title1": "Skaffa Plånbok",
+        "desc1": "WEPE-armén har redan plånböcker? 🤔 Men om inte, prova MetaMask eller Best Wallet. Du kan till och med köpa $WEPE direkt i ‘Upcoming Tokens’ i Best Wallet.",
+        "title2": "Fyll på Plånbok",
+        "desc2": "Ladda ETH, BNB eller USDT i din plånbok för att byta mot $WEPE-token. Skicka lite extra ETH eller BNB för gasavgifter. Om det är krångligt, använd bara ett bankkort.",
+        "title3": "Köp & Stake",
+        "desc3": "För att köpa $WEPE, anslut din plånbok till sidan. Välj betalningsmetod och belopp att köpa. Bekräfta transaktionen. Stake $WEPE om du vill ha den söta APY:n!"
+    },
+    "faqs": {
+        "heading": "WEPE Token FAQ",
+        "title1": "Vad är WEPE Token?",
+        "title2": "Varför gå med i WEPE-armén?",
+        "title3": "När får jag mina tokens?",
+        "title4": "Hur vet jag att WEPE-token är säker?",
+        "desc1": "WEPE Token är meme-coinen från Wall Street Pepe, som är trött på att valgrupper kontrollerar kryptomarknaderna. Så han skapar sin egen - WEPE-armén! WEPE gör besluten som förvandlar grodor till valar och omvandlar ditt handelsspel.",
+        "desc2": "WEPE Token är byggd för att låta meme coin degen handla med list, självsäkerhet och swag som WEPE själv. $WEPE-tokeninnehavare blir en del av rörelsen och får tillgång till WEPE:s exklusiva handelstips och insikter. Att gå med i WEPE-armén kan vara din väg till ekonomisk frihet!",
+        "desc3": "Du kan hämta dina $WEPE-tokens när presale har avslutats och token har lanserats. Du behöver bara ansluta samma plånbok som du använde för att köpa och klicka på hämta.",
+        "desc4": "$WEPE WEPE Token-sidan är byggd av stora Pepe-fans med hjälp av banbrytande teknologi för att underlätta tokenbyten. Du kan också stake dina $WEPE-tokens säkert.",
+        "card": "Om jag kunde vara en rik WEPE eller en fattig WEPE, skulle jag välja rik varje gång!"
+    },
+    "footer": {
+        "title": "DISCLAIMER",
+        "text": "Disclaimer: WEPE, Wall Street Pepe, är en meme coin-satir av degenererade investeringsteman inom finans och kryptovalutor. Ape in, men satsa inte huset. Rika samtal och bravado är NFA. DYOR."
+    }
+}

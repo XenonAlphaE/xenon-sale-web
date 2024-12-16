@@ -1,1 +1,73 @@
-{}
+{
+    "metadata": {
+        "title": "WEPE Token | Wall Street Pepe Token | WEPE Presale",
+        "description": "Wall Street Pepe token (WEPE), Wepe Dex'i sunuyor; nihai degen meme coin ticaret borsası. $WEPE token'ını presale'den alarak Pepe gibi ticaret yapın. - WEPE Ordusu!"
+    },
+    "nav": {
+        "home": "ANA SAYFA",
+        "howtobuy": "NASIL ALINIR",
+        "whitePaper": "WHITE PAPER",
+        "buyNow": "HEMEN $WEPE AL",
+        "faq": "SSS",
+        "audit": "DENETİM",
+        "about": "HAKKINDA"
+    },
+    "buyForm": {
+        "intro": "HEMEN $WEPE PRESALE AL",
+        "day": "Gün",
+        "hrs": "Saat",
+        "mins": "Dakika",
+        "sec": "Saniye",
+        "funRaised": "USDT Toplanan",
+        "wallet": "CÜZDANINIZ",
+        "boughtAmount": "ALDIĞINIZ MİKTAR",
+        "stakeableAmount": "YATIRABİLECEĞİNİZ MİKTAR",
+        "pay": "Ödeme ile",
+        "get": "Al",
+        "buyNow": "HEMEN AL",
+        "buyMax": "MAKS AL",
+        "warning": "Alış yapmak için Metamask yükleyin",
+        "link": "buraya tıklayın",
+        "connectWallet": "CÜZDANI BAĞLA",
+        "switchOption": "AĞI DEĞİŞTİR",
+        "buyStake": "Al ve %1235 Ödül için Yatır",
+        "nextPriceAlert": "FİYAT ARTIŞINA KADAR"
+    },
+    "header": {
+        "cardTitle": "Pepe Gibi Ticaret Yap. $WEPE Al!",
+        "cardContent": "Wall Street Pepe, balinaların içerideki gruplarda saklanmasına kızıyor. Bu yüzden kendi grubunu kurmaya karar verdi. WEPE Token Ordusu'na katıl - kurbağalar birlikte güçlüdür!",
+        "item1": "WEPE Topluluğu: Birlikte zengin olalım!",
+        "item2": "WEPE Token İpuçları: Profesyonelce ticaret yap!",
+        "item3": "WEPE Seçimleri: Çılgın degen hamleleri!",
+        "join": "WEPE ORDUSUNA KATIL"
+    },
+    "about": {
+        "title": "WEPE Token Nedir?",
+        "desc": "WEPE Token, Wall Street Pepe'nin meme coin'idir ve kripto piyasalarını balina gruplarının kontrol etmesinden bıktı. Bu yüzden kendi ordusunu kuruyor - WEPE Ordusu! WEPE, kurbağaları balinalara dönüştüren çağrılar yapar ve ticaret oyununu değiştirir."
+    },
+    "howtobuy": {
+        "heading": "WEPE Token Nasıl Alınır?",
+        "title1": "Cüzdan Al",
+        "desc1": "WEPE Ordusu cüzdanlara sahip mi? 🤔 Eğer yoksa, MetaMask veya Best Wallet'ı deneyin. Ayrıca $WEPE token'ını doğrudan Best Wallet'taki ‘Upcoming Tokens’ bölümünden de alabilirsiniz.",
+        "title2": "Cüzdanı Fonla",
+        "desc2": "Cüzdanınıza ETH, BNB veya USDT yükleyin ve bunları $WEPE token'larıyla değiştirin. Gas ücretlerini ödemek için biraz fazla ETH veya BNB gönderin. Eğer zahmetli ise, bankamatik kartı da kullanabilirsiniz.",
+        "title3": "Al ve Yatır",
+        "desc3": "$WEPE almak için cüzdanınızı siteye bağlayın. Ödeme yöntemi ve alacağınız miktarı seçin. İşlemi onaylayın. Tatlı bir APY almak istiyorsanız $WEPE yatırın!"
+    },
+    "faqs": {
+        "heading": "WEPE Token SSS",
+        "title1": "WEPE Token Nedir?",
+        "title2": "Neden WEPE Ordusuna Katılmalıyım?",
+        "title3": "Token'larımı Ne Zaman Alırım?",
+        "title4": "WEPE token'ının güvenli olduğunu nasıl anlayabilirim?",
+        "desc1": "WEPE Token, Wall Street Pepe'nin meme coin'idir ve kripto piyasalarını balina gruplarının kontrol etmesinden bıktı. Bu yüzden kendi ordusunu kuruyor - WEPE Ordusu! WEPE, kurbağaları balinalara dönüştüren çağrılar yapar ve ticaret oyununu değiştirir.",
+        "desc2": "WEPE Token, meme coin degen'lerinin WEPE'nin kendisinin zekası, karizması ve özgüveniyle ticaret yapmalarına olanak tanır. $WEPE token sahipleri, harekete katılır ve WEPE'nin özel ticaret çağrılarına ve içgörülerine erişim kazanır. WEPE Ordusuna katılmak, finansal özgürlüğe giden yolunuz olabilir!",
+        "desc3": "Presale sona erdikten ve token'lar piyasaya sürüldükten sonra $WEPE token'larınızı talep edebilirsiniz. Sadece kullandığınız cüzdanı bağlamanız ve 'talep et' butonuna tıklamanız yeterli.",
+        "desc4": "$WEPE Token sitesi, gelişmiş teknoloji kullanarak token değişimlerini kolaylaştıran büyük Pepe hayranları tarafından oluşturulmuştur. Ayrıca $WEPE token'larınızı güvenle yatırabilirsiniz.",
+        "card": "Eğer zengin bir WEPE mi yoksa fakir bir WEPE mi olsaydım, her zaman zengin olanı seçerdim!"
+    },
+    "footer": {
+        "title": "HUKUKİ UYARI",
+        "text": "Hukuki Uyarı: WEPE, Wall Street Pepe, finans ve kripto dünyasında degenerate yatırımları eleştiren bir meme coin'dir. Oyuna girin ama tüm paranızı yatırmayın. Zengin konuşmaları ve hava atmak NFA'dır. DYOR."
+    }
+}

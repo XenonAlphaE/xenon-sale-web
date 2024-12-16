@@ -1,1 +1,73 @@
-{}
+{
+    "metadata": {
+        "title": "WEPE Token | Wall Street Pepe Token | WEPE Presale",
+        "description": "Wall Street Pepe token (WEPE) 正在推出 Wepe Dex，终极 Degen meme coin 交易所。预售购买 $WEPE token，像 Pepe 一样进行交易。- WEPE 大军！"
+    },
+    "nav": {
+        "home": "首页",
+        "howtobuy": "如何购买",
+        "whitePaper": "白皮书",
+        "buyNow": "立即购买 $WEPE",
+        "faq": "常见问题",
+        "audit": "审计",
+        "about": "关于"
+    },
+    "buyForm": {
+        "intro": "购买 $WEPE 预售",
+        "day": "天",
+        "hrs": "小时",
+        "mins": "分钟",
+        "sec": "秒",
+        "funRaised": "已筹集 USDT",
+        "wallet": "您的钱包",
+        "boughtAmount": "您购买的数量",
+        "stakeableAmount": "您可质押的数量",
+        "pay": "支付方式",
+        "get": "接收",
+        "buyNow": "立即购买",
+        "buyMax": "购买最大值",
+        "warning": "请安装 Metamask 才能购买",
+        "link": "点击这里",
+        "connectWallet": "连接钱包",
+        "switchOption": "切换网络",
+        "buyStake": "购买并质押以获得 1235% 回报",
+        "nextPriceAlert": "直到价格上涨"
+    },
+    "header": {
+        "cardTitle": "像 Pepe 一样交易。购买 $WEPE！",
+        "cardContent": "Wall Street Pepe 讨厌鲸鱼们躲在内部小圈子里。所以他决定创建自己的圈子。加入 WEPE Token 大军 - 蛙人们团结一致！",
+        "item1": "WEPE 社区：一起选择富有！",
+        "item2": "WEPE Token 深度分析：像专业人士一样交易！",
+        "item3": "WEPE 精选：疯狂的 Degen 游戏！",
+        "join": "加入 WEPE 大军"
+    },
+    "about": {
+        "title": "什么是 WEPE Token？",
+        "desc": "WEPE Token 是 Wall Street Pepe 的 meme coin，他厌倦了鲸鱼集团控制加密市场。所以他决定创建自己的团体 - WEPE 大军！WEPE 作出决策，将蛙人变成鲸鱼，彻底改变您的交易游戏。"
+    },
+    "howtobuy": {
+        "heading": "如何购买 WEPE Token",
+        "title1": "获取钱包",
+        "desc1": "WEPE 大军已经有钱包了吗？🤔 如果没有，可以试试 MetaMask 或 Best Wallet。您甚至可以在 Best Wallet 的‘即将发布的代币’中直接购买 $WEPE。",
+        "title2": "为钱包充值",
+        "desc2": "向您的钱包充值 ETH、BNB 或 USDT，以便兑换 $WEPE token。发送一些额外的 ETH 或 BNB 用于支付手续费。如果觉得麻烦，您也可以直接使用银行卡。",
+        "title3": "购买并质押",
+        "desc3": "要购买 $WEPE，连接您的钱包到网站。选择支付方式和购买金额。确认交易。如果您想获得丰厚的 APY 回报，可以质押 $WEPE！"
+    },
+    "faqs": {
+        "heading": "WEPE Token 常见问题",
+        "title1": "什么是 WEPE Token？",
+        "title2": "为什么要加入 WEPE 大军？",
+        "title3": "我什么时候能收到我的代币？",
+        "title4": "如何确认 WEPE token 是安全的？",
+        "desc1": "WEPE Token 是 Wall Street Pepe 的 meme coin，他厌倦了鲸鱼集团控制加密市场。所以他决定创建自己的团体 - WEPE 大军！WEPE 作出决策，将蛙人变成鲸鱼，彻底改变您的交易游戏。",
+        "desc2": "WEPE Token 的设计让 meme coin 的 Degen 玩家能够像 WEPE 本人一样，用智慧、态度和自信进行交易。$WEPE token 持有者将成为这个运动的一部分，并获得 WEPE 的独家交易建议和市场见解。加入 WEPE 大军可能是您通向财务自由的道路！",
+        "desc3": "您可以在预售结束并且代币上线后领取您的 $WEPE 代币。只需连接您购买时使用的相同钱包并点击领取即可。",
+        "desc4": "$WEPE Token 网站由大量 Pepe 粉丝利用最先进的技术构建，方便进行代币交换。您也可以安全地质押您的 $WEPE 代币。",
+        "card": "如果我能选择是富有的 WEPE 还是贫穷的 WEPE，我每次都会选择富有！"
+    },
+    "footer": {
+        "title": "免责声明",
+        "text": "免责声明：WEPE，Wall Street Pepe，是对金融和加密领域堕落投资主题的 meme coin 讽刺。可以尝试，但不要把房子押上去。富有的言谈和自负不是投资建议 (NFA)。自行做足功课 (DYOR)。"
+    }
+}

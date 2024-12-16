@@ -1,1 +1,73 @@
-{}
+{
+    "metadata": {
+        "title": "WEPE Token | Wall Street Pepe Token | WEPE Presale",
+        "description": "Token Wall Street Pepe (WEPE) đang cung cấp Wepe Dex, sàn giao dịch meme coin degen tuyệt vời. Mua token $WEPE trong đợt presale để giao dịch như Pepe. - Quân đội WEPE!"
+    },
+    "nav": {
+        "home": "TRANG CHỦ",
+        "howtobuy": "CÁCH MUA",
+        "whitePaper": "BÁO CÁO TRẮNG",
+        "buyNow": "MUA $WEPE",
+        "faq": "CÂU HỎI THƯỜNG GẶP",
+        "audit": "KIỂM TOÁN",
+        "about": "GIỚI THIỆU"
+    },
+    "buyForm": {
+        "intro": "MUA $WEPE PRESALE",
+        "day": "Ngày",
+        "hrs": "Giờ",
+        "mins": "Phút",
+        "sec": "Giây",
+        "funRaised": "USDT Đã Gây Quỹ",
+        "wallet": "Ví CỦA BẠN",
+        "boughtAmount": "SỐ LƯỢNG BẠN ĐÃ MUA",
+        "stakeableAmount": "SỐ LƯỢNG CÓ THỂ STAKE",
+        "pay": "Thanh toán bằng",
+        "get": "Nhận",
+        "buyNow": "MUA NGAY",
+        "buyMax": "MUA TỐI ĐA",
+        "warning": "Vui lòng cài đặt Metamask để mua",
+        "link": "click vào đây",
+        "connectWallet": "KẾT NỐI VÍ",
+        "switchOption": "CHUYỂN MẠNG",
+        "buyStake": "Mua và Stake để nhận 1235% Phần Thưởng",
+        "nextPriceAlert": "ĐẾN KHI GIÁ TĂNG"
+    },
+    "header": {
+        "cardTitle": "Giao dịch như Pepe. Mua $WEPE!",
+        "cardContent": "Wall Street Pepe ghét việc những con cá voi ẩn mình trong các nhóm nội bộ. Vì vậy anh ta quyết định tạo ra nhóm của riêng mình. Tham gia Quân đội Token WEPE - những chú ếch mạnh mẽ cùng nhau!",
+        "item1": "Cộng đồng WEPE: Chọn giàu cùng nhau!",
+        "item2": "Thông tin về Token WEPE: Giao dịch như một chuyên gia!",
+        "item3": "Lựa chọn của WEPE: Những ván cược điên rồ!",
+        "join": "THAM GIA QUÂN ĐỘI WEPE"
+    },
+    "about": {
+        "title": "WEPE Token là gì?",
+        "desc": "WEPE Token là meme coin của Wall Street Pepe, người đã mệt mỏi với việc các nhóm cá voi kiểm soát các thị trường crypto. Vì vậy, anh ta đang tạo ra của riêng mình - Quân đội WEPE! WEPE đưa ra những quyết định giúp chuyển ếch thành cá voi, biến trò chơi giao dịch của bạn."
+    },
+    "howtobuy": {
+        "heading": "Cách Mua WEPE Token",
+        "title1": "Lấy ví",
+        "desc1": "Quân đội WEPE đã có ví chưa? 🤔 Nếu chưa, thử MetaMask hoặc Best Wallet. Bạn cũng có thể mua $WEPE trực tiếp trong mục ‘Upcoming Tokens’ của Best Wallet.",
+        "title2": "Nạp tiền vào ví",
+        "desc2": "Nạp ETH, BNB hoặc USDT vào ví của bạn để đổi lấy token $WEPE. Gửi thêm một ít ETH hoặc BNB để thanh toán phí gas. Nếu thấy phiền phức, chỉ cần dùng thẻ ngân hàng.",
+        "title3": "Mua & Stake",
+        "desc3": "Để mua $WEPE, kết nối ví của bạn với trang web. Chọn phương thức thanh toán và số lượng cần mua. Xác nhận giao dịch. Stake $WEPE nếu bạn muốn nhận APY hấp dẫn!"
+    },
+    "faqs": {
+        "heading": "Câu Hỏi Thường Gặp về WEPE Token",
+        "title1": "WEPE Token là gì?",
+        "title2": "Tại sao nên tham gia Quân đội WEPE?",
+        "title3": "Khi nào tôi sẽ nhận được token của mình?",
+        "title4": "Làm sao để biết WEPE token là an toàn?",
+        "desc1": "WEPE Token là meme coin của Wall Street Pepe, người đã mệt mỏi với việc các nhóm cá voi kiểm soát các thị trường crypto. Vì vậy, anh ta đang tạo ra của riêng mình - Quân đội WEPE! WEPE đưa ra những quyết định giúp chuyển ếch thành cá voi, biến trò chơi giao dịch của bạn.",
+        "desc2": "WEPE Token được xây dựng để giúp những người đam mê meme coin giao dịch với sự thông minh, tự tin và phong thái của chính WEPE. Chủ sở hữu token $WEPE trở thành một phần của phong trào và có quyền truy cập vào các quyết định giao dịch và thông tin độc quyền của WEPE. Tham gia Quân đội WEPE có thể là con đường dẫn đến tự do tài chính của bạn!",
+        "desc3": "Bạn có thể yêu cầu token $WEPE của mình khi đợt presale kết thúc và token được ra mắt. Bạn chỉ cần kết nối ví mà bạn đã dùng để mua và nhấp vào yêu cầu.",
+        "desc4": "$WEPE Trang web WEPE Token được xây dựng bởi những người hâm mộ Pepe lớn sử dụng công nghệ tiên tiến để hỗ trợ việc trao đổi token. Bạn cũng có thể stake token $WEPE của mình một cách an toàn.",
+        "card": "Nếu tôi có thể là một WEPE giàu có hoặc một WEPE nghèo, tôi sẽ chọn giàu có mỗi lần!"
+    },
+    "footer": {
+        "title": "Tuyên Bố Từ Chối",
+        "text": "Tuyên bố từ chối: WEPE, Wall Street Pepe, là meme coin châm biếm các chủ đề đầu tư suy đồi trong tài chính và crypto. Hãy đầu tư nhưng đừng đánh cược hết gia sản. Nói về sự giàu có và tự mãn là NFA. DYOR."
+    }
+}

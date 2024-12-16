@@ -1,1 +1,73 @@
-{}
+{
+    "metadata": {
+        "title": "WEPE Token | Wall Street Pepe Token | WEPE Presale",
+        "description": "Wall Street Pepe token (WEPE) levert Wepe Dex, het ultieme degen meme coin handelsplatform. Koop $WEPE token in de presale om te handelen zoals Pepe. - het WEPE Leger!"
+    },
+    "nav": {
+        "home": "HOME",
+        "howtobuy": "HOE TE KOPEN",
+        "whitePaper": "WITTE PAPIER",
+        "buyNow": "KOOP $WEPE",
+        "faq": "FAQ",
+        "audit": "AUDIT",
+        "about": "OVER"
+    },
+    "buyForm": {
+        "intro": "KOOP $WEPE PRESALE",
+        "day": "Dagen",
+        "hrs": "Uren",
+        "mins": "Minuten",
+        "sec": "Seconden",
+        "funRaised": "USDT Opgehaald",
+        "wallet": "JOUW Wallet",
+        "boughtAmount": "JOUW AANGESCHAFTE",
+        "stakeableAmount": "JOUW STAKEABLE",
+        "pay": "Betalen met",
+        "get": "Ontvangen",
+        "buyNow": "KOOP NU",
+        "buyMax": "KOOP MAXIMAAL",
+        "warning": "Installeer MetaMask om te kopen",
+        "link": "klik hier",
+        "connectWallet": "WALLET VERBINDEN",
+        "switchOption": "NETWERK WIJZIGEN",
+        "buyStake": "Koop en Stake voor 1235% Beloningen",
+        "nextPriceAlert": "TOT PRIJSSTIJGING"
+    },
+    "header": {
+        "cardTitle": "Handel als Pepe. Koop $WEPE!",
+        "cardContent": "Wall Street Pepe haat het dat walvissen zich verbergen in insider groepen. Dus besloot hij zijn eigen te maken. Sluit je aan bij het WEPE Token Leger - kikkers sterk samen!",
+        "item1": "WEPE Gemeenschap: Kies samen rijk!",
+        "item2": "WEPE Token Inzichten: Handel als een pro!",
+        "item3": "WEPE Picks: Gekke degen zetjes!",
+        "join": "SLUIT JE AAN BIJ HET WEPE LEGER"
+    },
+    "about": {
+        "title": "Wat is WEPE Token?",
+        "desc": "WEPE Token is de meme coin van Wall Street Pepe, die moe is van walvisgroepen die de cryptomarkten beheersen. Daarom maakt hij zijn eigen - het WEPE Leger! WEPE maakt de beslissingen die kikkers in walvissen veranderen en transformeert je handelsgame."
+    },
+    "howtobuy": {
+        "heading": "Hoe WEPE Token te Kopen",
+        "title1": "Krijg Wallet",
+        "desc1": "Heeft het WEPE Leger al wallets? 🤔 Maar zo niet, probeer MetaMask of Best Wallet. Je kunt zelfs $WEPE direct kopen in de ‘Aankomende Tokens’ sectie in Best Wallet.",
+        "title2": "Voer Wallet van Fondsen",
+        "desc2": "Laad ETH, BNB of USDT in je wallet om te ruilen voor $WEPE tokens. Stuur een beetje extra ETH of BNB voor de gas kosten. Als dat lastig is, gebruik dan gewoon een bankkaart.",
+        "title3": "Koop & Stake",
+        "desc3": "Om $WEPE te kopen, verbind je wallet met de site. Kies een betaalmethode en het bedrag dat je wilt kopen. Bevestig de transactie. Stake $WEPE als je die zoete APY wilt!"
+    },
+    "faqs": {
+        "heading": "WEPE Token FAQ",
+        "title1": "Wat is WEPE Token?",
+        "title2": "Waarom deelnemen aan het WEPE Leger?",
+        "title3": "Wanneer krijg ik mijn tokens?",
+        "title4": "Hoe weet ik dat WEPE token veilig is?",
+        "desc1": "WEPE Token is de meme coin van Wall Street Pepe, die moe is van walvisgroepen die de cryptomarkten beheersen. Daarom maakt hij zijn eigen - het WEPE Leger! WEPE maakt de beslissingen die kikkers in walvissen veranderen en transformeert je handelsgame.",
+        "desc2": "WEPE Token is gebouwd zodat meme coin degen kan handelen met de scherpzinnigheid, zelfvertrouwen en swagger van WEPE zelf. $WEPE token houders worden onderdeel van de beweging en krijgen toegang tot WEPE's exclusieve handelsinzichten en calls. Deelname aan het WEPE Leger kan jouw pad naar financiële vrijheid zijn!",
+        "desc3": "Je kunt je $WEPE tokens claimen zodra de presale is afgelopen en de token is gelanceerd. Je hoeft alleen je wallet te verbinden die je hebt gebruikt om te kopen en op claim te klikken.",
+        "desc4": "$WEPE De WEPE Token site is gebouwd door enorme Pepe-fans met behulp van geavanceerde technologie om token-swaps te vergemakkelijken. Je kunt ook veilig je $WEPE tokens staken.",
+        "card": "Als ik een rijke WEPE of een arme WEPE zou kunnen zijn, zou ik altijd voor de rijke kiezen!"
+    },
+    "footer": {
+        "title": "DISCLAIMER",
+        "text": "Disclaimer: WEPE, de Wall Street Pepe, is een meme coin satire van degen investerings thema's in financiën en crypto. Ape in, maar zet niet je huis in. Rijke praat en bravado is NFA. DYOR."
+    }
+}
