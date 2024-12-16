@@ -8,7 +8,7 @@ import './header.mobile.css'
 import { BuyForm } from "../buyform/buyform";
 
 export const Header = () => {
-  const sectionText = useI18nSection('buyForm')
+  const sectionText = useI18nSection('header')
   const currentLanguage = useLanguage()
 
   return (
@@ -37,31 +37,34 @@ export const Header = () => {
           </div>
           <div className="intro-content-mid">
               <h2 className="heading1">
-                  Trade Like Pepe. Buy $WEPE!
+                  {sectionText?.cardTitle}
               </h2>
 
               <p className="heading2">
-                  Wall Street Pepe hates that whales are hiding in insider groups. So he decided to make his own. Join the WEPE Token Army - frogs strong together!
+                {sectionText?.cardContent}
 
               </p>
               <div className="tag-list">
                   <div className="tag-item">
                     <img  src="/img/wepe/wobs-icon.svg"  className="tag-icon"/>
-                    WEPE Community: Choose rich together!
+                    {sectionText?.item1}
+
                   </div>
                   <div className="tag-item">
                     <img  src="/img/wepe/wobs-icon.svg"  className="tag-icon"/>
-                    WEPE Token Insights: Trade like a pro!
+                    {sectionText?.item2}
                   </div>
                   <div className="tag-item">
                     <img  src="/img/wepe/wobs-icon.svg"  className="tag-icon"/>
-                    WEPE Picks: Mad degen plays!
+                    {sectionText?.item3}
                   </div>
 
 
               </div >    
               <div className="next-nav">
-                  <h2>JOIN WEPE ARMY </h2>
+                  <h2>                    
+                    {sectionText?.join}
+                  </h2>
                   <img src="/img/wepe/arrow-banner.svg" />
                   <img src="/img/wepe/home_arrow.svg" />
 

@@ -3,18 +3,18 @@
     padding: 24px 12px;
     display: flex;
     flex-direction: column;
-    min-height: 500px;
+    min-height: 100px;
     justify-content: space-evenly;
     row-gap: 12px;
     align-items: center;
-    background-color: rgb(77, 108, 195);
+    background-color: rgb(222, 203, 224);
 
 }
 
 .copyright{
     box-sizing: border-box;
     transform: scaleY(1.5);    /* Increase height by 1.5 times */
-    color: rgba(255, 255, 255, 0.5);
+    color: black;
     display: block;
     font-family: HeyComic, sans-serif;
     font-size: 14px;

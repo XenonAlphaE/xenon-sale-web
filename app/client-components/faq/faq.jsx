@@ -40,7 +40,7 @@ export const FAQ = () => {
         <div className='faq-content'>
 
             <div className="faq-content-left column-arrage">
-                <h2 className='faq-heading'>WEPE Token FAQs </h2>
+                <h2 className='faq-heading'>{sectionText?.heading} </h2>
                 <div className='list-items'>
 
                     <div className='list-item'>
@@ -49,26 +49,26 @@ export const FAQ = () => {
                           onClick={() => handleSelectItem(0)}
                             style={{backgroundColor:"rgb(255, 229, 151)"}}>
 
-                            What is WEPE Token?
+                            {sectionText?.title1}
 
                           <div  className={`list-item-number  ${selectedIdx === 0 ? 'active' : ''}`} />
                         </div>
 
                         <div className={`list-item-content  ${selectedIdx === 0 ? 'active' : ''}`}>
-                        WEPE Token is the meme coin of Wall Street Pepe, who’s tired of whale groups controlling the crypto markets. So he’s creating his own - the WEPE Army! WEPE makes the calls that turn frogs into whales, transforming your trading game.
+                        {sectionText?.desc1}
                         </div>
                     </div>
                     <div className='list-item'>
                         <div     className={`list-item-title  ${selectedIdx === 1 ? 'active' : ''}`}
                           onClick={() => handleSelectItem(1)} style={{backgroundColor:"rgb(255, 229, 151)"}}>
 
-                            Why join the WEPE Army?
+{sectionText?.title2}
 
                           <div  className={`list-item-number  ${selectedIdx === 1 ? 'active' : ''}`} />
                         </div>
 
                         <div className={`list-item-content  ${selectedIdx === 1 ? 'active' : ''}`}>
-                        WEPE Token is built to let meme coin degens trade with the wit, swagger, and confidence of WEPE himself. $WEPE token holders become part of the movement and get access to WEPE's exclusive trading calls and insights. Joining the WEPE Army could be your path to financial freedom!
+                        {sectionText?.desc2}
 
                         </div>
                     </div>
@@ -79,7 +79,7 @@ export const FAQ = () => {
                           onClick={() => handleSelectItem(2)}
                           style={{backgroundColor:"rgb(255, 229, 151)"}} >
 
-                              When do I get my tokens?
+{sectionText?.title3}
 
 
                           <div
@@ -90,7 +90,7 @@ export const FAQ = () => {
 
                         <div 
                             className={`list-item-content  ${selectedIdx === 2 ? 'active' : ''}`}>
-                            You can claim your $WEPE tokens once the presale has ended and the token is launched. You’ll just need to connect the same wallet you used to buy and click claim.
+{sectionText?.desc3}
                           </div>
                     </div>
 
@@ -100,7 +100,7 @@ export const FAQ = () => {
                           onClick={() => handleSelectItem(3)}
                           style={{backgroundColor:"rgb(255, 229, 151)"}} >
 
-                              How do I know WEPE token is safe?
+{sectionText?.title4}
 
 
 
@@ -112,8 +112,7 @@ export const FAQ = () => {
 
                         <div 
                             className={`list-item-content  ${selectedIdx === 3 ? 'active' : ''}`}>
-
-                            $WEPE The WEPE Token site is built by huge Pepe fans using cutting edge technology to facilitate token swaps. You can also stake your $WEPE tokens securely.
+{sectionText?.desc4}
                         </div>
                     </div>
                 </div>
@@ -125,8 +124,7 @@ export const FAQ = () => {
                 <img className='faq-img2' src='/img/wepe/about-img.gif' />
 
                 <div className='card'>
-                  "If I could be a rich WEPE or a poor WEPE, I’d choose rich every time!"
-
+                {sectionText?.card}
 
                 </div>
             </div>

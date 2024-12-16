@@ -47,13 +47,15 @@ export const About = () => {
                           
                             >
 
-                            What is WEPE Token?
+                            {sectionText?.title}
 
                           <div  className={`card-item-number `} />
                         </div>
 
                         <div className={`card-item-content `}>
-                        WEPE Token is the meme coin of Wall Street Pepe, who’s tired of whale groups controlling the crypto markets. So he’s creating his own - the WEPE Army! WEPE makes the calls that turn frogs into whales, transforming your trading game.
+                            {sectionText?.desc}
+
+
                         </div>
                     </div>
                 

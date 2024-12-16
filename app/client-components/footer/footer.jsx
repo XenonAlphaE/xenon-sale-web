@@ -20,8 +20,6 @@ export const Footer = () => {
 
   return (
     <div id="footer" className="footer-container">
-        <img  src='/img/flockers/token.svg' width={112} height={112}/>
-        <p translate="" className="copyright">{sectionText?.copyRight}</p>
         <p translate="" className="copyright ">{sectionText?.text}</p>
     </div>
   );

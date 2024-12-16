@@ -241,7 +241,7 @@ export const BuyForm = () => {
                     </div>
                     <div className="input-container" >
                     <div className="input-lable">
-                        <label className=""> {sectionText?.get} $FLOCK     </label>
+                        <label className=""> {sectionText?.get} ${configs?.targetToken?.symbol}     </label>
                     </div>
                     <div className="input-amount">
                         <input

@@ -78,8 +78,8 @@ const renderComponent = () => {
       <Roadmap />
       <Tokenomics />
        <FAQ/>
-      <Footer />    */}
-      
+          */}
+      <Footer />
     </div>
   );
 };
