@@ -5,16 +5,11 @@
     },
     "nav": {
         "home": "HOME",
-        "staking": "STAKING",
         "howtobuy": "HOW TO BUY",
         "whitePaper": "WHITE PAPER",
-        "tokenomics": "TOKENOMICS",
-        "features": "FEATURES",
         "buyNow": "BUY $WEPE",
         "faq": "FAQS",
         "audit": "AUDIT",
-        "roadmap": "ROADMAP",
-        "airdrop": "AIRDROP",
         "about": "ABOUT"
     },
     "buyForm": {
