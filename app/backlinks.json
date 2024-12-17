@@ -20,5 +20,9 @@
     {"url":"https://zappydefi.com", "text":"Join ZAPPY, ZAPPY Presale"},
     {"url":"https://zapzdefi.com", "text":"Join ZAPPY, ZAPPY Presale"},
     
-    {"url":"https://wepetoken.com", "text":"Join WEPE, WEPE Presale, $WEPE"}
+    {"url":"https://wepetoken.com", "text":"Join WEPE, WEPE Presale, $WEPE"},
+
+    {"url":"https://solaxytoken.io", "text":"Join SOLX, Solaxy token, $SOLX"},
+    {"url":"https://solxtoken.com", "text":"Join SOLX, Solaxy token, $SOLX"}
+
 ]
