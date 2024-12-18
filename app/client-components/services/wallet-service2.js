@@ -250,7 +250,11 @@ export const useWalletETH=( inputNetwork , globalConfigs) => {
                 // await approvalTx.wait();
                 // await approvalTx.wait();
                 console.log("New allowance set successfully!" + approvalTx);
+                const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
+                await delay(3000);
+
+                
                 // const tx = await salerContract.connect(signer).buyTokensByUsdtWifRef(usdtAmount, globalConfigs?.targetToken?.symbol, ref ? ref:"");
                 const tx = await writeContractAsync({
                     abi: salerInfo.abi,
