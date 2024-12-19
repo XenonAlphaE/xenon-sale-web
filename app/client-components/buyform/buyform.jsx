@@ -199,7 +199,7 @@ export const BuyForm = () => {
             </div>
             <ProgressBar percentage={11457475.67*100 / 11540268}  />
 
-            <p className="total-raised">{sectionText?.funRaised}:  $30,791,434.77 / $31,437,167</p>
+            <p className="total-raised">{sectionText?.funRaised}:  $31,326,929.95 / $31,437,167</p>
                 {/* {truncateMiddle(walletEth.currentAddress)} */}
                 <p className="user-purchased-info">{sectionText.boughtAmount} ${configs?.targetToken?.symbol} = {totalBought}</p>
                 {/* <img className="img-fluid ms-2 cursor-pointer" src="./img/info-icon.svg" /> */}
