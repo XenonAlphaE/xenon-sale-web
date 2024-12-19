@@ -50,7 +50,7 @@ export const CURRENCIES = {
     ],
     base:[
         { text: 'BASE ETH', imageSrc: '/img/flockers/ETH.svg', icon:"/img/flockers/ETH.svg", curr: CURR_CODE.ETH },
-        { text: 'USDC', imageSrc: '/img/default/usdc.svg',  icon:"/img/default/usdc.svg",curr: CURR_CODE.USDT },
+        { text: 'USDC', imageSrc: '/img/wepe/usdc.svg',  icon:"/img/wepe/usdc.svg",curr: CURR_CODE.USDT },
     ],
 
 
