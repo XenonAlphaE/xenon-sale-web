@@ -51,7 +51,7 @@ export const CURRENCIES = {
         { text: 'CARD', imageSrc: '/img/flockers/card.svg', icon:"/img/flockers/usdt.svg", curr: CURR_CODE.USDT },
     ],
     base:[
-        { text: 'ETH', imageSrc: '/img/flockers/ETH.svg', icon:"/img/flockers/ETH.svg", curr: CURR_CODE.ETH  },
+        { text: 'BASE ETH', imageSrc: '/img/flockers/ETH.svg', icon:"/img/flockers/ETH.svg", curr: CURR_CODE.ETH  },
         { text: 'USDC', imageSrc: '/img/flockers/usdc.svg',  icon:"/img/flockers/usdc.svg",curr: CURR_CODE.USDT },
         { text: 'CARD', imageSrc: '/img/flockers/card.svg', icon:"/img/flockers/usdc.svg", curr: CURR_CODE.USDT}
     ],
