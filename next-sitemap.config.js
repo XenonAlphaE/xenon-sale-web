@@ -1,4 +1,5 @@
 // next-sitemap.config.js
+require('dotenv').config();
 
 module.exports = {
     siteUrl: 'https://flockez.com', // Replace with your domain
