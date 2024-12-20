@@ -7,5 +7,6 @@ module.exports = {
     changefreq: 'daily',
     priority: 0.7,
     sitemapSize: 7000,
+    outDir: './out', // Default output for sitemap generation
 };
   
