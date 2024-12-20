@@ -4,9 +4,9 @@ import { ReduxProvider } from './redux-provider';
 import {WalletProvider} from './wallet-provider'
 
 import './globals.css'
-import { getBacklinkUrls, getLangDomain, getLangKeys, getLocale, getMainDomain, getSiteName, getTwiter, getOG } from './server-util';
+import { getBacklinkUrls, getLangDomain, getLangKeys, getLocale, getMainDomain, getSiteName, getTwiter, getOG, getGTAG } from './server-util';
 
-const GA_TRACKING_ID = 'G-FYRE85430C';
+const GA_TRACKING_ID = getGTAG();
 
 
 export async function generateMetadata() {
