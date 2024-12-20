@@ -33,7 +33,7 @@
   },
   "scripts": {
     "nextdev": "next dev",
-    "nextbuild": "next build && npm next-sitemap",
+    "nextbuild": "next build && npx next-sitemap",
     "postbuild": "mv ./out/sitemap.xml ./public/sitemap.xml && mv ./out/robots.txt ./public/robots.txt && mv ./out/sitemap-0.xml ./public/sitemap-0.xml",
     "nextstart": "next start"
   },
