@@ -1,4 +1,5 @@
 // next-sitemap.config.js
+require('dotenv').config();
 
 module.exports = {
     siteUrl: 'https://wepetoken.com', // Replace with your domain
