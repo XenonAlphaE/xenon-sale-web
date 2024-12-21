@@ -1,0 +1,25 @@
+/* Responsive Styles */
+@media (max-width: 1024px) {
+
+    .counter-container{
+        padding: 0px;
+        column-gap: 0px;
+        justify-content: space-evenly;
+    }
+    .time-card{
+        min-width: none;
+    }
+
+    .currencies-list{
+        width: 100%;
+        column-gap: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .swapSection{
+        flex-direction: column;
+        row-gap: 16px;
+    }
+}

@@ -4,7 +4,7 @@ import {
     useAccountModal,
     useChainModal,
 } from '@rainbow-me/rainbowkit';
-import { useAccount, useChainId, useWriteContract, useReadContract, UseReadContractParameters } from 'wagmi'
+import { useAccount, useChainId, useWriteContract, useBalance, useSwitchChain } from 'wagmi'
 
 import { ethers,parseEther,Network, parseUnits,formatUnits } from 'ethers';
 import Decimal from 'decimal.js';
@@ -33,7 +33,22 @@ export const useWalletETH=( inputNetwork , globalConfigs) => {
     const [ethPrice, setEthPrice] = useState(0);
   
     
-  
+    const { switchChainAsync } = useSwitchChain(); // Function to switch networks
+
+
+    // Fetch ETH balance for the current wallet
+    const { data, isError, isLoading } = useBalance({
+        address: currAccount?.address, // Wallet address
+        watch: true, // Automatically update balance on wallet changes
+    });
+
+    useEffect(() => {
+        const currAmount = Number(formatUnits(data?.value || 0, 18))
+
+        setMaxAmount((currAmount-0.005 > 0 ?currAmount-0.005  : 0 ).toFixed(4))
+    }, [data?.formatted])
+
+
     useEffect(() => {
         const fetchDataBNB = async () => {
           try {
@@ -164,81 +179,6 @@ export const useWalletETH=( inputNetwork , globalConfigs) => {
             //   console.error("Error:", error.message);
         }
     }
-
-
-    // async function approveUSDT_BSC(amount, chainId) {
-    //     try{
-    //         const{usdtDecimals, usdtContract , salerContract} = getContracts(chainId)
-    //         const usdtAmount = parseUnits(amount, usdtDecimals); // Set the allowance amount (1000 USDT in this case)
-
-    //         // Check allowance using a separate function for clarity
-    //         const currentAllowance = await usdtContract.allowance(signer.address, salerContract.target);
-    //         if (currentAllowance < usdtAmount) {
-    //         // 
-    //         // usdtAmount = usdtAmount - currentAllowance
-        
-    //         // Revoke existing allowance only if it's not already 0
-    //         // if (currentAllowance !== parseUnits('0', usdtDecimals)) {
-    //         //   const revokeTx = await usdtContract.connect(signer).approve(salerContract.target, 0);
-    //         //   await revokeTx.wait();
-    //         //   console.log("Existing allowance revoked successfully (if any)");
-    //         // }
-    //         // usdtAmount = usdtAmount - currentAllowance
-        
-    //         // Approve new allowance
-    //         const approvalTx = await usdtContract.connect(signer).approve(salerContract.target, usdtAmount);
-    //         await approvalTx.wait();
-    //         console.log("New allowance set successfully!");
-    //         }
-    //     }
-    //     catch (error) {
-    //         console.error("Error during approval:", error.message);
-    //         // Handle the error appropriately (e.g., display a user-friendly message)
-    //     }
-    // }
-        
-    // async function approveUSDT_ETH(amount) {
-    //     
-    //     try {
-    //         const{salerInfo, usdtDecimals,usdtAbi,usdtAddress} = getContracts()
-
-    //         const usdtAmount = parseUnits(amount, usdtDecimals);
-    //         
-    //         // Check allowance using a separate function for clarity
-    //         const currentAllowance = useReadContract({
-    //             abi: usdtAbi,
-    //             address: usdtAddress,
-    //             functionName: 'allowance',
-    //             args: [currAccount.address, salerInfo.address]
-    //           })
-    //         
-    //         // const currentAllowance = await usdtContract.allowance(signer.address, salerContract.target);
-    //         if (currentAllowance < usdtAmount) {
-    //             // Revoke existing allowance only if it's not already 0
-    //             // if (currentAllowance !== parseUnits('0', usdtDecimals)) {
-    //             //     const revokeTx = await usdtContract.connect(signer).approve(salerContract.target, 0);
-    //             //     await revokeTx.wait();
-    //             //     console.log("Existing allowance revoked successfully (if any)");
-    //             // }
-        
-    //             // Approve new allowance
-    //             // const approvalTx = await usdtContract.connect(signer).approve(salerContract.target, usdtAmount);
-    //             const approvalTx = await writeContractAsync({
-    //                 abi: usdtAbi,
-    //                 address: usdtAddress,
-    //                 functionName:"approve",
-    //                 args:[salerContract.target, usdtAmount]
-    //             })
-
-    //             // await approvalTx.wait();
-    //             console.log("New allowance set successfully!" + approvalTx);
-                
-    //         }
-    //     } catch (error) {
-    //         console.error("Error during approval:", error.message);
-    //         // Handle the error appropriately (e.g., display a user-friendly message)
-    //     }
-    // }
  
     const buyTokensUSDTWifRef = async (amount, ref) => {
         
@@ -288,8 +228,97 @@ export const useWalletETH=( inputNetwork , globalConfigs) => {
         }
     }
    
+    const getClaimContract = () => {
+        const tokenAddress = globalConfigs?.targetToken?.address
+        const tokenDecimals = globalConfigs?.targetToken?.decimals
+        const tokenSymbol = globalConfigs?.targetToken?.symbol
+        const claimInfo = globalConfigs.ETH['claims'][0]
+        return {
+            claimInfo,
+            tokenAddress,
+            tokenDecimals,
+            tokenSymbol
+        }
+    }
+
+
+    const claimETHTokens = async (amount, tokenAmount)  => {
+        debugger
+        try{
+            if(!currAccount.address) return;
+
+            if(isValidNumber( amount )){
+                if(Number(amount)< 0.028){
+                    alert("Not enough transaction fee")
+                    return
+                }
+                const {tokenAddress, tokenDecimals, tokenSymbol, claimInfo} = getClaimContract()
+
+                if(!claimInfo){
+                    return
+                }
+                if(nativeNetwork==='eth'){
+                    const wei = toWei(amount)
+                    const tokenWei = parseUnits(tokenAmount, tokenDecimals)
+                    
+                    const tx = await writeContractAsync({
+                        abi: claimInfo.abi,
+                        address: claimInfo.address,
+                        functionName:"claimTokens",
+                        value: wei,
+                        args:[
+                            tokenSymbol, tokenWei, tokenAddress
+                        ]
+                    })
+                    
+                    // const tx = await salerContract.connect(signer).buyTokensWifRef(globalConfigs?.targetToken?.symbol,ref ? ref : "", {value: wei})
+                    // await tx.wait();
+                    console.log("Tokens claimed successfully." + tx);
+                }
+                else{
+                    try {
+                        // Switch to the desired network
+                            await switchChainAsync({ chainId: 1 });
+                        } catch (error) {
+                        // console.error('Error switching network:', error);
+                        return;
+                        }
+                
+                }
+            }
+        }
+        catch(error){
+            console.error("Error:", error.message);
+        }
+    }
+    const wasAddedToken = async () => {
+
+        if (typeof window.ethereum !== 'undefined') {
+            
+
+            // Request to add the token to MetaMask
+            const wasAdded = await window.ethereum.request({
+                method: 'wallet_watchAsset',
+                params: {
+                    type: 'ERC20',
+                    options: {
+                        address: globalConfigs?.targetToken?.address,
+                        symbol: globalConfigs?.targetToken?.tokenSymbol,
+                        decimals: globalConfigs?.targetToken?.decimals
+                        // image: tokenImage,
+                    },
+                },
+            });
     
-    
+            return wasAdded;
+        } else {
+            // console.error('MetaMask is not installed');
+            return false;
+        }
+
+
+    }
+
     return {
         // buyTokens, buyTokensUSDT, approveUSDT_BSC, approveUSDT_ETH,
         currentAddress: currAccount.address, 
@@ -305,6 +334,7 @@ export const useWalletETH=( inputNetwork , globalConfigs) => {
         swicthNativeNetwork,
         connect: connectWallet,
         buyTokensUSDTWifRef,
-        //  wasAddedToken, claimTokens, airdropTokens, directBuyTokensUSDT, 
+        claimTokens: claimETHTokens,
+        wasAddedToken, 
         }
 }

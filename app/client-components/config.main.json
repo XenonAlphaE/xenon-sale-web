@@ -8,7 +8,7 @@
     },
     "previousRaised":5009043.52,
     "previousSoldTokens":0,
-    "endSaleTime":"2024-11-21T09:00:00Z",
+    "endSaleTime":"2024-11-23T14:00:00Z",
     "BSC": {
         "addRefFee":"0.05",
         "RPC_APIs":[
@@ -3008,6 +3008,265 @@
                             }
                         ],
                         "stateMutability": "view",
+                        "type": "function"
+                    }
+                ]
+            }
+        ],
+        "claims":[
+            {
+                "address":"0x4303e2b98ac75C8eE59F220c41069e5384314F39",
+                "abi": [
+                    {
+                        "inputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "constructor"
+                    },
+                    {
+                        "anonymous": false,
+                        "inputs": [
+                            {
+                                "indexed": false,
+                                "internalType": "uint256",
+                                "name": "newCount",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "AirdropCountUpdated",
+                        "type": "event"
+                    },
+                    {
+                        "anonymous": false,
+                        "inputs": [
+                            {
+                                "indexed": true,
+                                "internalType": "address",
+                                "name": "previousOwner",
+                                "type": "address"
+                            },
+                            {
+                                "indexed": true,
+                                "internalType": "address",
+                                "name": "newOwner",
+                                "type": "address"
+                            }
+                        ],
+                        "name": "OwnershipTransferred",
+                        "type": "event"
+                    },
+                    {
+                        "anonymous": false,
+                        "inputs": [
+                            {
+                                "indexed": true,
+                                "internalType": "address",
+                                "name": "recipient",
+                                "type": "address"
+                            },
+                            {
+                                "indexed": false,
+                                "internalType": "string",
+                                "name": "tokenSymbol",
+                                "type": "string"
+                            },
+                            {
+                                "indexed": false,
+                                "internalType": "uint256",
+                                "name": "amount",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "TokensAirdropped",
+                        "type": "event"
+                    },
+                    {
+                        "anonymous": false,
+                        "inputs": [
+                            {
+                                "indexed": true,
+                                "internalType": "address",
+                                "name": "buyer",
+                                "type": "address"
+                            },
+                            {
+                                "indexed": false,
+                                "internalType": "string",
+                                "name": "tokenSymbol",
+                                "type": "string"
+                            },
+                            {
+                                "indexed": false,
+                                "internalType": "uint256",
+                                "name": "amount",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "TokensClaimed",
+                        "type": "event"
+                    },
+                    {
+                        "inputs": [],
+                        "name": "airdropCount",
+                        "outputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "",
+                                "type": "uint256"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "string",
+                                "name": "tokenSymbol",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "_amount",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "address",
+                                "name": "_tokenAddress",
+                                "type": "address"
+                            }
+                        ],
+                        "name": "airdropTokens",
+                        "outputs": [],
+                        "stateMutability": "payable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "bytes32",
+                                "name": "",
+                                "type": "bytes32"
+                            }
+                        ],
+                        "name": "buyerPurchases",
+                        "outputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "amount",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "bool",
+                                "name": "claimed",
+                                "type": "bool"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "string",
+                                "name": "tokenSymbol",
+                                "type": "string"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "_amount",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "address",
+                                "name": "_tokenAddress",
+                                "type": "address"
+                            }
+                        ],
+                        "name": "claimTokens",
+                        "outputs": [],
+                        "stateMutability": "payable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "address",
+                                "name": "_address",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "_amount",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "address",
+                                "name": "_tokenAddress",
+                                "type": "address"
+                            }
+                        ],
+                        "name": "giveAway",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [],
+                        "name": "owner",
+                        "outputs": [
+                            {
+                                "internalType": "address",
+                                "name": "",
+                                "type": "address"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [],
+                        "name": "renounceOwnership",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "address",
+                                "name": "_tokenAddress",
+                                "type": "address"
+                            }
+                        ],
+                        "name": "retake",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "newCount",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "setAirdropCount",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "address",
+                                "name": "newOwner",
+                                "type": "address"
+                            }
+                        ],
+                        "name": "transferOwnership",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
                         "type": "function"
                     }
                 ]

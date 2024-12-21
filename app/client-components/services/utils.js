@@ -73,7 +73,7 @@ export const useCountdown = () => {
     // console.log('Future Time:', futureTime);
     const currentTime = new Date().getTime();
     // console.log('Current Time:', currentTime);
-    const futureTime = new Date(nearestDayDivisibleBy3(9)).getTime()
+    const futureTime = new Date("2024-12-23T14:00:00Z").getTime()
     const difference = futureTime - currentTime;
     // console.log('Difference:', difference);
     let timeLeft = {days: 0,
@@ -127,4 +127,18 @@ export function getRandomItemFromArray(input, defaultValue = null) {
 
   // Return the item at the random index
   return list[randomIndex];
+}
+
+export function formatViewNumber(num) {
+  // Convert string to number if necessary
+  const parsedNum = typeof num === 'string' ? parseFloat(num.replace(/,/g, '')) : num;
+
+  // Handle invalid input
+  if (isNaN(parsedNum)) {
+    throw new Error('Invalid input: must be a valid number or numeric string');
+  }
+
+  return parsedNum
+    .toFixed(2) // Round to 2 decimal places
+    .replace(/\B(?=(\d{3})+(?!\d))/g, ","); // Add commas as thousand separators
 }

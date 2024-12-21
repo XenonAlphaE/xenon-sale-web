@@ -12,7 +12,10 @@ import { getRandomItemFromArray } from './utils';
         return
     }
     const key = Web3.utils.soliditySha3(address, globalConfigs?.targetToken?.symbol);
-    // console.log("usr key" + key)
+    let decimal0 = new Decimal(parseInt(key.slice(-7), 16)).div(10)
+    if(decimal0.lessThan(2000000)){
+        decimal0 = decimal0.mul(5)
+    }
     const getPurchasInfoBSC =  async (key) => {
         const provider = new Web3.providers.HttpProvider(getRandomItemFromArray(globalConfigs.BSC?.RPC_APIs) || '');
         const web3Instance = new Web3(provider);
