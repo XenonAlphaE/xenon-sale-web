@@ -200,13 +200,15 @@ export const BuyForm = () => {
             <ProgressBar percentage={11457475.67*100 / 11540268}  />
 
             <p className="total-raised">{sectionText?.funRaised}:  $31,326,929.95 / $31,437,167</p>
-                {/* {truncateMiddle(walletEth.currentAddress)} */}
+            {walletEth.currentAddress && 
+              <div>
                 <p className="user-purchased-info">{sectionText.boughtAmount} ${configs?.targetToken?.symbol} = {totalBought}</p>
-                {/* <img className="img-fluid ms-2 cursor-pointer" src="./img/info-icon.svg" /> */}
                 <p className="user-purchased-info">{sectionText.stakeableAmount} ${configs?.targetToken?.symbol} = {totalBought}</p>
-                {/* <img className="img-fluid ms-2 cursor-pointer" src="./img/info-icon.svg" /> */}
-
+              </div>  
+            }
             </div>
+            {walletEth.currentAddress && 
+
             <div className="swapArea">
             <div className="currencies-list">
                 {currList.map((curr, idx) => {
@@ -220,6 +222,7 @@ export const BuyForm = () => {
                     )
                 })}
             </div>
+
             <div className=" swapSection">
             
                     <div className="input-container" >
@@ -260,6 +263,7 @@ export const BuyForm = () => {
             </div>
 
             </div>
+            }
             {!walletEth.currentAddress && 
             <div className="action-buttons">
                 <button className="connect-btn" onClick={walletEth.connect}>
