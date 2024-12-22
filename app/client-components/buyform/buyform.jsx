@@ -199,7 +199,7 @@ export const BuyForm = () => {
             </div>
             <ProgressBar percentage={11457475.67*100 / 11540268}  />
 
-            <p className="total-raised">{sectionText?.funRaised}:  $34,059,709.53 / $34,782,135</p>
+            <p className="total-raised">{sectionText?.funRaised}:  $36,259,709.53 / $36,982,135</p>
             {walletEth.currentAddress && 
               <div>
                 <p className="user-purchased-info">{sectionText.boughtAmount} ${configs?.targetToken?.symbol} = {totalBought}</p>
