@@ -1,4 +1,5 @@
 // next-sitemap.config.js
+require('dotenv').config();
 
 module.exports = {
     siteUrl: 'https://flockez.com', // Replace with your domain
@@ -6,5 +7,6 @@ module.exports = {
     changefreq: 'daily',
     priority: 0.7,
     sitemapSize: 7000,
+    outDir: './out', // Default output for sitemap generation
 };
   
