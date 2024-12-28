@@ -24,7 +24,10 @@
 
     {"url":"https://solaxytoken.io", "text":"Join SOLX, Solaxy token, $SOLX"},
     {"url":"https://solxtoken.com", "text":"Join SOLX, Solaxy token, $SOLX"},
-    {"url":"https://pepetoo.com", "text":"Join PEPETO, PEPETO Coin, $PEPETO"}
-    {"url":"https://pepetocoin.io", "text":"Join PEPETO, PEPETO Coin, $PEPETO , PEPETO Token"}
+    {"url":"https://pepetoo.com", "text":"Join PEPETO, PEPETO Coin, $PEPETO"},
+    {"url":"https://pepetocoin.io", "text":"Join PEPETO, PEPETO Coin, $PEPETO , PEPETO Token"},
+    {"url":"https://bestwallet.app", "text":"Join BEST, Best wallet App, Best wallet Presale , BEST Token"},
+    {"url":"https://shepskyai.com/", "text":"Join ShepskyAI, SEKY, ShepskyAI Presale , SEKY Token"},
+    {"url":"https://sekytoken.com/", "text":"Join ShepskyAI, SEKY, ShepskyAI Presale , SEKY Token"}
 
 ]
