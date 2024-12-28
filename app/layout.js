@@ -4,7 +4,7 @@ import { ReduxProvider } from './redux-provider';
 import {WalletProvider} from './wallet-provider'
 
 import './globals.css'
-import { getBacklinkUrls, getLangDomain, getLangKeys, getLocale, getMainDomain, getSiteName, getTwiter, getOG, getGTAG } from './server-util';
+import { getBacklinkUrls, getLangDomain, getLangKeys, getLocale, getMainDomain, getSiteName, getTwiter, getOG, getGTAG, getLogoPath } from './server-util';
 
 const GA_TRACKING_ID = getGTAG();
 
@@ -53,10 +53,10 @@ export default function RootLayout({ children }) {
 
    const schemaMarkup = {
     "@context": "https://schema.org",
-    "@type": "Flockerz",
+    "@type": getSiteName(),
     name: "Your Organization Name",
     url: getMainDomain(),
-    logo: `${getMainDomain()}/img/flockers/favicon.svg`,
+    logo: getLogoPath(),
     contactPoint: {
       "@type": "ContactPoint",
       telephone: "+1-123-456-7890",
@@ -64,7 +64,7 @@ export default function RootLayout({ children }) {
     },
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://duckduckgo.com/?q=flockerz",
+      target: "https://duckduckgo.com/?q="+getSiteName(),
       "query-input": "required name=search_term_string",
     },
   };

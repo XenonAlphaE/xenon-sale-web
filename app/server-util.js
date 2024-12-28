@@ -23,10 +23,30 @@ export function getTwiter(){
 }
 
 export function getOG(){
+    const mainDomain = getMainDomain();
+
     const ogPath =  process.env.OG_PATH || ""
-    return `${getMainDomain()+ogPath}`
+    // Normalize the logo path
+    const normalizedPath = ogPath
+    .replace(/\/+/g, '/') // Replace multiple slashes with a single slash
+    .replace(/(^\/|\/$)/g, ''); // Remove leading and trailing slashes
+
+    // Combine main domain with the normalized logo path
+    return `${mainDomain.replace(/\/+$/, '')}/${normalizedPath}`;
 }
 
+export function getLogoPath(){
+    const mainDomain = getMainDomain();
+
+    const logoPath =  process.env.LOGO_PATH || ""
+    // Normalize the logo path
+    const normalizedPath = logoPath
+    .replace(/\/+/g, '/') // Replace multiple slashes with a single slash
+    .replace(/(^\/|\/$)/g, ''); // Remove leading and trailing slashes
+
+    // Combine main domain with the normalized logo path
+    return `${mainDomain.replace(/\/+$/, '')}/${normalizedPath}`;
+}
 
 
 
