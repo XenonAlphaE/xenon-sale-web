@@ -2,7 +2,7 @@
 require('dotenv').config();
 
 module.exports = {
-    siteUrl: 'https://flockez.com', // Replace with your domain
+    siteUrl: process.env.MAIN_DOMAIN || "https://buldaktoken.com", // Replace with your domain
     generateRobotsTxt: true, // Generates robots.txt file along with sitemap
     changefreq: 'daily',
     priority: 0.7,
