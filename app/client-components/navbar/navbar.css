@@ -6,7 +6,7 @@
   align-items: center;
   /* background-color: transparent; */
   /* padding: 3rem; */
-  background-color: transparent;
+  background-color: #002a52;
   padding: 16px;
   
   position: relative;
@@ -37,7 +37,7 @@
 
 
 .appnav-navbar.scrolled {
-  background-color: rgb(245, 136, 45);
+  background-color: #002a52;
   box-shadow: 0 4px 8px #0000, 0 6px 20px #0000001f;
   border-image-source: radial-gradient(121.49% 277.08% at 0% 0%, rgba(255, 255, 255, .44) 0%, rgba(255, 255, 255, .05) 100%);
   -webkit-backdrop-filter: blur(30px);
@@ -121,6 +121,7 @@
   text-decoration: none;
   font-weight: bold;
   font-size: 20px;
+  font-family: "Jogan Regular", sans-serif;
   text-transform: capitalize;
   margin: 0 7px;
   -webkit-text-stroke-color: black;
@@ -150,12 +151,14 @@
 }
 
 .appnav-login {
-  min-height: 46px;
-  width: 130px;
+  min-height: 53px;
+  width: 175px;
   /* border-radius: 23px; */
-  background: rgb(245, 136, 45);
+  background-color: rgb(249, 160, 52);
+  background: linear-gradient(180deg,#ffffff80,#ffffff1a 52%,#fff0 52%,#ffffff0d),#f9a034;
   color: black;
-  border: solid 3px black;
+  border: none;
+  border-radius: 23px;
   padding: 0.5rem 1rem;
   cursor: pointer;
   font-weight: 900;
