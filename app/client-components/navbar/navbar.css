@@ -120,7 +120,7 @@
   cursor: pointer;
   text-decoration: none;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 15px;
   font-family: "Jogan Regular", sans-serif;
   text-transform: capitalize;
   margin: 0 7px;
@@ -151,7 +151,7 @@
 }
 
 .appnav-login {
-  min-height: 53px;
+  min-height: 45px;
   width: 175px;
   /* border-radius: 23px; */
   background-color: rgb(249, 160, 52);
@@ -170,6 +170,30 @@
   font-size: 1.2rem;
   margin: 0 0.5rem;
 }
+
+
+.appnav-social{
+  display: flex;
+  flex-direction: row;
+  margin: 10px 10px;
+  padding: 6px;
+}
+
+.appnav-social a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin: 0 0.5rem;
+  padding: 6px;
+  border-radius: 4px;
+  background-color: transparent;
+
+}
+.appnav-social img {
+  width: 24px;
+  height: 24px;
+}
+
 
 .appnav-language {
   background: #444;

@@ -111,8 +111,11 @@ export const Navbar = () => {
       </div>
 
       <div className={`appnav-navbar-menu`}>
-        <a href={`/${currentLanguage}`}>{sectionText?.home}</a>
+              
+        <a href="#staking" onClick={toggleMenu}>{sectionText?.staking}</a>
         <a href="#about">{sectionText?.about}</a>
+        <a href="#howtobuy">{sectionText?.howtobuy}</a>
+        <a href={`/${currentLanguage}`}>{sectionText?.home}</a>
         <a href="#roadmap">{sectionText?.roadmap}</a>
         <a href="#tokenomics">{sectionText?.tokenomics}</a>
         <a href="#faqs">{sectionText?.faq}</a>
@@ -121,8 +124,12 @@ export const Navbar = () => {
       <div className={`appnav-navbar-right`}>
 
         <div className="appnav-lang-login-container">
+    
           <button onClick={scrollToBuySection} className="appnav-login">{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button>
-
+          <div className='appnav-social'>
+            <a  href="https://t.me/pepebuldakchannel"  target='_blank' ><img src='/img/flockers/telelogo.svg' /></a>
+            <a  href="https://x.com/pepebuldak" target='_blank' ><div ><img  src='/img/flockers/xlogo.svg' /></div></a>
+          </div>
           <div className="appnav-lang-dropdown">
             <div className="appnav-lang-custom-dropdown" onClick={toggleLanguageDrpdwn}>
               {/* <span className={languageOptions[currentLanguage].flag}></span> */}
@@ -145,7 +152,9 @@ export const Navbar = () => {
       </div>
 
       {isMobile && <div className={`appnav-navbar-menu-mobile ${isMenuOpen ? 'appnav-is-active' : ''}`}>
-        <a href={`/${currentLanguage}`}>{sectionText?.home}</a>
+      
+        <a href="#staking" onClick={toggleMenu}>{sectionText?.staking}</a>
+        {/* <a href={`/${currentLanguage}`}>{sectionText?.home}</a> */}
         <a href="#about" onClick={toggleMenu}>{sectionText?.about}</a>
         <a href="#roadmap" onClick={toggleMenu}>{sectionText?.roadmap}</a>
         <a href="#tokenomics" onClick={toggleMenu}>{sectionText?.tokenomics}</a>

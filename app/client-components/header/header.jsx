@@ -225,170 +225,201 @@ export const Header = () => {
       <div className="intro-content">
           
           <div className="intro-content-left">
-            <div className="intro-heading1">
-                <h3> 
-                  {sectionText?.para1}
-                </h3> 
-                <div className="heading1-bottom" />
-            </div>
-
             <div className="intro-section-container">
-                <h2>
-                  {sectionText?.para2}
-                </h2>
-
-                <h5>
-                  {sectionText?.para3} <span style={{color:'rgb(77, 108, 195)'}}>{sectionText?.para3_1} </span>{sectionText?.para3_2}
+              <img className='image-character-left'  src="/img/memeindex/character-1.svg" /> 
+              <img className='image-character-right'  src="/img/memeindex/character-2.svg" />
+              <div className="banner-content align-self-end">
+                <h1 className="banner-title">World’s First Decentralized Meme Coin Index</h1>
+                <h5 className="banner-title">
+                    <span className="desc_1">Buy NOW </span>
+                    <span className="desc_2">In Presale To Unlock </span>
+                    <span className="desc_3">Supercharged </span>
+                    <span className="desc_4">Rewards!</span>
                 </h5>
-                <div className="intro-tags-container">
-                    <div className="tag-content"><img src="/img/flockers/circle.svg"/> <span >{sectionText?.note1}   </span> </div>
-                    <div className="tag-content"><img src="/img/flockers/circle.svg"/> <span >{sectionText?.note2}   </span> </div>
-                    <div className="tag-content"><img src="/img/flockers/circle.svg"/> <span >{sectionText?.note3}   </span> </div>
-                    <div className="tag-content"><img src="/img/flockers/circle.svg"/> <span >{sectionText?.note4}   </span> </div>
+              <div className="mini-grap-wrap">
+                <div className="mini-grap">
+                  <div className="mini-grap-head">
+                      <p>Meme Titan Index</p>
+                    </div>
+                  <div className="mini-grap-dataAread">
+                      <span className="text-orange">MCAP</span>
+                      <img src="/img/memeindex/up-green.png" alt="graph 1" className="mini-grap-icon"/>
+                      <span className="text-success">4.2%</span>
+                    </div>
+                    <img src="/img/memeindex/graph_1.png" alt="graph 1" className="mini-grap-graphImg"/>
                 </div>
-                <button className="intro-button-buynow" onClick={scrollToBuySection}>
-                    {sectionText?.buyBtn} 
-                </button>
-              <div className="intro-section-bg">
-                <div className="content-bg-color"></div>
+                <div className="mini-grap">
+                <div className="mini-grap-head">
+                      <p>Meme Moonshot Index</p>
+                    </div>
+                  <div className="mini-grap-dataAread">
+                      <span className="text-orange">MCAP</span>
+                      <img src="/img/memeindex/up-green.png" alt="graph 2" className="mini-grap-icon"/>
+                      <span className="text-success">23.5%</span>
+                    </div>
+                    <img src="/img/memeindex/graph_2.png" alt="graph 2" className="mini-grap-graphImg"/>
+                </div>
+                <div className="mini-grap">
+                <div className="mini-grap-head">
+                      <p>Meme Titan Index</p>
+                    </div>
+                  <div className="mini-grap-dataAread">
+                      <span className="text-orange">MCAP</span>
+                      <img src="/img/memeindex/up-green.png" alt="graph 3" className="mini-grap-icon"/>
+                      <span className="text-success">8.9%</span>
+                    </div>
+                    <img src="/img/memeindex/graph_3.png" alt="graph 3" className="mini-grap-graphImg"/>
+                </div>
+                <div className="mini-grap">
+                  <div className="mini-grap-head">
+                      <p>Meme MidCap Index</p>
+                    </div>
+                  <div className="mini-grap-dataAread">
+                      <span className="text-orange">MCAP</span>
+                      <img src="/img/memeindex/up-green.png" alt="graph 4" className="mini-grap-icon"/>
+                      <span className="text-success">4.8%</span>
+                    </div>
+                    <img src="/img/memeindex/graph_4.png" alt="graph 4" className="mini-grap-graphImg"/>
+                </div>
               </div>
+              </div>
+              <div className="staking-wrap">
+                  <p className="desc_5">1304%</p>
+                  <p className="desc_6">Staking Rewards</p>
+                </div>
             </div>
-
-            <div className="intro-socials">
-                <a  href="https://t.me/flockerz" target="_blank" >
-                  <img src="/img/flockers/telegram.svg"/>
-                </a>
-                <a  href="https://x.com/FlockerzToken" target="_blank" >
-                  <img src="/img/flockers/social_twitter.svg"/>
-                </a>
-                <a  href="https://coinsult.net/projects/flockerz/" target="_blank" >
-                  <img src="/img/flockers/audit.png"/>
-                </a>
-                <a  href="/solid-proof.pdf" target="_blank" >
-                  <img src="/img/flockers/solid-proof.png"/>
-                </a>
-            </div>
-
+        
             {/* <div className='intro-img'> */}
-            <img className='intro-img'  src="/img/flockers/hero.gif" /> 
+            {/* <img className='intro-img'  src="/img/flockers/hero.gif" /> ? */}
             {/* </div> */}
 
           </div>
           <div className="intro-content-right">
+            <div className="wapper-header">
+               <a href="https://coinsult.net/projects/memeindex/">
+                 <img src="/img/memeindex/coinsult.svg" alt="coinsult" className="img-fluid"  />
+               </a>
+               <a href="https://app.solidproof.io/projects/memeindex-token">
+                 <img src="/img/memeindex/solid.svg" alt="solid" className="img-fluid" />
+               </a>
+            </div>
+            <div className="widget-wrapper">ß
               <div className="walletBox" id='walletBox'>
-                  <div className="walletBox-info">
-                    <p className="walletBox-heading">{sectionText?.intro}</p>
-                    <div className="counter-container  ">
-                      <div className="time-card  ">
-                        <div className="indicator  ">{sectionText?.day}</div>
-                        <div id="days" className="value  ">{days}</div>
-                        {/* <img className="colon-item" src="./img/colon.svg" /> */}
+                    <div className="walletBox-info">
+                      <p className="walletBox-heading">{sectionText?.intro}</p>
+                      <div className="counter-container  ">
+                        <div className="time-card  ">
+                          <div className="indicator  ">{sectionText?.day}</div>
+                          <div id="days" className="value  ">{days}</div>
+                          {/* <img className="colon-item" src="./img/colon.svg" /> */}
+                        </div>
+                        <div className="time-card" style={{color: 'orange'}} >
+                          <div className="indicator  ">{sectionText?.hrs}</div>
+                          <div id="hours" className="value  ">{hours}</div>
+                          {/* <img className="colon-item" src="./img/colon.svg" /> */}
+                        </div>
+                        <div className="time-card" style={{color: 'green'}}>
+                          <div className="indicator  ">{sectionText?.mins}</div>
+                          <div id="minutes" className="value  ">{minutes}</div>
+                          {/* <img className="colon-item" src="./img/colon.svg" /> */}
+                        </div>
+                        <div className="time-card" style={{color: 'lightblue'}} >
+                          <div className="indicator  ">{sectionText?.sec}</div>
+                          <div id="seconds" className="value  ">{seconds}</div>
+                        </div>
                       </div>
-                      <div className="time-card" style={{color: 'orange'}} >
-                        <div className="indicator  ">{sectionText?.hrs}</div>
-                        <div id="hours" className="value  ">{hours}</div>
-                        {/* <img className="colon-item" src="./img/colon.svg" /> */}
-                      </div>
-                      <div className="time-card" style={{color: 'green'}}>
-                        <div className="indicator  ">{sectionText?.mins}</div>
-                        <div id="minutes" className="value  ">{minutes}</div>
-                        {/* <img className="colon-item" src="./img/colon.svg" /> */}
-                      </div>
-                      <div className="time-card" style={{color: 'lightblue'}} >
-                        <div className="indicator  ">{sectionText?.sec}</div>
-                        <div id="seconds" className="value  ">{seconds}</div>
-                      </div>
-                    </div>
 
-                    <p className="total-raised">{sectionText?.funRaised}: $16,112,074.72 / $18,000,000</p>
-                      {/* {truncateMiddle(walletEth.currentAddress)} */}
-                      <ProgressBar percentage={1481523.67*100 / 1630831}  />
-                      <p className="user-purchased-info">{sectionText.boughtAmount} ${configs?.targetToken?.symbol} = {formatTokenNumber(totalBought)}</p>
-                      {/* <img className="img-fluid ms-2 cursor-pointer" src="./img/info-icon.svg" /> */}
-                      <p className="user-purchased-info">{sectionText.stakeableAmount} ${configs?.targetToken?.symbol} = {formatTokenNumber(totalBought)}</p>
+                      <p className="total-raised">{sectionText?.funRaised}: $16,112,074.72 / $18,000,000</p>
+                        {/* {truncateMiddle(walletEth.currentAddress)} */}
+                        <ProgressBar percentage={1481523.67*100 / 1630831}  />
+                        <p className="user-purchased-info">{sectionText.boughtAmount} ${configs?.targetToken?.symbol} = {formatTokenNumber(totalBought)}</p>
                         {/* <img className="img-fluid ms-2 cursor-pointer" src="./img/info-icon.svg" /> */}
+                        <p className="user-purchased-info">{sectionText.stakeableAmount} ${configs?.targetToken?.symbol} = {formatTokenNumber(totalBought)}</p>
+                          {/* <img className="img-fluid ms-2 cursor-pointer" src="./img/info-icon.svg" /> */}
 
-                      <div className="dashTitle">1 {configs?.targetToken?.symbol} = ${configs?.targetToken?.tokenPrice} </div>
-                  </div>
-                  <div className="swapArea">
-                    <div className="currencies-list">
-                      {currList.map((curr, idx) => {
-                          return(
-                              <button key={idx} onClick={() => handleSwitchOption(idx)}
-
-                                className={`btn btn-wallet  ${selectedCurr?.text === curr?.text ? 'selected' : ''}`}>
-                                <img height="24" alt="" src={curr.imageSrc} />
-                                <span className="px-2 font-18">{curr.text}</span>
-                              </button>
-                          )
-                      })}
+                        <div className="dashTitle">1 {configs?.targetToken?.symbol} = ${configs?.targetToken?.tokenPrice} </div>
                     </div>
-                    <div className=" swapSection">
+                    <div className="swapArea">
+                      <div className="currencies-list">
+                        {currList.map((curr, idx) => {
+                            return(
+                                <button key={idx} onClick={() => handleSwitchOption(idx)}
+
+                                  className={`btn btn-wallet  ${selectedCurr?.text === curr?.text ? 'selected' : ''}`}>
+                                  <img height="24" alt="" src={curr.imageSrc} />
+                                  <span className="px-2 font-18">{curr.text}</span>
+                                </button>
+                            )
+                        })}
+                      </div>
+                      <div className=" swapSection">
+                      
+                            <div className="input-container" >
+                              <div className="input-lable">
+                                <label className=""> {sectionText?.pay} {selectedCurr?.text}  </label>
+                              </div>
+                              <div className="input-amount">
+                                <input
+                                  value={currencyInput}
+                                  onChange={handleCurrencyInputChange}
+                                  onKeyPress={handleKeyPressCurr}
+                                  type="text"
+                                  className="input-control-custom"
+                                  placeholder="0" />
+                                <div className="amountType">
+                                  <img src={selectedCurr?.icon} style={{ 'height': '30px', marginRight:5 }} />
+                                </div>
+                              </div>
+                            </div>
+                            <div className="input-container" >
+                              <div className="input-lable">
+                                <label className=""> {sectionText?.get} $FLOCK     </label>
+                              </div>
+                              <div className="input-amount">
+                                <input
+                                  value={tokenInput}
+                                  onChange={handleTokenInputChange}
+                                  onKeyPress={handleKeyPressToken}
+                                  type="text"
+                                  className="input-control-custom"
+                                  placeholder="0" />
+                                <div className="amountType">
+                                  <img src='/img/flockers/token.svg' style={{ 'height': '30px', marginRight:5 }} />
+                                </div>
+                              </div>
+                            </div>
+                          
+                      </div>
+
+                    </div>
+                    {!walletEth.currentAddress && 
+                      <div className="action-buttons">
+                          <button className="connect-btn" onClick={walletEth.connect}>
+                              {sectionText?.connectWallet}
+                          </button>
+                      </div>
+                    }
+                    {walletEth.currentAddress && 
                     
-                          <div className="input-container" >
-                            <div className="input-lable">
-                              <label className=""> {sectionText?.pay} {selectedCurr?.text}  </label>
-                            </div>
-                            <div className="input-amount">
-                              <input
-                                value={currencyInput}
-                                onChange={handleCurrencyInputChange}
-                                onKeyPress={handleKeyPressCurr}
-                                type="text"
-                                className="input-control-custom"
-                                placeholder="0" />
-                              <div className="amountType">
-                                <img src={selectedCurr?.icon} style={{ 'height': '30px', marginRight:5 }} />
-                              </div>
-                            </div>
-                          </div>
-                          <div className="input-container" >
-                            <div className="input-lable">
-                              <label className=""> {sectionText?.get} $FLOCK     </label>
-                            </div>
-                            <div className="input-amount">
-                              <input
-                                value={tokenInput}
-                                onChange={handleTokenInputChange}
-                                onKeyPress={handleKeyPressToken}
-                                type="text"
-                                className="input-control-custom"
-                                placeholder="0" />
-                              <div className="amountType">
-                                <img src='/img/flockers/token.svg' style={{ 'height': '30px', marginRight:5 }} />
-                              </div>
-                            </div>
-                          </div>
-                        
-                    </div>
-
-                  </div>
-                  {!walletEth.currentAddress && 
                     <div className="action-buttons">
-                        <button className="connect-btn" onClick={walletEth.connect}>
-                            {sectionText?.connectWallet}
+                        <button className="connect-btn"
+                            disabled={isClicked}
+                            onClick={handleBuyTokenClick}
+                        >
+                          {sectionText?.buyStake}
                         </button>
+                        <CurrencyDropdown walletETH={walletEth} />
+
                     </div>
-                  }
-                  {walletEth.currentAddress && 
-                  
-                  <div className="action-buttons">
-                      <button className="connect-btn"
-                          disabled={isClicked}
-                          onClick={handleBuyTokenClick}
-                      >
-                         {sectionText?.buyStake}
-                      </button>
-                      <CurrencyDropdown walletETH={walletEth} />
+                    }
+                    <div className="external-info">
+                      <a style={{textDecorationColor:"#000" ,color:"#000", textDecoration:'underline'}} href="https://widget.wert.io/default/widget/?commodity=ETH%3AEthereum" target="_blank">Not enough ETH? Top up now</a>
 
-                  </div>
-                  }
-                  <div className="external-info">
-                    <a style={{textDecorationColor:"#000" ,color:"#000", textDecoration:'underline'}} href="https://widget.wert.io/default/widget/?commodity=ETH%3AEthereum" target="_blank">Not enough ETH? Top up now</a>
+                      <p translate="" className="font-18 text-center m-0 mt-2"><img src="/img/flockers/token.svg" style={{ 'height': '35px' }} /> Powered by <a target="_blank" href='https://web3paymentsolutions.io/' className=" "><img src="/img/flockers/W3P_Black.svg" alt="" style={{height:25}} /></a></p>
+                    </div>
+                </div>
+            </div>
 
-                    <p translate="" className="font-18 text-center m-0 mt-2"><img src="/img/flockers/token.svg" style={{ 'height': '35px' }} /> Powered by <a target="_blank" href='https://web3paymentsolutions.io/' className=" "><img src="/img/flockers/W3P_Black.svg" alt="" style={{height:25}} /></a></p>
-                  </div>
-              </div>
                   
           </div>
 
