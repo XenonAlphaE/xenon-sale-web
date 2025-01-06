@@ -3,7 +3,7 @@
     "targetToken":{
         "address":"",
         "decimals":18,
-        "symbol": "FLOCK",
+        "symbol": "MEMEX",
         "tokenPrice":"0.0073417"
     },
     "previousRaised":5009043.52,

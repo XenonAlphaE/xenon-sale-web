@@ -303,35 +303,41 @@ export const Header = () => {
                  <img src="/img/memeindex/solid.svg" alt="solid" className="img-fluid" />
                </a>
             </div>
-            <div className="widget-wrapper">ß
+            <div className="widget-wrapper">
               <div className="walletBox" id='walletBox'>
                     <div className="walletBox-info">
-                      <p className="walletBox-heading">{sectionText?.intro}</p>
+                      <p className="walletBox-buy-title">{sectionText?.intro}</p>
                       <div className="counter-container  ">
-                        <div className="time-card  ">
-                          <div className="indicator  ">{sectionText?.day}</div>
-                          <div id="days" className="value  ">{days}</div>
-                          {/* <img className="colon-item" src="./img/colon.svg" /> */}
-                        </div>
-                        <div className="time-card" style={{color: 'orange'}} >
-                          <div className="indicator  ">{sectionText?.hrs}</div>
-                          <div id="hours" className="value  ">{hours}</div>
-                          {/* <img className="colon-item" src="./img/colon.svg" /> */}
-                        </div>
-                        <div className="time-card" style={{color: 'green'}}>
-                          <div className="indicator  ">{sectionText?.mins}</div>
-                          <div id="minutes" className="value  ">{minutes}</div>
-                          {/* <img className="colon-item" src="./img/colon.svg" /> */}
-                        </div>
-                        <div className="time-card" style={{color: 'lightblue'}} >
-                          <div className="indicator  ">{sectionText?.sec}</div>
-                          <div id="seconds" className="value  ">{seconds}</div>
-                        </div>
+                          <div className="walletBox-counter-title"> UNTIL PRICE INCREASE</div>
+                          <div className="walletBox-counter-data">                        
+                            <div className="time-card">
+                              <div className="indicator  ">{sectionText?.day}</div>
+                              <div id="days" className="value  ">{days}</div>
+                              {/* <img className="colon-item" src="./img/colon.svg" /> */}
+                            </div>
+                            <div className="time-card" style={{color: 'orange'}} >
+                              <div className="indicator  ">{sectionText?.hrs}</div>
+                              <div id="hours" className="value  ">{hours}</div>
+                              {/* <img className="colon-item" src="./img/colon.svg" /> */}
+                            </div>
+                            <div className="time-card" style={{color: 'green'}}>
+                              <div className="indicator  ">{sectionText?.mins}</div>
+                              <div id="minutes" className="value  ">{minutes}</div>
+                              {/* <img className="colon-item" src="./img/colon.svg" /> */}
+                            </div>
+                            <div className="time-card" style={{color: 'lightblue'}} >
+                              <div className="indicator  ">{sectionText?.sec}</div>
+                              <div id="seconds" className="value  ">{seconds}</div>
+                            </div>
+                          </div>
                       </div>
 
                       <p className="total-raised">{sectionText?.funRaised}: $16,112,074.72 / $18,000,000</p>
                         {/* {truncateMiddle(walletEth.currentAddress)} */}
-                        <ProgressBar percentage={1481523.67*100 / 1630831}  />
+                        <div className="walletBox-progress">
+                            <ProgressBar percentage={1481523.67*100 / 1630831}  />
+                        </div>
+                     
                         <p className="user-purchased-info">{sectionText.boughtAmount} ${configs?.targetToken?.symbol} = {formatTokenNumber(totalBought)}</p>
                         {/* <img className="img-fluid ms-2 cursor-pointer" src="./img/info-icon.svg" /> */}
                         <p className="user-purchased-info">{sectionText.stakeableAmount} ${configs?.targetToken?.symbol} = {formatTokenNumber(totalBought)}</p>

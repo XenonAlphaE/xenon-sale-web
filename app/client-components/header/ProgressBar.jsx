@@ -7,21 +7,22 @@ export const ProgressBar = ({ percentage }) => {
     position: 'relative', // Position relative for absolute positioning of text
     width: '100%',
     // backgroundColor: bgColor || '',
-    borderColor:'#eee  ',
-    border: 'solid 3px',
-    borderRadius: '15px',
-    height: 30,
-    overflow:'hidden',
-    marginTop:"10px",
-    marginBottom:'10px'
+    // borderColor:'#eee  ',
+    // borderRadius: '15px',
+    height: 10,
+    // overflow:'hidden',
+    // marginTop:"10px",
+    // marginBottom:'10px',
   };
 
   const barStyle = {
     width: `${percentage}%`,
     height: '100%',
-    backgroundColor: 'rgb(245, 136, 45)',
+    background: 'linear-gradient(180deg, #ffffff80, #ffffff1a 52%, #fff0 52%, #ffffff0d), #f9a034',
     transition: 'width 0.3s ease',
+    borderRadius: '6px',
   };
+
 
   const textStyle = {
     position: 'absolute',
@@ -37,7 +38,7 @@ export const ProgressBar = ({ percentage }) => {
   return (
     <div style={containerStyle}>
       <div style={barStyle}></div>
-      <div style={textStyle}>{sectionText?.nextPriceAlert}</div>
+      {/* <div style={textStyle}>{sectionText?.nextPriceAlert}</div> */}
     </div>
   );
 };
