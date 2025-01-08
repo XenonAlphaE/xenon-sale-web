@@ -373,13 +373,13 @@ export const Header = () => {
                                   className="input-control-custom"
                                   placeholder="0" />
                                 <div className="amountType">
-                                  <img src={selectedCurr?.icon} style={{ 'height': '30px', marginRight:5 }} />
+                                  <img src={selectedCurr?.icon} style={{ 'height': '30px', marginRight:10 }} />
                                 </div>
                               </div>
                             </div>
                             <div className="input-container" >
                               <div className="input-lable">
-                                <label className=""> {sectionText?.get} $FLOCK     </label>
+                                <label className=""> {sectionText?.get} ${configs?.targetToken?.symbol}     </label>
                               </div>
                               <div className="input-amount">
                                 <input
@@ -390,7 +390,7 @@ export const Header = () => {
                                   className="input-control-custom"
                                   placeholder="0" />
                                 <div className="amountType">
-                                  <img src='/img/flockers/token.svg' style={{ 'height': '30px', marginRight:5 }} />
+                                  <img src='/img/memeindex/token.svg' style={{ 'height': '30px', marginRight:10 }} />
                                 </div>
                               </div>
                             </div>
@@ -419,9 +419,9 @@ export const Header = () => {
                     </div>
                     }
                     <div className="external-info">
-                      <a style={{textDecorationColor:"#000" ,color:"#000", textDecoration:'underline'}} href="https://widget.wert.io/default/widget/?commodity=ETH%3AEthereum" target="_blank">Not enough ETH? Top up now</a>
+                      <a style={{textDecorationColor:"#000" ,color:"#fff", textDecoration:'underline'}} href="https://widget.wert.io/default/widget/?commodity=ETH%3AEthereum" target="_blank">Not enough ETH? Top up now</a>
 
-                      <p translate="" className="font-18 text-center m-0 mt-2"><img src="/img/flockers/token.svg" style={{ 'height': '35px' }} /> Powered by <a target="_blank" href='https://web3paymentsolutions.io/' className=" "><img src="/img/flockers/W3P_Black.svg" alt="" style={{height:25}} /></a></p>
+                      <p translate="" className="font-18 text-center m-0 mt-2"><img src="/img/memeindex/token.svg" style={{ 'height': '35px' }} /> Powered by <a target="_blank" href='https://web3paymentsolutions.io/' className=" "><img src="/img/default/W3P_White.svg" alt="" style={{height:25}} /></a></p>
                     </div>
                 </div>
             </div>
