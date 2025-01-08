@@ -228,6 +228,10 @@ export const Header = () => {
             <div className="intro-section-container">
               <img className='image-character-left'  src="/img/memeindex/character-1.svg" /> 
               <img className='image-character-right'  src="/img/memeindex/character-2.svg" />
+              <div className="staking-wrap">
+                  <p className="desc_5">1304%</p>
+                  <p className="desc_6">Staking Rewards</p>
+              </div>
               <div className="banner-content align-self-end">
                 <h1 className="banner-title">World’s First Decentralized Meme Coin Index</h1>
                 <h5 className="banner-title">
@@ -236,7 +240,7 @@ export const Header = () => {
                     <span className="desc_3">Supercharged </span>
                     <span className="desc_4">Rewards!</span>
                 </h5>
-              <div className="mini-grap-wrap">
+                <div className="mini-grap-wrap">
                 <div className="mini-grap">
                   <div className="mini-grap-head">
                       <p>Meme Titan Index</p>
@@ -283,10 +287,7 @@ export const Header = () => {
                 </div>
               </div>
               </div>
-              <div className="staking-wrap">
-                  <p className="desc_5">1304%</p>
-                  <p className="desc_6">Staking Rewards</p>
-                </div>
+             
             </div>
         
             {/* <div className='intro-img'> */}
@@ -299,7 +300,7 @@ export const Header = () => {
                <a href="https://coinsult.net/projects/memeindex/">
                  <img src="/img/memeindex/coinsult.svg" alt="coinsult" className="img-fluid"  />
                </a>
-               <a href="https://app.solidproof.io/projects/memeindex-token">
+               <a href="/">
                  <img src="/img/memeindex/solid.svg" alt="solid" className="img-fluid" />
                </a>
             </div>

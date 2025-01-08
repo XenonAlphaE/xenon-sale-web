@@ -2,7 +2,7 @@
 @media (max-width: 1024px) {
     .intro{
         min-height: auto;
-        padding: 180px 0 180px;
+        padding: 140px 0 180px;
 
     }
 
@@ -22,64 +22,78 @@
         padding-bottom: 100px;
     }
 
-    .intro-content-left .intro-heading1{
-        width: auto;
-        font-size: large;
-        margin: 0;
-        padding: 4px 12px;
-        border-top: 6px solid #000000;
-        border-left: 6px solid #000000;
-        border-right: 6px solid #000000;
-    }
-
-
-    .intro-content-left .intro-heading1 h3{
-        font-size: x-large;
-    }
-
-
-   
-
-    .intro-section-container h2{
-        font-size: x-large;
-        width: 90%;
-    }
-
-
-    .intro-button-buynow{
-        font-size: x-large;
-        line-height: normal;
-        padding: 8px 16px;
-    }
-
-    .intro-img{
-        width: 180px;
-        right: -2%;
-        top: 80%;
-    }
-
-    .intro-socials{
-        width: 70%;
-        padding-top: 50px;
-        padding-left: 50px;
+    .intro-section-container{
         display: flex;
-        flex-wrap: wrap;
-        column-gap: 24px;
-        row-gap: 24px;
+        padding: 8px;
+        flex-direction: column;
+        position: relative;
     }
+
+    .image-character-left{
+        position: absolute;
+        left: 20px;
+        top: 20%;
+        width: 120px
+      }
       
-    .intro-socials img{
-        width: 66px;
+      .image-character-right{
+        position: absolute;
+        right: -20px;
+        /* top: 60px; */
+        width: 120px
       }
 
+      .banner-content{
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+      }
 
+    .staking-wrap{
+        width: 100%;
+        position: relative;
+        left: 0%;
+        top: 0%;
+        text-shadow: 0px 4px 16px #000, 0px 4px 16px #000, 0px 4px 16px rgba(0, 0, 0, .25), 0px 4px 16px rgba(0, 0, 0, .25), 0px 4px 16px rgba(0, 0, 0, .25), 0px 4px 16px rgba(0, 0, 0, .25), 0px 4px 16px rgba(0, 0, 0, .25), 0px 4px 16px rgba(0, 0, 0, .25);
+        font-size: large;
+    }
+    .desc_5{
+        font-size: x-large;
+        text-align: center !important;
+      }
+      
+      .desc_6{
+        font-size: x-large;
+      }
 
+      .mini-grap-wrap{
+        flex-wrap: wrap;
+      }
 
+      .mini-grap{
+        width: 48%;
+        max-width: 48%;
+        gap: 8px;
+      }
+
+      .mini-grap-head{
+            padding: 4px;
+            font-size: 12px;
+      }
 
     .intro-content-right {
+        display: flex;
         flex: 1;
         width: 100%;
         padding: 0px 8px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .widget-wrapper{
+        margin: 0px;
     }
 
     .counter-container{

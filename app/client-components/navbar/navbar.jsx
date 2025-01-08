@@ -112,14 +112,13 @@ export const Navbar = () => {
 
       <div className={`appnav-navbar-menu`}>
               
-        <a href="#staking" onClick={toggleMenu}>{sectionText?.staking}</a>
+        <a href={`/${currentLanguage}`} >{sectionText?.home}</a>
         <a href="#about">{sectionText?.about}</a>
         <a href="#howtobuy">{sectionText?.howtobuy}</a>
-        <a href={`/${currentLanguage}`}>{sectionText?.home}</a>
         <a href="#roadmap">{sectionText?.roadmap}</a>
         <a href="#tokenomics">{sectionText?.tokenomics}</a>
         <a href="#faqs">{sectionText?.faq}</a>
-        <a href="/white-paper.pdf" target='_blank'>{sectionText?.whitePaper}</a>
+        <a href="/img/memeindex/whitepaper.pdf" target='_blank'>{sectionText?.whitePaper}</a>
       </div>
       <div className={`appnav-navbar-right`}>
 
@@ -153,13 +152,17 @@ export const Navbar = () => {
 
       {isMobile && <div className={`appnav-navbar-menu-mobile ${isMenuOpen ? 'appnav-is-active' : ''}`}>
       
-        <a href="#staking" onClick={toggleMenu}>{sectionText?.staking}</a>
-        {/* <a href={`/${currentLanguage}`}>{sectionText?.home}</a> */}
+        {/* <a href="#staking" onClick={toggleMenu}>{sectionText?.staking}</a> */}
+        <a href={`/${currentLanguage}`}>{sectionText?.home}</a>
         <a href="#about" onClick={toggleMenu}>{sectionText?.about}</a>
         <a href="#roadmap" onClick={toggleMenu}>{sectionText?.roadmap}</a>
         <a href="#tokenomics" onClick={toggleMenu}>{sectionText?.tokenomics}</a>
         <a href="#faqs" onClick={toggleMenu}>{sectionText?.faq}</a>
-        <a href="/white-paper.pdf" target='_blank'>{sectionText?.whitePaper}</a>
+        <a href="/img/memeindex/whitepaper.pdf" target='_blank'>{sectionText?.whitePaper}</a>
+        <div className='appnav-social'>
+            <a className='appnav-social-link'  href="https://t.me/pepebuldakchannel"  target='_blank' ><img src='/img/flockers/telelogo.svg' /></a>
+            <a className='appnav-social-link' href="https://x.com/pepebuldak" target='_blank' ><div ><img  src='/img/flockers/xlogo.svg' /></div></a>
+        </div>
 
         <div className="appnav-lang-dropdown">
           <div className="appnav-lang-custom-dropdown" onClick={toggleLanguageDrpdwn}>
