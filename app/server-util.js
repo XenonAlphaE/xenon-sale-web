@@ -10,10 +10,6 @@ export function getGTAG(){
     return process.env.MAIN_GTAG || "00"
 }
 
-export function getGTAG(){
-    return process.env.MAIN_GTAG || "00"
-}
-
 export function getSiteName(){
     return process.env.MAIN_SITENAME || ""
 }
