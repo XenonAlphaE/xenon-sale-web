@@ -37,6 +37,13 @@ export const NETWORK_OTIONS = {
       chainId: 8453,
       symbol:"eth"
 
+    },
+    op: {
+      img: '/img/default/optimism.svg',
+      name: "OP NETWORK",
+      chainId: 10,
+      symbol:"eth"
+
     }
   };
 export const CURRENCIES = {
@@ -51,6 +58,10 @@ export const CURRENCIES = {
     base:[
         { text: 'BASE ETH', imageSrc: '/img/flockers/ETH.svg', icon:"/img/flockers/ETH.svg", curr: CURR_CODE.ETH },
         { text: 'USDC', imageSrc: '/img/wepe/usdc.svg',  icon:"/img/wepe/usdc.svg",curr: CURR_CODE.USDT },
+    ],
+    op:[
+        { text: 'OP ETH', imageSrc: '/img/flockers/ETH.svg', icon:"/img/flockers/ETH.svg", curr: CURR_CODE.ETH },
+        { text: 'USDT', imageSrc: '/img/flockers/usdt.svg',  icon:"/img/flockers/usdt.svg",curr: CURR_CODE.USDT },
     ],
 
 

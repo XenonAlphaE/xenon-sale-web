@@ -26,9 +26,7 @@ export const BuyForm = () => {
     const [selectedCurr, setSelectedCurr] = useState();
   
   
-    const [bnbPrice, setBnbPrice] = useState(0);
-    const [ethPrice, setEthPrice] = useState(0);
-  
+
     const tokenInfo = useTokenInfo(configs)
     
   
@@ -98,7 +96,7 @@ export const BuyForm = () => {
       if (/^\d*\.?\d*$/.test(value) && isValidNumber(value)) {
           setTokenInput(value);
           if (selectedCurr.curr === CURR_CODE.BNB || selectedCurr.curr === CURR_CODE.ETH) {
-            setCurrencyInput(calculateBNBNeeded(value, selectedCurr.curr === CURR_CODE.BNB ? bnbPrice : ethPrice , tokenInfo?.tokenPriceInUsdt))
+            setCurrencyInput(calculateBNBNeeded(value, selectedCurr.curr === CURR_CODE.BNB ? walletEth?.bnbPrice : walletEth?.ethPrice , tokenInfo?.tokenPriceInUsdt))
           }
           else {
             setCurrencyInput(calculateUSDNeeded(value, tokenInfo?.tokenPriceInUsdt))
@@ -123,7 +121,7 @@ export const BuyForm = () => {
       if (/^[0-9]*[.]?[0-9]*$/.test(value) && isValidNumber(value)) {
         setCurrencyInput(value);
         if (selectedCurr.curr === CURR_CODE.BNB || selectedCurr.curr === CURR_CODE.ETH) {
-          setTokenInput(calculateTokensForBNB(value, selectedCurr.curr === CURR_CODE.BNB ? bnbPrice : ethPrice , tokenInfo?.tokenPriceInUsdt))
+          setTokenInput(calculateTokensForBNB(value, selectedCurr.curr === CURR_CODE.BNB ? walletEth?.bnbPrice : walletEth?.ethPrice , tokenInfo?.tokenPriceInUsdt))
         }
         else {
           setTokenInput(calculateTokenOutput(value, tokenInfo?.tokenPriceInUsdt))
