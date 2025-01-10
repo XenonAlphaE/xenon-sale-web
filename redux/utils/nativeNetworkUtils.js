@@ -13,6 +13,8 @@ export const useNativeNetwork = () => {
             return"bsc";
         case 8453:
             return"base";
+        case 10:
+            return"op";
         default:
             return"eth";
     }
