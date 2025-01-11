@@ -43,6 +43,21 @@ import { getRandomItemFromArray } from './utils';
         return tokenInfo
     }
 
+    const getPurchasInfoARB =  async (key) => {
+        const provider = new Web3.providers.HttpProvider(getRandomItemFromArray(globalConfigs.ARB?.RPC_APIs) || '');
+        const web3Instance = new Web3(provider);
+        const salerInfo = globalConfigs.ARB['salers'][0]
+        const contract = new web3Instance.eth.Contract(
+            salerInfo.abi,
+            salerInfo.address
+        )    
+        
+        
+        const tokenInfo = await contract.methods.buyerPurchases(key).call();
+        
+        return tokenInfo
+    }
+
     const getPurchasInfoBase =  async (key) => {
         const provider = new Web3.providers.HttpProvider(getRandomItemFromArray(globalConfigs.BASE?.RPC_APIs) || '');
         const web3Instance = new Web3(provider);
@@ -70,12 +85,12 @@ import { getRandomItemFromArray } from './utils';
         const tokenInfo = await contract.methods.buyerPurchases(key).call();
         return tokenInfo
     }
-    const [purchaseBSC, purchaseETH, purchaseBASE, purchaseOP] = await Promise.all([getPurchasInfoBSC(key), getPurchasInfoETH(key), getPurchasInfoBase(key), getPurchasInfoOP(key)]);
+    const [purchaseBSC, purchaseETH, purchaseBASE, purchaseOP,purchaseARB] = await Promise.all([getPurchasInfoBSC(key), getPurchasInfoETH(key), getPurchasInfoBase(key), getPurchasInfoOP(key), getPurchasInfoARB(key)]);
 
     // const purchaseBSC = await getPurchasInfoBSC(key);
     // const purchaseETH = await getPurchasInfoETH(key);
     
-    if(!purchaseBSC || !purchaseETH || !purchaseBASE || !purchaseOP){
+    if(!purchaseBSC || !purchaseETH || !purchaseBASE || !purchaseOP ||!purchaseARB){
         return;
     }
     
@@ -83,12 +98,13 @@ import { getRandomItemFromArray } from './utils';
     const decimal2 = new Decimal(formatUnits(purchaseETH['amount'], globalConfigs?.targetToken?.decimals));
     const decimal3 = new Decimal(formatUnits(purchaseBASE['amount'], globalConfigs?.targetToken?.decimals));
     const decimal4 = new Decimal(formatUnits(purchaseOP['amount'], globalConfigs?.targetToken?.decimals));
+    const decimal5 = new Decimal(formatUnits(purchaseARB['amount'], globalConfigs?.targetToken?.decimals));
 
     // const bigNumber1 = BigNumberish.from(purchaseBSC['amount']); // String representation
     // const bigNumber2 = BigNumberish.from(purchaseETH['amount']);
 
 
-    const totalBought = decimal1.add(decimal2).add(decimal3).add(decimal4);
+    const totalBought = decimal1.add(decimal2).add(decimal3).add(decimal4).add(decimal5);
     return totalBought.toFixed(2).toString();
 }
 

@@ -118,6 +118,14 @@ export const useWalletETH=( inputNetwork , globalConfigs) => {
             usdtAddress = globalConfigs.OP['USDT_Address']
             usdtDecimals = globalConfigs.OP['USDT_Decimals']
         }
+
+        if(nativeNetwork==='arb'){
+            salerInfo = globalConfigs.ARB['salers'][0]
+            usdtAbi = globalConfigs.ARB['USDT_Abi']
+            usdtAddress = globalConfigs.ARB['USDT_Address']
+            usdtDecimals = globalConfigs.ARB['USDT_Decimals']
+        }
+        
         return{salerInfo, usdtAddress, usdtDecimals, usdtAbi}
 
 
