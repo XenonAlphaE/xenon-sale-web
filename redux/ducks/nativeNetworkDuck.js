@@ -43,7 +43,12 @@ export const NETWORK_OTIONS = {
       name: "OP NETWORK",
       chainId: 10,
       symbol:"eth"
-
+    },
+    arb: {
+      img: '/img/default/arb.svg',
+      name: "Arbitrum One",
+      chainId: 42161,
+      symbol:"eth"
     }
   };
 export const CURRENCIES = {
@@ -65,7 +70,10 @@ export const CURRENCIES = {
         { text: 'OP ETH', imageSrc: '/img/flockers/ETH.svg', icon:"/img/flockers/ETH.svg", curr: CURR_CODE.ETH },
         { text: 'USDT', imageSrc: '/img/flockers/usdt.svg',  icon:"/img/flockers/usdt.svg",curr: CURR_CODE.USDT },
     ],
-
+    arb:[
+        { text: 'ARB ETH', imageSrc: '/img/flockers/ETH.svg', icon:"/img/flockers/ETH.svg", curr: CURR_CODE.ETH },
+        { text: 'USDT', imageSrc: '/img/flockers/usdt.svg',  icon:"/img/flockers/usdt.svg",curr: CURR_CODE.USDT },
+    ],
 
 
 
