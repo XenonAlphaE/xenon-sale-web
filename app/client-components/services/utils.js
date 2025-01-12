@@ -73,7 +73,7 @@ export const useCountdown = () => {
     // console.log('Future Time:', futureTime);
     const currentTime = new Date().getTime();
     // console.log('Current Time:', currentTime);
-    const futureTime = new Date("2024-12-23T14:00:00Z").getTime()
+    const futureTime = new Date(nearestDayDivisibleBy3(9)).getTime()
     const difference = futureTime - currentTime;
     // console.log('Difference:', difference);
     let timeLeft = {days: 0,
