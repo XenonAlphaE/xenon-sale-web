@@ -15,8 +15,8 @@ import {
 import { useTokenInfo, getUserPurchaseInfo } from '../services/token-service';
 import {CurrencyDropdown} from "../currency-dropdown/CurrencyDropdown";
 import configs from '../config.main.json'
-import './buyform.css'
-import './buyform.mobile.css'
+import './claimform.css'
+import './claimform.mobile.css'
 export const ClaimForm = () => {
     const sectionText = useI18nSection('buyForm')
     const nativeNetwork = useNativeNetwork()
@@ -168,34 +168,25 @@ export const ClaimForm = () => {
       setCurrencyInput('')
   
     };
+
+    const handleClaimToken = async() => {
+      if (!isClicked) {
+        setIsClicked(true);
+        walletEth.claimTokens(walletEth.maxAmount, totalBought)
+      }
+    }
+  
+    const addTokenToWallet  = () => {
+      walletEth.wasAddedToken()
+    }
   
     return (
         <div className="walletBox" id='walletBox'>
             <div className="walletBox-info">
-            <p className="walletBox-heading">{sectionText?.intro}</p>
+            <p className="walletBox-heading">PRESALE HAS ENDED</p>
             <div className="dashTitle">1 ${configs?.targetToken?.symbol} = ${configs?.targetToken?.tokenPrice} </div>
-            <div className="counter-container  ">
-                <div className="time-card  ">
-                <div className="indicator  ">{sectionText?.day}</div>
-                <div id="days" className="value  ">{days}</div>
-                {/* <img className="colon-item" src="./img/colon.svg" /> */}
-                </div>
-                <div className="time-card" >
-                <div className="indicator  ">{sectionText?.hrs}</div>
-                <div id="hours" className="value  " style={{color: 'red'}} >{hours}</div>
-                {/* <img className="colon-item" src="./img/colon.svg" /> */}
-                </div>
-                <div className="time-card" >
-                <div className="indicator  ">{sectionText?.mins}</div>
-                <div id="minutes" className="value  " style={{color: 'blue'}} >{minutes}</div>
-                {/* <img className="colon-item" src="./img/colon.svg" /> */}
-                </div>
-                <div className="time-card"  >
-                <div className="indicator  ">{sectionText?.sec}</div>
-                <div id="seconds" className="value  " style={{color: 'green'}} >{seconds}</div>
-                </div>
-            </div>
-            <ProgressBar percentage={11457475.67*100 / 11540268}  />
+           
+            {/* <ProgressBar percentage={11457475.67*100 / 11540268}  /> */}
 
             <p className="total-raised">{sectionText?.funRaised}:  $58,795,908.72 / $70,000,000</p>
             {walletEth.currentAddress && 
@@ -205,63 +196,6 @@ export const ClaimForm = () => {
               </div>  
             }
             </div>
-            {walletEth.currentAddress && 
-
-            <div className="swapArea">
-            <div className="currencies-list">
-                {currList.map((curr, idx) => {
-                    return(
-                        <button key={idx} onClick={() => handleSwitchOption(idx)}
-
-                        className={`btn btn-wallet  ${selectedCurr?.text === curr?.text ? 'selected' : ''}`}>
-                        <img height="24" alt="" src={curr.imageSrc} />
-                        <span className="px-2 font-18">{curr.text}</span>
-                        </button>
-                    )
-                })}
-            </div>
-
-            <div className=" swapSection">
-            
-                    <div className="input-container" >
-                    <div className="input-lable">
-                        <label className=""> {sectionText?.pay} {selectedCurr?.text}  </label>
-                    </div>
-                    <div className="input-amount">
-                        <input
-                        value={currencyInput}
-                        onChange={handleCurrencyInputChange}
-                        onKeyPress={handleKeyPressCurr}
-                        type="text"
-                        className="input-control-custom"
-                        placeholder="0" />
-                        <div className="amountType">
-                        <img src={selectedCurr?.icon} style={{ 'height': '30px', marginRight:5 }} />
-                        </div>
-                    </div>
-                    </div>
-                    <div className="input-container" >
-                    <div className="input-lable">
-                        <label className=""> {sectionText?.get} ${configs?.targetToken?.symbol}     </label>
-                    </div>
-                    <div className="input-amount">
-                        <input
-                        value={tokenInput}
-                        onChange={handleTokenInputChange}
-                        onKeyPress={handleKeyPressToken}
-                        type="text"
-                        className="input-control-custom"
-                        placeholder="0" />
-                        <div className="amountType">
-                        <img src='/img/wepe/token.svg' style={{ 'height': '30px', marginRight:5 }} />
-                        </div>
-                    </div>
-                    </div>
-                
-            </div>
-
-            </div>
-            }
             {!walletEth.currentAddress && 
             <div className="action-buttons">
                 <button className="connect-btn" onClick={walletEth.connect}>
@@ -274,11 +208,19 @@ export const ClaimForm = () => {
             <div className="action-buttons">
                 <button className="buy-btn"
                     disabled={isClicked}
-                    onClick={handleBuyTokenClick}
+                    onClick={handleClaimToken}
                 >
-                {sectionText?.buyStake}
+                    CLAIM MY $WEPE TOKEN
                 </button>
-                <CurrencyDropdown walletETH={walletEth} />
+                {/* <CurrencyDropdown walletETH={walletEth} /> */}
+
+                <p
+                className="addtoken-btn"
+                    disabled={isClicked}
+                    onClick={addTokenToWallet}
+                >
+                    ADD TOKEN TO WALLET
+                </p>
 
             </div>
             }

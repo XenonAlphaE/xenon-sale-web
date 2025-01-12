@@ -421,4 +421,12 @@ justify-content: space-evenly;
     text-align: center;
 }
 
-
+.addtoken-btn{
+    text-align: center;
+    text-decoration: underline;
+    color: firebrick;
+    cursor: pointer;
+    font-weight: 800;
+}
+  
+  
