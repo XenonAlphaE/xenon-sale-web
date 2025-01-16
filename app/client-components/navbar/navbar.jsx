@@ -126,8 +126,8 @@ export const Navbar = () => {
     
           <button onClick={scrollToBuySection} className="appnav-login">{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button>
           <div className='appnav-social'>
-            <a  href="https://t.me/pepebuldakchannel"  target='_blank' ><img src='/img/flockers/telelogo.svg' /></a>
-            <a  href="https://x.com/pepebuldak" target='_blank' ><div ><img  src='/img/flockers/xlogo.svg' /></div></a>
+            <a  href="https://t.me/memecoin_index"  target='_blank' ><img src='/img/flockers/telelogo.svg' /></a>
+            <a  href="https://x.com/memecoin_index" target='_blank' ><div ><img  src='/img/flockers/xlogo.svg' /></div></a>
           </div>
           <div className="appnav-lang-dropdown">
             <div className="appnav-lang-custom-dropdown" onClick={toggleLanguageDrpdwn}>
@@ -160,8 +160,8 @@ export const Navbar = () => {
         <a href="#faqs" onClick={toggleMenu}>{sectionText?.faq}</a>
         <a href="/img/memeindex/whitepaper.pdf" target='_blank'>{sectionText?.whitePaper}</a>
         <div className='appnav-social'>
-            <a className='appnav-social-link'  href="https://t.me/pepebuldakchannel"  target='_blank' ><img src='/img/flockers/telelogo.svg' /></a>
-            <a className='appnav-social-link' href="https://x.com/pepebuldak" target='_blank' ><div ><img  src='/img/flockers/xlogo.svg' /></div></a>
+            <a className='appnav-social-link'  href="https://t.me/memecoin_index"  target='_blank' ><img src='/img/flockers/telelogo.svg' /></a>
+            <a className='appnav-social-link' href="https://x.com/memecoin_index" target='_blank' ><div ><img  src='/img/flockers/xlogo.svg' /></div></a>
         </div>
 
         <div className="appnav-lang-dropdown">
