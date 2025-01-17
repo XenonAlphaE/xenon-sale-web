@@ -10,6 +10,16 @@ import { StakingChart } from './stakingchart';
 export const Staking = () => {
 
 
+    const stakeOnClick = () => {
+        
+    }
+    const withdrawOnClick = () => {
+
+    }
+    
+    const claimOnClick = () => {
+        alert("Claim is not live yet")
+    }
 
     return (
 
@@ -107,7 +117,7 @@ export const Staking = () => {
                       
                     </div>
                     <div className='staking-card-bottom'>
-                        <button className='staking-connect-btn'>
+                        <button className='staking-connect-btn' onClick={claimOnClick}>
                             CLAIM REWARDS
                         </button>
                     </div>
