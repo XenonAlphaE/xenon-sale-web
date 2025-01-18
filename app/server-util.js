@@ -36,5 +36,8 @@ export function getLangKeys(){
 }
 
 export function getBacklinkUrls(){
-    return backlinks.filter((item) => item.url !== getMainDomain())
+    const normalizeUrl = (url) => url.replace(/\/+$/, ''); // Remove trailing slashes
+    const mainDomain = normalizeUrl(getMainDomain()); // Normalize the main domain
+
+    return backlinks.filter((item) => normalizeUrl(item.url) !== mainDomain);
 }
