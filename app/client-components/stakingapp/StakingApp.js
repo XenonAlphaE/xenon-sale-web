@@ -32,7 +32,6 @@ const StakingApp = () => {
     <div>
       <Navbar />
       <Staking/>
-      <Footer /> 
       
     </div>
   );

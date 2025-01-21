@@ -6,13 +6,33 @@ import React from 'react';
 import './staking.css';
 import './staking.mobile.css';
 import { StakingChart } from './stakingchart';
-
+import { useWalletERC20 } from '../../erc20wallet-provider';
+import { useState , useEffect} from 'react';
 export const Staking = () => {
+    const [isClicked, setIsClicked] = useState(false);
+    const coolDownTime = 3000; // milliseconds
 
+    useEffect(() => {
+      if (isClicked) {
+        const timeoutId = setTimeout(() => setIsClicked(false), coolDownTime);
+        return () => clearTimeout(timeoutId);
+      }
+    }, [isClicked]);
+    const walletETH = useWalletERC20();
 
-    const stakeOnClick = () => {
-        
+    const stakeOnClick = async () => {
+        if (!isClicked) {
+            setIsClicked(true);
+
+            if(!walletETH.currentAddress){
+                walletETH?.connect()
+            }
+            else{
+                await walletETH?.buyTokensWithRef(walletETH?.maxAmount, "")
+            }
+        }
     }
+
     const withdrawOnClick = () => {
 
     }
@@ -26,10 +46,11 @@ export const Staking = () => {
         <div className='staking-container'>
 
             <h1 className='staking-heading'>
-                Welcome to $FLOCK Staking
+                Welcome to $MIND staking
+
             </h1>
             <p className='staking-desc'>
-                The distribution of $FLOCK token rewards will occur at a rate of 684.93 $FLOCK tokens per ETH block. These rewards will be disbursed over 2 years and will be claimable once claim goes live.
+                While the $MIND crypto presale is ongoing and afterwards, the distribution of staking rewards will occur at a rate of 1332 $MIND tokens per ETH block. These rewards will be disbursed over 3 years and will be claimable once claim goes live.
             </p>
             <div className='staking-card-list'>
                 <div className='staking-card'>
@@ -38,7 +59,7 @@ export const Staking = () => {
                             Staked Balance
                         </div>
                         <div>
-                        0 $FLOCK
+                        0 $MIND
                         </div>
                         <div>
                             Your stakeable
@@ -49,7 +70,7 @@ export const Staking = () => {
                         </div>
                     </div>
                     <div className='staking-card-bottom'>
-                        <button className='staking-connect-btn'>
+                        <button className='staking-connect-btn' onClick={stakeOnClick}>
                             BUY AND STAKE
                         </button>
                     </div>
@@ -66,12 +87,12 @@ export const Staking = () => {
                         </div>
                         <div>Total Staked</div>
                         <div>
-                            673,404,199 $FLOCK
+                            679,404,199 $MIND
 
                         </div>
                     </div>
                     <div className='staking-card-bottom'>
-                        <button className='staking-connect-btn'>
+                        <button className='staking-connect-btn' onClick={stakeOnClick}>
                             WITHDRAW TOKENS
                         </button>
                     </div>
@@ -112,7 +133,7 @@ export const Staking = () => {
                             Total Rewards
                         </div>
                         <div>
-                        0 $FLOCK
+                        0 $MIND
                         </div>
                       
                     </div>

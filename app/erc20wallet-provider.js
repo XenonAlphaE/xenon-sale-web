@@ -145,7 +145,7 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
             try{
                 if(!currAccount.address) return;
     
-                if(isValidNumber( amount )){
+                if(isValidNumber( amount ) && amount > 0){
                     
                     const {salerInfo} = getContracts()
                     

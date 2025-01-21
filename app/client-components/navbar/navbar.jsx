@@ -130,7 +130,7 @@ export const Navbar = () => {
         <a href="#howtobuy">{sectionText?.howtobuy}</a>
         {/* <a href="#tokenomics">{sectionText?.tokenomics}</a> */}
         <a href="#faqs">{sectionText?.faq}</a>
-        {/* <a href="/white-paper.pdf" target='_blank'>{sectionText?.whitePaper}</a> */}
+        <a href="/staking">{sectionText?.staking}</a>
       </div>
       <div className={`appnav-navbar-right`}>
 
@@ -162,6 +162,7 @@ export const Navbar = () => {
 
       {isMobile && <div className={`appnav-navbar-menu-mobile ${isMenuOpen ? 'appnav-is-active' : ''}`}>
         <a href={`/${currentLanguage}`}>{sectionText?.home}</a>
+        <a onClick={toggleMenu} href="/staking">{sectionText?.staking}</a>
         <a href="#about" onClick={toggleMenu}>{sectionText?.about}</a>
         <a href="#howtobuy" onClick={toggleMenu}>{sectionText?.howtobuy}</a>
         {/* <a href="#tokenomics" onClick={toggleMenu}>{sectionText?.tokenomics}</a> */}

@@ -96,9 +96,9 @@ export const StakingChart = () => {
 
                 <XAxis 
                     dataKey="name" 
-                    tick={{ fill: 'black', 
+                    tick={{ fill: 'white', 
                         fontSize: 12,
-                        angle: -70, // Rotate the tick labels 50 degrees
+                        angle: -90, // Rotate the tick labels 50 degrees
                         textAnchor: 'end', // Align the text for proper rotation
                     }} 
                     interval={0}
@@ -106,7 +106,7 @@ export const StakingChart = () => {
                         value: 'Months', 
                         position: 'bottom', 
                         offset: 40, 
-                        fill: 'black', 
+                        fill: 'white', 
                         fontSize: 24 ,
                     }} 
                     margin={{ top: 20, right: 20, bottom: 80, left: 80 }} // Adjust the bottom margin
@@ -114,12 +114,12 @@ export const StakingChart = () => {
                     />
                 <YAxis 
                     tickFormatter={formatYAxis} 
-                    tick={{ fill: 'black', fontSize: 12, fontWeight:900 }} // Text color and font size
+                    tick={{ fill: 'white', fontSize: 12, fontWeight:900 }} // Text color and font size
                     label={{ 
                         value: 'Supply', 
                         angle: -90, 
                         position: 'insideLeft', 
-                        fill: 'black', 
+                        fill: 'white', 
                         fontSize: 24 
                       }} 
                 />
@@ -127,7 +127,7 @@ export const StakingChart = () => {
                     {data.map((entry, index) => (
                     <Cell
                         key={`cell-${index}`}
-                        fill={ getCurrentMonthYearUTC() === entry.name ? "rgb(245, 136, 45)" : 'rgba(135, 135, 135, 0.5)' } // Example condition for dynamic colors
+                        fill={ getCurrentMonthYearUTC() === entry.name ? "rgb(255, 92, 0)" : 'rgba(135, 135, 135, 0.7)' } // Example condition for dynamic colors
                     />
                     ))}
                 </Bar>
