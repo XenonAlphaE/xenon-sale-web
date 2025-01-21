@@ -11,9 +11,11 @@ import {
 } from '@rainbow-me/rainbowkit';
 import { useAccount } from 'wagmi'
 import languageOptions from '../../langOptions.json'
-
+import { useWalletERC20 } from '../../erc20wallet-provider';
 
 export const Navbar = () => {
+
+  const walletETH = useWalletERC20()
   const { openAccountModal } = useAccountModal();
   const currAccount = useAccount()
 
@@ -42,7 +44,7 @@ export const Navbar = () => {
 
   const mobileBuyNow = () => {
     if (!!currAccount.address) {
-      openAccountModal();
+        walletETH.connect()
     }
     else {
 
@@ -66,17 +68,7 @@ export const Navbar = () => {
     }
     else {
 
-      // Find the target section to scroll to
-      let section = null;
-
-      section = document.getElementById('intro');
-
-      if (!section) {
-        window.location = `/${currentLanguage}`
-        return
-      }
-      // Scroll to the section
-      section.scrollIntoView({ behavior: 'smooth' });
+      walletETH.connect()
     }
     toggleMenu()
   };

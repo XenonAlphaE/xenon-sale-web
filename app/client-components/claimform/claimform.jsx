@@ -6,7 +6,7 @@ import { useLanguage, useI18nSection } from "../../../redux/utils/languageUtils"
 
 import {useNativeNetwork, useSetNativeNetwork} from '../../../redux/utils/nativeNetworkUtils'
 import { CURRENCIES,CURR_CODE, NETWORK_OTIONS, VALID_NETWORKS } from '../../../redux/ducks/nativeNetworkDuck';
-import {useWalletETH} from '../services/wallet-service2'
+import { useWalletERC20 } from "../../erc20wallet-provider"; 
 import {useCountdown} from '../services/utils'
 import {
   calculateUSDNeeded, calculateTokenOutput,
@@ -21,7 +21,7 @@ export const ClaimForm = () => {
     const sectionText = useI18nSection('buyForm')
     const nativeNetwork = useNativeNetwork()
 
-    const walletEth = useWalletETH(nativeNetwork, configs)
+    const walletEth = useWalletERC20()
     const currList = CURRENCIES[nativeNetwork]
     const [selectedCurr, setSelectedCurr] = useState();
   

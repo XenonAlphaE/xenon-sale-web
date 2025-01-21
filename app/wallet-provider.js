@@ -35,6 +35,9 @@ import {
 
 import configs from './client-components/config.main.json'
 import { getRandomItemFromArray } from './client-components/services/utils';
+import { Erc20WalletProvider } from './erc20wallet-provider';
+
+
 
 const connectors = connectorsForWallets(
   [
@@ -75,7 +78,9 @@ export const WalletProvider = ({ children }) => {
       <WagmiProvider config={config}>
         <QueryClientProvider client={queryClient}>
             <RainbowKitProvider theme={darkTheme()} modalSize='compact'>
-                {children}
+                <Erc20WalletProvider globalConfigs={configs}>
+                  {children}
+                </Erc20WalletProvider>
             </RainbowKitProvider>
         </QueryClientProvider>
       </WagmiProvider>
