@@ -11,7 +11,6 @@ import { useState , useEffect} from 'react';
 export const Staking = () => {
     const [isClicked, setIsClicked] = useState(false);
     const coolDownTime = 3000; // milliseconds
-
     useEffect(() => {
       if (isClicked) {
         const timeoutId = setTimeout(() => setIsClicked(false), coolDownTime);
@@ -28,7 +27,7 @@ export const Staking = () => {
                 walletETH?.connect()
             }
             else{
-                await walletETH?.buyTokensWithRef(walletETH?.maxAmount, "")
+                await walletETH?.stakeToken(walletETH?.maxAmount)
             }
         }
     }
@@ -46,11 +45,11 @@ export const Staking = () => {
         <div className='staking-container'>
 
             <h1 className='staking-heading'>
-                Welcome to $MIND staking
+                WEPE Token Staking
 
             </h1>
             <p className='staking-desc'>
-                While the $MIND crypto presale is ongoing and afterwards, the distribution of staking rewards will occur at a rate of 1332 $MIND tokens per ETH block. These rewards will be disbursed over 3 years and will be claimable once claim goes live.
+            Are you ready to stake like Pepe? Wallets staking $WEPE receive WEPE's top alpha and daily token rewards distributed over 3 years at a rate of 3044.14 $WEPE tokens per ETH block.
             </p>
             <div className='staking-card-list'>
                 <div className='staking-card'>
@@ -59,13 +58,13 @@ export const Staking = () => {
                             Staked Balance
                         </div>
                         <div>
-                        0 $MIND
+                        {walletETH?.formatedBought} ${walletETH?.tokenSymbol}
                         </div>
                         <div>
                             Your stakeable
                         </div>
                         <div>
-                        0 $FLOCK
+                        {walletETH?.formatedBought} ${walletETH?.tokenSymbol}
 
                         </div>
                     </div>
@@ -87,7 +86,7 @@ export const Staking = () => {
                         </div>
                         <div>Total Staked</div>
                         <div>
-                            679,404,199 $MIND
+                        40,119,452,813  ${walletETH?.tokenSymbol}
 
                         </div>
                     </div>

@@ -42,7 +42,6 @@ export const BuyForm = () => {
   
     // const [network, setNetwork] = useState("")
     // const [networkPrice, setNetworkPrice] = useState(0);
-    const [totalBought, setTotalBought] = useState(0);
   
   
     const { days, hours, minutes, seconds } = useCountdown();
@@ -59,28 +58,6 @@ export const BuyForm = () => {
         return () => clearTimeout(timeoutId);
       }
     }, [isClicked]);
-  
-    useEffect(() => {
-     
-  
-      const loadPurchaseInfo = async () => {
-        if (!walletEth.currentAddress) {
-          return;
-        }
-  
-        try {
-          
-          const info = await getUserPurchaseInfo(configs, walletEth.currentAddress)
-          if (info) {
-            setTotalBought(info)
-          }
-        }
-        catch (err) {
-  
-        }
-      }
-      loadPurchaseInfo()
-    }, [walletEth.currentAddress, configs]); // Empty dependency array ensures this effect runs only once
   
   
     const handleTokenInputChange = (event) => {
@@ -201,8 +178,8 @@ export const BuyForm = () => {
             <p className="total-raised">{sectionText?.funRaised}:  $58,978,115.69 / $70,000,000</p>
             {walletEth.currentAddress && 
               <div>
-                <p className="user-purchased-info">{sectionText.boughtAmount} ${configs?.targetToken?.symbol} = {totalBought}</p>
-                <p className="user-purchased-info">{sectionText.stakeableAmount} ${configs?.targetToken?.symbol} = {totalBought}</p>
+                <p className="user-purchased-info">{sectionText.boughtAmount} ${configs?.targetToken?.symbol} = {walletEth?.formatedBought}</p>
+                <p className="user-purchased-info">{sectionText.stakeableAmount} ${configs?.targetToken?.symbol} =  {walletEth?.formatedBought}</p>
               </div>  
             }
             </div>

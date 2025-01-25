@@ -11,7 +11,8 @@ import { ethers,parseEther,Network, parseUnits,formatUnits } from 'ethers';
 import { useNativeNetwork, useSetCurrentAddress, useSetNativeNetwork } from '../redux/utils/nativeNetworkUtils';
 import { NETWORK_OTIONS, VALID_NETWORKS } from '../redux/ducks/nativeNetworkDuck';
 import { toWei, isValidNumber  } from './client-components/services/wallet-service';
-
+import {getUserPurchaseInfo} from '../app/client-components/services/token-service'
+import { formatViewNumber } from "./client-components/services/utils";
 
 // Create a context for the wallet
 const Erc20WalletContext = createContext();
@@ -28,6 +29,7 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
 
     const [maxUsdt, setMaxUsdt] = useState(0)
     const [bnbPrice, setBnbPrice] = useState(0);
+    const [totalBought, setTotalBought] = useState(0);
     const [ethPrice, setEthPrice] = useState(0);
     const { switchChainAsync } = useSwitchChain(); // Function to switch networks
 
@@ -73,6 +75,86 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
         fetchDataBNB();
       }, [globalConfigs]);
 
+    useEffect(() => {
+        const loadPurchaseInfo = async () => {
+            if (!currAccount.address) {
+            return;
+            }
+        
+            try {
+            
+                const info = await getUserPurchaseInfo(globalConfigs, currAccount.address)
+                if (info) {
+                    setTotalBought(info)
+                }
+            }
+            catch (err) {
+        
+            }
+        }
+        loadPurchaseInfo()
+    }, [currAccount.address, globalConfigs]); // Empty dependency array ensures this effect runs only once
+    
+    const getContracts = () => {
+            
+        let salerInfo = null;
+        let usdtAbi = null;
+        let usdtAddress = null;
+        let usdtDecimals = 0;
+        if(nativeNetwork==='eth'){
+            salerInfo = globalConfigs.ETH['salers'][0]
+            usdtAbi = globalConfigs.ETH['USDT_Abi']
+            usdtAddress = globalConfigs.ETH['USDT_Address']
+            usdtDecimals = globalConfigs.ETH['USDT_Decimals']
+        }
+
+        if(nativeNetwork==='bsc'){
+            salerInfo = globalConfigs.BSC['salers'][0]
+            usdtAbi = globalConfigs.BSC['USDT_Abi']
+            usdtAddress = globalConfigs.BSC['USDT_Address']
+            usdtDecimals = globalConfigs.BSC['USDT_Decimals']
+        }
+
+        if(nativeNetwork==='base'){
+            salerInfo = globalConfigs.BASE['salers'][0]
+            usdtAbi = globalConfigs.BASE['USDT_Abi']
+            usdtAddress = globalConfigs.BASE['USDT_Address']
+            usdtDecimals = globalConfigs.BASE['USDT_Decimals']
+        }
+
+        if(nativeNetwork==='op'){
+            salerInfo = globalConfigs.OP['salers'][0]
+            usdtAbi = globalConfigs.OP['USDT_Abi']
+            usdtAddress = globalConfigs.OP['USDT_Address']
+            usdtDecimals = globalConfigs.OP['USDT_Decimals']
+        }
+
+        if(nativeNetwork==='arb'){
+            salerInfo = globalConfigs.ARB['salers'][0]
+            usdtAbi = globalConfigs.ARB['USDT_Abi']
+            usdtAddress = globalConfigs.ARB['USDT_Address']
+            usdtDecimals = globalConfigs.ARB['USDT_Decimals']
+        }
+        
+        return{salerInfo, usdtAddress, usdtDecimals, usdtAbi}
+
+
+    }
+
+    const getClaimContract = () => {
+        const tokenAddress = globalConfigs?.targetToken?.address
+        const tokenDecimals = globalConfigs?.targetToken?.decimals
+        const tokenSymbol = globalConfigs?.targetToken?.symbol
+        const claimInfo = globalConfigs.ETH['claims'][0]
+        return {
+            claimInfo,
+            tokenAddress,
+            tokenDecimals,
+            tokenSymbol
+        }
+    }
+
+    
     const walletETH = useMemo(() => {       
     
         const connectWallet = async () => {
@@ -89,56 +171,6 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
                 console.error(err.message)
             }
         }
-    
-        
-    
-        
-        const getContracts = () => {
-            
-            let salerInfo = null;
-            let usdtAbi = null;
-            let usdtAddress = null;
-            let usdtDecimals = 0;
-            if(nativeNetwork==='eth'){
-                salerInfo = globalConfigs.ETH['salers'][0]
-                usdtAbi = globalConfigs.ETH['USDT_Abi']
-                usdtAddress = globalConfigs.ETH['USDT_Address']
-                usdtDecimals = globalConfigs.ETH['USDT_Decimals']
-            }
-    
-            if(nativeNetwork==='bsc'){
-                salerInfo = globalConfigs.BSC['salers'][0]
-                usdtAbi = globalConfigs.BSC['USDT_Abi']
-                usdtAddress = globalConfigs.BSC['USDT_Address']
-                usdtDecimals = globalConfigs.BSC['USDT_Decimals']
-            }
-    
-            if(nativeNetwork==='base'){
-                salerInfo = globalConfigs.BASE['salers'][0]
-                usdtAbi = globalConfigs.BASE['USDT_Abi']
-                usdtAddress = globalConfigs.BASE['USDT_Address']
-                usdtDecimals = globalConfigs.BASE['USDT_Decimals']
-            }
-    
-            if(nativeNetwork==='op'){
-                salerInfo = globalConfigs.OP['salers'][0]
-                usdtAbi = globalConfigs.OP['USDT_Abi']
-                usdtAddress = globalConfigs.OP['USDT_Address']
-                usdtDecimals = globalConfigs.OP['USDT_Decimals']
-            }
-    
-            if(nativeNetwork==='arb'){
-                salerInfo = globalConfigs.ARB['salers'][0]
-                usdtAbi = globalConfigs.ARB['USDT_Abi']
-                usdtAddress = globalConfigs.ARB['USDT_Address']
-                usdtDecimals = globalConfigs.ARB['USDT_Decimals']
-            }
-            
-            return{salerInfo, usdtAddress, usdtDecimals, usdtAbi}
-    
-    
-        }
-    
     
         const buyTokensWithRef = async (amount, ref)  => {
             
@@ -221,19 +253,52 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
             }
         }
        
-        const getClaimContract = () => {
-            const tokenAddress = globalConfigs?.targetToken?.address
-            const tokenDecimals = globalConfigs?.targetToken?.decimals
-            const tokenSymbol = globalConfigs?.targetToken?.symbol
-            const claimInfo = globalConfigs.ETH['claims'][0]
-            return {
-                claimInfo,
-                tokenAddress,
-                tokenDecimals,
-                tokenSymbol
+        const stakeETHTokens = async (amount)  => {
+            try{
+                if(!currAccount.address) return;
+    
+                if(isValidNumber( amount )){
+                    if(Number(amount)< 0.028){
+                        alert("Not enough transaction fee")
+                        return
+                    }
+                    
+                    if(nativeNetwork==='eth'){
+                        const {salerInfo} = getContracts()
+                    
+                        if(!salerInfo){
+                            return
+                        }
+                        const wei = toWei(amount)
+                        
+                        const tx = await writeContractAsync({
+                            abi: salerInfo.abi,
+                            address: salerInfo.address,
+                            functionName:"buyTokensWifRef",
+                            value: wei,
+                            args:[globalConfigs?.targetToken?.symbol, ""]
+                        })
+                        
+                        // const tx = await salerContract.connect(signer).buyTokensWifRef(globalConfigs?.targetToken?.symbol,ref ? ref : "", {value: wei})
+                        // await tx.wait();
+                        console.log("Tokens staked successfully." + tx);
+                    }
+                    else{
+                        try {
+                            // Switch to the desired network
+                                await switchChainAsync({ chainId: 1 });
+                            } catch (error) {
+                            // console.error('Error switching network:', error);
+                                return;
+                            }
+                    
+                    }
+                }
+            }
+            catch(error){
+                // console.error("Error:", error.message);
             }
         }
-    
     
         const claimETHTokens = async (amount, tokenAmount)  => {
             try{
@@ -283,6 +348,7 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
                 console.error("Error:", error.message);
             }
         }
+
         const wasAddedToken = async () => {
     
             if (typeof window.ethereum !== 'undefined') {
@@ -321,6 +387,8 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
             maxUsdt,
             bnbPrice,
             ethPrice,
+            totalBought,
+            formatedBought:formatViewNumber(totalBought),
             //  getMaxUSDT , 
             buyTokensWithRef,
             swicthNativeNetwork,
@@ -328,6 +396,7 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
             buyTokensUSDTWifRef,
             claimTokens: claimETHTokens,
             wasAddedToken, 
+            stakeToken: stakeETHTokens
         }
   }, [
     currAccount.address,
@@ -336,7 +405,8 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
     spenableAmount,
     maxUsdt,
     bnbPrice,
-    ethPrice
+    ethPrice,
+    totalBought
 ]);
 
   return (

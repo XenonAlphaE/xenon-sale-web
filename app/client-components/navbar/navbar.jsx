@@ -125,12 +125,12 @@ export const Navbar = () => {
       </div>
 
       <div className={`appnav-navbar-menu`}>
+        <a href="/staking">{sectionText?.staking}</a>
         <a href={`/${currentLanguage}`}>{sectionText?.home}</a>
         <a href="#about">{sectionText?.about}</a>
         <a href="#howtobuy">{sectionText?.howtobuy}</a>
         {/* <a href="#tokenomics">{sectionText?.tokenomics}</a> */}
         <a href="#faqs">{sectionText?.faq}</a>
-        <a href="/staking">{sectionText?.staking}</a>
       </div>
       <div className={`appnav-navbar-right`}>
 
@@ -161,8 +161,8 @@ export const Navbar = () => {
       </div>
 
       {isMobile && <div className={`appnav-navbar-menu-mobile ${isMenuOpen ? 'appnav-is-active' : ''}`}>
-        <a href={`/${currentLanguage}`}>{sectionText?.home}</a>
         <a onClick={toggleMenu} href="/staking">{sectionText?.staking}</a>
+        <a href={`/${currentLanguage}`}>{sectionText?.home}</a>
         <a href="#about" onClick={toggleMenu}>{sectionText?.about}</a>
         <a href="#howtobuy" onClick={toggleMenu}>{sectionText?.howtobuy}</a>
         {/* <a href="#tokenomics" onClick={toggleMenu}>{sectionText?.tokenomics}</a> */}

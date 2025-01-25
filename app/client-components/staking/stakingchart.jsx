@@ -4,7 +4,7 @@
 import React, {useState, useEffect} from 'react';
 import { BarChart, Bar, ResponsiveContainer,Cell, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
 
-import { formatTokenNumber } from '../services/utils';
+import { formatViewNumber } from '../services/utils';
 import './stakingchart.css';
 export const StakingChart = () => {
     const [chartMargin, setChartMargin] = useState({ top: 50, right: 50, bottom: 100, left: 50 });
@@ -56,7 +56,7 @@ export const StakingChart = () => {
             return (
             <div style={{ backgroundColor: '#555', border: '1px solid #ccc', padding: '10px', borderRadius: '5px', color: 'white' }}>
                 <p><strong>{payload[0].payload.name}</strong></p>
-                <p>{formatTokenNumber(payload[0].value)}</p>
+                <p>{formatViewNumber(payload[0].value)}</p>
             </div>
             );
         }
@@ -89,14 +89,14 @@ export const StakingChart = () => {
                 >
 
                 <CartesianGrid 
-                            stroke="white"               // Set grid line color to white
+                            stroke="#ddd"               // Set grid line color to white
                             // strokeDasharray="5 5"        // Create dashed lines with 5px gaps
                         />
                 <Tooltip content={<CustomTooltip />} />
 
                 <XAxis 
                     dataKey="name" 
-                    tick={{ fill: 'white', 
+                    tick={{ fill: 'black', 
                         fontSize: 12,
                         angle: -90, // Rotate the tick labels 50 degrees
                         textAnchor: 'end', // Align the text for proper rotation
@@ -106,7 +106,7 @@ export const StakingChart = () => {
                         value: 'Months', 
                         position: 'bottom', 
                         offset: 40, 
-                        fill: 'white', 
+                        fill: 'black', 
                         fontSize: 24 ,
                     }} 
                     margin={{ top: 20, right: 20, bottom: 80, left: 80 }} // Adjust the bottom margin
@@ -114,12 +114,12 @@ export const StakingChart = () => {
                     />
                 <YAxis 
                     tickFormatter={formatYAxis} 
-                    tick={{ fill: 'white', fontSize: 12, fontWeight:900 }} // Text color and font size
+                    tick={{ fill: 'black', fontSize: 12, fontWeight:900 }} // Text color and font size
                     label={{ 
                         value: 'Supply', 
                         angle: -90, 
                         position: 'insideLeft', 
-                        fill: 'white', 
+                        fill: 'black', 
                         fontSize: 24 
                       }} 
                 />
@@ -127,7 +127,7 @@ export const StakingChart = () => {
                     {data.map((entry, index) => (
                     <Cell
                         key={`cell-${index}`}
-                        fill={ getCurrentMonthYearUTC() === entry.name ? "rgb(255, 92, 0)" : 'rgba(135, 135, 135, 0.7)' } // Example condition for dynamic colors
+                        fill={ getCurrentMonthYearUTC() === entry.name ? "rgb(255, 199, 0)" : 'rgba(135, 135, 135, 0.7)' } // Example condition for dynamic colors
                     />
                     ))}
                 </Bar>
