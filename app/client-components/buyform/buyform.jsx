@@ -6,7 +6,8 @@ import { useLanguage, useI18nSection } from "../../../redux/utils/languageUtils"
 
 import {useNativeNetwork, useSetNativeNetwork} from '../../../redux/utils/nativeNetworkUtils'
 import { CURRENCIES,CURR_CODE, NETWORK_OTIONS, VALID_NETWORKS } from '../../../redux/ducks/nativeNetworkDuck';
-import {useWalletETH} from '../services/wallet-service2'
+
+import { useWalletERC20 } from "../../erc20wallet-provider";
 import {useCountdown} from '../services/utils'
 import {
   calculateUSDNeeded, calculateTokenOutput,
@@ -21,7 +22,7 @@ export const BuyForm = () => {
     const sectionText = useI18nSection('buyForm')
     const nativeNetwork = useNativeNetwork()
 
-    const walletEth = useWalletETH(nativeNetwork, configs)
+    const walletEth = useWalletERC20()
     const currList = CURRENCIES[nativeNetwork]
     const [selectedCurr, setSelectedCurr] = useState();
   
@@ -41,7 +42,6 @@ export const BuyForm = () => {
   
     // const [network, setNetwork] = useState("")
     // const [networkPrice, setNetworkPrice] = useState(0);
-    const [totalBought, setTotalBought] = useState(0);
   
   
     const { days, hours, minutes, seconds } = useCountdown();
@@ -58,28 +58,6 @@ export const BuyForm = () => {
         return () => clearTimeout(timeoutId);
       }
     }, [isClicked]);
-  
-    useEffect(() => {
-     
-  
-      const loadPurchaseInfo = async () => {
-        if (!walletEth.currentAddress) {
-          return;
-        }
-  
-        try {
-          
-          const info = await getUserPurchaseInfo(configs, walletEth.currentAddress)
-          if (info) {
-            setTotalBought(info)
-          }
-        }
-        catch (err) {
-  
-        }
-      }
-      loadPurchaseInfo()
-    }, [walletEth.currentAddress, configs]); // Empty dependency array ensures this effect runs only once
   
   
     const handleTokenInputChange = (event) => {
@@ -200,8 +178,8 @@ export const BuyForm = () => {
             <p className="total-raised">{sectionText?.funRaised}:  $60,755,475.98 / $70,000,000</p>
             {walletEth.currentAddress && 
               <div>
-                <p className="user-purchased-info">{sectionText.boughtAmount} ${configs?.targetToken?.symbol} = {totalBought}</p>
-                <p className="user-purchased-info">{sectionText.stakeableAmount} ${configs?.targetToken?.symbol} = {totalBought}</p>
+                <p className="user-purchased-info">{sectionText.boughtAmount} ${configs?.targetToken?.symbol} = {walletEth?.formatedBought}</p>
+                <p className="user-purchased-info">{sectionText.stakeableAmount} ${configs?.targetToken?.symbol} =  {walletEth?.formatedBought}</p>
               </div>  
             }
             </div>

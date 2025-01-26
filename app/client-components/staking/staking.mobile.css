@@ -1,0 +1,33 @@
+/* Responsive Styles */
+@media (max-width: 1024px) {
+
+    .staking-heading{
+        width: 100%;
+        font-size: 40px;
+        color: #f0b90b;
+        -webkit-text-stroke: 8px black;
+        font-weight: 500;
+        padding: 5px 30px;
+        font-family: badaboom-bb, sans-serif;
+        paint-order: stroke fill;
+        text-transform: uppercase;
+    }
+
+    .staking-desc{
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        max-width: 100%;
+    }
+
+    .staking-card-list{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
+@media (max-width: 440px) {
+    .staking-card-list{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

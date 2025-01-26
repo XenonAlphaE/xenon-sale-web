@@ -11,9 +11,11 @@ import {
 } from '@rainbow-me/rainbowkit';
 import { useAccount } from 'wagmi'
 import languageOptions from '../../langOptions.json'
-
+import { useWalletERC20 } from '../../erc20wallet-provider';
 
 export const Navbar = () => {
+
+  const walletETH = useWalletERC20()
   const { openAccountModal } = useAccountModal();
   const currAccount = useAccount()
 
@@ -41,22 +43,15 @@ export const Navbar = () => {
   }
 
   const mobileBuyNow = () => {
-    if (!!currAccount.address) {
+    if (!!walletETH.currentAddress) {
       openAccountModal();
     }
     else {
 
-      // Find the target section to scroll to
-      let section = null;
+      // toggleMenu()
+      walletETH.connect()
 
-      section = document.getElementById('intro');
 
-      if (!section) {
-        window.location = `/${currentLanguage}`
-        return
-      }
-      // Scroll to the section
-      section.scrollIntoView({ behavior: 'smooth' });
     }
   }
 
@@ -66,17 +61,7 @@ export const Navbar = () => {
     }
     else {
 
-      // Find the target section to scroll to
-      let section = null;
-
-      section = document.getElementById('intro');
-
-      if (!section) {
-        window.location = `/${currentLanguage}`
-        return
-      }
-      // Scroll to the section
-      section.scrollIntoView({ behavior: 'smooth' });
+      walletETH.connect()
     }
     toggleMenu()
   };
@@ -133,12 +118,12 @@ export const Navbar = () => {
       </div>
 
       <div className={`appnav-navbar-menu`}>
+        <a href="/staking">{sectionText?.staking}</a>
         <a href={`/${currentLanguage}`}>{sectionText?.home}</a>
         <a href="#about">{sectionText?.about}</a>
         <a href="#howtobuy">{sectionText?.howtobuy}</a>
         {/* <a href="#tokenomics">{sectionText?.tokenomics}</a> */}
         <a href="#faqs">{sectionText?.faq}</a>
-        {/* <a href="/white-paper.pdf" target='_blank'>{sectionText?.whitePaper}</a> */}
       </div>
       <div className={`appnav-navbar-right`}>
 
@@ -169,6 +154,7 @@ export const Navbar = () => {
       </div>
 
       {isMobile && <div className={`appnav-navbar-menu-mobile ${isMenuOpen ? 'appnav-is-active' : ''}`}>
+        <a onClick={toggleMenu} href="/staking">{sectionText?.staking}</a>
         <a href={`/${currentLanguage}`}>{sectionText?.home}</a>
         <a href="#about" onClick={toggleMenu}>{sectionText?.about}</a>
         <a href="#howtobuy" onClick={toggleMenu}>{sectionText?.howtobuy}</a>
