@@ -132,7 +132,7 @@ export const Staking = () => {
                             Total Rewards
                         </div>
                         <div>
-                        0 $MIND
+                        0 ${walletETH?.tokenSymbol}
                         </div>
                       
                     </div>

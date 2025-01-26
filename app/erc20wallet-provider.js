@@ -381,6 +381,7 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
             // buyTokens, buyTokensUSDT, approveUSDT_BSC, approveUSDT_ETH,
             currentAddress: currAccount.address, 
             // currentChainId :chainId,
+            tokenSymbol:globalConfigs?.targetToken?.symbol,
             tokenPriceInUsdt: globalConfigs?.targetToken?.tokenPrice,
             maxAmount,
             spenableAmount,
