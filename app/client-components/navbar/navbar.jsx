@@ -43,22 +43,15 @@ export const Navbar = () => {
   }
 
   const mobileBuyNow = () => {
-    if (!!currAccount.address) {
-        walletETH.connect()
+    if (!!walletETH.currentAddress) {
+      openAccountModal();
     }
     else {
 
-      // Find the target section to scroll to
-      let section = null;
+      // toggleMenu()
+      walletETH.connect()
 
-      section = document.getElementById('intro');
 
-      if (!section) {
-        window.location = `/${currentLanguage}`
-        return
-      }
-      // Scroll to the section
-      section.scrollIntoView({ behavior: 'smooth' });
     }
   }
 
