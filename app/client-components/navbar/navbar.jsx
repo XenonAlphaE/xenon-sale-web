@@ -10,6 +10,7 @@ import {
   useChainModal,
 } from '@rainbow-me/rainbowkit';
 import { useAccount } from 'wagmi'
+import { useWalletERC20 } from '../../erc20wallet-provider';
 import languageOptions from '../../langOptions.json'
 
 
@@ -23,7 +24,7 @@ export const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const sectionText = useI18nSection("nav")
-
+  const walletEth = useWalletERC20()
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
@@ -43,23 +44,13 @@ export const Navbar = () => {
 
   const scrollToBuySection = async () => {
     if (!!currAccount.address) {
+      toggleMenu()
       openAccountModal();
     }
     else {
-
-      // Find the target section to scroll to
-      let section = null;
-
-      section = document.getElementById('intro');
-
-      if (!section) {
-        window.location = `/${currentLanguage}`
-        return
-      }
-      // Scroll to the section
-      section.scrollIntoView({ behavior: 'smooth' });
+        toggleMenu()
+        walletEth?.connect()
     }
-    toggleMenu()
   };
 
 
@@ -112,6 +103,7 @@ export const Navbar = () => {
 
       <div className={`appnav-navbar-menu`}>
               
+        <a href="/staking" >STAKING</a>
         <a href={`/${currentLanguage}`} >{sectionText?.home}</a>
         <a href="#about">{sectionText?.about}</a>
         <a href="#howtobuy">{sectionText?.howtobuy}</a>
@@ -153,6 +145,7 @@ export const Navbar = () => {
       {isMobile && <div className={`appnav-navbar-menu-mobile ${isMenuOpen ? 'appnav-is-active' : ''}`}>
       
         {/* <a href="#staking" onClick={toggleMenu}>{sectionText?.staking}</a> */}
+        <a href="/staking" >STAKING</a>
         <a href={`/${currentLanguage}`}>{sectionText?.home}</a>
         <a href="#about" onClick={toggleMenu}>{sectionText?.about}</a>
         <a href="#roadmap" onClick={toggleMenu}>{sectionText?.roadmap}</a>
