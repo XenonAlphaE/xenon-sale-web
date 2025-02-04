@@ -15,7 +15,7 @@ export async function generateMetadata() {
     title: metadata?.title,
     description: metadata?.description,
 
-    keywords: 'FLOCKERZ, $FLOCK, $FLOCK-TOKEN, FLOCKER, FLOCKEZ, floker coin, flockers coin, flokerz coin', // Add keywords here
+    keywords: 'Memex Crypto, MEMEX, MEMEX Presale, MEMEX Coin, MEMEX Token', // Add keywords here
     robots: 'index, follow', // Add robots directives here
     openGraph: {
       title: metadata?.title,

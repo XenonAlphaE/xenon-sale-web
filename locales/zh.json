@@ -1,10 +1,10 @@
 {
     "metadata": {
-        "title": "FLOCKERZ: 革命性的Vote-To-Earn Meme Coin | 加密Presale",
-        "description": "加入$FLOCK，每个Flocker都有发言权。发现Flocktopia，这个开创性的Vote-To-Earn平台，将权力交给社区成员。赚取奖励，塑造未来，成为革命的一部分。",
+        "title": "MEMEX Crypto: 革命性的Vote-To-Earn Meme Coin | 加密Presale",
+        "description": "加入$MEMEX，每个Flocker都有发言权。发现Flocktopia，这个开创性的Vote-To-Earn平台，将权力交给社区成员。赚取奖励，塑造未来，成为革命的一部分。",
         "openGraph": {
-            "title": "FLOCKERZ: 革命性的Vote-To-Earn Meme Coin | 加密Presale",
-            "description": "加入$FLOCK，每个Flocker都有发言权。发现Flocktopia，这个开创性的Vote-To-Earn平台，将权力交给社区成员。赚取奖励，塑造未来，成为革命的一部分。",
+            "title": "MEMEX Crypto: 革命性的Vote-To-Earn Meme Coin | 加密Presale",
+            "description": "加入$MEMEX，每个Flocker都有发言权。发现Flocktopia，这个开创性的Vote-To-Earn平台，将权力交给社区成员。赚取奖励，塑造未来，成为革命的一部分。",
             "url": "https://flockez.com/zh",
             "locale": "zh_ZH"
         }
@@ -24,7 +24,7 @@
         "about": "关于"
     },
     "buyForm": {
-        "intro": "购买$FLOCK Presale",
+        "intro": "购买$MEMEX Presale",
         "day": "天",
         "hrs": "小时",
         "mins": "分钟",
@@ -45,23 +45,23 @@
         "buyStake": "购买并质押以获得8471%的奖励",
         "nextPriceAlert": "直到价格上涨",
         "para1": "1207%的质押奖励",
-        "para2": "$FLOCK：人民的Meme币",
-        "para3": "Flockerz革命性",
+        "para2": "$MEMEX：人民的Meme币",
+        "para3": "MEMEX Crypto革命性",
         "para3_1": "Vote-To-Earn",
         "para3_2": "平台将权力交到你手中。现在就参与Presale，获得巨大的奖励！",
         "note1": "通过投票赚取",
         "note2": "巨大的早期奖励",
         "note3": "你掌握未来",
         "note4": "还有更多...",
-        "buyBtn": "加入$FLOCK！"
+        "buyBtn": "加入$MEMEX！"
     },
     "about": {
         "description1": "去中心化的未来已到来。",
-        "description2": "在混乱的PVP Meme币世界中，每个关键决策由单一领导者做出，FLOCKERZ赋予其社区——‘The Flock’——引导项目走向承诺之地的权力。",
-        "description3": "FLOCKERZ的核心是Flocktopia，一个革命性的DAO。",
+        "description2": "在混乱的PVP Meme币世界中，每个关键决策由单一领导者做出，MEMEX Crypto赋予其社区——‘The Flock’——引导项目走向承诺之地的权力。",
+        "description3": "MEMEX Crypto的核心是Flocktopia，一个革命性的DAO。",
         "description4": "在这里，每个持有者不仅拥有发言权，还通过我们开创性的Vote-To-Earn机制赚取奖励。",
-        "description5": "现在由你来决定$FLOCK的未来。",
-        "buyNow": "立即购买$FLOCK Presale！"
+        "description5": "现在由你来决定$MEMEX的未来。",
+        "buyNow": "立即购买$MEMEX Presale！"
     },
     "roadmap": {
         "heading": "飞行计划.. LET’S FLOCKING GO！",
@@ -72,23 +72,23 @@
         "heading2": "步骤2",
         "heading3": "步骤3",
         "step1_desc1": "鸟巢安全审计：",
-        "step1_desc1_1": "在起飞前通过彻底的审计确保$FLOCK合同的安全。",
+        "step1_desc1_1": "在起飞前通过彻底的审计确保$MEMEX合同的安全。",
         "step1_desc2": "Presale起飞：",
-        "step1_desc2_1": "$FLOCK Presale启动，Flock展翅高飞，标志着我们的升空。",
+        "step1_desc2_1": "$MEMEX Presale启动，Flock展翅高飞，标志着我们的升空。",
         "step1_desc3": "全球Flock鸣叫：",
-        "step1_desc3_1": "发起全球营销活动，召集来自全球各地的Flockerz参与，展开一场强大的飞行。",
+        "step1_desc3_1": "发起全球营销活动，召集来自全球各地的MEMEX Crypto参与，展开一场强大的飞行。",
         "step2_desc1": "Flock扩展：",
-        "step2_desc1_1": "随着消息的传播，更多Flockerz加入，壮大我们的社区。",
+        "step2_desc1_1": "随着消息的传播，更多MEMEX Crypto加入，壮大我们的社区。",
         "step2_desc2": "信号增强：",
-        "step2_desc2_1": "有影响力的声音加强$FLOCK，吸引更大的、热情的Flock。",
+        "step2_desc2_1": "有影响力的声音加强$MEMEX，吸引更大的、热情的Flock。",
         "step2_desc3": "主宰：",
-        "step2_desc3_1": "$FLOCK在以太坊上空占领一切，成为树梢上议论的焦点。",
+        "step2_desc3_1": "$MEMEX在以太坊上空占领一切，成为树梢上议论的焦点。",
         "step3_desc1": "代币上市：",
-        "step3_desc1_1": "漫长的等待结束，Flock成功登陆全球交易平台，$FLOCK正式进入公开交易。",
+        "step3_desc1_1": "漫长的等待结束，Flock成功登陆全球交易平台，$MEMEX正式进入公开交易。",
         "step3_desc2": "王国扩展：",
-        "step3_desc2_1": "Flock团结一致，继续发展$FLOCK社区，席卷加密世界。",
+        "step3_desc2_1": "Flock团结一致，继续发展$MEMEX社区，席卷加密世界。",
         "step3_desc3": "Vote to Earn机制：",
-        "step3_desc3_1": "引入Vote-to-Earn系统，奖励Flockerz的参与和智慧。"
+        "step3_desc3_1": "引入Vote-to-Earn系统，奖励MEMEX Crypto的参与和智慧。"
     },
     "tokenomics": {
         "heading": "FLOCK经济学",
@@ -98,22 +98,22 @@
         "title4": "交易所燃料（10%）",
         "title5": "鸟鸣（20%）",
         "item1": "早鸟先得！20%的代币为在Presale期间购买的用户准备。",
-        "item2": "重重的25%为质押准备。忠诚的鸟儿可以把$FLOCK代币放入并等待它们孵化出丰厚的奖励。",
-        "item3": "25%存放在DAO宝库中。这是$FLOCK的宝藏箱，用于共同分配王国的财富。你投票越多，赚得越多。",
+        "item2": "重重的25%为质押准备。忠诚的鸟儿可以把$MEMEX代币放入并等待它们孵化出丰厚的奖励。",
+        "item3": "25%存放在DAO宝库中。这是$MEMEX的宝藏箱，用于共同分配王国的财富。你投票越多，赚得越多。",
         "item4": "我们保留了10%以保持CEX和DEX交易所的顺利飞行。",
         "item5": "20%用于营销，通过鸣叫、推文等方式广泛传播。",
         "total": "代币总供应量"
     },
     "faqs": {
         "heading": "Flockers们，怎么了？",
-        "title1": "$FLOCK是什么？",
+        "title1": "$MEMEX是什么？",
         "title2": "我可以在Presale期间赚取奖励吗？",
-        "title3": "Flockerz有什么独特之处？",
+        "title3": "MEMEX Crypto有什么独特之处？",
         "title4": "如何购买Presale？",
-        "desc1": "Flockerz ($FLOCK) 正在打破去中心化的新天地。它是首个Vote To Earn Meme币，您拥有控制项目命运的权力，并通过您的投票获得奖励。持币者掌控一切，投票决定与项目未来成功和社区成长相关的所有新提案。这意味着没有单一的领导者，只有一群志同道合的人共同努力使$FLOCK变得伟大，并因他们的参与而获得丰厚的奖励。",
-        "desc2": "是的！Flockerz presale ($FLOCK) 旨在让项目的早期参与者通过简单地购买并在presale期间质押他们的代币来赚取大量奖励。凭借慷慨的年化收益率（APY）和为期2年的质押期，Presale的质押者可以坐享被动奖励，同时利用他们的投票权进行Vote To Earn！",
-        "desc3": "以前从未有过一个Meme币社区掌控所有与项目相关的重大决策。而且，绝没有任何Meme币DAO像Flockerz一样通过区块链奖励社区成员投票。Flockerz ($FLOCK)的持有者正在开辟这个领域的新道路。",
-        "desc4": "要购买Flockerz presale ($FLOCK)，请查看上方方便的购买指南！获取一个钱包（如Best Wallet），获得一些加密货币（或者用卡支付），选择您想购买的数量，然后起飞！我们的插件由Web3Payments提供支持，确保您的购买通过Web3Toolkit技术安全完成。",
+        "desc1": "MEMEX Crypto ($MEMEX) 正在打破去中心化的新天地。它是首个Vote To Earn Meme币，您拥有控制项目命运的权力，并通过您的投票获得奖励。持币者掌控一切，投票决定与项目未来成功和社区成长相关的所有新提案。这意味着没有单一的领导者，只有一群志同道合的人共同努力使$MEMEX变得伟大，并因他们的参与而获得丰厚的奖励。",
+        "desc2": "是的！MEMEX Crypto presale ($MEMEX) 旨在让项目的早期参与者通过简单地购买并在presale期间质押他们的代币来赚取大量奖励。凭借慷慨的年化收益率（APY）和为期2年的质押期，Presale的质押者可以坐享被动奖励，同时利用他们的投票权进行Vote To Earn！",
+        "desc3": "以前从未有过一个Meme币社区掌控所有与项目相关的重大决策。而且，绝没有任何Meme币DAO像MEMEX Crypto一样通过区块链奖励社区成员投票。MEMEX Crypto ($MEMEX)的持有者正在开辟这个领域的新道路。",
+        "desc4": "要购买MEMEX Crypto presale ($MEMEX)，请查看上方方便的购买指南！获取一个钱包（如Best Wallet），获得一些加密货币（或者用卡支付），选择您想购买的数量，然后起飞！我们的插件由Web3Payments提供支持，确保您的购买通过Web3Toolkit技术安全完成。",
         "buynow": "立即购买并质押，获取1048%的奖励！"
     },
     "footer": {
