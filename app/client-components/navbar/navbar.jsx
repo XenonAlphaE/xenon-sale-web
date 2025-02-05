@@ -11,20 +11,23 @@ import {
 } from '@rainbow-me/rainbowkit';
 import { useAccount } from 'wagmi'
 import { useWalletERC20 } from '../../erc20wallet-provider';
+import { useAuth } from '../../../redux/utils/authUtils';
 import languageOptions from '../../langOptions.json'
 
 
 export const Navbar = () => {
   const { openAccountModal } = useAccountModal();
   const currAccount = useAccount()
-
+  
   const currentLanguage = useLanguage()
-
+  
   // const currentAddress = useCurrentAddress()
   const [isMobile, setIsMobile] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const sectionText = useI18nSection("nav")
   const walletEth = useWalletERC20()
+  
+  const ethAuth = useAuth(walletEth)
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
@@ -79,7 +82,9 @@ export const Navbar = () => {
   }, []);
 
 
-
+  const handleLogin = async() => {
+      await ethAuth.loginWithWallet()
+  }
 
 
 
@@ -116,7 +121,7 @@ export const Navbar = () => {
 
         <div className="appnav-lang-login-container">
     
-          <button onClick={scrollToBuySection} className="appnav-login">{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button>
+          <button onClick={handleLogin} className="appnav-login">{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button>
           <div className='appnav-social'>
             <a  href="https://t.me/memecoin_index"  target='_blank' ><img src='/img/flockers/telelogo.svg' /></a>
             <a  href="https://x.com/memecoin_index" target='_blank' ><div ><img  src='/img/flockers/xlogo.svg' /></div></a>
@@ -175,7 +180,7 @@ export const Navbar = () => {
             ))}
           </div>
         </div>
-        <button onClick={scrollToBuySection} className="appnav-login">{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button>
+        <button onClick={handleLogin} className="appnav-login">{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button>
 
       </div>
       }

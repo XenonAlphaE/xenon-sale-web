@@ -35,7 +35,9 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      <Header/>
+
+      <button>Login</button>
+      {/* <Header/> */}
       {/* <About /> */}
       {/* <Roadmap /> */}
       {/* <Tokenomics /> */}

@@ -5,7 +5,7 @@ import {
     useAccountModal,
     useChainModal,
 } from '@rainbow-me/rainbowkit';
-import { useAccount, useChainId, useWriteContract, useBalance, useSwitchChain } from 'wagmi'
+import { useAccount, useChainId, useWriteContract, useBalance, useSwitchChain, useSignMessage } from 'wagmi'
 
 import { ethers,parseEther,Network, parseUnits,formatUnits } from 'ethers';
 import { useNativeNetwork, useSetCurrentAddress, useSetNativeNetwork } from '../redux/utils/nativeNetworkUtils';
@@ -22,6 +22,8 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
     const { openConnectModal } = useConnectModal();
     const { openChainModal } = useChainModal();
     const { writeContractAsync } = useWriteContract()
+    const { signMessageAsync } = useSignMessage();
+
     const nativeNetwork = useNativeNetwork()
     const currAccount = useAccount()
     const [maxAmount, setMaxAmount] = useState(0)
@@ -376,6 +378,18 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
     
     
         }
+
+        const signNonce = async (nonce) => {
+            try {
+                if (!nonce) {
+                    return ""
+                }
+                const signedMessage = await signMessageAsync({ message: nonce });
+                return signedMessage;
+            } catch (error) {
+                console.error('Signing error:', error);
+            }
+        }
     
         return {
             // buyTokens, buyTokensUSDT, approveUSDT_BSC, approveUSDT_ETH,
@@ -397,6 +411,7 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
             buyTokensUSDTWifRef,
             claimTokens: claimETHTokens,
             wasAddedToken, 
+            signNonce,
             stakeToken: stakeETHTokens
         }
   }, [
