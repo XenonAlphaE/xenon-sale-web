@@ -27,7 +27,7 @@ export const Navbar = () => {
   const sectionText = useI18nSection("nav")
   const walletEth = useWalletERC20()
   
-  const ethAuth = useAuth(walletEth)
+  const {profile, isLoading} = useAuth(walletEth)
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
@@ -83,7 +83,12 @@ export const Navbar = () => {
 
 
   const handleLogin = async() => {
-      await ethAuth.loginWithWallet()
+        if (walletEth?.currentAddress) {
+            openAccountModal();
+        }
+        else{
+            walletEth?.connect()
+        }
   }
 
 
@@ -120,7 +125,7 @@ export const Navbar = () => {
       <div className={`appnav-navbar-right`}>
 
         <div className="appnav-lang-login-container">
-    
+          {profile?.name}
           <button onClick={handleLogin} className="appnav-login">{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button>
           <div className='appnav-social'>
             <a  href="https://t.me/memecoin_index"  target='_blank' ><img src='/img/flockers/telelogo.svg' /></a>

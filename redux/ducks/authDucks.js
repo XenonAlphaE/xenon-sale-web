@@ -2,15 +2,14 @@ import { createAction, createActionTypes } from "./commons";
 
 // 📌 Action Types
 const LOGIN = createActionTypes('auth/LOGIN');
-const NONCE = createActionTypes('auth/NONCE');
+const PROFILE = createActionTypes('auth/PROFILE');
 
 const LOGOUT = 'auth/LOGOUT';
 
 // 📌 Initial State
 const initialState = {
-    user: null,
-    nonce: null,
-    token: localStorage.getItem('token') || null,
+    profile: null,
+    token: null,
     loading: false,
     error: null,
 };
@@ -24,9 +23,9 @@ export const loginSuccess = (token, refreshToken) => {
 };
 export const loginFailure = (error) => createAction(LOGIN.FAILURE, error);
 
-export const nonceRequest = () => createAction(NONCE.REQUEST);
-export const nonceSuccess = (nonce) => createAction(NONCE.SUCCESS, { nonce });
-export const nonceFailure = (error) => createAction(NONCE.FAILURE, error);
+export const profileRequest = () => createAction(PROFILE.REQUEST);
+export const profileSuccess = (profile) => createAction(PROFILE.SUCCESS, { profile });
+export const profileFailure = (error) => createAction(PROFILE.FAILURE, error);
 
 
 
@@ -44,7 +43,7 @@ export const selectAuthState = (state) => state.auth;
 const authReducer = (state = initialState, action) => {
     const handlers = {
         [LOGIN.REQUEST]: (state) => ({ ...state, loading: true, error: null }),
-        [NONCE.REQUEST]: (state) => ({ ...state, loading: true, error: null }),
+        [PROFILE.REQUEST]: (state) => ({ ...state, loading: true, error: null }),
 
         [LOGIN.SUCCESS]: (state, action) => ({
             ...state,
@@ -52,9 +51,9 @@ const authReducer = (state = initialState, action) => {
             loading: false,
         }),
 
-        [NONCE.SUCCESS]: (state, action) => ({
+        [PROFILE.SUCCESS]: (state, action) => ({
             ...state,
-            nonce: action.payload.nonce,
+            profile: action.payload.profile,
             loading: false,
         }),
 
@@ -63,16 +62,17 @@ const authReducer = (state = initialState, action) => {
             error: action.payload,
             loading: false,
         }),
-
-        [NONCE.FAILURE]: (state, action) => ({
+        [PROFILE.FAILURE]: (state, action) => ({
             ...state,
             error: action.payload,
             loading: false,
         }),
 
+
         [LOGOUT]: () => ({
             ...initialState,
             token: null, // Ensure token is removed on logout
+            profile: null
         }),
     };
 
