@@ -15,7 +15,7 @@ import { Footer } from "../footer/footer";
 import { FAQ } from "../faq/faq";
 // import { useParams } from "react-router-dom";
 import { useSetLanguage } from "../../../redux/utils/languageUtils";
-
+import { NewCoinForm } from "../newcoin/newcoin";
 // export const scroll = new SmoothScroll('a[href*="#"]', {
 //   speed: 1000,
 //   speedAsDuration: true,
@@ -35,7 +35,7 @@ const App = () => {
   return (
     <div>
       <Navbar />
-
+      <NewCoinForm/>
       <button>Login</button>
       {/* <Header/> */}
       {/* <About /> */}
