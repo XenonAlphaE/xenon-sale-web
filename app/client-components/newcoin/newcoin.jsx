@@ -1,6 +1,10 @@
 import { useState } from "react";
+import { useCreateToken, useListCoin } from "../../../redux/utils/coinUtils";
 
 export const NewCoinForm = () => {
+    const createNewCoin = useCreateToken()
+    const {loading} = useListCoin()
+
     const [formData, setFormData] = useState({
         name: "",
         symbol:"",
@@ -9,7 +13,6 @@ export const NewCoinForm = () => {
     });
     const [avatar, setAvatar] = useState(null);
     const [avatarPreview, setAvatarPreview] = useState(null);
-    const [loading, setLoading] = useState(false);
     const [message, setMessage] = useState("");
 
     // Handle input change
@@ -40,24 +43,9 @@ export const NewCoinForm = () => {
         form.append("symbol", formData.symbol);
         if (avatar) form.append("avatar", avatar);
 
-        setLoading(true);
         setMessage("");
 
-        try {
-            const response = await fetch("http://localhost:3000/api/tokens", {
-                method: "POST",
-                body: form,
-            });
-
-            const data = await response.json();
-            if (!response.ok) throw new Error(data.error || "Something went wrong!");
-
-            setMessage("Profile updated successfully!");
-        } catch (error) {
-            setMessage(error.message);
-        } finally {
-            setLoading(false);
-        }
+        createNewCoin(form);
     };
 
     return (

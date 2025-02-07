@@ -5,9 +5,9 @@ import API from "./api";
 // 📌 Thunk for Logging In
 export const getNonce = async (address) => {
     try {
-        debugger
+        
         const response = await API.post("/api/auth/nonce", {address});
-        debugger
+        
         return response
 
        
@@ -45,7 +45,7 @@ export const fetchUser = () => async (dispatch) => {
 
     try {
         const response = await API.get("/api/auth/profile");
-        debugger
+        
         const data = await response.data;
         
         dispatch(profileSuccess(data)); // Store user & token
