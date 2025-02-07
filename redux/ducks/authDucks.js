@@ -4,7 +4,7 @@ import { createAction, createActionTypes } from "./commons";
 const LOGIN = createActionTypes('auth/LOGIN');
 const PROFILE = createActionTypes('auth/PROFILE');
 
-const LOGOUT = 'auth/LOGOUT';
+export const LOGOUT = 'auth/LOGOUT';
 
 // 📌 Initial State
 const initialState = {
@@ -68,12 +68,6 @@ const authReducer = (state = initialState, action) => {
             loading: false,
         }),
 
-
-        [LOGOUT]: () => ({
-            ...initialState,
-            token: null, // Ensure token is removed on logout
-            profile: null
-        }),
     };
 
 
