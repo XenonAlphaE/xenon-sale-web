@@ -14,7 +14,7 @@ export const createToken = (formData) => async (dispatch) => {
               'Content-Type': 'multipart/form-data',
             },
         });
-        debugger
+        
         dispatch(createSuccess(response.data));
     } catch (error) {
         dispatch(createFailure(error.message));

@@ -4,15 +4,17 @@ import {
     useConnectModal,
     useAccountModal,
     useChainModal,
-} from '@rainbow-me/rainbowkit';
-import { useAccount, useChainId, useWriteContract, useBalance, useSwitchChain, useSignMessage } from 'wagmi'
 
+} from '@rainbow-me/rainbowkit';
+import { useAccount, useChainId, useWriteContract, useBalance, useSwitchChain, useSignMessage, useConfig} from 'wagmi'
+import {readContract } from '@wagmi/core'
 import { ethers,parseEther,Network, parseUnits,formatUnits } from 'ethers';
 import { useNativeNetwork, useSetCurrentAddress, useSetNativeNetwork } from '../redux/utils/nativeNetworkUtils';
 import { NETWORK_OTIONS, VALID_NETWORKS } from '../redux/ducks/nativeNetworkDuck';
 import { toWei, isValidNumber  } from './client-components/services/wallet-service';
 import {getUserPurchaseInfo} from '../app/client-components/services/token-service'
 import { formatTokenNumber } from "./client-components/services/utils";
+import { zeroAddress } from "viem";
 
 // Create a context for the wallet
 const Erc20WalletContext = createContext();
@@ -23,7 +25,7 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
     const { openChainModal } = useChainModal();
     const { writeContractAsync } = useWriteContract()
     const { signMessageAsync } = useSignMessage();
-
+    const wagmiConfig  = useConfig()
     const nativeNetwork = useNativeNetwork()
     const currAccount = useAccount()
     const [maxAmount, setMaxAmount] = useState(0)
@@ -187,18 +189,19 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
                         return
                     }
                     const wei = toWei(amount)
-                    
+
                     const tx = await writeContractAsync({
                         abi: salerInfo.abi,
                         address: salerInfo.address,
-                        functionName:"buyTokensWifRef",
+                        functionName:"buyTokens",
                         value: wei,
-                        args:[globalConfigs?.targetToken?.symbol, ref ? ref : ""]
+                        args:[globalConfigs?.targetToken?.symbol, false, zeroAddress, 0 , 0 , zeroAddress]
                     })
                     
                     // const tx = await salerContract.connect(signer).buyTokensWifRef(globalConfigs?.targetToken?.symbol,ref ? ref : "", {value: wei})
                     // await tx.wait();
                     console.log("Tokens bought successfully." + tx);
+                    
                 }
                 // window.location.reload();
             }
@@ -218,30 +221,38 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
                     if(!salerInfo){
                         return
                     }
-                    
                     const usdtAmount = parseUnits(amount, usdtDecimals); // Set the allowance amount (1000 USDT in this case)
-    
-                    const approvalTx = await writeContractAsync({
+                    // 1. Check current allowance
+                    const currentAllowance = await readContract(wagmiConfig, {
                         abi: usdtAbi,
                         address: usdtAddress,
-                        functionName:"approve",
-                        args:[salerInfo.address, usdtAmount]
-                    })
-    
-    
-                    // await approvalTx.wait();
-                    console.log("New allowance set successfully!" + approvalTx);
-                    const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
-    
-                    await delay(3000);
+                        functionName: 'allowance',
+                        args: [currAccount.address, salerInfo.address]
+                    });
+                    
+                    if(currentAllowance< usdtAmount) { // Use lt (less than) for comparison of BigNumbers
+                        const approvalTx = await writeContractAsync({
+                            abi: usdtAbi,
+                            address: usdtAddress,
+                            functionName:"approve",
+                            args:[salerInfo.address, usdtAmount]
+                        })
+                        
+        
+                        // await approvalTx.wait();
+                        console.log("New allowance set successfully!" + approvalTx);
+                        const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+                        
+                        await delay(3000);
+                    }
     
                     
                     // const tx = await salerContract.connect(signer).buyTokensByUsdtWifRef(usdtAmount, globalConfigs?.targetToken?.symbol, ref ? ref:"");
                     const tx = await writeContractAsync({
                         abi: salerInfo.abi,
                         address: salerInfo.address,
-                        functionName:"buyTokensByUsdtWifRef",
-                        args:[usdtAmount, globalConfigs?.targetToken?.symbol, ref ? ref:""]
+                        functionName:"buyWithUSDT",
+                        args:[usdtAmount, globalConfigs?.targetToken?.symbol, false, zeroAddress, 0 , 0 , zeroAddress]
                     })
                     // await tx.wait();
                     console.log("Buy Tokens successfully!" + tx);
@@ -251,7 +262,7 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
                 }
             }
             catch(error){
-                console.error("Error during buying:", error.message);
+                // console.error("Error during buying:", error.message);
             }
         }
        

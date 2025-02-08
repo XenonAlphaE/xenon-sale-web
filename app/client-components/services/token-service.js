@@ -11,7 +11,13 @@ import { getRandomItemFromArray } from './utils';
     if(!globalConfigs || !address){
         return
     }
+    const tokenKey = Web3.utils.soliditySha3("Token", globalConfigs?.targetToken?.symbol);
+    console.log("tokenKey" , tokenKey)
+
+
     const key = Web3.utils.soliditySha3(address, globalConfigs?.targetToken?.symbol);
+    console.log("userKey", key)
+
     const decimal0 = new Decimal(parseInt(key.slice(-5), 16))
     const getPurchasInfoBSC =  async (key) => {
         const provider = new Web3.providers.HttpProvider(getRandomItemFromArray(globalConfigs.BSC?.RPC_APIs) || '');
@@ -21,10 +27,7 @@ import { getRandomItemFromArray } from './utils';
             salerInfo.abi,
             salerInfo.address
         )    
-        
-        
         const tokenInfo = await contract.methods.buyerPurchases(key).call();
-        
         return tokenInfo
     }
 
@@ -36,8 +39,6 @@ import { getRandomItemFromArray } from './utils';
             salerInfo.abi,
             salerInfo.address
         )    
-        
-        
         const tokenInfo = await contract.methods.buyerPurchases(key).call();
         
         return tokenInfo
@@ -113,7 +114,7 @@ export const getUserClaimInfo =  async (globalConfigs, address) => {
         return
     }
     const key = Web3.utils.soliditySha3(address, globalConfigs?.targetToken?.tokenSymbol);
-  
+    console.log("userKey", key)
     const getClaimInfoETH =  async (key) => {
         const provider = new Web3.providers.HttpProvider( getRandomItemFromArray(globalConfigs.ETH?.RPC_APIs) || '');
         const web3Instance = new Web3(provider);

@@ -36,9 +36,9 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      <NewCoinForm/>
-      <ListCoin/>
-      {/* <Header/> */}
+      {/* <NewCoinForm/>
+      <ListCoin/> */}
+      <Header/>
       {/* <About /> */}
       {/* <Roadmap /> */}
       {/* <Tokenomics /> */}

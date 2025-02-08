@@ -12,11 +12,12 @@ import {
   calculateUSDNeeded, calculateTokenOutput,
   calculateTokensForBNB, calculateBNBNeeded, isValidNumber, truncateMiddle
 } from '../services/wallet-service';
-import { useTokenInfo, getUserPurchaseInfo } from '../services/token-service';
+import { getUserPurchaseInfo } from '../services/token-service';
 import {CurrencyDropdown} from "../currency-dropdown/CurrencyDropdown";
 import configs from '../config.main.json'
 import './header.css'
 import './header.mobile.css'
+import { useWalletERC20 } from "../../erc20wallet-provider";
 
 export const Header = () => {
   const sectionText = useI18nSection('buyForm')
@@ -24,7 +25,7 @@ export const Header = () => {
 
   const nativeNetwork = useNativeNetwork()
 
-  const walletEth = useWalletETH(nativeNetwork, configs)
+  const walletEth = useWalletERC20()
   const currList = CURRENCIES[nativeNetwork]
   const [selectedCurr, setSelectedCurr] = useState();
 
@@ -32,7 +33,6 @@ export const Header = () => {
   const [bnbPrice, setBnbPrice] = useState(0);
   const [ethPrice, setEthPrice] = useState(0);
 
-  const tokenInfo = useTokenInfo(configs)
   const scrollToBuySection = () => {
     // Find the target section to scroll to
     let section = null;
@@ -146,10 +146,10 @@ export const Header = () => {
     if (/^\d*\.?\d*$/.test(value) && isValidNumber(value)) {
         setTokenInput(value);
         if (selectedCurr.curr === CURR_CODE.BNB || selectedCurr.curr === CURR_CODE.ETH) {
-          setCurrencyInput(calculateBNBNeeded(value, selectedCurr.curr === CURR_CODE.BNB ? bnbPrice : ethPrice , tokenInfo?.tokenPriceInUsdt))
+          setCurrencyInput(calculateBNBNeeded(value, selectedCurr.curr === CURR_CODE.BNB ? bnbPrice : ethPrice , walletEth?.tokenPriceInUsdt))
         }
         else {
-          setCurrencyInput(calculateUSDNeeded(value, tokenInfo?.tokenPriceInUsdt))
+          setCurrencyInput(calculateUSDNeeded(value, walletEth?.tokenPriceInUsdt))
         }
     }
   };
@@ -164,17 +164,17 @@ export const Header = () => {
       setCurrencyInput(value)
       return
     }
-    if (!tokenInfo?.tokenPriceInUsdt) {
+    if (!walletEth?.tokenPriceInUsdt) {
       return
     }
     // Regular expression to allow only numeric and float values
     if (/^[0-9]*[.]?[0-9]*$/.test(value) && isValidNumber(value)) {
       setCurrencyInput(value);
       if (selectedCurr.curr === CURR_CODE.BNB || selectedCurr.curr === CURR_CODE.ETH) {
-        setTokenInput(calculateTokensForBNB(value, selectedCurr.curr === CURR_CODE.BNB ? bnbPrice : ethPrice , tokenInfo?.tokenPriceInUsdt))
+        setTokenInput(calculateTokensForBNB(value, selectedCurr.curr === CURR_CODE.BNB ? bnbPrice : ethPrice , walletEth?.tokenPriceInUsdt))
       }
       else {
-        setTokenInput(calculateTokenOutput(value, tokenInfo?.tokenPriceInUsdt))
+        setTokenInput(calculateTokenOutput(value, walletEth?.tokenPriceInUsdt))
       }
     }
   };
