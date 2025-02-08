@@ -1,0 +1,456 @@
+.walletBox-container{
+    display: flex;
+    flex-direction: column;
+}
+.walletBox-bottom{
+    background: url(/img/solx/widget-bottom.png) no-repeat 0 0;
+    background-size: 100% 100%;
+    height: 50px;
+    position: relative;
+    margin: 10px 10px 10px 10px;
+    margin-top: -5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 32px;
+}
+
+.walletBox-bottom .white-paper{
+    text-transform: uppercase;
+    font-size: x-large;
+    color: rgb(37, 224, 122);
+    text-align: left;
+    font-weight: 800;
+    text-decoration-color: rgb(37, 224, 122);
+    text-decoration-line: underline;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.walletBox {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    min-height: 460px;
+    width: 100%;
+    max-width: 500px;
+    padding: 18px 25px 0;
+    margin: 0 auto 10px;
+    border-radius: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    background: url(/img/solx/widget-top.png) no-repeat 0 0 / 100%, url(/img/solx/widget-middle.png) repeat 0 0 / 100%;
+    box-shadow: 50px -164px 40px #785a5414, -80px 250px 32px #785a540a;
+    backdrop-filter: blur(10px);
+    margin-bottom: 0px;
+}
+
+.walletBox-info {
+  width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.walletBox-heading {
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    width: 60%;
+    box-sizing: border-box;
+    color: white;
+    display: block;
+    font-family: badaboom-bb, sans-serif;
+    font-size :2em;
+    font-weight :900;
+    text-align: center;
+    text-size-adjust: 100%;
+    transform :none;
+    unicode-bidi :isolate;
+    background: linear-gradient(180deg, #04ccef, #8673fb);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.counter-wrapper{
+    color: rgb(90, 0, 92);
+    text-align: center;
+    border: none;
+    border-radius: 12px;
+    background-color: white;
+    font-size: large;
+    font-weight: 800;
+    width: 100%;
+  }
+  
+  .counter-container {
+    width: 100%;
+      align-items: center;
+      padding: 5px 0 8px;
+      /* border-radius: 4px; */
+      background: linear-gradient(#454545f0, #333335c4), url(/img/solx/snow-bg.gif) no-repeat 0 0 / 800px;
+
+
+
+
+
+      border: none;
+      box-sizing: border-box;
+      color: white;
+      column-gap: 8px;
+      display: flex;
+      font-family: Poppins, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      height: 60px;
+      justify-content: center;
+      letter-spacing: 1px;
+      line-height: 27.2px;
+      padding-bottom: 10px;
+      padding-left: 12px;
+      padding-right: 12px;
+      padding-top: 10px;
+      text-align: center;
+      text-size-adjust: 100%;
+      unicode-bidi: isolate;
+      border-radius: 4px 4px 0 0 ;
+
+}
+
+  
+.time-card {
+    min-width: 60px;
+    width: 20%;
+    padding: 8px 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    font-family: Sausages, sans-serif;
+    padding: 10px 7px;
+    border: none;
+    border-radius: 8px;
+
+
+}
+
+.time-card .indicator{
+  font-size: 1em;
+  font-weight: 400;
+
+}
+
+.time-card .value {
+    font-weight: 400;
+    font-size: 1.3em;
+
+}
+
+.counter-desc{
+    color: #fff;
+    background: linear-gradient(#03cdeff0, #8077fbc4), url(/img/solx/snow-bg.gif) no-repeat 0 0 / 800px;
+    border-radius: 0 0 4px 4px;
+    text-transform: uppercase;
+}
+
+.total-raised{
+  box-sizing: border-box;
+  color: white;
+  display: block;
+  font-family: HeyComic, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  margin-block-end: 8px;
+  margin-block-start: 8px;
+  margin-bottom: 8px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  margin-top: 8px;
+  text-align: center;
+  text-size-adjust: 100%;
+  unicode-bidi: isolate;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-transform: uppercase;
+}
+.user-purchased-info{
+    align-items: center;
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    justify-content: center;
+    letter-spacing: 1px;
+    line-height: 21.09px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    text-align: center;
+    text-size-adjust: 100%;
+    unicode-bidi: isolate;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.dashTitle{
+    position: relative;
+    text-align: center;
+    text-size-adjust: 100%;
+    font-size: 14px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+.dashTitle:before, .dashTitle:after {
+    content: "";
+    width: 24%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    left: 0;
+    top: 50%;
+  }
+  
+.dashTitle:after {
+    right: 0;
+    left: auto;
+}
+
+.swapArea{
+    width: 100%;
+}
+
+.currencies-list{
+    width: 100%;
+    column-gap: 16px;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+}
+  
+
+.currencies-list .btn {
+    width: 100%;
+    height: 50px;
+    padding: 6px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    border: 2px solid #FFFFFF!important;
+    color: 1px solid #333333;
+    background: transparent;
+    font-family: Roboto,sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content :center;
+    column-gap: 8px;
+    background: transparent;
+    font-size: large;
+}
+
+.currencies-list .btn.selected{
+    background-color: white;
+    color:black;
+    border-radius: 4px;
+    border: 2px solid black!important;
+    font-weight: 900;
+    box-shadow: 0 0 0 2px #a8a8a8;
+}
+
+
+.swapSection{
+    width: 100%;
+    margin-top: 8px;
+    display: flex;
+    /* column-gap: 16px; */
+
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+
+.swapSection .input-container{
+    flex: 0 0 48%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-lable{
+    margin-bottom: 8px;
+}
+
+.input-amount{
+    position: relative;
+}
+
+.input-control-custom {
+    min-height: 50px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    /* background-color: #fff; */
+    /* border: 1px solid #878787; */
+    color: #6a6a6a;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 4px;
+    color: white;
+    outline:none;
+}
+
+.input-control-custom::placeholder {
+    color: white;
+}
+
+.amountType {
+    position: absolute;
+    top: 25px;
+    right: 12px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+  }
+
+.action-buttons{
+    margin-top: 24px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+.action-buttons .connect-btn{
+  border: none;
+  align-items: center;
+  background: linear-gradient(180deg, #e9ed00, #acdd25 48%, #08d745), url(/img/solx/snow-bg.gif) no-repeat 0 0 / 800px;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  display: flex;
+  font-family: Sausages, sans-serif;
+  font-feature-settings: normal;
+  font-kerning: auto;
+  font-optical-sizing: auto;
+  font-size: 20px;
+  font-size-adjust: none;
+  font-stretch: 100%;
+  font-style: normal;
+  font-variant-alternates: normal;
+  font-variant-caps: normal;
+  font-variant-east-asian: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  font-variant-position: normal;
+  font-variation-settings: normal;
+  font-weight: 400;
+  height: 60px;
+  justify-content: center;
+  letter-spacing: 0.5px;
+  line-height: 21.4286px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  min-height: 45px;
+  min-width: 100px;
+  overflow-x: visible;
+  overflow-y: visible;
+  padding-block-end: 10px;
+  padding-block-start: 10px;
+  padding-bottom: 10px;
+  padding-inline-end: 10px;
+  padding-inline-start: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  text-align: center;
+  text-indent: 0px;
+  text-rendering: auto;
+  text-shadow: none;
+  text-size-adjust: 100%;
+  text-transform: none;
+  width: 100%;
+  word-spacing: 0px;
+  border-radius: 4px;
+  border: solid 2px rgb(255, 255, 255);
+}
+
+.action-buttons .connect-btn:hover{
+    background: linear-gradient(#8077fbc4, #03cdeff0), url(/img/solx/snow-bg.gif) no-repeat 0 0 / 800px;
+}
+
+.action-buttons .buy-btn{
+    border: none;
+    align-items: center;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    display: flex;
+    font-family: Sausages, sans-serif;
+    font-feature-settings: normal;
+    font-kerning: auto;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    font-size-adjust: none;
+    font-stretch: 100%;
+    font-style: normal;
+    font-variant-alternates: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-variant-position: normal;
+    font-variation-settings: normal;
+    font-weight: 400;
+    height: 60px;
+    justify-content: center;
+    letter-spacing: 0.5px;
+    line-height: 21.4286px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    min-height: 45px;
+    min-width: 100px;
+    overflow-x: visible;
+    overflow-y: visible;
+    padding-block-end: 10px;
+    padding-block-start: 10px;
+    padding-bottom: 10px;
+    padding-inline-end: 10px;
+    padding-inline-start: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    text-align: center;
+    text-indent: 0px;
+    text-rendering: auto;
+    text-shadow: none;
+    text-size-adjust: 100%;
+    text-transform: none;
+    width: 100%;
+    word-spacing: 0px;
+    border-radius: 4px;
+    background: linear-gradient(180deg, #e9ed00, #acdd25 48%, #08d745), url(/img/solx/snow-bg.gif) no-repeat 0 0 / 800px;
+    box-sizing: border-box;  
+    border: solid 2px rgb(255, 255, 255);
+  
+  }
+  
+.action-buttons .buy-btn:hover{
+    background: linear-gradient(#8077fbc4, #03cdeff0), url(/img/solx/snow-bg.gif) no-repeat 0 0 / 800px;
+
+}
+
+.external-info{
+    margin: 8px;
+    padding-top: 8px;
+    color:white;
+    text-align: center;
+}
+
+
