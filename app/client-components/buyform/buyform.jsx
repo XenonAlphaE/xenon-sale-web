@@ -12,7 +12,6 @@ import {
   calculateUSDNeeded, calculateTokenOutput,
   calculateTokensForBNB, calculateBNBNeeded, isValidNumber, truncateMiddle
 } from '../services/wallet-service';
-import { useTokenInfo, getUserPurchaseInfo } from '../services/token-service';
 import {CurrencyDropdown} from "../currency-dropdown/CurrencyDropdown";
 import configs from '../config.main.json'
 import './buyform.css'
@@ -24,11 +23,6 @@ export const BuyForm = () => {
     const walletEth = useWalletERC20()
     const currList = CURRENCIES[nativeNetwork]
     const [selectedCurr, setSelectedCurr] = useState();
-  
-  
-
-    const tokenInfo = useTokenInfo(configs)
-    
   
     useEffect(()=>{
         setSelectedCurr(currList[0])
@@ -65,17 +59,17 @@ export const BuyForm = () => {
         setCurrencyInput("")
         return
       }
-      if (!tokenInfo?.tokenPriceInUsdt) {
+      if (!walletEth?.tokenPriceInUsdt) {
         return
       }
       // Regular expression to allow only numeric and float values
       if (/^\d*\.?\d*$/.test(value) && isValidNumber(value)) {
           setTokenInput(value);
           if (selectedCurr.curr === CURR_CODE.BNB || selectedCurr.curr === CURR_CODE.ETH) {
-            setCurrencyInput(calculateBNBNeeded(value, selectedCurr.curr === CURR_CODE.BNB ? walletEth?.bnbPrice : walletEth?.ethPrice , tokenInfo?.tokenPriceInUsdt))
+            setCurrencyInput(calculateBNBNeeded(value, selectedCurr.curr === CURR_CODE.BNB ? walletEth?.bnbPrice : walletEth?.ethPrice , walletEth?.tokenPriceInUsdt))
           }
           else {
-            setCurrencyInput(calculateUSDNeeded(value, tokenInfo?.tokenPriceInUsdt))
+            setCurrencyInput(calculateUSDNeeded(value, walletEth?.tokenPriceInUsdt))
           }
       }
     };
@@ -90,17 +84,17 @@ export const BuyForm = () => {
         setCurrencyInput(value)
         return
       }
-      if (!tokenInfo?.tokenPriceInUsdt) {
+      if (!walletEth?.tokenPriceInUsdt) {
         return
       }
       // Regular expression to allow only numeric and float values
       if (/^[0-9]*[.]?[0-9]*$/.test(value) && isValidNumber(value)) {
         setCurrencyInput(value);
         if (selectedCurr.curr === CURR_CODE.BNB || selectedCurr.curr === CURR_CODE.ETH) {
-          setTokenInput(calculateTokensForBNB(value, selectedCurr.curr === CURR_CODE.BNB ? walletEth?.bnbPrice : walletEth?.ethPrice , tokenInfo?.tokenPriceInUsdt))
+          setTokenInput(calculateTokensForBNB(value, selectedCurr.curr === CURR_CODE.BNB ? walletEth?.bnbPrice : walletEth?.ethPrice , walletEth?.tokenPriceInUsdt))
         }
         else {
-          setTokenInput(calculateTokenOutput(value, tokenInfo?.tokenPriceInUsdt))
+          setTokenInput(calculateTokenOutput(value, walletEth?.tokenPriceInUsdt))
         }
       }
     };
@@ -173,12 +167,10 @@ export const BuyForm = () => {
                       <div id="seconds" className="value  ">{seconds}</div>
                     </div>
                   </div>
-                  <div className="counter-desc">Until next price increase </div>
                 </div>
 
 
                 <p className="total-raised">{sectionText?.funRaised}:  $15,162,084.72 / $20,000,000</p>
-                <ProgressBar percentage={2717413.47*100  / 3316967}  />
                 {walletEth.currentAddress && 
                 <div>
                 {/* {truncateMiddle(walletEth.currentAddress)} */}
@@ -238,7 +230,7 @@ export const BuyForm = () => {
                         className="input-control-custom"
                         placeholder="0" />
                         <div className="amountType">
-                          <img src='/img/solx/token.svg' style={{ 'height': '30px', marginRight:5 }} />
+                          <img src='/img/peap/coin.png' style={{ 'height': '30px', marginRight:5 }} />
                         </div>
                     </div>
                     </div>
@@ -272,10 +264,7 @@ export const BuyForm = () => {
 
             {/* <p translate="" className="font-18 text-center m-0 mt-2"><img src="/img/solx/token.svg" style={{ 'height': '35px' }} /> Powered by <a target="_blank" href='https://web3paymentsolutions.io/' className=" "><img src="/img/default/W3P_White.svg" alt="" style={{height:25}} /></a></p> */}
             </div>
-        </div>
-        <div className="walletBox-bottom">
-            <a target="_blank" href='https://web3paymentsolutions.io/' className=" "><img src="/img/default/W3P_White.svg" alt="" style={{height:18}} /> </a>
-            <a className="white-paper" href="/img/solx/whitepaper.pdf" >White Paper</a>
+            <a target="_blank" href='https://web3paymentsolutions.io/' className=" "><img src="/img/default/W3P_Black.svg" alt="" style={{height:18}} /> </a>
         </div>
         </div>
     )

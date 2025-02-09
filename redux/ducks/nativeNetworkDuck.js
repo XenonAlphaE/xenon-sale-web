@@ -19,20 +19,20 @@ export const VALID_NETWORKS = ['bsc', 'eth']; // Example valid codes
 
 export const NETWORK_OTIONS = {
     bsc: {
-      img: '/img/flockers/icon@bnb1.svg',
+      img: '/img/default/bnb.svg',
       name: "BNB NETWORK",
       chainId: 56,
       symbol:"bsc"
     },
     eth: {
-      img: '/img/flockers/ETH.svg',
+      img: '/img/default/ETH.svg',
       name: "ETH NETWORK",
       chainId: 1,
       symbol:"eth"
 
     },
     base: {
-      img: '/img/flockers/base.svg',
+      img: '/img/default/base.svg',
       name: "BASE NETWORK",
       chainId: 8453,
       symbol:"eth"
@@ -53,26 +53,26 @@ export const NETWORK_OTIONS = {
   };
 export const CURRENCIES = {
     bsc:[
-        { text: 'BNB', imageSrc: '/img/flockers/icon@bnb1.svg', icon:"/img/flockers/icon@bnb1.svg", curr: CURR_CODE.BNB },
-        { text: 'USDT', imageSrc: '/img/flockers/usdt.svg',  icon:"/img/flockers/usdt.svg",curr: CURR_CODE.USDT },
-        { text: 'CARD', imageSrc: '/img/flockers/card.svg', icon:"/img/flockers/usdt.svg", curr: CURR_CODE.USDT },
+        { text: 'BNB', imageSrc: '/img/default/bnb.svg', icon:"/img/default/bnb.svg", curr: CURR_CODE.BNB },
+        { text: 'USDT', imageSrc: '/img/default/usdt.svg',  icon:"/img/default/usdt.svg",curr: CURR_CODE.USDT },
+        { text: 'CARD', imageSrc: '/img/default/card.svg', icon:"/img/default/usdt.svg", curr: CURR_CODE.USDT },
     ],
     eth:[
-        { text: 'ETH', imageSrc: '/img/flockers/ETH.svg', icon:"/img/flockers/ETH.svg", curr: CURR_CODE.ETH },
-        { text: 'USDT', imageSrc: '/img/flockers/usdt.svg',  icon:"/img/flockers/usdt.svg",curr: CURR_CODE.USDT },
-        { text: 'CARD', imageSrc: '/img/flockers/card.svg', icon:"/img/flockers/usdt.svg", curr: CURR_CODE.USDT },
+        { text: 'ETH', imageSrc: '/img/default/ETH.svg', icon:"/img/default/ETH.svg", curr: CURR_CODE.ETH },
+        { text: 'USDT', imageSrc: '/img/default/usdt.svg',  icon:"/img/default/usdt.svg",curr: CURR_CODE.USDT },
+        { text: 'CARD', imageSrc: '/img/default/card.svg', icon:"/img/default/usdt.svg", curr: CURR_CODE.USDT },
     ],
     base:[
-      { text: 'BASE ETH', imageSrc: '/img/flockers/ETH.svg', icon:"/img/flockers/ETH.svg", curr: CURR_CODE.ETH  },
-      { text: 'USDC', imageSrc: '/img/flockers/usdc.svg',  icon:"/img/flockers/usdc.svg",curr: CURR_CODE.USDT },
+      { text: 'BASE ETH', imageSrc: '/img/default/base.svg', icon:"/img/default/ETH.svg", curr: CURR_CODE.ETH  },
+      { text: 'USDC', imageSrc: '/img/default/usdc.svg',  icon:"/img/default/usdc.svg",curr: CURR_CODE.USDT },
     ],
     op:[
-        { text: 'OP ETH', imageSrc: '/img/flockers/ETH.svg', icon:"/img/flockers/ETH.svg", curr: CURR_CODE.ETH },
-        { text: 'USDT', imageSrc: '/img/flockers/usdt.svg',  icon:"/img/flockers/usdt.svg",curr: CURR_CODE.USDT },
+        { text: 'OP ETH', imageSrc: '/img/default/optimism.svg', icon:"/img/default/ETH.svg", curr: CURR_CODE.ETH },
+        { text: 'USDT', imageSrc: '/img/default/usdt.svg',  icon:"/img/default/usdt.svg",curr: CURR_CODE.USDT },
     ],
     arb:[
-        { text: 'ARB ETH', imageSrc: '/img/flockers/ETH.svg', icon:"/img/flockers/ETH.svg", curr: CURR_CODE.ETH },
-        { text: 'USDT', imageSrc: '/img/flockers/usdt.svg',  icon:"/img/flockers/usdt.svg",curr: CURR_CODE.USDT },
+        { text: 'ARB ETH', imageSrc: '/img/default/arb.svg', icon:"/img/default/ETH.svg", curr: CURR_CODE.ETH },
+        { text: 'USDT', imageSrc: '/img/default/usdt.svg',  icon:"/img/default/usdt.svg",curr: CURR_CODE.USDT },
     ],
 
 

@@ -92,7 +92,7 @@ export const Navbar = () => {
     <div className='nav-container'>
         <div className="appnav-navbar-brand">
           <a href="/">
-            <img src="/img/solx/logo.svg" alt="Brand Logo" className="appnav-logo" />
+            <img src="/img/peap/logo.png" alt="Brand Logo" className="appnav-logo" />
           </a>
 
           {/* <button onClick={mobileBuyNow} className="buy-btn-mobile" >{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button> */}

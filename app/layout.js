@@ -15,7 +15,7 @@ export async function generateMetadata() {
     title: metadata?.title,
     description: metadata?.description,
 
-    keywords: 'Memex Crypto, MEMEX, MEMEX Presale, MEMEX Coin, MEMEX Token', // Add keywords here
+    keywords: 'PEAP Token, Pepe ascension, PEPE, BLOCKCHAIN,PEAP, $PEAP Token, Token, Presale, Staking, Claim $PEAP, Pepe Ascension Presale is lived!', // Add keywords here
     robots: 'index, follow', // Add robots directives here
     openGraph: {
       title: metadata?.title,

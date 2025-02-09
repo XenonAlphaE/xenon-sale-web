@@ -4,17 +4,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: transparent; */
-  /* padding: 3rem; */
-  /* background-color: #FBC74B; */
+  background-color: #fff;
   padding: 16px 16px;
   
   position: relative;
   transition: top 0.3s ease; /* Add transition for smoother effect */
-  /* box-shadow: 0 4px 8px #0000, 0 6px 20px #0000001f; */
-  /* border-image-source: radial-gradient(121.49% 277.08% at 0% 0%, rgba(255, 255, 255, .44) 0%, rgba(255, 255, 255, .05) 100%); */
-  /* -webkit-backdrop-filter: blur(21px); */
-  /* backdrop-filter: blur(21px); */
+  border: solid 2px rgb(75, 26, 9);
   z-index: 99999999;
   box-sizing: border-box;
 }
@@ -36,7 +31,7 @@
 
 .nav-container{
   width: 100%;
-  max-width: 1300px;
+  /* max-width: 1300px; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -108,8 +103,8 @@
 }
 
 .appnav-navbar-menu a {
-  transform: scaleY(1.1);    /* Increase height by 1.5 times */
-  color: white;
+  transform: scaleY(1.41);    /* Increase height by 1.5 times */
+  color: rgb(75, 26, 9);
   cursor: pointer;
   text-decoration: none;
   font-weight: bold;
@@ -117,14 +112,11 @@
   text-transform: capitalize;
   margin: 0 7px;
   padding:10px 15px 0;
-  min-width: 100px;
-  min-height: 53px;
   background: url(/img/solx/top-nav-bg-right.svg) no-repeat 100% 0, url(/img/solx/top-nav-bg.svg) no-repeat 0 0;
 }
 
 .appnav-navbar-menu a:hover {
-  background: url(/img/solx/top-nav-bg-selected-right.svg) no-repeat 100% 0, url(/img/solx/top-nav-bg-selected.svg) no-repeat 0 0;
-  color: #000;
+  color: rgb(170, 118, 35);
 }
 
 .appnav-navbar-menu-mobile{
@@ -152,16 +144,16 @@
   cursor: pointer;
   font-weight: 900;
   text-decoration: none;
-  color: black;
+  color: rgb(253, 237, 182);
   letter-spacing: .5px;
-  background: linear-gradient(180deg, #e9ed00, #acdd25 48%, #08d745), url(/img/solx/snow-bg.gif) no-repeat 0 0 / 800px;
+  background: rgb(114, 58, 24);
   min-width: 140px;
   border: 2px solid #fff;
   
 }
 
 .appnav-login:hover{
-  background: linear-gradient(#8077fbc4, #03cdeff0), url(/img/solx/snow-bg.gif) no-repeat 0 0 / 800px;
+  background: linear-gradient(rgb(114, 58, 24), #03cdeff0);
 }
 
 .appnav-social-icon {
@@ -226,10 +218,10 @@
 .appnav-lang-dropdown {
   min-width: 70px;
   position: relative;
-  background: linear-gradient(#03cdeff0, #8077fbc4); 
-  border: 3px solid #FFFFFF;
+  background: white; 
+  border: 3px solid rgb(253, 237, 182);
   border-radius: 37px;
-
+  color: black;
   /* margin-left: 24px; */
 
 }
@@ -248,7 +240,7 @@
 
 .appnav-lang-custom-dropdown span {
   margin-right: 5px;
-  color: #fff;
+  color: black;
 }
 
 .lang-dropdown-content {

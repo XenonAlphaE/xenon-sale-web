@@ -33,17 +33,16 @@
     min-height: 460px;
     width: 100%;
     max-width: 500px;
-    padding: 18px 25px 0;
+    padding: 80px 32px 32px 64px;
     margin: 0 auto 10px;
     border-radius: none;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: white;
-    background: url(/img/solx/widget-top.png) no-repeat 0 0 / 100%, url(/img/solx/widget-middle.png) repeat 0 0 / 100%;
-    box-shadow: 50px -164px 40px #785a5414, -80px 250px 32px #785a540a;
-    backdrop-filter: blur(10px);
+    color: rgb(75, 26, 9);
+    background: url(/img/peap/tombstone.png) no-repeat center center;
+    background-size: 100% 100%; /* Stretches the image */    
     margin-bottom: 0px;
 }
 
@@ -57,9 +56,8 @@
 .walletBox-heading {
     margin-bottom: 8px;
     text-transform: uppercase;
-    width: 60%;
     box-sizing: border-box;
-    color: white;
+    color: rgb(75, 26, 9);
     display: block;
     font-family: badaboom-bb, sans-serif;
     font-size :2em;
@@ -68,18 +66,17 @@
     text-size-adjust: 100%;
     transform :none;
     unicode-bidi :isolate;
-    background: linear-gradient(180deg, #04ccef, #8673fb);
+    background: rgb(75, 26, 9);
     -webkit-background-clip:text;
     -webkit-text-fill-color: transparent;
 
 }
 
 .counter-wrapper{
-    color: rgb(90, 0, 92);
     text-align: center;
     border: none;
     border-radius: 12px;
-    background-color: white;
+    background-color: transparent;
     font-size: large;
     font-weight: 800;
     width: 100%;
@@ -90,21 +87,16 @@
       align-items: center;
       padding: 5px 0 8px;
       /* border-radius: 4px; */
-      background: linear-gradient(#454545f0, #333335c4), url(/img/solx/snow-bg.gif) no-repeat 0 0 / 800px;
-
-
-
-
-
+      background: rgb(253, 237, 182);
       border: none;
       box-sizing: border-box;
-      color: white;
+      color: rgb(75, 26, 9);
       column-gap: 8px;
       display: flex;
       font-family: Poppins, sans-serif;
       font-size: 16px;
       font-weight: 400;
-      height: 60px;
+      height: 80px;
       justify-content: center;
       letter-spacing: 1px;
       line-height: 27.2px;
@@ -115,7 +107,7 @@
       text-align: center;
       text-size-adjust: 100%;
       unicode-bidi: isolate;
-      border-radius: 4px 4px 0 0 ;
+      border-radius: 20px;
 
 }
 
@@ -149,37 +141,32 @@
 
 }
 
-.counter-desc{
-    color: #fff;
-    background: linear-gradient(#03cdeff0, #8077fbc4), url(/img/solx/snow-bg.gif) no-repeat 0 0 / 800px;
-    border-radius: 0 0 4px 4px;
-    text-transform: uppercase;
-}
 
 .total-raised{
-  box-sizing: border-box;
-  color: white;
-  display: block;
-  font-family: HeyComic, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 22.4px;
-  margin-block-end: 8px;
-  margin-block-start: 8px;
-  margin-bottom: 8px;
-  margin-inline-end: 0px;
-  margin-inline-start: 0px;
-  margin-top: 8px;
-  text-align: center;
-  text-size-adjust: 100%;
-  unicode-bidi: isolate;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  text-transform: uppercase;
+    box-sizing: border-box;
+    color: rgb(253, 237, 182);
+    display: block;
+    font-family: HeyComic, sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 22.4px;
+    margin-inline: 0px;
+    margin-block: 8px;
+    text-align: center;
+    text-size-adjust: 100%;
+    unicode-bidi: isolate;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-transform: uppercase;
+     /* Text Stroke */
+     text-shadow: 1px 1px 0px #723a18;
+     -webkit-text-stroke-width: 1px;
+     -webkit-text-stroke-color: #5a250d;
 }
+
 .user-purchased-info{
     align-items: center;
     box-sizing: border-box;
-    color: white;
+    color: rgb(75, 26, 9);
     display: flex;
     font-family: Roboto, sans-serif;
     font-size: 14px;
@@ -202,13 +189,14 @@
     font-weight: 800;
     margin-bottom: 8px;
     width: 100%;
+    color: rgb(75, 26, 9);
 }
 
 .dashTitle:before, .dashTitle:after {
     content: "";
     width: 24%;
     height: 2px;
-    background: white;
+    background: rgb(75, 26, 9);
     position: absolute;
     left: 0;
     top: 50%;
@@ -239,9 +227,9 @@ justify-content: space-evenly;
     border-radius: 4px;
     font-size: 14px;
     font-weight: 400;
-    border: 2px solid #FFFFFF!important;
-    color: 1px solid #333333;
+    border: 2px solid rgb(75, 26, 9)!important;
     background: transparent;
+    color: rgb(75, 26, 9);
     font-family: Roboto,sans-serif;
     display: flex;
     align-items: center;
@@ -253,9 +241,9 @@ justify-content: space-evenly;
 
 .currencies-list .btn.selected{
     background-color: white;
-    color:black;
+    color:rgb(75, 26, 9);
     border-radius: 4px;
-    border: 2px solid black!important;
+    border: 2px solid rgb(75, 26, 9)!important;
     font-weight: 900;
     box-shadow: 0 0 0 2px #a8a8a8;
 }
@@ -291,20 +279,19 @@ justify-content: space-evenly;
     padding: 8px 16px;
     font-size: 14px;
     font-weight: 500;
-    /* background-color: #fff; */
+    background-color: #fff;
     /* border: 1px solid #878787; */
     color: #6a6a6a;
     box-sizing: border-box;
     width: 100%;
-    background-color: transparent;
     border: 1px solid white;
     border-radius: 4px;
-    color: white;
+    color: rgb(75, 26, 9);
     outline:none;
 }
 
 .input-control-custom::placeholder {
-    color: white;
+    color: rgb(75, 26, 9);
 }
 
 .amountType {
@@ -326,9 +313,9 @@ justify-content: space-evenly;
 .action-buttons .connect-btn{
   border: none;
   align-items: center;
-  background: linear-gradient(180deg, #e9ed00, #acdd25 48%, #08d745), url(/img/solx/snow-bg.gif) no-repeat 0 0 / 800px;
+  background: rgb(114, 58, 24);
   box-sizing: border-box;
-  color: black;
+  color: rgb(253, 237, 182);
   cursor: pointer;
   display: flex;
   font-family: Sausages, sans-serif;
@@ -375,19 +362,21 @@ justify-content: space-evenly;
   text-transform: none;
   width: 100%;
   word-spacing: 0px;
-  border-radius: 4px;
-  border: solid 2px rgb(255, 255, 255);
+  border-radius: 40px;
+  border: solid 2px rgb(75, 26, 9);
+  box-shadow: 2px 2px #723a18;
 }
 
 .action-buttons .connect-btn:hover{
-    background: linear-gradient(#8077fbc4, #03cdeff0), url(/img/solx/snow-bg.gif) no-repeat 0 0 / 800px;
+    background: linear-gradient(rgb(75, 26, 9), #03cdeff0);
 }
 
 .action-buttons .buy-btn{
     border: none;
     align-items: center;
+    background: rgb(114, 58, 24);
     box-sizing: border-box;
-    color: black;
+    color: rgb(253, 237, 182);
     cursor: pointer;
     display: flex;
     font-family: Sausages, sans-serif;
@@ -434,15 +423,13 @@ justify-content: space-evenly;
     text-transform: none;
     width: 100%;
     word-spacing: 0px;
-    border-radius: 4px;
-    background: linear-gradient(180deg, #e9ed00, #acdd25 48%, #08d745), url(/img/solx/snow-bg.gif) no-repeat 0 0 / 800px;
-    box-sizing: border-box;  
-    border: solid 2px rgb(255, 255, 255);
-  
+    border-radius: 40px;
+    border: solid 2px rgb(75, 26, 9);
+    box-shadow: 2px 2px #723a18;  
   }
   
 .action-buttons .buy-btn:hover{
-    background: linear-gradient(#8077fbc4, #03cdeff0), url(/img/solx/snow-bg.gif) no-repeat 0 0 / 800px;
+    background: linear-gradient(rgb(75, 26, 9), #03cdeff0);
 
 }
 

@@ -11,7 +11,6 @@
 .about-bg-outer{
     z-index: -1;
     width: 100%;
-    background: url(../../../public/img/flockers/about-img.svg) no-repeat bottom right / contain;
     min-height: 570px;
     position: absolute;
     top : 0;
