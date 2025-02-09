@@ -1,9 +1,10 @@
 /* Responsive Styles */
 @media (max-width: 1024px) {
+    .walletBox-container{
+        padding: 0px 8px;    
+    }
+
     .walletBox {
-        background: url(/img/solx/widget-mobile.png) no-repeat 0 0;
-        background-size: 100% 100%;
-        padding: 18px 15px 12px;
         max-width: 100%;        
     }
   

@@ -153,12 +153,12 @@ export const Navbar = () => {
         <a onClick={toggleMenu} href="#tokenomics">{sectionText?.tokenomics}</a>
         <a onClick={toggleMenu} href="#roadmap">{sectionText?.roadmap}</a>
         <a onClick={toggleMenu} href="#faqs">{sectionText?.faq}</a>
-        <a href="/staking">Staking</a>
+        {/* <a href="/staking">Staking</a> */}
 
         <div className='social-container'>
 
-          <a href="https://x.com/Pepetocoin"  target='_blank' ><img src='/img/default/twitter1.svg' className='appnav-social-icon' /></a>
-          <a href="https://t.me/pepeto_channel"  target='_blank' ><img src='/img/default/telegram1.svg' className='appnav-social-icon' /></a>
+          <a href="https://x.com/Pepetocoin"  target='_blank' ><img src='/img/default/x.png' className='appnav-social-icon' /></a>
+          <a href="https://t.me/pepeto_channel"  target='_blank' ><img src='/img/default/telegram.png' className='appnav-social-icon' /></a>
         </div>
 
       <button onClick={scrollToBuySection} className="appnav-login" >{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button>

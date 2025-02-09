@@ -5,11 +5,9 @@
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
-  padding: 16px 16px;
   
   position: relative;
   transition: top 0.3s ease; /* Add transition for smoother effect */
-  border: solid 2px rgb(75, 26, 9);
   z-index: 99999999;
   box-sizing: border-box;
 }
@@ -19,8 +17,6 @@
   position: fixed;
   top: 0;
   width: 100%;
-  padding-right: 20px;
-
 }
 
 
@@ -30,6 +26,9 @@
 }
 
 .nav-container{
+  padding: 16px 16px;
+
+  border: solid 2px rgb(75, 26, 9);
   width: 100%;
   /* max-width: 1300px; */
   display: flex;
@@ -112,7 +111,6 @@
   text-transform: capitalize;
   margin: 0 7px;
   padding:10px 15px 0;
-  background: url(/img/solx/top-nav-bg-right.svg) no-repeat 100% 0, url(/img/solx/top-nav-bg.svg) no-repeat 0 0;
 }
 
 .appnav-navbar-menu a:hover {
@@ -195,7 +193,7 @@
   background-color: #333;
   padding: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 1;
+  z-index: 6;
   flex-direction: column;
   gap: 0.5rem;
   z-index: 20000000;
