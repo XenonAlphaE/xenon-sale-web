@@ -4,7 +4,6 @@ import React, { useState, useEffect } from 'react';
 import { useLanguage, useI18nSection } from "../../../redux/utils/languageUtils";
 import { truncateMiddle } from '../services/wallet-service';
 import './navbar.css';
-import './navbar.mobile.css';
 import {
   useConnectModal,
   useAccountModal,
@@ -88,23 +87,24 @@ export const Navbar = () => {
 
   return (
 
-  <nav className={`appnav-navbar sticky ${isScrolled ? 'scrolled' : ''}`}>
+    // <div className='container'> 
+    <nav className={`appnav-navbar sticky ${isScrolled ? 'scrolled' : ''}`}>
     <div className='nav-container'>
-        <div className="appnav-navbar-brand">
-          <a href="/">
-            <img src="/img/peap/logo.png" alt="Brand Logo" className="appnav-logo" />
-          </a>
+      <div className="appnav-navbar-brand">
+        <a href="/">
+        <img src="/img/peap/logo.png" alt="Brand Logo" className="appnav-logo" />
+        </a>
 
           {/* <button onClick={mobileBuyNow} className="buy-btn-mobile" >{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button> */}
 
-          <button className="appnav-menu-toggle" onClick={toggleMenu}>
-            <div className={`appnav-hamburger ${isMenuOpen ? 'appnav-is-active' : ''}`}>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </button>
-        </div>
+        <button className="appnav-menu-toggle" onClick={toggleMenu}>
+          <div className={`appnav-hamburger ${isMenuOpen ? 'appnav-is-active' : ''}`}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+      </div>
 
         <div className={`appnav-navbar-menu`}>
           <a href={`/${currentLanguage}`}>{sectionText?.home}</a>
@@ -116,39 +116,39 @@ export const Navbar = () => {
           {/* <a href="#about">{sectionText?.about}</a> */}
           {/* <a href="/white-paper.pdf" target='_blank'>{sectionText?.whitePaper}</a> */}
         </div>
-        <div className={`appnav-navbar-right`}>
+      <div className={`appnav-navbar-right`}>
 
-          <div className="appnav-lang-login-container">
+        <div className="appnav-lang-login-container">
             {/* <a href="https://x.com/Pepetocoin"  target='_blank' ><img src='/img/pepeto/twitter.svg' className='appnav-social-icon' /></a>
             <a href="https://t.me/pepeto_channel"  target='_blank' ><img src='/img/pepeto/telegram.svg' className='appnav-social-icon' /></a> */}
 
-            <button onClick={scrollToBuySection} className="appnav-login" >{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button>
+        <button onClick={scrollToBuySection} className="appnav-login" >{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button>
 
-            <div className="appnav-lang-dropdown">
-              <div className="appnav-lang-custom-dropdown" onClick={toggleLanguageDrpdwn}>
-                {/* <span className={languageOptions[currentLanguage].flag}></span> */}
-                <span className={`lang-dropdown-icon ${isLanguageOpen ? 'open' : ''}`}>{currentLanguage.toUpperCase()} &#9660;</span>
-              </div>
-              <div className={`lang-dropdown-content ${isLanguageOpen ? 'open' : ''}`}>
-                {Object.keys(languageOptions).map((language) => (
-                  <a href={`/${language}`} key={language}>
-                    <div className="lang-dropdown-item"
+          <div className="appnav-lang-dropdown">
+            <div className="appnav-lang-custom-dropdown" onClick={toggleLanguageDrpdwn}>
+              {/* <span className={languageOptions[currentLanguage].flag}></span> */}
+              <span className={`lang-dropdown-icon ${isLanguageOpen ? 'open' : ''}`}>{currentLanguage.toUpperCase()} &#9660;</span>
+            </div>
+            <div className={`lang-dropdown-content ${isLanguageOpen ? 'open' : ''}`}>
+              {Object.keys(languageOptions).map((language) => (
+                <a href={`/${language}`} key={language}>
+                  <div className="lang-dropdown-item"
 
-                    >
+                  >
                       <span className={`lang-dropdown-flag ${languageOptions[language].flag}`}></span>
                       <span>{languageOptions[language].name.toUpperCase()}</span>
-                    </div>
-                  </a>
-                ))}
-              </div>
+                  </div>
+                </a>
+              ))}
+            </div>
             </div>
           </div>
         </div>
-    </div>
+      </div>
 
-    {isMobile && <div className={`appnav-navbar-menu-mobile ${isMenuOpen ? 'appnav-is-active' : ''}`}>
+      {isMobile && <div className={`appnav-navbar-menu-mobile ${isMenuOpen ? 'appnav-is-active' : ''}`}>
      
-        <a onClick={toggleMenu} href={`/${currentLanguage}`}>{sectionText?.home}</a>
+      <a onClick={toggleMenu} href={`/${currentLanguage}`}>{sectionText?.home}</a>
         <a onClick={toggleMenu} href="#howtobuy">{sectionText?.howtobuy}</a>
         <a onClick={toggleMenu} href="#tokenomics">{sectionText?.tokenomics}</a>
         <a onClick={toggleMenu} href="#roadmap">{sectionText?.roadmap}</a>
@@ -163,30 +163,28 @@ export const Navbar = () => {
 
       <button onClick={scrollToBuySection} className="appnav-login" >{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button>
 
-      <div className="appnav-lang-dropdown">
-        <div className="appnav-lang-custom-dropdown" onClick={toggleLanguageDrpdwn}>
-          <span className={languageOptions[currentLanguage].flag}></span>
-          <span className={`lang-dropdown-icon ${isLanguageOpen ? 'open' : ''}`}>{currentLanguage.toUpperCase()} &#9660;</span>
-        </div>
-        <div className={`lang-dropdown-content ${isLanguageOpen ? 'open' : ''}`}>
-          {Object.keys(languageOptions).map((language) => (
-            <a href={`/${language}`} key={language}>
-              <div className="lang-dropdown-item"
-              >
+        <div className="appnav-lang-dropdown">
+          <div className="appnav-lang-custom-dropdown" onClick={toggleLanguageDrpdwn}>
+            <span className={languageOptions[currentLanguage].flag}></span>
+            <span className={`lang-dropdown-icon ${isLanguageOpen ? 'open' : ''}`}>{currentLanguage.toUpperCase()} &#9660;</span>
+          </div>
+          <div className={`lang-dropdown-content ${isLanguageOpen ? 'open' : ''}`}>
+            {Object.keys(languageOptions).map((language) => (
+              <a href={`/${language}`} key={language}>
+                <div className="lang-dropdown-item"
+                >
                 <span className={`lang-dropdown-flag ${languageOptions[language].flag}`}></span>
                 <span>{languageOptions[language].name}</span>
 
-              </div>
-            </a>
-          ))}
+                </div>
+              </a>
+            ))}
+          </div>
         </div>
+
       </div>
-
-    </div>
-    }
-  </nav>
-
-
+      }
+    </nav>
   );
 };
 

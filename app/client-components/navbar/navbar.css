@@ -21,16 +21,15 @@
 
 
 .appnav-navbar.scrolled {
-  backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
 
 }
 
 .nav-container{
   padding: 16px 16px;
-
+  background: #fff;
   border: solid 2px rgb(75, 26, 9);
   width: 100%;
-  /* max-width: 1300px; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -51,7 +50,7 @@
 .appnav-logo {
   display: block;
   height: 64px;
-  max-width: 350px;
+  max-width: 262px;
 }
 
 .appnav-navbar-brand a {
@@ -147,7 +146,7 @@
   background: rgb(114, 58, 24);
   min-width: 140px;
   border: 2px solid #fff;
-  
+
 }
 
 .appnav-login:hover{
@@ -155,8 +154,8 @@
 }
 
 .appnav-social-icon {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
 .appnav-language {
@@ -193,7 +192,7 @@
   background-color: #333;
   padding: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 6;
+  z-index: 1;
   flex-direction: column;
   gap: 0.5rem;
   z-index: 20000000;
@@ -214,31 +213,21 @@
 
 /* Language selection */
 .appnav-lang-dropdown {
-  min-width: 70px;
   position: relative;
-  background: white; 
-  border: 3px solid rgb(114, 58, 24);
-  border-radius: 37px;
-  color: black;
   /* margin-left: 24px; */
 
 }
 
 .appnav-lang-custom-dropdown {
-  text-decoration: none;
-  letter-spacing: .02em;
-  text-transform: capitalize;
-  font-weight: 400;
-  padding: .3rem 1rem;
-
   display: flex;
   align-items: center;
   cursor: pointer;
+  color: #fff;
 }
 
 .appnav-lang-custom-dropdown span {
   margin-right: 5px;
-  color: black;
+  color: #000;
 }
 
 .lang-dropdown-content {
@@ -272,11 +261,12 @@
   align-items: center;
   padding: 5px;
   cursor: pointer;
+  color: white;
 }
 
 .lang-dropdown-item:hover {
-  background-color: #000;
-  color : white;
+  background: #eee;
+  color: #000;
 }
 
 .lang-dropdown-item span {
@@ -299,3 +289,153 @@
   color: #000 
 }
 
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .appnav-navbar{
+    width: 100%;
+  }
+  .nav-container{
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .appnav-navbar-brand {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .buy-btn-mobile{
+    display: block;
+    height: 50px;
+    border-radius: 4px;
+  }
+
+
+  .appnav-logo {
+    height: 42px;
+    order: 1; /* Logo on the left */
+  }
+
+  .appnav-navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 20;
+    box-sizing: border-box;
+    /* background-color: rgba(0, 0, 0, .4); */
+    /* box-shadow: 0 4px 8px #0000, 0 6px 20px #0000001f; */
+    /* border-image-source: radial-gradient(121.49% 277.08% at 0% 0%, rgba(255, 255, 255, .44) 0%, rgba(255, 255, 255, .05) 100%); */
+    /* -webkit-backdrop-filter: blur(30px); */
+    /* backdrop-filter: blur(30px); */
+  
+    /* justify-content: flex-start; */
+  }
+
+  .appnav-menu-toggle {
+    display: block;
+    order: 2; /* Hamburger on the right */
+    /* margin-left: auto; */
+  }
+
+  .appnav-lang-login-container {
+    width: 100%;
+    flex-direction: column-reverse; /* Stack items in reverse order */
+    align-items: flex-start; /* Align items to the start */
+    justify-content: stretch;
+  }
+  
+
+  .appnav-login {
+    width: 100%;
+  }
+
+  .appnav-lang-dropdown {
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    border: solid 1px #fff;
+    height: 40px;
+    border-radius: 20px;
+    margin-bottom: 10px; 
+    margin-top: 10px;
+    margin-left: 0px;
+    border-radius: 20px;
+    border: solid 1px black;
+  }
+  
+  .lang-dropdown-content {
+    color:#fff;
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px); /* Adjusted position with 10px padding */
+    left: 100px;
+    background-color: #000;
+    border: 1px solid #000;
+    box-shadow: 0 4px 8px rgba(6, 6, 80, 0.1);
+    padding: 20px 10px; /* Added padding */
+    z-index: 1000;
+    width: max-content; 
+    height: 220px;
+    max-height: 220px;
+    overflow-y: auto;
+  }
+  .appnav-navbar-menu,
+  .appnav-navbar-right 
+  {
+    display: none;
+  }
+
+  .appnav-navbar-menu-mobile{
+    box-sizing: border-box;
+    display: none;
+    flex-direction: column;
+    row-gap: 8px;
+    position: absolute;
+    top: 100%; /* Position below navbar */
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Adjust background as needed */
+    z-index: 999;
+    padding: 0px 16px;
+    color: white;
+  }
+
+  .appnav-navbar-menu-mobile.appnav-is-active {
+    display: flex;
+  }
+
+  .appnav-navbar-menu-mobile a {
+      font-size: 24px;
+      text-decoration: none;
+      color: black;
+      font-weight: 700;
+      padding: 10px 0px;
+      border-bottom: solid 1px white;
+      transform: scaleY(1.3);
+  }
+
+  .appnav-navbar-menu-mobile .social-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }    
+
+
+  .appnav-navbar-menu-mobile .social-icon{
+    display: inline-block; /* Ensures padding is applied correctly */
+    padding: 8px;
+  }
+
+
+  .appnav-login{
+    margin: 8px 0px;
+    color: white;
+    border-color: white;
+  }
+
+  
+}
