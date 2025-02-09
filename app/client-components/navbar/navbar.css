@@ -52,7 +52,7 @@
 .appnav-logo {
   display: block;
   height: 64px;
-  max-width: 250px;
+  max-width: 350px;
 }
 
 .appnav-navbar-brand a {
@@ -219,7 +219,7 @@
   min-width: 70px;
   position: relative;
   background: white; 
-  border: 3px solid rgb(253, 237, 182);
+  border: 3px solid rgb(114, 58, 24);
   border-radius: 37px;
   color: black;
   /* margin-left: 24px; */

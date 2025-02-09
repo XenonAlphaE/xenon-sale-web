@@ -47,4 +47,97 @@
 .intro-content-right {
   flex: 0 0 70%;
   /* 0 grow, 0 shrink, 40% basis */
+  position: relative;
+  padding-left: 5%;
+  height: 100%;
+
+}
+
+.intro-text-container{
+  max-width: 60%;
+}
+
+
+.intro-heading1{
+  color: rgb(75, 26, 9);
+  font-size: 52px;
+  text-transform: uppercase;
+  font-family: Diogenes, sans-serif;
+  font-weight: 800;
+}
+
+.intro-heading2{
+  color: rgb(170, 118, 35);
+  font-size: 52px;
+  text-transform: uppercase;
+  font-family: Diogenes, sans-serif;
+  font-weight: 800;
+}
+
+.intro-heading3{
+  color: rgb(75, 26, 9);
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: Diogenes, sans-serif;
+  font-weight: 800;
+}
+
+
+.intro-desc{
+  margin-bottom: 44px;
+  line-height: 32px;
+  font-size: 24px;
+  color:rgb(75, 26, 9);
+}
+
+.intro-desc1{
+  line-height: 24px;
+  font-size: 18px;
+  color:rgb(75, 26, 9);
+}
+.intro-list {
+  list-style: none; /* Remove default bullets */
+  padding: 0;
+  margin: 0;
+}
+
+.intro-list-item {
+  display: flex; /* Align icon and text in a row */
+  align-items: center; /* Vertically align icon and text */
+  gap: 6px; /* Adjust spacing between icon and text */
+  font-size: 16px;
+  color: black;
+  line-height: 1.5; /* Improve readability */
+  margin-bottom: 12px; /* Add spacing between rows */
+}
+
+.intro-item-icon {
+  width: 18px; /* Adjust icon size */
+  height: 18px;
+  flex-shrink: 0; /* Prevent icon from shrinking */
+}
+
+
+
+.intro-decorate{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 2%;
+  right: 5%;
+  max-width: 20vw;
+}
+
+.intro-decorate-catalouge{
+  color: rgb(75, 26, 9);
+  background: url('/img/peap/chat-bubble.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 140px;
+  font-weight: 600;
+  padding: 16px;
+  font-size: 18px;
+}
+.intro-decorate-img{
+  width: 100%;
 }

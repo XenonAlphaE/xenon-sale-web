@@ -1,10 +1,10 @@
 {
     "metadata": {
-        "title": "MEMEX Crypto: Revolutionerande Vote-To-Earn Meme Coin | Crypto Presale",
-        "description": "Gå med i $MEMEX, där varje Flocker har en röst. Upptäck Flocktopia, den banbrytande Vote-To-Earn plattformen som ger makten i händerna på gemenskapen. Tjäna belöningar, forma framtiden och var en del av revolutionen.",
+        "title": "PEAP Token: Revolutionerande Vote-To-Earn Meme Coin | Crypto Presale",
+        "description": "Gå med i $PEAP, där varje Flocker har en röst. Upptäck Flocktopia, den banbrytande Vote-To-Earn plattformen som ger makten i händerna på gemenskapen. Tjäna belöningar, forma framtiden och var en del av revolutionen.",
         "openGraph": {
-            "title": "MEMEX Crypto: Revolutionerande Vote-To-Earn Meme Coin | Crypto Presale",
-            "description": "Gå med i $MEMEX, där varje Flocker har en röst. Upptäck Flocktopia, den banbrytande Vote-To-Earn plattformen som ger makten i händerna på gemenskapen. Tjäna belöningar, forma framtiden och var en del av revolutionen.",
+            "title": "PEAP Token: Revolutionerande Vote-To-Earn Meme Coin | Crypto Presale",
+            "description": "Gå med i $PEAP, där varje Flocker har en röst. Upptäck Flocktopia, den banbrytande Vote-To-Earn plattformen som ger makten i händerna på gemenskapen. Tjäna belöningar, forma framtiden och var en del av revolutionen.",
             "url": "https://flockez.com/sv",
             "locale": "sv_SE"
         }
@@ -24,7 +24,7 @@
         "about": "OM"
     },
     "buyForm": {
-        "intro": "KÖP $MEMEX PRESALE",
+        "intro": "KÖP $PEAP PRESALE",
         "day": "Dagar",
         "hrs": "Timmar",
         "mins": "Minuter",
@@ -45,23 +45,23 @@
         "buyStake": "Köp och Stake för 8471% Belöningar",
         "nextPriceAlert": "TILLS PRISÖKNING",
         "para1": "1207% staking BELÖNINGAR",
-        "para2": "$MEMEX. folkets meme coin.",
-        "para3": "MEMEX Crypto revolutionerande",
+        "para2": "$PEAP. folkets meme coin.",
+        "para3": "PEAP Token revolutionerande",
         "para3_1": " Vote-To-Earn",
         "para3_2": " plattform sätter MAKTEN i dina händer. Köp tidigt i presale NU för att tjäna MASSIVA belöningar!",
         "note1": "TJÄNA GENOM ATT RÖSTA",
         "note2": "STORA TIDIGA BELÖNINGAR",
         "note3": "DU ÄGER FRAMTIDEN",
         "note4": "OCH MER...",
-        "buyBtn": "gå med i $MEMEX!"
+        "buyBtn": "gå med i $PEAP!"
     },
     "about": {
         "description1": "Framtiden för decentralisering har anlänt.",
-        "description2": "I den kaotiska PVP-världen av meme coins, där varje nyckelbeslut fattas av en enda ledare, ger MEMEX Crypto sin gemenskap—känd som 'The Flock'—kraften att vägleda projektet till det utlovade landet.",
-        "description3": "Kärnan i MEMEX Crypto är Flocktopia, en revolutionerande DAO.",
+        "description2": "I den kaotiska PVP-världen av meme coins, där varje nyckelbeslut fattas av en enda ledare, ger PEAP Token sin gemenskap—känd som 'The Flock'—kraften att vägleda projektet till det utlovade landet.",
+        "description3": "Kärnan i PEAP Token är Flocktopia, en revolutionerande DAO.",
         "description4": "Här har varje innehavare inte bara en röst utan tjänar belöningar genom vårt banbrytande Vote-To-Earn mekanism.",
-        "description5": "Nu är det DU som får bestämma vägen för $MEMEX.",
-        "buyNow": "Köp $MEMEX Presale NU!"
+        "description5": "Nu är det DU som får bestämma vägen för $PEAP.",
+        "buyNow": "Köp $PEAP Presale NU!"
     },
     "roadmap": {
         "heading": "Flight PlaN.. LÅT OSS FLOCKA IGÅNG!",
@@ -72,25 +72,25 @@
         "heading2": "Steg 2",
         "heading3": "Steg 3",
         "step1_desc1": "Nest Säkerhetsgranskning:",
-        "step1_desc1_1": "Säkra $MEMEX-kontraktet med noggranna granskningar innan takeoff.",
+        "step1_desc1_1": "Säkra $PEAP-kontraktet med noggranna granskningar innan takeoff.",
         "step1_desc2": "Presale Takeoff:",
-        "step1_desc2_1": "Flocken sprider sina vingar när $MEMEX presale lanseras och markerar vår uppstigning.",
+        "step1_desc2_1": "Flocken sprider sina vingar när $PEAP presale lanseras och markerar vår uppstigning.",
         "step1_desc3": "Global Flock Squawk:",
-        "step1_desc3_1": "Starta en världsomspännande marknadsföringskampanj och samla MEMEX Crypto från alla hörn av världen för en kraftfull flygning.",
+        "step1_desc3_1": "Starta en världsomspännande marknadsföringskampanj och samla PEAP Token från alla hörn av världen för en kraftfull flygning.",
 
         "step2_desc1": "Flock Expansion:",
-        "step2_desc1_1": "När ordet sprids, går fler MEMEX Crypto med i flygningen och växer vår gemenskap.",
+        "step2_desc1_1": "När ordet sprids, går fler PEAP Token med i flygningen och växer vår gemenskap.",
         "step2_desc2": "Signal Boost:",
-        "step2_desc2_1": "Inflytelserika röster förstärker $MEMEX, vilket attraherar en större, entusiastisk flock.",
+        "step2_desc2_1": "Inflytelserika röster förstärker $PEAP, vilket attraherar en större, entusiastisk flock.",
         "step2_desc3": "Domination:",
-        "step2_desc3_1": "$MEMEX tar över Ethereum-himlen och blir samtalsämnet bland trädkronorna.",
+        "step2_desc3_1": "$PEAP tar över Ethereum-himlen och blir samtalsämnet bland trädkronorna.",
 
         "step3_desc1": "Token Listning: ",
-        "step3_desc1_1": "Den långa väntan är över—flocken landar på globala handelsplattformar. $MEMEX är nu redo för offentlig handel.",
+        "step3_desc1_1": "Den långa väntan är över—flocken landar på globala handelsplattformar. $PEAP är nu redo för offentlig handel.",
         "step3_desc2": "Kungarikets Expansion:",
-        "step3_desc2_1": "Med flocken förenad fortsätter vi att växa $MEMEX-gemenskapen och tar över krypto-världen med storm.",
+        "step3_desc2_1": "Med flocken förenad fortsätter vi att växa $PEAP-gemenskapen och tar över krypto-världen med storm.",
         "step3_desc3": "Vote to Earn Mekanism: ",
-        "step3_desc3_1": "Introducera Vote-To-Earn-systemet och belöna MEMEX Crypto för deras deltagande och visdom."
+        "step3_desc3_1": "Introducera Vote-To-Earn-systemet och belöna PEAP Token för deras deltagande och visdom."
     },
     "tokenomics": {
         "heading": "FLOCKENOMICS",
@@ -100,22 +100,22 @@
         "title4": "Exchanges Bränsle (10%)",
         "title5": "Bird Calls (20%)",
         "item1": "Tidiga fåglar får masken! 20% av boet är avsatt för dem som dök upp under presale.",
-        "item2": "En rejäl 25% är sparad för staking. Loyala fåglar kan lägga sina $MEMEX tokens och titta på när de kläcks till saftiga belöningar.",
-        "item3": "25% lagras i DAO Vault. Detta är $MEMEX:s skattkista, som används för att kollektivt allokera kungarikets enorma rikedomar. Ju mer du röstar, desto mer tjänar du.",
+        "item2": "En rejäl 25% är sparad för staking. Loyala fåglar kan lägga sina $PEAP tokens och titta på när de kläcks till saftiga belöningar.",
+        "item3": "25% lagras i DAO Vault. Detta är $PEAP:s skattkista, som används för att kollektivt allokera kungarikets enorma rikedomar. Ju mer du röstar, desto mer tjänar du.",
         "item4": "Vi har 10% reserverat för att hålla himlen smidig för våra CEX och DEX flygningar.",
         "item5": "Hela 20% är öronmärkt för marknadsföring, sprid ordet vida med squawks, tweets.",
         "total": "Token Supply"
     },
     "faqs": {
-        "heading": "Vad händer, Mother MEMEX Crypto?",
-        "title1": "Vad är $MEMEX?",
+        "heading": "Vad händer, Mother PEAP Token?",
+        "title1": "Vad är $PEAP?",
         "title2": "Kan jag tjäna belöningar under presale?",
-        "title3": "Vad gör MEMEX Crypto så unikt?",
+        "title3": "Vad gör PEAP Token så unikt?",
         "title4": "Hur köper jag presale?",
-        "desc1": "MEMEX Crypto ($MEMEX) bryter ny mark inom decentralisering. Det är den första Vote To Earn meme coin där DU har makten att kontrollera projektets öde, samtidigt som du tjänar belöningar för dina röster. Innehavare är vid ratten, röstande på alla nya förslag relaterade till projektets framtida framgång och gemenskapens tillväxt. Detta innebär att det inte finns någon ledare, utan en grupp likasinnade som arbetar tillsammans för att göra $MEMEX stort, och tjänar galna belöningar för sitt deltagande.",
-        "desc2": "JA! MEMEX Crypto presale ($MEMEX) är designad för att ge tidiga användare av projektet enorma belöningar för att enkelt köpa och stake sina tokens under presale. Med en generös APY och en stakinghorizont på 2 år, kan presale-stakeare luta sig tillbaka och njuta av passiva belöningar för sitt deltagande i presale, samtidigt som de använder sin röst för att rösta och tjäna!",
-        "desc3": "Aldrig tidigare har en meme coin-gemenskap haft kontroll över varje viktig beslut relaterad till projektet. Och absolut ingen meme coin DAO har belönat sin gemenskap för att rösta på blockchain. MEMEX Crypto ($MEMEX) innehavare är de som banar vägen för en ny tid inom krypto.",
-        "desc4": "För att köpa MEMEX Crypto presale ($MEMEX), kolla in den praktiska guiden ovan! Skaffa en plånbok som Best Wallet, få lite krypto (eller betala med kort), välj önskat belopp, och flyg! Vår widget är powered by Web3Payments, vilket säkerställer att ditt köp är skyddat av Web3Toolkit-teknologi.",
+        "desc1": "PEAP Token ($PEAP) bryter ny mark inom decentralisering. Det är den första Vote To Earn meme coin där DU har makten att kontrollera projektets öde, samtidigt som du tjänar belöningar för dina röster. Innehavare är vid ratten, röstande på alla nya förslag relaterade till projektets framtida framgång och gemenskapens tillväxt. Detta innebär att det inte finns någon ledare, utan en grupp likasinnade som arbetar tillsammans för att göra $PEAP stort, och tjänar galna belöningar för sitt deltagande.",
+        "desc2": "JA! PEAP Token presale ($PEAP) är designad för att ge tidiga användare av projektet enorma belöningar för att enkelt köpa och stake sina tokens under presale. Med en generös APY och en stakinghorizont på 2 år, kan presale-stakeare luta sig tillbaka och njuta av passiva belöningar för sitt deltagande i presale, samtidigt som de använder sin röst för att rösta och tjäna!",
+        "desc3": "Aldrig tidigare har en meme coin-gemenskap haft kontroll över varje viktig beslut relaterad till projektet. Och absolut ingen meme coin DAO har belönat sin gemenskap för att rösta på blockchain. PEAP Token ($PEAP) innehavare är de som banar vägen för en ny tid inom krypto.",
+        "desc4": "För att köpa PEAP Token presale ($PEAP), kolla in den praktiska guiden ovan! Skaffa en plånbok som Best Wallet, få lite krypto (eller betala med kort), välj önskat belopp, och flyg! Vår widget är powered by Web3Payments, vilket säkerställer att ditt köp är skyddat av Web3Toolkit-teknologi.",
         "buynow": "Köp och Stake Nu FÖR 1048%!"
     },
     "footer": {

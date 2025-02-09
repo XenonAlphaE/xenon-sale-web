@@ -112,7 +112,7 @@ export const Navbar = () => {
           <a href="#tokenomics">{sectionText?.tokenomics}</a>
           <a href="#roadmap">{sectionText?.roadmap}</a>
           <a href="#faqs">{sectionText?.faq}</a>
-          <a href="/staking">Staking</a>
+          {/* <a href="/staking">Staking</a> */}
           {/* <a href="#about">{sectionText?.about}</a> */}
           {/* <a href="/white-paper.pdf" target='_blank'>{sectionText?.whitePaper}</a> */}
         </div>

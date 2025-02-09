@@ -230,7 +230,52 @@ export const Header = () => {
 
           </div>
           <div className="intro-content-right">
-                  
+            <div className="intro-text-container"> 
+
+
+                  <h1 className="intro-heading1">
+                  PEPE now has its
+
+                  </h1>
+                  <h1 className="intro-heading2">
+                  own blockchain!
+
+                  </h1>
+                  <p className="intro-desc">
+                  Step into the golden era of memes, where adventurer Pepe has unearthed the ultimate treasure: a revolutionary Layer 2 blockchain.
+
+
+                  </p>
+                  <h3 className="intro-heading3">
+                  PEPE Ascension
+                  </h3>
+                  <p className="intro-desc1">
+                  Faster transactions. Bigger rewards. All the classic PEPE charm.
+                  </p>
+
+                  <ul className="intro-list">
+                      <li className="intro-list-item">
+                        <img src="/img/peap/check-icon.png" className="intro-item-icon"/>
+                        Seamless connection between ETH and PEPE Chain
+                      </li>
+                      <li className="intro-list-item">
+                        <img src="/img/peap/check-icon.png" className="intro-item-icon"/>
+                        Minimal transaction costs
+                      </li>
+                      <li className="intro-list-item">
+                        <img src="/img/peap/check-icon.png" className="intro-item-icon"/>
+                        Increased Throughput — 100 times quicker than Ethereum
+                      </li>
+                  </ul>
+
+            </div>
+
+
+            <div className="intro-decorate">
+                <div className="intro-decorate-catalouge"> PEPE is an adventurous soul, always chasing the unknown. </div>
+                <img className="intro-decorate-img" src="/img/peap/adventure.gif" />
+
+            </div>
           </div>
 
       </div>

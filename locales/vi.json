@@ -1,10 +1,10 @@
 {
     "metadata": {
-        "title": "MEMEX Crypto: Đồng Meme Cách Mạng Vote-To-Earn | Presale Crypto",
-        "description": "Tham gia vào $MEMEX, nơi mỗi Flocker đều có tiếng nói. Khám phá Flocktopia, nền tảng Vote-To-Earn cách mạng đưa quyền lực vào tay cộng đồng. Kiếm phần thưởng, định hình tương lai và trở thành một phần của cuộc cách mạng.",
+        "title": "PEAP Token: Đồng Meme Cách Mạng Vote-To-Earn | Presale Crypto",
+        "description": "Tham gia vào $PEAP, nơi mỗi Flocker đều có tiếng nói. Khám phá Flocktopia, nền tảng Vote-To-Earn cách mạng đưa quyền lực vào tay cộng đồng. Kiếm phần thưởng, định hình tương lai và trở thành một phần của cuộc cách mạng.",
         "openGraph": {
-            "title": "MEMEX Crypto: Đồng Meme Cách Mạng Vote-To-Earn | Presale Crypto",
-            "description": "Tham gia vào $MEMEX, nơi mỗi Flocker đều có tiếng nói. Khám phá Flocktopia, nền tảng Vote-To-Earn cách mạng đưa quyền lực vào tay cộng đồng. Kiếm phần thưởng, định hình tương lai và trở thành một phần của cuộc cách mạng.",
+            "title": "PEAP Token: Đồng Meme Cách Mạng Vote-To-Earn | Presale Crypto",
+            "description": "Tham gia vào $PEAP, nơi mỗi Flocker đều có tiếng nói. Khám phá Flocktopia, nền tảng Vote-To-Earn cách mạng đưa quyền lực vào tay cộng đồng. Kiếm phần thưởng, định hình tương lai và trở thành một phần của cuộc cách mạng.",
             "url": "https://flockez.com/vi",
             "locale": "vi_VN"
         }
@@ -24,7 +24,7 @@
         "about": "GIỚI THIỆU"
     },
     "buyForm": {
-        "intro": "MUA PRESALE $MEMEX",
+        "intro": "MUA PRESALE $PEAP",
         "day": "Ngày",
         "hrs": "Giờ",
         "mins": "Phút",
@@ -45,23 +45,23 @@
         "buyStake": "Mua và Stake để nhận 8471% phần thưởng",
         "nextPriceAlert": "CHO ĐẾN KHI TĂNG GIÁ",
         "para1": "1207% phần thưởng staking",
-        "para2": "$MEMEX. đồng meme của mọi người.",
-        "para3": "MEMEX Crypto cách mạng",
+        "para2": "$PEAP. đồng meme của mọi người.",
+        "para3": "PEAP Token cách mạng",
         "para3_1": "Vote-To-Earn",
         "para3_2": "nền tảng đưa quyền lực vào tay bạn. Mua sớm presale ngay bây giờ để kiếm phần thưởng KHỦNG!",
         "note1": "KIẾM TIỀN QUA VOTE",
         "note2": "PHẦN THƯỞNG SỚM LỚN",
         "note3": "BẠN SỞ HỮU TƯƠNG LAI",
         "note4": "VÀ CÒN NHIỀU HƠN...",
-        "buyBtn": "tham gia $MEMEX!"
+        "buyBtn": "tham gia $PEAP!"
     },
     "about": {
         "description1": "Tương lai của sự phi tập trung đã đến.",
-        "description2": "Trong thế giới hỗn loạn của các đồng meme PVP, nơi mọi quyết định quan trọng đều do một người lãnh đạo duy nhất, MEMEX Crypto trao quyền cho cộng đồng của mình—được gọi là 'The Flock'—để dẫn dắt dự án đến với vùng đất hứa.",
-        "description3": "Ở trung tâm của MEMEX Crypto là Flocktopia, một DAO cách mạng.",
+        "description2": "Trong thế giới hỗn loạn của các đồng meme PVP, nơi mọi quyết định quan trọng đều do một người lãnh đạo duy nhất, PEAP Token trao quyền cho cộng đồng của mình—được gọi là 'The Flock'—để dẫn dắt dự án đến với vùng đất hứa.",
+        "description3": "Ở trung tâm của PEAP Token là Flocktopia, một DAO cách mạng.",
         "description4": "Tại đây, mỗi holder không chỉ có tiếng nói mà còn kiếm phần thưởng thông qua cơ chế Vote-To-Earn tiên phong của chúng tôi.",
-        "description5": "Bây giờ BẠN sẽ quyết định con đường của $MEMEX.",
-        "buyNow": "Mua $MEMEX Presale NGAY!"
+        "description5": "Bây giờ BẠN sẽ quyết định con đường của $PEAP.",
+        "buyNow": "Mua $PEAP Presale NGAY!"
     },
     "roadmap": {
         "heading": "KẾ HOẠCH CÁNH... CÙNG FLOCKING BAY!",
@@ -72,25 +72,25 @@
         "heading2": "Bước 2",
         "heading3": "Bước 3",
         "step1_desc1": "Kiểm Tra An Ninh Tổ:",
-        "step1_desc1_1": "Đảm bảo hợp đồng $MEMEX được kiểm tra kỹ lưỡng trước khi cất cánh.",
+        "step1_desc1_1": "Đảm bảo hợp đồng $PEAP được kiểm tra kỹ lưỡng trước khi cất cánh.",
         "step1_desc2": "Cất Cánh Presale:",
-        "step1_desc2_1": "Flock dang rộng cánh khi presale $MEMEX được khởi động, đánh dấu sự bay lên.",
+        "step1_desc2_1": "Flock dang rộng cánh khi presale $PEAP được khởi động, đánh dấu sự bay lên.",
         "step1_desc3": "Flock Squawk Toàn Cầu:",
-        "step1_desc3_1": "Khởi động chiến dịch marketing toàn cầu, quy tụ MEMEX Crypto từ mọi ngóc ngách trên thế giới cho một chuyến bay mạnh mẽ.",
+        "step1_desc3_1": "Khởi động chiến dịch marketing toàn cầu, quy tụ PEAP Token từ mọi ngóc ngách trên thế giới cho một chuyến bay mạnh mẽ.",
 
         "step2_desc1": "Mở Rộng Flock:",
-        "step2_desc1_1": "Khi thông tin lan rộng, ngày càng nhiều MEMEX Crypto tham gia chuyến bay, làm lớn mạnh cộng đồng.",
+        "step2_desc1_1": "Khi thông tin lan rộng, ngày càng nhiều PEAP Token tham gia chuyến bay, làm lớn mạnh cộng đồng.",
         "step2_desc2": "Tăng Cường Tín Hiệu:",
-        "step2_desc2_1": "Những tiếng nói có ảnh hưởng làm tăng sự nổi bật của $MEMEX, thu hút một cộng đồng Flock lớn hơn và nhiệt tình hơn.",
+        "step2_desc2_1": "Những tiếng nói có ảnh hưởng làm tăng sự nổi bật của $PEAP, thu hút một cộng đồng Flock lớn hơn và nhiệt tình hơn.",
         "step2_desc3": "Chiếm Lĩnh:",
-        "step2_desc3_1": "$MEMEX chiếm lĩnh bầu trời Ethereum, trở thành chủ đề nóng tại các đỉnh cây.",
+        "step2_desc3_1": "$PEAP chiếm lĩnh bầu trời Ethereum, trở thành chủ đề nóng tại các đỉnh cây.",
 
         "step3_desc1": "Liên Kết Token:",
-        "step3_desc1_1": "Chờ đợi đã lâu—Flock hạ cánh trên các nền tảng giao dịch toàn cầu. $MEMEX đã sẵn sàng cho việc giao dịch công khai.",
+        "step3_desc1_1": "Chờ đợi đã lâu—Flock hạ cánh trên các nền tảng giao dịch toàn cầu. $PEAP đã sẵn sàng cho việc giao dịch công khai.",
         "step3_desc2": "Mở Rộng Vương Quốc:",
-        "step3_desc2_1": "Với Flock đoàn kết, tiếp tục phát triển cộng đồng $MEMEX, chinh phục thế giới crypto.",
+        "step3_desc2_1": "Với Flock đoàn kết, tiếp tục phát triển cộng đồng $PEAP, chinh phục thế giới crypto.",
         "step3_desc3": "Cơ Chế Vote to Earn:",
-        "step3_desc3_1": "Giới thiệu hệ thống vote-to-earn, thưởng cho MEMEX Crypto về sự tham gia và trí tuệ của họ."
+        "step3_desc3_1": "Giới thiệu hệ thống vote-to-earn, thưởng cho PEAP Token về sự tham gia và trí tuệ của họ."
     },
     "tokenomics": {
         "heading": "FLOCKENOMICS",
@@ -100,22 +100,22 @@
         "title4": "Exchanges Fuel (10%)",
         "title5": "Bird Calls (20%)",
         "item1": "Những chú chim đầu tiên sẽ nhận được phần thưởng! 20% của tổ sẽ được dành riêng cho những người đã tham gia presale.",
-        "item2": "Một phần lớn 25% sẽ được dành cho staking. Những chú chim trung thành có thể gửi token $MEMEX của mình và xem chúng đẻ ra phần thưởng hấp dẫn.",
-        "item3": "25% sẽ được lưu trữ trong Vault DAO. Đây là kho báu của $MEMEX, dùng để phân phối tài sản lớn của Vương Quốc. Càng bỏ phiếu, bạn càng kiếm được nhiều.",
+        "item2": "Một phần lớn 25% sẽ được dành cho staking. Những chú chim trung thành có thể gửi token $PEAP của mình và xem chúng đẻ ra phần thưởng hấp dẫn.",
+        "item3": "25% sẽ được lưu trữ trong Vault DAO. Đây là kho báu của $PEAP, dùng để phân phối tài sản lớn của Vương Quốc. Càng bỏ phiếu, bạn càng kiếm được nhiều.",
         "item4": "Chúng tôi dành 10% để đảm bảo bầu trời luôn suôn sẻ cho các chuyến bay CEX và DEX.",
         "item5": "20% dành cho marketing, quảng bá thông điệp đi xa và rộng với những tiếng gọi, những tweet.",
         "total": "Cung Cấp Token"
     },
     "faqs": {
         "heading": "Chào các Flockers, có chuyện gì thế?",
-        "title1": "$MEMEX là gì?",
+        "title1": "$PEAP là gì?",
         "title2": "Tôi có thể kiếm phần thưởng trong thời gian presale không?",
-        "title3": "Điều gì làm MEMEX Crypto trở nên độc đáo?",
+        "title3": "Điều gì làm PEAP Token trở nên độc đáo?",
         "title4": "Cách mua presale là gì?",
-        "desc1": "MEMEX Crypto ($MEMEX) đang mở ra một trang mới trong lĩnh vực phi tập trung. Đây là đồng meme đầu tiên áp dụng cơ chế Vote-To-Earn, nơi mà BẠN có quyền kiểm soát số phận của dự án, đồng thời kiếm phần thưởng cho những lá phiếu của mình. Những người nắm giữ ở vị trí lái xe, bỏ phiếu cho tất cả các đề xuất mới liên quan đến sự thành công trong tương lai của dự án và sự phát triển của cộng đồng. Điều này có nghĩa là không có một người lãnh đạo, chỉ có một nhóm người cùng chí hướng làm việc cùng nhau để làm cho $MEMEX trở nên vĩ đại, và kiếm được phần thưởng khủng từ sự tham gia của họ.",
-        "desc2": "ĐÚNG VẬY! Presale MEMEX Crypto ($MEMEX) được thiết kế để cho phép những người tham gia sớm kiếm được phần thưởng khổng lồ chỉ bằng cách mua và staking token trong thời gian presale. Với APY hấp dẫn và kỳ hạn staking kéo dài 2 năm, những người stake trong presale có thể ngồi thư giãn và tận hưởng phần thưởng thụ động từ việc tham gia presale, đồng thời sử dụng lá phiếu của họ để kiếm thêm phần thưởng!",
-        "desc3": "Chưa bao giờ cộng đồng của một đồng meme lại có quyền kiểm soát tất cả các quyết định quan trọng liên quan đến dự án. Và chắc chắn không có DAO đồng meme nào thưởng cho cộng đồng vì đã bỏ phiếu trên blockchain. Những người nắm giữ MEMEX Crypto ($MEMEX) đang mở đường mới trong không gian này.",
-        "desc4": "Để mua presale MEMEX Crypto ($MEMEX), hãy tham khảo hướng dẫn mua ở trên! Cài đặt ví như Best Wallet, mua một ít crypto (hoặc thanh toán qua thẻ), chọn số lượng bạn muốn và bay lên! Widget của chúng tôi được cung cấp bởi Web3Payments đảm bảo rằng giao dịch của bạn được bảo vệ bởi công nghệ Web3Toolkit.",
+        "desc1": "PEAP Token ($PEAP) đang mở ra một trang mới trong lĩnh vực phi tập trung. Đây là đồng meme đầu tiên áp dụng cơ chế Vote-To-Earn, nơi mà BẠN có quyền kiểm soát số phận của dự án, đồng thời kiếm phần thưởng cho những lá phiếu của mình. Những người nắm giữ ở vị trí lái xe, bỏ phiếu cho tất cả các đề xuất mới liên quan đến sự thành công trong tương lai của dự án và sự phát triển của cộng đồng. Điều này có nghĩa là không có một người lãnh đạo, chỉ có một nhóm người cùng chí hướng làm việc cùng nhau để làm cho $PEAP trở nên vĩ đại, và kiếm được phần thưởng khủng từ sự tham gia của họ.",
+        "desc2": "ĐÚNG VẬY! Presale PEAP Token ($PEAP) được thiết kế để cho phép những người tham gia sớm kiếm được phần thưởng khổng lồ chỉ bằng cách mua và staking token trong thời gian presale. Với APY hấp dẫn và kỳ hạn staking kéo dài 2 năm, những người stake trong presale có thể ngồi thư giãn và tận hưởng phần thưởng thụ động từ việc tham gia presale, đồng thời sử dụng lá phiếu của họ để kiếm thêm phần thưởng!",
+        "desc3": "Chưa bao giờ cộng đồng của một đồng meme lại có quyền kiểm soát tất cả các quyết định quan trọng liên quan đến dự án. Và chắc chắn không có DAO đồng meme nào thưởng cho cộng đồng vì đã bỏ phiếu trên blockchain. Những người nắm giữ PEAP Token ($PEAP) đang mở đường mới trong không gian này.",
+        "desc4": "Để mua presale PEAP Token ($PEAP), hãy tham khảo hướng dẫn mua ở trên! Cài đặt ví như Best Wallet, mua một ít crypto (hoặc thanh toán qua thẻ), chọn số lượng bạn muốn và bay lên! Widget của chúng tôi được cung cấp bởi Web3Payments đảm bảo rằng giao dịch của bạn được bảo vệ bởi công nghệ Web3Toolkit.",
         "buynow": "Mua và Stake ngay để nhận 1048%!"
     },
     "footer": {
