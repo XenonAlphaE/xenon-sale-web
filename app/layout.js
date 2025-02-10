@@ -48,10 +48,10 @@ export async function generateMetadata() {
 
 
 
-export default function RootLayout({ children }) {
+  export default async function RootLayout({ children }) {
    // Define your schema markup
 
-   const schemaMarkup = {
+  const schemaMarkup = {
     "@context": "https://schema.org",
     "@type": getSiteName(),
     name: "Your Organization Name",
@@ -68,6 +68,8 @@ export default function RootLayout({ children }) {
       "query-input": "required name=search_term_string",
     },
   };
+
+  const backlinks = await getBacklinkUrls();
 
   return (
     <html>
@@ -123,7 +125,7 @@ export default function RootLayout({ children }) {
         <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
         <script type="text/javascript" src="js/bootstrap.js"></script>
 
-        {getBacklinkUrls().map(item => {
+        { backlinks.map(item => {
           return <a href={item.url} style={{display: 'none'}}> {item.text}</a>
         })}
       </body>
