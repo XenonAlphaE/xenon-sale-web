@@ -92,7 +92,7 @@ export const Navbar = () => {
     <div className='nav-container'>
       <div className="appnav-navbar-brand">
         <a href="/">
-        <img src="/img/peap/logo.png" alt="Brand Logo" className="appnav-logo" />
+        <img src="/img/btcbull/logo.png" alt="Brand Logo" className="appnav-logo" />
         </a>
 
           {/* <button onClick={mobileBuyNow} className="buy-btn-mobile" >{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button> */}
@@ -107,13 +107,13 @@ export const Navbar = () => {
       </div>
 
         <div className={`appnav-navbar-menu`}>
-          <a href={`/${currentLanguage}`}>{sectionText?.home}</a>
+          <a href="/staking">Staking</a>
+          <a href="#about">{sectionText?.about}</a>
+          {/* <a href={`/${currentLanguage}`}>{sectionText?.home}</a> */}
           <a href="#howtobuy">{sectionText?.howtobuy}</a>
           <a href="#tokenomics">{sectionText?.tokenomics}</a>
-          <a href="#roadmap">{sectionText?.roadmap}</a>
+          {/* <a href="#roadmap">{sectionText?.roadmap}</a> */}
           <a href="#faqs">{sectionText?.faq}</a>
-          {/* <a href="/staking">Staking</a> */}
-          {/* <a href="#about">{sectionText?.about}</a> */}
           {/* <a href="/white-paper.pdf" target='_blank'>{sectionText?.whitePaper}</a> */}
         </div>
       <div className={`appnav-navbar-right`}>
@@ -122,6 +122,7 @@ export const Navbar = () => {
             {/* <a href="https://x.com/Pepetocoin"  target='_blank' ><img src='/img/pepeto/twitter.svg' className='appnav-social-icon' /></a>
             <a href="https://t.me/pepeto_channel"  target='_blank' ><img src='/img/pepeto/telegram.svg' className='appnav-social-icon' /></a> */}
 
+        <a className="appnav-whitepaper" >{sectionText?.whitePaper}</a>
         <button onClick={scrollToBuySection} className="appnav-login" >{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button>
 
           <div className="appnav-lang-dropdown">
@@ -143,8 +144,10 @@ export const Navbar = () => {
             </div>
             </div>
           </div>
-        </div>
+          <a href="https://x.com/Pepetocoin"  target='_blank' ><img src='/img/default/twitter2.svg' className='appnav-social-icon' /></a>
+          <a href="https://t.me/pepeto_channel"  target='_blank' ><img src='/img/default/telegram2.svg' className='appnav-social-icon' /></a>
       </div>
+    </div>
 
       {isMobile && <div className={`appnav-navbar-menu-mobile ${isMenuOpen ? 'appnav-is-active' : ''}`}>
      

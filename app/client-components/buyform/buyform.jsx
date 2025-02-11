@@ -170,7 +170,9 @@ export const BuyForm = () => {
                 </div>
 
 
-                <p className="total-raised">{sectionText?.funRaised}:  $3,162,777.72 / $60,000,000</p>
+                <p className="total-raised">{sectionText?.funRaised}:  $552,105.96 / $5,000,000</p>
+
+                <ProgressBar percentage={54}/>
                 {walletEth.currentAddress && 
                 <div>
                 {/* {truncateMiddle(walletEth.currentAddress)} */}
@@ -264,7 +266,7 @@ export const BuyForm = () => {
 
             {/* <p translate="" className="font-18 text-center m-0 mt-2"><img src="/img/solx/token.svg" style={{ 'height': '35px' }} /> Powered by <a target="_blank" href='https://web3paymentsolutions.io/' className=" "><img src="/img/default/W3P_White.svg" alt="" style={{height:25}} /></a></p> */}
             </div>
-            <a target="_blank" href='https://web3paymentsolutions.io/' className=" "><img src="/img/default/W3P_Black.svg" alt="" style={{height:18}} /> </a>
+            <a target="_blank" href='https://web3paymentsolutions.io/' className=" "><img src="/img/default/W3P_White.svg" alt="" style={{height:18}} /> </a>
         </div>
         </div>
     )

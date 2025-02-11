@@ -9,22 +9,22 @@ export const ProgressBar = ({ percentage }) => {
     width: '100%',
     // backgroundColor: bgColor || '',
     // borderColor:'#eee  ',
-    height: 12,
+    height: 30,
     overflow:'hidden',
     display:"flex",
     alignItems:"center",
-    borderRadius: '18px',
-    background: 'linear-gradient(#454545f0, #333335c4), url(/img/solx/snow-bg.gif) no-repeat 0 0 / 800px',
-    // padding:"0px 4px"
+    borderRadius: '4px',
+    background: 'rgb(255, 255, 46)',
+    padding:"1px 1px"
 
   };
 
   const barStyle = {
     width: `${percentage}%`,
     height: '100%',
-    borderRadius:"18px",
+    borderRadius:"4px",
     transition: 'width 0.3s ease',
-    background: 'linear-gradient(#03cdeff0, #8077fbc4), url(/img/solx/snow-bg.gif) no-repeat 0 0 / 800px'
+    background: 'rgb(247, 148, 29)'
   };
 
   const textStyle = {
@@ -34,14 +34,14 @@ export const ProgressBar = ({ percentage }) => {
     width:"max-content",
     fontWeight: 500,
     transform: 'translate(-50%, -50%)',
-    color: '#fff', /* Text color */
+    color: '#000', /* Text color */
     fontSize: '12px', /* Adjust font size as needed */
   };
 
   return (
     <div style={containerStyle}>
       <div style={barStyle}></div>
-      {/* <div style={textStyle}>{sectionText?.nextPriceAlert}</div> */}
+      <div style={textStyle}>{sectionText?.nextPriceAlert}</div>
     </div>
   );
 };

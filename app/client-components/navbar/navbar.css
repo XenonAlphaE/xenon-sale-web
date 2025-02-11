@@ -4,12 +4,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
+  background-color: transparent;
   
   position: relative;
   transition: top 0.3s ease; /* Add transition for smoother effect */
   z-index: 99999999;
   box-sizing: border-box;
+  padding-block: 8px;
 }
 
 .appnav-navbar.sticky {
@@ -22,20 +23,19 @@
 
 .appnav-navbar.scrolled {
     backdrop-filter: blur(30px);
-
+    background: rgb(22, 22, 22);
 }
 
 .nav-container{
-  padding: 16px 16px;
-  background: #fff;
-  border: solid 2px rgb(75, 26, 9);
+  padding: 0px 16px;
+  background: transparent;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
-
+  max-width: 1250px;
 }
 
 .appnav-navbar-brand {
@@ -97,23 +97,26 @@
 
 .appnav-navbar-menu {
   display: flex;
-  gap: 1rem;
+  column-gap: 8px;
 }
 
 .appnav-navbar-menu a {
-  transform: scaleY(1.41);    /* Increase height by 1.5 times */
-  color: rgb(75, 26, 9);
+  color: white;
   cursor: pointer;
   text-decoration: none;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 12px;
   text-transform: capitalize;
-  margin: 0 7px;
-  padding:10px 15px 0;
+  padding:6px 0px;
+  min-width: 110px;
+  border-radius: 50px;
+  text-align: center;
+  background-color: rgb(34, 29, 16);
+  border: 2px solid rgb(255, 199, 0);
 }
 
 .appnav-navbar-menu a:hover {
-  color: rgb(170, 118, 35);
+  color: #ffc700;
 }
 
 .appnav-navbar-menu-mobile{
@@ -136,26 +139,41 @@
 }
 
 .appnav-login {
-  padding: 12px 24px;
+  padding: 0px;
   border-radius: 4px;
   cursor: pointer;
   font-weight: 900;
   text-decoration: none;
-  color: rgb(253, 237, 182);
-  letter-spacing: .5px;
-  background: rgb(114, 58, 24);
+  color: black;
+  background: url('/img/btcbull/button-bg.svg') no-repeat 0% 0% / 100%;
   min-width: 140px;
-  border: 2px solid #fff;
-
+  border: none;
+  min-height: 42px;
 }
 
-.appnav-login:hover{
+.appnav-whitepaper {
+  padding: 0px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 900;
+  text-decoration: none;
+  color: rgb(255, 199, 0);
+  background: url('/img/btcbull/btn-outline-bg.svg') no-repeat 0% 0% / 100%;
+  min-width: 140px;
+  border: none;
+  min-height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .appnav-login:hover{
   background: linear-gradient(rgb(114, 58, 24), #03cdeff0);
-}
+} */
 
 .appnav-social-icon {
-  width: 40px;
-  height: 40px;
+  width: 28px;
+  height: 28px;
 }
 
 .appnav-language {
@@ -223,20 +241,25 @@
   align-items: center;
   cursor: pointer;
   color: #fff;
+  justify-content: center;
+  padding: 4px 16px;
+  border: solid 1px rgb(255, 199, 0);
+  background: rgb(34, 29, 16);
+  border-radius: 16px;
 }
 
 .appnav-lang-custom-dropdown span {
   margin-right: 5px;
-  color: #000;
+  color: rgb(255, 199, 0);
 }
 
 .lang-dropdown-content {
-  color:#000;
+  color:white;
   display: none;
   position: absolute;
   top: calc(100% + 10px); /* Adjusted position with 10px padding */
   left: -80px;
-  background-color: #000000;
+  background-color: rgb(33, 37, 41);
   border: 1px solid #000;
   box-shadow: 0 4px 8px rgba(6, 6, 80, 0.1);
   padding: 20px 10px; /* Added padding */
