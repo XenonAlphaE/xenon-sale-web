@@ -107,7 +107,7 @@ export const Navbar = () => {
       </div>
 
         <div className={`appnav-navbar-menu`}>
-          <a href="/staking">Staking</a>
+          {/* <a href="/staking">Staking</a> */}
           <a href="#about">{sectionText?.about}</a>
           {/* <a href={`/${currentLanguage}`}>{sectionText?.home}</a> */}
           <a href="#howtobuy">{sectionText?.howtobuy}</a>
@@ -144,27 +144,25 @@ export const Navbar = () => {
             </div>
             </div>
           </div>
-          <a href="https://x.com/Pepetocoin"  target='_blank' ><img src='/img/default/twitter2.svg' className='appnav-social-icon' /></a>
-          <a href="https://t.me/pepeto_channel"  target='_blank' ><img src='/img/default/telegram2.svg' className='appnav-social-icon' /></a>
+          <a href="https://x.com/BTCBULL_TOKEN"  target='_blank' ><img src='/img/default/twitter2.svg' className='appnav-social-icon' /></a>
+          <a href="https://t.me/BTC_Bull_Token"  target='_blank' ><img src='/img/default/telegram2.svg' className='appnav-social-icon' /></a>
       </div>
     </div>
 
       {isMobile && <div className={`appnav-navbar-menu-mobile ${isMenuOpen ? 'appnav-is-active' : ''}`}>
-     
-      <a onClick={toggleMenu} href={`/${currentLanguage}`}>{sectionText?.home}</a>
+      {/* <a onClick={toggleMenu} href={`/${currentLanguage}`}>{sectionText?.home}</a> */}
+        <a onClick={toggleMenu} href="#about">{sectionText?.about}</a>
         <a onClick={toggleMenu} href="#howtobuy">{sectionText?.howtobuy}</a>
         <a onClick={toggleMenu} href="#tokenomics">{sectionText?.tokenomics}</a>
-        <a onClick={toggleMenu} href="#roadmap">{sectionText?.roadmap}</a>
         <a onClick={toggleMenu} href="#faqs">{sectionText?.faq}</a>
         {/* <a href="/staking">Staking</a> */}
 
         <div className='social-container'>
 
-          <a href="https://x.com/Pepetocoin"  target='_blank' ><img src='/img/default/x.png' className='appnav-social-icon' /></a>
-          <a href="https://t.me/pepeto_channel"  target='_blank' ><img src='/img/default/telegram.png' className='appnav-social-icon' /></a>
+          <a href="https://x.com/BTCBULL_TOKEN"  target='_blank' ><img src='/img/default/twitter2.svg' className='appnav-social-icon' /></a>
+          <a href="https://t.me/BTC_Bull_Token"  target='_blank' ><img src='/img/default/telegram2.svg' className='appnav-social-icon' /></a>
         </div>
 
-      <button onClick={scrollToBuySection} className="appnav-login" >{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button>
 
         <div className="appnav-lang-dropdown">
           <div className="appnav-lang-custom-dropdown" onClick={toggleLanguageDrpdwn}>
@@ -184,6 +182,7 @@ export const Navbar = () => {
             ))}
           </div>
         </div>
+        <button onClick={scrollToBuySection} className="appnav-login" >{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button>
 
       </div>
       }

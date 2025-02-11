@@ -373,6 +373,9 @@
 
   .appnav-login {
     width: 100%;
+    background: rgb(255, 199, 0);
+    color: black;
+    margin: 8px 0px;
   }
 
   .appnav-lang-dropdown {
@@ -380,14 +383,19 @@
     width: 100%;
     justify-content: center;
     display: flex;
-    border: solid 1px #fff;
     height: 40px;
     border-radius: 20px;
     margin-bottom: 10px; 
     margin-top: 10px;
     margin-left: 0px;
     border-radius: 20px;
-    border: solid 1px black;
+    color: white;
+    border: solid 1px rgb(255, 199, 0);
+    background: rgb(34, 29, 16);
+  }
+  
+  .appnav-lang-custom-dropdown{
+    border: none;
   }
   
   .lang-dropdown-content {
@@ -421,7 +429,7 @@
     top: 100%; /* Position below navbar */
     left: 0;
     width: 100%;
-    background-color: #fff; /* Adjust background as needed */
+    background-color: rgb(31, 31, 31); /* Adjust background as needed */
     z-index: 999;
     padding: 0px 16px;
     color: white;
@@ -434,7 +442,7 @@
   .appnav-navbar-menu-mobile a {
       font-size: 24px;
       text-decoration: none;
-      color: black;
+      color: white;
       font-weight: 700;
       padding: 10px 0px;
       border-bottom: solid 1px white;
@@ -447,6 +455,10 @@
     justify-content: space-evenly;
   }    
 
+  .appnav-navbar-menu-mobile .social-container a{
+    border: none;
+  }
+
 
   .appnav-navbar-menu-mobile .social-icon{
     display: inline-block; /* Ensures padding is applied correctly */
@@ -454,11 +466,7 @@
   }
 
 
-  .appnav-login{
-    margin: 8px 0px;
-    color: white;
-    border-color: white;
-  }
+
 
   
 }

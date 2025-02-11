@@ -232,7 +232,7 @@ export const BuyForm = () => {
                         className="input-control-custom"
                         placeholder="0" />
                         <div className="amountType">
-                          <img src='/img/peap/coin.png' style={{ 'height': '30px', marginRight:5 }} />
+                          <img src='/img/btcbull/logo.png' style={{ 'height': '30px', marginRight:5 }} />
                         </div>
                     </div>
                     </div>

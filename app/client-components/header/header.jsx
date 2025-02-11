@@ -226,6 +226,10 @@ export const Header = () => {
       <div className="intro-content">
           
           <div className="intro-content-left">
+              <div className="intro-text-container">
+                <h1 className="intro-heading1"><span _ngcontent-ng-c406187462="">BTC Bull Token:</span> Bitcoin’s Best Crypto Presale</h1>
+                <h2 className="intro-heading2">BTC Bull Token is the unstoppable force pushing Bitcoin towards $1M+! Buy $BTCBULL and earn Bitcoin as BTC becomes the No.1 asset in the world!</h2>
+              </div>
               <img className="intro-banner" src="/img/btcbull/banner-img.webp" />
           </div>
           <div className="intro-content-right">
