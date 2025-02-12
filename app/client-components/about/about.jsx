@@ -57,7 +57,7 @@ export const About = () => {
 
 
                     </p>
-                    <button className='about-buynow' about-buynow> BUY NOW</button>
+                    <button className='about-buynow' onClick={scrollToBuySection}> BUY NOW</button>
                     <img className='about-desc-img' src='/img/btcbull/about-bull.webp'/>
               </div>
               <div className='about-cards'>

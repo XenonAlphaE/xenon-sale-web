@@ -18,7 +18,7 @@
         "about": "ABOUT"
     },
     "buyForm": {
-        "intro": "Buy $BTCBULL Token In Presale Now!",
+        " Disclaimer: BTC Bull Token is a speculative meme coin asset linked to the social and market value of Bitcoin. The cryptocurrency market carries the risk that you could lose all your capital. Nothing on this website is financial advice. DYOR and HODL to $1M! ": "Buy $BTCBULL Token In Presale Now!",
         "day": "Days",
         "hrs": "Hours",
         "mins": "Minutes",
@@ -43,7 +43,7 @@
     },
     "footer": {
         "sub": "DISCLAIMER",
-        "text": "Cryptocurrency investments carry a high risk of volatility. Be aware of the tax implications, as profits may be subject to capital gains or other taxes in your jurisdiction. Cryptocurrency regulations can vary, so ensure you understand the rules in your area. Conduct thorough research and invest only what you can afford to lose.",
-        "copyRight": "Copyright 2024 — Big Bird"
+        "text": "DISCLAIMER: BTC Bull Token is a speculative meme coin asset linked to the social and market value of Bitcoin. The cryptocurrency market carries the risk that you could lose all your capital. Nothing on this website is financial advice. DYOR and HODL to $1M! ",
+        "copyRight": ""
     }   
 }

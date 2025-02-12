@@ -49,7 +49,7 @@
 .tokenomics-cards{
     display: flex;
     flex-direction: row;
-    column-gap: 36px;
+    column-gap: 46px;
 
 }
 .tokenomics-card-item{
@@ -80,7 +80,7 @@
 }
 .tokenomics-card-desc{
     color: white;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
 }
 
