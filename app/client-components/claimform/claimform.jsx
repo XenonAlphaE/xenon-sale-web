@@ -41,7 +41,6 @@ export const ClaimForm = () => {
   
     // const [network, setNetwork] = useState("")
     // const [networkPrice, setNetworkPrice] = useState(0);
-    const [totalBought, setTotalBought] = useState(0);
   
   
     const { days, hours, minutes, seconds } = useCountdown();
@@ -59,29 +58,7 @@ export const ClaimForm = () => {
       }
     }, [isClicked]);
   
-    useEffect(() => {
-     
-  
-      const loadPurchaseInfo = async () => {
-        if (!walletEth.currentAddress) {
-          return;
-        }
-  
-        try {
-          
-          const info = await getUserPurchaseInfo(configs, walletEth.currentAddress)
-          if (info) {
-            setTotalBought(info)
-          }
-        }
-        catch (err) {
-  
-        }
-      }
-      loadPurchaseInfo()
-    }, [walletEth.currentAddress, configs]); // Empty dependency array ensures this effect runs only once
-  
-  
+    
     const handleTokenInputChange = (event) => {
       const { value } = event.target;
       if (value === "") {
@@ -172,7 +149,7 @@ export const ClaimForm = () => {
     const handleClaimToken = async() => {
       if (!isClicked) {
         setIsClicked(true);
-        walletEth.claimTokens(walletEth.maxAmount, totalBought)
+        walletEth.claimTokens(walletEth.maxAmount, walletEth?.totalBought)
       }
     }
   
@@ -188,11 +165,11 @@ export const ClaimForm = () => {
            
             {/* <ProgressBar percentage={11457475.67*100 / 11540268}  /> */}
 
-            <p className="total-raised">{sectionText?.funRaised}:  $58,795,908.72 / $70,000,000</p>
+            <p className="total-raised">Over $70m raised</p>
             {walletEth.currentAddress && 
               <div>
-                <p className="user-purchased-info">{sectionText.boughtAmount} ${configs?.targetToken?.symbol} = {totalBought}</p>
-                <p className="user-purchased-info">{sectionText.stakeableAmount} ${configs?.targetToken?.symbol} = {totalBought}</p>
+                <p className="user-purchased-info" style={{fontWeight:800, color:"#1af"}}>Token Address {configs?.targetToken?.address}</p>
+                <p className="user-purchased-info">{sectionText.boughtAmount} ${configs?.targetToken?.symbol} = {walletEth?.formatedBought}</p>
               </div>  
             }
             </div>

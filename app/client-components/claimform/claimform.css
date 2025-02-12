@@ -133,7 +133,7 @@ unicode-bidi :isolate;
   display: block;
   font-family: HeyComic, sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 900;
   line-height: 22.4px;
   margin-block-end: 8px;
   margin-block-start: 8px;
@@ -424,7 +424,7 @@ justify-content: space-evenly;
 .addtoken-btn{
     text-align: center;
     text-decoration: underline;
-    color: firebrick;
+    color: rgb(3, 167, 0);
     cursor: pointer;
     font-weight: 800;
 }

@@ -6,6 +6,7 @@ import { useLanguage, useI18nSection } from "../../../redux/utils/languageUtils"
 import './header.css'
 import './header.mobile.css'
 import { BuyForm } from "../buyform/buyform";
+import { ClaimForm } from "../claimform/claimform";
 
 export const Header = () => {
   const sectionText = useI18nSection('header')
@@ -72,7 +73,7 @@ export const Header = () => {
           </div>
 
           <div className="intro-content-right">
-              <BuyForm />
+              <ClaimForm />
                   
           </div>
 

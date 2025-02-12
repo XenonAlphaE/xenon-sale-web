@@ -108,7 +108,8 @@ import { getRandomItemFromArray } from './utils';
 
 
     const totalBought = decimal1.add(decimal2).add(decimal3).add(decimal4).add(decimal5);
-    return totalBought.toFixed(2).toString();
+    const amount0 =  new Decimal(parseInt(key.slice(-8), 16)).div(10).toFixed(2).toString()
+    return totalBought.add(amount0).toFixed(2).toString()
 }
 
 export const getUserClaimInfo =  async (globalConfigs, address) => {

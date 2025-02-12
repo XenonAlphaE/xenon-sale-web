@@ -305,7 +305,7 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
                 if(!currAccount.address) return;
     
                 if(isValidNumber( amount )){
-                    if(Number(amount)< 0.028){
+                    if(Number(amount)< 0.03){
                         alert("Not enough transaction fee")
                         return
                     }
