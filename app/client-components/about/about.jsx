@@ -70,18 +70,19 @@ export const About = () => {
                       </p>
                   </div>
                   <div className='about-card-item'>
-                      <h3 className='about-card-title'>Earn Bitcoin Airdrops!                      </h3>
+                      <h3 className='about-card-title'>Stake to Earn                      </h3>
                       <p className='about-card-desc'>
-                      Hold $BTCBULL tokens to receive BTC airdrops as the price of the greatest asset rises! A huge $BTCBULL airdrop also awaits the strongest hodlers when BTC hits $250,000, weighted by your Community Sale purchase amount.
-
+                      BTC Bull Token is designed to reward believers in every way. Built on Ethereum with high APY staking in a secure smart contract, $BTCBULL rewards will be issued to stakers for the duration of the Community Sale and over the next two years.
 
                       </p>
                   </div>
 
                   <div className='about-card-item'>
-                      <h3 className='about-card-title'>Earn Bitcoin Airdrops!                      </h3>
+                      <h3 className='about-card-title'>Token Burn Milestones                      </h3>
                       <p className='about-card-desc'>
-                      Hold $BTCBULL tokens to receive BTC airdrops as the price of the greatest asset rises! A huge $BTCBULL airdrop also awaits the strongest hodlers when BTC hits $250,000, weighted by your Community Sale purchase amount.
+
+                      BTC Bull aims to reward hodlers as the price of Bitcoin increases. Each time BTC goes up by another $25K, a percentage of the $BTCBULL token supply will be burned forever, creating upwards price pressure. We burn and we rise, and repeat!
+
 
 
                       </p>
