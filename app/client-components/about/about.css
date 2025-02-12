@@ -4,112 +4,132 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(98, 124, 197);
-    padding: 120px 12px;
-
-}
-.about-bg-outer{
-    z-index: -1;
-    width: 100%;
-    min-height: 570px;
-    position: absolute;
-    top : 0;
-    bottom: 0;
-}
-.about-bg-inner{
-    z-index: -1;
-    width: 100%;
-    padding: 40px;
-    background: #c1daea;
-    -webkit-clip-path: polygon(0% 0%, 97% 0%, -19% 190%, 0% 100%);
-    clip-path: polygon(0% 0%, 97% 0%, -19% 190%, 0% 100%);
-    min-height: 570px;
-    position: absolute;
-    top : 0;
-    bottom: 0;
+    padding: 120px 0px;
+    background: url('/img/btcbull/main-bg.webp');
+    background-position: 0 0 ;
+    background-size: 100% 100%;
+    position:relative;
 }
 
 .about-content{
-
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     position: relative;
     z-index: 1;
+    max-width: 1250px;
+    padding: 0px 16px;
+    row-gap: 24px;
 }
 
-.about-text{
-    flex: 1;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 120px;
+.about-features-container{
     display: flex;
+    justify-content: space-evenly;
+}
+.about-features-img{
+    max-width: 190px;
+}
+
+.about-features-text{
     position: relative;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.about-text p{
-        box-sizing: border-box;
-        color: rgb(0, 0, 0);
-        display: block;
-        font-family: 'HeyComic', sans-serif;
-        font-size: 22px;
-        font-weight: 700;
-        line-height: 32px;
-        margin-block-end: 18px;
-        margin-block-start: 0px;
-        margin-bottom: 18px;
-        margin-inline-end: 0px;
-        margin-inline-start: 0px;
-        margin-top: 0px;
-        text-align: start;
-        text-size-adjust: 100%;
-        unicode-bidi: isolate;
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);    
-}
-
-.about-buttons{
+    background: url('/img/btcbull/featured-bg.svg');
+    background-position: 0 0 ;
+    background-size: 100% 100%;
+    width: 180px;
+    height: 180px;
     display: flex;
     justify-content: center;
     align-items: center;
+
+}
+
+.about-features-text h2{
+    color: black;
+    background-color: white;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke-width: 12px;
+    -webkit-text-size-adjust: 100%;
+    background-clip: text;
+    text-transform: uppercase;
+    text-align: center;
+    transform: rotate(-7deg);
+}
+
+
+.about-desc-container{
+    border-radius: 52px;
+    border: solid 7px rgb(255, 199, 0);
+    padding: 60px 50px;
+    background: #050d13d9;
+}
+
+.about-desc-title{
+    position: relative;
+    width: 70%;
+    color: rgb(255, 199, 0);
+    font-weight: 700;
+    font-size: 42px;
+    text-transform: uppercase;
+}
+
+.about-desc-content{
+    width: 65%;
+    color: white;
+    font-size: 1.3em;
+}
+
+.about-desc-img{
+    position: absolute;
+    width: 60%;
+    top: 5vh;
+    right: -15vw;
 }
 
 .about-buynow{
-    padding: 16px 32px;
-    background: rgb(245, 136, 45);
-    color: black;
-    border: solid 3px black;
-    cursor: pointer;
-    font-size: xx-large;
-    transform: rotate(-3deg);
-
+    background: #1f1f1f;
+    border: 3px solid #FFC700;
+    border-radius: 30px;
+    padding: 8px 24px;
+    font-size: 1.3em;
+    color: white;
 }
-.about-imgs{
-    flex: 1;
-    z-index: 100;
-    position: relative;
+
+.about-cards{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between
+
+
 }
 
 
-.about-welcome{
-    width: 400px;
+.about-card-item{
+    padding: 16px;
+    max-width: 30%;
+    border: 7px solid #FFC700;
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 50px;
+    min-height: 280px;
+}
+
+.about-card-title{
+    font-weight: 700;
+    color: rgb(255, 199, 0);
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.about-card-desc{
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+
+}
+
+.about-decorate1{
     position: absolute;
-    top: -60px;
-    left: 200px;
-    z-index: 1;
-}
-
-.about-king{
-    height: 570px;
-}
-
-.about-zap{
-    width: 300px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    top: -10vh;
+    width: 100%;
 }

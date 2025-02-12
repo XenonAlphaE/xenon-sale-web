@@ -36,30 +36,62 @@ export const About = () => {
     return (
         <div className='about-container' id="about">
             <div className='about-content'>
-                <div className='about-text'>
-                    <p>{sectionText?.description1}</p>
-                    <p>{sectionText?.description2}</p>
-                    <p>{sectionText?.description3}</p>
-                    <p>{sectionText?.description4}</p>
-                    <p>{sectionText?.description5}</p>
-                    <div className='about-buttons'>
+                <div className='about-features-container'>
+                    <img className='about-features-img'  src='/img/btcbull/cryptonews-new.svg'/>
+                    <img className='about-features-img'  src='/img/btcbull/cryptonews-new.svg'/>
+                    <div className='about-features-text'>
+                         <h2>
+                          Featured In
+                          
+                        </h2> 
 
-                      <button className='about-buynow' onClick={scrollToBuySection}>  {sectionText?.buyNow} </button>
                     </div>
+                    <img className='about-features-img'  src='/img/btcbull/cryptonews-new.svg'/>
+                    <img className='about-features-img'  src='/img/btcbull/cryptonews-new.svg'/>
+                </div>
 
-                    <img className='about-welcome' src='/img/flockers/welcome-about.png' />
+                <div className='about-desc-container'>
+                    <h2 className='about-desc-title'>The Official <span style={{color:'white'}}>Bitcoin Meme Coin</span></h2>
+                    <p className='about-desc-content'>
+                        Bitcoin is the best-performing asset in history with an AAR of 230% – up more than 200 million percent since inception. Now jump on board for the ride of your life as the BTC Bull stampedes towards $250K BTC and beyond!
 
-                </div>
-                <div className='about-imgs'>
-                    <img className='about-king' src='/img/flockers/king-img.gif' />
-                    <img className='about-zap' src='/img/flockers/zap-img.svg' />
 
-                </div>
-                <div className='about-bg-outer'>
-                </div>
-                <div className='about-bg-inner'>
-                </div>
+                    </p>
+                    <button className='about-buynow' about-buynow> BUY NOW</button>
+                    <img className='about-desc-img' src='/img/btcbull/about-bull.webp'/>
+              </div>
+              <div className='about-cards'>
+                  <div className='about-card-item'>
+                      <h3 className='about-card-title'>Earn Bitcoin Airdrops!                      </h3>
+                      <p className='about-card-desc'>
+                      Hold $BTCBULL tokens to receive BTC airdrops as the price of the greatest asset rises! A huge $BTCBULL airdrop also awaits the strongest hodlers when BTC hits $250,000, weighted by your Community Sale purchase amount.
+
+
+                      </p>
+                  </div>
+                  <div className='about-card-item'>
+                      <h3 className='about-card-title'>Earn Bitcoin Airdrops!                      </h3>
+                      <p className='about-card-desc'>
+                      Hold $BTCBULL tokens to receive BTC airdrops as the price of the greatest asset rises! A huge $BTCBULL airdrop also awaits the strongest hodlers when BTC hits $250,000, weighted by your Community Sale purchase amount.
+
+
+                      </p>
+                  </div>
+
+                  <div className='about-card-item'>
+                      <h3 className='about-card-title'>Earn Bitcoin Airdrops!                      </h3>
+                      <p className='about-card-desc'>
+                      Hold $BTCBULL tokens to receive BTC airdrops as the price of the greatest asset rises! A huge $BTCBULL airdrop also awaits the strongest hodlers when BTC hits $250,000, weighted by your Community Sale purchase amount.
+
+
+                      </p>
+                  </div>
+
+              </div>
           </div>
+          <img src='/img/btcbull/token-trucks.webp' style={{width:"100%"}}/>
+          <img  className='about-decorate1' src='/img/btcbull/line.webp' />
+
         </div>
     );
 };

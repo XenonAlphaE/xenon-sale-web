@@ -34,8 +34,6 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      {/* <NewCoinForm/>
-      <ListCoin/> */}
       <Header/>
       {/* <About /> */}
       {/* <Roadmap /> */}
