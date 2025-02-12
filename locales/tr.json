@@ -1,10 +1,10 @@
 {
     "metadata": {
-        "title": "PEAP Token: Devrimci Vote-To-Earn Meme Coin | Kripto Ön Satışı",
-        "description": "$PEAP’a katılın, her Flocker’ın bir sesi var. Flocktopia’yı keşfedin, topluluğun elinde gücü tutan devrim niteliğindeki Vote-To-Earn platformu. Ödüller kazanın, geleceği şekillendirin ve devrime katılın.",
+        "title": "BTCBULL: Devrimci Vote-To-Earn Meme Coin | Kripto Ön Satışı",
+        "description": "$BTCBULL’a katılın, her Flocker’ın bir sesi var. Flocktopia’yı keşfedin, topluluğun elinde gücü tutan devrim niteliğindeki Vote-To-Earn platformu. Ödüller kazanın, geleceği şekillendirin ve devrime katılın.",
         "openGraph": {
-            "title": "PEAP Token: Devrimci Vote-To-Earn Meme Coin | Kripto Ön Satışı",
-            "description": "$PEAP’a katılın, her Flocker’ın bir sesi var. Flocktopia’yı keşfedin, topluluğun elinde gücü tutan devrim niteliğindeki Vote-To-Earn platformu. Ödüller kazanın, geleceği şekillendirin ve devrime katılın.",
+            "title": "BTCBULL: Devrimci Vote-To-Earn Meme Coin | Kripto Ön Satışı",
+            "description": "$BTCBULL’a katılın, her Flocker’ın bir sesi var. Flocktopia’yı keşfedin, topluluğun elinde gücü tutan devrim niteliğindeki Vote-To-Earn platformu. Ödüller kazanın, geleceği şekillendirin ve devrime katılın.",
             "url": "https://flockez.com/tr",
             "locale": "tr_TR"
         }
@@ -24,7 +24,7 @@
         "about": "HAKKINDA"
     },
     "buyForm": {
-        "intro": "$PEAP ÖN SATIŞINI AL",
+        "intro": "$BTCBULL ÖN SATIŞINI AL",
         "day": "Gün",
         "hrs": "Saat",
         "mins": "Dakika",
@@ -45,23 +45,23 @@
         "buyStake": "Al ve %8471 Ödüller için Stake Yap",
         "nextPriceAlert": "FİYAT ARTMASI İÇİN KALAN ZAMAN",
         "para1": "%1207 staking ÖDÜLLERİ",
-        "para2": "$PEAP, halkın meme coini.",
-        "para3": "PEAP Token'in devrimci",
+        "para2": "$BTCBULL, halkın meme coini.",
+        "para3": "BTCBULL'in devrimci",
         "para3_1": "Vote-To-Earn",
         "para3_2": "platformu gücü sizin ellerinize veriyor. Devasa ödüller kazanmak için erken ön satışa ŞİMDİ katılın!",
         "note1": "OY VEREREK KAZAN",
         "note2": "BÜYÜK ERKEN ÖDÜLLER",
         "note3": "GÜ future SAHİBİSİSİNİZ",
         "note4": "VE DAHA FAZLASI...",
-        "buyBtn": "$PEAP'a katıl!"
+        "buyBtn": "$BTCBULL'a katıl!"
     },
     "about": {
         "description1": "Desentralizasyonun geleceği geldi.",
-        "description2": "Meme coin'lerinin kaotik PVP dünyasında, her ana kararın tek bir lider tarafından alındığı bir ortamda, PEAP Token topluluğuna—'The Flock' olarak bilinen—proje yolunda yön verme gücü veriyor.",
-        "description3": "PEAP Token'in kalbinde, devrimci bir DAO olan Flocktopia yer alıyor.",
+        "description2": "Meme coin'lerinin kaotik PVP dünyasında, her ana kararın tek bir lider tarafından alındığı bir ortamda, BTCBULL topluluğuna—'The Flock' olarak bilinen—proje yolunda yön verme gücü veriyor.",
+        "description3": "BTCBULL'in kalbinde, devrimci bir DAO olan Flocktopia yer alıyor.",
         "description4": "Burada, her token sahibi sadece bir ses olmakla kalmaz, aynı zamanda devrimci Vote-To-Earn mekanizmamızla ödüller kazanır.",
-        "description5": "Şimdi, $PEAP’un yolunu belirlemek sizin elinizde.",
-        "buyNow": "$PEAP Ön Satışını ŞİMDİ Al!"
+        "description5": "Şimdi, $BTCBULL’un yolunu belirlemek sizin elinizde.",
+        "buyNow": "$BTCBULL Ön Satışını ŞİMDİ Al!"
     },
     "roadmap": {
         "heading": "UÇUŞ PLANI.. HADI FLOCKLAYALIM!",
@@ -72,25 +72,25 @@
         "heading2": "Adım 2",
         "heading3": "Adım 3",
         "step1_desc1": "Yuva Güvenliği Denetimi:",
-        "step1_desc1_1": "$PEAP sözleşmesini, kalkıştan önce kapsamlı denetimlerle güvence altına al.",
+        "step1_desc1_1": "$BTCBULL sözleşmesini, kalkıştan önce kapsamlı denetimlerle güvence altına al.",
         "step1_desc2": "Ön Satış Kalkışı:",
-        "step1_desc2_1": "$PEAP ön satışı başlarken, Flock kanatlarını açıyor ve yükselmeye başlıyoruz.",
+        "step1_desc2_1": "$BTCBULL ön satışı başlarken, Flock kanatlarını açıyor ve yükselmeye başlıyoruz.",
         "step1_desc3": "Küresel Flock Seslenişi:",
-        "step1_desc3_1": "Dünyanın dört bir yanındaki PEAP Token’i güçlü bir uçuş için toplamak adına küresel bir pazarlama kampanyası başlat.",
+        "step1_desc3_1": "Dünyanın dört bir yanındaki BTCBULL’i güçlü bir uçuş için toplamak adına küresel bir pazarlama kampanyası başlat.",
         
         "step2_desc1": "Flock Genişlemesi:",
-        "step2_desc1_1": "Haber yayıldıkça, daha fazla PEAP Token uçuşa katılır ve topluluğumuz büyür.",
+        "step2_desc1_1": "Haber yayıldıkça, daha fazla BTCBULL uçuşa katılır ve topluluğumuz büyür.",
         "step2_desc2": "Sinyal Artışı:",
-        "step2_desc2_1": "Etkili sesler, $PEAP'u güçlendirir ve daha büyük bir heyecanlı Flock çeker.",
+        "step2_desc2_1": "Etkili sesler, $BTCBULL'u güçlendirir ve daha büyük bir heyecanlı Flock çeker.",
         "step2_desc3": "Hâkimiyet:",
-        "step2_desc3_1": "$PEAP, Ethereum gökyüzünü ele geçirir ve ağaç tepelerindeki konuşmaların konusu olur.",
+        "step2_desc3_1": "$BTCBULL, Ethereum gökyüzünü ele geçirir ve ağaç tepelerindeki konuşmaların konusu olur.",
 
         "step3_desc1": "Token Listeleme:",
-        "step3_desc1_1": "Uzun bekleyiş sona erdi—Flock küresel borsalarda listeleniyor. $PEAP artık halka açık işlem yapmaya hazır.",
+        "step3_desc1_1": "Uzun bekleyiş sona erdi—Flock küresel borsalarda listeleniyor. $BTCBULL artık halka açık işlem yapmaya hazır.",
         "step3_desc2": "Krallık Genişlemesi:",
-        "step3_desc2_1": "Flock birleştiği anda, $PEAP topluluğunu büyütmeye devam et ve kripto dünyasında fırtına gibi es.",
+        "step3_desc2_1": "Flock birleştiği anda, $BTCBULL topluluğunu büyütmeye devam et ve kripto dünyasında fırtına gibi es.",
         "step3_desc3": "Vote to Earn Mekanizması:",
-        "step3_desc3_1": "Oy verme ve kazanma sistemini tanıtın, PEAP Token'i katılımları ve bilgileriyle ödüllendirin."
+        "step3_desc3_1": "Oy verme ve kazanma sistemini tanıtın, BTCBULL'i katılımları ve bilgileriyle ödüllendirin."
     },
     "tokenomics": {
         "heading": "FLOCKENOMICS",
@@ -100,22 +100,22 @@
         "title4": "Borsa Yakıtı (%10)",
         "title5": "Kuş Çağrıları (%20)",
         "item1": "Erken kuşlar böceği yakalar! Yuvalarının %20’si, ön satışa katılanlar için ayrıldı.",
-        "item2": "Yüksek bir %25, staking için ayrıldı. Sadık kuşlar, $PEAP token’larını yatırabilir ve bunların lezzetli ödüllere dönüşmesini izleyebilirler.",
-        "item3": "%25’i DAO Kasasında saklanır. Bu, $PEAP hazine kasasıdır, Krallığın büyük servetini topluca tahsis etmek için kullanılır. Ne kadar çok oy kullanırsanız, o kadar çok kazanırsınız.",
+        "item2": "Yüksek bir %25, staking için ayrıldı. Sadık kuşlar, $BTCBULL’larını yatırabilir ve bunların lezzetli ödüllere dönüşmesini izleyebilirler.",
+        "item3": "%25’i DAO Kasasında saklanır. Bu, $BTCBULL hazine kasasıdır, Krallığın büyük servetini topluca tahsis etmek için kullanılır. Ne kadar çok oy kullanırsanız, o kadar çok kazanırsınız.",
         "item4": "CEX ve DEX uçuşlarımızın düzenli olmasını sağlamak için %10 ayrıldı.",
         "item5": "%20’si pazarlama için ayrıldı, kuş sesleri ve tweetlerle sesi duyuruyoruz.",
         "total": "Toplam Token Arzı"
     },
     "faqs": {
-        "heading": "N'aber Mother PEAP Token?",
-        "title1": "$PEAP Nedir?",
+        "heading": "N'aber Mother BTCBULL?",
+        "title1": "$BTCBULL Nedir?",
         "title2": "Ön Satış Sırasında Ödül Kazanabilir miyim?",
-        "title3": "PEAP Token’i Bu Kadar Özel Yapan Nedir?",
+        "title3": "BTCBULL’i Bu Kadar Özel Yapan Nedir?",
         "title4": "Ön Satışı Nasıl Alırım?",
-        "desc1": "PEAP Token ($PEAP), desentralizasyon konusunda yeni bir çığır açıyor. Bu, kendi türünde ilk olan Vote To Earn meme coin’i, burada PROJE'NİN KADERİNİ KONTROL ETME GÜCÜNE sahipsiniz, aynı zamanda oylarınız için ödüller kazanıyorsunuz. Sahipler direksiyonun başında, projeyle ilgili tüm yeni önerilere ve topluluğun büyümesine oy veriyorlar. Bu, tek bir liderin olmadığı, sadece benzer görüşlere sahip bir grubun bir arada çalışarak $PEAP'u mükemmel hale getirdiği ve katılımlarının karşılığında deli gibi ödüller kazandığı anlamına gelir.",
-        "desc2": "EVET! PEAP Token ön satışı ($PEAP), projenin erken benimseyicilerinin, sadece token'larını alıp stake ederek devasa ödüller kazanmalarını sağlamak için tasarlanmıştır. Cömert bir APY ile ve 2 yıllık bir staking süresiyle, ön satışa katılanlar, pasif ödüllerin keyfini çıkarırken aynı zamanda oy kullanarak kazanma fırsatını da kullanabilecekler!",
-        "desc3": "Daha önce hiçbir meme coin topluluğu, projeyle ilgili her büyük kararda söz sahibi olmamıştı. Ve kesinlikle hiçbir meme coin DAO’su, topluluğuna blockchain üzerinde oy kullanarak ödüller vermemiştir. PEAP Token ($PEAP) sahipleri, alanda yeni bir yol açıyorlar.",
-        "desc4": "PEAP Token ön satışını ($PEAP) almak için yukarıdaki kullanışlı alım kılavuzuna göz atın! Best Wallet gibi bir cüzdan edinin, biraz kripto (ya da kartla ödeme) alıp istediğiniz miktarı seçin ve uçuşa geçin! Widget'ımız Web3Payments tarafından güçlendirilmiştir, böylece alımınız Web3Toolkit teknolojisiyle güvence altına alınır.",
+        "desc1": "BTCBULL ($BTCBULL), desentralizasyon konusunda yeni bir çığır açıyor. Bu, kendi türünde ilk olan Vote To Earn meme coin’i, burada PROJE'NİN KADERİNİ KONTROL ETME GÜCÜNE sahipsiniz, aynı zamanda oylarınız için ödüller kazanıyorsunuz. Sahipler direksiyonun başında, projeyle ilgili tüm yeni önerilere ve topluluğun büyümesine oy veriyorlar. Bu, tek bir liderin olmadığı, sadece benzer görüşlere sahip bir grubun bir arada çalışarak $BTCBULL'u mükemmel hale getirdiği ve katılımlarının karşılığında deli gibi ödüller kazandığı anlamına gelir.",
+        "desc2": "EVET! BTCBULL ön satışı ($BTCBULL), projenin erken benimseyicilerinin, sadece token'larını alıp stake ederek devasa ödüller kazanmalarını sağlamak için tasarlanmıştır. Cömert bir APY ile ve 2 yıllık bir staking süresiyle, ön satışa katılanlar, pasif ödüllerin keyfini çıkarırken aynı zamanda oy kullanarak kazanma fırsatını da kullanabilecekler!",
+        "desc3": "Daha önce hiçbir meme coin topluluğu, projeyle ilgili her büyük kararda söz sahibi olmamıştı. Ve kesinlikle hiçbir meme coin DAO’su, topluluğuna blockchain üzerinde oy kullanarak ödüller vermemiştir. BTCBULL ($BTCBULL) sahipleri, alanda yeni bir yol açıyorlar.",
+        "desc4": "BTCBULL ön satışını ($BTCBULL) almak için yukarıdaki kullanışlı alım kılavuzuna göz atın! Best Wallet gibi bir cüzdan edinin, biraz kripto (ya da kartla ödeme) alıp istediğiniz miktarı seçin ve uçuşa geçin! Widget'ımız Web3Payments tarafından güçlendirilmiştir, böylece alımınız Web3Toolkit teknolojisiyle güvence altına alınır.",
         "buynow": "Şimdi Al ve %1048 Ödül İçin Stake Yap!"
     },
     "footer": {

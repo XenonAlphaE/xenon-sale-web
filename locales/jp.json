@@ -1,10 +1,10 @@
 {
     "metadata": {
-        "title": "PEAP Token: 革新的なVote-To-Earnミームコイン | 暗号通貨プレセール",
-        "description": "$PEAPに参加し、全てのFlockerが発言権を持つ場所へ。コミュニティの手に力を取り戻す画期的なVote-To-Earnプラットフォーム、Flocktopiaを発見しよう。報酬を獲得し、未来を形作り、革命の一部になろう。",
+        "title": "BTCBULL: 革新的なVote-To-Earnミームコイン | 暗号通貨プレセール",
+        "description": "$BTCBULLに参加し、全てのFlockerが発言権を持つ場所へ。コミュニティの手に力を取り戻す画期的なVote-To-Earnプラットフォーム、Flocktopiaを発見しよう。報酬を獲得し、未来を形作り、革命の一部になろう。",
         "openGraph": {
-            "title": "PEAP Token: 革新的なVote-To-Earnミームコイン | 暗号通貨プレセール",
-            "description": "$PEAPに参加し、全てのFlockerが発言権を持つ場所へ。コミュニティの手に力を取り戻す画期的なVote-To-Earnプラットフォーム、Flocktopiaを発見しよう。報酬を獲得し、未来を形作り、革命の一部になろう。",
+            "title": "BTCBULL: 革新的なVote-To-Earnミームコイン | 暗号通貨プレセール",
+            "description": "$BTCBULLに参加し、全てのFlockerが発言権を持つ場所へ。コミュニティの手に力を取り戻す画期的なVote-To-Earnプラットフォーム、Flocktopiaを発見しよう。報酬を獲得し、未来を形作り、革命の一部になろう。",
             "url": "https://flockez.com/ja",
             "locale": "ja_JP"
         }
@@ -24,7 +24,7 @@
         "about": "について"
     },
     "buyForm": {
-        "intro": "$PEAP プレセール購入",
+        "intro": "$BTCBULL プレセール購入",
         "day": "日",
         "hrs": "時間",
         "mins": "分",
@@ -45,23 +45,23 @@
         "buyStake": "購入して8471%の報酬を得る",
         "nextPriceAlert": "価格上昇まで",
         "para1": "1207%のステーキング報酬",
-        "para2": "$PEAP。人民のミームコイン。",
-        "para3": "PEAP Token革命的な",
+        "para2": "$BTCBULL。人民のミームコイン。",
+        "para3": "BTCBULL革命的な",
         "para3_1": "Vote-To-Earn",
         "para3_2": "プラットフォームは、あなたの手に力をもたらします。プレセールを今すぐ購入して巨大な報酬を得よう！",
         "note1": "投票で稼ぐ",
         "note2": "巨大な初期報酬",
         "note3": "あなたが未来を作る",
         "note4": "そしてさらに...",
-        "buyBtn": "$PEAPに参加！"
+        "buyBtn": "$BTCBULLに参加！"
     },
     "about": {
         "description1": "分散化の未来が到来しました。",
-        "description2": "ミームコインの混沌としたPVP世界では、すべての重要な決定が一人のリーダーによって行われていますが、PEAP Tokenはそのコミュニティである「The Flock」に力を与え、プロジェクトを約束された地へと導きます。",
-        "description3": "PEAP Tokenの中心にはFlocktopiaという革命的なDAOがあります。",
+        "description2": "ミームコインの混沌としたPVP世界では、すべての重要な決定が一人のリーダーによって行われていますが、BTCBULLはそのコミュニティである「The Flock」に力を与え、プロジェクトを約束された地へと導きます。",
+        "description3": "BTCBULLの中心にはFlocktopiaという革命的なDAOがあります。",
         "description4": "ここでは、すべての保有者が声を持つだけでなく、画期的なVote-To-Earnメカニズムを通じて報酬を得ることができます。",
-        "description5": "今、あなたが$PEAPの進む道を決めます。",
-        "buyNow": "$PEAP プレセール今すぐ購入！"
+        "description5": "今、あなたが$BTCBULLの進む道を決めます。",
+        "buyNow": "$BTCBULL プレセール今すぐ購入！"
     },
     "roadmap": {
         "heading": "FLight PlaN.. LET’S FLOCKING GO!",
@@ -72,25 +72,25 @@
         "heading2": "ステップ 2",
         "heading3": "ステップ 3",
         "step1_desc1": "巣のセキュリティ監査:",
-        "step1_desc1_1": "$PEAP契約をしっかりと監査して、出発前にセキュリティを確保します。",
+        "step1_desc1_1": "$BTCBULL契約をしっかりと監査して、出発前にセキュリティを確保します。",
         "step1_desc2": "プレセールの開始:",
-        "step1_desc2_1": "$PEAPプレセールが開始され、Flockは羽を広げます。",
+        "step1_desc2_1": "$BTCBULLプレセールが開始され、Flockは羽を広げます。",
         "step1_desc3": "世界的なFlockの広がり:",
-        "step1_desc3_1": "世界中のPEAP Tokenが集まるためのグローバルなマーケティングキャンペーンを展開します。",
+        "step1_desc3_1": "世界中のBTCBULLが集まるためのグローバルなマーケティングキャンペーンを展開します。",
 
         "step2_desc1": "Flockの拡大:",
-        "step2_desc1_1": "口コミで広まり、さらに多くのPEAP Tokenが参加し、コミュニティが成長します。",
+        "step2_desc1_1": "口コミで広まり、さらに多くのBTCBULLが参加し、コミュニティが成長します。",
         "step2_desc2": "シグナルブースト:",
-        "step2_desc2_1": "影響力のある声が$PEAPを広め、より多くの熱心なPEAP Tokenを惹きつけます。",
+        "step2_desc2_1": "影響力のある声が$BTCBULLを広め、より多くの熱心なBTCBULLを惹きつけます。",
         "step2_desc3": "支配:",
-        "step2_desc3_1": "$PEAPがEthereumの空を制圧し、話題になります。",
+        "step2_desc3_1": "$BTCBULLがEthereumの空を制圧し、話題になります。",
 
         "step3_desc1": "トークン上場: ",
         "step3_desc1_1": "長い待機が終わり、Flockはグローバルな取引所で取引可能となります。",
         "step3_desc2": "王国の拡大:",
-        "step3_desc2_1": "Flockが団結し、$PEAPコミュニティが成長を続け、暗号世界を席巻します。",
+        "step3_desc2_1": "Flockが団結し、$BTCBULLコミュニティが成長を続け、暗号世界を席巻します。",
         "step3_desc3": "Vote to Earnメカニズム: ",
-        "step3_desc3_1": "投票システムを導入し、PEAP Tokenに参加と知恵に対して報酬を提供します。"
+        "step3_desc3_1": "投票システムを導入し、BTCBULLに参加と知恵に対して報酬を提供します。"
     },
     "tokenomics": {
         "heading": "FLOCKENOMICS",
@@ -100,22 +100,22 @@
         "title4": "取引所用資金 (10%)",
         "title5": "鳥の鳴き声 (20%)",
         "item1": "早起きの鳥が卵をゲット！プレセールで参加した人々のために20%を確保。",
-        "item2": "25%はステーキング用に確保され、忠実な鳥たちは$PEAPトークンを育てて報酬を得ます。",
-        "item3": "25%はDAO Vaultに保管され、$PEAPの宝箱として使用されます。投票するほど報酬が増えます。",
+        "item2": "25%はステーキング用に確保され、忠実な鳥たちは$BTCBULLトークンを育てて報酬を得ます。",
+        "item3": "25%はDAO Vaultに保管され、$BTCBULLの宝箱として使用されます。投票するほど報酬が増えます。",
         "item4": "10%は取引所用に確保されています。",
         "item5": "20%はマーケティングに使われ、広く告知されます。",
         "total": "トークン供給量"
     },
     "faqs": {
-        "heading": "どうも、母親PEAP Token！",
+        "heading": "どうも、母親BTCBULL！",
         "buynow":"今すぐ購入してステーク！1048％獲得！",
-        "title1": "$PEAPとは？",
+        "title1": "$BTCBULLとは？",
         "title2": "プレセールで報酬を得られますか？",
-        "title3": "PEAP Tokenの特徴は何ですか？",
+        "title3": "BTCBULLの特徴は何ですか？",
         "title4": "プレセールの購入方法は？",
-        "desc1": "PEAP Token($PEAP)は分散化の新たな道を切り開いています。これは、あなたがプロジェクトの運命を制御し、投票で報酬を得る世界初のVote-To-Earnミームコインです。",
-        "desc2": "はい！PEAP Tokenプレセール($PEAP)は、プロジェクトを早期にサポートしたユーザーに素晴らしい報酬を提供します。",
-        "desc3": "これまでにない革新的なVote-To-Earn機能により、$PEAPを持っている人は、どこにいても報酬を得ることができます。",
+        "desc1": "BTCBULL($BTCBULL)は分散化の新たな道を切り開いています。これは、あなたがプロジェクトの運命を制御し、投票で報酬を得る世界初のVote-To-Earnミームコインです。",
+        "desc2": "はい！BTCBULLプレセール($BTCBULL)は、プロジェクトを早期にサポートしたユーザーに素晴らしい報酬を提供します。",
+        "desc3": "これまでにない革新的なVote-To-Earn機能により、$BTCBULLを持っている人は、どこにいても報酬を得ることができます。",
         "desc4": "MetaMaskウォレットを用意し、購入ページから簡単に購入できます。"
     },
     

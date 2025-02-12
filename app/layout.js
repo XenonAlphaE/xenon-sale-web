@@ -15,7 +15,7 @@ export async function generateMetadata() {
     title: metadata?.title,
     description: metadata?.description,
 
-    keywords: 'PEAP Token, Pepe ascension, PEPE, BLOCKCHAIN,PEAP, $PEAP Token, Token, Presale, Staking, Claim $PEAP, Pepe Ascension Presale is lived!', // Add keywords here
+    keywords: 'BTCBULL, BTC BULL, btc bull presale, btcbull token, btcbull presale is live', // Add keywords here
     robots: 'index, follow', // Add robots directives here
     openGraph: {
       title: metadata?.title,
