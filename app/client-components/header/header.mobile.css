@@ -65,7 +65,7 @@
     max-height: 40vh;
   }
 
-  .intro-decorate-catalouge{
+  /* .intro-decorate-catalouge{
     color: rgb(75, 26, 9);
     background: url('/img/peap/chat-bubble.png');
     background-repeat: no-repeat;
@@ -75,7 +75,7 @@
     padding: 8px;
     font-size: 12px;
   }
-  
+   */
   .intro-decorate-img{
     width: 80%;
   }

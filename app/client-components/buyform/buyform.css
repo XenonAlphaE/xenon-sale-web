@@ -43,9 +43,7 @@
     justify-content: center;
     flex-direction: column;
     color: rgb(247, 148, 29);
-    background: url(/img/peap/tombstone.png) no-repeat center center;
-    background-size: 100% 100%; /* Stretches the image */    
-    margin-bottom: 0px;
+    /* margin-bottom: 20px; */
 }
 
 .walletBox-info {

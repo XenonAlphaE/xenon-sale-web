@@ -150,7 +150,7 @@
   max-width: 20vw;
 }
 
-.intro-decorate-catalouge{
+/* .intro-decorate-catalouge{
   color: rgb(75, 26, 9);
   background: url('/img/peap/chat-bubble.png');
   background-repeat: no-repeat;
@@ -159,7 +159,7 @@
   font-weight: 600;
   padding: 16px;
   font-size: 18px;
-}
+} */
 .intro-decorate-img{
   width: 100%;
 }
