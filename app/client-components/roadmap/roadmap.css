@@ -1,233 +1,135 @@
 .roadmap-container{
     width: 100%;
-    padding: 120px 12px;
+    padding: 120px 0px;
     display: flex;
     flex-direction: column;
-    background-color: rgb(98, 124, 197);;
+    background-color: rgb(5, 13, 19);
     position: relative;
+    justify-content: center;
+    align-items: center;
     row-gap: 48px;
 }
 
-.roadmap-heading{
-        background-attachment: scroll;
-        background-clip: border-box;
-        background-color: rgb(193, 218, 234);
-        background-image: none;
-        background-origin: padding-box;
-        background-position-x: 0%;
-        background-position-y: 0%;
-        background-repeat: repeat;
-        background-size: auto;
-        border-bottom-color: rgb(0, 0, 0);
-        border-bottom-style: solid;
-        border-bottom-width: 4px;
-        border-image-outset: 0;
-        border-image-repeat: stretch;
-        border-image-slice: 100%;
-        border-image-source: none;
-        border-image-width: 1;
-        border-left-color: rgb(0, 0, 0);
-        border-left-style: solid;
-        border-left-width: 4px;
-        border-right-color: rgb(0, 0, 0);
-        border-right-style: solid;
-        border-right-width: 4px;
-        border-top-color: rgb(0, 0, 0);
-        border-top-style: solid;
-        border-top-width: 4px;
-        box-sizing: border-box;
-        color: rgb(240, 185, 11);
-        display: block;
-        font-family: 'badaboom-bb', sans-serif;
-        font-size: 54px;
-        font-weight: 500;
-        left: 360.477px;
-        line-height: 64.8px;
-        margin-block-end: 8px;
-        margin-block-start: 0px;
-        margin-bottom: 8px;
-        margin-inline-end: 48px;
-        margin-inline-start: 48px;
-        margin-left: 48px;
-        margin-right: 48px;
-        margin-top: 0px;
-        padding-bottom: 5px;
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-top: 5px;
-        paint-order: stroke;
-        position: absolute;
-        text-align: start;
-        text-size-adjust: 100%;
-        top: -60px;
-        transform: matrix(0.99863, -0.052336, 0.052336, 0.99863, 0, 0);
-        unicode-bidi: isolate;
-        z-index: 2;
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-        -webkit-text-stroke-color: rgb(0, 0, 0);
-        -webkit-text-stroke-width: 8px;
-    
+.roadmap-content{
+    max-width: 1250px;
+    padding: 0px 16px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+
 }
+
+
+.roadmap-desc-container{
+    border-radius: 52px;
+    border: solid 7px rgb(255, 199, 0);
+    padding: 20px 50px;
+    background: rgb(31, 31, 31);
+}
+
+.roadmap-desc-title{
+    position: relative;
+    width: 100%;
+    color: rgb(255, 199, 0);
+    font-weight: 700;
+    font-size: 42px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.roadmap-desc-content{
+    width: 100%;
+    color: white;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+
 .roadmap-row{
     display: flex;
     flex-direction: row;
 }
-.content-part{
-        flex: 0 0 60%;  
-        display: flex;
-        flex-direction: column;
-        position: relative;
-}
-.roadmap-content-bg-outer{
-    background-attachment: scroll;
-    background-clip: border-box;
-    background-color: rgb(0, 0, 0);
-    background-image: none;
-    background-origin: padding-box;
-    background-position-x: 0%;
-    background-position-y: 0%;
-    background-repeat: repeat;
-    background-size: auto;
-    border-bottom-color: rgb(0, 0, 0);
-    border-bottom-style: solid;
-    border-bottom-width: 6px;
-    border-image-outset: 0;
-    border-image-repeat: stretch;
-    border-image-slice: 100%;
-    border-image-source: none;
-    border-image-width: 1;
-    border-left-color: rgb(0, 0, 0);
-    border-left-style: solid;
-    border-left-width: 6px;
-    border-right-color: rgb(0, 0, 0);
-    border-right-style: solid;
-    border-right-width: 6px;
-    border-top-color: rgb(0, 0, 0);
-    border-top-style: solid;
-    border-top-width: 6px;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px;
-    box-sizing: border-box;
-    clip-path: polygon(0% 0%, 100% 0%, 68% 190%, 0% 100%);
-    color: rgb(0, 0, 0);
-    display: block;
-    font-family: HeyComic, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22.4px;
-    position: relative;
-    text-align: start;
-    text-size-adjust: 100%;
-    unicode-bidi: isolate;
-    z-index: 2;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
-}
-.roadmap-content-bg-inner{
-    padding: 40px 40px 60px;
-    background: #e0e0e0;
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 68% 190%, 0% 100%);
-    clip-path: polygon(0% 0%, 100% 0%, 68% 190%, 0% 100%);
-    display: flex;
-    flex-direction: row;
-    
-}
-.img-inside{
-    flex: 0 0 40%;
+.roadmap-milstones{
+    flex: 1;
+    background: url('/img/btcbull/roadmap-project-bg.webp');
+    background-position:  0 0;
+    background-size: 100% 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    padding-bottom: 60px;
 }
-
-.text-inside{
-    flex: 0 0 60%;
-}
-    .text-inside h3{
-        box-sizing: border-box;
-        color: rgb(0, 0, 0);
-        display: block;
-        font-family: badaboom-bb, sans-serif;
-        font-size: 48px;
-        font-weight: 500;
-        height: 57.5938px;
-        line-height: 57.6px;
-        margin-block-end: 8px;
-        margin-block-start: 0px;
-        margin-bottom: 8px;
-        margin-inline-end: 0px;
-        margin-inline-start: 0px;
-        margin-top: 0px;
-        text-align: start;
-        text-size-adjust: 100%;
-        unicode-bidi: isolate;
-        /* width: 760.164px; */
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-
-    }
-    
-.text-inside li{
-    box-sizing: border-box;
-    color: rgb(0, 0, 0);
-    display: list-item;
-    font-family: HeyComic, sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 25.2px;
-    list-style-type: disc;
-    text-align: left;
-    text-size-adjust: 100%;
-    unicode-bidi: isolate;
-    /* width: 484px; */
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-.text-inside li   span{
-    color: rgb(233, 106, 0);
-    padding-right: 2px;
-}
-
-
-.top-text{
-    display: flex;
-    flex-direction: row;
-    column-gap: 10px;
-    padding: 8px 16px;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    background-color: rgb(32, 69, 202);
+.roadmap-milstones-title{
     color: white;
-    border: solid 2px black;
-    border-radius: 50px;
-    font-size: x-large;
-    text-transform: uppercase;
-    position: absolute;
-    right: 109px;
-    top: -20px;
-    z-index: 5;
+    padding: 0px;
 }
-
-.egg1{
-    width: 200px;
-    height: 200px;
-}
-
-
-.image-part{
-    flex: 0 0 40%;
+.roadmap-milstones-item{
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-.image-part img{
-        max-width: 60%;
-    }
-
-
-.reverse-col{
     flex-direction: row;
+    align-items: center;
+    column-gap: 8px;
+    font-size: 1em;
+    color: white;
+    margin-bottom: 12px;
 }
-.orange-box{
+
+.roadmap-circle{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(255, 152, 9);
+}
+
+
+.roadmap-chart-container{
+    flex: 2;
+    position: relative;
+}
+
+.roadmap-chart-decorate1{
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 100px;
+    height: 200px;
+    top: -200px;
+    right: -50px;
+}
+.roadmap-chart-decorate2{
+    width: 60px;
+    top : -20px;
+    right: 10px;
+    position: absolute;
+}
+
+.roadmap-chart-content{
+    background: url('/img/btcbull/roadmap-graph.png');
+    background-position: 0 0 ;
+    background-size:  100% 100%;
+    height: 100%;
+    width: 90%;
+    border-radius: 60px;
+    border:  7px solid #FFC700;;
+    padding: 20px;
+    position: relative;
+}
+.roadmap-chart-numbers{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    position: absolute;
+    right: 10px;
+    top: 5vh;
+    color: white;
+}
+
+.roadmap-decorate1{
     width: 100%;
-    background-color: rgb(245, 136, 45);
-    border: solid 6px black;
-    height: 26px;
+    position: absolute;
+    top: -27%;
 }

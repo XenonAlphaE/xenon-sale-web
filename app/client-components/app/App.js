@@ -35,9 +35,9 @@ const App = () => {
     <div>
       <Navbar />
       <Header/>
-      {/* <About /> */}
-      {/* <Roadmap /> */}
-      {/* <Tokenomics /> */}
+      <About />
+      <Roadmap />
+      <Tokenomics />
       {/* <HowToBuy /> */}
       {/* <FAQ/> */}
       {/* <Footer />  */}

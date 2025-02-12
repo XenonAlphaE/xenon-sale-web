@@ -1,0 +1,27 @@
+<svg width="450" height="339" viewBox="0 0 450 339" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_7_1551" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="391" y="328" width="11" height="11">
+<rect x="398.071" y="328" width="4.92502" height="10" transform="rotate(45 398.071 328)" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_7_1551)">
+<path d="M392.396 337L402.471 326L426.232 298.235C442.101 279.693 453.197 257.553 458.554 233.743C464.974 205.207 462.897 175.415 452.577 148.046L445.396 129C424.568 73.0222 387.036 24.799 337.887 -9.13748L329.396 -15" stroke="#959595" stroke-width="5"/>
+</g>
+<path d="M398 330.308L401.574 326.308V326.308C431.75 291.048 443.598 243.655 433.564 198.343L426.085 164.571C420.265 138.286 409.753 112.935 389.774 94.8888C340.741 50.5996 222.017 -22.7662 1 20.4998" stroke="#959595" stroke-width="5"/>
+<circle cx="374" cy="83" r="7" fill="#AAAAAA"/>
+<circle cx="345" cy="62" r="7" fill="#AAAAAA"/>
+<circle cx="315" cy="46" r="7" fill="#AAAAAA"/>
+<circle cx="288" cy="35" r="7" fill="#AAAAAA"/>
+<circle cx="246" cy="21" r="7" fill="#AAAAAA"/>
+<circle cx="207" cy="14" r="7" fill="#AAAAAA"/>
+<circle cx="168" cy="9" r="7" fill="#AAAAAA"/>
+<circle cx="131" cy="7" r="7" fill="#AAAAAA"/>
+<circle cx="94" cy="9" r="7" fill="#AAAAAA"/>
+<circle cx="42" cy="14" r="7" fill="#AAAAAA"/>
+<circle cx="396" cy="104" r="7" fill="#AAAAAA"/>
+<circle cx="419" cy="137" r="7" fill="#AAAAAA"/>
+<circle cx="426" cy="169" r="7" fill="#AAAAAA"/>
+<circle cx="433.32" cy="198.63" r="7" fill="#AAAAAA"/>
+<circle cx="437" cy="232.223" r="7" fill="#AAAAAA"/>
+<circle cx="433.321" cy="268.027" r="7" fill="#AAAAAA"/>
+<circle cx="419.32" cy="300.363" r="7" fill="#AAAAAA"/>
+<circle cx="402" cy="325.308" r="7" fill="#AAAAAA"/>
+</svg>
