@@ -161,9 +161,6 @@ export const ClaimForm = () => {
         <div className="walletBox" id='walletBox'>
             <div className="walletBox-info">
             <p className="walletBox-heading">PRESALE HAS ENDED</p>
-            {/* <div className="dashTitle">1 ${configs?.targetToken?.symbol} = ${configs?.targetToken?.tokenPrice} </div> */}
-           
-            {/* <ProgressBar percentage={11457475.67*100 / 11540268}  /> */}
 
             <p className="total-raised">Over $70m raised</p>
             {walletEth.currentAddress && 
