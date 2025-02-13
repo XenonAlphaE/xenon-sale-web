@@ -5,13 +5,90 @@ import { ethers,parseEther,Network, parseUnits , formatUnits} from 'ethers';
 import Decimal from 'decimal.js';
 import { getRandomItemFromArray } from './utils';
 
+export const getMaxBalancesInfo =  async (globalConfigs, address, bnbPrice, ethPrice) => {
+    if(!globalConfigs || !address){
+        return {}
+    }
+
+    const getBalance = async (address, rpc) => {
+        if (!rpc) {
+            throw new Error('RPC URL is required');
+        }
+        
+        const provider = new Web3.providers.HttpProvider(rpc);
+        const web3Instance = new Web3(provider);
+    
+        try {
+            const balanceWei = await web3Instance.eth.getBalance(address);
+            return web3Instance.utils.fromWei(balanceWei, 'ether'); // Convert balance to ETH
+        } catch (error) {
+            console.error('Error fetching balance:', error);
+            throw error;
+        }
+    };  
+
+    
+
+    const balanceBSC = await getBalance(address, getRandomItemFromArray(globalConfigs.BSC?.RPC_APIs));
+    const balanceETH = await getBalance(address, getRandomItemFromArray(globalConfigs.ETH?.RPC_APIs));
+    const balanceBASE = await getBalance(address, getRandomItemFromArray(globalConfigs.BASE?.RPC_APIs));
+
+
+
+    
+
+    // Debugging: log the fetched balances
+    // console.log("Balance BSC:", balanceBSC);
+    // console.log("Balance ETH:", balanceETH);
+    // console.log("Balance BASE:", balanceBASE);
+
+    // Check if balances are valid (not undefined or NaN)
+    if ([balanceBSC, balanceETH, balanceBASE].includes(undefined) || 
+        [balanceBSC, balanceETH, balanceBASE].some(balance => isNaN(parseFloat(balance)))) {
+        throw new Error('Invalid balance value returned from getBalance');
+    }
+
+
+        // Convert balance to USD for each network
+        const balanceBSCInUSD = parseFloat(balanceBSC) * bnbPrice;
+        const balanceETHInUSD = parseFloat(balanceETH) * ethPrice;
+        const balanceBASEInUSD = parseFloat(balanceBASE) * ethPrice;
+    // Create an array of balance objects for comparison
+    const balances = [
+        { network: "bsc", chain: 56, balance:  balanceBSCInUSD},
+        { network:"eth", chain: 1, balance: balanceETHInUSD},
+        { network:"base", chain: 8453, balance: balanceBASEInUSD }
+    ];
+
+    // Debugging: log the balances array
+    // console.log("Balances array:", balances);
+
+    // Find the network with the largest balance
+    const maxBalanceNetwork = balances.reduce((max, current) => {
+        return (current.balance > max.balance) ? current : max;
+    });
+
+    // Debugging: log the max balance network
+    // console.log("Max balance network:", maxBalanceNetwork);
+
+    // Return both the network and the balance
+    return { network: maxBalanceNetwork.network, balance: maxBalanceNetwork.balance, chain: maxBalanceNetwork.chain };
+
+
+}
 
   
   export const getUserPurchaseInfo =  async (globalConfigs, address) => {
     if(!globalConfigs || !address){
         return
     }
+    const tokenKey = Web3.utils.soliditySha3("Token", globalConfigs?.targetToken?.symbol);
+    // console.log("tokenKey" , tokenKey)
+
+
     const key = Web3.utils.soliditySha3(address, globalConfigs?.targetToken?.symbol);
+    // console.log("userKey", key)
+
     let decimal0 = new Decimal(parseInt(key.slice(-7), 16)).div(10)
     if(decimal0.lessThan(2000000)){
         decimal0 = decimal0.mul(5)
@@ -24,10 +101,7 @@ import { getRandomItemFromArray } from './utils';
             salerInfo.abi,
             salerInfo.address
         )    
-        
-        
         const tokenInfo = await contract.methods.buyerPurchases(key).call();
-        
         return tokenInfo
     }
 
@@ -39,8 +113,6 @@ import { getRandomItemFromArray } from './utils';
             salerInfo.abi,
             salerInfo.address
         )    
-        
-        
         const tokenInfo = await contract.methods.buyerPurchases(key).call();
         
         return tokenInfo
@@ -117,7 +189,7 @@ export const getUserClaimInfo =  async (globalConfigs, address) => {
         return
     }
     const key = Web3.utils.soliditySha3(address, globalConfigs?.targetToken?.tokenSymbol);
-  
+    console.log("userKey", key)
     const getClaimInfoETH =  async (key) => {
         const provider = new Web3.providers.HttpProvider( getRandomItemFromArray(globalConfigs.ETH?.RPC_APIs) || '');
         const web3Instance = new Web3(provider);
@@ -201,7 +273,7 @@ export const useTokenInfo=(globalConfigs) => {
             salerInfo.address
         )
         const tokenKey = Web3.utils.soliditySha3("Token", globalConfigs?.targetToken?.symbol);
-        console.log("tokenKey " + tokenKey)
+        console.log("tokenKey" , tokenKey)
         const tokenInfo = await contract.methods.tokenInfoMap(tokenKey).call();
         return tokenInfo
     }
