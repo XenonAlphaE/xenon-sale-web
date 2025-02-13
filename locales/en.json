@@ -18,7 +18,7 @@
         "about": "ABOUT"
     },
     "buyForm": {
-        " Disclaimer: BTC Bull Token is a speculative meme coin asset linked to the social and market value of Bitcoin. The cryptocurrency market carries the risk that you could lose all your capital. Nothing on this website is financial advice. DYOR and HODL to $1M! ": "Buy $BTCBULL Token In Presale Now!",
+        "intro": "Buy $BTCBULL Token In Presale Now!",
         "day": "Days",
         "hrs": "Hours",
         "mins": "Minutes",
