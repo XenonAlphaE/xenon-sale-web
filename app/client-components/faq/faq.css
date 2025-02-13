@@ -85,13 +85,8 @@
 }
 .faq-list-item-title{
     width: 100%;
-    /* min-height: 80px; */
-    /* background: url('../../../public/img/allstars/faq-bg.png') no-repeat; */
-    background-size: 100% 100%; /* Forces the image to stretch and fill the entire area */
-    background-position: center;
     display: flex;
     align-items: center;
-    /* padding: 20px; */
     font-size: larger;
     font-weight: bold;
     cursor: pointer;
@@ -108,7 +103,7 @@
     text-size-adjust: 100%;
     unicode-bidi: isolate;
     padding: 20px;
-    transition: height 0.5s ease, padding 0.5s ease;
+    transition: height 2s ease, padding 2s ease;
     border:2px solid #FFC700;
     width: 80%;
     border-radius:  0px 0px 16px 16px;
@@ -119,5 +114,5 @@
 
 .faq-list-item-content.active{
     display: block;
-    transition: height 0.5s ease, padding 0.5s ease; /* Smooth animation */
+    transition: height 5s ease, padding 5s ease; /* Smooth animation */
 }

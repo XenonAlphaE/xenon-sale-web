@@ -5,6 +5,7 @@ import React from 'react';
 import { useI18nSection } from '../../../redux/utils/languageUtils';
 
 import './howtobuy.css';
+import './howtobuy.mobile.css';
 import {Carousel} from '../carousel/carousel'
 import { AppSpinner } from '../spinner/spinner';
 export const HowToBuy = () => {

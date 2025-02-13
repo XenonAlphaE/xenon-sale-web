@@ -43,12 +43,6 @@
     text-align: center;
 }
 
-.howtobuy-cards{
-    display: grid;
-    grid-template-columns:  1fr 1fr;
-    gap: 32px;
-}
-
 .howtobuy-card{
 
     background: url('/img/btcbull/step-1.svg') no-repeat center center;
