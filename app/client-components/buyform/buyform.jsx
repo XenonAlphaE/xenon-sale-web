@@ -170,7 +170,7 @@ export const BuyForm = () => {
                 </div>
 
 
-                <p className="total-raised">{sectionText?.funRaised}:  $$1,048,302.68 / $5,000,000</p>
+                <p className="total-raised">{sectionText?.funRaised}:  $$1,048,302.68 / $2,000,000</p>
 
                 <ProgressBar percentage={54}/>
                 {walletEth.currentAddress && 
