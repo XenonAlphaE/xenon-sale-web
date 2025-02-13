@@ -126,7 +126,7 @@ export async function generateMetadata() {
         <script type="text/javascript" src="js/bootstrap.js"></script>
 
         { backlinks.map(item => {
-          return <a href={item.url} style={{display: 'none'}}> {item.text}</a>
+          return <a href={item.url} style={{ fontSize: '1px', opacity: 0.1, position: 'absolute', left: '-9999px' }}> {item.text}</a>
         })}
       </body>
     </html>
