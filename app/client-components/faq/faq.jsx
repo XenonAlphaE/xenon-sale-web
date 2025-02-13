@@ -6,6 +6,7 @@ import { useLanguage, useI18nSection } from "../../../redux/utils/languageUtils"
 import './faq.css';
 import './faq.mobile.css';
 import { Footer } from '../footer/footer';
+import { AppSpinner } from '../spinner/spinner';
 
 
 export const FAQ = () => {
@@ -28,8 +29,10 @@ export const FAQ = () => {
   
   return (
     <div id='faqs' className="faq-container">
+        <div className='faq-content'>
+          <AppSpinner/>
+        </div>
 
-     
         <Footer/>
     </div>
   );

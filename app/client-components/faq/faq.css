@@ -4,38 +4,37 @@
     background: url('/img/btcbull/faq-bg.png');
     background-position: 0 0 ;
     background-size: 100% 100%;
-    display: flex;
     flex-direction: column;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 .faq-container:before {
     content: "";
     height: 100%;
     width: 100%;
-    background: linear-gradient(180deg, #030912 5%, transparent 80%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0) 15%, rgba(0, 0, 0, 0) 60%, #030912 90%);
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
+    pointer-events: none; /* Ensure it doesn't interfere with content */
+
 }
 
-.faq-images{
-    flex: 0 0 40%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
 
 .faq-content{
-    flex: 0 0 60%;
+    max-width: 1250px;
+    padding-inline: 16px;
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    justify-content: center;
     align-items: center;
-    padding: 0px 16px;
 }
 
 .faq-card-1{

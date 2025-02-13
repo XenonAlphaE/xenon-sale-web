@@ -1,20 +1,37 @@
 
 .howtobuy-container{
+    position: relative;
     width: 100%;
-    padding: 0px 12px;
-    /* padding: 36px 24px; */
-    text-align: center;
+    padding: 60px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(77, 108, 195);
+    background: url('/img/btcbull/roadmap-bg.webp') no-repeat center center;
+    background-size: 115% 115%; /* Slightly larger than the container */
+    
+    min-height: 500px;
 }
 
-.howtobuy-heading-wrapper{
-    display: flex;
+/* Overlay effect */
+.howtobuy-container-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    justify-content: flex-end;
+    height: 100%;
+    
+    background: linear-gradient(to bottom, rgb(5, 13, 19) 10%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.8) 90%);
+    pointer-events: none; /* Ensure it doesn't interfere with content */
+}
+
+.howtobuy-content{
+    max-width: 1250px;
+    padding-inline: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .howtobuy-heading-wrapper h3{

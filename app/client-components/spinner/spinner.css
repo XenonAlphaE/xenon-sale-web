@@ -1,0 +1,21 @@
+.spinner {
+    width: 60px;
+    height: 60px;
+    border: 5px solid transparent;
+    border-top-color: red;
+    border-radius: 50%;
+    animation: spin 1s linear infinite, colorChange 3s infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes colorChange {
+    0% { border-top-color: #e74c3c; }   /* Red */
+    25% { border-top-color: #f1c40f; }  /* Yellow */
+    50% { border-top-color: #2ecc71; }  /* Green */
+    75% { border-top-color: #3498db; }  /* Blue */
+    100% { border-top-color: #e74c3c; } /* Back to Red */
+}

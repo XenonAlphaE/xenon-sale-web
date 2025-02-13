@@ -6,6 +6,7 @@ import { useI18nSection } from '../../../redux/utils/languageUtils';
 
 import './howtobuy.css';
 import {Carousel} from '../carousel/carousel'
+import { AppSpinner } from '../spinner/spinner';
 export const HowToBuy = () => {
     const sectionText = useI18nSection('howtobuy')
 
@@ -25,10 +26,11 @@ export const HowToBuy = () => {
 
   return (
     <div id="howtobuy" className='howtobuy-container'>
-      <div className='howtobuy-heading-wrapper'>
-        <h3>Become a Flocker</h3>
-      </div>
-        <Carousel/> 
+        <div className='howtobuy-container-overlay'> </div>
+        <div className='howtobuy-content'> 
+
+          <AppSpinner/>
+        </div>
     </div>
   );
 };
