@@ -3,7 +3,7 @@
     padding: 24px 12px;
     display: flex;
     flex-direction: column;
-    min-height: 300px;
+    min-height: 400px;
     justify-content: space-evenly;
     row-gap: 12px;
     align-items: center;
@@ -20,7 +20,8 @@
     justify-content: space-evenly;
     row-gap: 12px;
     display: flex;
-
+    height: 100%;
+    min-height: 400px;
 
 }
 
