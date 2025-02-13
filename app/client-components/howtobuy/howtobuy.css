@@ -5,12 +5,12 @@
     padding: 60px 0px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     background: url('/img/btcbull/roadmap-bg.webp') no-repeat center center;
     background-size: 115% 115%; /* Slightly larger than the container */
     
-    min-height: 500px;
+    min-height: 900px;
 }
 
 /* Overlay effect */
@@ -26,66 +26,80 @@
 }
 
 .howtobuy-content{
-    max-width: 1250px;
+    width: 100%;
     padding-inline: 16px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    position: relative;
+    min-height: 600px;
+}
+.howtobuy-heading{
+    font-size: 4rem;
+    font-weight: 800;
+    color: rgb(255, 199, 0);
+    text-transform: uppercase;
+    text-align: center;
 }
 
-.howtobuy-heading-wrapper h3{
-    background-attachment: scroll;
-    background-clip: border-box;
-    background-color: rgb(193, 218, 234);
-    background-image: none;
-    background-origin: padding-box;
-    background-position-x: 0%;
-    background-position-y: 0%;
-    background-repeat: repeat;
-    background-size: auto;
-    border-bottom-color: rgb(0, 0, 0);
-    border-bottom-style: solid;
-    border-bottom-width: 4px;
-    border-image-outset: 0;
-    border-image-repeat: stretch;
-    border-image-slice: 100%;
-    border-image-source: none;
-    border-image-width: 1;
-    border-left-color: rgb(0, 0, 0);
-    border-left-style: solid;
-    border-left-width: 4px;
-    border-right-color: rgb(0, 0, 0);
-    border-right-style: solid;
-    border-right-width: 4px;
-    border-top-color: rgb(0, 0, 0);
-    border-top-style: solid;
-    border-top-width: 4px;
-    box-sizing: border-box;
-    color: rgb(240, 185, 11);
-    display: block;
-    font-family: badaboom-bb, sans-serif;
-    font-size: 54px;
+.howtobuy-cards{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    gap: 32px;
+}
+
+.howtobuy-card{
+
+    background: url('/img/btcbull/step-1.svg') no-repeat center center;
+    background-size: 100% 100%; /* Slightly larger than the container */
+    max-width: 355px;
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    position: relative;
+}
+
+.howtobuy-card-title{
+    color:rgb(255, 199, 0);
     font-weight: 500;
-    line-height: 64.8px;
-    margin-block-end: 8px;
-    margin-block-start: 0px;
-    margin-bottom: 8px;
-    margin-inline-end: 177.359px;
-    margin-inline-start: 0px;
-    margin-right: 177.359px;
-    margin-top: 0px;
-    padding-bottom: 5px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 5px;
-    paint-order: stroke;
-    text-align: center;
-    text-size-adjust: 100%;
-    transform: matrix(0.99863, -0.052336, 0.052336, 0.99863, 0, 0);
-    unicode-bidi: isolate;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    -webkit-text-stroke-color: rgb(0, 0, 0);
-    -webkit-text-stroke-width: 8px;
-  }
-  
+    font-size: 1.3em;
+}
+
+.howtobuy-card-content{
+    color: white;
+    font-weight: 500;
+}
+
+.howtobuy-card-img{
+    max-width: 120px;
+    position: absolute;
+    top: 8vh;
+    right: 2vw;
+}
+
+.howtobuy-card1{
+    position: absolute;
+    top: 10%;
+    left: 4%;
+    transform: rotate(-4deg);
+}
+.howtobuy-card2{
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    transform: rotate(7deg);
+}
+.howtobuy-card3{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: rotate(-9deg);
+}
+.howtobuy-card4{
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    transform: rotate(8deg);
+}
