@@ -31,7 +31,7 @@ const StakingApp = () => {
   return (
     <div>
       <Navbar />
-      <Staking/>
+      {/* <Staking/> */}
       
     </div>
   );
