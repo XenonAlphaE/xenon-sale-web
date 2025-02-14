@@ -1,38 +1,32 @@
 {
     "metadata": {
-        "title": "BTCBULL: Revolutionaire Vote-To-Earn Meme Coin | Crypto Presale",
-        "description": "Sluit je aan bij de $BTCBULL, waar elke Flocker een stem heeft. Ontdek Flocktopia, het baanbrekende Vote-To-Earn platform dat de macht in handen legt van de gemeenschap. Verdien beloningen, vorm de toekomst en wees onderdeel van de revolutie.",
-        "openGraph": {
-            "title": "BTCBULL: Revolutionaire Vote-To-Earn Meme Coin | Crypto Presale",
-            "description": "Sluit je aan bij de $BTCBULL, waar elke Flocker een stem heeft. Ontdek Flocktopia, het baanbrekende Vote-To-Earn platform dat de macht in handen legt van de gemeenschap. Verdien beloningen, vorm de toekomst en wees onderdeel van de revolutie.",
-            "url": "https://flockez.com/nl",
-            "locale": "nl_NL"
-        }
+        "title": "BTC Bull | De Beste Crypto Presale Voor Bitcoin Bulls",
+        "description": "BTC Bull is de officiële Bitcoin meme coin. Koop $BTCBULL crypto presale en verdien gratis Bitcoin airdrops terwijl BTC stijgt om de wereld's Nr.1 asset te worden!"
     },
     "nav": {
-        "home": "HUIS",
+        "home": "HOME",
         "staking": "STAKING",
         "howtobuy": "HOE TE KOPEN",
         "whitePaper": "WHITE PAPER",
         "tokenomics": "TOKENOMICS",
         "features": "KENMERKEN",
-        "buyNow": "KOOP NU",
-        "faq": "FAQ'S",
+        "buyNow": "Koop Nu",
+        "faq": "FAQS",
         "audit": "AUDIT",
         "roadmap": "ROADMAP",
         "airdrop": "AIRDROP",
         "about": "OVER"
     },
     "buyForm": {
-        "intro": "KOOP $BTCBULL PRESALE",
+        "intro": "Koop $BTCBULL In Presale Nu!",
         "day": "Dagen",
         "hrs": "Uren",
         "mins": "Minuten",
         "sec": "Seconden",
-        "funRaised": "USDT Verhoogd",
+        "funRaised": "USDT Opgehaald",
         "wallet": "JOUW Wallet",
         "boughtAmount": "JOUW AANKOOP",
-        "stakeableAmount": "JOUW STAKABLE",
+        "stakeableAmount": "JOUW STAKEABLE",
         "pay": "Betaal met",
         "get": "Ontvang",
         "buyNow": "KOOP NU",
@@ -41,86 +35,103 @@
         "link": "klik hier",
         "connectWallet": "VERBIND WALLET",
         "ethOption": "ETH NETWERK",
+        "switchOption": "WISSEL NETWERK",
         "bnbOption": "BNB NETWERK",
-        "buyStake": "Koop en Stak voor 8471% Beloningen",
-        "nextPriceAlert": "TOT PRIJSSTIJGING",
-        "para1": "1207% staking BELONINGEN",
-        "para2": "$BTCBULL, de meme coin van het volk.",
-        "para3": "De revolutionaire BTCBULL",
-        "para3_1": " Vote-To-Earn",
-        "para3_2": " platform legt de MACHT in jouw handen. Koop nu de presale om ENORME beloningen te verdienen!",
-        "note1": "VERDIEN DOOR TE STEMMEN",
-        "note2": "ENORME VROEG BELONINGEN",
-        "note3": "JIJ BEPAALT DE TOEKOMST",
-        "note4": "EN MEER...",
-        "buyBtn": "Sluit je aan bij de $BTCBULL!"
+        "buyStake": "Koop en Staken voor 1304% Beloningen",
+        "nextPriceAlert": "TOT PRIJS STIJGT",
+        "para1": "1207% staking BELONINGEN"
+    },
+    "header": {
+        "heading1": "BTC Bull",
+        "heading2": "Bitcoin’s Beste Crypto Presale",
+        "desc": "BTC Bull is de onstuitbare kracht die Bitcoin naar $1M+ duwt! Koop $BTCBULL en verdien Bitcoin terwijl BTC de Nr.1 asset in de wereld wordt!"
     },
     "about": {
-        "description1": "De toekomst van decentralisatie is aangekomen.",
-        "description2": "In de chaotische PVP-wereld van meme coins, waar elke belangrijke beslissing door één leider wordt genomen, stelt BTCBULL zijn gemeenschap—bekend als 'The Flock'—in staat om het project naar het beloofde land te leiden.",
-        "description3": "In het hart van BTCBULL ligt Flocktopia, een revolutionaire DAO.",
-        "description4": "Hier heeft elke holder niet alleen een stem, maar verdient hij/zij beloningen via ons baanbrekende Vote-To-Earn mechanisme.",
-        "description5": "Nu bepaal JIJ het pad van de $BTCBULL.",
-        "buyNow": "Koop $BTCBULL Presale NU!"
+        "featuresIn": "Uitgelicht In",
+        "heading1": "De Officiële",
+        "heading2": "Bitcoin Meme Coin",
+        "desc": "Bitcoin is het best presterende asset in de geschiedenis met een AAR van 230% – meer dan 200 miljoen procent gestegen sinds de oprichting. Spring nu aan boord voor de rit van je leven terwijl de BTC Bull richting $250K BTC en verder stampedeert!",
+        "buynow": "Koop Nu",
+        "cardTitle1": "Verdien Bitcoin Airdrops!",
+        "cardDesc1": "Houd $BTCBULL tokens vast om BTC airdrops te ontvangen terwijl de prijs van het grootste asset stijgt! Een enorme $BTCBULL airdrop wacht ook op de sterkste hodlers wanneer BTC $250,000 bereikt, gewogen naar je Community Sale aankoopbedrag.",
+        "cardTitle2": "Stake om te Verdienen",
+        "cardDesc2": "BTC Bull is ontworpen om gelovigen op elke manier te belonen. Gebouwd op Ethereum met hoge APY staking in een veilig smart contract, zullen $BTCBULL beloningen worden uitgegeven aan stakers voor de duur van de Community Sale en de komende twee jaar.",
+        "cardTitle3": "Token Verbrandingsmijlpalen",
+        "cardDesc3": "BTC Bull heeft als doel hodlers te belonen terwijl de prijs van Bitcoin stijgt. Elke keer dat BTC met $25K stijgt, wordt een percentage van de $BTCBULL token voorraad voor altijd verbrand, wat opwaartse prijsdruk creëert. We verbranden en we stijgen, en herhalen!"
     },
     "roadmap": {
-        "heading": "Flight PlaN.. LAAT ONS VLOKKEN!",
-        "toptext1": "Opstijgen",
-        "toptext2": "De Flock uitbreiden",
-        "toptext3": "De Grote Migratie",
-        "heading1": "Stap 1",
-        "heading2": "Stap 2",
-        "heading3": "Stap 3",
-        "step1_desc1": "Nestbeveiligingsaudit:",
-        "step1_desc1_1": "Beveilig het $BTCBULL contract met grondige audits voor het opstijgen.",
-        "step1_desc2": "Presale Opstijgen:",
-        "step1_desc2_1": "De Flock spreidt zijn vleugels wanneer de $BTCBULL presale begint, wat onze opstijging markeert.",
-        "step1_desc3": "Wereldwijde Flock Squawk:",
-        "step1_desc3_1": "Start een wereldwijde marketingcampagne en verzamel BTCBULL van over de hele wereld voor een krachtige vlucht.",
-
-        "step2_desc1": "Flock Uitbreiding:",
-        "step2_desc1_1": "Naarmate het nieuws zich verspreidt, sluiten zich meer BTCBULL aan bij de vlucht, wat onze gemeenschap vergroot.",
-        "step2_desc2": "Signaal Boost:",
-        "step2_desc2_1": "Invloedrijke stemmen versterken $BTCBULL, waardoor een grotere, enthousiaste flock zich verzamelt.",
-        "step2_desc3": "Dominantie:",
-        "step2_desc3_1": "$BTCBULL neemt de Ethereum luchten over en wordt het gesprek van de toppen.",
-
-        "step3_desc1": "Token Listing: ",
-        "step3_desc1_1": "Het lange wachten is voorbij—de flock landt op wereldwijde beursplatforms. $BTCBULL is nu klaar voor openbare handel.",
-        "step3_desc2": "Koninkrijk Expansie:",
-        "step3_desc2_1": "Met de flock verenigd, blijft de $BTCBULL gemeenschap groeien en neemt de crypto wereld stormenderhand over.",
-        "step3_desc3": "Vote to Earn Mechanisme: ",
-        "step3_desc3_1": "Introduceer het vote-to-earn systeem, en beloon BTCBULL voor hun deelname en wijsheid."
+        "heading1": "BTC Bull",
+        "heading2": " Roadmap",
+        "desc": "De BTC Bull brengt glorie en beloningen naar alle gelovigen. Langs het onvermijdelijke pad naar een BTC prijs boven de $1M, zal BTC Bull tokenvoorraad verbranden terwijl de BTC prijs stijgt en BTC airdropen naar de sterkste hodlers! Plus, een enorme $BTCBULL airdrop bij $250K BTC!",
+        "milestones": "Project Mijlpalen",
+        "item1": "$BTCBULL Presale!",
+        "item2": "Token Verbranding!",
+        "item3": "BTC Airdrop!",
+        "item4": "Token Verbranding!",
+        "item5": "BTC Airdrop!",
+        "item6": "Token Verbranding!",
+        "item7": "$BTCBULL Airdrop!"
+    },
+    "howtobuy": {
+        "heading1": "Hoe te kopen",
+        "heading2": "BTC BULL",
+        "title1": "Stap 1:",
+        "desc1": "Om te profiteren van BTC Bull en de Bitcoin bull run, heb je een DeFi crypto wallet nodig zoals MetaMask, Trust of een andere. Verbind deze met de presale widget bovenaan deze pagina.",
+        "title2": "Stap 2:",
+        "desc2": "Zorg dat je ETH of USDT hebt om door te gaan. Doe een storting of koop crypto direct in je Wallet om je $BTCBULL aankoop te financieren. Zorg ervoor dat je genoeg ETH overhoudt om gasfees te betalen.",
+        "title3": "Stap 3:",
+        "desc3": "Staken is beschikbaar op Ethereum om je $BTCBULL bezittingen te vergroten. Als je kiest voor staken, volg dan de aanwijzingen in de widget. De APY is dynamisch en kan in de loop van de tijd veranderen.",
+        "title4": "Stap 4:",
+        "desc4": "Na het voltooien van je aankoop, wordt je $BTCBULL token saldo weergegeven in de koopwidget. Deze tokens kunnen worden opgehaald zodra de BTC Bull presale is uitverkocht of verlopen."
     },
     "tokenomics": {
-        "heading": "FLOCKENOMICS",
-        "title1": "Early Bird Catch (20%)",
-        "title2": "Token Breeding (25%)",
-        "title3": "Flock Vault (25%)",
-        "title4": "Exchanges Fuel (10%)",
-        "title5": "Bird Calls (20%)",
-        "item1": "Early birds krijgen de worm! 20% van het nest wordt gereserveerd voor degenen die tijdens de presale toeslaan.",
-        "item2": "Een flinke 25% wordt gereserveerd voor staking. Loyale vogels kunnen hun $BTCBULLs leggen en zien hoe ze uitkomen in smakelijke beloningen.",
-        "item3": "25% wordt opgeslagen in de DAO Vault. Dit is de $BTCBULL schatkist, die wordt gebruikt om de rijke middelen van het Koninkrijk gezamenlijk toe te wijzen. Hoe meer je stemt, hoe meer je verdient.",
-        "item4": "We hebben 10% gereserveerd om de luchten soepel te houden voor onze CEX- en DEX-vluchten.",
-        "item5": "Een volledige 20% is gereserveerd voor marketing, om het woord wereldwijd te verspreiden met squawks, tweets.",
-        "total": "Token Voorraad"
+        "heading1": "BTC Bull",
+        "heading2": "Tokenomics",
+        "item1": "Bull Fonds",
+        "item2": "Milestone Burn Fonds",
+        "item3": "$BTCBULL Airdrop",
+        "item4": "Staking Verdeling",
+        "item5": "Exchange Liquiditeit",
+        "item6": "PR en Marketing",
+        "total": "Totale Aanvoer:"
     },
     "faqs": {
-        "heading": "Wat is er aan de hand, Mother BTCBULL?",
-        "title1": "Wat is $BTCBULL?",
-        "title2": "Kan ik Beloningen Verdienen tijdens de Presale?",
-        "title3": "Wat maakt BTCBULL zo Uniek?",
-        "title4": "Hoe Koop ik de Presale?",
-        "desc1": "BTCBULL ($BTCBULL) breekt nieuwe grond in decentralisatie. Het is de eerste Vote-To-Earn meme coin, waar JIJ de macht hebt om het lot van het project te bepalen, terwijl je beloningen verdient voor je stemmen. Holders zitten achter het stuur en stemmen over alle nieuwe voorstellen die betrekking hebben op het toekomstige succes van het project en de groei van de gemeenschap. Dit betekent dat er geen leider is, slechts een groep gelijkgestemde mensen die samenwerken om $BTCBULL geweldig te maken, en gekke beloningen verdienen voor hun deelname.",
-        "desc2": "JA! De BTCBULL presale ($BTCBULL) is ontworpen om vroege adopters van het project enorme beloningen te geven voor het kopen en staken van hun tokens tijdens de presale. Met een genereus APY en een staking horizon van 2 jaar, kunnen presale-stakers ontspannen en genieten van passieve beloningen voor hun deelname aan de presale, terwijl ze ook hun stem gebruiken om te stemmen om te verdienen!",
-        "desc3": "Nooit eerder was een meme coin gemeenschap verantwoordelijk voor elke belangrijke beslissing met betrekking tot het project. En zeker, geen enkele meme coin DAO heeft haar gemeenschap beloond voor het uitbrengen van stemmen op de blockchain. BTCBULL ($BTCBULL) holders banen een nieuwe weg in deze ruimte.",
-        "desc4": "Om de BTCBULL presale ($BTCBULL) te kopen, bekijk de handige koopgids hierboven! Verkrijg een wallet zoals Best Wallet, krijg wat crypto (of betaal met kaart), selecteer het gewenste bedrag en vlieg! Onze widget wordt aangedreven door Web3Payments, wat ervoor zorgt dat je aankoop beveiligd is door Web3Toolkit technologie.",
-        "buynow": "Koop en Stak Nu VOOR 1048%!"
+        "heading1": "BTC Bull",
+        "heading2": "Veelgestelde Vragen",
+        "data": [
+            {
+                "title": "Wat is BTC Bull?",
+                "desc": "BTC Bull is een meme coin gebouwd om Bitcoin’s opmars naar $250.000 en verder te ondersteunen. De BTC Bull laat zich niet intimideren door krachten die proberen zijn opkomst te stoppen en wil de beste investering in de wereld worden. Doe mee met deze historische crypto presale voor de rit van je leven terwijl we alle historische tegenstand achter ons laten, miljoenen nieuwe supporters verzamelen en mikken op de nummer 1 plek wereldwijd boven goud!"
+            },
+            {
+                "title": "Waarom zou ik de $BTCBULL crypto presale kopen?",
+                "desc": "BTC Bull is de ultieme keuze voor de volgende enorme bull cycle die op komst is voor Bitcoin (BTC), wat $BTCBULL waarschijnlijk de beste crypto presale maakt om in 2025 te kopen. $BTCBULL is een meme coin met een gepassioneerde gemeenschap die de bull in ons allemaal ondersteunt. Dit betekent dat zelfs een $150K BTC FUD is – je bent niet genoeg bullish. Hier laten we de BTC Bull gemeenschap groeien, stijgen we mee met BTC en plukken we uiteindelijk de vruchten van de beste activaklasse ter wereld."
+            },
+            {
+                "title": "Kan ik echt gratis Bitcoin airdrops verdienen?",
+                "desc": "Stottert een bull ooit? Ja! Houd $BTCBULL tokens in je wallet en je ontvangt BTC airdrops wanneer de prijs van Bitcoin $150.000 en $200.000 bereikt. Je BTC airdrops worden naar je BTC adres in je wallet gestuurd en het bedrag wordt gewogen naar het aantal $BTCBULL tokens dat je hebt gekocht in de Community Sale."
+            },
+            {
+                "title": "Is dit een gratis Bitcoin faucet of Bitcoin airdrop?",
+                "desc": "Niet precies. Een gratis Bitcoin faucet stelt mensen in staat om op bepaalde momenten gratis BTC in te wisselen. BTC Bull biedt gratis Bitcoin airdrops aan houders van de $BTCBULL token. Het enige wat je hoeft te doen, is je tokens in je wallet houden, of de wallet die je hebt gebruikt om $BTCBULL tokens aan te schaffen, importeren in je wallet om in aanmerking te komen."
+            },
+            {
+                "title": "Wat zijn de sociale media en ondersteuning van BTC Bull?",
+                "desc": "Volg BTC Bull op X (Twitter) en Telegram om je mede Bitcoin Bulls te ontmoeten en de stijging van BTC te vieren. Hier kun je ook op de hoogte blijven van alle projectnieuws en aankondigingen."
+            },
+            {
+                "title": "Hoe werkt $BTCBULL staking?",
+                "desc": "BTC Bull is gebouwd op Ethereum en wordt beveiligd door slimme contracten, met staking aangedreven door Web3Toolkit technologie. Een allocatie van $BTCBULL tokens wordt gereserveerd voor staking rewards. Door je $BTCBULL tokens naar het staking contract te sturen, kun je variabele APY verdienen en worden ze vastgezet totdat de Community Sale eindigt. Gestakete tokens kunnen 7 dagen na het live gaan van het claimen worden opgenomen."
+            },
+            {
+                "title": "Wanneer ontvang ik mijn $BTCBULL tokens?",
+                "desc": "Het kopen van $BTCBULL in de Community Sale garandeert je allocatie via de veilige Web3Payments widget. Deze tokens kunnen via de officiële website worden geclaimd zodra de Community Sale is afgelopen. Als je $BTCBULL koopt via de mobiele app van je wallet, profiteer je van volledige integratievoordelen zoals direct token claimen, toegang tot je token saldo en live prijzen tijdens de tokenverkoop, en onmiddellijke DEX handel bij de lancering."
+            }
+        ]
     },
     "footer": {
         "sub": "DISCLAIMER",
-        "text": "Cryptocurrency-investeringen brengen een hoog risico van volatiliteit met zich mee. Wees je bewust van de belastingimplicaties, aangezien winsten mogelijk onderhevig zijn aan vermogenswinstbelasting of andere belastingen in jouw rechtsgebied. De regelgeving omtrent cryptocurrency kan variëren, dus zorg ervoor dat je de regels in jouw regio begrijpt. Doe grondig onderzoek en investeer alleen wat je je kunt veroorloven te verliezen.",
-        "copyRight": "Copyright 2024 — Big Bird"
+        "text": "DISCLAIMER: BTC Bull is een speculatief meme coin actief gekoppeld aan de sociale en marktwaarde van Bitcoin. De cryptomarkt brengt het risico met zich mee dat je al je kapitaal kunt verliezen. Niets op deze website is financieel advies. Doe je eigen onderzoek en HODL tot $1M!",
+        "copyRight": ""
     }
 }

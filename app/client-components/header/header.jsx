@@ -21,7 +21,7 @@ import { useWalletERC20 } from "../../erc20wallet-provider";
 import { BuyForm } from "../buyform/buyform";
 
 export const Header = () => {
-  const sectionText = useI18nSection('buyForm')
+  const sectionText = useI18nSection('header')
   const currentLanguage = useLanguage()
 
   const nativeNetwork = useNativeNetwork()
@@ -227,8 +227,8 @@ export const Header = () => {
           
           <div className="intro-content-left">
               <div className="intro-text-container">
-                <h1 className="intro-heading1"><span _ngcontent-ng-c406187462="">BTC Bull Token:</span> Bitcoin’s Best Crypto Presale</h1>
-                <h2 className="intro-heading2">BTC Bull Token is the unstoppable force pushing Bitcoin towards $1M+! Buy $BTCBULL and earn Bitcoin as BTC becomes the No.1 asset in the world!</h2>
+                <h1 className="intro-heading1"><span _ngcontent-ng-c406187462="">{sectionText?.heading1}:</span> {sectionText?.heading2}</h1>
+                <h2 className="intro-heading2">{sectionText?.desc}</h2>
               </div>
               <img className="intro-banner" src="/img/btcbull/banner-img.webp" />
           </div>

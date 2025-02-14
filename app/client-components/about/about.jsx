@@ -38,57 +38,52 @@ export const About = () => {
             <div className='about-content'>
                 <div className='about-features-container'>
                     <img className='about-features-img'  src='/img/btcbull/cryptonews-new.svg'/>
-                    <img className='about-features-img'  src='/img/btcbull/cryptonews-new.svg'/>
+                    <img className='about-features-img'  src='/img/btcbull/newsbtc-new.svg'/>
                     <div className='about-features-text'>
                          <h2>
-                          Featured In
+                          {sectionText?.featuresIn}
                           
                         </h2> 
 
                     </div>
-                    <img className='about-features-img'  src='/img/btcbull/cryptonews-new.svg'/>
-                    <img className='about-features-img'  src='/img/btcbull/cryptonews-new.svg'/>
+                    <img className='about-features-img'  src='/img/btcbull/coinpedia-new.svg'/>
+                    <img className='about-features-img'  src='/img/btcbull/cryptopolitan-new.svg'/>
                 </div>
 
                 <div className='about-desc-container'>
-                    <h2 className='about-desc-title'>The Official <span style={{color:'white'}}>Bitcoin Meme Coin</span></h2>
+                    <h2 className='about-desc-title'>{sectionText?.heading1} <span style={{color:'white'}}>{sectionText?.heading2}</span></h2>
                     <p className='about-desc-content'>
-                        Bitcoin is the best-performing asset in history with an AAR of 230% – up more than 200 million percent since inception. Now jump on board for the ride of your life as the BTC Bull stampedes towards $250K BTC and beyond!
-
+                    {sectionText?.desc}
 
                     </p>
                     <div className='about-buttons'>
-                      <button className='about-buynow' onClick={scrollToBuySection}> BUY NOW</button>
+                      <button className='about-buynow' onClick={scrollToBuySection}>                     
+                        {sectionText?.buynow}
+                      </button>
                     </div>
                     <img className='about-desc-img' src='/img/btcbull/about-bull.webp'/>
               </div>
               <div className='about-cards'>
+
                   <div className='about-card-item'>
-                      <h3 className='about-card-title'>Earn Bitcoin Airdrops!                      </h3>
+                      <h3 className='about-card-title'>{sectionText?.cardTitle1}                     </h3>
                       <p className='about-card-desc'>
-                      Hold $BTCBULL tokens to receive BTC airdrops as the price of the greatest asset rises! A huge $BTCBULL airdrop also awaits the strongest hodlers when BTC hits $250,000, weighted by your Community Sale purchase amount.
-
-
+                      {sectionText?.cardDesc1}
                       </p>
                   </div>
                   <div className='about-card-item'>
-                      <h3 className='about-card-title'>Stake to Earn                      </h3>
+                      <h3 className='about-card-title'>{sectionText?.cardTitle2}                     </h3>
                       <p className='about-card-desc'>
-                      BTC Bull Token is designed to reward believers in every way. Built on Ethereum with high APY staking in a secure smart contract, $BTCBULL rewards will be issued to stakers for the duration of the Community Sale and over the next two years.
-
+                      {sectionText?.cardDesc2}
                       </p>
                   </div>
-
                   <div className='about-card-item'>
-                      <h3 className='about-card-title'>Token Burn Milestones                      </h3>
+                      <h3 className='about-card-title'>{sectionText?.cardTitle3}                     </h3>
                       <p className='about-card-desc'>
-
-                      BTC Bull aims to reward hodlers as the price of Bitcoin increases. Each time BTC goes up by another $25K, a percentage of the $BTCBULL token supply will be burned forever, creating upwards price pressure. We burn and we rise, and repeat!
-
-
-
+                      {sectionText?.cardDesc3}
                       </p>
                   </div>
+
 
               </div>
           </div>

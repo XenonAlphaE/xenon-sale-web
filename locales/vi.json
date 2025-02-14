@@ -1,39 +1,33 @@
 {
     "metadata": {
-        "title": "BTCBULL: Đồng Meme Cách Mạng Vote-To-Earn | Presale Crypto",
-        "description": "Tham gia vào $BTCBULL, nơi mỗi Flocker đều có tiếng nói. Khám phá Flocktopia, nền tảng Vote-To-Earn cách mạng đưa quyền lực vào tay cộng đồng. Kiếm phần thưởng, định hình tương lai và trở thành một phần của cuộc cách mạng.",
-        "openGraph": {
-            "title": "BTCBULL: Đồng Meme Cách Mạng Vote-To-Earn | Presale Crypto",
-            "description": "Tham gia vào $BTCBULL, nơi mỗi Flocker đều có tiếng nói. Khám phá Flocktopia, nền tảng Vote-To-Earn cách mạng đưa quyền lực vào tay cộng đồng. Kiếm phần thưởng, định hình tương lai và trở thành một phần của cuộc cách mạng.",
-            "url": "https://flockez.com/vi",
-            "locale": "vi_VN"
-        }
+        "title": "BTC Bull | Presale Crypto Tốt Nhất Cho Các Nhà Đầu Tư Bitcoin",
+        "description": "BTC Bull là đồng tiền meme Bitcoin chính thức. Mua presale $BTCBULL và nhận airdrop Bitcoin miễn phí khi BTC tăng giá trở thành tài sản số 1 thế giới!"
     },
     "nav": {
         "home": "TRANG CHỦ",
         "staking": "STAKING",
         "howtobuy": "CÁCH MUA",
-        "whitePaper": "WHITE PAPER",
-        "tokenomics": "TOKENOMICS",
+        "whitePaper": "BÁO CÁO TRẮNG",
+        "tokenomics": "KINH TẾ TOKEN",
         "features": "TÍNH NĂNG",
-        "buyNow": "MUA NGAY",
+        "buyNow": "Mua Ngay",
         "faq": "CÂU HỎI THƯỜNG GẶP",
         "audit": "KIỂM TOÁN",
         "roadmap": "LỘ TRÌNH",
         "airdrop": "AIRDROP",
-        "about": "GIỚI THIỆU"
+        "about": "VỀ CHÚNG TÔI"
     },
     "buyForm": {
-        "intro": "MUA PRESALE $BTCBULL",
+        "intro": "Mua $BTCBULL Trong Presale Ngay!",
         "day": "Ngày",
         "hrs": "Giờ",
         "mins": "Phút",
         "sec": "Giây",
-        "funRaised": "USDT Được Gây Quỹ",
+        "funRaised": "USDT Đã Quyên Góp",
         "wallet": "Ví CỦA BẠN",
-        "boughtAmount": "MUA CỦA BẠN",
-        "stakeableAmount": "SỐ TIỀN CÓ THỂ STAKE CỦA BẠN",
-        "pay": "Thanh toán bằng",
+        "boughtAmount": "SỐ LƯỢNG MUA CỦA BẠN",
+        "stakeableAmount": "SỐ LƯỢNG CÓ THỂ STAKE",
+        "pay": "Thanh Toán Với",
         "get": "Nhận",
         "buyNow": "MUA NGAY",
         "buyMax": "MUA TỐI ĐA",
@@ -41,87 +35,103 @@
         "link": "bấm vào đây",
         "connectWallet": "KẾT NỐI VÍ",
         "ethOption": "MẠNG ETH",
+        "switchOption": "THAY ĐỔI MẠNG",
         "bnbOption": "MẠNG BNB",
-        "buyStake": "Mua và Stake để nhận 8471% phần thưởng",
-        "nextPriceAlert": "CHO ĐẾN KHI TĂNG GIÁ",
-        "para1": "1207% phần thưởng staking",
-        "para2": "$BTCBULL. đồng meme của mọi người.",
-        "para3": "BTCBULL cách mạng",
-        "para3_1": "Vote-To-Earn",
-        "para3_2": "nền tảng đưa quyền lực vào tay bạn. Mua sớm presale ngay bây giờ để kiếm phần thưởng KHỦNG!",
-        "note1": "KIẾM TIỀN QUA VOTE",
-        "note2": "PHẦN THƯỞNG SỚM LỚN",
-        "note3": "BẠN SỞ HỮU TƯƠNG LAI",
-        "note4": "VÀ CÒN NHIỀU HƠN...",
-        "buyBtn": "tham gia $BTCBULL!"
+        "buyStake": "Mua và Staking để nhận 1304% Phần Thưởng",
+        "nextPriceAlert": "CHO ĐẾN KHI GIÁ TĂNG",
+        "para1": "Phần thưởng staking 1207%"
+    },
+    "header": {
+        "heading1": "BTC Bull",
+        "heading2": "Presale Crypto Tốt Nhất Của Bitcoin",
+        "desc": "BTC Bull là lực lượng không thể cản phá đẩy Bitcoin về mốc $1M+! Mua $BTCBULL và kiếm Bitcoin khi BTC trở thành tài sản số 1 thế giới!"
     },
     "about": {
-        "description1": "Tương lai của sự phi tập trung đã đến.",
-        "description2": "Trong thế giới hỗn loạn của các đồng meme PVP, nơi mọi quyết định quan trọng đều do một người lãnh đạo duy nhất, BTCBULL trao quyền cho cộng đồng của mình—được gọi là 'The Flock'—để dẫn dắt dự án đến với vùng đất hứa.",
-        "description3": "Ở trung tâm của BTCBULL là Flocktopia, một DAO cách mạng.",
-        "description4": "Tại đây, mỗi holder không chỉ có tiếng nói mà còn kiếm phần thưởng thông qua cơ chế Vote-To-Earn tiên phong của chúng tôi.",
-        "description5": "Bây giờ BẠN sẽ quyết định con đường của $BTCBULL.",
-        "buyNow": "Mua $BTCBULL Presale NGAY!"
+        "featuresIn": "Nổi Bật Trong",
+        "heading1": "Chính Thức",
+        "heading2": "Bitcoin Meme Coin",
+        "desc": "Bitcoin là tài sản có hiệu suất tốt nhất trong lịch sử với AAR 230% – tăng hơn 200 triệu phần trăm kể từ khi ra mắt. Hãy tham gia ngay để tận hưởng chuyến đi trong đời khi BTC Bull lao nhanh về mốc $250K BTC và hơn thế nữa!",
+        "buynow": "Mua Ngay",
+        "cardTitle1": "Kiếm Airdrop Bitcoin!",
+        "cardDesc1": "Giữ token $BTCBULL để nhận airdrop BTC khi giá của tài sản vĩ đại này tăng lên! Một airdrop khổng lồ $BTCBULL cũng đang chờ đón những người giữ lâu nhất khi BTC đạt $250,000, tỷ lệ với số tiền mua trong Community Sale của bạn.",
+        "cardTitle2": "Staking Để Kiếm",
+        "cardDesc2": "BTC Bull được thiết kế để thưởng cho những người tin tưởng theo mọi cách. Được xây dựng trên Ethereum với staking APY cao trong hợp đồng thông minh an toàn, phần thưởng $BTCBULL sẽ được phát hành cho những người stake trong suốt thời gian Community Sale và trong hai năm tiếp theo.",
+        "cardTitle3": "Mốc Đốt Token",
+        "cardDesc3": "BTC Bull nhằm thưởng cho những người giữ khi giá Bitcoin tăng lên. Mỗi khi BTC tăng thêm $25K, một phần của nguồn cung token $BTCBULL sẽ bị đốt cháy vĩnh viễn, tạo áp lực giá tăng. Chúng tôi đốt và chúng tôi tăng, rồi lại lặp lại!"
     },
     "roadmap": {
-        "heading": "KẾ HOẠCH CÁNH... CÙNG FLOCKING BAY!",
-        "toptext1": "Cất Cánh",
-        "toptext2": "Mở rộng Flock",
-        "toptext3": "Cuộc Di Cư Lớn",
-        "heading1": "Bước 1",
-        "heading2": "Bước 2",
-        "heading3": "Bước 3",
-        "step1_desc1": "Kiểm Tra An Ninh Tổ:",
-        "step1_desc1_1": "Đảm bảo hợp đồng $BTCBULL được kiểm tra kỹ lưỡng trước khi cất cánh.",
-        "step1_desc2": "Cất Cánh Presale:",
-        "step1_desc2_1": "Flock dang rộng cánh khi presale $BTCBULL được khởi động, đánh dấu sự bay lên.",
-        "step1_desc3": "Flock Squawk Toàn Cầu:",
-        "step1_desc3_1": "Khởi động chiến dịch marketing toàn cầu, quy tụ BTCBULL từ mọi ngóc ngách trên thế giới cho một chuyến bay mạnh mẽ.",
-
-        "step2_desc1": "Mở Rộng Flock:",
-        "step2_desc1_1": "Khi thông tin lan rộng, ngày càng nhiều BTCBULL tham gia chuyến bay, làm lớn mạnh cộng đồng.",
-        "step2_desc2": "Tăng Cường Tín Hiệu:",
-        "step2_desc2_1": "Những tiếng nói có ảnh hưởng làm tăng sự nổi bật của $BTCBULL, thu hút một cộng đồng Flock lớn hơn và nhiệt tình hơn.",
-        "step2_desc3": "Chiếm Lĩnh:",
-        "step2_desc3_1": "$BTCBULL chiếm lĩnh bầu trời Ethereum, trở thành chủ đề nóng tại các đỉnh cây.",
-
-        "step3_desc1": "Liên Kết Token:",
-        "step3_desc1_1": "Chờ đợi đã lâu—Flock hạ cánh trên các nền tảng giao dịch toàn cầu. $BTCBULL đã sẵn sàng cho việc giao dịch công khai.",
-        "step3_desc2": "Mở Rộng Vương Quốc:",
-        "step3_desc2_1": "Với Flock đoàn kết, tiếp tục phát triển cộng đồng $BTCBULL, chinh phục thế giới crypto.",
-        "step3_desc3": "Cơ Chế Vote to Earn:",
-        "step3_desc3_1": "Giới thiệu hệ thống vote-to-earn, thưởng cho BTCBULL về sự tham gia và trí tuệ của họ."
+        "heading1": "BTC Bull",
+        "heading2": "Lộ Trình",
+        "desc": "BTC Bull mang vinh quang và phần thưởng đến tất cả những người tin tưởng. Trên con đường không thể tránh khỏi để giá BTC vượt qua $1M, BTC Bull sẽ đốt token khi giá BTC tăng và airdrop BTC cho những người giữ mạnh nhất! Thêm vào đó, một airdrop khổng lồ $BTCBULL khi BTC đạt $250K!",
+        "milestones": "Cột Mốc Dự Án",
+        "item1": "Presale $BTCBULL!",
+        "item2": "Đốt Token!",
+        "item3": "Airdrop BTC!",
+        "item4": "Đốt Token!",
+        "item5": "Airdrop BTC!",
+        "item6": "Đốt Token!",
+        "item7": "Airdrop $BTCBULL!"
+    },
+    "howtobuy": {
+        "heading1": "Cách Mua",
+        "heading2": "BTC BULL",
+        "title1": "Bước 1:",
+        "desc1": "Để tận dụng BTC Bull và xu hướng tăng giá của Bitcoin, bạn cần có một ví DeFi như MetaMask, Trust hoặc bất kỳ ví nào khác. Kết nối ví của bạn với widget bán trước ở đầu trang này.",
+        "title2": "Bước 2:",
+        "desc2": "Có ETH hoặc USDT để tiếp tục. Nạp tiền hoặc mua crypto trực tiếp trong ví để tài trợ cho việc mua $BTCBULL của bạn. Đảm bảo bạn còn đủ ETH để thanh toán phí gas.",
+        "title3": "Bước 3:",
+        "desc3": "Staking có sẵn trên Ethereum để tăng lượng $BTCBULL của bạn. Nếu bạn chọn staking, làm theo hướng dẫn trên widget. APY sẽ thay đổi theo thời gian.",
+        "title4": "Bước 4:",
+        "desc4": "Sau khi hoàn tất mua, số dư token $BTCBULL của bạn sẽ hiển thị trên widget mua. Những token này có thể được nhận khi đợt bán trước của BTC Bull kết thúc hoặc hết thời gian."
     },
     "tokenomics": {
-        "heading": "FLOCKENOMICS",
-        "title1": "Early Bird Catch (20%)",
-        "title2": "Token Breeding (25%)",
-        "title3": "Flock Vault (25%)",
-        "title4": "Exchanges Fuel (10%)",
-        "title5": "Bird Calls (20%)",
-        "item1": "Những chú chim đầu tiên sẽ nhận được phần thưởng! 20% của tổ sẽ được dành riêng cho những người đã tham gia presale.",
-        "item2": "Một phần lớn 25% sẽ được dành cho staking. Những chú chim trung thành có thể gửi token $BTCBULL của mình và xem chúng đẻ ra phần thưởng hấp dẫn.",
-        "item3": "25% sẽ được lưu trữ trong Vault DAO. Đây là kho báu của $BTCBULL, dùng để phân phối tài sản lớn của Vương Quốc. Càng bỏ phiếu, bạn càng kiếm được nhiều.",
-        "item4": "Chúng tôi dành 10% để đảm bảo bầu trời luôn suôn sẻ cho các chuyến bay CEX và DEX.",
-        "item5": "20% dành cho marketing, quảng bá thông điệp đi xa và rộng với những tiếng gọi, những tweet.",
-        "total": "Cung Cấp Token"
+        "heading1": "BTC Bull",
+        "heading2": "Kinh Tế Token",
+        "item1": "Quỹ Bull",
+        "item2": "Quỹ Đốt Milestone",
+        "item3": "$BTCBULL Airdrop",
+        "item4": "Phân Phối Staking",
+        "item5": "Thanh Khoản Sàn Giao Dịch",
+        "item6": "PR và Marketing",
+        "total": "Tổng Cung:"
     },
     "faqs": {
-        "heading": "Chào các Flockers, có chuyện gì thế?",
-        "title1": "$BTCBULL là gì?",
-        "title2": "Tôi có thể kiếm phần thưởng trong thời gian presale không?",
-        "title3": "Điều gì làm BTCBULL trở nên độc đáo?",
-        "title4": "Cách mua presale là gì?",
-        "desc1": "BTCBULL ($BTCBULL) đang mở ra một trang mới trong lĩnh vực phi tập trung. Đây là đồng meme đầu tiên áp dụng cơ chế Vote-To-Earn, nơi mà BẠN có quyền kiểm soát số phận của dự án, đồng thời kiếm phần thưởng cho những lá phiếu của mình. Những người nắm giữ ở vị trí lái xe, bỏ phiếu cho tất cả các đề xuất mới liên quan đến sự thành công trong tương lai của dự án và sự phát triển của cộng đồng. Điều này có nghĩa là không có một người lãnh đạo, chỉ có một nhóm người cùng chí hướng làm việc cùng nhau để làm cho $BTCBULL trở nên vĩ đại, và kiếm được phần thưởng khủng từ sự tham gia của họ.",
-        "desc2": "ĐÚNG VẬY! Presale BTCBULL ($BTCBULL) được thiết kế để cho phép những người tham gia sớm kiếm được phần thưởng khổng lồ chỉ bằng cách mua và staking token trong thời gian presale. Với APY hấp dẫn và kỳ hạn staking kéo dài 2 năm, những người stake trong presale có thể ngồi thư giãn và tận hưởng phần thưởng thụ động từ việc tham gia presale, đồng thời sử dụng lá phiếu của họ để kiếm thêm phần thưởng!",
-        "desc3": "Chưa bao giờ cộng đồng của một đồng meme lại có quyền kiểm soát tất cả các quyết định quan trọng liên quan đến dự án. Và chắc chắn không có DAO đồng meme nào thưởng cho cộng đồng vì đã bỏ phiếu trên blockchain. Những người nắm giữ BTCBULL ($BTCBULL) đang mở đường mới trong không gian này.",
-        "desc4": "Để mua presale BTCBULL ($BTCBULL), hãy tham khảo hướng dẫn mua ở trên! Cài đặt ví như Best Wallet, mua một ít crypto (hoặc thanh toán qua thẻ), chọn số lượng bạn muốn và bay lên! Widget của chúng tôi được cung cấp bởi Web3Payments đảm bảo rằng giao dịch của bạn được bảo vệ bởi công nghệ Web3Toolkit.",
-        "buynow": "Mua và Stake ngay để nhận 1048%!"
+        "heading1": "BTC Bull",
+        "heading2": "Câu Hỏi Thường Gặp",
+        "data": [
+            {
+                "title": "BTC Bull là gì?",
+                "desc": "BTC Bull là một đồng meme coin được xây dựng để hỗ trợ Bitcoin vươn tới mức $250,000 và hơn thế nữa. BTC Bull không sợ hãi trước bất kỳ lực lượng nào muốn ngăn cản sự trỗi dậy của nó để trở thành tài sản đầu tư tốt nhất thế giới. Tham gia vào đợt bán trước crypto này cùng chúng tôi để trải nghiệm chuyến đi cả đời khi chúng ta vượt qua mọi đối thủ trong lịch sử, thu hút hàng triệu người ủng hộ mới, và hướng tới vị trí tài sản số 1 thế giới vượt qua vàng!"
+            },
+            {
+                "title": "Tại sao tôi nên mua đợt bán trước crypto $BTCBULL?",
+                "desc": "BTC Bull là sự lựa chọn tối ưu cho chu kỳ tăng giá tiếp theo của Bitcoin (BTC), có thể làm cho $BTCBULL trở thành đợt bán trước crypto tốt nhất để mua trong năm 2025. $BTCBULL là một đồng meme coin với cộng đồng nhiệt huyết, cam kết hỗ trợ con bò trong tất cả chúng ta. Điều này có nghĩa là, ngay cả khi BTC đạt $150K thì FUD vẫn không thể ngăn cản bạn. Tại đây, chúng ta xây dựng cộng đồng BTC Bull, cùng nhau phát triển khi BTC tăng giá, và cuối cùng thu hoạch thành quả của lớp tài sản tốt nhất thế giới."
+            },
+            {
+                "title": "Tôi có thể thật sự nhận airdrop Bitcoin miễn phí không?",
+                "desc": "Con bò có bao giờ lưỡng lự không? Có! Giữ token $BTCBULL trong ví của bạn và bạn sẽ nhận được airdrop BTC khi giá Bitcoin đạt $150,000 và $200,000. Các airdrop BTC sẽ được gửi vào địa chỉ BTC trong ví của bạn, và số lượng sẽ được tính theo số token $BTCBULL bạn đã mua trong đợt bán cộng đồng."
+            },
+            {
+                "title": "Đây có phải là một faucet Bitcoin miễn phí hay airdrop Bitcoin không?",
+                "desc": "Không hẳn vậy. Faucet Bitcoin miễn phí cho phép mọi người nhận một ít BTC miễn phí tại các thời điểm nhất định. BTC Bull đang cung cấp airdrop Bitcoin miễn phí cho những người nắm giữ token $BTCBULL. Bạn chỉ cần giữ token của mình trong ví, hoặc nhập ví bạn đã sử dụng để mua token $BTCBULL vào ví của bạn để đủ điều kiện nhận airdrop."
+            },
+            {
+                "title": "BTC Bull có hỗ trợ trên mạng xã hội nào không?",
+                "desc": "Theo dõi BTC Bull trên X (Twitter) và Telegram để gia nhập cộng đồng Bitcoin Bull và chúc mừng sự thăng tiến của BTC. Tại đây, bạn cũng có thể cập nhật thông tin dự án và các thông báo mới nhất."
+            },
+            {
+                "title": "Staking $BTCBULL hoạt động như thế nào?",
+                "desc": "BTC Bull được xây dựng trên nền tảng Ethereum và bảo mật bằng hợp đồng thông minh, với staking được hỗ trợ bởi công nghệ Web3Toolkit. Một phần token $BTCBULL được dành cho phần thưởng staking. Vì vậy, khi bạn chuyển token $BTCBULL vào hợp đồng staking, bạn sẽ nhận được APY thay đổi và token sẽ bị khóa cho đến khi đợt bán cộng đồng kết thúc. Các token đã staking có thể được rút sau 7 ngày khi chương trình yêu cầu nhận token chính thức."
+            },
+            {
+                "title": "Khi nào tôi sẽ nhận được token $BTCBULL của mình?",
+                "desc": "Mua $BTCBULL trong đợt bán cộng đồng đảm bảo quyền mua của bạn thông qua widget Web3Payments bảo mật. Các token này có thể được nhận qua trang web chính thức khi đợt bán cộng đồng kết thúc. Nếu bạn mua $BTCBULL qua ứng dụng ví di động, bạn sẽ được hưởng các quyền lợi tích hợp đầy đủ như nhận token trực tiếp, truy cập vào số dư token và giá trực tiếp trong suốt đợt bán token, và giao dịch DEX ngay khi token ra mắt."
+            }
+        ]
     },
     "footer": {
-        "sub": "CẢNH BÁO",
-        "text": "Đầu tư vào tiền điện tử có rủi ro cao về sự biến động. Hãy chú ý đến các tác động thuế, vì lợi nhuận có thể phải chịu thuế thu nhập vốn hoặc các loại thuế khác tại khu vực của bạn. Quy định về tiền điện tử có thể thay đổi, vì vậy hãy đảm bảo bạn hiểu rõ các quy định tại địa phương. Hãy nghiên cứu kỹ và chỉ đầu tư những gì bạn có thể chấp nhận mất.",
-        "copyRight": "Copyright 2024 — Big Bird"
+        "sub": "Từ Chối Trách Nhiệm",
+        "text": "TỪ CHỐI TRÁCH NHIỆM: BTC Bull là một tài sản meme coin mang tính đầu cơ, liên kết với giá trị xã hội và thị trường của Bitcoin. Thị trường cryptocurrency mang theo rủi ro mà bạn có thể mất toàn bộ vốn đầu tư. Không có gì trên trang web này là lời khuyên tài chính. Tự nghiên cứu và HODL đến $1M!",
+        "copyRight": ""
     }
-
 }

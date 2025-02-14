@@ -1,126 +1,137 @@
 {
     "metadata": {
-        "title": "BTCBULL: Devrimci Vote-To-Earn Meme Coin | Kripto Ön Satışı",
-        "description": "$BTCBULL’a katılın, her Flocker’ın bir sesi var. Flocktopia’yı keşfedin, topluluğun elinde gücü tutan devrim niteliğindeki Vote-To-Earn platformu. Ödüller kazanın, geleceği şekillendirin ve devrime katılın.",
-        "openGraph": {
-            "title": "BTCBULL: Devrimci Vote-To-Earn Meme Coin | Kripto Ön Satışı",
-            "description": "$BTCBULL’a katılın, her Flocker’ın bir sesi var. Flocktopia’yı keşfedin, topluluğun elinde gücü tutan devrim niteliğindeki Vote-To-Earn platformu. Ödüller kazanın, geleceği şekillendirin ve devrime katılın.",
-            "url": "https://flockez.com/tr",
-            "locale": "tr_TR"
-        }
+        "title": "BTC Bull | Bitcoin Boğaları İçin En İyi Kripto Ön Satışı",
+        "description": "BTC Bull, resmi Bitcoin meme coin'idir. $BTCBULL kripto ön satışını satın al ve BTC'nin dünyanın 1 numaralı varlığına yükselmesiyle ücretsiz Bitcoin airdrop'ları kazan!"
     },
     "nav": {
         "home": "ANASAYFA",
         "staking": "STAKING",
-        "howtobuy": "NASIL ALINIR",
-        "whitePaper": "WHITE PAPER",
-        "tokenomics": "TOKENOMICS",
+        "howtobuy": "NASIL SATIN ALINIR",
+        "whitePaper": "BEYAZ KAĞIT",
+        "tokenomics": "TOKENOLOJİ",
         "features": "ÖZELLİKLER",
-        "buyNow": "ŞİMDİ AL",
+        "buyNow": "ŞİMDİ SATIN AL",
         "faq": "SSS",
         "audit": "DENETİM",
-        "roadmap": "ROADMAP",
+        "roadmap": "YOL HARİTASI",
         "airdrop": "AIRDROP",
         "about": "HAKKINDA"
     },
     "buyForm": {
-        "intro": "$BTCBULL ÖN SATIŞINI AL",
-        "day": "Gün",
-        "hrs": "Saat",
-        "mins": "Dakika",
-        "sec": "Saniye",
+        "intro": "Şimdi $BTCBULL'ü Ön Satışta Satın Al!",
+        "day": "Günler",
+        "hrs": "Saatler",
+        "mins": "Dakikalar",
+        "sec": "Saniyeler",
         "funRaised": "Toplanan USDT",
-        "wallet": "Cüzdanınız",
+        "wallet": "CÜZDANINIZ",
         "boughtAmount": "ALDIĞINIZ MİKTAR",
-        "stakeableAmount": "STAKELENEBİLİR MİKTAR",
-        "pay": "İle Öde",
-        "get": "Al",
-        "buyNow": "ŞİMDİ AL",
-        "buyMax": "MAKSİMUM AL",
-        "warning": "Satın almak için lütfen Metamask'ı yükleyin",
+        "stakeableAmount": "STAKELENECEK MİKTAR",
+        "pay": "Ödeme Yöntemi",
+        "get": "Alacağınız",
+        "buyNow": "ŞİMDİ SATIN AL",
+        "buyMax": "MAKSİMUM SATIN AL",
+        "warning": "Satın almak için Metamask yükleyin",
         "link": "buraya tıklayın",
         "connectWallet": "CÜZDAN BAĞLA",
         "ethOption": "ETH AĞI",
+        "switchOption": "AĞ DEĞİŞTİR",
         "bnbOption": "BNB AĞI",
-        "buyStake": "Al ve %8471 Ödüller için Stake Yap",
-        "nextPriceAlert": "FİYAT ARTMASI İÇİN KALAN ZAMAN",
-        "para1": "%1207 staking ÖDÜLLERİ",
-        "para2": "$BTCBULL, halkın meme coini.",
-        "para3": "BTCBULL'in devrimci",
-        "para3_1": "Vote-To-Earn",
-        "para3_2": "platformu gücü sizin ellerinize veriyor. Devasa ödüller kazanmak için erken ön satışa ŞİMDİ katılın!",
-        "note1": "OY VEREREK KAZAN",
-        "note2": "BÜYÜK ERKEN ÖDÜLLER",
-        "note3": "GÜ future SAHİBİSİSİNİZ",
-        "note4": "VE DAHA FAZLASI...",
-        "buyBtn": "$BTCBULL'a katıl!"
+        "buyStake": "Satın Al ve %1304 Ödül İçin Stake Yap",
+        "nextPriceAlert": "FİYAT ARTIMI İÇİN",
+        "para1": "%1207 Staking ÖDÜLLERİ"
+    },
+    "header": {
+        "heading1": "BTC Bull",
+        "heading2": "Bitcoin’in En İyi Kripto Ön Satışı",
+        "desc": "BTC Bull, Bitcoin’i 1M$'a doğru iten durdurulamaz güçtür! $BTCBULL satın al ve Bitcoin dünyadaki 1 numaralı varlık haline gelirken Bitcoin kazan!"
     },
     "about": {
-        "description1": "Desentralizasyonun geleceği geldi.",
-        "description2": "Meme coin'lerinin kaotik PVP dünyasında, her ana kararın tek bir lider tarafından alındığı bir ortamda, BTCBULL topluluğuna—'The Flock' olarak bilinen—proje yolunda yön verme gücü veriyor.",
-        "description3": "BTCBULL'in kalbinde, devrimci bir DAO olan Flocktopia yer alıyor.",
-        "description4": "Burada, her token sahibi sadece bir ses olmakla kalmaz, aynı zamanda devrimci Vote-To-Earn mekanizmamızla ödüller kazanır.",
-        "description5": "Şimdi, $BTCBULL’un yolunu belirlemek sizin elinizde.",
-        "buyNow": "$BTCBULL Ön Satışını ŞİMDİ Al!"
+        "featuresIn": "Öne Çıkanlar",
+        "heading1": "Resmi",
+        "heading2": "Bitcoin Meme Coin’i",
+        "desc": "Bitcoin, tarihinin en iyi performans gösteren varlığı olup %230 AAR’a sahip – baştan itibaren %200 milyon oranında artmış durumda. Şimdi hayatınızın yolculuğuna çıkın, BTC Bull $250K BTC'ye ve ötesine doğru hızla ilerlerken!",
+        "buynow": "Şimdi Satın Al",
+        "cardTitle1": "Bitcoin Airdrop'ları Kazan!",
+        "cardDesc1": "$BTCBULL token’larını tutarak, en değerli varlık olan Bitcoin’in fiyatı arttıkça BTC airdrop’ları alın! Ayrıca, BTC $250,000’a ulaştığında, en güçlü hodler'ları büyük bir $BTCBULL airdrop’u bekliyor, bu miktar, Topluluk Satışı satın alma miktarınıza göre ağırlıklandırılacaktır.",
+        "cardTitle2": "Stake Yaparak Kazan",
+        "cardDesc2": "BTC Bull, inananları her şekilde ödüllendirmek için tasarlanmıştır. Ethereum üzerine inşa edilen yüksek APY staking ile güvenli bir akıllı sözleşme ile $BTCBULL ödülleri, Topluluk Satışı süresince ve önümüzdeki iki yıl boyunca stakeler için verilecektir.",
+        "cardTitle3": "Token Yakma Dönüm Noktaları",
+        "cardDesc3": "BTC Bull, Bitcoin fiyatı arttıkça hodler’ları ödüllendirmeyi hedeflemektedir. BTC her $25K arttığında, $BTCBULL token arzının bir yüzdesi sonsuza kadar yakılacak ve fiyat baskısı yaratacaktır. Yakarız ve yükseliriz, tekrar ederiz!"
     },
     "roadmap": {
-        "heading": "UÇUŞ PLANI.. HADI FLOCKLAYALIM!",
-        "toptext1": "Uçuşa Geç",
-        "toptext2": "Flock'u Genişlet",
-        "toptext3": "Büyük Göç",
-        "heading1": "Adım 1",
-        "heading2": "Adım 2",
-        "heading3": "Adım 3",
-        "step1_desc1": "Yuva Güvenliği Denetimi:",
-        "step1_desc1_1": "$BTCBULL sözleşmesini, kalkıştan önce kapsamlı denetimlerle güvence altına al.",
-        "step1_desc2": "Ön Satış Kalkışı:",
-        "step1_desc2_1": "$BTCBULL ön satışı başlarken, Flock kanatlarını açıyor ve yükselmeye başlıyoruz.",
-        "step1_desc3": "Küresel Flock Seslenişi:",
-        "step1_desc3_1": "Dünyanın dört bir yanındaki BTCBULL’i güçlü bir uçuş için toplamak adına küresel bir pazarlama kampanyası başlat.",
-        
-        "step2_desc1": "Flock Genişlemesi:",
-        "step2_desc1_1": "Haber yayıldıkça, daha fazla BTCBULL uçuşa katılır ve topluluğumuz büyür.",
-        "step2_desc2": "Sinyal Artışı:",
-        "step2_desc2_1": "Etkili sesler, $BTCBULL'u güçlendirir ve daha büyük bir heyecanlı Flock çeker.",
-        "step2_desc3": "Hâkimiyet:",
-        "step2_desc3_1": "$BTCBULL, Ethereum gökyüzünü ele geçirir ve ağaç tepelerindeki konuşmaların konusu olur.",
-
-        "step3_desc1": "Token Listeleme:",
-        "step3_desc1_1": "Uzun bekleyiş sona erdi—Flock küresel borsalarda listeleniyor. $BTCBULL artık halka açık işlem yapmaya hazır.",
-        "step3_desc2": "Krallık Genişlemesi:",
-        "step3_desc2_1": "Flock birleştiği anda, $BTCBULL topluluğunu büyütmeye devam et ve kripto dünyasında fırtına gibi es.",
-        "step3_desc3": "Vote to Earn Mekanizması:",
-        "step3_desc3_1": "Oy verme ve kazanma sistemini tanıtın, BTCBULL'i katılımları ve bilgileriyle ödüllendirin."
+        "heading1": "BTC Bull",
+        "heading2": "Yol Haritası",
+        "desc": "BTC Bull, tüm inananlara zafer ve ödüller getiriyor. $1M'den yüksek bir BTC fiyatına doğru kaçınılmaz yolculuk boyunca, BTC Bull, BTC fiyatı arttıkça token arzını yakacak ve en güçlü hodler’lara BTC airdrop'u yapacak! Ayrıca, $250K BTC'de büyük bir $BTCBULL airdrop'u bekliyor!",
+        "milestones": "Proje Dönüm Noktaları",
+        "item1": "$BTCBULL Ön Satışı!",
+        "item2": "Token Yakma!",
+        "item3": "BTC Airdrop'u!",
+        "item4": "Token Yakma!",
+        "item5": "BTC Airdrop'u!",
+        "item6": "Token Yakma!",
+        "item7": "$BTCBULL Airdrop'u!"
+    },
+    "howtobuy": {
+        "heading1": "Nasıl Satın Alınır",
+        "heading2": "BTC BULL",
+        "title1": "Adım 1:",
+        "desc1": "BTC Bull ve Bitcoin'in boğa koşusundan yararlanmak için MetaMask, Trust veya başka bir DeFi kripto cüzdanına ihtiyacınız var. Bunu bu sayfanın üst kısmındaki ön satış aracına bağlayın.",
+        "title2": "Adım 2:",
+        "desc2": "Devam edebilmek için ETH veya USDT'ye sahip olmanız gerekir. Cüzdanınıza para yatırın veya doğrudan kripto satın alarak $BTCBULL alımınızı finanse edin. Gas ücretlerini ödemek için yeterli ETH'nizin kaldığından emin olun.",
+        "title3": "Adım 3:",
+        "desc3": "$BTCBULL varlıklarınızı artırmak için Ethereum üzerinde staking (kilitleme) mevcuttur. Stake yapmayı seçerseniz, widget üzerindeki yönergeleri izleyin. APY dinamik olup zamanla değişebilir.",
+        "title4": "Adım 4:",
+        "desc4": "Satın alımınızı tamamladıktan sonra, $BTCBULL token bakiyeniz satın alma widget'ında görüntülenecektir. Bu tokenler, BTC Bull ön satışının satışı tamamlandığında veya süresi dolduğunda talep edilebilir."
     },
     "tokenomics": {
-        "heading": "FLOCKENOMICS",
-        "title1": "Erken Kuş Yakalaması (%20)",
-        "title2": "Token Üretimi (%25)",
-        "title3": "Flock Kasası (%25)",
-        "title4": "Borsa Yakıtı (%10)",
-        "title5": "Kuş Çağrıları (%20)",
-        "item1": "Erken kuşlar böceği yakalar! Yuvalarının %20’si, ön satışa katılanlar için ayrıldı.",
-        "item2": "Yüksek bir %25, staking için ayrıldı. Sadık kuşlar, $BTCBULL’larını yatırabilir ve bunların lezzetli ödüllere dönüşmesini izleyebilirler.",
-        "item3": "%25’i DAO Kasasında saklanır. Bu, $BTCBULL hazine kasasıdır, Krallığın büyük servetini topluca tahsis etmek için kullanılır. Ne kadar çok oy kullanırsanız, o kadar çok kazanırsınız.",
-        "item4": "CEX ve DEX uçuşlarımızın düzenli olmasını sağlamak için %10 ayrıldı.",
-        "item5": "%20’si pazarlama için ayrıldı, kuş sesleri ve tweetlerle sesi duyuruyoruz.",
-        "total": "Toplam Token Arzı"
+        "heading1": "BTC Bull",
+        "heading2": "Tokenomik",
+        "item1": "Bull Fonu",
+        "item2": "Kilometre Taşı Yakma Fonu",
+        "item3": "$BTCBULL Airdrop",
+        "item4": "Staking Dağıtımı",
+        "item5": "Borsa Likiditesi",
+        "item6": "PR ve Pazarlama",
+        "total": "Toplam Arz:"
     },
     "faqs": {
-        "heading": "N'aber Mother BTCBULL?",
-        "title1": "$BTCBULL Nedir?",
-        "title2": "Ön Satış Sırasında Ödül Kazanabilir miyim?",
-        "title3": "BTCBULL’i Bu Kadar Özel Yapan Nedir?",
-        "title4": "Ön Satışı Nasıl Alırım?",
-        "desc1": "BTCBULL ($BTCBULL), desentralizasyon konusunda yeni bir çığır açıyor. Bu, kendi türünde ilk olan Vote To Earn meme coin’i, burada PROJE'NİN KADERİNİ KONTROL ETME GÜCÜNE sahipsiniz, aynı zamanda oylarınız için ödüller kazanıyorsunuz. Sahipler direksiyonun başında, projeyle ilgili tüm yeni önerilere ve topluluğun büyümesine oy veriyorlar. Bu, tek bir liderin olmadığı, sadece benzer görüşlere sahip bir grubun bir arada çalışarak $BTCBULL'u mükemmel hale getirdiği ve katılımlarının karşılığında deli gibi ödüller kazandığı anlamına gelir.",
-        "desc2": "EVET! BTCBULL ön satışı ($BTCBULL), projenin erken benimseyicilerinin, sadece token'larını alıp stake ederek devasa ödüller kazanmalarını sağlamak için tasarlanmıştır. Cömert bir APY ile ve 2 yıllık bir staking süresiyle, ön satışa katılanlar, pasif ödüllerin keyfini çıkarırken aynı zamanda oy kullanarak kazanma fırsatını da kullanabilecekler!",
-        "desc3": "Daha önce hiçbir meme coin topluluğu, projeyle ilgili her büyük kararda söz sahibi olmamıştı. Ve kesinlikle hiçbir meme coin DAO’su, topluluğuna blockchain üzerinde oy kullanarak ödüller vermemiştir. BTCBULL ($BTCBULL) sahipleri, alanda yeni bir yol açıyorlar.",
-        "desc4": "BTCBULL ön satışını ($BTCBULL) almak için yukarıdaki kullanışlı alım kılavuzuna göz atın! Best Wallet gibi bir cüzdan edinin, biraz kripto (ya da kartla ödeme) alıp istediğiniz miktarı seçin ve uçuşa geçin! Widget'ımız Web3Payments tarafından güçlendirilmiştir, böylece alımınız Web3Toolkit teknolojisiyle güvence altına alınır.",
-        "buynow": "Şimdi Al ve %1048 Ödül İçin Stake Yap!"
+        "heading1": "BTC Bull",
+        "heading2": "SSS",
+        "data": [
+            {
+                "title": "BTC Bull nedir?",
+                "desc": "BTC Bull, Bitcoin'in $250.000 ve sonrasına doğru yükselişini desteklemek için oluşturulmuş bir meme coin'dir. BTC Bull, dünya çapında en iyi yatırım varlığı olma yolunda engellemeye çalışan hiçbir güce boyun eğmez. Bu tarihi anın bir parçası olarak, tüm karşıt görüşleri geride bırakacak, milyonlarca yeni destekçi toplayacak ve altının önünde dünya genelinde bir numaralı varlık olma hedefiyle bu eşsiz kripto ön satışına katılın!"
+            },
+            {
+                "title": "$BTCBULL kripto ön satışını neden satın almalıyım?",
+                "desc": "BTC Bull, Bitcoin (BTC) için gelecek olan büyük boğa döngüsüne yönelik en büyük hamle. Bu, $BTCBULL'ü 2025'te alınacak en iyi kripto ön satışı yapıyor. $BTCBULL, içinde hepimizin boğa ruhunu taşıyan tutkulu bir topluluğa sahip bir meme coindir. Yani $150K BTC bile FUD'dur – yeterince boğa olamıyorsunuz. Burada BTC Bull topluluğunu büyütüyoruz, BTC yükseldikçe biz de yükseliyoruz ve nihayet dünyanın en iyi varlık sınıfının ödüllerini topluyoruz."
+            },
+            {
+                "title": "Gerçekten ücretsiz Bitcoin airdrop'ları kazanabilir miyim?",
+                "desc": "Bir boğa asla kekeler mi? Evet! $BTCBULL tokenlerini cüzdanınızda tutun ve Bitcoin'in fiyatı $150.000 ve $200.000'e ulaştığında BTC airdrop'ları kazanacaksınız. BTC airdrop'larınız cüzdanınızdaki BTC adresinize gönderilecektir ve miktar, Topluluk Satışında satın aldığınız $BTCBULL tokenlerinin sayısına göre belirlenecektir."
+            },
+            {
+                "title": "Bu ücretsiz bir Bitcoin faucet veya Bitcoin airdrop'u mu?",
+                "desc": "Tam olarak değil. Ücretsiz Bitcoin faucet'leri, belirli aralıklarla insanlara ücretsiz BTC alımlarını sağlar. BTC Bull, $BTCBULL token sahiplerine ücretsiz Bitcoin airdrop'ları sunmaktadır. Tek yapmanız gereken, tokenlerinizi cüzdanınızda tutmak veya $BTCBULL tokenlerini satın almak için kullandığınız cüzdanı cüzdanınıza aktarmaktır, böylece uygun olursunuz."
+            },
+            {
+                "title": "BTC Bull sosyal medya ve destek kanalları nedir?",
+                "desc": "BTC Bull'u X (Twitter) ve Telegram üzerinden takip edin, böylece diğer tüm Bitcoin Bull'larıyla birlikte BTC'nin yükselişini kutlayabilirsiniz. Ayrıca burada proje haberleri ve duyuruları ile ilgili en son bilgileri takip edebilirsiniz."
+            },
+            {
+                "title": "$BTCBULL staking nasıl çalışır?",
+                "desc": "BTC Bull, Ethereum üzerine inşa edilmiştir ve akıllı sözleşmelerle güvence altına alınmıştır. Staking, Web3Toolkit teknolojisi ile güçlendirilmiştir. $BTCBULL tokenleri staking ödülleri için ayrılmıştır. Bu nedenle, $BTCBULL tokenlerinizi staking sözleşmesine gönderdiğinizde değişken APY kazanırsınız ve tokenleriniz Topluluk Satışı sona erene kadar kilitli kalır. Stake edilen tokenler, talep canlı hale geldikten 7 gün sonra çekilebilir."
+            },
+            {
+                "title": "$BTCBULL tokenlerimi ne zaman alacağım?",
+                "desc": "$BTCBULL satın almanız, güvenli Web3Payments widget'ı aracılığıyla tahsisinizi garanti eder. Bu tokenler, Topluluk Satışı bittikten sonra resmi web sitesi aracılığıyla talep edilebilir. $BTCBULL'i Your Wallet mobil uygulaması aracılığıyla satın alırsanız, token talep etme, token bakiyenize erişim ve token satışı boyunca canlı fiyatlar gibi tam entegrasyon avantajlarından yararlanabilirsiniz ve lansmanla birlikte hemen DEX ticareti yapılabilir."
+            }
+        ]
     },
     "footer": {
         "sub": "FERAGATNAME",
-        "text": "Kripto para yatırımları yüksek volatilite riski taşır. Vergi sonuçlarının farkında olun, çünkü karlar, bulunduğunuz yargı alanında sermaye kazancı veya diğer vergilere tabi olabilir. Kripto para düzenlemeleri değişkenlik gösterebilir, bu nedenle bölgenizdeki kuralları anladığınızdan emin olun. Detaylı araştırma yapın ve sadece kaybetmeyi göze alabileceğiniz miktarı yatırın.",
-        "copyRight": "Telif Hakkı 2024 — Big Bird"
+        "text": "FERAGATNAME: BTC Bull, Bitcoin'in sosyal ve piyasa değerine bağlı olarak spekülatif bir meme coin varlığıdır. Kripto para piyasası, tüm sermayenizi kaybetme riski taşır. Bu web sitesindeki hiçbir şey finansal tavsiye değildir. Kendi araştırmanızı yapın ve $1M için HODL yapın!",
+        "copyRight": ""
     }
 }

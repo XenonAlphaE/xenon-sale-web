@@ -1,30 +1,24 @@
 {
     "metadata": {
-        "title": "BTCBULL: Revolutionerande Vote-To-Earn Meme Coin | Crypto Presale",
-        "description": "Gå med i $BTCBULL, där varje Flocker har en röst. Upptäck Flocktopia, den banbrytande Vote-To-Earn plattformen som ger makten i händerna på gemenskapen. Tjäna belöningar, forma framtiden och var en del av revolutionen.",
-        "openGraph": {
-            "title": "BTCBULL: Revolutionerande Vote-To-Earn Meme Coin | Crypto Presale",
-            "description": "Gå med i $BTCBULL, där varje Flocker har en röst. Upptäck Flocktopia, den banbrytande Vote-To-Earn plattformen som ger makten i händerna på gemenskapen. Tjäna belöningar, forma framtiden och var en del av revolutionen.",
-            "url": "https://flockez.com/sv",
-            "locale": "sv_SE"
-        }
+        "title": "BTC Bull | Den bästa kryptoförsäljningen för Bitcoin-bulls",
+        "description": "BTC Bull är den officiella Bitcoin-memecoin. Köp $BTCBULL kryptoförsäljning och tjäna gratis Bitcoin-airdrops när BTC stiger för att bli världens No.1 tillgång!"
     },
     "nav": {
         "home": "HEM",
         "staking": "STAKING",
         "howtobuy": "HUR MAN KÖPER",
-        "whitePaper": "WHITE PAPER",
+        "whitePaper": "VITBOK",
         "tokenomics": "TOKENOMICS",
-        "features": "EGENSKAPER",
-        "buyNow": "KÖP NU",
+        "features": "FUNKTIONS",
+        "buyNow": "Köp Nu",
         "faq": "FAQS",
-        "audit": "AUDIT",
+        "audit": "GRANSKNING",
         "roadmap": "ROADMAP",
         "airdrop": "AIRDROP",
         "about": "OM"
     },
     "buyForm": {
-        "intro": "KÖP $BTCBULL PRESALE",
+        "intro": "Köp $BTCBULL i Försäljning Nu!",
         "day": "Dagar",
         "hrs": "Timmar",
         "mins": "Minuter",
@@ -32,95 +26,112 @@
         "funRaised": "USDT Insamlat",
         "wallet": "DIN Plånbok",
         "boughtAmount": "DIN KÖPTE",
-        "stakeableAmount": "DIN STAKINGBARA",
+        "stakeableAmount": "DIN STAKEBAR BELÖNING",
         "pay": "Betala med",
-        "get": "Ta emot",
+        "get": "Motta",
         "buyNow": "KÖP NU",
         "buyMax": "KÖP MAX",
         "warning": "Vänligen installera Metamask för att köpa",
         "link": "klicka här",
-        "connectWallet": "ANSLUT PLÅNBOK",
+        "connectWallet": "KOPPLA PLÅNBOK",
         "ethOption": "ETH NÄTVERK",
+        "switchOption": "BYT NÄTVERK",
         "bnbOption": "BNB NÄTVERK",
-        "buyStake": "Köp och Stake för 8471% Belöningar",
+        "buyStake": "Köp och Sätt för 1304% Belöningar",
         "nextPriceAlert": "TILLS PRISÖKNING",
-        "para1": "1207% staking BELÖNINGAR",
-        "para2": "$BTCBULL. folkets meme coin.",
-        "para3": "BTCBULL revolutionerande",
-        "para3_1": " Vote-To-Earn",
-        "para3_2": " plattform sätter MAKTEN i dina händer. Köp tidigt i presale NU för att tjäna MASSIVA belöningar!",
-        "note1": "TJÄNA GENOM ATT RÖSTA",
-        "note2": "STORA TIDIGA BELÖNINGAR",
-        "note3": "DU ÄGER FRAMTIDEN",
-        "note4": "OCH MER...",
-        "buyBtn": "gå med i $BTCBULL!"
+        "para1": "1207% staking BELÖNINGAR"
+    },
+    "header": {
+        "heading1": "BTC Bull",
+        "heading2": "Bitcoin’s Bästa Kryptoförsäljning",
+        "desc": "BTC Bull är den ostoppliga kraften som driver Bitcoin mot $1M+! Köp $BTCBULL och tjäna Bitcoin när BTC blir den No.1 tillgången i världen!"
     },
     "about": {
-        "description1": "Framtiden för decentralisering har anlänt.",
-        "description2": "I den kaotiska PVP-världen av meme coins, där varje nyckelbeslut fattas av en enda ledare, ger BTCBULL sin gemenskap—känd som 'The Flock'—kraften att vägleda projektet till det utlovade landet.",
-        "description3": "Kärnan i BTCBULL är Flocktopia, en revolutionerande DAO.",
-        "description4": "Här har varje innehavare inte bara en röst utan tjänar belöningar genom vårt banbrytande Vote-To-Earn mekanism.",
-        "description5": "Nu är det DU som får bestämma vägen för $BTCBULL.",
-        "buyNow": "Köp $BTCBULL Presale NU!"
+        "featuresIn": "Framstående I",
+        "heading1": "Den Officiella",
+        "heading2": "Bitcoin Meme Coin",
+        "desc": "Bitcoin är den bästa presterande tillgången genom tiderna med en AAR på 230% – upp mer än 200 miljoner procent sedan starten. Hoppa nu ombord för livets resa när BTC Bull stormar mot $250K BTC och bortom!",
+        "buynow": "Köp Nu",
+        "cardTitle1": "Tjäna Bitcoin Airdrops!",
+        "cardDesc1": "Håll $BTCBULL tokens för att ta emot BTC airdrops när priset på den största tillgången stiger! Ett stort $BTCBULL airdrop väntar också på de starkaste hodlarna när BTC når $250 000, viktat efter din Community Sale köpbelopp.",
+        "cardTitle2": "Stakera för att Tjäna",
+        "cardDesc2": "BTC Bull är designad för att belöna troende på alla sätt. Byggd på Ethereum med hög APY staking i ett säkert smart kontrakt, $BTCBULL belöningar kommer att ges till stakare under Community Sale och under de kommande två åren.",
+        "cardTitle3": "Tokenbränning Milstolpar",
+        "cardDesc3": "BTC Bull strävar efter att belöna hodlare när Bitcoin-priset ökar. Varje gång BTC går upp med ytterligare $25K, kommer en procentandel av $BTCBULL tokenförsörjningen att brännas för alltid, vilket skapar uppåtgående pristryck. Vi bränner och vi stiger, och upprepar!"
     },
     "roadmap": {
-        "heading": "Flight PlaN.. LÅT OSS FLOCKA IGÅNG!",
-        "toptext1": "Ta Flygning",
-        "toptext2": "Expandera Flocken",
-        "toptext3": "Den Stora Migrationen",
-        "heading1": "Steg 1",
-        "heading2": "Steg 2",
-        "heading3": "Steg 3",
-        "step1_desc1": "Nest Säkerhetsgranskning:",
-        "step1_desc1_1": "Säkra $BTCBULL-kontraktet med noggranna granskningar innan takeoff.",
-        "step1_desc2": "Presale Takeoff:",
-        "step1_desc2_1": "Flocken sprider sina vingar när $BTCBULL presale lanseras och markerar vår uppstigning.",
-        "step1_desc3": "Global Flock Squawk:",
-        "step1_desc3_1": "Starta en världsomspännande marknadsföringskampanj och samla BTCBULL från alla hörn av världen för en kraftfull flygning.",
-
-        "step2_desc1": "Flock Expansion:",
-        "step2_desc1_1": "När ordet sprids, går fler BTCBULL med i flygningen och växer vår gemenskap.",
-        "step2_desc2": "Signal Boost:",
-        "step2_desc2_1": "Inflytelserika röster förstärker $BTCBULL, vilket attraherar en större, entusiastisk flock.",
-        "step2_desc3": "Domination:",
-        "step2_desc3_1": "$BTCBULL tar över Ethereum-himlen och blir samtalsämnet bland trädkronorna.",
-
-        "step3_desc1": "Token Listning: ",
-        "step3_desc1_1": "Den långa väntan är över—flocken landar på globala handelsplattformar. $BTCBULL är nu redo för offentlig handel.",
-        "step3_desc2": "Kungarikets Expansion:",
-        "step3_desc2_1": "Med flocken förenad fortsätter vi att växa $BTCBULL-gemenskapen och tar över krypto-världen med storm.",
-        "step3_desc3": "Vote to Earn Mekanism: ",
-        "step3_desc3_1": "Introducera Vote-To-Earn-systemet och belöna BTCBULL för deras deltagande och visdom."
+        "heading1": "BTC Bull",
+        "heading2": "Roadmap",
+        "desc": "BTC Bull ger ära och belöningar till alla troende. Längs den oundvikliga vägen till ett BTC-pris över $1M, kommer BTC Bull att bränna tokenförsörjningen när BTC-priset ökar och airdroppa BTC till de starkaste hodlarna! Dessutom väntar ett stort $BTCBULL airdrop vid $250K BTC!",
+        "milestones": "Projekt Milstolpar",
+        "item1": "$BTCBULL Försäljning!",
+        "item2": "Tokenbränning!",
+        "item3": "BTC Airdrop!",
+        "item4": "Tokenbränning!",
+        "item5": "BTC Airdrop!",
+        "item6": "Tokenbränning!",
+        "item7": "$BTCBULL Airdrop!"
+    },
+    "howtobuy": {
+        "heading1": "Hur man köper",
+        "heading2": "BTC BULL",
+        "title1": "Steg 1:",
+        "desc1": "För att kapitalisera på BTC Bull och Bitcoin-bullrun, behöver du en DeFi-kryptoplånbok som MetaMask, Trust eller någon annan. Koppla den till presale-widgeten högst upp på denna sida.",
+        "title2": "Steg 2:",
+        "desc2": "Ha ETH eller USDT för att fortsätta. Gör en insättning eller köp kryptovaluta direkt i plånboken för att finansiera ditt $BTCBULL köp. Se till att du har tillräckligt med ETH kvar för att betala gasavgifter.",
+        "title3": "Steg 3:",
+        "desc3": "Staking är tillgängligt på Ethereum för att öka dina $BTCBULL-innehav. Om du väljer att satsa, följ instruktionerna på widgeten. APY är dynamisk och kan förändras över tid.",
+        "title4": "Steg 4:",
+        "desc4": "Efter att ha slutfört ditt köp, kommer ditt $BTCBULL-tokenbalans att visas på köp-widgeten. Dessa tokens kan hämtas när BTC Bull presale är slutsåld eller tidsgränsen har passerat."
     },
     "tokenomics": {
-        "heading": "FLOCKENOMICS",
-        "title1": "Early Bird Catch (20%)",
-        "title2": "Token Brädning (25%)",
-        "title3": "Flock Vault (25%)",
-        "title4": "Exchanges Bränsle (10%)",
-        "title5": "Bird Calls (20%)",
-        "item1": "Tidiga fåglar får masken! 20% av boet är avsatt för dem som dök upp under presale.",
-        "item2": "En rejäl 25% är sparad för staking. Loyala fåglar kan lägga sina $BTCBULLs och titta på när de kläcks till saftiga belöningar.",
-        "item3": "25% lagras i DAO Vault. Detta är $BTCBULL:s skattkista, som används för att kollektivt allokera kungarikets enorma rikedomar. Ju mer du röstar, desto mer tjänar du.",
-        "item4": "Vi har 10% reserverat för att hålla himlen smidig för våra CEX och DEX flygningar.",
-        "item5": "Hela 20% är öronmärkt för marknadsföring, sprid ordet vida med squawks, tweets.",
-        "total": "Token Supply"
+        "heading1": "BTC Bull",
+        "heading2": "Tokenomics",
+        "item1": "Bull-fond",
+        "item2": "Milstolpe Burn-fond",
+        "item3": "$BTCBULL Airdrop",
+        "item4": "Staking-distribution",
+        "item5": "Exchange-likviditet",
+        "item6": "PR och Marknadsföring",
+        "total": "Total Försörjning:"
     },
     "faqs": {
-        "heading": "Vad händer, Mother BTCBULL?",
-        "title1": "Vad är $BTCBULL?",
-        "title2": "Kan jag tjäna belöningar under presale?",
-        "title3": "Vad gör BTCBULL så unikt?",
-        "title4": "Hur köper jag presale?",
-        "desc1": "BTCBULL ($BTCBULL) bryter ny mark inom decentralisering. Det är den första Vote To Earn meme coin där DU har makten att kontrollera projektets öde, samtidigt som du tjänar belöningar för dina röster. Innehavare är vid ratten, röstande på alla nya förslag relaterade till projektets framtida framgång och gemenskapens tillväxt. Detta innebär att det inte finns någon ledare, utan en grupp likasinnade som arbetar tillsammans för att göra $BTCBULL stort, och tjänar galna belöningar för sitt deltagande.",
-        "desc2": "JA! BTCBULL presale ($BTCBULL) är designad för att ge tidiga användare av projektet enorma belöningar för att enkelt köpa och stake sina tokens under presale. Med en generös APY och en stakinghorizont på 2 år, kan presale-stakeare luta sig tillbaka och njuta av passiva belöningar för sitt deltagande i presale, samtidigt som de använder sin röst för att rösta och tjäna!",
-        "desc3": "Aldrig tidigare har en meme coin-gemenskap haft kontroll över varje viktig beslut relaterad till projektet. Och absolut ingen meme coin DAO har belönat sin gemenskap för att rösta på blockchain. BTCBULL ($BTCBULL) innehavare är de som banar vägen för en ny tid inom krypto.",
-        "desc4": "För att köpa BTCBULL presale ($BTCBULL), kolla in den praktiska guiden ovan! Skaffa en plånbok som Best Wallet, få lite krypto (eller betala med kort), välj önskat belopp, och flyg! Vår widget är powered by Web3Payments, vilket säkerställer att ditt köp är skyddat av Web3Toolkit-teknologi.",
-        "buynow": "Köp och Stake Nu FÖR 1048%!"
+        "heading1": "BTC Bull",
+        "heading2": "Vanliga Frågor",
+        "data": [
+            {
+                "title": "Vad är BTC Bull?",
+                "desc": "BTC Bull är en meme-mynt byggt för att driva Bitcoines väg mot $250 000 och bortom. BTC Bull är inte rädd för några krafter som försöker stoppa dess uppgång till att bli den bästa investeringstillgången i världen. Följ med oss i denna historiska kryptopresale för en resa genom livet, medan vi lämnar allt historiskt motstånd bakom oss, samlar miljontals nya anhängare och siktar på att bli den främsta tillgången i världen, över guld!"
+            },
+            {
+                "title": "Varför ska jag köpa $BTCBULL kryptopresale?",
+                "desc": "BTC Bull är det ultimata spelet för nästa massiva bull-cykel som kommer för Bitcoin (BTC), vilket sannolikt gör $BTCBULL till den bästa kryptopresalen att köpa 2025. $BTCBULL är ett meme-mynt med en passionerad gemenskap som arbetar för att stödja bullen i oss alla. Vad detta betyder är att även om BTC når $150K så är det FUD – du är inte tillräckligt bullish. Här växer vi BTC Bull-gemenskapen, vi stiger när BTC stiger och vi skördar slutligen belöningarna från den bästa tillgångsklassen i världen."
+            },
+            {
+                "title": "Kan jag verkligen tjäna gratis Bitcoin airdrops?",
+                "desc": "Stammar en tjur någonsin? Ja! Håll $BTCBULL-tokens i din plånbok så får du BTC airdrops när Bitcoin-priset når $150 000 och $200 000. Dina BTC airdrops skickas till din BTC-adress i din plånbok och mängden viktas beroende på hur många $BTCBULL-tokens du köpte i Community Sale."
+            },
+            {
+                "title": "Är detta en gratis Bitcoin-faucet eller Bitcoin-airdrop?",
+                "desc": "Inte riktigt. En gratis Bitcoin-faucet låter människor lösa in lite gratis BTC vid vissa intervaller. BTC Bull erbjuder gratis Bitcoin airdrops till innehavare av $BTCBULL-token. Allt du behöver göra är att hålla dina tokens i din plånbok, eller importera plånboken du använde för att köpa $BTCBULL-tokens till din plånbok, för att vara berättigad."
+            },
+            {
+                "title": "Vad är BTC Bulls sociala medier och support?",
+                "desc": "Följ BTC Bull på X (Twitter) och Telegram för att gå med alla dina med-BTC Bulls och fira BTC:s uppgång. Här kan du också hålla dig uppdaterad med alla projekt-nyheter och meddelanden."
+            },
+            {
+                "title": "Hur fungerar $BTCBULL staking?",
+                "desc": "BTC Bull är byggt på Ethereum och säkrat av smarta kontrakt, med staking drivet av Web3Toolkit-teknologi. En del av $BTCBULL-tokens är reserverade för stakingbelöningar. Därför, genom att skicka dina $BTCBULL-tokens till stakingkontraktet, kan du tjäna variabel APY och låsa dem tills Community Sale avslutas. Stakade tokens kan tas ut 7 dagar efter att claiming är aktivt."
+            },
+            {
+                "title": "När får jag mina $BTCBULL-tokens?",
+                "desc": "Att köpa $BTCBULL i Community Sale garanterar din tilldelning genom den säkra Web3Payments-widgeten. Dessa tokens kan hämtas via den officiella webbplatsen när Community Sale är slut. Om du köper $BTCBULL genom din plånboks mobilapp, får du full integration såsom direkt claiming av tokens, åtkomst till ditt tokenbalans och livepriser under hela tokens försäljning och omedelbar DEX-handel vid lansering."
+            }
+        ]
     },
     "footer": {
         "sub": "DISCLAIMER",
-        "text": "Kryptovalutainvesteringar innebär en hög risk för volatilitet. Var medveten om de skattemässiga konsekvenserna, eftersom vinster kan vara föremål för kapitalvinstskatt eller andra skatter i din jurisdiktion. Regler för kryptovalutor kan variera, så se till att förstå reglerna i ditt område. Utför grundlig forskning och investera endast det du har råd att förlora.",
-        "copyRight": "Copyright 2024 — Big Bird"
+        "text": "DISCLAIMER: BTC Bull är en spekulativ meme-mynt tillgång kopplad till Bitcoin's sociala och marknadsvärde. Kryptomarknaden medför risken att du kan förlora hela ditt kapital. Ingenting på denna webbplats är finansiell rådgivning. DYOR och HODL till $1M!",
+        "copyRight": ""
     }
 }

@@ -1,13 +1,7 @@
 {
     "metadata": {
-        "title": "BTCBULL: 革命性的Vote-To-Earn Meme Coin | 加密Presale",
-        "description": "加入$BTCBULL，每个Flocker都有发言权。发现Flocktopia，这个开创性的Vote-To-Earn平台，将权力交给社区成员。赚取奖励，塑造未来，成为革命的一部分。",
-        "openGraph": {
-            "title": "BTCBULL: 革命性的Vote-To-Earn Meme Coin | 加密Presale",
-            "description": "加入$BTCBULL，每个Flocker都有发言权。发现Flocktopia，这个开创性的Vote-To-Earn平台，将权力交给社区成员。赚取奖励，塑造未来，成为革命的一部分。",
-            "url": "https://flockez.com/zh",
-            "locale": "zh_ZH"
-        }
+        "title": "BTC Bull | 最佳比特币牛市加密货币预售",
+        "description": "BTC Bull 是官方比特币迷因币。购买 $BTCBULL 加密货币预售，随着比特币上涨成为全球第一资产，赚取免费的比特币空投！"
     },
     "nav": {
         "home": "首页",
@@ -15,7 +9,7 @@
         "howtobuy": "如何购买",
         "whitePaper": "白皮书",
         "tokenomics": "代币经济学",
-        "features": "特色",
+        "features": "特点",
         "buyNow": "立即购买",
         "faq": "常见问题",
         "audit": "审计",
@@ -24,102 +18,120 @@
         "about": "关于"
     },
     "buyForm": {
-        "intro": "购买$BTCBULL Presale",
+        "intro": "现在购买 $BTCBULL 预售！",
         "day": "天",
         "hrs": "小时",
         "mins": "分钟",
         "sec": "秒",
-        "funRaised": "已筹集USDT",
-        "wallet": "你的钱包",
-        "boughtAmount": "已购买数量",
-        "stakeableAmount": "可质押数量",
+        "funRaised": "已筹集 USDT",
+        "wallet": "您的钱包",
+        "boughtAmount": "您的购买量",
+        "stakeableAmount": "您的可质押量",
         "pay": "支付方式",
-        "get": "获得",
+        "get": "收到",
         "buyNow": "立即购买",
         "buyMax": "购买最大值",
-        "warning": "请安装Metamask以进行购买",
+        "warning": "请安装 Metamask 以进行购买",
         "link": "点击这里",
         "connectWallet": "连接钱包",
-        "ethOption": "ETH网络",
-        "bnbOption": "BNB网络",
-        "buyStake": "购买并质押以获得8471%的奖励",
+        "ethOption": "ETH 网络",
+        "switchOption": "切换网络",
+        "bnbOption": "BNB 网络",
+        "buyStake": "购买并质押赚取 1304% 奖励",
         "nextPriceAlert": "直到价格上涨",
-        "para1": "1207%的质押奖励",
-        "para2": "$BTCBULL：人民的Meme币",
-        "para3": "BTCBULL革命性",
-        "para3_1": "Vote-To-Earn",
-        "para3_2": "平台将权力交到你手中。现在就参与Presale，获得巨大的奖励！",
-        "note1": "通过投票赚取",
-        "note2": "巨大的早期奖励",
-        "note3": "你掌握未来",
-        "note4": "还有更多...",
-        "buyBtn": "加入$BTCBULL！"
+        "para1": "1207% 质押奖励"
+    },
+    "header": {
+        "heading1": "BTC Bull",
+        "heading2": "比特币最佳加密货币预售",
+        "desc": "BTC Bull 是推动比特币向 100 万美元以上迈进的不可阻挡力量！购买 $BTCBULL，随着比特币成为全球第一资产，赚取比特币！"
     },
     "about": {
-        "description1": "去中心化的未来已到来。",
-        "description2": "在混乱的PVP Meme币世界中，每个关键决策由单一领导者做出，BTCBULL赋予其社区——‘The Flock’——引导项目走向承诺之地的权力。",
-        "description3": "BTCBULL的核心是Flocktopia，一个革命性的DAO。",
-        "description4": "在这里，每个持有者不仅拥有发言权，还通过我们开创性的Vote-To-Earn机制赚取奖励。",
-        "description5": "现在由你来决定$BTCBULL的未来。",
-        "buyNow": "立即购买$BTCBULL Presale！"
+        "featuresIn": "特色出现在",
+        "heading1": "官方",
+        "heading2": "比特币迷因币",
+        "desc": "比特币是历史上表现最好的资产，年化回报率为 230%，自诞生以来上涨超过 200 万倍。现在，加入 BTC Bull，随着比特币突破 25 万美元，我们一起踏上人生的旅程！",
+        "buynow": "立即购买",
+        "cardTitle1": "赚取比特币空投！",
+        "cardDesc1": "持有 $BTCBULL 代币，随着最伟大资产的价格上涨，获得比特币空投！当比特币价格达到 250,000 美元时，最强的持币者将获得巨额 $BTCBULL 空投，按您社区销售购买的数量加权分配。",
+        "cardTitle2": "质押赚取奖励",
+        "cardDesc2": "BTC Bull 旨在通过高年利率质押和安全智能合约奖励信仰者，$BTCBULL 奖励将在社区销售期间及未来两年内发放给质押者。",
+        "cardTitle3": "代币销毁里程碑",
+        "cardDesc3": "BTC Bull 旨在随着比特币价格上涨奖励持币者。每当比特币上涨 25,000 美元时，将销毁一定比例的 $BTCBULL 代币供应，造成向上价格压力。我们销毁，我们上涨，重复！"
     },
     "roadmap": {
-        "heading": "飞行计划.. LET’S FLOCKING GO！",
-        "toptext1": "起飞",
-        "toptext2": "扩展Flock",
-        "toptext3": "大迁徙",
-        "heading1": "步骤1",
-        "heading2": "步骤2",
-        "heading3": "步骤3",
-        "step1_desc1": "鸟巢安全审计：",
-        "step1_desc1_1": "在起飞前通过彻底的审计确保$BTCBULL合同的安全。",
-        "step1_desc2": "Presale起飞：",
-        "step1_desc2_1": "$BTCBULL Presale启动，Flock展翅高飞，标志着我们的升空。",
-        "step1_desc3": "全球Flock鸣叫：",
-        "step1_desc3_1": "发起全球营销活动，召集来自全球各地的BTCBULL参与，展开一场强大的飞行。",
-        "step2_desc1": "Flock扩展：",
-        "step2_desc1_1": "随着消息的传播，更多BTCBULL加入，壮大我们的社区。",
-        "step2_desc2": "信号增强：",
-        "step2_desc2_1": "有影响力的声音加强$BTCBULL，吸引更大的、热情的Flock。",
-        "step2_desc3": "主宰：",
-        "step2_desc3_1": "$BTCBULL在以太坊上空占领一切，成为树梢上议论的焦点。",
-        "step3_desc1": "代币上市：",
-        "step3_desc1_1": "漫长的等待结束，Flock成功登陆全球交易平台，$BTCBULL正式进入公开交易。",
-        "step3_desc2": "王国扩展：",
-        "step3_desc2_1": "Flock团结一致，继续发展$BTCBULL社区，席卷加密世界。",
-        "step3_desc3": "Vote to Earn机制：",
-        "step3_desc3_1": "引入Vote-to-Earn系统，奖励BTCBULL的参与和智慧。"
+        "heading1": "BTC Bull",
+        "heading2": "路线图",
+        "desc": "BTC Bull 为所有信徒带来荣耀和奖励。随着比特币价格突破 100 万美元，BTC Bull 将在比特币价格上涨时销毁代币供应，并向最强的持币者发放比特币空投！此外，比特币达到 250,000 美元时，将发放巨额 $BTCBULL 空投！",
+        "milestones": "项目里程碑",
+        "item1": "$BTCBULL 预售！",
+        "item2": "代币销毁！",
+        "item3": "比特币空投！",
+        "item4": "代币销毁！",
+        "item5": "比特币空投！",
+        "item6": "代币销毁！",
+        "item7": "$BTCBULL 空投！"
+    },
+    "howtobuy": {
+        "heading1": "如何购买",
+        "heading2": "BTC BULL",
+        "title1": "步骤 1：",
+        "desc1": "为了利用BTC Bull和比特币的牛市，您需要一个DeFi加密钱包，如MetaMask、Trust或任何其他钱包。将其连接到本页面顶部的预售小部件。",
+        "title2": "步骤 2：",
+        "desc2": "确保您拥有ETH或USDT来继续操作。存款或直接在钱包中购买加密货币，为您的$BTCBULL购买提供资金。确保您有足够的ETH来支付交易费用。",
+        "title3": "步骤 3：",
+        "desc3": "在以太坊上提供质押功能，以增加您的$BTCBULL持有量。如果选择质押，请按照小部件中的提示进行操作。年化收益率（APY）是动态的，可能随时间变化。",
+        "title4": "步骤 4：",
+        "desc4": "完成购买后，您的$BTCBULL代币余额将在购买小部件中显示。预售售罄或超时后，您可以领取这些代币。"
     },
     "tokenomics": {
-        "heading": "FLOCK经济学",
-        "title1": "早鸟奖励（20%）",
-        "title2": "代币繁殖（25%）",
-        "title3": "Flock宝库（25%）",
-        "title4": "交易所燃料（10%）",
-        "title5": "鸟鸣（20%）",
-        "item1": "早鸟先得！20%的代币为在Presale期间购买的用户准备。",
-        "item2": "重重的25%为质押准备。忠诚的鸟儿可以把$BTCBULL代币放入并等待它们孵化出丰厚的奖励。",
-        "item3": "25%存放在DAO宝库中。这是$BTCBULL的宝藏箱，用于共同分配王国的财富。你投票越多，赚得越多。",
-        "item4": "我们保留了10%以保持CEX和DEX交易所的顺利飞行。",
-        "item5": "20%用于营销，通过鸣叫、推文等方式广泛传播。",
-        "total": "代币总供应量"
+        "heading1": "BTC Bull",
+        "heading2": "代币经济",
+        "item1": "牛市基金",
+        "item2": "里程碑销毁基金",
+        "item3": "$BTCBULL 空投",
+        "item4": "质押分配",
+        "item5": "交易所流动性",
+        "item6": "公关与营销",
+        "total": "总供应量："
     },
     "faqs": {
-        "heading": "Flockers们，怎么了？",
-        "title1": "$BTCBULL是什么？",
-        "title2": "我可以在Presale期间赚取奖励吗？",
-        "title3": "BTCBULL有什么独特之处？",
-        "title4": "如何购买Presale？",
-        "desc1": "BTCBULL ($BTCBULL) 正在打破去中心化的新天地。它是首个Vote To Earn Meme币，您拥有控制项目命运的权力，并通过您的投票获得奖励。持币者掌控一切，投票决定与项目未来成功和社区成长相关的所有新提案。这意味着没有单一的领导者，只有一群志同道合的人共同努力使$BTCBULL变得伟大，并因他们的参与而获得丰厚的奖励。",
-        "desc2": "是的！BTCBULL presale ($BTCBULL) 旨在让项目的早期参与者通过简单地购买并在presale期间质押他们的代币来赚取大量奖励。凭借慷慨的年化收益率（APY）和为期2年的质押期，Presale的质押者可以坐享被动奖励，同时利用他们的投票权进行Vote To Earn！",
-        "desc3": "以前从未有过一个Meme币社区掌控所有与项目相关的重大决策。而且，绝没有任何Meme币DAO像BTCBULL一样通过区块链奖励社区成员投票。BTCBULL ($BTCBULL)的持有者正在开辟这个领域的新道路。",
-        "desc4": "要购买BTCBULL presale ($BTCBULL)，请查看上方方便的购买指南！获取一个钱包（如Best Wallet），获得一些加密货币（或者用卡支付），选择您想购买的数量，然后起飞！我们的插件由Web3Payments提供支持，确保您的购买通过Web3Toolkit技术安全完成。",
-        "buynow": "立即购买并质押，获取1048%的奖励！"
+        "heading1": "BTC Bull",
+        "heading2": "常见问题",
+        "data": [
+            {
+                "title": "什么是BTC Bull?",
+                "desc": "BTC Bull是一种为比特币冲击25万美元及以上目标而打造的表情币。BTC Bull不惧怕任何试图阻止其成为世界最佳投资资产的力量。加入我们，共同参与这场划时代的加密预售，迎接一生的旅程，超越所有历史反对者，吸引数百万新支持者，争取成为全球第一资产，超越黄金！"
+            },
+            {
+                "title": "为什么我要购买$BTCBULL的加密预售?",
+                "desc": "BTC Bull是下一轮比特币（BTC）牛市的终极投资机会，这使得$BTCBULL成为2025年最佳加密预售投资。$BTCBULL是一种表情币，拥有充满激情的社区，致力于推广我们每个人内心的牛市。换句话说，甚至150K的比特币也只是FUD——你还不够看涨。在这里，我们发展BTC Bull社区，随着BTC的上涨，我们共同成长，最终享受世界最佳资产类别带来的回报。"
+            },
+            {
+                "title": "我真的可以赚取免费的比特币空投吗?",
+                "desc": "牛会结巴吗？答案是肯定的！持有$BTCBULL代币在您的钱包中，当比特币价格达到15万美元和20万美元时，您将获得BTC空投。您的BTC空投将发送到您钱包中的BTC地址，空投金额将根据您在社区销售中购买的$BTCBULL代币数量来加权。"
+            },
+            {
+                "title": "这是一个免费的比特币水龙头或比特币空投吗?",
+                "desc": "不完全是。免费的比特币水龙头允许人们在某些时间间隔内兑换一些免费的BTC。BTC Bull为$BTCBULL代币持有者提供免费的比特币空投。您所需要做的就是将您的代币保存在您的钱包中，或者将您用来购买$BTCBULL代币的钱包导入您的钱包，便可获得资格。"
+            },
+            {
+                "title": "BTC Bull的社交媒体和支持是什么?",
+                "desc": "在X（Twitter）和Telegram上关注BTC Bull，加入所有比特币牛市的支持者，共同庆祝BTC的上升。在这里，您还可以随时了解项目的所有新闻和公告。"
+            },
+            {
+                "title": "如何进行$BTCBULL质押?",
+                "desc": "BTC Bull建立在以太坊上，由智能合约保障，质押由Web3Toolkit技术提供支持。会有一部分$BTCBULL代币专门用于质押奖励。因此，将您的$BTCBULL代币发送到质押合约中可以赚取可变年化收益率（APY），并将其锁定直到社区销售结束。质押的代币可以在领取功能上线后7天内提取。"
+            },
+            {
+                "title": "我什么时候可以收到我的$BTCBULL代币?",
+                "desc": "在社区销售中购买$BTCBULL保证您通过安全的Web3Payments小部件分配代币。这些代币可以在社区销售结束后通过官方网站领取。如果您通过您的钱包移动应用程序购买$BTCBULL，您将享受完全的集成功能，如直接领取代币、查看您的代币余额、实时查看代币销售价格，并在上市后立即进行DEX交易。"
+            }
+        ]
     },
     "footer": {
         "sub": "免责声明",
-        "text": "加密货币投资具有较高的波动风险。请注意税务影响，因利润可能需要缴纳资本利得税或其他税款。加密货币法规可能会有所不同，因此请确保您了解当地的相关法规。进行彻底的研究，只投资您能够承受损失的金额。",
-        "copyRight": "Copyright 2024 — Big Bird"
+        "text": "免责声明：BTC Bull是一种投机性的表情币资产，链接到比特币的社会和市场价值。加密货币市场存在您可能失去所有资金的风险。本网站上的内容不是财务建议。请自行研究并持有到100万美元！",
+        "copyRight": ""
     }
-
 }

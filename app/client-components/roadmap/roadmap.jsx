@@ -16,40 +16,41 @@ const sectionText = useI18nSection("roadmap")
 
 
             <div className='roadmap-desc-container'>
-                <h2 className='roadmap-desc-title'>The Official <span style={{color:'white'}}>Bitcoin Meme Coin</span></h2>
+                <h2 className='roadmap-desc-title'>{sectionText?.heading1} <span style={{color:'white'}}>{sectionText?.heading2}</span></h2>
                 <p className='roadmap-desc-content'>
-                    Bitcoin is the best-performing asset in history with an AAR of 230% – up more than 200 million percent since inception. Now jump on board for the ride of your life as the BTC Bull stampedes towards $250K BTC and beyond!
-
+                {sectionText?.desc}
 
                 </p>
             </div>
             <div className='roadmap-row'>
                 <div className='roadmap-milstones-container'>
                     <h2 className='roadmap-milstones-title'>
-                        Project Milestones
+                        {sectionText?.milestones}
                     </h2>
                     <div className='roadmap-milstones'>
 
                     <div className='roadmap-milstones-item'>
-                        <span className='roadmap-circle'></span>  BTC $100K - <span style={{color:"rgb(255, 199, 0)"}}>$BTCBULL Presale!</span>
+                        <span className='roadmap-circle'></span>  BTC $100K - <span style={{color:"rgb(255, 199, 0)"}}>                        
+                            {sectionText?.item1}
+                        </span>
                     </div>
                     <div className='roadmap-milstones-item'>
-                        <span className='roadmap-circle'></span>  BTC $125K -  Token Burn!
+                        <span className='roadmap-circle'></span>  BTC $125K -  {sectionText?.item2}
                     </div>
                     <div className='roadmap-milstones-item'>
-                        <span className='roadmap-circle'></span> BTC $150K  - <span style={{color:"rgb(255, 199, 0)"}}>BTC Airdrop!</span>
+                        <span className='roadmap-circle'></span> BTC $150K  - <span style={{color:"rgb(255, 199, 0)"}}>{sectionText?.item3}</span>
                     </div>
                     <div className='roadmap-milstones-item'>
-                        <span className='roadmap-circle'></span>  BTC $175K - Token Burn!
+                        <span className='roadmap-circle'></span>  BTC $175K - {sectionText?.item4}
                     </div>
                     <div className='roadmap-milstones-item'>
-                        <span className='roadmap-circle'></span>  BTC $200K  - <span style={{color:"rgb(255, 199, 0)"}}>BTC Airdrop!</span>
+                        <span className='roadmap-circle'></span>  BTC $200K  - <span style={{color:"rgb(255, 199, 0)"}}>{sectionText?.item5}</span>
                     </div>
                     <div className='roadmap-milstones-item'>
-                        <span className='roadmap-circle'></span>  BTC $225K - Token Burn!
+                        <span className='roadmap-circle'></span>  BTC $225K - {sectionText?.item6}
                     </div>
                     <div className='roadmap-milstones-item'>
-                        <span className='roadmap-circle'></span>  BTC $250K  - <span style={{color:"rgb(255, 199, 0)"}}>$BTCBULL Airdrop!</span>
+                        <span className='roadmap-circle'></span>  BTC $250K  - <span style={{color:"rgb(255, 199, 0)"}}>{sectionText?.item7}</span>
                     </div>
                     </div>
                 </div>

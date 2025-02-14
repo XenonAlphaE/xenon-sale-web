@@ -1,13 +1,7 @@
 {
     "metadata": {
-        "title": "BTCBULL: La Moneta Meme Revoluzionaria Vote-To-Earn | Prevendita Crypto",
-        "description": "Unisciti al $BTCBULL, dove ogni Flocker ha una voce. Scopri Flocktopia, la piattaforma rivoluzionaria Vote-To-Earn che mette il potere nelle mani della comunità. Guadagna ricompense, plasma il futuro e fai parte della rivoluzione.",
-        "openGraph": {
-            "title": "BTCBULL: La Moneta Meme Revoluzionaria Vote-To-Earn | Prevendita Crypto",
-            "description": "Unisciti al $BTCBULL, dove ogni Flocker ha una voce. Scopri Flocktopia, la piattaforma rivoluzionaria Vote-To-Earn che mette il potere nelle mani della comunità. Guadagna ricompense, plasma il futuro e fai parte della rivoluzione.",
-            "url": "https://flockez.com/it",
-            "locale": "it_IT"
-        }
+        "title": "BTC Bull | La Migliore Crypto Presale Per i Tori di Bitcoin",
+        "description": "BTC Bull è la moneta meme ufficiale di Bitcoin. Acquista la presale di $BTCBULL e guadagna airdrop gratuiti di Bitcoin mentre BTC sale per diventare l'asset numero 1 al mondo!"
     },
     "nav": {
         "home": "HOME",
@@ -16,7 +10,7 @@
         "whitePaper": "WHITE PAPER",
         "tokenomics": "TOKENOMICS",
         "features": "CARATTERISTICHE",
-        "buyNow": "COMPRA ORA",
+        "buyNow": "Compra Ora",
         "faq": "FAQ",
         "audit": "AUDIT",
         "roadmap": "ROADMAP",
@@ -24,101 +18,120 @@
         "about": "CHI SIAMO"
     },
     "buyForm": {
-        "intro": "COMPRA $BTCBULL PREVENDITA",
+        "intro": "Acquista $BTCBULL In Presale Ora!",
         "day": "Giorni",
         "hrs": "Ore",
         "mins": "Minuti",
         "sec": "Secondi",
         "funRaised": "USDT Raccolti",
-        "wallet": "Il TUO Wallet",
-        "boughtAmount": "IL TUO ACQUISTATO",
-        "stakeableAmount": "IL TUO STAKABLE",
+        "wallet": "Il Tuo Wallet",
+        "boughtAmount": "IL TUO ACQUISTO",
+        "stakeableAmount": "IL TUO STAKING",
         "pay": "Paga con",
         "get": "Ricevi",
-        "buyNow": "COMPRA ORA",
-        "buyMax": "COMPRA MAX",
-        "warning": "Installa Metamask per comprare",
+        "buyNow": "ACQUISTA ORA",
+        "buyMax": "ACQUISTA MAX",
+        "warning": "Installa Metamask per acquistare",
         "link": "clicca qui",
         "connectWallet": "CONNETTI WALLET",
-        "ethOption": "RITORNO ETH",
-        "bnbOption": "RITORNO BNB",
-        "buyStake": "Compra e Stakka per il 8471% di Ricompense",
+        "ethOption": "NETWORK ETH",
+        "switchOption": "CAMBIA NETWORK",
+        "bnbOption": "NETWORK BNB",
+        "buyStake": "Acquista e Staka per Ricompense del 1304%",
         "nextPriceAlert": "FINO A INCREMENTO PREZZO",
-        "para1": "1207% RICOMPENSE STAKING",
-        "para2": "$BTCBULL. la moneta meme del popolo.",
-        "para3": "La rivoluzione BTCBULL",
-        "para3_1": " Vote-To-Earn",
-        "para3_2": " mette il POTERE nelle tue mani. Compra ora durante la prevendita per guadagnare RICOMPENSE ENORMI!",
-        "note1": "GUADAGNA VOTANDO",
-        "note2": "RICOMPENSE PRESTO ENORMI",
-        "note3": "POSSESSI IL FUTURO",
-        "note4": "E ALTRO...",
-        "buyBtn": "Unisciti al $BTCBULL!"
+        "para1": "1207% di RICOMPENSE STAKING"
+    },
+    "header": {
+        "heading1": "BTC Bull",
+        "heading2": "La Migliore Crypto Presale di Bitcoin",
+        "desc": "BTC Bull è la forza inarrestabile che spinge Bitcoin verso $1M+! Acquista $BTCBULL e guadagna Bitcoin mentre BTC diventa l'asset numero 1 al mondo!"
     },
     "about": {
-        "description1": "Il futuro della decentralizzazione è arrivato.",
-        "description2": "Nel caotico mondo PVP delle monete meme, dove ogni decisione chiave è presa da un solo leader, BTCBULL dà potere alla sua comunità—nota come 'Il Flock'—di guidare il progetto verso la terra promessa.",
-        "description3": "Al cuore di BTCBULL c'è Flocktopia, una DAO rivoluzionaria.",
-        "description4": "Qui, ogni possessore non solo ha una voce ma guadagna ricompense attraverso il nostro meccanismo innovativo Vote-To-Earn.",
-        "description5": "Ora SEI TU a decidere il cammino del $BTCBULL.",
-        "buyNow": "Compra $BTCBULL Prevendita ORA!"
+        "featuresIn": "In Evidenza Su",
+        "heading1": "La Ufficiale",
+        "heading2": "Moneta Meme di Bitcoin",
+        "desc": "Bitcoin è l'asset con le migliori performance nella storia con un AAR del 230% – in aumento di oltre 200 milioni di percento dal suo inizio. Ora sali a bordo per un viaggio che non dimenticherai mentre BTC Bull corre verso i $250K BTC e oltre!",
+        "buynow": "Compra Ora",
+        "cardTitle1": "Guadagna Airdrop di Bitcoin!",
+        "cardDesc1": "Tieni i token $BTCBULL per ricevere airdrop di BTC mentre il prezzo del più grande asset cresce! Un enorme airdrop di $BTCBULL aspetta anche i più forti hodlers quando BTC raggiunge i $250.000, ponderato in base all'importo del tuo acquisto durante la Community Sale.",
+        "cardTitle2": "Staka per Guadagnare",
+        "cardDesc2": "BTC Bull è progettato per premiare i credenti in ogni modo. Costruito su Ethereum con staking ad alto APY in un contratto intelligente sicuro, le ricompense $BTCBULL saranno distribuite agli staker durante la Community Sale e per i prossimi due anni.",
+        "cardTitle3": "Milestone di Burn del Token",
+        "cardDesc3": "BTC Bull punta a premiare gli hodlers mentre il prezzo di Bitcoin aumenta. Ogni volta che BTC cresce di altri $25K, una percentuale dell'offerta di token $BTCBULL verrà bruciata per sempre, creando una pressione al rialzo sul prezzo. Bruciamo e cresciamo, e ripetiamo!"
     },
     "roadmap": {
-        "heading": "Piano di Volo.. LET’S FLOCKING GO!",
-        "toptext1": "Decolla",
-        "toptext2": "Espandi il Flock",
-        "toptext3": "La Grande Migrazione",
-        "heading1": "Fase 1",
-        "heading2": "Fase 2",
-        "heading3": "Fase 3",
-        "step1_desc1": "Audit Sicurezza Nido:",
-        "step1_desc1_1": "Rendi sicuro il contratto $BTCBULL con audit approfonditi prima del decollo.",
-        "step1_desc2": "Decollo Prevendita:",
-        "step1_desc2_1": "Il Flock apre le ali mentre parte la prevendita di $BTCBULL, segnando la nostra ascesa.",
-        "step1_desc3": "Squawk Globale Flock:",
-        "step1_desc3_1": "Lancia una campagna globale di marketing, radunando BTCBULL da ogni angolo del mondo per un volo potente.",
-        "step2_desc1": "Espansione Flock:",
-        "step2_desc1_1": "Con il passaparola, altri BTCBULL si uniscono al volo, facendo crescere la nostra comunità.",
-        "step2_desc2": "Aumento del Segnale:",
-        "step2_desc2_1": "Le voci influenti amplificano $BTCBULL, attirando un Flock più ampio e entusiasta.",
-        "step2_desc3": "Dominazione:",
-        "step2_desc3_1": "$BTCBULL conquista i cieli di Ethereum, diventando il discorso degli alberi.",
-        "step3_desc1": "Listaggio Token:",
-        "step3_desc1_1": "La lunga attesa è finita—il Flock atterra sulle piattaforme di scambio globali. $BTCBULL è ora pronto per il trading pubblico.",
-        "step3_desc2": "Espansione del Regno:",
-        "step3_desc2_1": "Con il Flock unito, continua a crescere la comunità $BTCBULL, conquistando il mondo delle criptovalute.",
-        "step3_desc3": "Meccanismo Voto per Guadagnare:",
-        "step3_desc3_1": "Introduci il sistema voto-per-guadagnare, premiando i BTCBULL per la loro partecipazione e saggezza."
+        "heading1": "BTC Bull",
+        "heading2": "Roadmap",
+        "desc": "BTC Bull porta gloria e ricompense a tutti i credenti. Lungo il cammino inevitabile verso un prezzo BTC oltre $1M, BTC Bull brucerà l'offerta di token mentre il prezzo di BTC cresce e airdrop BTC ai più forti hodlers! Inoltre, un enorme airdrop di $BTCBULL a $250K BTC!",
+        "milestones": "Milestone del Progetto",
+        "item1": "Presale $BTCBULL!",
+        "item2": "Burn del Token!",
+        "item3": "Airdrop di BTC!",
+        "item4": "Burn del Token!",
+        "item5": "Airdrop di BTC!",
+        "item6": "Burn del Token!",
+        "item7": "Airdrop $BTCBULL!"
+    },
+    "howtobuy": {
+        "heading1": "Come Acquistare",
+        "heading2": " BTC BULL",
+        "title1": "Passo 1:",
+        "desc1": "Per capitalizzare su BTC Bull e sulla corsa al rialzo di Bitcoin, hai bisogno di un wallet DeFi per criptovalute come MetaMask, Trust o simili. Collegalo al widget di presale in cima a questa pagina.",
+        "title2": "Passo 2:",
+        "desc2": "Devi avere ETH o USDT per procedere. Fai un deposito o acquista criptovalute direttamente nel Wallet per finanziare l'acquisto di $BTCBULL. Assicurati di avere abbastanza ETH per pagare le commissioni di gas.",
+        "title3": "Passo 3:",
+        "desc3": "Lo staking è disponibile su Ethereum per aumentare le tue partecipazioni in $BTCBULL. Se scegli di fare staking, segui le istruzioni nel widget. L'APY è dinamico e potrebbe cambiare nel tempo.",
+        "title4": "Passo 4:",
+        "desc4": "Dopo aver completato l'acquisto, il saldo dei tuoi token $BTCBULL verrà mostrato nel widget di acquisto. Questi token possono essere reclamati una volta che la presale di BTC Bull sarà esaurita o scaduta."
     },
     "tokenomics": {
-        "heading": "FLOCKENOMICS",
-        "title1": "Cattura dell'Uccello Precoce (20%)",
-        "title2": "Allevamento Token (25%)",
-        "title3": "Cassa Flock (25%)",
-        "title4": "Carburante Scambi (10%)",
-        "title5": "Chiamate degli Uccelli (20%)",
-        "item1": "Gli uccelli presto ottengono il verme! Il 20% del nido è messo da parte per coloro che sono intervenuti durante la prevendita.",
-        "item2": "Un robusto 25% è riservato per lo staking. Gli uccelli fedeli possono deporre i loro token $BTCBULL e vederli schiudersi in ricompense succose.",
-        "item3": "Il 25% è immagazzinato nel Vault della DAO. Questa è la cassaforte del $BTCBULL, utilizzata per allocare collettivamente le ricchezze del Regno. Più voti, più guadagni.",
-        "item4": "Abbiamo riservato il 10% per mantenere i cieli liberi da ostacoli per i nostri voli CEX e DEX.",
-        "item5": "Un intero 20% è destinato al marketing, diffondendo la parola con squawking, tweet.",
-        "total": "Fornitura Token"
+        "heading1": "BTC Bull",
+        "heading2": "Tokenomics",
+        "item1": "Bull Fund",
+        "item2": "Milestone Burn Fund",
+        "item3": "$BTCBULL Airdrop",
+        "item4": "Distribuzione Staking",
+        "item5": "Liquidità Exchange",
+        "item6": "PR e Marketing",
+        "total": "Offerta Totale:"
     },
     "faqs": {
-        "heading": "Ciao, Flockers!",
-        "title1": "Cos'è $BTCBULL?",
-        "title2": "Posso guadagnare ricompense durante il presale?",
-        "title3": "Cosa rende BTCBULL così unico?",
-        "title4": "Come posso acquistare il presale?",
-        "desc1": "BTCBULL ($BTCBULL) sta aprendo nuove strade nella decentralizzazione. È la prima moneta meme di tipo Vote-To-Earn, dove SEI TU a controllare il destino del progetto, guadagnando ricompense per i tuoi voti. I possessori sono al comando, votando su tutte le nuove proposte relative al successo futuro del progetto e alla crescita della comunità. Ciò significa che non c'è un singolo leader, solo un gruppo di persone con la stessa visione che lavora insieme per rendere $BTCBULL grande, e guadagnando incredibili ricompense per la loro partecipazione.",
-        "desc2": "ASSOLUTAMENTE! Il presale BTCBULL ($BTCBULL) è progettato per permettere agli early adopters del progetto di guadagnare ricompense enormi semplicemente acquistando e mettendo in staking i loro token durante il presale. Con un APY generoso e un orizzonte di staking di 2 anni, chi partecipa al presale può rilassarsi e godersi ricompense passive per la loro partecipazione al presale, mentre utilizzano anche il loro voto per votare e guadagnare!",
-        "desc3": "Mai prima d'ora una comunità di monete meme è stata responsabile di ogni singola decisione importante relativa al progetto. E sicuramente, nessun DAO di monete meme ha premiato la propria comunità per aver espresso il proprio voto sulla blockchain. I possessori di BTCBULL ($BTCBULL) stanno tracciando una nuova strada in questo spazio.",
-        "desc4": "Per acquistare il presale BTCBULL ($BTCBULL), consulta la guida all'acquisto sopra! Ottieni un wallet come Best Wallet, procurati un po' di criptovaluta (o paga con carta), seleziona la quantità desiderata e vola! Il nostro widget è alimentato da Web3Payments, garantendo che il tuo acquisto sia sicuro grazie alla tecnologia Web3Toolkit.",
-        "buynow": "Acquista e Staka Ora per il 1048%!"
+        "heading1": "BTC Bull",
+        "heading2": "Domande Frequenti",
+        "data": [
+            {
+                "title": "Cos'è BTC Bull?",
+                "desc": "BTC Bull è una meme coin progettata per supportare l'ascesa di Bitcoin verso i 250.000$ e oltre. BTC Bull non si lascia intimidire da nessuna forza che tenti di fermare la sua ascesa per diventare il miglior asset di investimento al mondo. Unisciti a noi in questa presale cripto storica per un viaggio indimenticabile, lasciando indietro tutta l'opposizione storica, raccogliendo milioni di nuovi sostenitori e puntando al posto numero 1 come asset al mondo sopra l'oro!"
+            },
+            {
+                "title": "Perché dovrei acquistare la presale cripto $BTCBULL?",
+                "desc": "BTC Bull è la mossa definitiva per il prossimo grande ciclo rialzista che arriverà per Bitcoin (BTC), probabilmente rendendo $BTCBULL la migliore presale cripto da acquistare nel 2025. $BTCBULL è una meme coin con una comunità appassionata impegnata a sostenere il toro che è dentro di noi. Questo significa che anche con un BTC a 150.000$ c'è FUD – non sei abbastanza rialzista. Qui facciamo crescere la comunità di BTC Bull, saliamo insieme mentre BTC sale e infine raccogliamo i frutti della migliore classe di asset del mondo."
+            },
+            {
+                "title": "Posso davvero guadagnare airdrop gratuiti di Bitcoin?",
+                "desc": "Un toro mai esita? Sì! Tieni i token $BTCBULL nel tuo wallet e guadagnerai airdrop di BTC quando il prezzo di Bitcoin raggiungerà 150.000$ e 200.000$. I tuoi airdrop di BTC saranno inviati al tuo indirizzo BTC nel tuo wallet e l'importo sarà ponderato in base al numero di token $BTCBULL che hai acquistato nella Community Sale."
+            },
+            {
+                "title": "È questo un faucet gratuito di Bitcoin o un airdrop di Bitcoin?",
+                "desc": "Non esattamente. Un faucet gratuito di Bitcoin permette alle persone di riscattare BTC gratuiti a intervalli specifici. BTC Bull offre airdrop gratuiti di Bitcoin ai possessori di token $BTCBULL. Tutto ciò che devi fare è tenere i tuoi token nel tuo wallet o importare il wallet che hai usato per acquistare i token $BTCBULL nel tuo wallet per essere idoneo."
+            },
+            {
+                "title": "Qual è il social media e il supporto di BTC Bull?",
+                "desc": "Segui BTC Bull su X (Twitter) e Telegram per unirti a tutti gli altri Bitcoin Bulls e celebrare l'ascesa di BTC. Qui puoi anche rimanere aggiornato su tutte le novità e gli annunci del progetto."
+            },
+            {
+                "title": "Come funziona lo staking di $BTCBULL?",
+                "desc": "BTC Bull è costruito su Ethereum e protetto da smart contract, con lo staking alimentato dalla tecnologia Web3Toolkit. Una parte dei token $BTCBULL è riservata per le ricompense di staking. Pertanto, inviare i tuoi token $BTCBULL al contratto di staking ti consente di guadagnare APY variabili e li blocca fino alla fine della Community Sale. I token staked possono essere ritirati 7 giorni dopo che la funzione di reclamo è attiva."
+            },
+            {
+                "title": "Quando riceverò i miei token $BTCBULL?",
+                "desc": "Acquistare $BTCBULL nella Community Sale garantisce la tua allocazione tramite il sicuro widget Web3Payments. Questi token possono essere reclamati tramite il sito ufficiale una volta terminata la Community Sale. Se acquisti $BTCBULL tramite l'app mobile Your wallet, godrai di tutti i vantaggi dell'integrazione, come il reclamo diretto dei token, l'accesso al tuo saldo di token e ai prezzi in tempo reale durante la vendita dei token, e il trading DEX immediato al lancio."
+            }
+        ]
     },
     "footer": {
-        "sub": "DISCLAIMER",
-        "text": "Gli investimenti in criptovalute comportano un alto rischio di volatilità. Sii consapevole delle implicazioni fiscali, poiché i profitti potrebbero essere soggetti a imposte sul reddito o altre tasse nella tua giurisdizione. Le normative sulle criptovalute possono variare, quindi assicurati di comprendere le regole nel tuo paese. Fai ricerche approfondite e investi solo ciò che puoi permetterti di perdere.",
-        "copyRight": "Copyright 2024 — Big Bird"
+        "sub": "ESCLUSIONE DI RESPONSABILITÀ",
+        "text": "ESCLUSIONE DI RESPONSABILITÀ: BTC Bull è un asset speculativo di meme coin legato al valore sociale e di mercato di Bitcoin. Il mercato delle criptovalute comporta il rischio di perdere tutto il capitale. Nulla su questo sito è consulenza finanziaria. Fai le tue ricerche e HODL fino a 1M$!",
+        "copyRight": ""
     }
 }
