@@ -14,7 +14,25 @@ export async function generateMetadata() {
   return {
     title: metadata?.title,
     description: metadata?.description,
-
+    icons: {
+      icon: [
+        { url: '/img/btcbull/logo.png',  type: 'image/png' },
+        { url: '/img/btcbull/logo.png',  type: 'x-icon' },
+      ],
+      shortcut: ['/img/btcbull/logo.png'],
+      apple: [
+        { url: '/img/btcbull/logo.png',  type: 'image/png' },
+        { url: '/img/btcbull/logo.png',  type: 'x-icon' },
+      ],
+      other: [
+        {
+          rel: 'apple-touch-icon-precomposed',
+          url: '/img/btcbull/logo.png',
+        },
+      ],
+    },
+  
+  
     keywords: 'BTCBULL, BTC BULL, btc bull presale, btcbull token, btcbull presale is live', // Add keywords here
     robots: 'index, follow', // Add robots directives here
     openGraph: {
