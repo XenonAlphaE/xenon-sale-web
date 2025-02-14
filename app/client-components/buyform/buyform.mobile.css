@@ -36,6 +36,10 @@
         row-gap: 16px;
     }
 
+    .dashTitle:before, .dashTitle:after {
+        width: 18%;
+       
+      }
 
     .walletBox-bottom{
         padding: 18px 8px;
