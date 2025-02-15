@@ -18,6 +18,9 @@ import { zeroAddress } from "viem";
 
 // Create a context for the wallet
 const Erc20WalletContext = createContext();
+const lastestUpdated = "2025-02-15T00:00:00Z"
+const lastestRaise  = 1637139.85
+const dailyRaise = 25000
 
 export const Erc20WalletProvider = ({ globalConfigs, children }) => {
     // Define the wallet logic (useWalletETH)
@@ -35,6 +38,7 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
     const [bnbPrice, setBnbPrice] = useState(0);
     const [totalBought, setTotalBought] = useState(0);
     const [ethPrice, setEthPrice] = useState(0);
+    const [currentRaise, setCurrentRaise] = useState(0);
     const { switchChainAsync } = useSwitchChain(); // Function to switch networks
 
     // Fetch ETH balance for the current wallet
@@ -43,11 +47,26 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
         watch: true, // Automatically update balance on wallet changes
     });
 
+    
+
     useEffect(() => {
         const currAmount = Number(formatUnits(data?.value || 0, 18))
         
         setMaxAmount((currAmount-0.005 > 0 ?currAmount-0.005  : 0 ).toFixed(4))
     }, [data?.formatted])
+
+    useEffect(() => {
+        const lastUpdated = new Date(lastestUpdated).getTime() / 1000; // Convert to seconds
+        const currentTime = Math.floor(Date.now() / 1000); // Current timestamp in seconds
+
+        const differenceInSeconds = currentTime - lastUpdated; // Difference in seconds
+
+        const portions = Math.floor(differenceInSeconds / 10); // Count of 10-second portions
+        const increasePerPortion = dailyRaise / 8640; // Increase per 10-second portion
+        const totalIncrease = portions * increasePerPortion; // Total increase
+        setCurrentRaise(totalIncrease + lastestRaise)
+
+    }, [])
 
     useEffect(() => {
         const fetchDataBNB = async () => {
@@ -415,6 +434,8 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
             ethPrice,
             totalBought,
             formatedBought:formatTokenNumber(totalBought),
+            currentRaise,
+            formatedRaise:formatTokenNumber(currentRaise),
             //  getMaxUSDT , 
             buyTokensWithRef,
             swicthNativeNetwork,
@@ -453,4 +474,4 @@ export const useWalletERC20 = () => {
       throw new Error("useWallet must be used within a Erc20WalletContext");
     }
     return context.walletETH;
-  };
+};
