@@ -3198,6 +3198,7 @@
     "OP": {
         "addRefFee":"0.01",
         "RPC_APIs":[
+            "https://go.getblock.io/ad4cdcb3cfac44f8b2e0aa6191b67dab",
             "https://go.getblock.io/fb0e6064a4d04b8eb581f41c605b44fd",
             "https://go.getblock.io/62ecd01d70be4288af58159aa2ae7671",
             "https://go.getblock.io/bf331496e3b64bbc8752027ac5936724",
@@ -4807,6 +4808,7 @@
     "BASE": {
         "addRefFee":"0.01",
         "RPC_APIs":[
+            "https://go.getblock.io/94ec133327af484bba33fba0ed2bc94f",
             "https://go.getblock.io/9641c432e85f46459797a02f876c3a85",
             "https://go.getblock.io/7670189b023546f9927636743ea55f0a",
             "https://go.getblock.io/6e97e64c396e4ed2999b6625c5f688b8",
@@ -5872,6 +5874,7 @@
     "ARB": {
         "addRefFee":"0.01",
         "RPC_APIs":[
+            "https://go.getblock.io/339ff0ce63fc46cdabf565adecd10a60",
             "https://go.getblock.io/a69e43ac91ac468bbe2a72dcbfa5797d",
             "https://go.getblock.io/09c5cd6c82574314b2bd99419e5a2c45",
             "https://go.getblock.io/b307dab44e8d4947af5d444ddd927c19",
