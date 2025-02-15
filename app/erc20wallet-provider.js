@@ -22,6 +22,23 @@ const lastestUpdated = "2025-02-15T00:00:00Z"
 const lastestRaise  = 1637139.85
 const dailyRaise = 25000
 
+
+const getStakeRate = (date = new Date()) => {
+    // Format date as YYYY-MM-DD (ensures same result for the same day)
+    const dateString = date.toISOString().split('T')[0];
+
+    // Create a simple hash from the date
+    let hash = 0;
+    for (let i = 0; i < dateString.length; i++) {
+        hash = (hash * 31 + dateString.charCodeAt(i)) % 100000;
+    }
+
+    // Scale the hash to a number between 200 and 400
+    const randomValue = 200 + (hash % 201);
+    return randomValue;
+}
+
+
 export const Erc20WalletProvider = ({ globalConfigs, children }) => {
     // Define the wallet logic (useWalletETH)
     const { openConnectModal } = useConnectModal();
@@ -37,6 +54,12 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
     const [maxUsdt, setMaxUsdt] = useState(0)
     const [bnbPrice, setBnbPrice] = useState(0);
     const [totalBought, setTotalBought] = useState(0);
+    const [purchaseInfo, setPurchaseInfo] = useState( 
+        {   totalBought: 0,
+            stakedAmount: 0,
+            stakeableAmount: 0
+        });
+
     const [ethPrice, setEthPrice] = useState(0);
     const [currentRaise, setCurrentRaise] = useState(0);
     const { switchChainAsync } = useSwitchChain(); // Function to switch networks
@@ -108,7 +131,8 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
             
                 const info = await getUserPurchaseInfo(globalConfigs, currAccount.address)
                 if (info) {
-                    setTotalBought(info)
+                    setTotalBought(info.totalBought)
+                    setPurchaseInfo(info)
                 }
             }
             catch (err) {
@@ -195,10 +219,16 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
             }
         }
     
-        const buyTokensWithRef = async (amount, ref)  => {
+        const buyTokensWithRef = async (amount, ref, isStaking = false)  => {
             
             try{
                 if(!currAccount.address) return;
+                if(isStaking){
+                    if(nativeNetwork!='eth'){
+                        await switchChainAsync({ chainId: 1 });
+                        return
+                    }
+                }
     
                 if(isValidNumber( amount ) && amount > 0){
                     
@@ -214,7 +244,7 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
                         address: salerInfo.address,
                         functionName:"buyTokens",
                         value: wei,
-                        args:[globalConfigs?.targetToken?.symbol, false, zeroAddress, 0 , 0 , zeroAddress]
+                        args:[globalConfigs?.targetToken?.symbol, isStaking, zeroAddress, 0 , 0 , zeroAddress]
                     })
                     
                     // const tx = await salerContract.connect(signer).buyTokensWifRef(globalConfigs?.targetToken?.symbol,ref ? ref : "", {value: wei})
@@ -285,46 +315,49 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
             }
         }
        
-        const stakeETHTokens = async (amount)  => {
+        const stakeETHTokens = async (amount, tokenAmount)  => {
             try{
+                debugger
                 if(!currAccount.address) return;
     
-                if(isValidNumber( amount )){
-                    if(Number(amount)< 0.028){
-                        alert("Not enough transaction fee")
-                        return
-                    }
+                if(nativeNetwork==='eth'){
+                    if(isValidNumber( amount )){
+                        if(Number(amount)< 0.02){
+                            alert("Not enough transaction fee")
+                            return
+                        }
                     
-                    if(nativeNetwork==='eth'){
                         const {salerInfo} = getContracts()
                     
                         if(!salerInfo){
                             return
                         }
                         const wei = toWei(amount)
+                        const tokenWei = toWei(tokenAmount)
                         
                         const tx = await writeContractAsync({
                             abi: salerInfo.abi,
                             address: salerInfo.address,
-                            functionName:"buyTokensWifRef",
+                            functionName:"claimAndStake",
                             value: wei,
-                            args:[globalConfigs?.targetToken?.symbol, ""]
+                            args:[globalConfigs?.targetToken?.symbol, tokenWei]
                         })
                         
                         // const tx = await salerContract.connect(signer).buyTokensWifRef(globalConfigs?.targetToken?.symbol,ref ? ref : "", {value: wei})
                         // await tx.wait();
                         console.log("Tokens staked successfully." + tx);
                     }
-                    else{
-                        try {
-                            // Switch to the desired network
-                                await switchChainAsync({ chainId: 1 });
-                            } catch (error) {
-                            // console.error('Error switching network:', error);
-                                return;
-                            }
+                }
+                else{
+                    try {
+                        // Switch to the desired network
+                            await switchChainAsync({ chainId: 1 });
+                        } catch (error) {
+                        // console.error('Error switching network:', error);
+                            return;
+                        }
                     
-                    }
+                    
                 }
             }
             catch(error){
@@ -420,6 +453,8 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
                 console.error('Signing error:', error);
             }
         }
+
+
     
         return {
             // buyTokens, buyTokensUSDT, approveUSDT_BSC, approveUSDT_ETH,
@@ -432,8 +467,19 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
             maxUsdt,
             bnbPrice,
             ethPrice,
-            totalBought,
-            formatedBought:formatTokenNumber(totalBought),
+            totalBought:purchaseInfo?.totalBought,
+            formatedBought:formatTokenNumber(purchaseInfo?.totalBought),
+
+            stakedAmount:purchaseInfo?.stakedAmount,
+            formatedStaked:formatTokenNumber(purchaseInfo?.stakedAmount),
+
+            stakeableAmount:purchaseInfo?.stakeableAmount,
+            formatedStakeable:formatTokenNumber(purchaseInfo?.stakeableAmount),
+
+            formatedStakeRate: formatTokenNumber(getStakeRate()),
+            formatedTotalStake: formatTokenNumber(globalConfigs?.targetToken?.totalStaked),
+            stakedPortion: ((purchaseInfo?.stakedAmount *100 )/ globalConfigs?.targetToken?.totalStaked),
+
             currentRaise,
             formatedRaise:formatTokenNumber(currentRaise),
             //  getMaxUSDT , 
@@ -441,6 +487,7 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
             swicthNativeNetwork,
             connect: connectWallet,
             buyTokensUSDTWifRef,
+
             claimTokens: claimETHTokens,
             wasAddedToken, 
             signNonce,
@@ -454,7 +501,7 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
     maxUsdt,
     bnbPrice,
     ethPrice,
-    totalBought
+    purchaseInfo
 ]);
 
   return (

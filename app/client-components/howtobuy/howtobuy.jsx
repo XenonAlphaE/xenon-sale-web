@@ -60,7 +60,7 @@ export const HowToBuy = () => {
               </div>
               <div className='howtobuy-card howtobuy-card4'>
                   <div className='howtobuy-card-title'>
-                  {sectionText?.titl41}
+                  {sectionText?.title4}
 
                   </div>
                   <p className='howtobuy-card-content'>

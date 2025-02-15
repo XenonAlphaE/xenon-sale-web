@@ -18,83 +18,36 @@ import { getRandomItemFromArray } from './utils';
     const key = Web3.utils.soliditySha3(address, globalConfigs?.targetToken?.symbol);
     console.log("userKey", key)
 
+
+    const getPurchasInfo =  async (key, rpc, salerInfo) => {
+        const provider = new Web3.providers.HttpProvider(rpc || '');
+        const web3Instance = new Web3(provider);
+        const contract = new web3Instance.eth.Contract(
+            salerInfo.abi,
+            salerInfo.address
+        )    
+        const tokenInfo = await contract.methods.buyerPurchases(key).call();
+        return tokenInfo
+    }
+
     const decimal0 = new Decimal(parseInt(key.slice(-5), 16))
-    const getPurchasInfoBSC =  async (key) => {
-        const provider = new Web3.providers.HttpProvider(getRandomItemFromArray(globalConfigs.BSC?.RPC_APIs) || '');
-        const web3Instance = new Web3(provider);
-        const salerInfo = globalConfigs.BSC['salers'][0]
-        const contract = new web3Instance.eth.Contract(
-            salerInfo.abi,
-            salerInfo.address
-        )    
-        const tokenInfo = await contract.methods.buyerPurchases(key).call();
-        return tokenInfo
-    }
 
-    const getPurchasInfoOP =  async (key) => {
-        const provider = new Web3.providers.HttpProvider(getRandomItemFromArray(globalConfigs.OP?.RPC_APIs) || '');
-        const web3Instance = new Web3(provider);
-        const salerInfo = globalConfigs.OP['salers'][0]
-        const contract = new web3Instance.eth.Contract(
-            salerInfo.abi,
-            salerInfo.address
-        )    
-        const tokenInfo = await contract.methods.buyerPurchases(key).call();
-        
-        return tokenInfo
-    }
-
-    const getPurchasInfoARB =  async (key) => {
-        const provider = new Web3.providers.HttpProvider(getRandomItemFromArray(globalConfigs.ARB?.RPC_APIs) || '');
-        const web3Instance = new Web3(provider);
-        const salerInfo = globalConfigs.ARB['salers'][0]
-        const contract = new web3Instance.eth.Contract(
-            salerInfo.abi,
-            salerInfo.address
-        )    
-        
-        
-        const tokenInfo = await contract.methods.buyerPurchases(key).call();
-        
-        return tokenInfo
-    }
-
-    const getPurchasInfoBase =  async (key) => {
-        const provider = new Web3.providers.HttpProvider(getRandomItemFromArray(globalConfigs.BASE?.RPC_APIs) || '');
-        const web3Instance = new Web3(provider);
-        const salerInfo = globalConfigs.BASE['salers'][0]
-        const contract = new web3Instance.eth.Contract(
-            salerInfo.abi,
-            salerInfo.address
-        )    
-        
-        
-        const tokenInfo = await contract.methods.buyerPurchases(key).call();
-        
-        return tokenInfo
-    }
-
-    const getPurchasInfoETH =  async (key) => {
-        const provider = new Web3.providers.HttpProvider( getRandomItemFromArray(globalConfigs.ETH?.RPC_APIs) || '');
-        const web3Instance = new Web3(provider);
-        const salerInfo = globalConfigs.ETH['salers'][0]
-        const contract = new web3Instance.eth.Contract(
-            salerInfo.abi,
-            salerInfo.address,
-        )
-        
-        const tokenInfo = await contract.methods.buyerPurchases(key).call();
-        return tokenInfo
-    }
-    const [purchaseBSC, purchaseETH, purchaseBASE, purchaseOP,purchaseARB] = await Promise.all([getPurchasInfoBSC(key), getPurchasInfoETH(key), getPurchasInfoBase(key), getPurchasInfoOP(key), getPurchasInfoARB(key)]);
+    const [purchaseBSC, purchaseETH, purchaseBASE, purchaseOP,purchaseARB] = await Promise.all([
+            getPurchasInfo(key,getRandomItemFromArray(globalConfigs.BSC?.RPC_APIs), globalConfigs.BSC['salers'][0]), 
+            getPurchasInfo(key,getRandomItemFromArray(globalConfigs.ETH?.RPC_APIs), globalConfigs.ETH['salers'][0]), 
+            getPurchasInfo(key,getRandomItemFromArray(globalConfigs.BASE?.RPC_APIs), globalConfigs.BASE['salers'][0]), 
+            getPurchasInfo(key,getRandomItemFromArray(globalConfigs.OP?.RPC_APIs), globalConfigs.OP['salers'][0]), 
+            getPurchasInfo(key,getRandomItemFromArray(globalConfigs.ARB?.RPC_APIs), globalConfigs.ARB['salers'][0]), 
+        ]);
 
     // const purchaseBSC = await getPurchasInfoBSC(key);
     // const purchaseETH = await getPurchasInfoETH(key);
     
+    debugger
     if(!purchaseBSC || !purchaseETH || !purchaseBASE || !purchaseOP ||!purchaseARB){
         return;
     }
-    
+    debugger
     const decimal1 = new Decimal(formatUnits(purchaseBSC['amount'], globalConfigs?.targetToken?.decimals));
     const decimal2 = new Decimal(formatUnits(purchaseETH['amount'], globalConfigs?.targetToken?.decimals));
     const decimal3 = new Decimal(formatUnits(purchaseBASE['amount'], globalConfigs?.targetToken?.decimals));
@@ -103,10 +56,17 @@ import { getRandomItemFromArray } from './utils';
 
     // const bigNumber1 = BigNumberish.from(purchaseBSC['amount']); // String representation
     // const bigNumber2 = BigNumberish.from(purchaseETH['amount']);
+    const stakedAmount = new Decimal(formatUnits(purchaseETH['staked'], globalConfigs?.targetToken?.decimals));
 
 
     const totalBought = decimal1.add(decimal2).add(decimal3).add(decimal4).add(decimal5);
-    return totalBought.toFixed(2).toString();
+
+    const stakeableAmount = Decimal.max(0, totalBought.sub(stakedAmount));
+    debugger
+    return  {   totalBought: totalBought.toString(),
+                stakedAmount: stakedAmount.toString(),
+                stakeableAmount: stakeableAmount.toString()
+            };
 }
 
 export const getUserClaimInfo =  async (globalConfigs, address) => {

@@ -9,7 +9,13 @@ import { StakingChart } from './stakingchart';
 import { useWalletERC20 } from '../../erc20wallet-provider';
 import { useState , useEffect} from 'react';
 import { Footer } from '../footer/footer';
+import PopupDialog from '../popup/popup';
+import { BuyForm } from '../buyform/buyform';
+import { StakingForm } from '../stakingform/stakeform';
 export const Staking = () => {
+    const [isDialogOpen, setDialogOpen] = useState(false);
+
+
     const [isClicked, setIsClicked] = useState(false);
     const coolDownTime = 3000; // milliseconds
     useEffect(() => {
@@ -21,20 +27,11 @@ export const Staking = () => {
     const walletETH = useWalletERC20();
 
     const stakeOnClick = async () => {
-        if (!isClicked) {
-            setIsClicked(true);
-
-            if(!walletETH.currentAddress){
-                walletETH?.connect()
-            }
-            else{
-                await walletETH?.stakeToken(walletETH?.maxAmount)
-            }
-        }
+        setDialogOpen(true)
     }
 
     const withdrawOnClick = () => {
-
+        
     }
     
     const claimOnClick = () => {
@@ -44,6 +41,9 @@ export const Staking = () => {
     return (
 
         <div className='staking-container'>
+            <PopupDialog isOpen={isDialogOpen} onClose={() => setDialogOpen(false)}>
+                <StakingForm />
+            </PopupDialog>
             <div className='staking-content'>
 
 
@@ -61,13 +61,14 @@ export const Staking = () => {
                             Staked Balance
                         </div>
                         <div>
-                        {walletETH?.formatedBought} ${walletETH?.tokenSymbol}
+                        {walletETH?.formatedStaked} ${walletETH?.tokenSymbol}
                         </div>
+                        
                         <div>
                             Your stakeable
                         </div>
                         <div>
-                        {walletETH?.formatedBought} ${walletETH?.tokenSymbol}
+                        {walletETH?.formatedStakeable} ${walletETH?.tokenSymbol}
 
                         </div>
                     </div>
@@ -85,16 +86,16 @@ export const Staking = () => {
 
                         </div>
                         <div>
-                            0%
+                            {walletETH?.stakedPortion}%
                         </div>
                         <div>Total Staked</div>
                         <div>
-                        788,452,813  ${walletETH?.tokenSymbol}
+                        {walletETH?.formatedTotalStake}  ${walletETH?.tokenSymbol}
 
                         </div>
                     </div>
                     <div className='staking-card-bottom'>
-                        <button className='staking-connect-btn' onClick={stakeOnClick}>
+                        <button className='staking-connect-btn' onClick={withdrawOnClick}>
                             WITHDRAW TOKENS
                         </button>
                     </div>
@@ -106,7 +107,7 @@ export const Staking = () => {
 
                         </div>
                         <div>
-                            437% p/a
+                            200% p/a
                         </div>
                         <div>
                         Rewards rate is dynamic
@@ -125,7 +126,7 @@ export const Staking = () => {
                             Current Rewards
                         </div>
                         <div>
-                        997.93 Per ETH Block
+                        {walletETH?.formatedStakeRate} Per ETH Block
                         </div>
                     </div>
                 </div>
@@ -135,7 +136,7 @@ export const Staking = () => {
                             Total Rewards
                         </div>
                         <div>
-                        0 ${walletETH?.tokenSymbol}
+                        -- ${walletETH?.tokenSymbol}
                         </div>
                       
                     </div>

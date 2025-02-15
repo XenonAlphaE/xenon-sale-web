@@ -117,7 +117,7 @@ export const Navbar = ({ isStakingPage = false }) => {
       </div>
 
         <div className={`appnav-navbar-menu`}>
-          {/* <a href="/staking">Staking</a> */}
+          <a href="/staking">{sectionText?.staking}</a>
           <a href={isStakingPage ? `/${currentLanguage}/#about` : "#about"}>{sectionText?.about}</a>          {/* <a href={`/${currentLanguage}`}>{sectionText?.home}</a> */}
           <a href={isStakingPage ? `/${currentLanguage}/#howtobuy` : "#howtobuy"}>{sectionText?.howtobuy}</a>
           <a href={isStakingPage ? `/${currentLanguage}/#tokenomics` : "#tokenomics"}>{sectionText?.tokenomics}</a>
@@ -158,11 +158,11 @@ export const Navbar = ({ isStakingPage = false }) => {
 
       {isMobile && <div className={`appnav-navbar-menu-mobile ${isMenuOpen ? 'appnav-is-active' : ''}`}>
       {/* <a onClick={toggleMenu} href={`/${currentLanguage}`}>{sectionText?.home}</a> */}
+        <a href="/staking">Staking</a>
         <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#about` : "#about"} >{sectionText?.about}</a>
         <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#howtobuy` : "#howtobuy"} >{sectionText?.howtobuy}</a>
         <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#tokenomics` : "#tokenomics"} >{sectionText?.tokenomics}</a>
         <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#faqs` : "#faqs"} >{sectionText?.faq}</a>
-        {/* <a href="/staking">Staking</a> */}
 
         <div className='social-container'>
 

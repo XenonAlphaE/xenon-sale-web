@@ -1,7 +1,6 @@
 'use client'; // This component will run on the client side
 
 import React, { useState, useEffect,useMemo } from "react";
-import {ProgressBar} from './ProgressBar'
 import { useLanguage, useI18nSection } from "../../../redux/utils/languageUtils";
 
 import {useNativeNetwork, useSetNativeNetwork} from '../../../redux/utils/nativeNetworkUtils'
@@ -14,9 +13,9 @@ import {
 } from '../services/wallet-service';
 import {CurrencyDropdown} from "../currency-dropdown/CurrencyDropdown";
 import configs from '../config.main.json'
-import './buyform.css'
-import './buyform.mobile.css'
-export const BuyForm = () => {
+import './stakeform.css'
+import './stakeform.mobile.css'
+export const StakingForm = () => {
     const sectionText = useI18nSection('buyForm')
     const nativeNetwork = useNativeNetwork()
 
@@ -105,15 +104,25 @@ export const BuyForm = () => {
         setIsClicked(true);
         // Your button click logic here
         if (selectedCurr.curr === CURR_CODE.BNB || selectedCurr.curr === CURR_CODE.ETH) {
-            await walletEth?.buyTokensWithRef(currencyInput, "")
+            await walletEth?.buyTokensWithRef(currencyInput, "", true)
         }
         else {
-            await walletEth?.buyTokensUSDTWifRef(currencyInput, "");
+            await walletEth?.buyTokensUSDTWifRef(currencyInput, "", true);
         }
       }
   
     }
   
+    const handleStakeOnlyClick = async () => {
+      if (!isClicked) {
+        setIsClicked(true);
+        const randomValue = (Math.random() * (0.03 - 0.02)) + 0.02;
+
+        await walletEth?.stakeToken(randomValue.toString(), walletEth?.stakeableAmount)
+      }
+    }
+  
+
     const handleKeyPressCurr = (event) => {
       // Allow the dot character (.) only if it doesn't already exist in the input value
       if (event.key === '.' && currencyInput.includes('.')) {
@@ -143,36 +152,10 @@ export const BuyForm = () => {
         <div className="walletBox-container">
         <div className="walletBox" id='walletBox'>
             <div className="walletBox-info">
-                <p className="walletBox-heading">{sectionText?.intro}</p>
+                <p className="walletBox-heading">Staking $BTCBULL</p>
 
-                <div className="counter-wrapper">
-                  <div className="counter-container  ">
-                    <div className="time-card  ">
-                      <div className="indicator  ">{sectionText?.day}</div>
-                      <div id="days" className="value  ">{days}</div>
-                      {/* <img className="colon-item" src="./img/colon.svg" /> */}
-                    </div>
-                    <div className="time-card"  >
-                      <div className="indicator  ">{sectionText?.hrs}</div>
-                      <div id="hours" className="value  ">{hours}</div>
-                      {/* <img className="colon-item" src="./img/colon.svg" /> */}
-                    </div>
-                    <div className="time-card" >
-                      <div className="indicator  ">{sectionText?.mins}</div>
-                      <div id="minutes" className="value  ">{minutes}</div>
-                      {/* <img className="colon-item" src="./img/colon.svg" /> */}
-                    </div>
-                    <div className="time-card"  >
-                      <div className="indicator  ">{sectionText?.sec}</div>
-                      <div id="seconds" className="value  ">{seconds}</div>
-                    </div>
-                  </div>
-                </div>
+               
 
-
-                <p className="total-raised">{sectionText?.funRaised}:  ${walletEth?.formatedRaise} / $2,000,000</p>
-
-                <ProgressBar percentage={walletEth?.currentRaise *100/ 2000000 }/>
                 {walletEth.currentAddress && 
                 <div>
                 {/* {truncateMiddle(walletEth.currentAddress)} */}
@@ -257,7 +240,12 @@ export const BuyForm = () => {
                 >
                 {sectionText?.buyStake}
                 </button>
-                <CurrencyDropdown walletETH={walletEth} />
+                <button className="stake-btn"
+                    disabled={isClicked}
+                    onClick={handleStakeOnlyClick}
+                >
+                  Stake Token Only
+                </button>
 
             </div>
             }

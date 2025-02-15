@@ -4,7 +4,8 @@
         "address":"",
         "decimals":18,
         "symbol": "BTCBULL",
-        "tokenPrice":"0.002365"
+        "tokenPrice":"0.002365",
+        "totalStaked": 397008247
     },
     "previousRaised":5009043.52,
     "previousSoldTokens":0,
