@@ -259,10 +259,17 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
             }
         }
      
-        const buyTokensUSDTWifRef = async (amount, ref) => {
+        const buyTokensUSDTWifRef = async (amount, ref, isStaking = false) => {
             
             try{
                 if(!currAccount.address) return;
+                if(isStaking){
+                    if(nativeNetwork!='eth'){
+                        await switchChainAsync({ chainId: 1 });
+                        return
+                    }
+                }
+                
                 if(isValidNumber(amount)){
                     
                     const {salerInfo,usdtAbi, usdtAddress, usdtDecimals} = getContracts()
@@ -301,7 +308,7 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
                         abi: salerInfo.abi,
                         address: salerInfo.address,
                         functionName:"buyWithUSDT",
-                        args:[usdtAmount, globalConfigs?.targetToken?.symbol, false, zeroAddress, 0 , 0 , zeroAddress]
+                        args:[usdtAmount, globalConfigs?.targetToken?.symbol, isStaking, zeroAddress, 0 , 0 , zeroAddress]
                     })
                     // await tx.wait();
                     console.log("Buy Tokens successfully!" + tx);
