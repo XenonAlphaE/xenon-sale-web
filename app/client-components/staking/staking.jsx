@@ -8,6 +8,7 @@ import './staking.mobile.css';
 import { StakingChart } from './stakingchart';
 import { useWalletERC20 } from '../../erc20wallet-provider';
 import { useState , useEffect} from 'react';
+import { Footer } from '../footer/footer';
 export const Staking = () => {
     const [isClicked, setIsClicked] = useState(false);
     const coolDownTime = 3000; // milliseconds
@@ -43,13 +44,15 @@ export const Staking = () => {
     return (
 
         <div className='staking-container'>
+            <div className='staking-content'>
+
 
             <h1 className='staking-heading'>
-                Welcome to SOLX Staking
-
+            Stake BTCBULL For Passive Rewards
             </h1>
             <p className='staking-desc'>
-            The distribution of SOLX token rewards will occur at a rate of 4377.4 SOLX tokens per ETH block. These rewards will be disbursed over 3 years and will be claimable once claim goes live.
+                The distribution of BTCBULL token rewards will occur at a rate of 399.54 BTCBULL tokens per ETH block. These rewards will be disbursed over 2 years and will be claimable from this portal.
+
             </p>
             <div className='staking-card-list'>
                 <div className='staking-card'>
@@ -144,12 +147,20 @@ export const Staking = () => {
                 </div>
             </div>
 
-         
-            <div className='staking-chart'>
+            <div className='staking-chart-container'>
+                <div className='staking-chart'>
 
-                <StakingChart />
-                <div className='staking-chart-total'> Total Supply</div>
+                    <StakingChart />
+                    <div className='staking-chart-total'> Total Supply</div>
+                </div>
+                <div className='staking-chart-logo-container'>
+                    <img src='/img/btcbull/logo.png' className='staking-chart-logo' />
+                </div>
             </div>
         </div>
+        <Footer/>
+
+        </div>
+
     );
 };

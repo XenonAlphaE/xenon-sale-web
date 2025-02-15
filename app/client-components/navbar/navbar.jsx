@@ -15,7 +15,7 @@ import languageOptions from '../../langOptions.json'
 import { useIsMobile, useSetMobile } from '../../../redux/utils/mobileUtils';
 
 
-export const Navbar = () => {
+export const Navbar = ({ isStakingPage = false }) => {
   const { openAccountModal } = useAccountModal();
   const currAccount = useAccount()
 
@@ -80,8 +80,18 @@ export const Navbar = () => {
     }
   }, []);
 
-
-
+  const renderNavLinks = () => {
+    <div className={`appnav-navbar-menu`}>
+      {/* <a href="/staking">Staking</a> */}
+      <a href={isStakingPage ? `/${currentLanguage}/#about` : "#about"}>{sectionText?.about}</a>
+      {/* <a href={`/${currentLanguage}`}>{sectionText?.home}</a> */}
+      <a href={`${hostUrl}/#howtobuy`}>{sectionText?.howtobuy}</a>
+      <a href={`${hostUrl}/#tokenomics`}>{sectionText?.tokenomics}</a>
+      {/* <a href="#roadmap">{sectionText?.roadmap}</a> */}
+      <a href={`${hostUrl}/#faqs`}>{sectionText?.faq}</a>
+      {/* <a href="/white-paper.pdf" target='_blank'>{sectionText?.whitePaper}</a> */}
+    </div>
+  }
 
 
 
@@ -108,13 +118,10 @@ export const Navbar = () => {
 
         <div className={`appnav-navbar-menu`}>
           {/* <a href="/staking">Staking</a> */}
-          <a href="#about">{sectionText?.about}</a>
-          {/* <a href={`/${currentLanguage}`}>{sectionText?.home}</a> */}
-          <a href="#howtobuy">{sectionText?.howtobuy}</a>
-          <a href="#tokenomics">{sectionText?.tokenomics}</a>
-          {/* <a href="#roadmap">{sectionText?.roadmap}</a> */}
-          <a href="#faqs">{sectionText?.faq}</a>
-          {/* <a href="/white-paper.pdf" target='_blank'>{sectionText?.whitePaper}</a> */}
+          <a href={isStakingPage ? `/${currentLanguage}/#about` : "#about"}>{sectionText?.about}</a>          {/* <a href={`/${currentLanguage}`}>{sectionText?.home}</a> */}
+          <a href={isStakingPage ? `/${currentLanguage}/#howtobuy` : "#howtobuy"}>{sectionText?.howtobuy}</a>
+          <a href={isStakingPage ? `/${currentLanguage}/#tokenomics` : "#tokenomics"}>{sectionText?.tokenomics}</a>
+          <a href={isStakingPage ? `/${currentLanguage}/#faqs` : "#faqs"} >{sectionText?.faq}</a>
         </div>
       <div className={`appnav-navbar-right`}>
 
@@ -151,10 +158,10 @@ export const Navbar = () => {
 
       {isMobile && <div className={`appnav-navbar-menu-mobile ${isMenuOpen ? 'appnav-is-active' : ''}`}>
       {/* <a onClick={toggleMenu} href={`/${currentLanguage}`}>{sectionText?.home}</a> */}
-        <a onClick={toggleMenu} href="#about">{sectionText?.about}</a>
-        <a onClick={toggleMenu} href="#howtobuy">{sectionText?.howtobuy}</a>
-        <a onClick={toggleMenu} href="#tokenomics">{sectionText?.tokenomics}</a>
-        <a onClick={toggleMenu} href="#faqs">{sectionText?.faq}</a>
+        <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#about` : "#about"} >{sectionText?.about}</a>
+        <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#howtobuy` : "#howtobuy"} >{sectionText?.howtobuy}</a>
+        <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#tokenomics` : "#tokenomics"} >{sectionText?.tokenomics}</a>
+        <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#faqs` : "#faqs"} >{sectionText?.faq}</a>
         {/* <a href="/staking">Staking</a> */}
 
         <div className='social-container'>

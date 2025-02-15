@@ -24,32 +24,41 @@ export const StakingChart = () => {
         return () => window.removeEventListener('resize', updateMargin); // Cleanup on unmount
     }, []);
     
-    const data = [
-        {name: 'Sep-2024', value: 9750000000},
-        {name: 'Oct-2024', value: 9900000000},
-        {name: 'Nov-2024', value: 10050000000},
-        {name: 'Dec-2024', value: 10200000000},
-        {name: 'Jan-2025', value: 10350000000},
-        {name: 'Feb-2025', value: 10500000000},
-        {name: 'Mar-2025', value: 10650000000},
-        {name: 'Apr-2025', value: 10800000000},
-        {name: 'May-2025', value: 10950000000},
-        {name: 'Jun-2025', value: 11100000000},
-        {name: 'Jul-2025', value: 11250000000},
-        {name: 'Aug-2025', value: 11400000000},
-        {name: 'Sep-2025', value: 11550000000},
-        {name: 'Oct-2025', value: 11700000000},
-        {name: 'Nov-2025', value: 11850000000},
-        {name: 'Dec-2025', value: 12000000000},
-        {name: 'Jan-2026', value: 12150000000},
-        {name: 'Feb-2026', value: 12300000000},
-        {name: 'Mar-2026', value: 12450000000},
-        {name: 'Apr-2026', value: 12600000000},
-        {name: 'May-2026', value: 12750000000},
-        {name: 'Jun-2026', value: 12900000000},
-        {name: 'Jul-2026', value: 13050000000},
-        {name: 'Aug-2026', value: 13200000000}];
+    function getMonthlyIncrements(startDate, endDate, startValue, endValue) {
+        const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", 
+            "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
+        let start = new Date(startDate);
+        let end = new Date(endDate);
+    
+        let months = [];
+        let current = new Date(start);
+    
+        // Count the number of months
+        let monthsCount = (end.getFullYear() - start.getFullYear()) * 12 + (end.getMonth() - start.getMonth()) + 1;
+        if (monthsCount <= 0) return []; // Invalid range
+    
+        let increment = (endValue - startValue) / (monthsCount - 1);
+    
+        for (let i = 0; i < monthsCount; i++) {
+            let monthIndex = current.getMonth();
+            let year = current.getFullYear();
+    
+            months.push({
+                name: `${monthNames[monthIndex]}-${year}`,
+                value: startValue + increment * i
+            });
+    
+            // Move to the next month
+            current.setMonth(current.getMonth() + 1);
+        }
+    
+        return months;
+    }
+
+    const data = getMonthlyIncrements('2025-02-01', '2027-01-01', 18987500000, 21000000000)
+
+    
 
     const CustomTooltip = ({ active, payload }) => {
         if (active && payload && payload.length) {
@@ -89,7 +98,7 @@ export const StakingChart = () => {
                 >
 
                 <CartesianGrid 
-                            stroke="#ddd"               // Set grid line color to white
+                            stroke="#fff"               // Set grid line color to white
                             // strokeDasharray="5 5"        // Create dashed lines with 5px gaps
                         />
                 <Tooltip content={<CustomTooltip />} />
@@ -98,7 +107,7 @@ export const StakingChart = () => {
                     dataKey="name" 
                     tick={{ fill: 'white', 
                         fontSize: 12,
-                        angle: -90, // Rotate the tick labels 50 degrees
+                        angle: -75, // Rotate the tick labels 50 degrees
                         textAnchor: 'end', // Align the text for proper rotation
                     }} 
                     interval={0}
@@ -127,7 +136,7 @@ export const StakingChart = () => {
                     {data.map((entry, index) => (
                     <Cell
                         key={`cell-${index}`}
-                        fill={ getCurrentMonthYearUTC() === entry.name ? " rgb(249, 186, 38)" : 'rgba(135, 135, 135, 0.7)' } // Example condition for dynamic colors
+                        fill={ getCurrentMonthYearUTC() === entry.name ? " rgb(249, 186, 38)" : '#fff' } // Example condition for dynamic colors
                     />
                     ))}
                 </Bar>

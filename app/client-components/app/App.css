@@ -1,3 +1,4 @@
-body{
-    background-color: rgb(2, 2, 2);
+:root{
+    --topnav-padding: 100px;
+
 }

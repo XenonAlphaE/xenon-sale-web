@@ -1,7 +1,12 @@
 /* Responsive Styles */
 @media (max-width: 1024px) {
+    .staking-heading{
+        font-size: 3em;
+    }
 
-
+    .staking-chart-logo-container{
+        display: none;
+    }
     .staking-desc{
         color: rgb(255, 255, 255);
         font-size: 18px;

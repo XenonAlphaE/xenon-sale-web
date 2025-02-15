@@ -1,7 +1,7 @@
 'use client'; // This component will run on the client side
 
 import React, { useState, useEffect } from "react";
-import "./StakingApp.css";
+import "../app/App.css";
 
 
 // import Navbar from "../navbar/navbar";
@@ -30,9 +30,8 @@ const StakingApp = () => {
 
   return (
     <div>
-      <Navbar />
-      {/* <Staking/> */}
-      
+      <Navbar isStakingPage={true}/>
+      <Staking/>
     </div>
   );
 };
