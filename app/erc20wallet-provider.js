@@ -98,24 +98,24 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
         // **Deterministic portion variation pattern (0-9)**
         const portionMultipliers = [
             0,    // No increase
-            2.5,  // Large increase
+            3.0,  // Large increase
             1.2,  // Slightly above normal
-            3.0,  // Big spike
-            0.5,  // Small increase
+            5.0,  // Big spike
+            0.4,  // Small increase
             0.8,  // Below normal
             0,    // No increase
-            1.5,  // Moderate increase
+            2.0,  // Moderate increase
             0.3,  // Minimal increase
-            1.8,  // Higher than normal
+            1.5,  // Higher than normal
             0,    // No increase
-            2.0,  // Large increase
+            4.0,  // Very large increase
             1.1,  // Slightly above normal
-            0.7,  // Lower increase
-            3.2,  // Large spike
+            0.6,  // Lower increase
+            8.0,  // Extreme spike
             0.9,  // Almost normal
-            1.4,  // Above normal
+            1.7,  // Above normal
             0,    // No increase
-            2.8,  // Very high spike
+            6.5,  // Very high spike
             1.0   // Normal increase
         ];
 
