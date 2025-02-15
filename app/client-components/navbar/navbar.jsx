@@ -158,7 +158,7 @@ export const Navbar = ({ isStakingPage = false }) => {
 
       {isMobile && <div className={`appnav-navbar-menu-mobile ${isMenuOpen ? 'appnav-is-active' : ''}`}>
       {/* <a onClick={toggleMenu} href={`/${currentLanguage}`}>{sectionText?.home}</a> */}
-        <a href="/staking">Staking</a>
+        <a href="/staking">{sectionText?.staking}</a> 
         <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#about` : "#about"} >{sectionText?.about}</a>
         <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#howtobuy` : "#howtobuy"} >{sectionText?.howtobuy}</a>
         <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#tokenomics` : "#tokenomics"} >{sectionText?.tokenomics}</a>
