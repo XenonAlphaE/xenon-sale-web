@@ -13,6 +13,7 @@
     "BSC": {
         "addRefFee":"0.05",
         "RPC_APIs":[
+            "https://go.getblock.io/8d9327352c404c4086558c8c08658522",
             "https://go.getblock.io/9d303968e701495f94960609c5a45f9b",
             "https://go.getblock.io/c14e8147bff147b5b6c403e5c42f59cf",
             "https://go.getblock.io/135104eb43bf49e19b5521f18492e143",
@@ -1038,6 +1039,7 @@
     "ETH": {
         "addRefFee":"0.01",
         "RPC_APIs":[
+            "https://go.getblock.io/27907e2fc70b468fa64f4fcbb4c30bcc",
             "https://go.getblock.io/fb2085562f08470c8aa5ee32f139cca8",
             "https://go.getblock.io/972ee685c1d94bb4ba888cfca58e3697",
             "https://go.getblock.io/964d8a931b2345e4b62395bcf88aa858",
@@ -3192,6 +3194,7 @@
     "OP": {
         "addRefFee":"0.01",
         "RPC_APIs":[
+            "https://go.getblock.io/fb0e6064a4d04b8eb581f41c605b44fd",
             "https://go.getblock.io/62ecd01d70be4288af58159aa2ae7671",
             "https://go.getblock.io/bf331496e3b64bbc8752027ac5936724",
             "https://go.getblock.io/c36eb85e88e54ce28fd6b6160504708a",
@@ -4800,6 +4803,7 @@
     "BASE": {
         "addRefFee":"0.01",
         "RPC_APIs":[
+            "https://go.getblock.io/6e97e64c396e4ed2999b6625c5f688b8",
             "https://go.getblock.io/fa17b8bda93948609978d17651204c80",
             "https://go.getblock.io/c23e718ce403458b9a8d3cf030df6686",
             "https://go.getblock.io/e976ca77f4ba47d89031360a9173bef0",
