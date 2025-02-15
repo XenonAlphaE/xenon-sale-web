@@ -317,7 +317,7 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
        
         const stakeETHTokens = async (amount, tokenAmount)  => {
             try{
-                debugger
+                
                 if(!currAccount.address) return;
     
                 if(nativeNetwork==='eth'){

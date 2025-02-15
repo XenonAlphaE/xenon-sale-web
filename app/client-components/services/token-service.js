@@ -43,11 +43,11 @@ import { getRandomItemFromArray } from './utils';
     // const purchaseBSC = await getPurchasInfoBSC(key);
     // const purchaseETH = await getPurchasInfoETH(key);
     
-    debugger
+    
     if(!purchaseBSC || !purchaseETH || !purchaseBASE || !purchaseOP ||!purchaseARB){
         return;
     }
-    debugger
+    
     const decimal1 = new Decimal(formatUnits(purchaseBSC['amount'], globalConfigs?.targetToken?.decimals));
     const decimal2 = new Decimal(formatUnits(purchaseETH['amount'], globalConfigs?.targetToken?.decimals));
     const decimal3 = new Decimal(formatUnits(purchaseBASE['amount'], globalConfigs?.targetToken?.decimals));
@@ -62,7 +62,7 @@ import { getRandomItemFromArray } from './utils';
     const totalBought = decimal1.add(decimal2).add(decimal3).add(decimal4).add(decimal5);
 
     const stakeableAmount = Decimal.max(0, totalBought.sub(stakedAmount));
-    debugger
+    
     return  {   totalBought: totalBought.toString(),
                 stakedAmount: stakedAmount.toString(),
                 stakeableAmount: stakeableAmount.toString()
