@@ -20,7 +20,7 @@ import { zeroAddress } from "viem";
 const Erc20WalletContext = createContext();
 const lastestUpdated = "2025-02-15T00:00:00Z"
 const lastestRaise  = 1712139.85
-const dailyRaise = 35000
+const dailyRaise = 40000
 
 
 const getStakeRate = (date = new Date()) => {
@@ -84,10 +84,50 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
 
         const differenceInSeconds = currentTime - lastUpdated; // Difference in seconds
 
-        const portions = Math.floor(differenceInSeconds / 10); // Count of 10-second portions
-        const increasePerPortion = dailyRaise / 8640; // Increase per 10-second portion
-        const totalIncrease = portions * increasePerPortion; // Total increase
-        setCurrentRaise(totalIncrease + lastestRaise)
+        // const portions = Math.floor(differenceInSeconds / 10); // Count of 10-second portions
+
+        // const increasePerPortion = dailyRaise / 8640; // Increase per 10-second portion
+
+        // const totalIncrease = portions * increasePerPortion; // Total increase
+        // setCurrentRaise(totalIncrease + lastestRaise)
+
+        const portions = Math.floor(differenceInSeconds / 10); // 10-sec portions
+        const baseIncreasePerPortion = dailyRaise / 8640; // Normal increase per portion
+
+        let totalIncrease = 0;
+        // **Deterministic portion variation pattern (0-9)**
+        const portionMultipliers = [
+            0,    // No increase
+            2.5,  // Large increase
+            1.2,  // Slightly above normal
+            3.0,  // Big spike
+            0.5,  // Small increase
+            0.8,  // Below normal
+            0,    // No increase
+            1.5,  // Moderate increase
+            0.3,  // Minimal increase
+            1.8,  // Higher than normal
+            0,    // No increase
+            2.0,  // Large increase
+            1.1,  // Slightly above normal
+            0.7,  // Lower increase
+            3.2,  // Large spike
+            0.9,  // Almost normal
+            1.4,  // Above normal
+            0,    // No increase
+            2.8,  // Very high spike
+            1.0   // Normal increase
+        ];
+
+        for (let i = 0; i < portions; i++) {
+            const mod = i % 10; // Cycle through pattern
+            const multiplier = portionMultipliers[mod];
+
+            totalIncrease += baseIncreasePerPortion * multiplier;
+        }
+
+        setCurrentRaise(lastestRaise + totalIncrease);
+
 
     }, [])
 
