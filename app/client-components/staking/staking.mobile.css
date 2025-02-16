@@ -16,6 +16,10 @@
     .staking-card-list{
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .staking-chart-total{
+        font-size: large;
+    }
 }
 
 
