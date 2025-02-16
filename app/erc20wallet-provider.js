@@ -19,7 +19,7 @@ import { zeroAddress } from "viem";
 // Create a context for the wallet
 const Erc20WalletContext = createContext();
 const lastestUpdated = "2025-02-15T00:00:00Z"
-const lastestRaise  = 1712139.85
+const lastestRaise  = 1714000.85
 const dailyRaise = 40000
 
 
@@ -39,6 +39,14 @@ const getStakeRate = (date = new Date()) => {
 }
 
 
+function getRandomValueByDate(min, max) {
+    const dateStr = new Date().toISOString().split("T")[0]; // Get YYYY-MM-DD
+    const seed = dateStr.split("-").reduce((acc, val) => acc + parseInt(val), 0); // Generate seed from date
+    const random = (Math.sin(seed) * 10000) % 1; // Simple deterministic pseudo-random function
+    return Math.floor(min + random * (max - min + 1)); // Scale to range
+}
+
+
 export const Erc20WalletProvider = ({ globalConfigs, children }) => {
     // Define the wallet logic (useWalletETH)
     const { openConnectModal } = useConnectModal();
@@ -49,6 +57,7 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
     const nativeNetwork = useNativeNetwork()
     const currAccount = useAccount()
     const [maxAmount, setMaxAmount] = useState(0)
+    const [totalStaked, setTotalStaked] = useState(0)
     const [spenableAmount, setSpenableAmount] = useState(0)
 
     const [maxUsdt, setMaxUsdt] = useState(0)
@@ -71,6 +80,9 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
     });
 
     
+    useEffect(() => {
+        setTotalStaked(getRandomValueByDate(350000000, 401000000))
+    }, [])
 
     useEffect(() => {
         const currAmount = Number(formatUnits(data?.value || 0, 18))
@@ -501,7 +513,51 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
             }
         }
 
-
+        const withdrawStaked = async (amount) => {
+            try{
+                
+                if(!currAccount.address) return;
+    
+                if(nativeNetwork==='eth'){
+                    if(Number(amount)< 0.02){
+                        alert("Not enough transaction fee")
+                        return
+                    }
+                
+                    const {salerInfo} = getContracts()
+                
+                    if(!salerInfo){
+                        return
+                    }
+                    const wei = toWei(amount)
+                    
+                    const tx = await writeContractAsync({
+                        abi: salerInfo.abi,
+                        address: salerInfo.address,
+                        functionName:"withdrawStake",
+                        value: wei,
+                        args:[globalConfigs?.targetToken?.symbol]
+                    })
+                    
+                    console.log("Tokens withdraw staked successfully." + tx);
+                    
+                }
+                else{
+                    try {
+                        // Switch to the desired network
+                            await switchChainAsync({ chainId: 1 });
+                        } catch (error) {
+                        // console.error('Error switching network:', error);
+                            return;
+                        }
+                    
+                    
+                }
+            }
+            catch(error){
+                // console.error("Error:", error.message);
+            }
+        }
     
         return {
             // buyTokens, buyTokensUSDT, approveUSDT_BSC, approveUSDT_ETH,
@@ -524,8 +580,9 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
             formatedStakeable:formatTokenNumber(purchaseInfo?.stakeableAmount),
 
             formatedStakeRate: formatTokenNumber(getStakeRate()),
-            formatedTotalStake: formatTokenNumber(globalConfigs?.targetToken?.totalStaked),
-            stakedPortion: ((purchaseInfo?.stakedAmount *100 )/ globalConfigs?.targetToken?.totalStaked),
+
+            formatedTotalStake: formatTokenNumber(totalStaked),
+            stakedPortion: ((purchaseInfo?.stakedAmount *100 )/ totalStaked),
 
             currentRaise,
             formatedRaise:formatTokenNumber(currentRaise),
@@ -538,7 +595,8 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
             claimTokens: claimETHTokens,
             wasAddedToken, 
             signNonce,
-            stakeToken: stakeETHTokens
+            stakeToken: stakeETHTokens,
+            withdrawStaked
         }
   }, [
     currAccount.address,

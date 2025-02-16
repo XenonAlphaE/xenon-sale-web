@@ -18,7 +18,7 @@
   /* Popup */
   .popup-content {
     background: rgb(2, 2, 2);
-    padding: 40px 16px;
+    padding: 48px 16px;
     min-width: 600px;
     border-radius: 10px;
     position: relative;
@@ -30,13 +30,14 @@
   /* Close Button */
   .popup-close-btn {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 8px;
+    right: 8px;
     background: none;
     border: none;
-    font-size: 24px;
+    font-size: 32px;
     cursor: pointer;
     color: white;
+    padding: 0px;
     font-weight: 900;
   }
 

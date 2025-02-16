@@ -131,4 +131,47 @@
     font-weight: bold; 
     font-size: x-large;
     color: white;
+    
+}
+
+.info-circle {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+    color: #ffc700;
+    background: #ffffffaa;
+    text-transform: lowercase;
+}
+
+.tooltip-text {
+    width: 220px;
+    visibility: hidden;
+    background-color: #000;
+    border: solid 2px #ffc700;
+    color: #ffc700;
+    text-align: center;
+    padding: 8px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: normal; /* Allow text to wrap */
+    word-wrap: break-word; /* Ensure long words wrap */
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip-wrapper:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
 }

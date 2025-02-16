@@ -12,8 +12,10 @@ import { Footer } from '../footer/footer';
 import PopupDialog from '../popup/popup';
 import { BuyForm } from '../buyform/buyform';
 import { StakingForm } from '../stakingform/stakeform';
+import { WithdrawForm } from '../withdrawform/withdrawform';
 export const Staking = () => {
     const [isDialogOpen, setDialogOpen] = useState(false);
+    const [isWithdrawDialogOpen, setWithdrawDialogOpen] = useState(false);
 
 
     const [isClicked, setIsClicked] = useState(false);
@@ -31,7 +33,7 @@ export const Staking = () => {
     }
 
     const withdrawOnClick = () => {
-        
+        setWithdrawDialogOpen(true)
     }
     
     const claimOnClick = () => {
@@ -43,6 +45,10 @@ export const Staking = () => {
         <div className='staking-container'>
             <PopupDialog isOpen={isDialogOpen} onClose={() => setDialogOpen(false)}>
                 <StakingForm />
+            </PopupDialog>
+
+            <PopupDialog isOpen={isWithdrawDialogOpen} onClose={() => setWithdrawDialogOpen(false)}>
+                <WithdrawForm />
             </PopupDialog>
             <div className='staking-content'>
 
@@ -136,7 +142,11 @@ export const Staking = () => {
                             Total Rewards
                         </div>
                         <div>
-                        -- ${walletETH?.tokenSymbol}
+                        -- ${walletETH?.tokenSymbol} 
+                        <span className='info-circle tooltip-wrapper' >
+                            i     
+                            <span className="tooltip-text">The rewards can be claimed after the presale and will be fully distributed when going live.</span>
+                        </span>
                         </div>
                       
                     </div>
