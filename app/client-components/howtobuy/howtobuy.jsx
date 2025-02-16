@@ -6,6 +6,7 @@ import { useI18nSection } from '../../../redux/utils/languageUtils';
 import { BuyForm } from '../buyform/buyform';
 import './howtobuy.css';
 import './howtobuy.mobile.css';
+import { ClaimForm } from '../claimform/claimform';
 export const HowToBuy = () => {
     const sectionText = useI18nSection('howtobuy')
     const [selectedIdx, setSelectedIdx] = useState()
@@ -109,7 +110,7 @@ export const HowToBuy = () => {
 
 
             <div className="howtobuy-content-right">
-                <BuyForm />
+                <ClaimForm />
                       
             </div>
         </div>

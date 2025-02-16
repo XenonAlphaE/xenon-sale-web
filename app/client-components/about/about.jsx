@@ -4,6 +4,7 @@ import "./about.mobile.css";
 import { BuyForm } from '../buyform/buyform';
 
 import { useLanguage, useI18nSection } from "../../../redux/utils/languageUtils";
+import { ClaimForm } from '../claimform/claimform';
 
 export const About = () => {
     const sectionText = useI18nSection('about')
@@ -68,7 +69,7 @@ export const About = () => {
 
 
                 <div className="about-content-right">
-                    <BuyForm />
+                    <ClaimForm />
                           
                 </div>
             </div>

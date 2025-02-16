@@ -6,6 +6,7 @@ import { BuyForm } from '../buyform/buyform';
 
 import './faq.css';
 import './faq.mobile.css';
+import { ClaimForm } from '../claimform/claimform';
 
 
 export const FAQ = () => {
@@ -131,7 +132,7 @@ export const FAQ = () => {
 
 
             <div className="faq-content-right">
-                <BuyForm />
+                <ClaimForm />
                       
             </div>
         </div>
