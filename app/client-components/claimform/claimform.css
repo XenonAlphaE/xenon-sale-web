@@ -358,14 +358,14 @@ justify-content: space-evenly;
     border: none;
     align-items: center;
     background-clip: border-box;
-    background-image: url('../../../public/img/wepe/buy-btn.png');
+    background-image: url('../../../public/img/wepe/secondary-btn.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
     background-color: transparent;
   
     box-sizing: border-box;
-    color: rgb(255, 255, 255);
+    color: black;
     cursor: pointer;
     display: flex;
     font-family: Sausages, sans-serif;

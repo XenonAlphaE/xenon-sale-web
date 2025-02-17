@@ -165,7 +165,8 @@ export const ClaimForm = () => {
             <p className="total-raised">Over $70m raised</p>
 
               <div>
-                <p className="user-purchased-info" style={{fontWeight:800, color:"#1af"}}>Token Address {walletEth?.tokenAddress}</p>
+                <p className="user-purchased-info" style={{fontWeight:800, color:"#000"}}>You can now claim your $WEPE tokens. Plus, stake your tokens to earn rewards!</p>
+                <p className="user-purchased-info" style={{fontWeight:800, color:"#000"}}>Add {walletEth?.tokenAddress} to your wallet to see your $WEPE</p>
                 <p className="user-purchased-info">{sectionText.boughtAmount} ${configs?.targetToken?.symbol} = {walletEth?.formatedBought}</p>
                 <p className="user-purchased-info">{sectionText.stakeableAmount} ${configs?.targetToken?.symbol} = {walletEth?.formatedBought}</p>
               </div>  
@@ -184,7 +185,7 @@ export const ClaimForm = () => {
                     disabled={isClicked}
                     onClick={handleClaimToken}
                 >
-                    CLAIM MY $WEPE TOKEN
+                    CLAIM TOKEN
                 </button>
                 {/* <CurrencyDropdown walletETH={walletEth} /> */}
 
