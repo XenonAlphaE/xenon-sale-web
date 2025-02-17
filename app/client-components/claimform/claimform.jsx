@@ -185,7 +185,7 @@ export const ClaimForm = () => {
                     disabled={isClicked}
                     onClick={handleClaimToken}
                 >
-                    CLAIM TOKEN
+                    CLAIM $WEPE
                 </button>
                 {/* <CurrencyDropdown walletETH={walletEth} /> */}
 
