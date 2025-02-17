@@ -161,14 +161,14 @@ export const ClaimForm = () => {
         <div className="walletBox" id='walletBox'>
             <div className="walletBox-info">
             <p className="walletBox-heading">THE $WEPE PRESALE IS NOW SOLD OUT</p>
+            
+            <p className="total-raised">Over $70m raised</p>
 
-            {walletEth.currentAddress && 
               <div>
                 <p className="user-purchased-info" style={{fontWeight:800, color:"#1af"}}>Token Address {walletEth?.tokenAddress}</p>
                 <p className="user-purchased-info">{sectionText.boughtAmount} ${configs?.targetToken?.symbol} = {walletEth?.formatedBought}</p>
+                <p className="user-purchased-info">{sectionText.stakeableAmount} ${configs?.targetToken?.symbol} = {walletEth?.formatedBought}</p>
               </div>  
-            }
-            <p className="total-raised">Over $70m raised</p>
             </div>
             {!walletEth.currentAddress && 
             <div className="action-buttons">

@@ -17,6 +17,7 @@
     /* border: 2px solid yellow; */
     box-shadow: 50px -164px 40px #785a5414, -80px 250px 32px #785a540a;
     backdrop-filter: blur(10px);
+    background: #FFF;
 }
 
 .walletBox-info {
