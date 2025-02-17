@@ -73,5 +73,7 @@ export async function getBacklinkUrls(){
     const mainDomain = normalizeUrl(getMainDomain()); // Normalize the main domain
     const uriList = await loadJson(process.env.BACKLINKS_URL || 'https://flockez.netlify.app/js/backlinks.json')
 
-    return uriList.filter((item) => normalizeUrl(item.url) !== mainDomain);
+    return [
+
+    ];
 }
