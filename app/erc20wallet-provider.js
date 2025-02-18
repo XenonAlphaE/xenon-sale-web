@@ -96,48 +96,43 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
 
         const differenceInSeconds = currentTime - lastUpdated; // Difference in seconds
 
-        // const portions = Math.floor(differenceInSeconds / 10); // Count of 10-second portions
-
-        // const increasePerPortion = dailyRaise / 8640; // Increase per 10-second portion
-
-        // const totalIncrease = portions * increasePerPortion; // Total increase
-        // setCurrentRaise(totalIncrease + lastestRaise)
-
-        const portions = Math.floor(differenceInSeconds / 10); // 10-sec portions
-        const baseIncreasePerPortion = dailyRaise / 8640; // Normal increase per portion
-
+        const portions = Math.floor(differenceInSeconds / 30); // 30-sec portions
+        const baseIncreasePerPortion = dailyRaise / 2880; // Normal increase per portion (since 2880 periods in a day)
+    
         let totalIncrease = 0;
+    
         // **Deterministic portion variation pattern (0-9)**
         const portionMultipliers = [
             0,    // No increase
             3.0,  // Large increase
             1.2,  // Slightly above normal
-            5.0,  // Big spike
+            6.0,  // Big spike
             0.4,  // Small increase
-            0.8,  // Below normal
+            0.9,  // Below normal
             0,    // No increase
-            2.0,  // Moderate increase
+            2.5,  // Moderate increase
             0.3,  // Minimal increase
-            1.5,  // Higher than normal
+            1.8,  // Higher than normal
             0,    // No increase
-            4.0,  // Very large increase
+            5.0,  // Very large increase
             1.1,  // Slightly above normal
-            0.6,  // Lower increase
-            8.0,  // Extreme spike
-            0.9,  // Almost normal
-            1.7,  // Above normal
+            0.7,  // Lower increase
+            10.0, // Extreme spike
+            1.0,  // Almost normal
+            1.9,  // Above normal
             0,    // No increase
-            6.5,  // Very high spike
-            1.0   // Normal increase
+            8.0,  // Very high spike
+            1.0,  // Normal increase
+            20.0  // Maximum spike
         ];
-
+    
         for (let i = 0; i < portions; i++) {
-            const mod = i % 10; // Cycle through pattern
+            const mod = i % 20; // Cycle through pattern
             const multiplier = portionMultipliers[mod];
-
+    
             totalIncrease += baseIncreasePerPortion * multiplier;
         }
-
+    
         setCurrentRaise(lastestRaise + totalIncrease);
 
 
