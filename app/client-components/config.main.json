@@ -4823,8 +4823,7 @@
             "https://go.getblock.io/c23e718ce403458b9a8d3cf030df6686",
             "https://go.getblock.io/e976ca77f4ba47d89031360a9173bef0",
             "https://go.getblock.io/026a5b3f3f4143bca9d0a11e5291c532",
-            "https://go.getblock.io/04b2aa2d8a4a4faba587c9be2bae0e56",
-            "https://go.getblock.io/efec26e756b24d7980f9ebdf12e789fb"
+            "https://go.getblock.io/04b2aa2d8a4a4faba587c9be2bae0e56"
         ],
         "USDT_Price": "https://www.binance.com/api/v3/ticker/price?symbol=ETHUSDT",
         "NetworkName": "Base Mainnet",
