@@ -3205,6 +3205,7 @@
             "https://go.getblock.io/fb0e6064a4d04b8eb581f41c605b44fd",
             "https://go.getblock.io/62ecd01d70be4288af58159aa2ae7671",
             "https://go.getblock.io/bf331496e3b64bbc8752027ac5936724",
+            "https://go.getblock.io/f6f29527de9d4d5caf2bb30c94a9a69d",
             "https://go.getblock.io/c36eb85e88e54ce28fd6b6160504708a",
             "https://go.getblock.io/73eca5e291874395b66b860d39a3f60c",
             "https://go.getblock.io/d088c1d2ec5a4a47bf289d590d9364f2",
@@ -5878,6 +5879,7 @@
     "ARB": {
         "addRefFee":"0.01",
         "RPC_APIs":[
+            "https://go.getblock.io/182bd40444864ce9bd833b2d9457eb1e",
             "https://go.getblock.io/e7253247157f475582e956d646c9df13",
             "https://go.getblock.io/339ff0ce63fc46cdabf565adecd10a60",
             "https://go.getblock.io/a69e43ac91ac468bbe2a72dcbfa5797d",
