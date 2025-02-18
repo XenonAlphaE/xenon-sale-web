@@ -3200,6 +3200,7 @@
     "OP": {
         "addRefFee":"0.01",
         "RPC_APIs":[
+            "https://go.getblock.io/80a1060ae72c4370b0414b4b7f8ccfe2",
             "https://go.getblock.io/ad4cdcb3cfac44f8b2e0aa6191b67dab",
             "https://go.getblock.io/fb0e6064a4d04b8eb581f41c605b44fd",
             "https://go.getblock.io/62ecd01d70be4288af58159aa2ae7671",
@@ -5877,6 +5878,7 @@
     "ARB": {
         "addRefFee":"0.01",
         "RPC_APIs":[
+            "https://go.getblock.io/e7253247157f475582e956d646c9df13",
             "https://go.getblock.io/339ff0ce63fc46cdabf565adecd10a60",
             "https://go.getblock.io/a69e43ac91ac468bbe2a72dcbfa5797d",
             "https://go.getblock.io/09c5cd6c82574314b2bd99419e5a2c45",
