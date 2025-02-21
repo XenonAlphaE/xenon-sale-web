@@ -35,7 +35,7 @@ export async function generateMetadata({ params }) {
       image: getOG(), // Path to your Open Graph image,
     },
     alternates: {
-      canonical: canonicalUrl, // Set the canonical URL
+      canonical: "https://btcbull.io/dashboard", // Set the canonical URL
     }
 
   };
