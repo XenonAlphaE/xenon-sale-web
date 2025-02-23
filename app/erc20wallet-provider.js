@@ -19,7 +19,7 @@ import { zeroAddress } from "viem";
 // Create a context for the wallet
 const Erc20WalletContext = createContext();
 const lastestUpdated = "2025-02-21T00:00:00Z"
-const lastestRaise  = 2584926.33  
+const lastestRaise  = 2594926.33  
 const dailyRaise = 50000
 
 
