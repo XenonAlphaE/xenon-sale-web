@@ -45,7 +45,7 @@ export async function generateMetadata() {
       image: getOG(), // Path to your Open Graph image,
     },
     alternates: {
-      canonical: getMainDomain(), // Set the canonical URL
+      canonical: "https://solxcoin.com", // Set the canonical URL
     },
   };
 }
