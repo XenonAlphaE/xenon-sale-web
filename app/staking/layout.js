@@ -1,8 +1,8 @@
-import { getLangDomain, getLocale, getSiteName, getTwiter, getOG } from '../server-util';
+import { getLangDomain, getLocale, getSiteName, getTwiter, getOG, getMainDomain } from '../server-util';
 
 export async function generateMetadata({ params }) {
   const lang = (await params).lang
-  const canonicalUrl = "https://solxcoin.com";
+  const canonicalUrl = `${getMainDomain()}/staking`;
 
 
   const defaultMeta = await import(`../../locales/en.json`).then(content => content.metadata);

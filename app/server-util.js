@@ -29,7 +29,7 @@ export function getLocale(lang){
 }
 
 export function getLangDomain(lang){
-    return `${getMainDomain()}/${lang}`
+    return `${getMainDomain()}/${lang == 'en' ? '' : lang}`
 }
 
 export function getLangKeys(){
