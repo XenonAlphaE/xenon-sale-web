@@ -129,7 +129,7 @@ export const Navbar = ({ isStakingPage = false }) => {
             {/* <a href="https://x.com/Pepetocoin"  target='_blank' ><img src='/img/pepeto/twitter.svg' className='appnav-social-icon' /></a>
             <a href="https://t.me/pepeto_channel"  target='_blank' ><img src='/img/pepeto/telegram.svg' className='appnav-social-icon' /></a> */}
 
-        <a href='/img/btcbull/whitepaper.pdf' className="appnav-whitepaper" >{sectionText?.whitePaper}</a>
+        <a href='/' className="appnav-whitepaper" >{sectionText?.whitePaper}</a>
         <button onClick={scrollToBuySection} className="appnav-login" >{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button>
 
           <div className="appnav-lang-dropdown">

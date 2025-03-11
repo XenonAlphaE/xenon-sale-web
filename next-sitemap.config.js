@@ -13,7 +13,6 @@ module.exports = {
             { loc: '/img/btcbull/COOKIES-BTCBULL.pdf', lastmod: new Date().toISOString() },
             { loc: '/img/btcbull/Terms-Conditions-BTCBULL.pdf', lastmod: new Date().toISOString() },
             { loc: '/img/btcbull/audit.pdf', lastmod: new Date().toISOString() },
-            { loc: '/img/btcbull/whitepaper.pdf', lastmod: new Date().toISOString() },
         ];
     },
     robotsTxtOptions: {
