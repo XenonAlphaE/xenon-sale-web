@@ -101,7 +101,7 @@ export async function generateMetadata() {
         {getLangKeys().map((item, index) => (
             <link rel="alternate" hrefLang={item} href={getLangDomain(item)} />   
         ))}  
-        <link rel="alternate" hrefLang="x-default" href="https://btcbull.io" />
+        <link rel="alternate" hrefLang="x-default" href="https://btcbullcoin.com" />
 
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css" />
