@@ -2,7 +2,7 @@ import { getLangDomain, getLocale, getSiteName, getTwiter, getOG } from '../serv
 
 export async function generateMetadata({ params }) {
   const lang = (await params).lang
-  const canonicalUrl = `https://btcbull.io/${lang == 'en' ? '' : lang}`;
+  const canonicalUrl = `https://btcbullcoin.com/${lang == 'en' ? '' : lang}`;
 
 
   const defaultMeta = await import(`../../locales/en.json`).then(content => content.metadata);
