@@ -151,8 +151,8 @@ export const Navbar = ({ isStakingPage = false }) => {
             </div>
             </div>
           </div>
-          <a href="https://x.com/BTCBULL_TOKEN"  target='_blank' ><img src='/img/default/twitter2.svg' className='appnav-social-icon' /></a>
-          <a href="https://t.me/BTC_Bull_Token"  target='_blank' ><img src='/img/default/telegram2.svg' className='appnav-social-icon' /></a>
+          <a href="https://x.com/EthereumMyLife"  target='_blank' ><img src='/img/default/twitter2.svg' className='appnav-social-icon' /></a>
+          <a href="https://t.me/+jbTz3fPXtcE4Nzg1"  target='_blank' ><img src='/img/default/telegram2.svg' className='appnav-social-icon' /></a>
       </div>
     </div>
 
@@ -166,8 +166,8 @@ export const Navbar = ({ isStakingPage = false }) => {
 
         <div className='social-container'>
 
-          <a href="https://x.com/BTCBULL_TOKEN"  target='_blank' ><img src='/img/default/twitter2.svg' className='appnav-social-icon' /></a>
-          <a href="https://t.me/BTC_Bull_Token"  target='_blank' ><img src='/img/default/telegram2.svg' className='appnav-social-icon' /></a>
+          <a href="https://x.com/EthereumMyLife"  target='_blank' ><img src='/img/default/twitter2.svg' className='appnav-social-icon' /></a>
+          <a href="https://t.me/+jbTz3fPXtcE4Nzg1"  target='_blank' ><img src='/img/default/telegram2.svg' className='appnav-social-icon' /></a>
         </div>
 
 
