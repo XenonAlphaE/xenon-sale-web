@@ -53,8 +53,12 @@ const App = () => {
 
       <div  style={{width:'100vw', height:'100vh', background:'black', display:'flex', justifyContent:"center", alignItems:"center", flexDirection:"column"}}> 
           <div style={{color: "yellow"}}>
-            We are moving to new site <a href="https://btcbullcoin.com" style={{color:"yellow"}}>btcbullcoin.com</a>.  You are redirect in 5s.....
+            We are moving to new site <a href="https://btcbullcoin.com" style={{color:"yellow"}}>btcbullcoin.com</a>.  
           </div>
+            <div style={{color: "yellow"}}>
+              
+              You are redirect in 5s.....
+              </div>
           <div style={{color: "yellow"}}>
             All purchases are still kept same as it is.
           </div>
