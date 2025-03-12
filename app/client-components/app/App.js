@@ -28,41 +28,29 @@ const App = () => {
     setLanguage(langInput?.value || 'en')
   }, [])
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      window.location.href = "https://btcbullcoin.com"; // Replace with your desired URL
-    }, 5000);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     window.location.href = "https://btcbullcoin.com"; // Replace with your desired URL
+  //   }, 5000);
 
-    return () => clearTimeout(timer); // Cleanup on unmount
-  }, []);
+  //   return () => clearTimeout(timer); // Cleanup on unmount
+  // }, []);
   // useEffect(() => {
   //   setLandingPageData(JsonData);
   // }, []);
 
   return (
     <div>
-      {/* <Navbar />
+      <Navbar />
       <Header/>
       <About />
       <Roadmap />
       <HowToBuy />
       <Tokenomics />
-      <FAQ/> */}
+      <FAQ/>
       {/* <Footer />  */}
       
 
-      <div  style={{width:'100vw', height:'100vh', background:'black', display:'flex', justifyContent:"center", alignItems:"center", flexDirection:"column"}}> 
-          <div style={{color: "yellow"}}>
-            We are moving to new site <a href="https://btcbullcoin.com" style={{color:"yellow"}}>btcbullcoin.com</a>.  
-          </div>
-            <div style={{color: "yellow"}}>
-              
-              You are redirect in 5s.....
-              </div>
-          <div style={{color: "yellow"}}>
-            All purchases are still kept same as it is.
-          </div>
-      </div>
     </div>
   );
 };
