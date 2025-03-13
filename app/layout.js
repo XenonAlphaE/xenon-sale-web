@@ -33,7 +33,7 @@ export async function generateMetadata() {
     },
   
   
-    keywords: 'BTCBULL, BTC BULL, btc bull presale, btcbull token, btcbull presale is live', // Add keywords here
+    keywords: 'BTCBULL, BTC BULL, btc bull presale, BTCBULL Coin, btcbull presale is live', // Add keywords here
     robots: 'index, follow', // Add robots directives here
     openGraph: {
       title: metadata?.title,
