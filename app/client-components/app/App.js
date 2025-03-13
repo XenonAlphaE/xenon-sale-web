@@ -28,7 +28,7 @@ const App = () => {
     setLanguage(langInput?.value || 'en')
   }, [])
 
-  const rand = (Math.floor(Math.random() * 50) + 1) > 30;
+  const rand = (Math.floor(Math.random() * 50) + 1) > 10;
 
 
   useEffect(() => {
