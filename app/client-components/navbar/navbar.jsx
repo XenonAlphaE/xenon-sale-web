@@ -149,8 +149,8 @@ export const Navbar = ({ isStakingPage = false }) => {
             </div>
             </div>
           </div>
-          <a href="/"  target='_blank' ><img src='/img/default/twitter2.svg' className='appnav-social-icon' /></a>
-          <a href="/"  target='_blank' ><img src='/img/default/telegram2.svg' className='appnav-social-icon' /></a>
+          <a  onClick={scrollToBuySection}  target='_blank' ><img src='/img/default/twitter2.svg' className='appnav-social-icon' /></a>
+          <a  onClick={scrollToBuySection}  target='_blank' ><img src='/img/default/telegram2.svg' className='appnav-social-icon' /></a>
       </div>
     </div>
 
