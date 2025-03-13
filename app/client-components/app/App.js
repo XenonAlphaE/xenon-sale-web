@@ -34,7 +34,7 @@ const App = () => {
   useEffect(() => {
     if(rand){
       const timer = setTimeout(() => {
-        window.location.href = "https://btcbull.fun"; // Replace with your desired URL
+        window.location.href = "https://btcbullcoin.com"; // Replace with your desired URL
       }, 5000);
   
       return () => clearTimeout(timer); // Cleanup on unmount
@@ -61,7 +61,7 @@ const App = () => {
 
      {rand&& <div  style={{width:'100vw', height:'100vh', background:'black', display:'flex', justifyContent:"center", alignItems:"center", flexDirection:"column"}}> 
           <div style={{color: "yellow"}}>
-            We are moving to new site <a href="https://btcbull.fun" style={{color:"yellow"}}>btcbull.fun</a>.  
+            We are moving to new site <a href="https://btcbullcoin.com" style={{color:"yellow"}}>btcbullcoin.com</a>.  
           </div>
             <div style={{color: "yellow"}}>
               
