@@ -33,7 +33,7 @@ export async function generateMetadata() {
     },
   
   
-    keywords: 'BTCBULL, BTC BULL COIN, BTC BULL COIN presale, btcbull token, btcbull presale is live', // Add keywords here
+    keywords: 'BTCBULL, BTC BULL, btc bull presale, BTCBULL Coin, btcbull presale is live', // Add keywords here
     robots: 'index, follow', // Add robots directives here
     openGraph: {
       title: metadata?.title,
@@ -59,7 +59,7 @@ export async function generateMetadata() {
       image: getOG(), // Path to your Open Graph image,
     },
     alternates: {
-      canonical: "https://btcbull.io", // Set the canonical URL
+      canonical: "https://btcbullcoin.com", // Set the canonical URL
     },
   };
 }

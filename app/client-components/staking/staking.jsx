@@ -57,7 +57,7 @@ export const Staking = () => {
             Stake BTCBULL For Passive Rewards
             </h1>
             <p className='staking-desc'>
-                The distribution of BTCBULL token rewards will occur at a rate of {walletETH?.formatedStakeRate} BTCBULL tokens per ETH block. These rewards will be disbursed over 2 years and will be claimable from this portal.
+                The distribution of BTCBULL rewards will occur at a rate of {walletETH?.formatedStakeRate} BTCBULLs per ETH block. These rewards will be disbursed over 2 years and will be claimable from this portal.
 
             </p>
             <div className='staking-card-list'>
