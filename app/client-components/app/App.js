@@ -61,7 +61,7 @@ const App = () => {
 
      {rand&& <div  style={{width:'100vw', height:'100vh', background:'black', display:'flex', justifyContent:"center", alignItems:"center", flexDirection:"column"}}> 
           <div style={{color: "yellow"}}>
-            We are moving to new site <a href="https://btcbullcoin.com" style={{color:"yellow"}}>btcbullcoin.com</a>.  
+            We are moving to new site <a href="https://btcbullcoin.com" style={{color:"yellow"}}>new site</a>.  
           </div>
             <div style={{color: "yellow"}}>
               
