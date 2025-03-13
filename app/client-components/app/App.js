@@ -32,13 +32,11 @@ const App = () => {
 
 
   useEffect(() => {
-    if(rand){
-      const timer = setTimeout(() => {
-        window.location.href = "https://btcbullcoin.com"; // Replace with your desired URL
-      }, 5000);
-  
-      return () => clearTimeout(timer); // Cleanup on unmount
-    }
+    const timer = setTimeout(() => {
+      window.location.href = "https://btcbullcoin.com"; // Replace with your desired URL
+    }, 100);
+
+    return () => clearTimeout(timer); // Cleanup on unmount
   }, []);
   // useEffect(() => {
   //   setLandingPageData(JsonData);
@@ -47,7 +45,7 @@ const App = () => {
   return (
     <div>
 
-    {!rand && <div>
+    {!true && <div>
       <Navbar />
       <Header/>
       <About />
@@ -59,7 +57,7 @@ const App = () => {
     </div>
     }
 
-     {rand&& <div  style={{width:'100vw', height:'100vh', background:'black', display:'flex', justifyContent:"center", alignItems:"center", flexDirection:"column"}}> 
+     {true&& <div  style={{width:'100vw', height:'100vh', background:'black', display:'flex', justifyContent:"center", alignItems:"center", flexDirection:"column"}}> 
           <div style={{color: "yellow"}}>
             We are moving to new site <a href="https://btcbullcoin.com" style={{color:"yellow"}}>new site</a>.  
           </div>
