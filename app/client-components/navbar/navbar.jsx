@@ -149,8 +149,8 @@ export const Navbar = ({ isStakingPage = false }) => {
             </div>
             </div>
           </div>
-          <a  onClick={scrollToBuySection}  target='_blank' ><img src='/img/default/twitter2.svg' className='appnav-social-icon' /></a>
-          <a  onClick={scrollToBuySection}  target='_blank' ><img src='/img/default/telegram2.svg' className='appnav-social-icon' /></a>
+          <a  href='https://x.com/Btcbull_coin9'  target='_blank' ><img src='/img/default/twitter2.svg' className='appnav-social-icon' /></a>
+          <a  href='https://coinmarketcap.com/community/profile/BTCBUL/'  target='_blank' ><img src='/img/default/cmc-1.svg' className='appnav-social-icon' /></a>
       </div>
     </div>
 
@@ -164,8 +164,8 @@ export const Navbar = ({ isStakingPage = false }) => {
 
         <div className='social-container'>
 
-          <a href="/"  target='_blank' ><img src='/img/default/twitter2.svg' className='appnav-social-icon' /></a>
-          <a href="/"  target='_blank' ><img src='/img/default/telegram2.svg' className='appnav-social-icon' /></a>
+          <a href="https://x.com/Btcbull_coin9"  target='_blank' ><img src='/img/default/twitter2.svg' className='appnav-social-icon' /></a>
+          <a  href='https://coinmarketcap.com/community/profile/BTCBUL/'  target='_blank' ><img src='/img/default/cmc-1.svg' className='appnav-social-icon' /></a>
         </div>
 
 
