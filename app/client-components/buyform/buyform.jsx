@@ -170,9 +170,9 @@ export const BuyForm = () => {
                 </div>
 
 
-                <p className="total-raised">{sectionText?.funRaised}:  ${walletEth?.formatedRaise} / $4,000,000</p>
+                <p className="total-raised">{sectionText?.funRaised}:  ${walletEth?.formatedRaise} / $4,300,000</p>
 
-                <ProgressBar percentage={walletEth?.currentRaise *100/ 4000000 }/>
+                <ProgressBar percentage={walletEth?.currentRaise *100/ 4300000 }/>
                 {walletEth.currentAddress && 
                 <div>
                 {/* {truncateMiddle(walletEth.currentAddress)} */}
