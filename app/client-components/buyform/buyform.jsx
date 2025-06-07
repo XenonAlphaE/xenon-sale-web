@@ -7,7 +7,7 @@ import { useLanguage, useI18nSection } from "../../../redux/utils/languageUtils"
 import {useNativeNetwork, useSetNativeNetwork} from '../../../redux/utils/nativeNetworkUtils'
 import { CURRENCIES,CURR_CODE, NETWORK_OTIONS, VALID_NETWORKS } from '../../../redux/ducks/nativeNetworkDuck';
 import { useWalletERC20 } from "../../erc20wallet-provider";
-import {useCountdown, formatViewNumber} from '../services/utils'
+import {useCountdown, formatViewNumber, formatIntNumber} from '../services/utils'
 import {
   calculateUSDNeeded, calculateTokenOutput,
   calculateTokensForBNB, calculateBNBNeeded, isValidNumber, truncateMiddle
@@ -143,7 +143,7 @@ export const BuyForm = () => {
         <div className="walletBox-container">
         <div className="walletBox" id='walletBox'>
             <div className="walletBox-info">
-                <p className="walletBox-heading">{sectionText?.intro}</p>
+                <p className="walletBox-heading">{sectionText?.intro} <strong> $HYPE</strong> {sectionText?.intro1p} </p>
 
                 <div className="counter-wrapper">
                   <div className="counter-container  ">
@@ -170,9 +170,9 @@ export const BuyForm = () => {
                 </div>
 
 
-                <p className="total-raised">{sectionText?.funRaised}:  ${walletEth?.formatedRaise} / $7,000,000</p>
+                <p className="total-raised">{sectionText?.funRaised}:  ${walletEth?.formatedRaise} / ${formatIntNumber(walletEth?.totalRaise)} </p>
 
-                <ProgressBar percentage={walletEth?.currentRaise *100/ 7000000 }/>
+                <ProgressBar percentage={walletEth?.currentRaise *100/ walletEth?.totalRaise   }/>
                 {walletEth.currentAddress && 
                 <div>
                 {/* {truncateMiddle(walletEth.currentAddress)} */}
@@ -232,7 +232,7 @@ export const BuyForm = () => {
                         className="input-control-custom"
                         placeholder="0" />
                         <div className="amountType">
-                          <img src='/img/btcbull/logo.png' style={{ 'height': '30px', marginRight:5 }} />
+                          <img src='/img/btchyper/token.svg' style={{ 'height': '30px', marginRight:5 }} />
                         </div>
                     </div>
                     </div>
@@ -262,11 +262,11 @@ export const BuyForm = () => {
             </div>
             }
             <div className="external-info">
-            <a style={{textDecorationColor:"white" ,color:" white", textDecoration:'underline'}} href="https://widget.wert.io/default/widget/?commodity=ETH%3AEthereum" target="_blank">Not enough ETH? Top up now</a>
+              <a style={{textDecorationColor:"white" ,color:" white", textDecoration:'underline'}} href="https://widget.wert.io/default/widget/?commodity=ETH%3AEthereum" target="_blank">Not enough ETH? Top up now</a>
 
-            {/* <p translate="" className="font-18 text-center m-0 mt-2"><img src="/img/solx/token.svg" style={{ 'height': '35px' }} /> Powered by <a target="_blank" href='/' className=" "><img src="/img/default/W3P_White.svg" alt="" style={{height:25}} /></a></p> */}
+              {/* <p translate="" className="font-18 text-center m-0 mt-2"><img src="/img/solx/token.svg" style={{ 'height': '35px' }} /> Powered by <a target="_blank" href='/' className=" "><img src="/img/default/W3P_White.svg" alt="" style={{height:25}} /></a></p> */}
+              <a target="_blank" href='/' className=" "><img src="/img/default/W3P_White.svg" alt="" style={{height:18}} /> </a>
             </div>
-            <a target="_blank" href='/' className=" "><img src="/img/default/W3P_White.svg" alt="" style={{height:18}} /> </a>
         </div>
         </div>
     )

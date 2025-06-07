@@ -17,22 +17,22 @@ export const Header = () => {
       <div className="carousal-container">
           <div className="carousal-banner">
               <span className="intro-carousal-text">
-                  🚨 Frog Knox Token Crypto Presale Coming Soon! 🚨 don’t miss out on the next big meme Coin!.
+                  🚨 BTC Hyper Coming! 🚨 don’t miss out on the next big meme Coin!.
               </span>  
               <span className="intro-carousal-text">
-                  🚨 Frog Knox Token Crypto Presale Coming Soon! 🚨 don’t miss out on the next big meme Coin!.
+              🚨 BTC Hyper Coming! 🚨 don’t miss out on the next big meme Coin!.
               </span>  
               <span className="intro-carousal-text">
-                  🚨 Frog Knox Token Crypto Presale Coming Soon! 🚨 don’t miss out on the next big meme Coin!.
+              🚨 BTC Hyper Coming! 🚨 don’t miss out on the next big meme Coin!.
               </span>  
               <span className="intro-carousal-text">
-                  🚨 Frog Knox Token Crypto Presale Coming Soon! 🚨 don’t miss out on the next big meme Coin!.
+              🚨 BTC Hyper Coming! 🚨 don’t miss out on the next big meme Coin!.
               </span>  
               <span className="intro-carousal-text">
-                  🚨 Frog Knox Token Crypto Presale Coming Soon! 🚨 don’t miss out on the next big meme Coin!.
+              🚨 BTC Hyper Coming! 🚨 don’t miss out on the next big meme Coin!.
               </span>  
               <span className="intro-carousal-text">
-                  🚨 Frog Knox Token Crypto Presale Coming Soon! 🚨 don’t miss out on the next big meme Coin!.
+              🚨 BTC Hyper Coming! 🚨 don’t miss out on the next big meme Coin!.
               </span>  
 
 

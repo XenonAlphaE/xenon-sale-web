@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLanguage, useI18nSection } from "../../../redux/utils/languageUtils";
-import { Display } from 'react-bootstrap-icons';
+import { Border, Display } from 'react-bootstrap-icons';
 
 export const ProgressBar = ({ percentage }) => {
   const sectionText = useI18nSection("buyForm")
@@ -9,12 +9,12 @@ export const ProgressBar = ({ percentage }) => {
     width: '100%',
     // backgroundColor: bgColor || '',
     // borderColor:'#eee  ',
-    height: 30,
+    height: 20,
     overflow:'hidden',
     display:"flex",
     alignItems:"center",
-    borderRadius: '4px',
-    background: 'rgb(255, 255, 46)',
+    borderRadius: '10px',
+    background: '#535660',
     padding:"1px 1px"
 
   };
@@ -22,7 +22,9 @@ export const ProgressBar = ({ percentage }) => {
   const barStyle = {
     width: `${percentage}%`,
     height: '100%',
-    borderRadius:"4px",
+    borderRadius: '10px',
+    boxSizing:'border-box',
+    border:'solid 2px white',
     transition: 'width 0.3s ease',
     background: 'rgb(247, 148, 29)'
   };
@@ -34,7 +36,7 @@ export const ProgressBar = ({ percentage }) => {
     width:"max-content",
     fontWeight: 500,
     transform: 'translate(-50%, -50%)',
-    color: '#000', /* Text color */
+    color: 'white', /* Text color */
     fontSize: '12px', /* Adjust font size as needed */
   };
 

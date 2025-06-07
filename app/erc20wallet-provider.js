@@ -18,9 +18,10 @@ import { zeroAddress } from "viem";
 
 // Create a context for the wallet
 const Erc20WalletContext = createContext();
-const lastestUpdated = "2025-04-09T00:00:00Z"
-const lastestRaise  = 4516851.56
-const dailyRaise = 15000
+const lastestUpdated = "2025-06-07T00:00:00Z"
+const lastestRaise  = 660380
+const dailyRaise = 10000
+const totalRaise = 890000
 
 
 
@@ -581,6 +582,7 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
             stakedPortion: ((purchaseInfo?.stakedAmount *100 )/ totalStaked),
 
             currentRaise,
+            totalRaise,
             formatedRaise:formatTokenNumber(currentRaise),
             //  getMaxUSDT , 
             buyTokensWithRef,

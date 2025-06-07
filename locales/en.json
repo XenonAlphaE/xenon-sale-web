@@ -18,7 +18,8 @@
       "about": "ABOUT"
   },
   "buyForm": {
-      "intro": "Buy $BTCBULL In Presale Now!",
+      "intro": "BUY",
+      "intro1": "NOW",
       "day": "Days",
       "hrs": "Hours",
       "mins": "Minutes",
@@ -37,9 +38,9 @@
       "ethOption": "ETH NETWORK",
       "switchOption": "SWITCH NETWORK",
       "bnbOption": "BNB NETWORK",
-      "buyStake": "Buy and Stake for 1304% Rewards",
+      "buyStake": " Buy and Stake for 1052% Rewards",
       "nextPriceAlert": "UNTIL PRICE INCREASE",
-      "para1": "1207% staking REWARDS"
+      "para1": "1052% STAKING REWARDS"
   },
   "header":{
       "heading1":"BTC BULL COIN",

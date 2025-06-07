@@ -3,8 +3,8 @@
     "targetToken":{
         "address":"",
         "decimals":18,
-        "symbol": "BTCBULL",
-        "tokenPrice":"0.0026",
+        "symbol": "HYPE",
+        "tokenPrice":"0.0118",
         "totalStaked": 400102024
     },
     "previousRaised":5009043.52,
