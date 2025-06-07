@@ -16,18 +16,21 @@
 .appnav-navbar.sticky {
   box-sizing: border-box;
   position: fixed;
-  top: 0;
+  top: 36px;
   width: 100%;
 }
 
 
 .appnav-navbar.scrolled {
     backdrop-filter: blur(30px);
-    background: rgb(22, 22, 22);
+    background: #fff;
+    box-shadow: 0 4px 8px #0000, 0 6px 20px #0000001f;
+    top: 0px;
+
 }
 
 .nav-container{
-  padding: 0px 16px;
+  padding: 0px 12px;
   background: transparent;
   width: 100%;
   display: flex;
@@ -35,7 +38,7 @@
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1250px;
+  max-width: 1280px;
 }
 
 .appnav-navbar-brand {
@@ -49,7 +52,7 @@
 
 .appnav-logo {
   display: block;
-  height: 64px;
+  height: 52px;
   max-width: 262px;
 }
 
@@ -97,22 +100,17 @@
 
 .appnav-navbar-menu {
   display: flex;
-  column-gap: 8px;
+  column-gap: 20px;
 }
 
 .appnav-navbar-menu a {
-  color: white;
+  color: black;
   cursor: pointer;
   text-decoration: none;
   font-weight: bold;
   font-size: 12px;
   text-transform: capitalize;
-  padding:6px 0px;
-  min-width: 110px;
-  border-radius: 50px;
   text-align: center;
-  background-color: rgb(34, 29, 16);
-  border: 2px solid rgb(255, 199, 0);
 }
 
 .appnav-navbar-menu a:hover {
@@ -140,15 +138,16 @@
 
 .appnav-login {
   padding: 0px;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
   font-weight: 900;
   text-decoration: none;
   color: black;
-  background: url('/img/btcbull/button-bg.svg') no-repeat 0% 0% / 100%;
   min-width: 140px;
   border: none;
   min-height: 42px;
+  background: #ffa231;
+
 }
 
 .appnav-whitepaper {
@@ -158,7 +157,6 @@
   font-weight: 900;
   text-decoration: none;
   color: rgb(255, 199, 0);
-  background: url('/img/btcbull/btn-outline-bg.svg') no-repeat 0% 0% / 100%;
   min-width: 140px;
   border: none;
   min-height: 42px;
@@ -240,17 +238,15 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-  color: #fff;
   justify-content: center;
-  padding: 4px 16px;
-  border: solid 1px rgb(255, 199, 0);
-  background: rgb(34, 29, 16);
-  border-radius: 16px;
+  padding: 4px 8px;
+  background: none;
+  width: 64px;
 }
 
 .appnav-lang-custom-dropdown span {
   margin-right: 5px;
-  color: rgb(255, 199, 0);
+  color: black;
 }
 
 .lang-dropdown-content {
@@ -429,10 +425,9 @@
     top: 100%; /* Position below navbar */
     left: 0;
     width: 100%;
-    background-color: rgb(31, 31, 31); /* Adjust background as needed */
     z-index: 999;
     padding: 0px 16px;
-    color: white;
+    color: black;
   }
 
   .appnav-navbar-menu-mobile.appnav-is-active {

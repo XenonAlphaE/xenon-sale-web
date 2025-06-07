@@ -102,7 +102,7 @@ export const Navbar = ({ isStakingPage = false }) => {
     <div className='nav-container'>
       <div className="appnav-navbar-brand">
         <a href="/">
-        <img src="/img/btcbull/logo.png" alt="Brand Logo" className="appnav-logo" />
+          <img src="/img/btchyper/logo.svg" alt="Brand Logo" className="appnav-logo" />
         </a>
 
           {/* <button onClick={mobileBuyNow} className="buy-btn-mobile" >{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button> */}
@@ -116,18 +116,19 @@ export const Navbar = ({ isStakingPage = false }) => {
         </button>
       </div>
 
+      <div className={`appnav-navbar-right`}>
+
         <div className={`appnav-navbar-menu`}>
           <a href="/dashboard">{sectionText?.staking}</a>
           <a href={isStakingPage ? `/${currentLanguage}/#about` : "#about"}>{sectionText?.about}</a>          {/* <a href={`/${currentLanguage}`}>{sectionText?.home}</a> */}
           <a href={isStakingPage ? `/${currentLanguage}/#howtobuy` : "#howtobuy"}>{sectionText?.howtobuy}</a>
           <a href={isStakingPage ? `/${currentLanguage}/#tokenomics` : "#tokenomics"}>{sectionText?.tokenomics}</a>
           <a href={isStakingPage ? `/${currentLanguage}/#faqs` : "#faqs"} >{sectionText?.faq}</a>
+          <a href={'/'} >{sectionText?.whitePaper}</a>
         </div>
-      <div className={`appnav-navbar-right`}>
 
         <div className="appnav-lang-login-container">
 
-        <a href='/' className="appnav-whitepaper" >{sectionText?.whitePaper}</a>
         <button onClick={scrollToBuySection} className="appnav-login" >{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button>
 
           <div className="appnav-lang-dropdown">
@@ -148,9 +149,9 @@ export const Navbar = ({ isStakingPage = false }) => {
               ))}
             </div>
             </div>
-          </div>
-          <a  href='https://x.com/Btcbull_coin9'  target='_blank' ><img src='/img/default/twitter2.svg' className='appnav-social-icon' /></a>
-          <a  href='https://coinmarketcap.com/community/profile/BTCBUL/'  target='_blank' ><img src='/img/default/cmc-1.svg' className='appnav-social-icon' /></a>
+        </div>
+        <a href="/"  target='_blank' ><img src='/img/btchyper/twitter.svg' className='appnav-social-icon' /></a>
+        <a href='/'  target='_blank' ><img src='/img/btchyper/telegram.svg' className='appnav-social-icon' /></a>
       </div>
     </div>
 
@@ -164,8 +165,8 @@ export const Navbar = ({ isStakingPage = false }) => {
 
         <div className='social-container'>
 
-          <a href="https://x.com/Btcbull_coin9"  target='_blank' ><img src='/img/default/twitter2.svg' className='appnav-social-icon' /></a>
-          <a  href='https://coinmarketcap.com/community/profile/BTCBUL/'  target='_blank' ><img src='/img/default/cmc-1.svg' className='appnav-social-icon' /></a>
+          <a href="/"  target='_blank' ><img src='/img/btchyper/twitter.svg' className='appnav-social-icon' /></a>
+          <a href='/'  target='_blank' ><img src='/img/btchyper/telegram.svg' className='appnav-social-icon' /></a>
         </div>
 
 

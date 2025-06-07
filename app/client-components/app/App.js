@@ -35,11 +35,11 @@ const App = () => {
     <div>
       <Navbar />
       <Header/>
-      <About />
-      <Roadmap />
-      <HowToBuy />
-      <Tokenomics />
-      <FAQ/>
+      {/* <About /> */}
+      {/* <Roadmap /> */}
+      {/* <HowToBuy /> */}
+      {/* <Tokenomics /> */}
+      {/* <FAQ/> */}
       {/* <Footer />  */}
       
     </div>

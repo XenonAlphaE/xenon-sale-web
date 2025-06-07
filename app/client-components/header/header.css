@@ -2,21 +2,21 @@
 .intro {
     position: relative;
     display: flex;
+    flex-direction: column;
     width: 100%;
     /* height: 100vh; */
     height: auto;
-    padding: var(--topnav-padding) 0 40px;
+    padding: 0 0 40px;
     /* min-height: 890px; */
     overflow: hidden;
-    min-height: 800px;
-    background-color: rgb(2, 2, 2) !important;
-    background: url(/img/btcbull/banner-bg.png) no-repeat 0% 0% / 80%;
-    position: relative;
+    min-height: 100vh;
     overflow: hidden;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background: #fff url('/img/btchyper/banner-bg.webp') no-repeat 100% 100% / 100%;
+    background-size: 100% 45%;
   
 }
 
@@ -29,15 +29,25 @@
   height: 100%;
   background-color: rgb(0, 0, 0);
 } */
+.intro-main-content{
+  flex: 1;
+  display: flex;
+  padding-top: 80px;
+  flex-direction: column;
+  row-gap: 2em;
+  width: 1280px;
+  padding-inline: 16px;
+
+}
 
 .intro-content {
-  max-width: 100%;
+  width: 100%;
   display: flex;
+  flex: 1;
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
-  max-width: 1250px;
-  padding-inline: 16px;
+  column-gap: 1em;
 
 }  
 
@@ -65,6 +75,7 @@
   z-index: 1;
 }
 
+
 .intro-banner{
     width: 100%;
     position: absolute;
@@ -72,94 +83,58 @@
     left: 0;
 }
 
-.intro-heading1{
-  color: rgb(247, 239, 34);
-  font-size: 52px;
-  text-transform: uppercase;
-  font-family: Diogenes, sans-serif;
-  font-weight: 800;
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-text-stroke-color :rgb(180, 81, 7);
-  -webkit-text-stroke-width : 3px;
+
+
+
+@keyframes carousal-movement {
+  0% {
+      transform: translateX(-20%);
+  }
+  100% {
+      transform: translateX(0%);
+  }
 }
 
-.intro-heading1 span{
-  color: white;
-}
-
-
-.intro-heading2{
-  color: white;
-  font-size: 22px;
-  font-family: Diogenes, sans-serif;
-  font-weight: 800;
-}
-
-.intro-heading3{
-  color: rgb(75, 26, 9);
-  font-size: 24px;
-  text-transform: uppercase;
-  font-family: Diogenes, sans-serif;
-  font-weight: 800;
-}
-
-
-.intro-desc{
-  margin-bottom: 44px;
-  line-height: 32px;
-  font-size: 24px;
-  color:rgb(75, 26, 9);
-}
-
-.intro-desc1{
-  line-height: 24px;
-  font-size: 18px;
-  color:rgb(75, 26, 9);
-}
-.intro-list {
-  list-style: none; /* Remove default bullets */
-  padding: 0;
-  margin: 0;
-}
-
-.intro-list-item {
-  display: flex; /* Align icon and text in a row */
-  align-items: center; /* Vertically align icon and text */
-  gap: 6px; /* Adjust spacing between icon and text */
-  font-size: 16px;
-  color: black;
-  line-height: 1.5; /* Improve readability */
-  margin-bottom: 12px; /* Add spacing between rows */
-}
-
-.intro-item-icon {
-  width: 18px; /* Adjust icon size */
-  height: 18px;
-  flex-shrink: 0; /* Prevent icon from shrinking */
-}
-
-
-
-.intro-decorate{
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  bottom: 2%;
-  right: 5%;
-  max-width: 20vw;
-}
-
-/* .intro-decorate-catalouge{
-  color: rgb(75, 26, 9);
-  background: url('/img/peap/chat-bubble.png');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 140px;
-  font-weight: 600;
-  padding: 16px;
-  font-size: 18px;
-} */
-.intro-decorate-img{
+.carousal-container{
   width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  white-space: nowrap;
+  background: white;
+  border-bottom: solid 3px black;
+  height: 36px;
+}
+
+.carousal-banner {
+  display: flex;
+  flex-direction: row;
+  gap: 36px;
+  align-items: center;
+  animation: carousal-movement 6s linear infinite;
+}
+
+/* Duplicate content for seamless loop */
+.carousal-banner::after {
+  content: attr(data-duplicate);
+  display: flex;
+}
+
+/* Pause animation when hovering */
+.carousal-container:hover .carousal-banner {
+  animation-play-state: paused;
+}
+
+.intro-carousal-text{
+  width: max-content;
+  color: white;
+  font-size: x-large;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+  -webkit-text-stroke-width: 1px;
+  text-transform: uppercase;
+  font-weight: 900;
+
 }
