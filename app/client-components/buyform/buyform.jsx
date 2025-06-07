@@ -143,7 +143,7 @@ export const BuyForm = () => {
         <div className="walletBox-container">
         <div className="walletBox" id='walletBox'>
             <div className="walletBox-info">
-                <p className="walletBox-heading">{sectionText?.intro} <strong> $HYPE</strong> {sectionText?.intro1p} </p>
+                <p className="walletBox-heading">{sectionText?.intro} <strong> $HYPE</strong> {sectionText?.intro1} </p>
 
                 <div className="counter-wrapper">
                   <div className="counter-container  ">
