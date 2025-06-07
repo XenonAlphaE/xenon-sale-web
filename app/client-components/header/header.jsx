@@ -13,7 +13,7 @@ export const Header = () => {
   const sectionText = useI18nSection('header')
 
   return (
-    <div id="intro" className='intro'>
+    <section id="intro" className='intro'>
       <div className="carousal-container">
           <div className="carousal-banner">
               <span className="intro-carousal-text">
@@ -53,7 +53,7 @@ export const Header = () => {
 
         </div>
       </div>
-    </div>
+    </section>
     // </div>
   );
 };
