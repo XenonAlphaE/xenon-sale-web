@@ -1,137 +1,68 @@
 {
     "metadata": {
-        "title": "BTC BULL | 最佳比特币牛市加密货币预售",
-        "description": "BTC BULL 是官方比特币迷因币。购买 $BTCBULL 加密货币预售，随着比特币上涨成为全球第一资产，赚取免费的比特币空投！"
+      "title": "BTC Hyper | 现阶段最佳加密货币预售",
+      "description": "BTC Hyper 是领先的比特币二层解决方案和最佳的比特币加密预售项目。快速、安全、可扩展——BTC Hyper 是比特币的未来。"
     },
     "nav": {
-        "home": "首页",
-        "staking": "质押",
-        "howtobuy": "如何购买",
-        "whitePaper": "白皮书",
-        "tokenomics": "代币经济学",
-        "features": "特点",
-        "buyNow": "立即购买",
-        "faq": "常见问题",
-        "audit": "审计",
-        "roadmap": "路线图",
-        "airdrop": "空投",
-        "about": "关于"
+      "home": "首页",
+      "staking": "质押",
+      "howtobuy": "购买指南",
+      "whitePaper": "白皮书",
+      "tokenomics": "代币经济学",
+      "features": "功能",
+      "buyNow": "购买 $HYPER",
+      "faq": "常见问题",
+      "audit": "审计报告",
+      "roadmap": "路线图",
+      "airdrop": "空投",
+      "about": "关于我们"
     },
     "buyForm": {
-        "intro": "现在购买 $BTCBULL 预售！",
-        "day": "天",
-        "hrs": "小时",
-        "mins": "分钟",
-        "sec": "秒",
-        "funRaised": "已筹集 USDT",
-        "wallet": "您的钱包",
-        "boughtAmount": "您的购买量",
-        "stakeableAmount": "您的可质押量",
-        "pay": "支付方式",
-        "get": "收到",
-        "buyNow": "立即购买",
-        "buyMax": "购买最大值",
-        "warning": "请安装 Metamask 以进行购买",
-        "link": "点击这里",
-        "connectWallet": "连接钱包",
-        "ethOption": "ETH 网络",
-        "switchOption": "切换网络",
-        "bnbOption": "BNB 网络",
-        "buyStake": "购买并质押赚取 1304% 奖励",
-        "nextPriceAlert": "直到价格上涨",
-        "para1": "1207% 质押奖励"
+      "intro": "购买",
+      "intro1": "立即",
+      "day": "天",
+      "hrs": "小时",
+      "mins": "分钟",
+      "sec": "秒",
+      "funRaised": "已筹资金（USDT）",
+      "wallet": "您的钱包",
+      "boughtAmount": "您的购买数量",
+      "stakeableAmount": "可质押数量",
+      "pay": "支付方式",
+      "get": "获得",
+      "buyNow": "购买 $HYPER",
+      "buyMax": "购买最大量",
+      "warning": "请先安装 Metamask 才能购买",
+      "link": "点击这里",
+      "connectWallet": "连接钱包",
+      "ethOption": "以太坊网络",
+      "switchOption": "切换网络",
+      "bnbOption": "币安智能链网络",
+      "buyStake": "购买并质押，享受1052%奖励",
+      "nextPriceAlert": "距离价格上涨还有",
+      "para1": "1052% 质押奖励"
+    },
+    "promoBanner": {
+      "badge": "1052% 质押奖励",
+      "title": "首个比特币二层链",
+      "subtitle": "比特币的可扩展性与速度终于到来",
+      "cta": "预售正在进行"
     },
     "header": {
-        "heading1": "BTC BULL COIN",
-        "heading2": "比特币最佳加密货币预售",
-        "desc": "BTC BULL COIN 是推动比特币向 100 万美元以上迈进的不可阻挡力量！购买 $BTCBULL，随着比特币成为全球第一资产，赚取比特币！"
-    },
-    "about": {
-        "featuresIn": "特色出现在",
-        "heading1": "官方",
-        "heading2": "比特币迷因币",
-        "desc": "比特币是历史上表现最好的资产，年化回报率为 230%，自诞生以来上涨超过 200 万倍。现在，加入 BTC BULL COIN，随着比特币突破 25 万美元，我们一起踏上人生的旅程！",
-        "buynow": "立即购买",
-        "cardTitle1": "赚取比特币空投！",
-        "cardDesc1": "持有 $BTCBULL 代币，随着最伟大资产的价格上涨，获得比特币空投！当比特币价格达到 250,000 美元时，最强的持币者将获得巨额 $BTCBULL 空投，按您社区销售购买的数量加权分配。",
-        "cardTitle2": "质押赚取奖励",
-        "cardDesc2": "BTC BULL COIN 旨在通过高年利率质押和安全智能合约奖励信仰者，$BTCBULL 奖励将在社区销售期间及未来两年内发放给质押者。",
-        "cardTitle3": "代币销毁里程碑",
-        "cardDesc3": "BTC BULL COIN 旨在随着比特币价格上涨奖励持币者。每当比特币上涨 25,000 美元时，将销毁一定比例的 $BTCBULL 代币供应，造成向上价格压力。我们销毁，我们上涨，重复！"
-    },
-    "roadmap": {
-        "heading1": "BTC BULL COIN",
-        "heading2": "路线图",
-        "desc": "BTC BULL COIN 为所有信徒带来荣耀和奖励。随着比特币价格突破 100 万美元，BTC BULL COIN 将在比特币价格上涨时销毁代币供应，并向最强的持币者发放比特币空投！此外，比特币达到 250,000 美元时，将发放巨额 $BTCBULL 空投！",
-        "milestones": "项目里程碑",
-        "item1": "$BTCBULL 预售！",
-        "item2": "代币销毁！",
-        "item3": "比特币空投！",
-        "item4": "代币销毁！",
-        "item5": "比特币空投！",
-        "item6": "代币销毁！",
-        "item7": "$BTCBULL 空投！"
-    },
-    "howtobuy": {
-        "heading1": "如何购买",
-        "heading2": "BTC BULL COIN",
-        "title1": "步骤 1：",
-        "desc1": "为了利用BTC BULL COIN和比特币的牛市，您需要一个DeFi加密钱包，如MetaMask、Trust或任何其他钱包。将其连接到本页面顶部的预售小部件。",
-        "title2": "步骤 2：",
-        "desc2": "确保您拥有ETH或USDT来继续操作。存款或直接在钱包中购买加密货币，为您的$BTCBULL购买提供资金。确保您有足够的ETH来支付交易费用。",
-        "title3": "步骤 3：",
-        "desc3": "在以太坊上提供质押功能，以增加您的$BTCBULL持有量。如果选择质押，请按照小部件中的提示进行操作。年化收益率（APY）是动态的，可能随时间变化。",
-        "title4": "步骤 4：",
-        "desc4": "完成购买后，您的$BTCBULL代币余额将在购买小部件中显示。预售售罄或超时后，您可以领取这些代币。"
-    },
-    "tokenomics": {
-        "heading1": "BTC BULL COIN",
-        "heading2": "代币经济",
-        "item1": "牛市基金",
-        "item2": "里程碑销毁基金",
-        "item3": "$BTCBULL 空投",
-        "item4": "质押分配",
-        "item5": "交易所流动性",
-        "item6": "公关与营销",
-        "total": "总供应量："
-    },
-    "faqs": {
-        "heading1": "BTC BULL COIN",
-        "heading2": "常见问题",
-        "data": [
-            {
-                "title": "什么是BTC BULL COIN?",
-                "desc": "BTC BULL COIN是一种为比特币冲击25万美元及以上目标而打造的表情币。BTC BULL COIN不惧怕任何试图阻止其成为世界最佳投资资产的力量。加入我们，共同参与这场划时代的加密预售，迎接一生的旅程，超越所有历史反对者，吸引数百万新支持者，争取成为全球第一资产，超越黄金！"
-            },
-            {
-                "title": "为什么我要购买$BTCBULL的加密预售?",
-                "desc": "BTC BULL COIN是下一轮比特币（BTC）牛市的终极投资机会，这使得$BTCBULL成为2025年最佳加密预售投资。$BTCBULL是一种表情币，拥有充满激情的社区，致力于推广我们每个人内心的牛市。换句话说，甚至150K的比特币也只是FUD——你还不够看涨。在这里，我们发展BTC BULL COIN社区，随着BTC的上涨，我们共同成长，最终享受世界最佳资产类别带来的回报。"
-            },
-            {
-                "title": "我真的可以赚取免费的比特币空投吗?",
-                "desc": "牛会结巴吗？答案是肯定的！持有$BTCBULL代币在您的钱包中，当比特币价格达到15万美元和20万美元时，您将获得BTC空投。您的BTC空投将发送到您钱包中的BTC地址，空投金额将根据您在社区销售中购买的$BTCBULL代币数量来加权。"
-            },
-            {
-                "title": "这是一个免费的比特币水龙头或比特币空投吗?",
-                "desc": "不完全是。免费的比特币水龙头允许人们在某些时间间隔内兑换一些免费的BTC。BTC BULL COIN为$BTCBULL代币持有者提供免费的比特币空投。您所需要做的就是将您的代币保存在您的钱包中，或者将您用来购买$BTCBULL代币的钱包导入您的钱包，便可获得资格。"
-            },
-            {
-                "title": "BTC BULL COIN的社交媒体和支持是什么?",
-                "desc": "在X（Twitter）和Telegram上关注BTC BULL COIN，加入所有比特币牛市的支持者，共同庆祝BTC的上升。在这里，您还可以随时了解项目的所有新闻和公告。"
-            },
-            {
-                "title": "如何进行$BTCBULL质押?",
-                "desc": "BTC BULL COIN建立在以太坊上，由智能合约保障，质押由Web3Toolkit技术提供支持。会有一部分$BTCBULL代币专门用于质押奖励。因此，将您的$BTCBULL代币发送到质押合约中可以赚取可变年化收益率（APY），并将其锁定直到社区销售结束。质押的代币可以在领取功能上线后7天内提取。"
-            },
-            {
-                "title": "我什么时候可以收到我的$BTCBULL代币?",
-                "desc": "在社区销售中购买$BTCBULL保证您通过安全的Web3Payments小部件分配代币。这些代币可以在社区销售结束后通过官方网站领取。如果您通过您的钱包移动应用程序购买$BTCBULL，您将享受完全的集成功能，如直接领取代币、查看您的代币余额、实时查看代币销售价格，并在上市后立即进行DEX交易。"
-            }
-        ]
-    },
-    "footer": {
-        "sub": "免责声明",
-        "text": "免责声明：BTC BULL COIN是一种投机性的表情币资产，链接到比特币的社会和市场价值。加密货币市场存在您可能失去所有资金的风险。本网站上的内容不是财务建议。请自行研究并持有到100万美元！",
-        "copyRight": ""
+      "headline": "BTC Hyper 预售",
+      "subheadline": "购买 $HYPER，助力比特币史上最快二层网络。",
+      "description": {
+        "line1": "BTC Hyper 终于实现了快速且低成本的比特币交易。",
+        "line2": "释放了比特币的真正潜力。",
+        "highlight": ["支付", "表情包币", "去中心化应用"],
+        "line3": "2025 年将被铭记为 BTC Hyper 改变一切的一年。"
+      },
+      "tagline": "BTC Hyper，构建比特币的未来。",
+      "audit": {
+        "label": "信任与安全审计",
+        "provider": "Coinsult"
+      },
+      "bullets": ["可扩展性", "速度", "表情包"]
     }
-}
+  }
+  

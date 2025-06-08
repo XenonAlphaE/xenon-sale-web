@@ -1,137 +1,68 @@
 {
     "metadata": {
-        "title": "BTC BULL | Presale Crypto Tốt Nhất Cho Các Nhà Đầu Tư Bitcoin",
-        "description": "BTC BULL là đồng tiền meme Bitcoin chính thức. Mua presale $BTCBULL và nhận airdrop Bitcoin miễn phí khi BTC tăng giá trở thành tài sản số 1 thế giới!"
+      "title": "BTC Hyper | Presale Tiền Điện Tử Tốt Nhất Để Mua Ngay",
+      "description": "BTC Hyper là giải pháp Bitcoin Layer 2 hàng đầu và presale tiền điện tử tốt nhất dành cho Bitcoin. Nhanh, an toàn, có thể mở rộng – BTC Hyper là tương lai của Bitcoin."
     },
     "nav": {
-        "home": "TRANG CHỦ",
-        "staking": "STAKING",
-        "howtobuy": "CÁCH MUA",
-        "whitePaper": "BÁO CÁO TRẮNG",
-        "tokenomics": "KINH TẾ TOKEN",
-        "features": "TÍNH NĂNG",
-        "buyNow": "Mua Ngay",
-        "faq": "CÂU HỎI THƯỜNG GẶP",
-        "audit": "KIỂM TOÁN",
-        "roadmap": "LỘ TRÌNH",
-        "airdrop": "AIRDROP",
-        "about": "VỀ CHÚNG TÔI"
+      "home": "TRANG CHỦ",
+      "staking": "ĐẦU TƯ",
+      "howtobuy": "CÁCH MUA",
+      "whitePaper": "SÁCH TRẮNG",
+      "tokenomics": "TOKENOMICS",
+      "features": "TÍNH NĂNG",
+      "buyNow": "MUA $HYPER",
+      "faq": "CÂU HỎI THƯỜNG GẶP",
+      "audit": "KIỂM TOÁN",
+      "roadmap": "LỘ TRÌNH",
+      "airdrop": "AIRDROP",
+      "about": "VỀ CHÚNG TÔI"
     },
     "buyForm": {
-        "intro": "Mua $BTCBULL Trong Presale Ngay!",
-        "day": "Ngày",
-        "hrs": "Giờ",
-        "mins": "Phút",
-        "sec": "Giây",
-        "funRaised": "USDT Đã Quyên Góp",
-        "wallet": "Ví CỦA BẠN",
-        "boughtAmount": "SỐ LƯỢNG MUA CỦA BẠN",
-        "stakeableAmount": "SỐ LƯỢNG CÓ THỂ STAKE",
-        "pay": "Thanh Toán Với",
-        "get": "Nhận",
-        "buyNow": "MUA NGAY",
-        "buyMax": "MUA TỐI ĐA",
-        "warning": "Vui lòng cài đặt Metamask để mua",
-        "link": "bấm vào đây",
-        "connectWallet": "KẾT NỐI VÍ",
-        "ethOption": "MẠNG ETH",
-        "switchOption": "THAY ĐỔI MẠNG",
-        "bnbOption": "MẠNG BNB",
-        "buyStake": "Mua và Staking để nhận 1304% Phần Thưởng",
-        "nextPriceAlert": "CHO ĐẾN KHI GIÁ TĂNG",
-        "para1": "Phần thưởng staking 1207%"
+      "intro": "MUA",
+      "intro1": "NGAY",
+      "day": "Ngày",
+      "hrs": "Giờ",
+      "mins": "Phút",
+      "sec": "Giây",
+      "funRaised": "USDT Đã Gây Quỹ",
+      "wallet": "Ví Của Bạn",
+      "boughtAmount": "SỐ LƯỢNG ĐÃ MUA",
+      "stakeableAmount": "SỐ LƯỢNG CÓ THỂ ĐẦU TƯ",
+      "pay": "Thanh toán bằng",
+      "get": "Nhận",
+      "buyNow": "MUA $HYPER",
+      "buyMax": "MUA TỐI ĐA",
+      "warning": "Vui lòng cài đặt Metamask để mua",
+      "link": "nhấn vào đây",
+      "connectWallet": "KẾT NỐI VÍ",
+      "ethOption": "MẠNG ETH",
+      "switchOption": "CHUYỂN MẠNG",
+      "bnbOption": "MẠNG BNB",
+      "buyStake": " Mua và Đầu tư để nhận thưởng 1052%",
+      "nextPriceAlert": "ĐẾN KHI GIÁ TĂNG",
+      "para1": "THƯỞNG ĐẦU TƯ 1052%"
+    },
+    "promoBanner": {
+      "badge": "THƯỞNG ĐẦU TƯ 1052%",
+      "title": "CHAIN LAYER 2 BITCOIN ĐẦU TIÊN",
+      "subtitle": "KHẢ NĂNG MỞ RỘNG VÀ TỐC ĐỘ CHO BITCOIN CUỐI CÙNG ĐÃ ĐẾN",
+      "cta": "ĐỢT PRESALE ĐANG DIỄN RA"
     },
     "header": {
-        "heading1": "BTC BULL COIN",
-        "heading2": "Presale Crypto Tốt Nhất Của Bitcoin",
-        "desc": "BTC BULL COIN là lực lượng không thể cản phá đẩy Bitcoin về mốc $1M+! Mua $BTCBULL và kiếm Bitcoin khi BTC trở thành tài sản số 1 thế giới!"
-    },
-    "about": {
-        "featuresIn": "Nổi Bật Trong",
-        "heading1": "Chính Thức",
-        "heading2": "Bitcoin Meme Coin",
-        "desc": "Bitcoin là tài sản có hiệu suất tốt nhất trong lịch sử với AAR 230% – tăng hơn 200 triệu phần trăm kể từ khi ra mắt. Hãy tham gia ngay để tận hưởng chuyến đi trong đời khi BTC BULL COIN lao nhanh về mốc $250K BTC và hơn thế nữa!",
-        "buynow": "Mua Ngay",
-        "cardTitle1": "Kiếm Airdrop Bitcoin!",
-        "cardDesc1": "Giữ token $BTCBULL để nhận airdrop BTC khi giá của tài sản vĩ đại này tăng lên! Một airdrop khổng lồ $BTCBULL cũng đang chờ đón những người giữ lâu nhất khi BTC đạt $250,000, tỷ lệ với số tiền mua trong Community Sale của bạn.",
-        "cardTitle2": "Staking Để Kiếm",
-        "cardDesc2": "BTC BULL COIN được thiết kế để thưởng cho những người tin tưởng theo mọi cách. Được xây dựng trên Ethereum với staking APY cao trong hợp đồng thông minh an toàn, phần thưởng $BTCBULL sẽ được phát hành cho những người stake trong suốt thời gian Community Sale và trong hai năm tiếp theo.",
-        "cardTitle3": "Mốc Đốt Token",
-        "cardDesc3": "BTC BULL COIN nhằm thưởng cho những người giữ khi giá Bitcoin tăng lên. Mỗi khi BTC tăng thêm $25K, một phần của nguồn cung token $BTCBULL sẽ bị đốt cháy vĩnh viễn, tạo áp lực giá tăng. Chúng tôi đốt và chúng tôi tăng, rồi lại lặp lại!"
-    },
-    "roadmap": {
-        "heading1": "BTC BULL COIN",
-        "heading2": "Lộ Trình",
-        "desc": "BTC BULL COIN mang vinh quang và phần thưởng đến tất cả những người tin tưởng. Trên con đường không thể tránh khỏi để giá BTC vượt qua $1M, BTC BULL COIN sẽ đốt token khi giá BTC tăng và airdrop BTC cho những người giữ mạnh nhất! Thêm vào đó, một airdrop khổng lồ $BTCBULL khi BTC đạt $250K!",
-        "milestones": "Cột Mốc Dự Án",
-        "item1": "Presale $BTCBULL!",
-        "item2": "Đốt Token!",
-        "item3": "Airdrop BTC!",
-        "item4": "Đốt Token!",
-        "item5": "Airdrop BTC!",
-        "item6": "Đốt Token!",
-        "item7": "Airdrop $BTCBULL!"
-    },
-    "howtobuy": {
-        "heading1": "Cách Mua",
-        "heading2": "BTC BULL COIN",
-        "title1": "Bước 1:",
-        "desc1": "Để tận dụng BTC BULL COIN và xu hướng tăng giá của Bitcoin, bạn cần có một ví DeFi như MetaMask, Trust hoặc bất kỳ ví nào khác. Kết nối ví của bạn với widget bán trước ở đầu trang này.",
-        "title2": "Bước 2:",
-        "desc2": "Có ETH hoặc USDT để tiếp tục. Nạp tiền hoặc mua crypto trực tiếp trong ví để tài trợ cho việc mua $BTCBULL của bạn. Đảm bảo bạn còn đủ ETH để thanh toán phí gas.",
-        "title3": "Bước 3:",
-        "desc3": "Staking có sẵn trên Ethereum để tăng lượng $BTCBULL của bạn. Nếu bạn chọn staking, làm theo hướng dẫn trên widget. APY sẽ thay đổi theo thời gian.",
-        "title4": "Bước 4:",
-        "desc4": "Sau khi hoàn tất mua, số dư token $BTCBULL của bạn sẽ hiển thị trên widget mua. Những token này có thể được nhận khi đợt bán trước của BTC BULL COIN kết thúc hoặc hết thời gian."
-    },
-    "tokenomics": {
-        "heading1": "BTC BULL COIN",
-        "heading2": "Kinh Tế Token",
-        "item1": "Quỹ Bull",
-        "item2": "Quỹ Đốt Milestone",
-        "item3": "$BTCBULL Airdrop",
-        "item4": "Phân Phối Staking",
-        "item5": "Thanh Khoản Sàn Giao Dịch",
-        "item6": "PR và Marketing",
-        "total": "Tổng Cung:"
-    },
-    "faqs": {
-        "heading1": "BTC BULL COIN",
-        "heading2": "Câu Hỏi Thường Gặp",
-        "data": [
-            {
-                "title": "BTC BULL COIN là gì?",
-                "desc": "BTC BULL COIN là một đồng meme coin được xây dựng để hỗ trợ Bitcoin vươn tới mức $250,000 và hơn thế nữa. BTC BULL COIN không sợ hãi trước bất kỳ lực lượng nào muốn ngăn cản sự trỗi dậy của nó để trở thành tài sản đầu tư tốt nhất thế giới. Tham gia vào đợt bán trước crypto này cùng chúng tôi để trải nghiệm chuyến đi cả đời khi chúng ta vượt qua mọi đối thủ trong lịch sử, thu hút hàng triệu người ủng hộ mới, và hướng tới vị trí tài sản số 1 thế giới vượt qua vàng!"
-            },
-            {
-                "title": "Tại sao tôi nên mua đợt bán trước crypto $BTCBULL?",
-                "desc": "BTC BULL COIN là sự lựa chọn tối ưu cho chu kỳ tăng giá tiếp theo của Bitcoin (BTC), có thể làm cho $BTCBULL trở thành đợt bán trước crypto tốt nhất để mua trong năm 2025. $BTCBULL là một đồng meme coin với cộng đồng nhiệt huyết, cam kết hỗ trợ con bò trong tất cả chúng ta. Điều này có nghĩa là, ngay cả khi BTC đạt $150K thì FUD vẫn không thể ngăn cản bạn. Tại đây, chúng ta xây dựng cộng đồng BTC BULL COIN, cùng nhau phát triển khi BTC tăng giá, và cuối cùng thu hoạch thành quả của lớp tài sản tốt nhất thế giới."
-            },
-            {
-                "title": "Tôi có thể thật sự nhận airdrop Bitcoin miễn phí không?",
-                "desc": "Con bò có bao giờ lưỡng lự không? Có! Giữ token $BTCBULL trong ví của bạn và bạn sẽ nhận được airdrop BTC khi giá Bitcoin đạt $150,000 và $200,000. Các airdrop BTC sẽ được gửi vào địa chỉ BTC trong ví của bạn, và số lượng sẽ được tính theo số token $BTCBULL bạn đã mua trong đợt bán cộng đồng."
-            },
-            {
-                "title": "Đây có phải là một faucet Bitcoin miễn phí hay airdrop Bitcoin không?",
-                "desc": "Không hẳn vậy. Faucet Bitcoin miễn phí cho phép mọi người nhận một ít BTC miễn phí tại các thời điểm nhất định. BTC BULL COIN đang cung cấp airdrop Bitcoin miễn phí cho những người nắm giữ token $BTCBULL. Bạn chỉ cần giữ token của mình trong ví, hoặc nhập ví bạn đã sử dụng để mua token $BTCBULL vào ví của bạn để đủ điều kiện nhận airdrop."
-            },
-            {
-                "title": "BTC BULL COIN có hỗ trợ trên mạng xã hội nào không?",
-                "desc": "Theo dõi BTC BULL COIN trên X (Twitter) và Telegram để gia nhập cộng đồng Bitcoin Bull và chúc mừng sự thăng tiến của BTC. Tại đây, bạn cũng có thể cập nhật thông tin dự án và các thông báo mới nhất."
-            },
-            {
-                "title": "Staking $BTCBULL hoạt động như thế nào?",
-                "desc": "BTC BULL COIN được xây dựng trên nền tảng Ethereum và bảo mật bằng hợp đồng thông minh, với staking được hỗ trợ bởi công nghệ Web3Toolkit. Một phần token $BTCBULL được dành cho phần thưởng staking. Vì vậy, khi bạn chuyển token $BTCBULL vào hợp đồng staking, bạn sẽ nhận được APY thay đổi và token sẽ bị khóa cho đến khi đợt bán cộng đồng kết thúc. Các token đã staking có thể được rút sau 7 ngày khi chương trình yêu cầu nhận token chính thức."
-            },
-            {
-                "title": "Khi nào tôi sẽ nhận được token $BTCBULL của mình?",
-                "desc": "Mua $BTCBULL trong đợt bán cộng đồng đảm bảo quyền mua của bạn thông qua widget Web3Payments bảo mật. Các token này có thể được nhận qua trang web chính thức khi đợt bán cộng đồng kết thúc. Nếu bạn mua $BTCBULL qua ứng dụng ví di động, bạn sẽ được hưởng các quyền lợi tích hợp đầy đủ như nhận token trực tiếp, truy cập vào số dư token và giá trực tiếp trong suốt đợt bán token, và giao dịch DEX ngay khi token ra mắt."
-            }
-        ]
-    },
-    "footer": {
-        "sub": "Từ Chối Trách Nhiệm",
-        "text": "TỪ CHỐI TRÁCH NHIỆM: BTC BULL COIN là một tài sản meme coin mang tính đầu cơ, liên kết với giá trị xã hội và thị trường của Bitcoin. Thị trường cryptocurrency mang theo rủi ro mà bạn có thể mất toàn bộ vốn đầu tư. Không có gì trên trang web này là lời khuyên tài chính. Tự nghiên cứu và HODL đến $1M!",
-        "copyRight": ""
+      "headline": "ĐỢT PRESALE BTC HYPER",
+      "subheadline": "MUA $HYPER TRƯỚC KHI NÓ VẬN HÀNH LỚP NHANH NHẤT TRONG LỊCH SỬ BITCOIN.",
+      "description": {
+        "line1": "BTC Hyper cuối cùng đã mở khóa giao dịch Bitcoin nhanh và rẻ.",
+        "line2": "Điều này giải phóng sức mạnh thực sự của Bitcoin.",
+        "highlight": ["Thanh Toán", "Meme Coins", "dApps"],
+        "line3": "Năm 2025 sẽ được nhớ đến là năm BTC Hyper thay đổi mọi thứ."
+      },
+      "tagline": "BTC Hyper. Xây dựng Tương Lai Bitcoin.",
+      "audit": {
+        "label": "KIỂM TOÁN AN TOÀN VÀ ĐÁNG TIN CẬY",
+        "provider": "Coinsult"
+      },
+      "bullets": ["KHẢ NĂNG MỞ RỘNG", "TỐC ĐỘ", "MEMES"]
     }
-}
+  }
+  

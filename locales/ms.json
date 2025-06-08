@@ -1,137 +1,68 @@
 {
     "metadata": {
-        "title": "BTC BULL | Pra-Jualan Kripto Terbaik Untuk Bitcoin Bulls",
-        "description": "BTC BULL adalah duit syiling meme Bitcoin rasmi. Beli pra-jualan kripto $BTCBULL dan dapatkan airdrop Bitcoin percuma apabila BTC naik untuk menjadi aset No.1 di dunia!"
+      "title": "BTC Hyper | Presale Kripto Terbaik Untuk Dibeli Sekarang",
+      "description": "BTC Hyper adalah penyelesaian Bitcoin Layer 2 terkemuka dan presale kripto terbaik yang dibina untuk Bitcoin. Pantas, selamat, dan boleh skala – BTC Hyper adalah masa depan Bitcoin."
     },
     "nav": {
-        "home": "LAMAN UTAMA",
-        "staking": "STAKING",
-        "howtobuy": "BAGAIMANA UNTUK BELI",
-        "whitePaper": "KERTAS PUTIH",
-        "tokenomics": "TOKENOMIK",
-        "features": "CIRI-CIRI",
-        "buyNow": "Beli Sekarang",
-        "faq": "SOALAN LAZIM",
-        "audit": "AUDIT",
-        "roadmap": "PETA JALAN",
-        "airdrop": "AIRDROP",
-        "about": "TENTANG"
+      "home": "UTAMA",
+      "staking": "STAKING",
+      "howtobuy": "CARA MEMBELI",
+      "whitePaper": "KERTAS PUTIH",
+      "tokenomics": "TOKENOMIK",
+      "features": "CIRI-CIRI",
+      "buyNow": "BELI $HYPER",
+      "faq": "SOALAN LAZIM",
+      "audit": "AUDIT",
+      "roadmap": "PETA JALAN",
+      "airdrop": "AIRDROP",
+      "about": "TENTANG"
     },
     "buyForm": {
-        "intro": "Beli $BTCBULL Dalam Pra-Jualan Sekarang!",
-        "day": "Hari",
-        "hrs": "Jam",
-        "mins": "Minit",
-        "sec": "Saat",
-        "funRaised": "USDT Dikumpulkan",
-        "wallet": "WALLET ANDA",
-        "boughtAmount": "PEMBELIAN ANDA",
-        "stakeableAmount": "AMAUN YANG BOLEH DI-STAKE",
-        "pay": "Bayar dengan",
-        "get": "Terima",
-        "buyNow": "BELI SEKARANG",
-        "buyMax": "BELI MAKSIMUM",
-        "warning": "Sila pasang Metamask untuk membeli",
-        "link": "klik di sini",
-        "connectWallet": "SAMBUNGKAN WALLET",
-        "ethOption": "RANGKAIAN ETH",
-        "switchOption": "TUKAR RANGKAIAN",
-        "bnbOption": "RANGKAIAN BNB",
-        "buyStake": "Beli dan Stake untuk Ganjaran 1304%",
-        "nextPriceAlert": "SEHINGGA HARGA NAIK",
-        "para1": "Ganjaran staking 1207%"
+      "intro": "BELI",
+      "intro1": "SEKARANG",
+      "day": "Hari",
+      "hrs": "Jam",
+      "mins": "Minit",
+      "sec": "Saat",
+      "funRaised": "USDT Dikumpul",
+      "wallet": "Dompet ANDA",
+      "boughtAmount": "PEMBELIAN ANDA",
+      "stakeableAmount": "BOLEH DI-STAKE",
+      "pay": "Bayar dengan",
+      "get": "Terima",
+      "buyNow": "BELI $HYPER",
+      "buyMax": "BELI MAKSIMA",
+      "warning": "Sila pasang Metamask untuk membeli",
+      "link": "klik di sini",
+      "connectWallet": "SAMBUNGKAN DOMPET",
+      "ethOption": "RANGKAIAN ETH",
+      "switchOption": "TUKAR RANGKAIAN",
+      "bnbOption": "RANGKAIAN BNB",
+      "buyStake": " Beli dan Stake untuk Ganjaran 1052%",
+      "nextPriceAlert": "HINGGA HARGA NAIK",
+      "para1": "GANJARAN STAKING 1052%"
+    },
+    "promoBanner": {
+      "badge": "GANJARAN STAKING 1052%",
+      "title": "RANTAI LAYER 2 BITCOIN PERTAMA",
+      "subtitle": "KEBOLEHSKALAN DAN KELAJUAN UNTUK BITCOIN AKHIRNYA HADIR",
+      "cta": "PRESALE SEDANG BERLANGSUNG"
     },
     "header": {
-        "heading1": "BTC BULL COIN",
-        "heading2": "Pra-Jualan Kripto Terbaik Bitcoin",
-        "desc": "BTC BULL COIN adalah kuasa yang tidak dapat dihentikan yang mendorong Bitcoin ke arah $1J+! Beli $BTCBULL dan dapatkan Bitcoin apabila BTC menjadi aset No.1 di dunia!"
-    },
-    "about": {
-        "featuresIn": "Dipaparkan Dalam",
-        "heading1": "Yang Rasmi",
-        "heading2": "Duit Syiling Meme Bitcoin",
-        "desc": "Bitcoin adalah aset yang paling berprestasi dalam sejarah dengan AAR sebanyak 230% – meningkat lebih daripada 200 juta peratus sejak penubuhan. Kini, sertai perjalanan hidup anda apabila BTC BULL COIN meluncur ke arah $250K BTC dan lebih lagi!",
-        "buynow": "Beli Sekarang",
-        "cardTitle1": "Dapatkan Airdrop Bitcoin!",
-        "cardDesc1": "Pegang token $BTCBULL untuk menerima airdrop BTC apabila harga aset terbesar meningkat! Satu airdrop besar $BTCBULL juga menanti pemegang kuat apabila BTC mencapai $250,000, berdasarkan jumlah pembelian Jualan Komuniti anda.",
-        "cardTitle2": "Stake Untuk Dapatkan",
-        "cardDesc2": "BTC BULL COIN direka untuk memberi ganjaran kepada pengikutnya dalam pelbagai cara. Dibina di Ethereum dengan staking APY yang tinggi dalam kontrak pintar yang selamat, ganjaran $BTCBULL akan diberikan kepada staker sepanjang Jualan Komuniti dan selama dua tahun akan datang.",
-        "cardTitle3": "Pencapaian Pembakaran Token",
-        "cardDesc3": "BTC BULL COIN bertujuan untuk memberi ganjaran kepada hodlers apabila harga Bitcoin meningkat. Setiap kali BTC meningkat sebanyak $25K, peratusan bekalan token $BTCBULL akan dibakar selama-lamanya, mencipta tekanan harga ke atas. Kami bakar dan kami naik, dan ulangi!"
-    },
-    "roadmap": {
-        "heading1": "BTC BULL COIN",
-        "heading2": "Peta Jalan",
-        "desc": "BTC BULL COIN membawa kemuliaan dan ganjaran kepada semua pengikut. Sepanjang perjalanan yang tidak dapat dielakkan ke arah harga BTC melebihi $1J, BTC BULL COIN akan membakar bekalan token apabila harga BTC meningkat dan memberikan airdrop BTC kepada pemegang terkuat! Tambahan pula, satu airdrop besar $BTCBULL akan berlaku pada harga $250K BTC!",
-        "milestones": "Pencapaian Projek",
-        "item1": "Pra-Jualan $BTCBULL!",
-        "item2": "Pembakaran Token!",
-        "item3": "Airdrop BTC!",
-        "item4": "Pembakaran Token!",
-        "item5": "Airdrop BTC!",
-        "item6": "Pembakaran Token!",
-        "item7": "Airdrop $BTCBULL!"
-    },
-    "howtobuy": {
-        "heading1": "Cara Membeli",
-        "heading2": " BTC BULL COIN",
-        "title1": "Langkah 1:",
-        "desc1": "Untuk memanfaatkan BTC BULL COIN dan lonjakan Bitcoin, anda memerlukan dompet DeFi kripto seperti MetaMask, Trust atau mana-mana. Sambungkan ke widget prajual di bahagian atas halaman ini.",
-        "title2": "Langkah 2:",
-        "desc2": "Anda perlukan ETH atau USDT untuk meneruskan. Lakukan deposit atau beli kripto secara langsung di Wallet untuk membiayai pembelian $BTCBULL anda. Pastikan anda mempunyai cukup ETH untuk membayar yuran gas.",
-        "title3": "Langkah 3:",
-        "desc3": "Staking tersedia di Ethereum untuk meningkatkan pegangan $BTCBULL anda. Jika anda memilih untuk melakukan staking, ikuti arahan pada widget. APY adalah dinamik dan boleh berubah dari masa ke masa.",
-        "title4": "Langkah 4:",
-        "desc4": "Selepas menyelesaikan pembelian anda, baki token $BTCBULL anda akan dipaparkan pada widget beli. Token ini boleh ditebus setelah prajual BTC BULL COIN habis dijual atau tamat tempoh."
-    },
-    "tokenomics": {
-        "heading1": "BTC BULL COIN",
-        "heading2": "Tokenomics",
-        "item1": "Dana Bull",
-        "item2": "Dana Pembakaran Milestone",
-        "item3": "$BTCBULL Airdrop",
-        "item4": "Pengagihan Staking",
-        "item5": "Kecairan Tukaran",
-        "item6": "PR dan Pemasaran",
-        "total": "Jumlah Bekalan:"
-    },
-    "faqs": {
-        "heading1": "BTC BULL COIN",
-        "heading2": "Soalan Lazim",
-        "data": [
-            {
-                "title": "Apakah BTC BULL COIN?",
-                "desc": "BTC BULL COIN adalah duit syiling meme yang dibina untuk menyokong perjalanan Bitcoin ke $250,000 dan seterusnya. BTC BULL COIN tidak terintimidasi oleh mana-mana kuasa yang cuba menghalang kenaikannya untuk menjadi aset pelaburan terbaik di dunia. Sertai kami dalam prajual kripto yang bersejarah ini untuk perjalanan seumur hidup sambil kita meninggalkan segala halangan sejarah, mengumpul jutaan penyokong baru, dan menuju tempat aset No.1 di dunia melebihi emas!"
-            },
-            {
-                "title": "Kenapa saya perlu membeli prajual $BTCBULL?",
-                "desc": "BTC BULL COIN adalah langkah utama untuk kitaran bull besar seterusnya yang akan datang untuk Bitcoin (BTC), yang mungkin menjadikan $BTCBULL prajual kripto terbaik untuk dibeli pada tahun 2025. $BTCBULL adalah duit syiling meme dengan komuniti yang bersemangat untuk menyokong bull dalam diri kita. Ini bermakna, walaupun $150K BTC adalah FUD – anda tidak cukup bullish. Di sini kami membangunkan komuniti BTC BULL COIN, kami bangkit seiring dengan kenaikan BTC, dan akhirnya kami menuai ganjaran daripada kelas aset terbaik di dunia."
-            },
-            {
-                "title": "Bolehkah saya benar-benar memperoleh airdrop Bitcoin percuma?",
-                "desc": "Adakah bull pernah gagap? Ya! Pegang token $BTCBULL dalam dompet anda dan anda akan menerima airdrop BTC apabila harga Bitcoin mencapai $150,000 dan $200,000. Airdrop BTC anda akan dihantar ke alamat BTC anda dalam dompet, dan jumlahnya akan dikira mengikut bilangan token $BTCBULL yang anda beli dalam Jualan Komuniti."
-            },
-            {
-                "title": "Adakah ini faucet Bitcoin percuma atau airdrop Bitcoin?",
-                "desc": "Tidak tepat. Faucet Bitcoin percuma membolehkan orang menebus BTC percuma pada selang masa tertentu. BTC BULL COIN menawarkan airdrop Bitcoin percuma kepada pemegang token $BTCBULL. Apa yang anda perlu lakukan ialah memegang token anda dalam dompet, atau import dompet yang anda gunakan untuk membeli token $BTCBULL ke dalam dompet anda, untuk layak."
-            },
-            {
-                "title": "Apakah media sosial dan sokongan BTC BULL COIN?",
-                "desc": "Ikuti BTC BULL COIN di X (Twitter) dan Telegram untuk menyertai semua rakan Bitcoin Bull anda dan meraikan kenaikan BTC. Di sini anda juga boleh mendapatkan kemas kini mengenai berita dan pengumuman projek."
-            },
-            {
-                "title": "Bagaimana staking $BTCBULL berfungsi?",
-                "desc": "BTC BULL COIN dibina di Ethereum dan dilindungi oleh kontrak pintar, dengan staking dikuasakan oleh teknologi Web3Toolkit. Satu peruntukan token $BTCBULL disediakan untuk ganjaran staking. Oleh itu, menghantar token $BTCBULL anda ke kontrak staking membolehkan anda memperoleh APY yang berubah-ubah dan menguncinya sehingga tamat Jualan Komuniti. Token yang di-stake boleh dikeluarkan 7 hari selepas penebusan bermula."
-            },
-            {
-                "title": "Bila saya akan menerima token $BTCBULL saya?",
-                "desc": "Membeli $BTCBULL dalam Jualan Komuniti menjamin peruntukan anda melalui widget Web3Payments yang selamat. Token ini boleh ditebus melalui laman web rasmi setelah Jualan Komuniti tamat. Jika anda membeli $BTCBULL melalui aplikasi mudah alih Wallet anda, anda akan menikmati manfaat integrasi penuh seperti penebusan token langsung, akses kepada baki token anda dan harga langsung sepanjang jualan token, serta perdagangan DEX segera setelah pelancaran."
-            }
-        ]
-    },
-    "footer": {
-        "sub": "PENAFIAN",
-        "text": "PENAFIAN: BTC BULL COIN adalah aset meme spekulatif yang dikaitkan dengan nilai sosial dan pasaran Bitcoin. Pasaran kripto membawa risiko bahawa anda boleh kehilangan semua modal anda. Tiada apa-apa di laman web ini adalah nasihat kewangan. Lakukan Penyelidikan Sendiri dan HODL sehingga $1M!",
-        "copyRight": ""
+      "headline": "PRAJUALAN BTC HYPER",
+      "subheadline": "BELI $HYPER SEBELUM IA MENGUASAI LAYER TERPANTAS DALAM SEJARAH BITCOIN.",
+      "description": {
+        "line1": "BTC Hyper akhirnya membolehkan transaksi Bitcoin yang pantas dan murah.",
+        "line2": "Ini membebaskan kuasa sebenar Bitcoin.",
+        "highlight": ["Pembayaran", "Syiling Meme", "dApps"],
+        "line3": "2025 akan diingati sebagai tahun BTC Hyper mengubah segalanya."
+      },
+      "tagline": "BTC Hyper. Membangunkan Masa Depan Bitcoin.",
+      "audit": {
+        "label": "AUDIT KESELAMATAN DAN KEPERCAYAAN",
+        "provider": "Coinsult"
+      },
+      "bullets": ["KEBOLEHSKALAN", "KELAJUAN", "MEME"]
     }
-}
+  }
+  

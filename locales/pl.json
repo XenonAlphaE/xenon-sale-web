@@ -1,137 +1,68 @@
 {
     "metadata": {
-        "title": "BTC BULL | Najlepsza Przedsprzedaż Krypto dla Byków Bitcoina",
-        "description": "BTC BULL to oficjalna moneta memowa Bitcoina. Kup $BTCBULL w przedsprzedaży i zarabiaj darmowe airdropy Bitcoina, gdy BTC rośnie, by stać się aktywem numer 1 na świecie!"
+      "title": "BTC Hyper | Najlepsza Przedsprzedaż Kryptowalut do Zakupu Teraz",
+      "description": "BTC Hyper to wiodące rozwiązanie Bitcoin Layer 2 oraz najlepsza przedsprzedaż kryptowalut stworzona dla Bitcoina. Szybki, bezpieczny, skalowalny – BTC Hyper to przyszłość Bitcoina."
     },
     "nav": {
-        "home": "STRONA GŁÓWNA",
-        "staking": "STAKING",
-        "howtobuy": "JAK KUPIĆ",
-        "whitePaper": "BIAŁA KSIĘGA",
-        "tokenomics": "TOKENOMIKA",
-        "features": "CECHY",
-        "buyNow": "Kup Teraz",
-        "faq": "FAQ",
-        "audit": "AUDYT",
-        "roadmap": "MAPA DROGI",
-        "airdrop": "AIRDROP",
-        "about": "O NAS"
+      "home": "STRONA GŁÓWNA",
+      "staking": "STAKING",
+      "howtobuy": "JAK KUPIĆ",
+      "whitePaper": "WHITE PAPER",
+      "tokenomics": "TOKENOMIKA",
+      "features": "FUNKCJE",
+      "buyNow": "KUP $HYPER",
+      "faq": "FAQ",
+      "audit": "AUDYT",
+      "roadmap": "MAPA DROGI",
+      "airdrop": "AIRDROP",
+      "about": "O NAS"
     },
     "buyForm": {
-        "intro": "Kup $BTCBULL w Przedsprzedaży Teraz!",
-        "day": "Dni",
-        "hrs": "Godziny",
-        "mins": "Minuty",
-        "sec": "Sekundy",
-        "funRaised": "Zebrane USDT",
-        "wallet": "TWÓJ Portfel",
-        "boughtAmount": "TWÓJ ZAKUPIONY",
-        "stakeableAmount": "TWÓJ MOŻLIWY STAKE",
-        "pay": "Płać przez",
-        "get": "Otrzymaj",
-        "buyNow": "KUP TERAZ",
-        "buyMax": "KUP MAX",
-        "warning": "Zainstaluj Metamask, aby kupić",
-        "link": "kliknij tutaj",
-        "connectWallet": "POŁĄCZ PORTFEL",
-        "ethOption": "SIEĆ ETH",
-        "switchOption": "ZMIENIĆ SIEĆ",
-        "bnbOption": "SIEĆ BNB",
-        "buyStake": "Kup i Stakuj dla 1304% Nagrody",
-        "nextPriceAlert": "DO WZROSTU CENY",
-        "para1": "1207% nagród za staking"
+      "intro": "KUP",
+      "intro1": "TERAZ",
+      "day": "Dni",
+      "hrs": "Godziny",
+      "mins": "Minuty",
+      "sec": "Sekundy",
+      "funRaised": "Zebrane USDT",
+      "wallet": "TWOJ Portfel",
+      "boughtAmount": "TWOJE ZAKUPY",
+      "stakeableAmount": "DO STAKOWANIA",
+      "pay": "Zapłać za pomocą",
+      "get": "Otrzymaj",
+      "buyNow": "KUP $HYPER",
+      "buyMax": "KUP MAKS",
+      "warning": "Zainstaluj Metamask, aby kupić",
+      "link": "kliknij tutaj",
+      "connectWallet": "POŁĄCZ PORTFEL",
+      "ethOption": "SIEĆ ETH",
+      "switchOption": "ZMIENIĆ SIEĆ",
+      "bnbOption": "SIEĆ BNB",
+      "buyStake": "Kup i stakuj, aby zdobyć 1052% nagród",
+      "nextPriceAlert": "DO ZWIĘKSZENIA CENY",
+      "para1": "1052% NAGRÓD ZA STAKING"
+    },
+    "promoBanner": {
+      "badge": "1052% NAGRÓD ZA STAKING",
+      "title": "PIERWSZY ŁAŃCUCH BITCOIN LAYER 2",
+      "subtitle": "SKALOWALNOŚĆ I SZYBKOŚĆ DLA BITCOINA WRESZCIE DOSTĘPNE",
+      "cta": "PRZEDSPRZEDAŻ W TRAKCIE"
     },
     "header": {
-        "heading1": "BTC BULL COIN",
-        "heading2": "Najlepsza Przedsprzedaż Krypto Bitcoina",
-        "desc": "BTC BULL COIN to niepowstrzymana siła, która pcha Bitcoin w stronę $1M+! Kup $BTCBULL i zarabiaj Bitcoina, gdy BTC staje się aktywem numer 1 na świecie!"
-    },
-    "about": {
-        "featuresIn": "Prezentowane w",
-        "heading1": "Oficjalna",
-        "heading2": "Moneta Memowa Bitcoina",
-        "desc": "Bitcoin to najlepiej performujący aktyw w historii z roczną stopą zwrotu (AAR) na poziomie 230% – wzrosło o ponad 200 milionów procent od jego powstania. Teraz wskocz na pokład i przeżyj najlepszą podróż swojego życia, gdy BTC BULL COIN biegnie w stronę $250K BTC i dalej!",
-        "buynow": "Kup Teraz",
-        "cardTitle1": "Zarób Airdropy Bitcoina!",
-        "cardDesc1": "Trzymaj tokeny $BTCBULL, aby otrzymywać airdropy BTC, gdy cena tego najpotężniejszego aktywa rośnie! Ogromny airdrop $BTCBULL czeka również na najsilniejszych hodlerów, gdy BTC osiągnie $250,000, waży na podstawie twojej kwoty zakupu w Community Sale.",
-        "cardTitle2": "Stakuj, aby Zarabiać",
-        "cardDesc2": "BTC BULL COIN jest zaprojektowany, by nagradzać wierzących na każdy sposób. Zbudowany na Ethereum z wysokim APY w stakingu w bezpiecznym smart kontrakcie, nagrody $BTCBULL będą wydawane stakerom przez okres Community Sale i przez następne dwa lata.",
-        "cardTitle3": "Kamienie Milowe Spalenia Tokenów",
-        "cardDesc3": "BTC BULL COIN ma na celu nagradzanie hodlerów, gdy cena Bitcoina rośnie. Za każdym razem, gdy BTC wzrośnie o kolejne $25K, procent podaży tokenów $BTCBULL zostanie na zawsze spalony, tworząc presję na wzrost cen. Spalamy i rośniemy, powtarzamy!"
-    },
-    "roadmap": {
-        "heading1": "BTC BULL COIN",
-        "heading2": "Mapa Drogi",
-        "desc": "BTC BULL COIN przynosi chwałę i nagrody wszystkim wierzącym. Na nieuniknionej drodze do ceny BTC przekraczającej $1M, BTC BULL COIN będzie spalać podaż tokenów, gdy cena BTC rośnie i rozsyłać airdropy BTC do najsilniejszych hodlerów! Dodatkowo, ogromny airdrop $BTCBULL przy $250K BTC!",
-        "milestones": "Kamienie Milowe Projektu",
-        "item1": "Przedsprzedaż $BTCBULL!",
-        "item2": "Spalenie Tokenów!",
-        "item3": "Airdrop BTC!",
-        "item4": "Spalenie Tokenów!",
-        "item5": "Airdrop BTC!",
-        "item6": "Spalenie Tokenów!",
-        "item7": "Airdrop $BTCBULL!"
-    },
-    "howtobuy": {
-        "heading1": "Jak Kupić",
-        "heading2": "BTC BULL COIN",
-        "title1": "Krok 1:",
-        "desc1": "Aby skorzystać z BTC BULL COIN i hossy Bitcoina, potrzebujesz portfela DeFi, takiego jak MetaMask, Trust lub inny. Połącz go z widgetem przedsprzedaży u góry tej strony.",
-        "title2": "Krok 2:",
-        "desc2": "Musisz posiadać ETH lub USDT, aby kontynuować. Zrób depozyt lub kup kryptowalutę bezpośrednio w portfelu, aby zasilić swoją zakup $BTCBULL. Upewnij się, że masz wystarczająco dużo ETH, aby opłacić opłaty za gaz.",
-        "title3": "Krok 3:",
-        "desc3": "Staking jest dostępny na Ethereum, aby zwiększyć swoje posiadanie $BTCBULL. Jeśli zdecydujesz się na staking, postępuj zgodnie z instrukcjami w widgetcie. APY jest dynamiczne i może zmieniać się z czasem.",
-        "title4": "Krok 4:",
-        "desc4": "Po dokonaniu zakupu, saldo tokenów $BTCBULL pojawi się w widgetcie zakupu. Te tokeny będą dostępne do odebrania, gdy przedsprzedaż BTC BULL COIN się zakończy lub upłynie czas."
-    },
-    "tokenomics": {
-        "heading1": "BTC BULL COIN",
-        "heading2": "Tokenomika",
-        "item1": "Fundusz Byka",
-        "item2": "Fundusz Spalenia Kamieni Milowych",
-        "item3": "$BTCBULL Airdrop",
-        "item4": "Dystrybucja Stakingu",
-        "item5": "Płynność Wymiany",
-        "item6": "PR i Marketing",
-        "total": "Całkowita Podaż:"
-    },
-    "faqs": {
-        "heading1": "BTC BULL COIN",
-        "heading2": "FAQ",
-        "data": [
-            {
-                "title": "Co to jest BTC BULL COIN?",
-                "desc": "BTC BULL COIN to coin meme, stworzony, by wspierać wzrost Bitcoina do 250 000 $ i więcej. BTC BULL COIN nie boi się żadnych sił, które próbują zatrzymać jego wzrost na drodze do zostania najlepszym aktywem inwestycyjnym na świecie. Dołącz do nas w tej przełomowej przedsprzedaży kryptowalut, by przeżyć jazdę życia, zostawiając za sobą wszystkie historyczne opory, gromadząc miliony nowych zwolenników, i dążąc do pierwszego miejsca na rynku wyprzedzając złoto!"
-            },
-            {
-                "title": "Dlaczego powinienem kupić przedsprzedaż $BTCBULL?",
-                "desc": "BTC BULL COIN to idealny wybór na nadchodzący ogromny cykl hossy Bitcoina (BTC), co czyni $BTCBULL najlepszą przedsprzedażą kryptowalut na 2025 rok. $BTCBULL to coin meme z pasjonowaną społecznością, która wspiera byka w każdym z nas. Oznacza to, że nawet BTC na poziomie 150 000 $ to FUD – nie jesteś wystarczająco byczy. Tutaj rozwijamy społeczność BTC BULL COIN, wznosimy się razem z BTC, a w końcu zbieramy nagrody za najlepszą klasę aktywów na świecie."
-            },
-            {
-                "title": "Czy naprawdę mogę zdobyć darmowe airdropy Bitcoinów?",
-                "desc": "Czy byk kiedykolwiek się potknął? Tak! Trzymaj tokeny $BTCBULL w swoim portfelu, a otrzymasz airdropy BTC, gdy cena Bitcoina osiągnie 150 000 $ i 200 000 $. Twoje airdropy BTC będą wysyłane na twój adres BTC w portfelu, a kwota będzie uzależniona od liczby tokenów $BTCBULL, które kupiłeś w Przedsprzedaży Społecznościowej."
-            },
-            {
-                "title": "Czy to darmowy kran Bitcoinów lub airdrop Bitcoinów?",
-                "desc": "Nie do końca. Darmowy kran Bitcoinów pozwala ludziom odbierać trochę BTC w określonych odstępach czasu. BTC BULL COIN oferuje darmowe airdropy Bitcoinów dla posiadaczy tokenów $BTCBULL. Wszystko, co musisz zrobić, to trzymać swoje tokeny w portfelu, lub zaimportować portfel, którego użyłeś do zakupu tokenów $BTCBULL, aby być uprawnionym."
-            },
-            {
-                "title": "Jaki jest BTC BULL COIN w mediach społecznościowych i wsparcie?",
-                "desc": "Śledź BTC BULL COIN na X (Twitter) i Telegramie, aby dołączyć do wszystkich innych Bitcoinowych Byków i świętować wzrost BTC. Tutaj będziesz na bieżąco z wszelkimi wiadomościami i ogłoszeniami projektu."
-            },
-            {
-                "title": "Jak działa staking $BTCBULL?",
-                "desc": "BTC BULL COIN jest zbudowany na Ethereum i zabezpieczony przez smart kontrakty, a staking jest napędzany przez technologię Web3Toolkit. Część tokenów $BTCBULL jest przeznaczona na nagrody stakingowe. Dlatego wysyłając swoje tokeny $BTCBULL do kontraktu stakingowego, możesz zarabiać zmienne APY i zamrozić je aż do końca Przedsprzedaży Społecznościowej. Stakowane tokeny można wycofać 7 dni po rozpoczęciu procesu odbioru."
-            },
-            {
-                "title": "Kiedy otrzymam moje tokeny $BTCBULL?",
-                "desc": "Zakup $BTCBULL w Przedsprzedaży Społecznościowej gwarantuje twoją alokację poprzez bezpieczny widget Web3Payments. Te tokeny będą dostępne do odebrania na oficjalnej stronie po zakończeniu Przedsprzedaży Społecznościowej. Jeśli zakupisz $BTCBULL przez aplikację mobilną Twojego portfela, będziesz cieszyć się pełną integracją, taką jak bezpośrednie odbieranie tokenów, dostęp do salda tokenów i aktualne ceny przez cały czas trwania sprzedaży tokenów, oraz natychmiastowy handel DEX po uruchomieniu."
-            }
-        ]
-    },
-    "footer": {
-        "sub": "ZASTRZEŻENIE",
-        "text": "ZASTRZEŻENIE: BTC BULL COIN to spekulacyjny coin meme związany z wartością społeczną i rynkową Bitcoina. Rynek kryptowalut wiąże się z ryzykiem utraty całego kapitału. Nic na tej stronie nie stanowi porady finansowej. DYOR i HODL do 1M $!",
-        "copyRight": ""
+      "headline": "PRZEDSPRZEDAŻ BTC HYPER",
+      "subheadline": "KUP $HYPER ZANIM ZASILI NAJSZYBSZĄ WARSTWĘ W HISTORII BITCOINA.",
+      "description": {
+        "line1": "BTC Hyper wreszcie odblokowuje szybkie i tanie transakcje Bitcoin.",
+        "line2": "To uwalnia prawdziwą moc Bitcoina.",
+        "highlight": ["Płatności", "Meme Coiny", "dApps"],
+        "line3": "2025 zostanie zapamiętany jako rok, w którym BTC Hyper zmienił wszystko."
+      },
+      "tagline": "BTC Hyper. Budujemy Przyszłość Bitcoina.",
+      "audit": {
+        "label": "AUDYTY ZAUFANIA I BEZPIECZEŃSTWA",
+        "provider": "Coinsult"
+      },
+      "bullets": ["SKALOWALNOŚĆ", "SZYBKOŚĆ", "MEME"]
     }
-}
+  }
+  
