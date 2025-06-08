@@ -118,4 +118,47 @@
     border: 3px solid black;
     border-radius: 50%;
   }
+
+  @media (max-width: 1024px) {
+    .wrapper {
+      position: relative;
+      border-radius: 20px;
+      padding: 0px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .rightShoe {
+      width: 120px;
+      position: absolute;
+      bottom: 5%;
+      right: -10%;
+
+    }
+    
+    .bullets {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .bullet {
+      font-size: 1.8rem;
+      padding: .6rem .8rem;
+
+    }
+
+    .bullet::before {
+      content: "";
+      position: absolute;
+      top: .5rem;
+      right: -1rem;
+      width: 2rem;
+      height: 2rem;
+      background: white;
+      border: 3px solid black;
+      border-radius: 50%;
+    }
   
+
+  }

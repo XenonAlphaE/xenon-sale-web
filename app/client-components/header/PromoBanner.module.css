@@ -83,3 +83,49 @@
     background: #222;
   }
   
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+
+  .badge {
+    position: absolute;
+    top: -1.8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #007aff;
+    color: white;
+    padding: 0.5rem 1.2rem;
+    border-radius: 40px;
+    font-weight: bold;
+    font-size: 1.8rem;
+    border: 2px solid #000;
+    width: 80%;
+  }
+
+  .imageWrapper {
+    position: absolute;
+    left: 0;
+    top: auto;
+    bottom: -20%;
+  }
+
+  .imageMascot{
+    height: 120px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin: 0 0 0.5rem;
+    text-transform: uppercase;
+    color: #000;
+  }
+  
+  .subtitle {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 1.2rem;
+  }
+
+}

@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { useLanguage, useI18nSection } from "../../../redux/utils/languageUtils";
 import { truncateMiddle } from '../services/wallet-service';
 import './navbar.css';
+import './navbar.mobile.css';
 import {
   useConnectModal,
   useAccountModal,
@@ -165,8 +166,8 @@ export const Navbar = ({ isStakingPage = false }) => {
 
         <div className='social-container'>
 
-          <a href="/"  target='_blank' ><img src='/img/btchyper/twitter.svg' className='appnav-social-icon' /></a>
-          <a href='/'  target='_blank' ><img src='/img/btchyper/telegram.svg' className='appnav-social-icon' /></a>
+            <a href="/"  target='_blank' ><img src='/img/btchyper/twitter.svg' className='appnav-social-icon' /></a>
+            <a href='/'  target='_blank' ><img src='/img/btchyper/telegram.svg' className='appnav-social-icon' /></a>
         </div>
 
 

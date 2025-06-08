@@ -2,10 +2,21 @@
 @media (max-width: 1024px) {
     .intro{
         min-height: auto;
-        padding: 140px 0 180px;
+        padding: 0 0 40px;
 
     }
 
+    .intro-main-content{
+      flex: 1;
+      display: flex;
+      padding-top: 80px;
+      flex-direction: column;
+      row-gap: 2em;
+      width: 100%;
+      padding-inline: 8px;
+    
+    }
+    
     .intro-content {
         max-width: 100%;
         display: flex;
@@ -13,7 +24,7 @@
         justify-content: center;
         align-items: center;
         row-gap: 24px;
-        padding: 0px 8px;
+        padding: 0px 0px;
     }  
 
     .intro-content-left {
