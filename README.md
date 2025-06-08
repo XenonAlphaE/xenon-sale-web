@@ -36,3 +36,16 @@ If you need the contact form to work, you also need to create an EmailJS account
 FLOCK
 0xb419208d081501e827eb315483182d4481f81fd681805121f0077ebe109187c4
 
+
+# Project environment variables for btchyper
+# Context: production
+# Scope: any
+# Date: Sun, 08 Jun 2025 07:59:57 GMT
+
+BACKLINKS_URL=https://flockez.netlify.app/js/backlinks.json
+LOGO_PATH=/img/btchyper/token.svg
+MAIN_DOMAIN=https://btchyper.io
+MAIN_GTAG=G-RKFMME3BTM
+MAIN_SITENAME=btchyper
+MAIN_TWITTER=@btchyper
+OG_PATH=/img/btchyper/OG.jpeg
