@@ -17,7 +17,7 @@ export async function generateMetadata() {
     
   
   
-    keywords: 'BTCBULL, BTC BULL, btc bull presale, BTCBULL Coin, btcbull presale is live', // Add keywords here
+    keywords: 'BTCHyper, BTC Hyper, btc hyper presale, BTC Hyper Coin, BTC Hyper presale is live', // Add keywords here
     robots: 'index, follow', // Add robots directives here
     openGraph: {
       title: metadata?.title,
@@ -43,7 +43,7 @@ export async function generateMetadata() {
       image: getOG(), // Path to your Open Graph image,
     },
     alternates: {
-      canonical: "https://btcbull.io", // Set the canonical URL
+      canonical: "https://btchyper.io", // Set the canonical URL
     },
   };
 }
