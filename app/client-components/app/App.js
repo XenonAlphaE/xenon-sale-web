@@ -16,6 +16,7 @@ import { FAQ } from "../faq/faq";
 import { useSetLanguage } from "../../../redux/utils/languageUtils";
 import About from "../about/about";
 import TrustedBy from "../TrustedBy/TrustedBy";
+import { AppSpinner } from "../spinner/spinner";
 // export const scroll = new SmoothScroll('a[href*="#"]', {
 //   speed: 1000,
 //   speedAsDuration: true,
@@ -43,7 +44,10 @@ const App = () => {
       {/* <Tokenomics /> */}
       {/* <FAQ/> */}
       {/* <Footer />  */}
-      
+      <div style={{justifyContent: 'center', display:'flex', padding: '3em'}}>
+
+        <AppSpinner/>
+      </div>
     </div>
   );
 };
