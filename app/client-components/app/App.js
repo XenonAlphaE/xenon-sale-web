@@ -5,7 +5,6 @@ import "./App.css";
 // import Navbar from "../navbar/navbar";
 import { Header } from "../header/header";
 import { Navbar } from "../navbar/navbar";
-import { About } from "../about/about";
 // import { Carousel } from "../carousel/carousel";
 // import { FeaturesGrid } from "../features/features";
 import { HowToBuy } from "../howtobuy/howtobuy";
@@ -15,6 +14,7 @@ import { Footer } from "../footer/footer";
 import { FAQ } from "../faq/faq";
 // import { useParams } from "react-router-dom";
 import { useSetLanguage } from "../../../redux/utils/languageUtils";
+import About from "../about/about";
 // export const scroll = new SmoothScroll('a[href*="#"]', {
 //   speed: 1000,
 //   speedAsDuration: true,
@@ -35,7 +35,7 @@ const App = () => {
     <div>
       <Navbar />
       <Header/>
-      {/* <About /> */}
+      <About />
       {/* <Roadmap /> */}
       {/* <HowToBuy /> */}
       {/* <Tokenomics /> */}
