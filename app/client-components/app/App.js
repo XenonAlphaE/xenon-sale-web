@@ -15,6 +15,7 @@ import { FAQ } from "../faq/faq";
 // import { useParams } from "react-router-dom";
 import { useSetLanguage } from "../../../redux/utils/languageUtils";
 import About from "../about/about";
+import TrustedBy from "../TrustedBy/TrustedBy";
 // export const scroll = new SmoothScroll('a[href*="#"]', {
 //   speed: 1000,
 //   speedAsDuration: true,
@@ -35,6 +36,7 @@ const App = () => {
     <div>
       <Navbar />
       <Header/>
+      <TrustedBy/>
       <About />
       {/* <Roadmap /> */}
       {/* <HowToBuy /> */}
