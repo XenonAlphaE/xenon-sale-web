@@ -5,9 +5,9 @@ import "./App.css";
 // import Navbar from "../navbar/navbar";
 import { Header } from "../header/header";
 import { Navbar } from "../navbar/navbar";
+import {HowToBuy} from "../howtobuy/howtobuy"
 // import { Carousel } from "../carousel/carousel";
 // import { FeaturesGrid } from "../features/features";
-import { HowToBuy } from "../howtobuy/howtobuy";
 import { Tokenomics } from "../tokenomics/tokenomics";
 import { Roadmap } from "../roadmap/roadmap";
 import { Footer } from "../footer/footer";
@@ -39,7 +39,7 @@ const App = () => {
       <TrustedBy/>
       <About />
       {/* <Roadmap /> */}
-      {/* <HowToBuy /> */}
+      <HowToBuy />
       {/* <Tokenomics /> */}
       {/* <FAQ/> */}
       {/* <Footer />  */}
