@@ -41,7 +41,8 @@ const App = () => {
       <About />
       {/* <Roadmap /> */}
       <HowToBuy />
-      {/* <Tokenomics /> */}
+      <TrustedBy/>
+      <Tokenomics />
       {/* <FAQ/> */}
       {/* <Footer />  */}
       <div style={{justifyContent: 'center', display:'flex', padding: '3em'}}>
