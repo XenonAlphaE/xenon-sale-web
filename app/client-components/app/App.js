@@ -43,7 +43,7 @@ const App = () => {
       <HowToBuy />
       <TrustedBy/>
       <Tokenomics />
-      <FAQ/>
+      {/* <FAQ/> */}
       {/* <Footer />  */}
       <div style={{justifyContent: 'center', display:'flex', padding: '3em'}}>
 
