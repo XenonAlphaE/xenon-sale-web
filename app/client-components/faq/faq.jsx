@@ -3,23 +3,76 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { useLanguage, useI18nSection } from "../../../redux/utils/languageUtils";
 
-import './faq.css';
-import './faq.mobile.css';
-import { Footer } from '../footer/footer';
+import styles from './faq.module.css';
 import { AppSpinner } from '../spinner/spinner';
 
+const infoContents = [
+  {
+    "number": "1",
+    "title": "Treasury 25%",
+    "contents": [
+      "Designated token allocation for business development and community activations."
+    ]
+  },
+
+  {
+    "number": "2",
+    "title": "marketing 20%",
+    "contents": [
+      "Viral marketing. Paid and organic media. Tier 1 geos. $HYPER is a global crypto phenomenon."
+    ]
+  },
+  
+  {
+    
+    "number": "3",
+    "title": "Rewards 15%",
+    "contents": [
+      "Community rewards allocation for staking and token giveaway promotions and events."
+    ]
+  },
+  {
+   
+    "number": "4",
+    "title": "listings 10%",
+    "contents": [
+      "Designated token allocation for Bitcoin Hyper ($HYPER) token listings on various exchanges."
+    ]
+  },
+  {
+   
+    "number": "4",
+    "title": "Development 30%",
+    "contents": [
+      "The first and fastest Bitcoin Layer 2 will undergo continuous development and improvements."
+    ]
+  }
+]
+function FaqCard({ cardClass, title, contents }) {
+  return (
+      <div className={cardClass}>
+        <div className={styles.cardNumber}></div>
+        <div className={styles.cardTitle}>{title}</div>
+        
+        {contents.map((content, i) => (
+          <div>{content} </div>
+        ))}
+      </div>
+
+  );
+}
 
 export const FAQ = () => {
   const sectionText = useI18nSection('faqs')
   const currentLanguage = useLanguage()
-  const [selectedIdx , setSelectedIdx] = useState();
+  const [selectedIdx, setSelectedIdx] = useState();
 
   const scrollToBuySection = () => {
     // Find the target section to scroll to
     let section = null;
-   
-      section = document.getElementById('intro');
-    
+
+    section = document.getElementById('intro');
+
     if (!section) {
       window.location = `/${currentLanguage}`
       return
@@ -28,36 +81,32 @@ export const FAQ = () => {
     section.scrollIntoView({ behavior: 'smooth' });
   };
 
- 
+
   const handleSelectSection = (idx) => {
-    if(selectedIdx === idx){
+    if (selectedIdx === idx) {
       setSelectedIdx("")
-    }else{
+    } else {
       setSelectedIdx(idx)
     }
   }
   return (
-    <div id='faqs' className="faq-container">
-        <div className='faq-content'>
-        <h3 className="faq-heading">{sectionText?.heading1} <span style={{color:"white"}}> {sectionText?.heading2} </span> </h3>
-        <div className='faq-list'>
-                {sectionText?.data?.map((sec,idx) => {
-                  return(
-                    <div key={idx} className='faq-list-item-container'>
-                        <div className='faq-list-item'>
-                          <div className='faq-list-item-title' onClick={() => handleSelectSection(idx)}> {sec?.title} </div>
-                          <img src="/img/btcbull/angle-down.svg" alt="arrow" style={{height:19}}/>
-                        </div>
-                        <p className={`faq-list-item-content  ${selectedIdx===idx ? 'active' : ''}`}> {sec?.desc}
-                        </p>
-                    </div>
-                  )
-                })}
-              
-            </div>
-        </div>
 
-        <Footer/>
-    </div>
+    <section id="faqs" className={styles.container}>
+      <h1 className={styles.title}>
+        Bitcoin Hyper FAQ
+      </h1>
+
+      <div className={styles.mainContent}>
+          <div className={styles.imgWrapper}>
+              <img src="/img/btchyper/faq.gif" className={styles.imgGraphic}/>
+          </div>
+
+          <div  className={styles.cards}>
+              <FaqCard cardClass={styles.card} title={infoContents[0].title} contents={infoContents[0].contents} />
+              <FaqCard cardClass={styles.card} title={infoContents[1].title} contents={infoContents[1].contents} />
+          </div>
+
+      </div>
+    </section>
   );
 };
