@@ -8,57 +8,61 @@ import { AppSpinner } from '../spinner/spinner';
 
 const infoContents = [
   {
-    "number": "1",
-    "title": "Treasury 25%",
-    "contents": [
-      "Designated token allocation for business development and community activations."
-    ]
-  },
+    number: "1",
+    title: "Treasury 25%",
+    contents: [
+      { label: "Step 1:", text: "Designated token allocation for business development and community activations." },
+      { label: "Step 2:", text: "Viral marketing. Paid and organic media. Tier 1 geos. $HYPER is a global crypto phenomenon." },
+      { label: "Step 2:", text: "Viral marketing. Paid and organic media. Tier 1 geos. $HYPER is a global crypto phenomenon." },
+      { label: "Step 2:", text: "Viral marketing. Paid and organic media. Tier 1 geos. $HYPER is a global crypto phenomenon." }
 
-  {
-    "number": "2",
-    "title": "marketing 20%",
-    "contents": [
-      "Viral marketing. Paid and organic media. Tier 1 geos. $HYPER is a global crypto phenomenon."
-    ]
-  },
-  
-  {
-    
-    "number": "3",
-    "title": "Rewards 15%",
-    "contents": [
-      "Community rewards allocation for staking and token giveaway promotions and events."
     ]
   },
   {
-   
-    "number": "4",
-    "title": "listings 10%",
-    "contents": [
-      "Designated token allocation for Bitcoin Hyper ($HYPER) token listings on various exchanges."
+    number: "2",
+    title: "Marketing 20%",
+    contents: [
+      { label: "Step 2:", text: "Viral marketing. Paid and organic media. Tier 1 geos. $HYPER is a global crypto phenomenon." }
     ]
   },
   {
-   
-    "number": "4",
-    "title": "Development 30%",
-    "contents": [
-      "The first and fastest Bitcoin Layer 2 will undergo continuous development and improvements."
+    number: "3",
+    title: "Rewards 15%",
+    contents: [
+      { label: "Step 3:", text: "Community rewards allocation for staking and token giveaway promotions and events." }
+    ]
+  },
+  {
+    number: "4",
+    title: "Listings 10%",
+    contents: [
+      { label: "Step 4:", text: "Designated token allocation for Bitcoin Hyper ($HYPER) token listings on various exchanges." }
+    ]
+  },
+  {
+    number: "5",
+    title: "Development 30%",
+    contents: [
+      { label: "Step 5:", text: "The first and fastest Bitcoin Layer 2 will undergo continuous development and improvements." }
     ]
   }
-]
+];
+
+
 function FaqCard({ cardClass, title, contents }) {
   return (
-      <div className={cardClass}>
-        <div className={styles.cardNumber}></div>
-        <div className={styles.cardTitle}>{title}</div>
-        
-        {contents.map((content, i) => (
-          <div>{content} </div>
-        ))}
-      </div>
+    <div className={cardClass}>
+      <div className={styles.cardNumber}></div>
+      <div className={styles.cardTitle}>{title}</div>
 
+      <ul className={styles.cardContent}>
+        {contents.map((content, i) => (
+          <li key={i}>
+            <strong>{content.label}</strong> {content.text}
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
 
@@ -102,6 +106,10 @@ export const FAQ = () => {
           </div>
 
           <div  className={styles.cards}>
+              <FaqCard cardClass={styles.card} title={infoContents[0].title} contents={infoContents[0].contents} />
+              <FaqCard cardClass={styles.card} title={infoContents[1].title} contents={infoContents[1].contents} />
+              <FaqCard cardClass={styles.card} title={infoContents[0].title} contents={infoContents[0].contents} />
+              <FaqCard cardClass={styles.card} title={infoContents[1].title} contents={infoContents[1].contents} />
               <FaqCard cardClass={styles.card} title={infoContents[0].title} contents={infoContents[0].contents} />
               <FaqCard cardClass={styles.card} title={infoContents[1].title} contents={infoContents[1].contents} />
           </div>
