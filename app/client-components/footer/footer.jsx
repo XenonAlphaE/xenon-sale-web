@@ -1,30 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import { useLanguage, useI18nSection } from "../../../redux/utils/languageUtils";
-import './footer.css'
+import styles from './footer.module.css'
 
 export const Footer = () => {
   const [isMobile, setIsMobile] = useState(false);
   const sectionText = useI18nSection('footer')
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 1024); // Adjust the breakpoint as needed
-    };
-
-    handleResize(); // Check initial viewport width
-    window.addEventListener('resize', handleResize); // Add event listener for window resize
-
-    return () => window.removeEventListener('resize', handleResize); // Cleanup on unmount
-  }, []);
-
+  
 
   return (
-    <div id="footer" className="footer-container">
-      <div className='footer-content'>
-        <img  src='/img/btcbull/logo.png' width={112} height={112}/>
-        <p translate="" className="copyright">{sectionText?.copyRight}</p>
-        <p translate="" className="copyright ">{sectionText?.text}</p>
+    <section id="footer" className={styles.container}>
+      <div className={styles.mainContent}>
+        <p className={styles.copyright}>Disclaimer</p>
+        <p className={styles.copyright}>Always do your own research. Nothing here is financial advice. This is a meme coin
+        </p>
+        <p className={styles.copyright}>2025 bitcoin hyper All rights reserved.</p>
+        <img  className={styles.avatar} src='/img/btchyper/logo-white.svg' />
       </div>
-    </div>
+    </section>
   );
 };

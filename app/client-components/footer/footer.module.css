@@ -1,0 +1,77 @@
+/* BitcoinLayer2.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+    background: black;
+
+    @media (max-width: 1024px) {
+      width: 100%;
+      padding-inline: 8px;
+
+  }
+  }
+
+  .mainContent{
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+    width: 1280px;
+    padding-inline: 16px;
+    justify-content: center;
+    align-items: center;
+    padding-block: 50px;
+
+    @media (max-width: 1024px) {
+      padding-inline: 0px;
+      row-gap: 1em;
+
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+
+
+.copyright{
+    box-sizing: border-box;
+    transform: scaleY(1.5);    /* Increase height by 1.5 times */
+    color: white;
+    display: block;
+    font-family: HeyComic, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19.6px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-bottom: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    margin-top: 0px;
+    text-align: center;
+    text-size-adjust: 100%;
+    text-transform: uppercase;
+    unicode-bidi: isolate;
+
+    @media (max-width: 1024px) {
+
+        transform: scaleY(1);    /* Increase height by 1.5 times */
+        line-height: 15.6px;
+
+    }
+}
+
+
+.avatar{
+    width: 40%;
+    max-width: 80%;
+
+    @media (max-width: 1024px) {
+      width: 60%;
+    }
+}

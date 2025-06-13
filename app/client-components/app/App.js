@@ -44,11 +44,7 @@ const App = () => {
       <TrustedBy/>
       <Tokenomics />
       <FAQ/>
-      {/* <Footer />  */}
-      <div style={{justifyContent: 'center', display:'flex', padding: '3em'}}>
-
-        <AppSpinner/>
-      </div>
+      <Footer /> 
     </div>
   );
 };
