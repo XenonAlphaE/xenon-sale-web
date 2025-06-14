@@ -1,6 +1,7 @@
 
 import React from 'react';
 import styles from './TrustedBy.module.css';
+import { useI18nSection } from '../../../redux/utils/languageUtils';
 
 const logos = [
   { src: '/img/btchyper/feature_1.svg', alt: 'Cointelegraph' },
@@ -13,11 +14,12 @@ const logos = [
 ];
 
 export default function TrustedBy() {
+  const sectionText = useI18nSection('trustedBy')
   return (
     <div className={styles.wrapper}>
       <div className={styles.overlay} />
       <div className={styles.content}>
-        <h3 className={styles.title}>TRUSTED BY</h3>
+        <h3 className={styles.title}>{sectionText?.title}</h3>
         <div className={styles.logoScrollContainer}>
             <div className={styles.logos}>
             {logos.map((logo, index) => (

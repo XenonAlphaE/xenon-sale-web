@@ -2,48 +2,7 @@ import React from "react";
 import { useLanguage, useI18nSection } from "../../../redux/utils/languageUtils";
 import styles from './tokenomics.module.css'
 
-const infoContents = [
-    {
-      "number": "1",
-      "title": "Treasury 25%",
-      "contents": [
-        "Designated token allocation for business development and community activations."
-      ]
-    },
-  
-    {
-      "number": "2",
-      "title": "marketing 20%",
-      "contents": [
-        "Viral marketing. Paid and organic media. Tier 1 geos. $HYPER is a global crypto phenomenon."
-      ]
-    },
-    
-    {
-      
-      "number": "3",
-      "title": "Rewards 15%",
-      "contents": [
-        "Community rewards allocation for staking and token giveaway promotions and events."
-      ]
-    },
-    {
-     
-      "number": "4",
-      "title": "listings 10%",
-      "contents": [
-        "Designated token allocation for Bitcoin Hyper ($HYPER) token listings on various exchanges."
-      ]
-    },
-    {
-     
-      "number": "4",
-      "title": "Development 30%",
-      "contents": [
-        "The first and fastest Bitcoin Layer 2 will undergo continuous development and improvements."
-      ]
-    }
-  ]
+
   
 function InfoCard({ cardClass, title, contents }) {
     return (
@@ -71,7 +30,9 @@ function BuyNowButton( {eventOnClick, buyNow, desc}) {
   
 
 export const Tokenomics = () => {
+
   const sectionText = useI18nSection('tokenomics')
+  const infoContents = sectionText?.contents
   const scrollToBuySection = () => {
     // Find the target section to scroll to
     let section = null;

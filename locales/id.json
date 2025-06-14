@@ -63,6 +63,254 @@
         "provider": "Coinsult"
       },
       "bullets": ["SKALABILITAS", "KECEPATAN", "MEME"]
+    },
+    "trustedBy": {
+      "title": "DIPERCAYA OLEH"
+    },
+    "about": {
+      "contents": [
+        {
+          "number": "1",
+          "title": "JEMBATAN",
+          "contents": [
+            "Pengguna menyetor BTC ke alamat Bitcoin yang ditunjuk dan dipantau oleh Jembatan Kanonik Bitcoin Hyper.",
+            "Program Bitcoin Relay, sebuah kontrak pintar SVM, memverifikasi header blok Bitcoin dan bukti transaksi.",
+            "Setelah verifikasi berhasil, jumlah BTC yang setara dicetak di Layer 2 Bitcoin Hyper secara tanpa kepercayaan."
+          ]
+        },
+        {
+          "number": "2",
+          "title": "Operasi L2",
+          "contents": [
+            "Pengguna dapat mengirim dan menerima BTC di Layer 2 Bitcoin Hyper dengan finalitas hampir instan.",
+            "Mendukung operasi DeFi kompleks, seperti staking dan pertukaran terdesentralisasi.",
+            "Memanfaatkan Mesin Virtual Solana (SVM) untuk throughput tinggi dan skalabilitas."
+          ]
+        },
+        {
+          "number": "3",
+          "title": "Penyelesaian & Keamanan",
+          "contents": [
+            "Bitcoin Hyper mengelompokkan dan mengompres transaksi Layer 2.",
+            "Menggunakan bukti zero-knowledge (ZK) untuk memastikan validitas transaksi.",
+            "Status Layer 2 secara berkala dikomit ke Layer 1 Bitcoin, menjaga sinkronisasi dan keamanan."
+          ]
+        },
+        {
+          "number": "4",
+          "title": "Penarikan ke L1",
+          "contents": [
+            "Pengguna menginisiasi permintaan penarikan di Layer 2 Bitcoin Hyper.",
+            "Sistem memverifikasi status Layer 2 dan menghasilkan bukti untuk jembatan kanonik.",
+            "Setelah validasi, BTC yang sesuai dilepaskan kembali ke alamat Bitcoin pengguna di Layer 1."
+          ]
+        }
+      ],
+      "frameworks": [
+        { "title": "Kecepatan", "name": "Lightning network" },
+        { "title": "Optimistic Rollups", "name": "OPTIMISM" },
+        { "title": "ZK-Rollups", "name": "zkROLLUPS" },
+        { "title": "Sidechains", "name": "Rootstock" },
+        { "title": "Skalabilitas", "name": "BITCOIN HYPER²" }
+      ]
+    },
+    "howtobuy": {
+      "title": "Cara Membeli Bitcoin Hyper",
+      "buyNow": "BELI $HYPER SEKARANG",
+      "contents": [
+        {
+          "number": "1",
+          "title": "langkah 1",
+          "contents": [
+            "Dapatkan beberapa crypto dari bursa pilihan Anda. Jika Anda belum memiliki dompet, pertimbangkan menggunakan MetaMask."
+          ]
+        },
+        {
+          "number": "2",
+          "title": "langkah 2",
+          "contents": [
+            "Dengan crypto di dompet Anda, Anda siap berpartisipasi dalam presale crypto $HYPER. Klik tombol Beli atau Hubungkan Dompet di situs web untuk memulai."
+          ]
+        },
+        {
+          "number": "3",
+          "title": "langkah 3",
+          "contents": [
+            "Pilih jumlah $HYPER yang ingin Anda beli dan konfirmasi transaksi di dompet Anda. Untuk staking sekaligus, pilih opsi Beli dan Stake."
+          ]
+        },
+        {
+          "number": "4",
+          "title": "langkah 4 (Kartu)",
+          "contents": [
+            "Jika membayar dengan kartu, hubungkan dompet crypto seluler atau ekstensi browser Anda dan pilih Beli Dengan Kartu. Dompet ini dibutuhkan untuk menerima token Anda."
+          ]
+        }
+      ]
+    },
+    "tokenomics": {
+      "title": "TOKENOMICS",
+      "buyNow": "Beli SEKARANG",
+      "desc": "Rincian lengkap bagaimana Bitcoin Hyper² bekerja",
+      "contents": [
+        {
+          "number": "1",
+          "title": "Treasury 25%",
+          "contents": [
+            "Alokasi token yang ditunjuk untuk pengembangan bisnis dan aktivasi komunitas."
+          ]
+        },
+        {
+          "number": "2",
+          "title": "Marketing 20%",
+          "contents": [
+            "Pemasaran viral. Media berbayar dan organik. Wilayah Tier 1. $HYPER adalah fenomena kripto global."
+          ]
+        },
+        {
+          "number": "3",
+          "title": "Rewards 15%",
+          "contents": [
+            "Alokasi hadiah komunitas untuk staking dan promosi serta event giveaway token."
+          ]
+        },
+        {
+          "number": "4",
+          "title": "Listings 10%",
+          "contents": [
+            "Alokasi token yang ditunjuk untuk listing token Bitcoin Hyper ($HYPER) di berbagai bursa."
+          ]
+        },
+        {
+          "number": "4",
+          "title": "Development 30%",
+          "contents": [
+            "Bitcoin Layer 2 pertama dan tercepat akan mengalami pengembangan dan perbaikan terus menerus."
+          ]
+        }
+      ]
+    },
+    "faqs": {
+      "title": "FAQ Bitcoin Hyper",
+      "contents": [
+        {
+          "number": "1",
+          "title": "Apa itu Bitcoin Hyper?",
+          "contents": [
+            {
+              "text": "Jaringan Bitcoin Layer 2 sejati pertama. Memungkinkan transaksi BTC cepat dan biaya rendah serta membuka staking, keuangan terdesentralisasi (DeFi), dan aplikasi yang dibangun di blockchain (dApps). Didukung oleh mesin virtual throughput tinggi (SVM), BTC Hyper tidak hanya mendefinisikan ulang apa yang mungkin di Bitcoin, tetapi juga merupakan presale kripto terbaik tahun 2025."
+            }
+          ]
+        },
+        {
+          "number": "2",
+          "title": "Apa itu $HYPER?",
+          "contents": [
+            {
+              "text": "$HYPER adalah token asli jaringan Bitcoin Hyper – digunakan untuk transaksi, staking, dan tata kelola. Token ini saat ini tersedia dalam tahap harga paling awal dalam apa yang secara luas diakui sebagai presale kripto terbaik untuk dibeli sekarang, difasilitasi oleh teknologi pembayaran dan staking Web3Toolkit."
+            }
+          ]
+        },
+        {
+          "number": "3",
+          "title": "Mengapa Bitcoin Hyper penting?",
+          "contents": [
+            {
+              "text": "Bitcoin Hyper memperbaiki kecepatan transaksi Bitcoin yang lambat dan biaya tinggi sambil mempertahankan keamanan setara Bitcoin. Dengan BTC Hyper, pengguna dapat mengirim, menerima, dan berinteraksi dengan Bitcoin hampir secara real-time, dengan biaya minimal, serta berpartisipasi dalam ekonomi DeFi berbasis Bitcoin yang sedang berkembang."
+            }
+          ]
+        },
+        {
+          "number": "4",
+          "title": "Bagaimana cara membeli BTC Hyper?",
+          "contents": [
+            {
+              "label": "Langkah 1:",
+              "text": "Dapatkan crypto dari bursa. Jika belum memiliki dompet, pertimbangkan Metamask. Ini memudahkan Anda memasuki presale kripto terbaik."
+            },
+            {
+              "label": "Langkah 2:",
+              "text": "Isi saldo dengan crypto dan Anda akan dapat bergabung dengan presale kripto $HYPER. Klik Beli atau Sambungkan Dompet untuk memulai proses pembelian."
+            },
+            {
+              "label": "Langkah 3:",
+              "text": "Pilih jumlah token $HYPER yang ingin Anda beli. Untuk staking dalam transaksi yang sama, pilih opsi Beli dan Stake."
+            }
+          ]
+        },
+        {
+          "number": "5",
+          "title": "Bagaimana cara kerja Bitcoin Hyper?",
+          "contents": [
+            {
+              "label": "1. Jembatan",
+              "text": ""
+            },
+            {
+              "text": "Kirim BTC ke alamat Bitcoin yang ditunjuk yang dipantau oleh Bitcoin Hyper Canonical Bridge."
+            },
+            {
+              "text": "Program Bitcoin Relay (kontrak pintar SVM) memverifikasi header blok dan bukti transaksi Bitcoin."
+            },
+            {
+              "text": "Setelah diverifikasi, jumlah BTC yang setara dicetak secara terpercaya di Bitcoin Hyper Layer 2."
+            },
+            {
+              "label": "2. Operasi Layer 2",
+              "text": ""
+            },
+            {
+              "text": "Pengguna dapat mengirim, menerima, dan berinteraksi dengan BTC di Layer 2 dengan finalitas hampir instan."
+            },
+            {
+              "text": "Mendukung fungsi kompleks seperti staking, perdagangan terdesentralisasi, dan lainnya."
+            },
+            {
+              "text": "Dibangun di atas arsitektur SVM untuk kecepatan dan skalabilitas."
+            },
+            {
+              "label": "3. Penyelesaian dan Keamanan",
+              "text": ""
+            },
+            {
+              "text": "Transaksi di Layer 2 dikumpulkan dan dikompres."
+            },
+            {
+              "text": "Bukti tanpa pengetahuan (ZK) memastikan validitas."
+            },
+            {
+              "text": "Status Layer 2 secara berkala dikomit ke Layer 1 Bitcoin, menjaga keamanan setara Bitcoin."
+            },
+            {
+              "label": "4. Penarikan ke Layer 1",
+              "text": ""
+            },
+            {
+              "text": "Pengguna dapat menarik BTC kembali ke Layer 1 dengan mengajukan permintaan penarikan."
+            },
+            {
+              "text": "Sebuah bukti dihasilkan dan diserahkan ke Canonical Bridge."
+            },
+            {
+              "text": "Setelah validasi, BTC dilepaskan ke alamat Bitcoin asli pengguna."
+            }
+          ]
+        },
+        {
+          "number": "6",
+          "title": "Kapan presale kripto $HYPER berakhir?",
+          "contents": [
+            {
+              "text": "ICO BTC Hyper terbatas dan bisa berakhir lebih awal tergantung permintaan. Ikuti saluran resmi kami untuk pembaruan agar Anda tidak ketinggalan presale kripto terbaik tahun ini."
+            }
+          ]
+        }
+      ]
+    },
+    "footer": {
+      "desc": "Penafian",
+      "content1": "Selalu lakukan riset sendiri. Tidak ada yang di sini merupakan nasihat keuangan. Ini adalah meme coin.",
+      "content2": "2025 bitcoin hyper Hak cipta dilindungi."
     }
   }
-  
+    

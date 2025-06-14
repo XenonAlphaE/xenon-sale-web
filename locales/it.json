@@ -63,6 +63,253 @@
         "provider": "Coinsult"
       },
       "bullets": ["SCALABILITÀ", "VELOCITÀ", "MEME"]
-    }
+    },
+  "trustedBy": {
+    "title": "FIDUCIATO DA"
+  },
+  "about": {
+    "contents": [
+      {
+        "number": "1",
+        "title": "PONTE",
+        "contents": [
+          "L'utente deposita BTC in un indirizzo Bitcoin designato monitorato dal Canonical Bridge di Bitcoin Hyper.",
+          "Il Bitcoin Relay Program, uno smart contract SVM, verifica gli header dei blocchi Bitcoin e le prove delle transazioni.",
+          "Al completamento della verifica, una quantità equivalente di BTC viene coniata su Layer 2 di Bitcoin Hyper in modo trustless."
+        ]
+      },
+      {
+        "number": "2",
+        "title": "Operazione L2",
+        "contents": [
+          "Gli utenti possono inviare e ricevere BTC su Layer 2 di Bitcoin Hyper con finalità quasi istantanea.",
+          "Supporta operazioni DeFi complesse, come staking e scambi decentralizzati.",
+          "Sfrutta la Solana Virtual Machine (SVM) per alta velocità e scalabilità."
+        ]
+      },
+      {
+        "number": "3",
+        "title": "Regolamento e Sicurezza",
+        "contents": [
+          "Bitcoin Hyper raggruppa e comprime le transazioni di Layer 2.",
+          "Utilizza prove a conoscenza zero (ZK) per garantire la validità delle transazioni.",
+          "Lo stato di Layer 2 viene periodicamente impegnato su Layer 1 di Bitcoin, mantenendo sincronizzazione e sicurezza."
+        ]
+      },
+      {
+        "number": "4",
+        "title": "Prelievo a L1",
+        "contents": [
+          "Gli utenti avviano una richiesta di prelievo su Layer 2 di Bitcoin Hyper.",
+          "Il sistema verifica lo stato di Layer 2 e genera una prova per il canonical bridge.",
+          "Dopo la convalida, l’BTC corrispondente viene rilasciato all’indirizzo Bitcoin dell’utente su Layer 1."
+        ]
+      }
+    ],
+    "frameworks": [
+      { "title": "Velocità", "name": "Lightning network" },
+      { "title": "Optimistic Rollups", "name": "OPTIMISM" },
+      { "title": "ZK-Rollups", "name": "zkROLLUPS" },
+      { "title": "Sidechains", "name": "Rootstock" },
+      { "title": "Scalabilità", "name": "BITCOIN HYPER²" }
+    ]
+  },
+  "howtobuy": {
+    "title": "Come Comprare Bitcoin Hyper",
+    "buyNow": "COMPRA $HYPER ORA",
+    "contents": [
+      {
+        "number": "1",
+        "title": "passo 1",
+        "contents": [
+          "Ottieni un po’ di criptovaluta dal tuo exchange preferito. Se non hai ancora un wallet, considera di usare MetaMask."
+        ]
+      },
+      {
+        "number": "2",
+        "title": "passo 2",
+        "contents": [
+          "Con le criptovalute nel tuo wallet, sei pronto per partecipare alla prevendita $HYPER. Clicca su qualsiasi pulsante Compra o Connetti Wallet sul sito per iniziare."
+        ]
+      },
+      {
+        "number": "3",
+        "title": "passo 3",
+        "contents": [
+          "Scegli la quantità di $HYPER che vuoi comprare e conferma la transazione nel tuo wallet. Per fare staking contemporaneamente, seleziona l’opzione Compra e Stake."
+        ]
+      },
+      {
+        "number": "4",
+        "title": "passo 4 (Carta)",
+        "contents": [
+          "Se paghi con carta, connetti il tuo wallet crypto mobile o l’estensione del browser e scegli Compra con Carta. Ti servirà questo wallet per ricevere i tuoi token."
+        ]
+      }
+    ]
+  },
+  "tokenomics": {
+    "title": "TOKENOMICS",
+    "buyNow": "Compra ORA",
+    "desc": "Dettaglio completo di come funziona Bitcoin Hyper²",
+    "contents": [
+      {
+        "number": "1",
+        "title": "Tesoreria 25%",
+        "contents": [
+          "Allocazione designata di token per sviluppo aziendale e attivazioni della community."
+        ]
+      },
+      {
+        "number": "2",
+        "title": "Marketing 20%",
+        "contents": [
+          "Marketing virale. Media a pagamento e organici. Geografie Tier 1. $HYPER è un fenomeno crypto globale."
+        ]
+      },
+      {
+        "number": "3",
+        "title": "Ricompense 15%",
+        "contents": [
+          "Allocazione di ricompense per la community per staking e promozioni ed eventi di distribuzione token."
+        ]
+      },
+      {
+        "number": "4",
+        "title": "Listings 10%",
+        "contents": [
+          "Allocazione designata di token per le quotazioni del token Bitcoin Hyper ($HYPER) su vari exchange."
+        ]
+      },
+      {
+        "number": "4",
+        "title": "Sviluppo 30%",
+        "contents": [
+          "Il primo e più veloce Bitcoin Layer 2 subirà continui sviluppi e miglioramenti."
+        ]
+      }
+    ]
+  },
+  "faqs": {
+    "title": "Domande Frequenti su Bitcoin Hyper",
+    "contents": [
+      {
+        "number": "1",
+        "title": "Cos’è Bitcoin Hyper?",
+        "contents": [
+          {
+            "text": "La prima vera rete Bitcoin Layer 2. Consente transazioni BTC veloci e a basso costo e sblocca staking, finanza decentralizzata (DeFi) e applicazioni on-chain (dApp). Alimentato da una macchina virtuale ad alto rendimento (SVM), BTC Hyper non solo ridefinisce cosa è possibile su Bitcoin, ma è anche la migliore prevendita crypto del 2025."
+          }
+        ]
+      },
+      {
+        "number": "2",
+        "title": "Cos’è $HYPER?",
+        "contents": [
+          {
+            "text": "$HYPER è il token nativo della rete Bitcoin Hyper – usato per transazioni, staking e governance. Il token è attualmente disponibile nelle prime fasi di prezzo nella migliore prevendita crypto da acquistare ora, facilitata dalla tecnologia di pagamenti e staking di Web3Toolkit."
+          }
+        ]
+      },
+      {
+        "number": "3",
+        "title": "Perché Bitcoin Hyper è importante?",
+        "contents": [
+          {
+            "text": "Bitcoin Hyper risolve la lentezza delle transazioni Bitcoin e le alte commissioni mantenendo la sicurezza di livello Bitcoin. Con BTC Hyper, gli utenti possono inviare, ricevere e interagire con Bitcoin quasi in tempo reale, con costi minimi, e partecipare all’economia DeFi emergente basata su Bitcoin."
+          }
+        ]
+      },
+      {
+        "number": "4",
+        "title": "Come compro BTC Hyper?",
+        "contents": [
+          {
+            "label": "Passo 1:",
+            "text": "Acquista crypto da un exchange. Se non hai ancora un wallet, considera Metamask. Ti permette di accedere facilmente alle migliori prevendite crypto."
+          },
+          {
+            "label": "Passo 2:",
+            "text": "Ricarica con crypto e potrai partecipare alla prevendita crypto $HYPER. Clicca su Compra o Connetti Wallet per iniziare l’acquisto."
+          },
+          {
+            "label": "Passo 3:",
+            "text": "Seleziona la quantità di token $HYPER che vuoi acquistare. Per fare staking nella stessa transazione, scegli l’opzione Compra e Fai Staking."
+          }
+        ]
+      },
+      {
+        "number": "5",
+        "title": "Come funziona Bitcoin Hyper?",
+        "contents": [
+          {
+            "label": "1. Bridge",
+            "text": ""
+          },
+          {
+            "text": "Invia BTC a un indirizzo Bitcoin designato monitorato dal Bitcoin Hyper Canonical Bridge."
+          },
+          {
+            "text": "Il Bitcoin Relay Program (un contratto smart SVM) verifica gli header dei blocchi Bitcoin e le prove di transazione."
+          },
+          {
+            "text": "Una volta verificato, un ammontare equivalente di BTC viene creato in modo trustless su Bitcoin Hyper Layer 2."
+          },
+          {
+            "label": "2. Operazione Layer 2",
+            "text": ""
+          },
+          {
+            "text": "Gli utenti possono inviare, ricevere e interagire con BTC su Layer 2 con finalità quasi istantanea."
+          },
+          {
+            "text": "Supporta funzioni complesse come staking, trading decentralizzato e altro."
+          },
+          {
+            "text": "Costruito su un’architettura SVM per velocità e scalabilità."
+          },
+          {
+            "label": "3. Regolamento e Sicurezza",
+            "text": ""
+          },
+          {
+            "text": "Le transazioni su Layer 2 sono raggruppate e compresse."
+          },
+          {
+            "text": "Le prove zero-knowledge (ZK) garantiscono la validità."
+          },
+          {
+            "text": "Lo stato del Layer 2 è periodicamente impegnato nel Layer 1 di Bitcoin, preservando la sicurezza di livello Bitcoin."
+          },
+          {
+            "label": "4. Prelievo a Layer 1",
+            "text": ""
+          },
+          {
+            "text": "Gli utenti possono prelevare BTC tornando al Layer 1 iniziando una richiesta di prelievo."
+          },
+          {
+            "text": "Viene generata una prova che viene inviata al Canonical Bridge."
+          },
+          {
+            "text": "Dopo la validazione, i BTC vengono rilasciati all’indirizzo Bitcoin originale dell’utente."
+          }
+        ]
+      },
+      {
+        "number": "6",
+        "title": "Quando termina la prevendita crypto $HYPER?",
+        "contents": [
+          {
+            "text": "L’ICO di BTC Hyper è limitata e potrebbe terminare in anticipo a seconda della domanda. Segui i nostri canali ufficiali per aggiornamenti e non perdere la migliore prevendita crypto dell’anno."
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "desc": "Disclaimer",
+    "content1": "Fai sempre le tue ricerche. Nulla di quanto riportato è un consiglio finanziario. Questo è un meme coin.",
+    "content2": "2025 bitcoin hyper Tutti i diritti riservati."
   }
-  
+}

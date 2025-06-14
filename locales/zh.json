@@ -63,6 +63,255 @@
         "provider": "Coinsult"
       },
       "bullets": ["可扩展性", "速度", "表情包"]
+    },
+    "trustedBy": {
+      "title": "信赖来自"
+    },
+    "about": {
+      "contents": [
+        {
+          "number": "1",
+          "title": "桥接",
+          "contents": [
+            "用户将BTC存入由Bitcoin Hyper的Canonical Bridge监控的指定比特币地址。",
+            "Bitcoin Relay程序，一个SVM智能合约，验证比特币区块头和交易证明。",
+            "验证成功后，在Bitcoin Hyper的Layer 2上以无信任方式铸造等量的BTC。"
+          ]
+        },
+        {
+          "number": "2",
+          "title": "L2操作",
+          "contents": [
+            "用户可以在Bitcoin Hyper的Layer 2上发送和接收BTC，几乎实时完成确认。",
+            "支持复杂的DeFi操作，如质押和去中心化交易所。",
+            "利用Solana的虚拟机(SVM)实现高吞吐量和可扩展性。"
+          ]
+        },
+        {
+          "number": "3",
+          "title": "结算与安全",
+          "contents": [
+            "Bitcoin Hyper批量压缩Layer 2交易。",
+            "利用零知识(ZK)证明确保交易的有效性。",
+            "Layer 2状态定期提交至比特币Layer 1，保持同步和安全。"
+          ]
+        },
+        {
+          "number": "4",
+          "title": "提现到L1",
+          "contents": [
+            "用户在Bitcoin Hyper的Layer 2上发起提现请求。",
+            "系统验证Layer 2状态并生成Canonical Bridge的证明。",
+            "验证通过后，相应的BTC释放回用户在Layer 1的比特币地址。"
+          ]
+        }
+      ],
+      "frameworks": [
+        { "title": "速度", "name": "闪电网络" },
+        { "title": "乐观汇总", "name": "OPTIMISM" },
+        { "title": "零知识汇总", "name": "zkROLLUPS" },
+        { "title": "侧链", "name": "Rootstock" },
+        { "title": "可扩展性", "name": "BITCOIN HYPER²" }
+      ]
+    },
+    "howtobuy": {
+      "title": "如何购买 Bitcoin Hyper",
+      "buyNow": "立即购买 $HYPER",
+      "contents": [
+        {
+          "number": "1",
+          "title": "步骤 1",
+          "contents": [
+            "从您喜欢的交易所获取一些加密货币。如果还没有钱包，建议使用MetaMask。"
+          ]
+        },
+        {
+          "number": "2",
+          "title": "步骤 2",
+          "contents": [
+            "将加密货币存入钱包后，即可参与$HYPER的预售。点击网站上的任何购买或连接钱包按钮开始。"
+          ]
+        },
+        {
+          "number": "3",
+          "title": "步骤 3",
+          "contents": [
+            "选择您想购买的$HYPER数量，并在钱包中确认交易。若要同时质押，请选择购买并质押选项。"
+          ]
+        },
+        {
+          "number": "4",
+          "title": "步骤 4（银行卡）",
+          "contents": [
+            "如果使用银行卡支付，连接您的移动加密钱包或浏览器扩展钱包，选择用卡购买。您需要此钱包来接收代币。"
+          ]
+        }
+      ]
+    },
+    "tokenomics": {
+      "title": "代币经济学",
+      "buyNow": "立即购买",
+      "desc": "Bitcoin Hyper² 的完整工作原理解析",
+      "contents": [
+        {
+          "number": "1",
+          "title": "金库 25%",
+          "contents": [
+            "指定代币分配用于业务开发和社区活动。"
+          ]
+        },
+        {
+          "number": "2",
+          "title": "市场营销 20%",
+          "contents": [
+            "病毒式营销。付费和自然媒体。一级市场区域。$HYPER 是全球加密现象。"
+          ]
+        },
+        {
+          "number": "3",
+          "title": "奖励 15%",
+          "contents": [
+            "社区奖励分配，用于质押和代币赠送促销及活动。"
+          ]
+        },
+        {
+          "number": "4",
+          "title": "上市 10%",
+          "contents": [
+            "指定代币分配用于 Bitcoin Hyper（$HYPER）在各种交易所的上市。"
+          ]
+        },
+        {
+          "number": "4",
+          "title": "开发 30%",
+          "contents": [
+            "首个且最快的比特币第2层将持续进行开发和改进。"
+          ]
+        }
+      ]
+    },
+    "faqs": {
+      "title": "Bitcoin Hyper 常见问题",
+      "contents": [
+        {
+          "number": "1",
+          "title": "什么是 Bitcoin Hyper？",
+          "contents": [
+            {
+              "text": "首个真正的比特币第2层网络。它支持快速、低成本的BTC交易，并解锁质押、去中心化金融（DeFi）和链上应用（dApps）。由高吞吐量虚拟机（SVM）驱动，BTC Hyper不仅重新定义了比特币的可能性，也是2025年最好的加密预售。"
+            }
+          ]
+        },
+        {
+          "number": "2",
+          "title": "$HYPER是什么？",
+          "contents": [
+            {
+              "text": "$HYPER是Bitcoin Hyper网络的原生代币，用于交易、质押和治理。该代币目前以最早的价格阶段出售，被广泛认可为最值得立即购买的加密预售，由Web3Toolkit支付和质押技术支持。"
+            }
+          ]
+        },
+        {
+          "number": "3",
+          "title": "为什么 Bitcoin Hyper 很重要？",
+          "contents": [
+            {
+              "text": "Bitcoin Hyper解决了比特币交易速度慢和费用高的问题，同时保持比特币级别的安全性。借助BTC Hyper，用户可以近乎实时地发送、接收和交互比特币，成本极低，并参与新兴的基于比特币的DeFi经济。"
+            }
+          ]
+        },
+        {
+          "number": "4",
+          "title": "我如何购买 BTC Hyper？",
+          "contents": [
+            {
+              "label": "步骤1：",
+              "text": "从交易所获取一些加密货币。如果还没有钱包，可以考虑使用Metamask，它可以轻松进入最佳加密预售。"
+            },
+            {
+              "label": "步骤2：",
+              "text": "充值加密货币，即可参与$HYPER加密预售。点击购买或连接钱包开始购买流程。"
+            },
+            {
+              "label": "步骤3：",
+              "text": "选择想购买的$HYPER代币数量。若想在同一交易中质押，选择“购买并质押”选项。"
+            }
+          ]
+        },
+        {
+          "number": "5",
+          "title": "Bitcoin Hyper如何运作？",
+          "contents": [
+            {
+              "label": "1. 桥接",
+              "text": ""
+            },
+            {
+              "text": "将BTC发送到由Bitcoin Hyper Canonical Bridge监控的指定比特币地址。"
+            },
+            {
+              "text": "比特币中继程序（SVM智能合约）验证比特币区块头和交易证明。"
+            },
+            {
+              "text": "验证后，等量的BTC将在Bitcoin Hyper第2层无信任地铸造。"
+            },
+            {
+              "label": "2. 第2层操作",
+              "text": ""
+            },
+            {
+              "text": "用户可以在第2层近乎瞬时完成BTC的发送、接收和交互。"
+            },
+            {
+              "text": "支持质押、去中心化交易等复杂功能。"
+            },
+            {
+              "text": "基于SVM架构，保证速度和可扩展性。"
+            },
+            {
+              "label": "3. 结算和安全",
+              "text": ""
+            },
+            {
+              "text": "第2层的交易被批处理和压缩。"
+            },
+            {
+              "text": "零知识（ZK）证明确保交易有效性。"
+            },
+            {
+              "text": "第2层状态定期提交到比特币第1层，保持比特币级别的安全。"
+            },
+            {
+              "label": "4. 提取到第1层",
+              "text": ""
+            },
+            {
+              "text": "用户可以发起提取请求，将BTC提现回第1层。"
+            },
+            {
+              "text": "生成证明并提交到Canonical Bridge。"
+            },
+            {
+              "text": "验证通过后，BTC释放到用户的原始比特币地址。"
+            }
+          ]
+        },
+        {
+          "number": "6",
+          "title": "$HYPER加密预售何时结束？",
+          "contents": [
+            {
+              "text": "BTC Hyper ICO数量有限，可能根据需求提前结束。请关注我们的官方渠道，及时获取最新信息，不要错过今年最佳加密预售。"
+            }
+          ]
+        }
+      ]
+    },
+    "footer": {
+      "desc": "免责声明",
+      "content1": "请始终自行研究。这里没有任何财务建议。这是一个表情币。",
+      "content2": "2025 bitcoin hyper 版权所有。"
     }
   }
+  
   
