@@ -11,10 +11,9 @@ export const Footer = () => {
   return (
     <section id="footer" className={styles.container}>
       <div className={styles.mainContent}>
-        <p className={styles.copyright}>Disclaimer</p>
-        <p className={styles.copyright}>Always do your own research. Nothing here is financial advice. This is a meme coin
-        </p>
-        <p className={styles.copyright}>2025 bitcoin hyper All rights reserved.</p>
+        <p className={styles.copyright}>{sectionText?.desc}</p>
+        <p className={styles.copyright}>{sectionText?.content1}</p>
+        <p className={styles.copyright}>{sectionText?.content2}</p>
         <img  className={styles.avatar} src='/img/btchyper/logo-white.svg' />
       </div>
     </section>

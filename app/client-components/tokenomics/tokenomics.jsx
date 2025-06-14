@@ -59,11 +59,11 @@ function InfoCard({ cardClass, title, contents }) {
     );
   }
   
-function BuyNowButton( {eventOnClick}) {
+function BuyNowButton( {eventOnClick, buyNow, desc}) {
     return(
         <div className={styles.buyNowWrapper}>
-            <button className={styles.buyNowBtn} onClick={eventOnClick}>Buy NOW</button>
-            <p>Full breakdown of how Bitcoin Hyper² works</p>
+            <button className={styles.buyNowBtn} onClick={eventOnClick}>{buyNow}</button>
+            <p>{desc}</p>
         </div>
     )
 }
@@ -88,7 +88,7 @@ export const Tokenomics = () => {
 
   return (
     <section id="tokenomics" className={styles.tokenomicsContainer}>
-        <h1 className={styles.title}>TOKENOMICS</h1>
+        <h1 className={styles.title}>{sectionText?.title}</h1>
 
         <div className={styles.mainContent}>
 
@@ -115,7 +115,7 @@ export const Tokenomics = () => {
                 </div>
 
             </div>
-            <div class={`${styles.item} ${styles.item4}`}><BuyNowButton eventOnClick={scrollToBuySection} /></div>
+            <div class={`${styles.item} ${styles.item4}`}><BuyNowButton buyNow={sectionText?.buyNow} desc={sectionText?.desc} eventOnClick={scrollToBuySection} /></div>
         </div>
 
 

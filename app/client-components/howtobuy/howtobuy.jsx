@@ -50,7 +50,7 @@ function HowToBuyCard({ cardClass, title, contents }) {
         <div className={styles.cardNumber}></div>
         <div className={styles.cardTitle}>{title}</div>
         
-        {contents.map((content, i) => (
+        {contents?.map((content, i) => (
           <div>{content} </div>
         ))}
       </div>
@@ -61,6 +61,8 @@ function HowToBuyCard({ cardClass, title, contents }) {
 
 export const HowToBuy = () => {
     const sectionText = useI18nSection('howtobuy')
+
+    const howToBuyContents = sectionText?.contents
 
     const scrollToBuySection = () => {
         // Find the target section to scroll to
@@ -82,24 +84,23 @@ export const HowToBuy = () => {
         <HowToBuyPromoBanner/>
 
         <h1 className={styles.title}>
-            How To Buy Bitcoin Hyper
-
+            {sectionText?.title}
         </h1>
         
         <div className={styles.flexRow}>
           <div className={styles.flex3}>
-              <HowToBuyCard cardClass={styles.card} number={howToBuyContents[0].number} title={howToBuyContents[0].title}  contents={howToBuyContents[0].contents}/>
+              <HowToBuyCard cardClass={styles.card} number={howToBuyContents?.[0].number} title={howToBuyContents?.[0].title}  contents={howToBuyContents?.[0].contents}/>
           </div>
           <div className={styles.flex3}>
-              <HowToBuyCard cardClass={`${styles.card} ${styles.operationCard}`} number={howToBuyContents[1].number} title={howToBuyContents[1].title}  contents={howToBuyContents[1].contents}/>
+              <HowToBuyCard cardClass={`${styles.card} ${styles.operationCard}`} number={howToBuyContents?.[1].number} title={howToBuyContents?.[1].title}  contents={howToBuyContents?.[1].contents}/>
 
           </div>
           <div className={styles.flex3}>
-              <HowToBuyCard cardClass={`${styles.card} ${styles.settlementCard}`} number={howToBuyContents[2].number} title={howToBuyContents[2].title}  contents={howToBuyContents[2].contents}/>
+              <HowToBuyCard cardClass={`${styles.card} ${styles.settlementCard}`} number={howToBuyContents?.[2].number} title={howToBuyContents?.[2].title}  contents={howToBuyContents?.[2].contents}/>
 
           </div>
           <div className={styles.flex3}>
-              <HowToBuyCard cardClass={`${styles.card} ${styles.settlementCard}`} number={howToBuyContents[2].number} title={howToBuyContents[2].title}  contents={howToBuyContents[2].contents}/>
+              <HowToBuyCard cardClass={`${styles.card} ${styles.settlementCard}`} number={howToBuyContents?.[2].number} title={howToBuyContents?.[2].title}  contents={howToBuyContents?.[2].contents}/>
 
           </div>
 
@@ -109,7 +110,7 @@ export const HowToBuy = () => {
         
         <div className={styles.buyNowContainer}>
             <button className={styles.buyNow} onClick={scrollToBuySection}>
-                BUY $HYPER NOW
+                {sectionText?.buyNow}
             </button>
         
         
