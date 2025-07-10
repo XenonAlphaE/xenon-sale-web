@@ -3,9 +3,8 @@
     "targetToken":{
         "address":"",
         "decimals":18,
-        "symbol": "HYPE",
-        "tokenPrice":"0.0118",
-        "totalStaked": 400102024
+        "symbol": "T6900",
+        "tokenPrice":"0.006525"
     },
     "previousRaised":5009043.52,
     "previousSoldTokens":0,
@@ -491,6 +490,514 @@
             }
         ],
         "salers": [
+            {
+                "address": "0xcb6492685a6F71C8b90D7d8938EEfDA3251ef126",
+                "abi": [
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "_config",
+                        "type": "address"
+                        },
+                        {
+                        "internalType": "address",
+                        "name": "initialOwner",
+                        "type": "address"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "_ethFeedPriceDecimals",
+                        "type": "uint256"
+                        }
+                    ],
+                    "stateMutability": "nonpayable",
+                    "type": "constructor"
+                    },
+                    {
+                    "inputs": [],
+                    "name": "ECDSAInvalidSignature",
+                    "type": "error"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "uint256",
+                        "name": "length",
+                        "type": "uint256"
+                        }
+                    ],
+                    "name": "ECDSAInvalidSignatureLength",
+                    "type": "error"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "bytes32",
+                        "name": "s",
+                        "type": "bytes32"
+                        }
+                    ],
+                    "name": "ECDSAInvalidSignatureS",
+                    "type": "error"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "owner",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "OwnableInvalidOwner",
+                    "type": "error"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "account",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "OwnableUnauthorizedAccount",
+                    "type": "error"
+                    },
+                    {
+                    "inputs": [],
+                    "name": "ReentrancyGuardReentrantCall",
+                    "type": "error"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "token",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "SafeERC20FailedOperation",
+                    "type": "error"
+                    },
+                    {
+                    "anonymous": false,
+                    "inputs": [
+                        {
+                        "indexed": true,
+                        "internalType": "address",
+                        "name": "previousOwner",
+                        "type": "address"
+                        },
+                        {
+                        "indexed": true,
+                        "internalType": "address",
+                        "name": "newOwner",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "OwnershipTransferred",
+                    "type": "event"
+                    },
+                    {
+                    "anonymous": false,
+                    "inputs": [
+                        {
+                        "indexed": false,
+                        "internalType": "address",
+                        "name": "sender",
+                        "type": "address"
+                        },
+                        {
+                        "indexed": false,
+                        "internalType": "uint256",
+                        "name": "totalvalue",
+                        "type": "uint256"
+                        }
+                    ],
+                    "name": "Sell",
+                    "type": "event"
+                    },
+                    {
+                    "anonymous": false,
+                    "inputs": [
+                        {
+                        "indexed": false,
+                        "internalType": "address",
+                        "name": "user",
+                        "type": "address"
+                        },
+                        {
+                        "indexed": false,
+                        "internalType": "uint256",
+                        "name": "amount",
+                        "type": "uint256"
+                        }
+                    ],
+                    "name": "Staked",
+                    "type": "event"
+                    },
+                    {
+                    "anonymous": false,
+                    "inputs": [
+                        {
+                        "indexed": false,
+                        "internalType": "contract IERC20",
+                        "name": "newToken",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "TokenAddressUpdated",
+                    "type": "event"
+                    },
+                    {
+                    "anonymous": false,
+                    "inputs": [
+                        {
+                        "indexed": false,
+                        "internalType": "address",
+                        "name": "buyer",
+                        "type": "address"
+                        },
+                        {
+                        "indexed": false,
+                        "internalType": "uint256",
+                        "name": "amount",
+                        "type": "uint256"
+                        }
+                    ],
+                    "name": "TokensClaimed",
+                    "type": "event"
+                    },
+                    {
+                    "anonymous": false,
+                    "inputs": [
+                        {
+                        "indexed": false,
+                        "internalType": "address",
+                        "name": "user",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "Withdrawed",
+                    "type": "event"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "string",
+                        "name": "tokenSymbol",
+                        "type": "string"
+                        },
+                        {
+                        "internalType": "bool",
+                        "name": "_stake",
+                        "type": "bool"
+                        },
+                        {
+                        "internalType": "address",
+                        "name": "ref",
+                        "type": "address"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "percent",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "refNonce",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "bytes",
+                        "name": "refSignature",
+                        "type": "bytes"
+                        }
+                    ],
+                    "name": "buyTokens",
+                    "outputs": [],
+                    "stateMutability": "payable",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "uint256",
+                        "name": "_usdtAmountDecimals",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "string",
+                        "name": "tokenSymbol",
+                        "type": "string"
+                        },
+                        {
+                        "internalType": "bool",
+                        "name": "_stake",
+                        "type": "bool"
+                        },
+                        {
+                        "internalType": "address",
+                        "name": "ref",
+                        "type": "address"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "percent",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "refNonce",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "bytes",
+                        "name": "refSignature",
+                        "type": "bytes"
+                        },
+                        {
+                        "internalType": "address",
+                        "name": "_stableCoin",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "buyWithUSDT",
+                    "outputs": [],
+                    "stateMutability": "nonpayable",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "bytes32",
+                        "name": "",
+                        "type": "bytes32"
+                        }
+                    ],
+                    "name": "buyerPurchases",
+                    "outputs": [
+                        {
+                        "internalType": "uint256",
+                        "name": "amount",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "staked",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "bool",
+                        "name": "claimed",
+                        "type": "bool"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "newOwner",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "changeOwner",
+                    "outputs": [],
+                    "stateMutability": "nonpayable",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "string",
+                        "name": "tokenSymbol",
+                        "type": "string"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "amount",
+                        "type": "uint256"
+                        }
+                    ],
+                    "name": "claimAndStake",
+                    "outputs": [],
+                    "stateMutability": "payable",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [],
+                    "name": "config",
+                    "outputs": [
+                        {
+                        "internalType": "contract IPresaleConfigV2",
+                        "name": "",
+                        "type": "address"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [],
+                    "name": "ethFeedPriceDecimals",
+                    "outputs": [
+                        {
+                        "internalType": "uint256",
+                        "name": "",
+                        "type": "uint256"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "_address",
+                        "type": "address"
+                        },
+                        {
+                        "internalType": "string",
+                        "name": "_additionalText",
+                        "type": "string"
+                        }
+                    ],
+                    "name": "generateKey",
+                    "outputs": [
+                        {
+                        "internalType": "bytes32",
+                        "name": "",
+                        "type": "bytes32"
+                        }
+                    ],
+                    "stateMutability": "pure",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [],
+                    "name": "getEthPrice",
+                    "outputs": [
+                        {
+                        "internalType": "int256",
+                        "name": "",
+                        "type": "int256"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [],
+                    "name": "owner",
+                    "outputs": [
+                        {
+                        "internalType": "address",
+                        "name": "",
+                        "type": "address"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [],
+                    "name": "renounceOwnership",
+                    "outputs": [],
+                    "stateMutability": "nonpayable",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "_stableCoin",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "takeFunds",
+                    "outputs": [],
+                    "stateMutability": "nonpayable",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "newOwner",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "transferOwnership",
+                    "outputs": [],
+                    "stateMutability": "nonpayable",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [],
+                    "name": "trustedRefSigner",
+                    "outputs": [
+                        {
+                        "internalType": "address",
+                        "name": "",
+                        "type": "address"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "ref",
+                        "type": "address"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "percent",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "nonce",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "bytes",
+                        "name": "signature",
+                        "type": "bytes"
+                        }
+                    ],
+                    "name": "verifySignature",
+                    "outputs": [
+                        {
+                        "internalType": "bool",
+                        "name": "",
+                        "type": "bool"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "string",
+                        "name": "tokenSymbol",
+                        "type": "string"
+                        }
+                    ],
+                    "name": "withdrawStake",
+                    "outputs": [],
+                    "stateMutability": "payable",
+                    "type": "function"
+                    }
+                ]
+            },
             {
                 "address": "0xB1f93cb08334712638f2455D3CF7BeAbe7e1Ef40",
                 "abi": [
@@ -1732,550 +2239,512 @@
         ],
         "salers": [
             {
-                "address":"0x34B4Ad895D7D9c0B1Cf3dAd4E85B0e85032d35C5",
+                "address":"0x2494629408500318d68746c5F31345149B37cD9d",
                 "abi": [
                     {
-                        "inputs": [
-                            {
-                                "internalType": "address",
-                                "name": "_usdtAddress",
-                                "type": "address"
-                            },
-                            {
-                                "internalType": "address",
-                                "name": "_ethPriceFeedAddress",
-                                "type": "address"
-                            },
-                            {
-                                "internalType": "uint256",
-                                "name": "_ethFeedPriceDecimals",
-                                "type": "uint256"
-                            }
-                        ],
-                        "stateMutability": "nonpayable",
-                        "type": "constructor"
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "_config",
+                        "type": "address"
+                        },
+                        {
+                        "internalType": "address",
+                        "name": "initialOwner",
+                        "type": "address"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "_ethFeedPriceDecimals",
+                        "type": "uint256"
+                        }
+                    ],
+                    "stateMutability": "nonpayable",
+                    "type": "constructor"
                     },
                     {
-                        "inputs": [],
-                        "name": "ECDSAInvalidSignature",
-                        "type": "error"
+                    "inputs": [],
+                    "name": "ECDSAInvalidSignature",
+                    "type": "error"
                     },
                     {
-                        "inputs": [
-                            {
-                                "internalType": "uint256",
-                                "name": "length",
-                                "type": "uint256"
-                            }
-                        ],
-                        "name": "ECDSAInvalidSignatureLength",
-                        "type": "error"
+                    "inputs": [
+                        {
+                        "internalType": "uint256",
+                        "name": "length",
+                        "type": "uint256"
+                        }
+                    ],
+                    "name": "ECDSAInvalidSignatureLength",
+                    "type": "error"
                     },
                     {
-                        "inputs": [
-                            {
-                                "internalType": "bytes32",
-                                "name": "s",
-                                "type": "bytes32"
-                            }
-                        ],
-                        "name": "ECDSAInvalidSignatureS",
-                        "type": "error"
+                    "inputs": [
+                        {
+                        "internalType": "bytes32",
+                        "name": "s",
+                        "type": "bytes32"
+                        }
+                    ],
+                    "name": "ECDSAInvalidSignatureS",
+                    "type": "error"
                     },
                     {
-                        "anonymous": false,
-                        "inputs": [
-                            {
-                                "indexed": true,
-                                "internalType": "address",
-                                "name": "previousOwner",
-                                "type": "address"
-                            },
-                            {
-                                "indexed": true,
-                                "internalType": "address",
-                                "name": "newOwner",
-                                "type": "address"
-                            }
-                        ],
-                        "name": "OwnershipTransferred",
-                        "type": "event"
-                    },
-                    {
-                        "anonymous": false,
-                        "inputs": [
-                            {
-                                "indexed": false,
-                                "internalType": "address",
-                                "name": "sender",
-                                "type": "address"
-                            },
-                            {
-                                "indexed": false,
-                                "internalType": "uint256",
-                                "name": "totalvalue",
-                                "type": "uint256"
-                            }
-                        ],
-                        "name": "Sell",
-                        "type": "event"
-                    },
-                    {
-                        "anonymous": false,
-                        "inputs": [
-                            {
-                                "indexed": false,
-                                "internalType": "address",
-                                "name": "user",
-                                "type": "address"
-                            },
-                            {
-                                "indexed": false,
-                                "internalType": "uint256",
-                                "name": "amount",
-                                "type": "uint256"
-                            }
-                        ],
-                        "name": "Staked",
-                        "type": "event"
-                    },
-                    {
-                        "anonymous": false,
-                        "inputs": [
-                            {
-                                "indexed": false,
-                                "internalType": "contract IERC20",
-                                "name": "newToken",
-                                "type": "address"
-                            }
-                        ],
-                        "name": "TokenAddressUpdated",
-                        "type": "event"
-                    },
-                    {
-                        "anonymous": false,
-                        "inputs": [
-                            {
-                                "indexed": false,
-                                "internalType": "address",
-                                "name": "buyer",
-                                "type": "address"
-                            },
-                            {
-                                "indexed": false,
-                                "internalType": "uint256",
-                                "name": "amount",
-                                "type": "uint256"
-                            }
-                        ],
-                        "name": "TokensClaimed",
-                        "type": "event"
-                    },
-                    {
-                        "anonymous": false,
-                        "inputs": [
-                            {
-                                "indexed": false,
-                                "internalType": "address",
-                                "name": "user",
-                                "type": "address"
-                            }
-                        ],
-                        "name": "Withdrawed",
-                        "type": "event"
-                    },
-                    {
-                        "inputs": [],
-                        "name": "USDT",
-                        "outputs": [
-                            {
-                                "internalType": "contract IETH_USDT",
-                                "name": "",
-                                "type": "address"
-                            }
-                        ],
-                        "stateMutability": "view",
-                        "type": "function"
-                    },
-                    {
-                        "inputs": [
-                            {
-                                "internalType": "string",
-                                "name": "tokenSymbol",
-                                "type": "string"
-                            },
-                            {
-                                "internalType": "bool",
-                                "name": "_stake",
-                                "type": "bool"
-                            },
-                            {
-                                "internalType": "address",
-                                "name": "ref",
-                                "type": "address"
-                            },
-                            {
-                                "internalType": "uint256",
-                                "name": "percent",
-                                "type": "uint256"
-                            },
-                            {
-                                "internalType": "uint256",
-                                "name": "refNonce",
-                                "type": "uint256"
-                            },
-                            {
-                                "internalType": "bytes",
-                                "name": "refSignature",
-                                "type": "bytes"
-                            }
-                        ],
-                        "name": "buyTokens",
-                        "outputs": [],
-                        "stateMutability": "payable",
-                        "type": "function"
-                    },
-                    {
-                        "inputs": [
-                            {
-                                "internalType": "string",
-                                "name": "tokenSymbol",
-                                "type": "string"
-                            },
-                            {
-                                "internalType": "bool",
-                                "name": "_stake",
-                                "type": "bool"
-                            },
-                            {
-                                "internalType": "address",
-                                "name": "ref",
-                                "type": "address"
-                            },
-                            {
-                                "internalType": "uint256",
-                                "name": "percent",
-                                "type": "uint256"
-                            },
-                            {
-                                "internalType": "uint256",
-                                "name": "refNonce",
-                                "type": "uint256"
-                            },
-                            {
-                                "internalType": "bytes",
-                                "name": "refSignature",
-                                "type": "bytes"
-                            }
-                        ],
-                        "name": "buyWithETH",
-                        "outputs": [],
-                        "stateMutability": "payable",
-                        "type": "function"
-                    },
-                    {
-                        "inputs": [
-                            {
-                                "internalType": "uint256",
-                                "name": "_usdtAmountDecimals",
-                                "type": "uint256"
-                            },
-                            {
-                                "internalType": "string",
-                                "name": "tokenSymbol",
-                                "type": "string"
-                            },
-                            {
-                                "internalType": "bool",
-                                "name": "_stake",
-                                "type": "bool"
-                            },
-                            {
-                                "internalType": "address",
-                                "name": "ref",
-                                "type": "address"
-                            },
-                            {
-                                "internalType": "uint256",
-                                "name": "percent",
-                                "type": "uint256"
-                            },
-                            {
-                                "internalType": "uint256",
-                                "name": "refNonce",
-                                "type": "uint256"
-                            },
-                            {
-                                "internalType": "bytes",
-                                "name": "refSignature",
-                                "type": "bytes"
-                            }
-                        ],
-                        "name": "buyWithUSDT",
-                        "outputs": [],
-                        "stateMutability": "nonpayable",
-                        "type": "function"
-                    },
-                    {
-                        "inputs": [
-                            {
-                                "internalType": "bytes32",
-                                "name": "",
-                                "type": "bytes32"
-                            }
-                        ],
-                        "name": "buyerPurchases",
-                        "outputs": [
-                            {
-                                "internalType": "uint256",
-                                "name": "amount",
-                                "type": "uint256"
-                            },
-                            {
-                                "internalType": "uint256",
-                                "name": "staked",
-                                "type": "uint256"
-                            },
-                            {
-                                "internalType": "bool",
-                                "name": "claimed",
-                                "type": "bool"
-                            }
-                        ],
-                        "stateMutability": "view",
-                        "type": "function"
-                    },
-                    {
-                        "inputs": [
-                            {
-                                "internalType": "address",
-                                "name": "newOwner",
-                                "type": "address"
-                            }
-                        ],
-                        "name": "changeOwner",
-                        "outputs": [],
-                        "stateMutability": "nonpayable",
-                        "type": "function"
-                    },
-                    {
-                        "inputs": [
-                            {
-                                "internalType": "string",
-                                "name": "tokenSymbol",
-                                "type": "string"
-                            },
-                            {
-                                "internalType": "uint256",
-                                "name": "amount",
-                                "type": "uint256"
-                            }
-                        ],
-                        "name": "claimAndStake",
-                        "outputs": [],
-                        "stateMutability": "payable",
-                        "type": "function"
-                    },
-                    {
-                        "inputs": [],
-                        "name": "ethFeedPriceDecimals",
-                        "outputs": [
-                            {
-                                "internalType": "uint256",
-                                "name": "",
-                                "type": "uint256"
-                            }
-                        ],
-                        "stateMutability": "view",
-                        "type": "function"
-                    },
-                    {
-                        "inputs": [],
-                        "name": "getEthPrice",
-                        "outputs": [
-                            {
-                                "internalType": "int256",
-                                "name": "",
-                                "type": "int256"
-                            }
-                        ],
-                        "stateMutability": "view",
-                        "type": "function"
-                    },
-                    {
-                        "inputs": [],
+                    "inputs": [
+                        {
+                        "internalType": "address",
                         "name": "owner",
-                        "outputs": [
-                            {
-                                "internalType": "address",
-                                "name": "",
-                                "type": "address"
-                            }
-                        ],
-                        "stateMutability": "view",
-                        "type": "function"
+                        "type": "address"
+                        }
+                    ],
+                    "name": "OwnableInvalidOwner",
+                    "type": "error"
                     },
                     {
-                        "inputs": [],
-                        "name": "renounceOwnership",
-                        "outputs": [],
-                        "stateMutability": "nonpayable",
-                        "type": "function"
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "account",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "OwnableUnauthorizedAccount",
+                    "type": "error"
                     },
                     {
-                        "inputs": [
-                            {
-                                "internalType": "address",
-                                "name": "_trustedSigner",
-                                "type": "address"
-                            }
-                        ],
-                        "name": "setTrustedRefSigner",
-                        "outputs": [],
-                        "stateMutability": "nonpayable",
-                        "type": "function"
+                    "inputs": [],
+                    "name": "ReentrancyGuardReentrantCall",
+                    "type": "error"
                     },
                     {
-                        "inputs": [],
-                        "name": "takeFunds",
-                        "outputs": [],
-                        "stateMutability": "nonpayable",
-                        "type": "function"
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "token",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "SafeERC20FailedOperation",
+                    "type": "error"
                     },
                     {
-                        "inputs": [
-                            {
-                                "internalType": "bytes32",
-                                "name": "",
-                                "type": "bytes32"
-                            }
-                        ],
-                        "name": "tokenInfoMap",
-                        "outputs": [
-                            {
-                                "internalType": "uint256",
-                                "name": "priceInUsd",
-                                "type": "uint256"
-                            },
-                            {
-                                "internalType": "uint104",
-                                "name": "tokenDecimals",
-                                "type": "uint104"
-                            }
-                        ],
-                        "stateMutability": "view",
-                        "type": "function"
+                    "anonymous": false,
+                    "inputs": [
+                        {
+                        "indexed": true,
+                        "internalType": "address",
+                        "name": "previousOwner",
+                        "type": "address"
+                        },
+                        {
+                        "indexed": true,
+                        "internalType": "address",
+                        "name": "newOwner",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "OwnershipTransferred",
+                    "type": "event"
                     },
                     {
-                        "inputs": [
-                            {
-                                "internalType": "address",
-                                "name": "newOwner",
-                                "type": "address"
-                            }
-                        ],
-                        "name": "transferOwnership",
-                        "outputs": [],
-                        "stateMutability": "nonpayable",
-                        "type": "function"
+                    "anonymous": false,
+                    "inputs": [
+                        {
+                        "indexed": false,
+                        "internalType": "address",
+                        "name": "sender",
+                        "type": "address"
+                        },
+                        {
+                        "indexed": false,
+                        "internalType": "uint256",
+                        "name": "totalvalue",
+                        "type": "uint256"
+                        }
+                    ],
+                    "name": "Sell",
+                    "type": "event"
                     },
                     {
-                        "inputs": [],
-                        "name": "trustedRefSigner",
-                        "outputs": [
-                            {
-                                "internalType": "address",
-                                "name": "",
-                                "type": "address"
-                            }
-                        ],
-                        "stateMutability": "view",
-                        "type": "function"
+                    "anonymous": false,
+                    "inputs": [
+                        {
+                        "indexed": false,
+                        "internalType": "address",
+                        "name": "user",
+                        "type": "address"
+                        },
+                        {
+                        "indexed": false,
+                        "internalType": "uint256",
+                        "name": "amount",
+                        "type": "uint256"
+                        }
+                    ],
+                    "name": "Staked",
+                    "type": "event"
                     },
                     {
-                        "inputs": [
-                            {
-                                "internalType": "string",
-                                "name": "key",
-                                "type": "string"
-                            },
-                            {
-                                "internalType": "uint256",
-                                "name": "_priceInUsd",
-                                "type": "uint256"
-                            },
-                            {
-                                "internalType": "uint104",
-                                "name": "_tokenDecimals",
-                                "type": "uint104"
-                            }
-                        ],
-                        "name": "updateTokenInfo",
-                        "outputs": [],
-                        "stateMutability": "nonpayable",
-                        "type": "function"
+                    "anonymous": false,
+                    "inputs": [
+                        {
+                        "indexed": false,
+                        "internalType": "contract IERC20",
+                        "name": "newToken",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "TokenAddressUpdated",
+                    "type": "event"
                     },
                     {
-                        "inputs": [],
-                        "name": "usdtAddress",
-                        "outputs": [
-                            {
-                                "internalType": "address",
-                                "name": "",
-                                "type": "address"
-                            }
-                        ],
-                        "stateMutability": "view",
-                        "type": "function"
+                    "anonymous": false,
+                    "inputs": [
+                        {
+                        "indexed": false,
+                        "internalType": "address",
+                        "name": "buyer",
+                        "type": "address"
+                        },
+                        {
+                        "indexed": false,
+                        "internalType": "uint256",
+                        "name": "amount",
+                        "type": "uint256"
+                        }
+                    ],
+                    "name": "TokensClaimed",
+                    "type": "event"
                     },
                     {
-                        "inputs": [
-                            {
-                                "internalType": "address",
-                                "name": "ref",
-                                "type": "address"
-                            },
-                            {
-                                "internalType": "uint256",
-                                "name": "percent",
-                                "type": "uint256"
-                            },
-                            {
-                                "internalType": "uint256",
-                                "name": "nonce",
-                                "type": "uint256"
-                            },
-                            {
-                                "internalType": "bytes",
-                                "name": "signature",
-                                "type": "bytes"
-                            }
-                        ],
-                        "name": "verifySignature",
-                        "outputs": [
-                            {
-                                "internalType": "bool",
-                                "name": "",
-                                "type": "bool"
-                            }
-                        ],
-                        "stateMutability": "view",
-                        "type": "function"
+                    "anonymous": false,
+                    "inputs": [
+                        {
+                        "indexed": false,
+                        "internalType": "address",
+                        "name": "user",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "Withdrawed",
+                    "type": "event"
                     },
                     {
-                        "inputs": [
-                            {
-                                "internalType": "string",
-                                "name": "tokenSymbol",
-                                "type": "string"
-                            }
-                        ],
-                        "name": "withdrawStake",
-                        "outputs": [],
-                        "stateMutability": "payable",
-                        "type": "function"
+                    "inputs": [
+                        {
+                        "internalType": "string",
+                        "name": "tokenSymbol",
+                        "type": "string"
+                        },
+                        {
+                        "internalType": "bool",
+                        "name": "_stake",
+                        "type": "bool"
+                        },
+                        {
+                        "internalType": "address",
+                        "name": "ref",
+                        "type": "address"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "percent",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "refNonce",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "bytes",
+                        "name": "refSignature",
+                        "type": "bytes"
+                        }
+                    ],
+                    "name": "buyTokens",
+                    "outputs": [],
+                    "stateMutability": "payable",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "uint256",
+                        "name": "_usdtAmountDecimals",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "string",
+                        "name": "tokenSymbol",
+                        "type": "string"
+                        },
+                        {
+                        "internalType": "bool",
+                        "name": "_stake",
+                        "type": "bool"
+                        },
+                        {
+                        "internalType": "address",
+                        "name": "ref",
+                        "type": "address"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "percent",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "refNonce",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "bytes",
+                        "name": "refSignature",
+                        "type": "bytes"
+                        },
+                        {
+                        "internalType": "address",
+                        "name": "_stableCoin",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "buyWithUSDT",
+                    "outputs": [],
+                    "stateMutability": "nonpayable",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "bytes32",
+                        "name": "",
+                        "type": "bytes32"
+                        }
+                    ],
+                    "name": "buyerPurchases",
+                    "outputs": [
+                        {
+                        "internalType": "uint256",
+                        "name": "amount",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "staked",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "bool",
+                        "name": "claimed",
+                        "type": "bool"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "newOwner",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "changeOwner",
+                    "outputs": [],
+                    "stateMutability": "nonpayable",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "string",
+                        "name": "tokenSymbol",
+                        "type": "string"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "amount",
+                        "type": "uint256"
+                        }
+                    ],
+                    "name": "claimAndStake",
+                    "outputs": [],
+                    "stateMutability": "payable",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [],
+                    "name": "config",
+                    "outputs": [
+                        {
+                        "internalType": "contract IPresaleConfigV2",
+                        "name": "",
+                        "type": "address"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [],
+                    "name": "ethFeedPriceDecimals",
+                    "outputs": [
+                        {
+                        "internalType": "uint256",
+                        "name": "",
+                        "type": "uint256"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "_address",
+                        "type": "address"
+                        },
+                        {
+                        "internalType": "string",
+                        "name": "_additionalText",
+                        "type": "string"
+                        }
+                    ],
+                    "name": "generateKey",
+                    "outputs": [
+                        {
+                        "internalType": "bytes32",
+                        "name": "",
+                        "type": "bytes32"
+                        }
+                    ],
+                    "stateMutability": "pure",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [],
+                    "name": "getEthPrice",
+                    "outputs": [
+                        {
+                        "internalType": "int256",
+                        "name": "",
+                        "type": "int256"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [],
+                    "name": "owner",
+                    "outputs": [
+                        {
+                        "internalType": "address",
+                        "name": "",
+                        "type": "address"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [],
+                    "name": "renounceOwnership",
+                    "outputs": [],
+                    "stateMutability": "nonpayable",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "_stableCoin",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "takeFunds",
+                    "outputs": [],
+                    "stateMutability": "nonpayable",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "newOwner",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "transferOwnership",
+                    "outputs": [],
+                    "stateMutability": "nonpayable",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [],
+                    "name": "trustedRefSigner",
+                    "outputs": [
+                        {
+                        "internalType": "address",
+                        "name": "",
+                        "type": "address"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "ref",
+                        "type": "address"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "percent",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "nonce",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "bytes",
+                        "name": "signature",
+                        "type": "bytes"
+                        }
+                    ],
+                    "name": "verifySignature",
+                    "outputs": [
+                        {
+                        "internalType": "bool",
+                        "name": "",
+                        "type": "bool"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "string",
+                        "name": "tokenSymbol",
+                        "type": "string"
+                        }
+                    ],
+                    "name": "withdrawStake",
+                    "outputs": [],
+                    "stateMutability": "payable",
+                    "type": "function"
                     }
-                ]            
+                ]
             },
             {
                 "address":"0x6EA5925DB09973786259092cFA8AE4116A44Ce2C",
@@ -3220,6 +3689,514 @@
         "USDT_Decimals": 6,
         "USDT_Abi":[{"inputs":[{"internalType":"address","name":"_l2Bridge","type":"address"},{"internalType":"address","name":"_l1Token","type":"address"}],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"owner","type":"address"},{"indexed":true,"internalType":"address","name":"spender","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Approval","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"_account","type":"address"},{"indexed":false,"internalType":"uint256","name":"_amount","type":"uint256"}],"name":"Burn","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"_account","type":"address"},{"indexed":false,"internalType":"uint256","name":"_amount","type":"uint256"}],"name":"Mint","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"from","type":"address"},{"indexed":true,"internalType":"address","name":"to","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Transfer","type":"event"},{"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"address","name":"spender","type":"address"}],"name":"allowance","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"approve","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"account","type":"address"}],"name":"balanceOf","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"_from","type":"address"},{"internalType":"uint256","name":"_amount","type":"uint256"}],"name":"burn","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"decimals","outputs":[{"internalType":"uint8","name":"","type":"uint8"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"subtractedValue","type":"uint256"}],"name":"decreaseAllowance","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"addedValue","type":"uint256"}],"name":"increaseAllowance","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"l1Token","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"l2Bridge","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"_to","type":"address"},{"internalType":"uint256","name":"_amount","type":"uint256"}],"name":"mint","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"name","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"bytes4","name":"_interfaceId","type":"bytes4"}],"name":"supportsInterface","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"pure","type":"function"},{"inputs":[],"name":"symbol","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"totalSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"recipient","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transfer","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"sender","type":"address"},{"internalType":"address","name":"recipient","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transferFrom","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"}],
         "salers": [   
+            {
+                "address":"0x6e45Bf81d032d5693744f3604a8e0E1817465E9d",
+                "abi": [
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "_config",
+                        "type": "address"
+                        },
+                        {
+                        "internalType": "address",
+                        "name": "initialOwner",
+                        "type": "address"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "_ethFeedPriceDecimals",
+                        "type": "uint256"
+                        }
+                    ],
+                    "stateMutability": "nonpayable",
+                    "type": "constructor"
+                    },
+                    {
+                    "inputs": [],
+                    "name": "ECDSAInvalidSignature",
+                    "type": "error"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "uint256",
+                        "name": "length",
+                        "type": "uint256"
+                        }
+                    ],
+                    "name": "ECDSAInvalidSignatureLength",
+                    "type": "error"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "bytes32",
+                        "name": "s",
+                        "type": "bytes32"
+                        }
+                    ],
+                    "name": "ECDSAInvalidSignatureS",
+                    "type": "error"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "owner",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "OwnableInvalidOwner",
+                    "type": "error"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "account",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "OwnableUnauthorizedAccount",
+                    "type": "error"
+                    },
+                    {
+                    "inputs": [],
+                    "name": "ReentrancyGuardReentrantCall",
+                    "type": "error"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "token",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "SafeERC20FailedOperation",
+                    "type": "error"
+                    },
+                    {
+                    "anonymous": false,
+                    "inputs": [
+                        {
+                        "indexed": true,
+                        "internalType": "address",
+                        "name": "previousOwner",
+                        "type": "address"
+                        },
+                        {
+                        "indexed": true,
+                        "internalType": "address",
+                        "name": "newOwner",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "OwnershipTransferred",
+                    "type": "event"
+                    },
+                    {
+                    "anonymous": false,
+                    "inputs": [
+                        {
+                        "indexed": false,
+                        "internalType": "address",
+                        "name": "sender",
+                        "type": "address"
+                        },
+                        {
+                        "indexed": false,
+                        "internalType": "uint256",
+                        "name": "totalvalue",
+                        "type": "uint256"
+                        }
+                    ],
+                    "name": "Sell",
+                    "type": "event"
+                    },
+                    {
+                    "anonymous": false,
+                    "inputs": [
+                        {
+                        "indexed": false,
+                        "internalType": "address",
+                        "name": "user",
+                        "type": "address"
+                        },
+                        {
+                        "indexed": false,
+                        "internalType": "uint256",
+                        "name": "amount",
+                        "type": "uint256"
+                        }
+                    ],
+                    "name": "Staked",
+                    "type": "event"
+                    },
+                    {
+                    "anonymous": false,
+                    "inputs": [
+                        {
+                        "indexed": false,
+                        "internalType": "contract IERC20",
+                        "name": "newToken",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "TokenAddressUpdated",
+                    "type": "event"
+                    },
+                    {
+                    "anonymous": false,
+                    "inputs": [
+                        {
+                        "indexed": false,
+                        "internalType": "address",
+                        "name": "buyer",
+                        "type": "address"
+                        },
+                        {
+                        "indexed": false,
+                        "internalType": "uint256",
+                        "name": "amount",
+                        "type": "uint256"
+                        }
+                    ],
+                    "name": "TokensClaimed",
+                    "type": "event"
+                    },
+                    {
+                    "anonymous": false,
+                    "inputs": [
+                        {
+                        "indexed": false,
+                        "internalType": "address",
+                        "name": "user",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "Withdrawed",
+                    "type": "event"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "string",
+                        "name": "tokenSymbol",
+                        "type": "string"
+                        },
+                        {
+                        "internalType": "bool",
+                        "name": "_stake",
+                        "type": "bool"
+                        },
+                        {
+                        "internalType": "address",
+                        "name": "ref",
+                        "type": "address"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "percent",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "refNonce",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "bytes",
+                        "name": "refSignature",
+                        "type": "bytes"
+                        }
+                    ],
+                    "name": "buyTokens",
+                    "outputs": [],
+                    "stateMutability": "payable",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "uint256",
+                        "name": "_usdtAmountDecimals",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "string",
+                        "name": "tokenSymbol",
+                        "type": "string"
+                        },
+                        {
+                        "internalType": "bool",
+                        "name": "_stake",
+                        "type": "bool"
+                        },
+                        {
+                        "internalType": "address",
+                        "name": "ref",
+                        "type": "address"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "percent",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "refNonce",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "bytes",
+                        "name": "refSignature",
+                        "type": "bytes"
+                        },
+                        {
+                        "internalType": "address",
+                        "name": "_stableCoin",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "buyWithUSDT",
+                    "outputs": [],
+                    "stateMutability": "nonpayable",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "bytes32",
+                        "name": "",
+                        "type": "bytes32"
+                        }
+                    ],
+                    "name": "buyerPurchases",
+                    "outputs": [
+                        {
+                        "internalType": "uint256",
+                        "name": "amount",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "staked",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "bool",
+                        "name": "claimed",
+                        "type": "bool"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "newOwner",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "changeOwner",
+                    "outputs": [],
+                    "stateMutability": "nonpayable",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "string",
+                        "name": "tokenSymbol",
+                        "type": "string"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "amount",
+                        "type": "uint256"
+                        }
+                    ],
+                    "name": "claimAndStake",
+                    "outputs": [],
+                    "stateMutability": "payable",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [],
+                    "name": "config",
+                    "outputs": [
+                        {
+                        "internalType": "contract IPresaleConfigV2",
+                        "name": "",
+                        "type": "address"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [],
+                    "name": "ethFeedPriceDecimals",
+                    "outputs": [
+                        {
+                        "internalType": "uint256",
+                        "name": "",
+                        "type": "uint256"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "_address",
+                        "type": "address"
+                        },
+                        {
+                        "internalType": "string",
+                        "name": "_additionalText",
+                        "type": "string"
+                        }
+                    ],
+                    "name": "generateKey",
+                    "outputs": [
+                        {
+                        "internalType": "bytes32",
+                        "name": "",
+                        "type": "bytes32"
+                        }
+                    ],
+                    "stateMutability": "pure",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [],
+                    "name": "getEthPrice",
+                    "outputs": [
+                        {
+                        "internalType": "int256",
+                        "name": "",
+                        "type": "int256"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [],
+                    "name": "owner",
+                    "outputs": [
+                        {
+                        "internalType": "address",
+                        "name": "",
+                        "type": "address"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [],
+                    "name": "renounceOwnership",
+                    "outputs": [],
+                    "stateMutability": "nonpayable",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "_stableCoin",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "takeFunds",
+                    "outputs": [],
+                    "stateMutability": "nonpayable",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "newOwner",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "transferOwnership",
+                    "outputs": [],
+                    "stateMutability": "nonpayable",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [],
+                    "name": "trustedRefSigner",
+                    "outputs": [
+                        {
+                        "internalType": "address",
+                        "name": "",
+                        "type": "address"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "ref",
+                        "type": "address"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "percent",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "nonce",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "bytes",
+                        "name": "signature",
+                        "type": "bytes"
+                        }
+                    ],
+                    "name": "verifySignature",
+                    "outputs": [
+                        {
+                        "internalType": "bool",
+                        "name": "",
+                        "type": "bool"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "string",
+                        "name": "tokenSymbol",
+                        "type": "string"
+                        }
+                    ],
+                    "name": "withdrawStake",
+                    "outputs": [],
+                    "stateMutability": "payable",
+                    "type": "function"
+                    }
+                ]     
+            },
             {
                 "address":"0x0e9c89DC99868212e9c029CEc9da8119293Ab765",
                 "abi": [
@@ -4834,25 +5811,25 @@
         "USDT_Abi": [{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"owner","type":"address"},{"indexed":true,"internalType":"address","name":"spender","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Approval","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"authorizer","type":"address"},{"indexed":true,"internalType":"bytes32","name":"nonce","type":"bytes32"}],"name":"AuthorizationCanceled","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"authorizer","type":"address"},{"indexed":true,"internalType":"bytes32","name":"nonce","type":"bytes32"}],"name":"AuthorizationUsed","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"_account","type":"address"}],"name":"Blacklisted","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"newBlacklister","type":"address"}],"name":"BlacklisterChanged","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"burner","type":"address"},{"indexed":false,"internalType":"uint256","name":"amount","type":"uint256"}],"name":"Burn","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"newMasterMinter","type":"address"}],"name":"MasterMinterChanged","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"minter","type":"address"},{"indexed":true,"internalType":"address","name":"to","type":"address"},{"indexed":false,"internalType":"uint256","name":"amount","type":"uint256"}],"name":"Mint","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"minter","type":"address"},{"indexed":false,"internalType":"uint256","name":"minterAllowedAmount","type":"uint256"}],"name":"MinterConfigured","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"oldMinter","type":"address"}],"name":"MinterRemoved","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"address","name":"previousOwner","type":"address"},{"indexed":false,"internalType":"address","name":"newOwner","type":"address"}],"name":"OwnershipTransferred","type":"event"},{"anonymous":false,"inputs":[],"name":"Pause","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"newAddress","type":"address"}],"name":"PauserChanged","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"newRescuer","type":"address"}],"name":"RescuerChanged","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"from","type":"address"},{"indexed":true,"internalType":"address","name":"to","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Transfer","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"_account","type":"address"}],"name":"UnBlacklisted","type":"event"},{"anonymous":false,"inputs":[],"name":"Unpause","type":"event"},{"inputs":[],"name":"CANCEL_AUTHORIZATION_TYPEHASH","outputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"DOMAIN_SEPARATOR","outputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"PERMIT_TYPEHASH","outputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"RECEIVE_WITH_AUTHORIZATION_TYPEHASH","outputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"TRANSFER_WITH_AUTHORIZATION_TYPEHASH","outputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"address","name":"spender","type":"address"}],"name":"allowance","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"value","type":"uint256"}],"name":"approve","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"authorizer","type":"address"},{"internalType":"bytes32","name":"nonce","type":"bytes32"}],"name":"authorizationState","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"account","type":"address"}],"name":"balanceOf","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"_account","type":"address"}],"name":"blacklist","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"blacklister","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"_amount","type":"uint256"}],"name":"burn","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"authorizer","type":"address"},{"internalType":"bytes32","name":"nonce","type":"bytes32"},{"internalType":"uint8","name":"v","type":"uint8"},{"internalType":"bytes32","name":"r","type":"bytes32"},{"internalType":"bytes32","name":"s","type":"bytes32"}],"name":"cancelAuthorization","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"minter","type":"address"},{"internalType":"uint256","name":"minterAllowedAmount","type":"uint256"}],"name":"configureMinter","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"currency","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"decimals","outputs":[{"internalType":"uint8","name":"","type":"uint8"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"decrement","type":"uint256"}],"name":"decreaseAllowance","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"increment","type":"uint256"}],"name":"increaseAllowance","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"string","name":"tokenName","type":"string"},{"internalType":"string","name":"tokenSymbol","type":"string"},{"internalType":"string","name":"tokenCurrency","type":"string"},{"internalType":"uint8","name":"tokenDecimals","type":"uint8"},{"internalType":"address","name":"newMasterMinter","type":"address"},{"internalType":"address","name":"newPauser","type":"address"},{"internalType":"address","name":"newBlacklister","type":"address"},{"internalType":"address","name":"newOwner","type":"address"}],"name":"initialize","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"string","name":"newName","type":"string"}],"name":"initializeV2","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"lostAndFound","type":"address"}],"name":"initializeV2_1","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_account","type":"address"}],"name":"isBlacklisted","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"account","type":"address"}],"name":"isMinter","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"masterMinter","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"_to","type":"address"},{"internalType":"uint256","name":"_amount","type":"uint256"}],"name":"mint","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"minter","type":"address"}],"name":"minterAllowance","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"name","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"}],"name":"nonces","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"pause","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"paused","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"pauser","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"value","type":"uint256"},{"internalType":"uint256","name":"deadline","type":"uint256"},{"internalType":"uint8","name":"v","type":"uint8"},{"internalType":"bytes32","name":"r","type":"bytes32"},{"internalType":"bytes32","name":"s","type":"bytes32"}],"name":"permit","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"from","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"value","type":"uint256"},{"internalType":"uint256","name":"validAfter","type":"uint256"},{"internalType":"uint256","name":"validBefore","type":"uint256"},{"internalType":"bytes32","name":"nonce","type":"bytes32"},{"internalType":"uint8","name":"v","type":"uint8"},{"internalType":"bytes32","name":"r","type":"bytes32"},{"internalType":"bytes32","name":"s","type":"bytes32"}],"name":"receiveWithAuthorization","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"minter","type":"address"}],"name":"removeMinter","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"contract IERC20","name":"tokenContract","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"rescueERC20","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"rescuer","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"symbol","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"totalSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"value","type":"uint256"}],"name":"transfer","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"from","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"value","type":"uint256"}],"name":"transferFrom","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"from","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"value","type":"uint256"},{"internalType":"uint256","name":"validAfter","type":"uint256"},{"internalType":"uint256","name":"validBefore","type":"uint256"},{"internalType":"bytes32","name":"nonce","type":"bytes32"},{"internalType":"uint8","name":"v","type":"uint8"},{"internalType":"bytes32","name":"r","type":"bytes32"},{"internalType":"bytes32","name":"s","type":"bytes32"}],"name":"transferWithAuthorization","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_account","type":"address"}],"name":"unBlacklist","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"unpause","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_newBlacklister","type":"address"}],"name":"updateBlacklister","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_newMasterMinter","type":"address"}],"name":"updateMasterMinter","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_newPauser","type":"address"}],"name":"updatePauser","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"newRescuer","type":"address"}],"name":"updateRescuer","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"version","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"}],
         "salers": [
             {
-                "address":"0x0cce71773a74cb7E70313983D536EA1DECa5b840",
+                "address":"0x432e46FAdB85ADcc192913c96B67cF8A3ed5E8Ee",
                 "abi": [
                     {
                         "inputs": [
-                            {
-                                "internalType": "address",
-                                "name": "_usdtAddress",
-                                "type": "address"
-                            },
-                            {
-                                "internalType": "address",
-                                "name": "_ethPriceFeedAddress",
-                                "type": "address"
-                            },
-                            {
-                                "internalType": "uint256",
-                                "name": "_ethFeedPriceDecimals",
-                                "type": "uint256"
-                            }
+                        {
+                            "internalType": "address",
+                            "name": "_config",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "initialOwner",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "_ethFeedPriceDecimals",
+                            "type": "uint256"
+                        }
                         ],
                         "stateMutability": "nonpayable",
                         "type": "constructor"
@@ -4864,41 +5841,79 @@
                     },
                     {
                         "inputs": [
-                            {
-                                "internalType": "uint256",
-                                "name": "length",
-                                "type": "uint256"
-                            }
+                        {
+                            "internalType": "uint256",
+                            "name": "length",
+                            "type": "uint256"
+                        }
                         ],
                         "name": "ECDSAInvalidSignatureLength",
                         "type": "error"
                     },
                     {
                         "inputs": [
-                            {
-                                "internalType": "bytes32",
-                                "name": "s",
-                                "type": "bytes32"
-                            }
+                        {
+                            "internalType": "bytes32",
+                            "name": "s",
+                            "type": "bytes32"
+                        }
                         ],
                         "name": "ECDSAInvalidSignatureS",
                         "type": "error"
                     },
                     {
+                        "inputs": [
+                        {
+                            "internalType": "address",
+                            "name": "owner",
+                            "type": "address"
+                        }
+                        ],
+                        "name": "OwnableInvalidOwner",
+                        "type": "error"
+                    },
+                    {
+                        "inputs": [
+                        {
+                            "internalType": "address",
+                            "name": "account",
+                            "type": "address"
+                        }
+                        ],
+                        "name": "OwnableUnauthorizedAccount",
+                        "type": "error"
+                    },
+                    {
+                        "inputs": [],
+                        "name": "ReentrancyGuardReentrantCall",
+                        "type": "error"
+                    },
+                    {
+                        "inputs": [
+                        {
+                            "internalType": "address",
+                            "name": "token",
+                            "type": "address"
+                        }
+                        ],
+                        "name": "SafeERC20FailedOperation",
+                        "type": "error"
+                    },
+                    {
                         "anonymous": false,
                         "inputs": [
-                            {
-                                "indexed": true,
-                                "internalType": "address",
-                                "name": "previousOwner",
-                                "type": "address"
-                            },
-                            {
-                                "indexed": true,
-                                "internalType": "address",
-                                "name": "newOwner",
-                                "type": "address"
-                            }
+                        {
+                            "indexed": true,
+                            "internalType": "address",
+                            "name": "previousOwner",
+                            "type": "address"
+                        },
+                        {
+                            "indexed": true,
+                            "internalType": "address",
+                            "name": "newOwner",
+                            "type": "address"
+                        }
                         ],
                         "name": "OwnershipTransferred",
                         "type": "event"
@@ -4906,18 +5921,18 @@
                     {
                         "anonymous": false,
                         "inputs": [
-                            {
-                                "indexed": false,
-                                "internalType": "address",
-                                "name": "sender",
-                                "type": "address"
-                            },
-                            {
-                                "indexed": false,
-                                "internalType": "uint256",
-                                "name": "totalvalue",
-                                "type": "uint256"
-                            }
+                        {
+                            "indexed": false,
+                            "internalType": "address",
+                            "name": "sender",
+                            "type": "address"
+                        },
+                        {
+                            "indexed": false,
+                            "internalType": "uint256",
+                            "name": "totalvalue",
+                            "type": "uint256"
+                        }
                         ],
                         "name": "Sell",
                         "type": "event"
@@ -4925,18 +5940,18 @@
                     {
                         "anonymous": false,
                         "inputs": [
-                            {
-                                "indexed": false,
-                                "internalType": "address",
-                                "name": "user",
-                                "type": "address"
-                            },
-                            {
-                                "indexed": false,
-                                "internalType": "uint256",
-                                "name": "amount",
-                                "type": "uint256"
-                            }
+                        {
+                            "indexed": false,
+                            "internalType": "address",
+                            "name": "user",
+                            "type": "address"
+                        },
+                        {
+                            "indexed": false,
+                            "internalType": "uint256",
+                            "name": "amount",
+                            "type": "uint256"
+                        }
                         ],
                         "name": "Staked",
                         "type": "event"
@@ -4944,12 +5959,12 @@
                     {
                         "anonymous": false,
                         "inputs": [
-                            {
-                                "indexed": false,
-                                "internalType": "contract IERC20",
-                                "name": "newToken",
-                                "type": "address"
-                            }
+                        {
+                            "indexed": false,
+                            "internalType": "contract IERC20",
+                            "name": "newToken",
+                            "type": "address"
+                        }
                         ],
                         "name": "TokenAddressUpdated",
                         "type": "event"
@@ -4957,18 +5972,18 @@
                     {
                         "anonymous": false,
                         "inputs": [
-                            {
-                                "indexed": false,
-                                "internalType": "address",
-                                "name": "buyer",
-                                "type": "address"
-                            },
-                            {
-                                "indexed": false,
-                                "internalType": "uint256",
-                                "name": "amount",
-                                "type": "uint256"
-                            }
+                        {
+                            "indexed": false,
+                            "internalType": "address",
+                            "name": "buyer",
+                            "type": "address"
+                        },
+                        {
+                            "indexed": false,
+                            "internalType": "uint256",
+                            "name": "amount",
+                            "type": "uint256"
+                        }
                         ],
                         "name": "TokensClaimed",
                         "type": "event"
@@ -4976,61 +5991,48 @@
                     {
                         "anonymous": false,
                         "inputs": [
-                            {
-                                "indexed": false,
-                                "internalType": "address",
-                                "name": "user",
-                                "type": "address"
-                            }
+                        {
+                            "indexed": false,
+                            "internalType": "address",
+                            "name": "user",
+                            "type": "address"
+                        }
                         ],
                         "name": "Withdrawed",
                         "type": "event"
                     },
                     {
-                        "inputs": [],
-                        "name": "USDC",
-                        "outputs": [
-                            {
-                                "internalType": "contract IERC20",
-                                "name": "",
-                                "type": "address"
-                            }
-                        ],
-                        "stateMutability": "view",
-                        "type": "function"
-                    },
-                    {
                         "inputs": [
-                            {
-                                "internalType": "string",
-                                "name": "tokenSymbol",
-                                "type": "string"
-                            },
-                            {
-                                "internalType": "bool",
-                                "name": "_stake",
-                                "type": "bool"
-                            },
-                            {
-                                "internalType": "address",
-                                "name": "ref",
-                                "type": "address"
-                            },
-                            {
-                                "internalType": "uint256",
-                                "name": "percent",
-                                "type": "uint256"
-                            },
-                            {
-                                "internalType": "uint256",
-                                "name": "refNonce",
-                                "type": "uint256"
-                            },
-                            {
-                                "internalType": "bytes",
-                                "name": "refSignature",
-                                "type": "bytes"
-                            }
+                        {
+                            "internalType": "string",
+                            "name": "tokenSymbol",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "bool",
+                            "name": "_stake",
+                            "type": "bool"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "ref",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "percent",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "refNonce",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "bytes",
+                            "name": "refSignature",
+                            "type": "bytes"
+                        }
                         ],
                         "name": "buyTokens",
                         "outputs": [],
@@ -5039,41 +6041,46 @@
                     },
                     {
                         "inputs": [
-                            {
-                                "internalType": "uint256",
-                                "name": "_usdtAmountDecimals",
-                                "type": "uint256"
-                            },
-                            {
-                                "internalType": "string",
-                                "name": "tokenSymbol",
-                                "type": "string"
-                            },
-                            {
-                                "internalType": "bool",
-                                "name": "_stake",
-                                "type": "bool"
-                            },
-                            {
-                                "internalType": "address",
-                                "name": "ref",
-                                "type": "address"
-                            },
-                            {
-                                "internalType": "uint256",
-                                "name": "percent",
-                                "type": "uint256"
-                            },
-                            {
-                                "internalType": "uint256",
-                                "name": "refNonce",
-                                "type": "uint256"
-                            },
-                            {
-                                "internalType": "bytes",
-                                "name": "refSignature",
-                                "type": "bytes"
-                            }
+                        {
+                            "internalType": "uint256",
+                            "name": "_usdtAmountDecimals",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "tokenSymbol",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "bool",
+                            "name": "_stake",
+                            "type": "bool"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "ref",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "percent",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "refNonce",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "bytes",
+                            "name": "refSignature",
+                            "type": "bytes"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "_stableCoin",
+                            "type": "address"
+                        }
                         ],
                         "name": "buyWithUSDT",
                         "outputs": [],
@@ -5082,40 +6089,40 @@
                     },
                     {
                         "inputs": [
-                            {
-                                "internalType": "bytes32",
-                                "name": "",
-                                "type": "bytes32"
-                            }
+                        {
+                            "internalType": "bytes32",
+                            "name": "",
+                            "type": "bytes32"
+                        }
                         ],
                         "name": "buyerPurchases",
                         "outputs": [
-                            {
-                                "internalType": "uint256",
-                                "name": "amount",
-                                "type": "uint256"
-                            },
-                            {
-                                "internalType": "uint256",
-                                "name": "staked",
-                                "type": "uint256"
-                            },
-                            {
-                                "internalType": "bool",
-                                "name": "claimed",
-                                "type": "bool"
-                            }
+                        {
+                            "internalType": "uint256",
+                            "name": "amount",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "staked",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "bool",
+                            "name": "claimed",
+                            "type": "bool"
+                        }
                         ],
                         "stateMutability": "view",
                         "type": "function"
                     },
                     {
                         "inputs": [
-                            {
-                                "internalType": "address",
-                                "name": "newOwner",
-                                "type": "address"
-                            }
+                        {
+                            "internalType": "address",
+                            "name": "newOwner",
+                            "type": "address"
+                        }
                         ],
                         "name": "changeOwner",
                         "outputs": [],
@@ -5124,16 +6131,16 @@
                     },
                     {
                         "inputs": [
-                            {
-                                "internalType": "string",
-                                "name": "tokenSymbol",
-                                "type": "string"
-                            },
-                            {
-                                "internalType": "uint256",
-                                "name": "amount",
-                                "type": "uint256"
-                            }
+                        {
+                            "internalType": "string",
+                            "name": "tokenSymbol",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "amount",
+                            "type": "uint256"
+                        }
                         ],
                         "name": "claimAndStake",
                         "outputs": [],
@@ -5142,26 +6149,63 @@
                     },
                     {
                         "inputs": [],
-                        "name": "ethFeedPriceDecimals",
+                        "name": "config",
                         "outputs": [
-                            {
-                                "internalType": "uint256",
-                                "name": "",
-                                "type": "uint256"
-                            }
+                        {
+                            "internalType": "contract IPresaleConfigV2",
+                            "name": "",
+                            "type": "address"
+                        }
                         ],
                         "stateMutability": "view",
                         "type": "function"
                     },
                     {
                         "inputs": [],
+                        "name": "ethFeedPriceDecimals",
+                        "outputs": [
+                        {
+                            "internalType": "uint256",
+                            "name": "",
+                            "type": "uint256"
+                        }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                        {
+                            "internalType": "address",
+                            "name": "_address",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "_additionalText",
+                            "type": "string"
+                        }
+                        ],
+                        "name": "generateKey",
+                        "outputs": [
+                        {
+                            "internalType": "bytes32",
+                            "name": "",
+                            "type": "bytes32"
+                        }
+                        ],
+                        "stateMutability": "pure",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [],
                         "name": "getEthPrice",
                         "outputs": [
-                            {
-                                "internalType": "int256",
-                                "name": "",
-                                "type": "int256"
-                            }
+                        {
+                            "internalType": "int256",
+                            "name": "",
+                            "type": "int256"
+                        }
                         ],
                         "stateMutability": "view",
                         "type": "function"
@@ -5170,11 +6214,11 @@
                         "inputs": [],
                         "name": "owner",
                         "outputs": [
-                            {
-                                "internalType": "address",
-                                "name": "",
-                                "type": "address"
-                            }
+                        {
+                            "internalType": "address",
+                            "name": "",
+                            "type": "address"
+                        }
                         ],
                         "stateMutability": "view",
                         "type": "function"
@@ -5188,19 +6232,12 @@
                     },
                     {
                         "inputs": [
-                            {
-                                "internalType": "address",
-                                "name": "_trustedSigner",
-                                "type": "address"
-                            }
+                        {
+                            "internalType": "address",
+                            "name": "_stableCoin",
+                            "type": "address"
+                        }
                         ],
-                        "name": "setTrustedRefSigner",
-                        "outputs": [],
-                        "stateMutability": "nonpayable",
-                        "type": "function"
-                    },
-                    {
-                        "inputs": [],
                         "name": "takeFunds",
                         "outputs": [],
                         "stateMutability": "nonpayable",
@@ -5208,35 +6245,11 @@
                     },
                     {
                         "inputs": [
-                            {
-                                "internalType": "bytes32",
-                                "name": "",
-                                "type": "bytes32"
-                            }
-                        ],
-                        "name": "tokenInfoMap",
-                        "outputs": [
-                            {
-                                "internalType": "uint256",
-                                "name": "priceInUsd",
-                                "type": "uint256"
-                            },
-                            {
-                                "internalType": "uint104",
-                                "name": "tokenDecimals",
-                                "type": "uint104"
-                            }
-                        ],
-                        "stateMutability": "view",
-                        "type": "function"
-                    },
-                    {
-                        "inputs": [
-                            {
-                                "internalType": "address",
-                                "name": "newOwner",
-                                "type": "address"
-                            }
+                        {
+                            "internalType": "address",
+                            "name": "newOwner",
+                            "type": "address"
+                        }
                         ],
                         "name": "transferOwnership",
                         "outputs": [],
@@ -5247,631 +6260,569 @@
                         "inputs": [],
                         "name": "trustedRefSigner",
                         "outputs": [
-                            {
-                                "internalType": "address",
-                                "name": "",
-                                "type": "address"
-                            }
+                        {
+                            "internalType": "address",
+                            "name": "",
+                            "type": "address"
+                        }
                         ],
                         "stateMutability": "view",
                         "type": "function"
                     },
                     {
                         "inputs": [
-                            {
-                                "internalType": "string",
-                                "name": "key",
-                                "type": "string"
-                            },
-                            {
-                                "internalType": "uint256",
-                                "name": "_priceInUsd",
-                                "type": "uint256"
-                            },
-                            {
-                                "internalType": "uint104",
-                                "name": "_tokenDecimals",
-                                "type": "uint104"
-                            }
-                        ],
-                        "name": "updateTokenInfo",
-                        "outputs": [],
-                        "stateMutability": "nonpayable",
-                        "type": "function"
-                    },
-                    {
-                        "inputs": [],
-                        "name": "usdtAddress",
-                        "outputs": [
-                            {
-                                "internalType": "address",
-                                "name": "",
-                                "type": "address"
-                            }
-                        ],
-                        "stateMutability": "view",
-                        "type": "function"
-                    },
-                    {
-                        "inputs": [
-                            {
-                                "internalType": "address",
-                                "name": "ref",
-                                "type": "address"
-                            },
-                            {
-                                "internalType": "uint256",
-                                "name": "percent",
-                                "type": "uint256"
-                            },
-                            {
-                                "internalType": "uint256",
-                                "name": "nonce",
-                                "type": "uint256"
-                            },
-                            {
-                                "internalType": "bytes",
-                                "name": "signature",
-                                "type": "bytes"
-                            }
+                        {
+                            "internalType": "address",
+                            "name": "ref",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "percent",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "nonce",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "bytes",
+                            "name": "signature",
+                            "type": "bytes"
+                        }
                         ],
                         "name": "verifySignature",
                         "outputs": [
-                            {
-                                "internalType": "bool",
-                                "name": "",
-                                "type": "bool"
-                            }
+                        {
+                            "internalType": "bool",
+                            "name": "",
+                            "type": "bool"
+                        }
                         ],
                         "stateMutability": "view",
                         "type": "function"
                     },
                     {
                         "inputs": [
-                            {
-                                "internalType": "string",
-                                "name": "tokenSymbol",
-                                "type": "string"
-                            }
+                        {
+                            "internalType": "string",
+                            "name": "tokenSymbol",
+                            "type": "string"
+                        }
                         ],
                         "name": "withdrawStake",
                         "outputs": [],
                         "stateMutability": "payable",
                         "type": "function"
                     }
-                ]            
+                ]
             },
             {
-                "address":"0x320F1C1D79456617B0556A64d218DA812Df1ABd5",
+                "address":"0xb15E84Cbdb5f1DF431171Fedb8dBd07eB2A48050",
                 "abi": [
                     {
-                        "inputs": [
-                            {
-                                "internalType": "address",
-                                "name": "_usdtAddress",
-                                "type": "address"
-                            },
-                            {
-                                "internalType": "address",
-                                "name": "_ethPriceFeedAddress",
-                                "type": "address"
-                            },
-                            {
-                                "internalType": "uint256",
-                                "name": "_ethFeedPriceDecimals",
-                                "type": "uint256"
-                            }
-                        ],
-                        "stateMutability": "nonpayable",
-                        "type": "constructor"
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "_config",
+                        "type": "address"
+                        },
+                        {
+                        "internalType": "address",
+                        "name": "initialOwner",
+                        "type": "address"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "_ethFeedPriceDecimals",
+                        "type": "uint256"
+                        }
+                    ],
+                    "stateMutability": "nonpayable",
+                    "type": "constructor"
                     },
                     {
-                        "anonymous": false,
-                        "inputs": [
-                            {
-                                "indexed": true,
-                                "internalType": "address",
-                                "name": "previousOwner",
-                                "type": "address"
-                            },
-                            {
-                                "indexed": true,
-                                "internalType": "address",
-                                "name": "newOwner",
-                                "type": "address"
-                            }
-                        ],
-                        "name": "OwnershipTransferred",
-                        "type": "event"
+                    "inputs": [],
+                    "name": "ECDSAInvalidSignature",
+                    "type": "error"
                     },
                     {
-                        "anonymous": false,
-                        "inputs": [
-                            {
-                                "indexed": false,
-                                "internalType": "address",
-                                "name": "sender",
-                                "type": "address"
-                            },
-                            {
-                                "indexed": false,
-                                "internalType": "uint256",
-                                "name": "totalvalue",
-                                "type": "uint256"
-                            }
-                        ],
-                        "name": "Sell",
-                        "type": "event"
+                    "inputs": [
+                        {
+                        "internalType": "uint256",
+                        "name": "length",
+                        "type": "uint256"
+                        }
+                    ],
+                    "name": "ECDSAInvalidSignatureLength",
+                    "type": "error"
                     },
                     {
-                        "anonymous": false,
-                        "inputs": [
-                            {
-                                "indexed": false,
-                                "internalType": "contract IERC20",
-                                "name": "newToken",
-                                "type": "address"
-                            }
-                        ],
-                        "name": "TokenAddressUpdated",
-                        "type": "event"
+                    "inputs": [
+                        {
+                        "internalType": "bytes32",
+                        "name": "s",
+                        "type": "bytes32"
+                        }
+                    ],
+                    "name": "ECDSAInvalidSignatureS",
+                    "type": "error"
                     },
                     {
-                        "anonymous": false,
-                        "inputs": [
-                            {
-                                "indexed": false,
-                                "internalType": "address",
-                                "name": "buyer",
-                                "type": "address"
-                            },
-                            {
-                                "indexed": false,
-                                "internalType": "uint256",
-                                "name": "amount",
-                                "type": "uint256"
-                            }
-                        ],
-                        "name": "TokensClaimed",
-                        "type": "event"
-                    },
-                    {
-                        "inputs": [
-                            {
-                                "internalType": "address",
-                                "name": "_address",
-                                "type": "address"
-                            },
-                            {
-                                "internalType": "string",
-                                "name": "randomRef",
-                                "type": "string"
-                            }
-                        ],
-                        "name": "addRefAddress",
-                        "outputs": [],
-                        "stateMutability": "payable",
-                        "type": "function"
-                    },
-                    {
-                        "inputs": [
-                            {
-                                "internalType": "address",
-                                "name": "",
-                                "type": "address"
-                            }
-                        ],
-                        "name": "address2Ref",
-                        "outputs": [
-                            {
-                                "internalType": "uint256",
-                                "name": "percent",
-                                "type": "uint256"
-                            },
-                            {
-                                "internalType": "bool",
-                                "name": "active",
-                                "type": "bool"
-                            },
-                            {
-                                "internalType": "address",
-                                "name": "owner",
-                                "type": "address"
-                            },
-                            {
-                                "internalType": "string",
-                                "name": "ref",
-                                "type": "string"
-                            }
-                        ],
-                        "stateMutability": "view",
-                        "type": "function"
-                    },
-                    {
-                        "inputs": [
-                            {
-                                "internalType": "string",
-                                "name": "tokenSymbol",
-                                "type": "string"
-                            }
-                        ],
-                        "name": "buyTokens",
-                        "outputs": [],
-                        "stateMutability": "payable",
-                        "type": "function"
-                    },
-                    {
-                        "inputs": [
-                            {
-                                "internalType": "uint256",
-                                "name": "_usdtAmountDecimals",
-                                "type": "uint256"
-                            },
-                            {
-                                "internalType": "string",
-                                "name": "tokenSymbol",
-                                "type": "string"
-                            },
-                            {
-                                "internalType": "string",
-                                "name": "ref",
-                                "type": "string"
-                            }
-                        ],
-                        "name": "buyTokensByUsdtWifRef",
-                        "outputs": [],
-                        "stateMutability": "nonpayable",
-                        "type": "function"
-                    },
-                    {
-                        "inputs": [
-                            {
-                                "internalType": "string",
-                                "name": "tokenSymbol",
-                                "type": "string"
-                            },
-                            {
-                                "internalType": "string",
-                                "name": "ref",
-                                "type": "string"
-                            }
-                        ],
-                        "name": "buyTokensWifRef",
-                        "outputs": [],
-                        "stateMutability": "payable",
-                        "type": "function"
-                    },
-                    {
-                        "inputs": [
-                            {
-                                "internalType": "uint256",
-                                "name": "_usdtAmountDecimals",
-                                "type": "uint256"
-                            },
-                            {
-                                "internalType": "string",
-                                "name": "tokenSymbol",
-                                "type": "string"
-                            }
-                        ],
-                        "name": "buyTokensWithUSDT",
-                        "outputs": [],
-                        "stateMutability": "nonpayable",
-                        "type": "function"
-                    },
-                    {
-                        "inputs": [
-                            {
-                                "internalType": "bytes32",
-                                "name": "",
-                                "type": "bytes32"
-                            }
-                        ],
-                        "name": "buyerPurchases",
-                        "outputs": [
-                            {
-                                "internalType": "uint256",
-                                "name": "amount",
-                                "type": "uint256"
-                            },
-                            {
-                                "internalType": "bool",
-                                "name": "claimed",
-                                "type": "bool"
-                            }
-                        ],
-                        "stateMutability": "view",
-                        "type": "function"
-                    },
-                    {
-                        "inputs": [
-                            {
-                                "internalType": "address",
-                                "name": "newOwner",
-                                "type": "address"
-                            }
-                        ],
-                        "name": "changeOwner",
-                        "outputs": [],
-                        "stateMutability": "nonpayable",
-                        "type": "function"
-                    },
-                    {
-                        "inputs": [
-                            {
-                                "internalType": "address",
-                                "name": "_address",
-                                "type": "address"
-                            },
-                            {
-                                "internalType": "string",
-                                "name": "tokenSymbol",
-                                "type": "string"
-                            }
-                        ],
-                        "name": "claimAllTokens",
-                        "outputs": [],
-                        "stateMutability": "nonpayable",
-                        "type": "function"
-                    },
-                    {
-                        "inputs": [
-                            {
-                                "internalType": "address",
-                                "name": "_address",
-                                "type": "address"
-                            },
-                            {
-                                "internalType": "string",
-                                "name": "tokenSymbol",
-                                "type": "string"
-                            },
-                            {
-                                "internalType": "uint256",
-                                "name": "_amount",
-                                "type": "uint256"
-                            }
-                        ],
-                        "name": "claimTokens",
-                        "outputs": [],
-                        "stateMutability": "nonpayable",
-                        "type": "function"
-                    },
-                    {
-                        "inputs": [
-                            {
-                                "internalType": "string",
-                                "name": "tokenSymbol",
-                                "type": "string"
-                            }
-                        ],
-                        "name": "endSale",
-                        "outputs": [],
-                        "stateMutability": "nonpayable",
-                        "type": "function"
-                    },
-                    {
-                        "inputs": [],
-                        "name": "ethFeedPriceDecimals",
-                        "outputs": [
-                            {
-                                "internalType": "uint256",
-                                "name": "",
-                                "type": "uint256"
-                            }
-                        ],
-                        "stateMutability": "view",
-                        "type": "function"
-                    },
-                    {
-                        "inputs": [],
-                        "name": "getEthPrice",
-                        "outputs": [
-                            {
-                                "internalType": "int256",
-                                "name": "",
-                                "type": "int256"
-                            }
-                        ],
-                        "stateMutability": "view",
-                        "type": "function"
-                    },
-                    {
-                        "inputs": [],
+                    "inputs": [
+                        {
+                        "internalType": "address",
                         "name": "owner",
-                        "outputs": [
-                            {
-                                "internalType": "address",
-                                "name": "",
-                                "type": "address"
-                            }
-                        ],
-                        "stateMutability": "view",
-                        "type": "function"
+                        "type": "address"
+                        }
+                    ],
+                    "name": "OwnableInvalidOwner",
+                    "type": "error"
                     },
                     {
-                        "inputs": [
-                            {
-                                "internalType": "bytes32",
-                                "name": "",
-                                "type": "bytes32"
-                            }
-                        ],
-                        "name": "refInfos",
-                        "outputs": [
-                            {
-                                "internalType": "uint256",
-                                "name": "percent",
-                                "type": "uint256"
-                            },
-                            {
-                                "internalType": "bool",
-                                "name": "active",
-                                "type": "bool"
-                            },
-                            {
-                                "internalType": "address",
-                                "name": "owner",
-                                "type": "address"
-                            },
-                            {
-                                "internalType": "string",
-                                "name": "ref",
-                                "type": "string"
-                            }
-                        ],
-                        "stateMutability": "view",
-                        "type": "function"
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "account",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "OwnableUnauthorizedAccount",
+                    "type": "error"
                     },
                     {
-                        "inputs": [],
-                        "name": "renounceOwnership",
-                        "outputs": [],
-                        "stateMutability": "nonpayable",
-                        "type": "function"
+                    "inputs": [],
+                    "name": "ReentrancyGuardReentrantCall",
+                    "type": "error"
                     },
                     {
-                        "inputs": [],
-                        "name": "takeFunds",
-                        "outputs": [],
-                        "stateMutability": "nonpayable",
-                        "type": "function"
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "token",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "SafeERC20FailedOperation",
+                    "type": "error"
                     },
                     {
-                        "inputs": [
-                            {
-                                "internalType": "bytes32",
-                                "name": "",
-                                "type": "bytes32"
-                            }
-                        ],
-                        "name": "tokenInfoMap",
-                        "outputs": [
-                            {
-                                "internalType": "bool",
-                                "name": "isAllowClaim",
-                                "type": "bool"
-                            },
-                            {
-                                "internalType": "bool",
-                                "name": "isAutoClaim",
-                                "type": "bool"
-                            },
-                            {
-                                "internalType": "uint256",
-                                "name": "priceInUsd",
-                                "type": "uint256"
-                            },
-                            {
-                                "internalType": "address",
-                                "name": "tokenAddress",
-                                "type": "address"
-                            },
-                            {
-                                "internalType": "uint104",
-                                "name": "tokenDecimals",
-                                "type": "uint104"
-                            },
-                            {
-                                "internalType": "uint256",
-                                "name": "totalsold",
-                                "type": "uint256"
-                            }
-                        ],
-                        "stateMutability": "view",
-                        "type": "function"
+                    "anonymous": false,
+                    "inputs": [
+                        {
+                        "indexed": true,
+                        "internalType": "address",
+                        "name": "previousOwner",
+                        "type": "address"
+                        },
+                        {
+                        "indexed": true,
+                        "internalType": "address",
+                        "name": "newOwner",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "OwnershipTransferred",
+                    "type": "event"
                     },
                     {
-                        "inputs": [
-                            {
-                                "internalType": "address",
-                                "name": "newOwner",
-                                "type": "address"
-                            }
-                        ],
-                        "name": "transferOwnership",
-                        "outputs": [],
-                        "stateMutability": "nonpayable",
-                        "type": "function"
+                    "anonymous": false,
+                    "inputs": [
+                        {
+                        "indexed": false,
+                        "internalType": "address",
+                        "name": "sender",
+                        "type": "address"
+                        },
+                        {
+                        "indexed": false,
+                        "internalType": "uint256",
+                        "name": "totalvalue",
+                        "type": "uint256"
+                        }
+                    ],
+                    "name": "Sell",
+                    "type": "event"
                     },
                     {
-                        "inputs": [
-                            {
-                                "internalType": "address",
-                                "name": "addr",
-                                "type": "address"
-                            },
-                            {
-                                "internalType": "uint256",
-                                "name": "newPercent",
-                                "type": "uint256"
-                            },
-                            {
-                                "internalType": "bool",
-                                "name": "_active",
-                                "type": "bool"
-                            }
-                        ],
-                        "name": "updateRefPercent",
-                        "outputs": [],
-                        "stateMutability": "nonpayable",
-                        "type": "function"
+                    "anonymous": false,
+                    "inputs": [
+                        {
+                        "indexed": false,
+                        "internalType": "address",
+                        "name": "user",
+                        "type": "address"
+                        },
+                        {
+                        "indexed": false,
+                        "internalType": "uint256",
+                        "name": "amount",
+                        "type": "uint256"
+                        }
+                    ],
+                    "name": "Staked",
+                    "type": "event"
                     },
                     {
-                        "inputs": [
-                            {
-                                "internalType": "string",
-                                "name": "key",
-                                "type": "string"
-                            },
-                            {
-                                "internalType": "bool",
-                                "name": "_isAllowClaim",
-                                "type": "bool"
-                            },
-                            {
-                                "internalType": "bool",
-                                "name": "_defaultAutoClaim",
-                                "type": "bool"
-                            },
-                            {
-                                "internalType": "uint256",
-                                "name": "_priceInUsd",
-                                "type": "uint256"
-                            },
-                            {
-                                "internalType": "address",
-                                "name": "_tokenAddress",
-                                "type": "address"
-                            },
-                            {
-                                "internalType": "uint256",
-                                "name": "_totalSold",
-                                "type": "uint256"
-                            },
-                            {
-                                "internalType": "uint104",
-                                "name": "_tokenDecimals",
-                                "type": "uint104"
-                            }
-                        ],
-                        "name": "updateTokenInfo",
-                        "outputs": [],
-                        "stateMutability": "nonpayable",
-                        "type": "function"
+                    "anonymous": false,
+                    "inputs": [
+                        {
+                        "indexed": false,
+                        "internalType": "contract IERC20",
+                        "name": "newToken",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "TokenAddressUpdated",
+                    "type": "event"
                     },
                     {
-                        "inputs": [],
-                        "name": "usdtAddress",
-                        "outputs": [
-                            {
-                                "internalType": "contract IERC20",
-                                "name": "",
-                                "type": "address"
-                            }
-                        ],
-                        "stateMutability": "view",
-                        "type": "function"
+                    "anonymous": false,
+                    "inputs": [
+                        {
+                        "indexed": false,
+                        "internalType": "address",
+                        "name": "buyer",
+                        "type": "address"
+                        },
+                        {
+                        "indexed": false,
+                        "internalType": "uint256",
+                        "name": "amount",
+                        "type": "uint256"
+                        }
+                    ],
+                    "name": "TokensClaimed",
+                    "type": "event"
+                    },
+                    {
+                    "anonymous": false,
+                    "inputs": [
+                        {
+                        "indexed": false,
+                        "internalType": "address",
+                        "name": "user",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "Withdrawed",
+                    "type": "event"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "string",
+                        "name": "tokenSymbol",
+                        "type": "string"
+                        },
+                        {
+                        "internalType": "bool",
+                        "name": "_stake",
+                        "type": "bool"
+                        },
+                        {
+                        "internalType": "address",
+                        "name": "ref",
+                        "type": "address"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "percent",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "refNonce",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "bytes",
+                        "name": "refSignature",
+                        "type": "bytes"
+                        }
+                    ],
+                    "name": "buyTokens",
+                    "outputs": [],
+                    "stateMutability": "payable",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "uint256",
+                        "name": "_usdtAmountDecimals",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "string",
+                        "name": "tokenSymbol",
+                        "type": "string"
+                        },
+                        {
+                        "internalType": "bool",
+                        "name": "_stake",
+                        "type": "bool"
+                        },
+                        {
+                        "internalType": "address",
+                        "name": "ref",
+                        "type": "address"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "percent",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "refNonce",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "bytes",
+                        "name": "refSignature",
+                        "type": "bytes"
+                        },
+                        {
+                        "internalType": "address",
+                        "name": "_stableCoin",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "buyWithUSDT",
+                    "outputs": [],
+                    "stateMutability": "nonpayable",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "bytes32",
+                        "name": "",
+                        "type": "bytes32"
+                        }
+                    ],
+                    "name": "buyerPurchases",
+                    "outputs": [
+                        {
+                        "internalType": "uint256",
+                        "name": "amount",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "staked",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "bool",
+                        "name": "claimed",
+                        "type": "bool"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "newOwner",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "changeOwner",
+                    "outputs": [],
+                    "stateMutability": "nonpayable",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "string",
+                        "name": "tokenSymbol",
+                        "type": "string"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "amount",
+                        "type": "uint256"
+                        }
+                    ],
+                    "name": "claimAndStake",
+                    "outputs": [],
+                    "stateMutability": "payable",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [],
+                    "name": "config",
+                    "outputs": [
+                        {
+                        "internalType": "contract IPresaleConfigV2",
+                        "name": "",
+                        "type": "address"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [],
+                    "name": "ethFeedPriceDecimals",
+                    "outputs": [
+                        {
+                        "internalType": "uint256",
+                        "name": "",
+                        "type": "uint256"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "_address",
+                        "type": "address"
+                        },
+                        {
+                        "internalType": "string",
+                        "name": "_additionalText",
+                        "type": "string"
+                        }
+                    ],
+                    "name": "generateKey",
+                    "outputs": [
+                        {
+                        "internalType": "bytes32",
+                        "name": "",
+                        "type": "bytes32"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [],
+                    "name": "getEthPrice",
+                    "outputs": [
+                        {
+                        "internalType": "int256",
+                        "name": "",
+                        "type": "int256"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [],
+                    "name": "owner",
+                    "outputs": [
+                        {
+                        "internalType": "address",
+                        "name": "",
+                        "type": "address"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [],
+                    "name": "renounceOwnership",
+                    "outputs": [],
+                    "stateMutability": "nonpayable",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "_stableCoin",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "takeFunds",
+                    "outputs": [],
+                    "stateMutability": "nonpayable",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "newOwner",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "transferOwnership",
+                    "outputs": [],
+                    "stateMutability": "nonpayable",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [],
+                    "name": "trustedRefSigner",
+                    "outputs": [
+                        {
+                        "internalType": "address",
+                        "name": "",
+                        "type": "address"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "ref",
+                        "type": "address"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "percent",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "nonce",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "bytes",
+                        "name": "signature",
+                        "type": "bytes"
+                        }
+                    ],
+                    "name": "verifySignature",
+                    "outputs": [
+                        {
+                        "internalType": "bool",
+                        "name": "",
+                        "type": "bool"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "string",
+                        "name": "tokenSymbol",
+                        "type": "string"
+                        }
+                    ],
+                    "name": "withdrawStake",
+                    "outputs": [],
+                    "stateMutability": "payable",
+                    "type": "function"
                     }
                 ]
             }
@@ -5900,6 +6851,514 @@
         "USDT_Decimals": 6,
         "USDT_Abi": [{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"owner","type":"address"},{"indexed":true,"internalType":"address","name":"spender","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Approval","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"_user","type":"address"}],"name":"BlockPlaced","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"_user","type":"address"}],"name":"BlockReleased","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"_blockedUser","type":"address"},{"indexed":false,"internalType":"uint256","name":"_balance","type":"uint256"}],"name":"DestroyedBlockedFunds","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"_destination","type":"address"},{"indexed":false,"internalType":"uint256","name":"_amount","type":"uint256"}],"name":"Mint","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"_contract","type":"address"}],"name":"NewPrivilegedContract","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"previousOwner","type":"address"},{"indexed":true,"internalType":"address","name":"newOwner","type":"address"}],"name":"OwnershipTransferred","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"uint256","name":"_amount","type":"uint256"}],"name":"Redeem","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"_contract","type":"address"}],"name":"RemovedPrivilegedContract","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"from","type":"address"},{"indexed":true,"internalType":"address","name":"to","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Transfer","type":"event"},{"inputs":[],"name":"DOMAIN_SEPARATOR","outputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"_trustedDeFiContract","type":"address"}],"name":"addPrivilegedContract","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_user","type":"address"}],"name":"addToBlockedList","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_owner","type":"address"},{"internalType":"address","name":"_spender","type":"address"}],"name":"allowance","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"approve","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"account","type":"address"}],"name":"balanceOf","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"account","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"bridgeBurn","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"account","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"bridgeMint","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"decimals","outputs":[{"internalType":"uint8","name":"","type":"uint8"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"subtractedValue","type":"uint256"}],"name":"decreaseAllowance","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_blockedUser","type":"address"}],"name":"destroyBlockedFunds","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"addedValue","type":"uint256"}],"name":"increaseAllowance","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"string","name":"_name","type":"string"},{"internalType":"string","name":"_symbol","type":"string"},{"internalType":"uint8","name":"_decimals","type":"uint8"}],"name":"initialize","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"string","name":"_name","type":"string"},{"internalType":"string","name":"_symbol","type":"string"},{"internalType":"uint8","name":"_decimals","type":"uint8"},{"internalType":"address","name":"_l2Gateway","type":"address"},{"internalType":"address","name":"_l1Counterpart","type":"address"}],"name":"initialize","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"isBlocked","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"isTrusted","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"l1Address","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"l2Gateway","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"_destination","type":"address"},{"internalType":"uint256","name":"_amount","type":"uint256"}],"name":"mint","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address[]","name":"_recipients","type":"address[]"},{"internalType":"uint256[]","name":"_values","type":"uint256[]"}],"name":"multiTransfer","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"name","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"}],"name":"nonces","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"value","type":"uint256"},{"internalType":"uint256","name":"deadline","type":"uint256"},{"internalType":"uint8","name":"v","type":"uint8"},{"internalType":"bytes32","name":"r","type":"bytes32"},{"internalType":"bytes32","name":"s","type":"bytes32"}],"name":"permit","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"_amount","type":"uint256"}],"name":"redeem","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_user","type":"address"}],"name":"removeFromBlockedList","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_trustedDeFiContract","type":"address"}],"name":"removePrivilegedContract","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"renounceOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"symbol","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"totalSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"_recipient","type":"address"},{"internalType":"uint256","name":"_amount","type":"uint256"}],"name":"transfer","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_sender","type":"address"},{"internalType":"address","name":"_recipient","type":"address"},{"internalType":"uint256","name":"_amount","type":"uint256"}],"name":"transferFrom","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"}],
         "salers": [
+            {
+                "address":"0x2494629408500318d68746c5F31345149B37cD9d",
+                "abi": [
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "_config",
+                        "type": "address"
+                        },
+                        {
+                        "internalType": "address",
+                        "name": "initialOwner",
+                        "type": "address"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "_ethFeedPriceDecimals",
+                        "type": "uint256"
+                        }
+                    ],
+                    "stateMutability": "nonpayable",
+                    "type": "constructor"
+                    },
+                    {
+                    "inputs": [],
+                    "name": "ECDSAInvalidSignature",
+                    "type": "error"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "uint256",
+                        "name": "length",
+                        "type": "uint256"
+                        }
+                    ],
+                    "name": "ECDSAInvalidSignatureLength",
+                    "type": "error"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "bytes32",
+                        "name": "s",
+                        "type": "bytes32"
+                        }
+                    ],
+                    "name": "ECDSAInvalidSignatureS",
+                    "type": "error"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "owner",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "OwnableInvalidOwner",
+                    "type": "error"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "account",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "OwnableUnauthorizedAccount",
+                    "type": "error"
+                    },
+                    {
+                    "inputs": [],
+                    "name": "ReentrancyGuardReentrantCall",
+                    "type": "error"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "token",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "SafeERC20FailedOperation",
+                    "type": "error"
+                    },
+                    {
+                    "anonymous": false,
+                    "inputs": [
+                        {
+                        "indexed": true,
+                        "internalType": "address",
+                        "name": "previousOwner",
+                        "type": "address"
+                        },
+                        {
+                        "indexed": true,
+                        "internalType": "address",
+                        "name": "newOwner",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "OwnershipTransferred",
+                    "type": "event"
+                    },
+                    {
+                    "anonymous": false,
+                    "inputs": [
+                        {
+                        "indexed": false,
+                        "internalType": "address",
+                        "name": "sender",
+                        "type": "address"
+                        },
+                        {
+                        "indexed": false,
+                        "internalType": "uint256",
+                        "name": "totalvalue",
+                        "type": "uint256"
+                        }
+                    ],
+                    "name": "Sell",
+                    "type": "event"
+                    },
+                    {
+                    "anonymous": false,
+                    "inputs": [
+                        {
+                        "indexed": false,
+                        "internalType": "address",
+                        "name": "user",
+                        "type": "address"
+                        },
+                        {
+                        "indexed": false,
+                        "internalType": "uint256",
+                        "name": "amount",
+                        "type": "uint256"
+                        }
+                    ],
+                    "name": "Staked",
+                    "type": "event"
+                    },
+                    {
+                    "anonymous": false,
+                    "inputs": [
+                        {
+                        "indexed": false,
+                        "internalType": "contract IERC20",
+                        "name": "newToken",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "TokenAddressUpdated",
+                    "type": "event"
+                    },
+                    {
+                    "anonymous": false,
+                    "inputs": [
+                        {
+                        "indexed": false,
+                        "internalType": "address",
+                        "name": "buyer",
+                        "type": "address"
+                        },
+                        {
+                        "indexed": false,
+                        "internalType": "uint256",
+                        "name": "amount",
+                        "type": "uint256"
+                        }
+                    ],
+                    "name": "TokensClaimed",
+                    "type": "event"
+                    },
+                    {
+                    "anonymous": false,
+                    "inputs": [
+                        {
+                        "indexed": false,
+                        "internalType": "address",
+                        "name": "user",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "Withdrawed",
+                    "type": "event"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "string",
+                        "name": "tokenSymbol",
+                        "type": "string"
+                        },
+                        {
+                        "internalType": "bool",
+                        "name": "_stake",
+                        "type": "bool"
+                        },
+                        {
+                        "internalType": "address",
+                        "name": "ref",
+                        "type": "address"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "percent",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "refNonce",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "bytes",
+                        "name": "refSignature",
+                        "type": "bytes"
+                        }
+                    ],
+                    "name": "buyTokens",
+                    "outputs": [],
+                    "stateMutability": "payable",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "uint256",
+                        "name": "_usdtAmountDecimals",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "string",
+                        "name": "tokenSymbol",
+                        "type": "string"
+                        },
+                        {
+                        "internalType": "bool",
+                        "name": "_stake",
+                        "type": "bool"
+                        },
+                        {
+                        "internalType": "address",
+                        "name": "ref",
+                        "type": "address"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "percent",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "refNonce",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "bytes",
+                        "name": "refSignature",
+                        "type": "bytes"
+                        },
+                        {
+                        "internalType": "address",
+                        "name": "_stableCoin",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "buyWithUSDT",
+                    "outputs": [],
+                    "stateMutability": "nonpayable",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "bytes32",
+                        "name": "",
+                        "type": "bytes32"
+                        }
+                    ],
+                    "name": "buyerPurchases",
+                    "outputs": [
+                        {
+                        "internalType": "uint256",
+                        "name": "amount",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "staked",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "bool",
+                        "name": "claimed",
+                        "type": "bool"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "newOwner",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "changeOwner",
+                    "outputs": [],
+                    "stateMutability": "nonpayable",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "string",
+                        "name": "tokenSymbol",
+                        "type": "string"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "amount",
+                        "type": "uint256"
+                        }
+                    ],
+                    "name": "claimAndStake",
+                    "outputs": [],
+                    "stateMutability": "payable",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [],
+                    "name": "config",
+                    "outputs": [
+                        {
+                        "internalType": "contract IPresaleConfigV2",
+                        "name": "",
+                        "type": "address"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [],
+                    "name": "ethFeedPriceDecimals",
+                    "outputs": [
+                        {
+                        "internalType": "uint256",
+                        "name": "",
+                        "type": "uint256"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "_address",
+                        "type": "address"
+                        },
+                        {
+                        "internalType": "string",
+                        "name": "_additionalText",
+                        "type": "string"
+                        }
+                    ],
+                    "name": "generateKey",
+                    "outputs": [
+                        {
+                        "internalType": "bytes32",
+                        "name": "",
+                        "type": "bytes32"
+                        }
+                    ],
+                    "stateMutability": "pure",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [],
+                    "name": "getEthPrice",
+                    "outputs": [
+                        {
+                        "internalType": "int256",
+                        "name": "",
+                        "type": "int256"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [],
+                    "name": "owner",
+                    "outputs": [
+                        {
+                        "internalType": "address",
+                        "name": "",
+                        "type": "address"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [],
+                    "name": "renounceOwnership",
+                    "outputs": [],
+                    "stateMutability": "nonpayable",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "_stableCoin",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "takeFunds",
+                    "outputs": [],
+                    "stateMutability": "nonpayable",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "newOwner",
+                        "type": "address"
+                        }
+                    ],
+                    "name": "transferOwnership",
+                    "outputs": [],
+                    "stateMutability": "nonpayable",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [],
+                    "name": "trustedRefSigner",
+                    "outputs": [
+                        {
+                        "internalType": "address",
+                        "name": "",
+                        "type": "address"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "address",
+                        "name": "ref",
+                        "type": "address"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "percent",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "uint256",
+                        "name": "nonce",
+                        "type": "uint256"
+                        },
+                        {
+                        "internalType": "bytes",
+                        "name": "signature",
+                        "type": "bytes"
+                        }
+                    ],
+                    "name": "verifySignature",
+                    "outputs": [
+                        {
+                        "internalType": "bool",
+                        "name": "",
+                        "type": "bool"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                    },
+                    {
+                    "inputs": [
+                        {
+                        "internalType": "string",
+                        "name": "tokenSymbol",
+                        "type": "string"
+                        }
+                    ],
+                    "name": "withdrawStake",
+                    "outputs": [],
+                    "stateMutability": "payable",
+                    "type": "function"
+                    }
+                ]
+            },
             {
                 "address":"0xb5cfae2e1B591400b6D977F6d4630f872cc05Ac7",
                 "abi": [
