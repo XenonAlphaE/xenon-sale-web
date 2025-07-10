@@ -26,7 +26,6 @@ function FaqCard({ cardClass, title, contents }) {
 export const FAQ = () => {
   const sectionText = useI18nSection('faqs')
   const infoContents = sectionText?.contents
-  debugger
   const currentLanguage = useLanguage()
   const [selectedIdx, setSelectedIdx] = useState();
 

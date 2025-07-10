@@ -6,9 +6,8 @@ const PresaleSection = () => {
     const sectionText = useI18nSection('header')
   
   return (
-    <section className={styles.wrapper}>
-
-      <div className={styles.content}>
+    <section className={styles.container}>
+      <div className={styles.leftPart}>
         <h2 className={styles.headline}>{sectionText?.headline}</h2>
         <h3 className={styles.subheadline}>
             {sectionText?.subheadline}
@@ -39,8 +38,20 @@ const PresaleSection = () => {
             })}
         </div>
       </div>
+      <div className={styles.rightPart}>
+        <div className={styles.videoContainer}>
+            <video className={styles.videoPlayer} controls poster='/img/token6900/video-thumbnail.png'>
+              <source src="/img/token6900/banner-vdo.mp4" type="video/mp4"/>
+              Your browser does not support the video tag.
+            </video>
+        </div>
+        <div className={styles.bannerList}>
+          <img className={styles.bannerListItem} src="/img/token6900/banner-red.png" alt="banner" />
+          <img className={styles.bannerListItem} src="/img/token6900/banner-green.png" alt="banner" />
+          <img className={styles.bannerListItem} src="/img/token6900/banner-blue.png" alt="banner" />
+        </div>
+      </div>
 
-      <img src={'/img/btchyper/shoes.gif'} alt="Right Shoe" className={styles.rightShoe} />
     </section>
   );
 };

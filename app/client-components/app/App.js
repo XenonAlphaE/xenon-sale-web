@@ -1,7 +1,7 @@
 'use client'; // This component will run on the client side
 
 import React, { useState, useEffect } from "react";
-import "./App.css";
+import styles from  "./App.module.css";
 // import Navbar from "../navbar/navbar";
 import { Header } from "../header/header";
 import { Navbar } from "../navbar/navbar";
@@ -34,17 +34,22 @@ const App = () => {
   // }, []);
 
   return (
-    <div>
-      <Navbar />
-      <Header/>
-      <TrustedBy/>
-      <About />
-      {/* <Roadmap /> */}
-      <HowToBuy />
-      <TrustedBy/>
-      <Tokenomics />
-      <FAQ/>
-      <Footer /> 
+    <div className={styles.container}>
+      <div className={styles.leftPannel}></div>
+      <div className={styles.centerPannel}>
+          <Header/>
+          {/* <TrustedBy/> */}
+          {/* <About /> */}
+          {/* <Roadmap /> */}
+          {/* <HowToBuy /> */}
+          {/* <TrustedBy/> */}
+          {/* <Tokenomics /> */}
+          {/* <FAQ/> */}
+          {/* <Footer />  */}
+      </div>
+      <div className={styles.rightPannel}>
+      </div>
+
     </div>
   );
 };

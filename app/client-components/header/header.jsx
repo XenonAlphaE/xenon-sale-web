@@ -3,56 +3,17 @@
 import React, {  } from "react";
 import { useI18nSection } from "../../../redux/utils/languageUtils";
 
-import './header.css'
-import './header.mobile.css'
-import { BuyForm } from "../buyform/buyform";
-import PromoBanner from "./PromoBanner";
+import  styles from './header.module.css'
 import PresaleSection from "./PresaleSection";
-
 export const Header = () => {
   const sectionText = useI18nSection('header')
 
   return (
-    <section id="intro" className='intro'>
-      <div className="carousal-container">
-          <div className="carousal-banner">
-              <span className="intro-carousal-text">
-                  🚨 BTC Hyper Coming! 🚨 don’t miss out on the next big meme Coin!.
-              </span>  
-              <span className="intro-carousal-text">
-              🚨 BTC Hyper Coming! 🚨 don’t miss out on the next big meme Coin!.
-              </span>  
-              <span className="intro-carousal-text">
-              🚨 BTC Hyper Coming! 🚨 don’t miss out on the next big meme Coin!.
-              </span>  
-              <span className="intro-carousal-text">
-              🚨 BTC Hyper Coming! 🚨 don’t miss out on the next big meme Coin!.
-              </span>  
-              <span className="intro-carousal-text">
-              🚨 BTC Hyper Coming! 🚨 don’t miss out on the next big meme Coin!.
-              </span>  
-              <span className="intro-carousal-text">
-              🚨 BTC Hyper Coming! 🚨 don’t miss out on the next big meme Coin!.
-              </span>  
-
-
-          </div>
+    <section id="intro"  className={styles.container}>
+      <div className={styles.barcodeContainer}>
+        <img  className={styles.barcode} src="/img/token6900/bar-code.svg"/>
       </div>
-      <div className="intro-main-content">
-
-        <PromoBanner/>
-        <div className="intro-content">
-            <div className="intro-content-left">
-                <PresaleSection/>
-
-            </div>
-            <div className="intro-content-right">
-                <BuyForm/>
-              
-            </div>
-
-        </div>
-      </div>
+      <PresaleSection></PresaleSection>
     </section>
     // </div>
   );
