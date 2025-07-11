@@ -9,7 +9,7 @@ export const ProgressBar = ({ percentage }) => {
     width: '100%',
     // backgroundColor: bgColor || '',
     // borderColor:'#eee  ',
-    height: 40,
+    height: 30,
     background: '#fff',
     boxShadow: '-1.619px -1.619px #fff inset, 1.619px 1.619px gray inset, -3.237px -3.237px #c1c1c1 inset, 3.237px 3.237px #000 inset',
     overflow:'hidden',
@@ -34,14 +34,13 @@ export const ProgressBar = ({ percentage }) => {
     width:"max-content",
     fontWeight: 500,
     transform: 'translate(-50%, -50%)',
-    color: 'white', /* Text color */
+    color: 'rgb(0, 0, 64)', /* Text color */
     fontSize: '12px', /* Adjust font size as needed */
   };
 
   return (
     <div style={containerStyle}>
       <div style={barStyle}></div>
-      <div style={textStyle}>{sectionText?.nextPriceAlert}</div>
     </div>
   );
 };

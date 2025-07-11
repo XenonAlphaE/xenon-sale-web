@@ -143,6 +143,12 @@ export function formatTokenNumber(num) {
     .replace(/\B(?=(\d{3})+(?!\d))/g, ","); // Add commas as thousand separators
 }
 
+
+export function roundUpToNextMillion(num) {
+  const million = 1_000_000;
+  return Math.ceil((num + 1) / million) * million;
+}
+
 export function formatIntNumber(num) {
   // Convert string to number if necessary
   const parsedNum = typeof num === 'string' ? parseFloat(num.replace(/,/g, '')) : num;

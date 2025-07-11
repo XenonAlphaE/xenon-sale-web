@@ -387,6 +387,8 @@
   width: 100%;
   word-spacing: 0px;
   border: none;
+  box-shadow: -1.619px -1.619px #fff inset, 1.619px 1.619px gray inset, -3.237px -3.237px #c1c1c1 inset, 3.237px 3.237px #000 inset;
+
 }
 
 
@@ -438,6 +440,8 @@
     width: 100%;
     word-spacing: 0px;
     border: none;
+    box-shadow: -1.619px -1.619px #fff inset, 1.619px 1.619px gray inset, -3.237px -3.237px #c1c1c1 inset, 3.237px 3.237px #000 inset;
+
   }
 
 .actionButtons .connectBtn:hover,
