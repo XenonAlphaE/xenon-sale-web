@@ -13,7 +13,7 @@ import { useNativeNetwork, useSetCurrentAddress, useSetNativeNetwork } from '../
 import { NETWORK_OTIONS, VALID_NETWORKS } from '../redux/ducks/nativeNetworkDuck';
 import { toWei, isValidNumber  } from './client-components/services/wallet-service';
 import {getUserPurchaseInfo} from '../app/client-components/services/token-service'
-import { formatTokenNumber } from "./client-components/services/utils";
+import { formatTokenNumber, roundUpToNextMillion } from "./client-components/services/utils";
 import { zeroAddress } from "viem";
 
 // Create a context for the wallet
@@ -71,6 +71,7 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
 
     const [ethPrice, setEthPrice] = useState(0);
     const [currentRaise, setCurrentRaise] = useState(0);
+    const [nextRaise, setNextRaise] = useState(0);
     const { switchChainAsync } = useSwitchChain(); // Function to switch networks
 
     // Fetch ETH balance for the current wallet
@@ -134,7 +135,7 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
         }
     
         setCurrentRaise(lastestRaise + totalIncrease);
-
+        setNextRaise(roundUpToNextMillion(lastestRaise + totalIncrease))
 
     }, [])
 
@@ -580,7 +581,9 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
             stakedPortion: ((purchaseInfo?.stakedAmount *100 )/ totalStaked),
 
             currentRaise,
+            nextRaise,
             formatedRaise:formatTokenNumber(currentRaise),
+            formatedNextRaise:formatTokenNumber(nextRaise),
             //  getMaxUSDT , 
             buyTokensWithRef,
             swicthNativeNetwork,

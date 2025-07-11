@@ -142,3 +142,9 @@ export function formatTokenNumber(num) {
     .toFixed(2) // Round to 2 decimal places
     .replace(/\B(?=(\d{3})+(?!\d))/g, ","); // Add commas as thousand separators
 }
+
+
+export function roundUpToNextMillion(num) {
+  const million = 1_000_000;
+  return Math.ceil((num + 1) / million) * million;
+}
