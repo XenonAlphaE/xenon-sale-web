@@ -11,6 +11,11 @@
     padding: 28px 20px 18px;
     box-sizing: border-box;
     color: rgb(0, 0, 0);
+
+    @media (max-width: 1024px) {
+        width: 100%;
+        padding-inline: 1rem;
+    }
 }
 .walletBox-bottom{
     background: url(/img/solx/widget-bottom.png) no-repeat 0 0;
