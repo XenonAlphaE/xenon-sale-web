@@ -43,7 +43,7 @@ export async function generateMetadata() {
       image: getOG(), // Path to your Open Graph image,
     },
     alternates: {
-      canonical: "https://btchyper.io", // Set the canonical URL
+      canonical: "", // Set the canonical URL
     },
   };
 }
