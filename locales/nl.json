@@ -1,316 +1,52 @@
 {
-    "metadata":{
-        "title":"SPX6900 TOKEN6900: Better Than SPX6900 | The Best Crypto Presale",
-        "description":"SPX6900 TOKEN6900 is the new global benchmark for brain rot finance. Built on no fundamentals, SPX6900 TOKEN6900 delivers the best crypto presale of 2025 capped at $5 million."
-    },
-    "nav": {
-      "home": "STARTPAGINA",
-      "staking": "STAKING",
-      "howtobuy": "HOE TE KOPEN",
-      "whitePaper": "WHITEPAPER",
-      "tokenomics": "TOKENOMICS",
-      "features": "FUNCTIES",
-      "buyNow": "KOOP $HYPER",
-      "faq": "FAQ'S",
-      "audit": "AUDIT",
-      "roadmap": "ROADMAP",
-      "airdrop": "AIRDROP",
-      "about": "OVER"
-    },
-    "buyForm": {
-      "intro": "KOOP",
-      "intro1": "NU",
-      "day": "Dagen",
-      "hrs": "Uren",
-      "mins": "Minuten",
-      "sec": "Seconden",
-      "funRaised": "Opgehaald in USDT",
-      "wallet": "JE Wallet",
-      "boughtAmount": "JOUW AANKOOP",
-      "stakeableAmount": "JOUW STAKEBARE BEDRAG",
-      "pay": "Betalen met",
-      "get": "Ontvang",
-      "buyNow": "KOOP $HYPER",
-      "buyMax": "KOOP MAXIMAAL",
-      "warning": "Installeer Metamask om te kopen",
-      "link": "klik hier",
-      "connectWallet": "VERBIND WALLET",
-      "ethOption": "ETH NETWERK",
-      "switchOption": "WISSEL NETWERK",
-      "bnbOption": "BNB NETWERK",
-      "buyStake": " Koop en Stake voor 1052% Beloningen",
-      "nextPriceAlert": "TOT PRIJSSTIJGING",
-      "para1": "1052% STAKING BELONINGEN"
-    },
-    "promoBanner": {
-      "badge": "1052% STAKING BELONINGEN",
-      "title": "DE EERSTE BITCOIN LAYER 2 KETEN",
-      "subtitle": "SCHAALBAARHEID EN SNELHEID VOOR BITCOIN ZIJN EINDELIJK HIER",
-      "cta": "PRESALE IS LIVE"
-    },
-    "header": {
-      "headline": "DE BTC HYPER PRESALE",
-      "subheadline": "KOOP $HYPER VOORDAT HET DE SNELSTE LAYER IN DE GESCHIEDENIS VAN BITCOIN AANSTUURT.",
-      "description": {
-        "line1": "BTC Hyper maakt eindelijk snelle en goedkope Bitcoin-transacties mogelijk.",
-        "line2": "Dit ontsluit de ware kracht van Bitcoin.",
-        "highlight": ["Betalingen", "Meme Coins", "dApps"],
-        "line3": "2025 zal herinnerd worden als het jaar waarin BTC Hyper alles veranderde."
-      },
-      "tagline": "BTC Hyper. De toekomst van Bitcoin bouwen.",
-      "audit": {
-        "label": "VERTROUWENS- EN VEILIGHEIDSAUDITS",
-        "provider": "Coinsult"
-      },
-      "bullets": ["SCHAALBAARHEID", "SNELHEID", "MEMES"]
-    },
-    "trustedBy": {
-      "title": "VERTROUWD DOOR"
-    },
-    "about": {
-      "contents": [
-        {
-          "number": "1",
-          "title": "BRUG",
-          "contents": [
-            "Gebruiker stort BTC naar een toegewezen Bitcoin-adres dat wordt bewaakt door de Canonical Bridge van Bitcoin Hyper.",
-            "Het Bitcoin Relay Programma, een SVM smart contract, verifieert Bitcoin blokheaders en transactie-bewijzen.",
-            "Na succesvolle verificatie wordt een equivalent bedrag aan BTC op een vertrouwensloze manier gemint op de Layer 2 van Bitcoin Hyper."
-          ]
-        },
-        {
-          "number": "2",
-          "title": "L2 Operatie",
-          "contents": [
-            "Gebruikers kunnen BTC verzenden en ontvangen op de Layer 2 van Bitcoin Hyper met bijna directe finaliteit.",
-            "Ondersteunt complexe DeFi-operaties, zoals staking en gedecentraliseerde beurzen.",
-            "Maakt gebruik van Solana’s Virtual Machine (SVM) voor hoge verwerkingssnelheid en schaalbaarheid."
-          ]
-        },
-        {
-          "number": "3",
-          "title": "Afrekening & Beveiliging",
-          "contents": [
-            "Bitcoin Hyper groepeert en comprimeert Layer 2-transacties.",
-            "Maakt gebruik van zero-knowledge (ZK) bewijzen om transactie-geldigheid te waarborgen.",
-            "De staat van Layer 2 wordt periodiek vastgelegd op Bitcoin's Layer 1 om synchronisatie en beveiliging te behouden."
-          ]
-        },
-        {
-          "number": "4",
-          "title": "Opname naar L1",
-          "contents": [
-            "Gebruikers starten een opnameverzoek op Bitcoin Hyper’s Layer 2.",
-            "Het systeem verifieert de Layer 2-staat en genereert een bewijs voor de canonical bridge.",
-            "Na validatie wordt de overeenkomstige BTC teruggestuurd naar het Bitcoin-adres van de gebruiker op Layer 1."
-          ]
-        }
-      ],
-      "frameworks": [
-        { "title": "Snelheid", "name": "Lightning Network" },
-        { "title": "Optimistische Rollups", "name": "OPTIMISM" },
-        { "title": "ZK-Rollups", "name": "zkROLLUPS" },
-        { "title": "Sidechains", "name": "Rootstock" },
-        { "title": "Schaalbaarheid", "name": "BITCOIN HYPER²" }
-      ]
-    },
-    "howtobuy": {
-      "title": "Hoe Bitcoin Hyper te Kopen",
-      "buyNow": "KOOP $HYPER NU",
-      "contents": [
-        {
-          "number": "1",
-          "title": "stap 1",
-          "contents": [
-            "Koop wat crypto via je favoriete exchange. Als je nog geen wallet hebt, overweeg dan om MetaMask te gebruiken."
-          ]
-        },
-        {
-          "number": "2",
-          "title": "stap 2",
-          "contents": [
-            "Met crypto in je wallet ben je klaar om deel te nemen aan de $HYPER crypto presale. Klik op een Koop- of Wallet Verbinden-knop op de website om te beginnen."
-          ]
-        },
-        {
-          "number": "3",
-          "title": "stap 3",
-          "contents": [
-            "Kies het bedrag aan $HYPER dat je wilt kopen en bevestig de transactie in je wallet. Wil je tegelijkertijd staken, kies dan de optie Koop en Stake."
-          ]
-        },
-        {
-          "number": "4",
-          "title": "stap 4 (Kaart)",
-          "contents": [
-            "Als je met kaart betaalt, verbind je mobiele crypto-wallet of browserextensie wallet en kies Koop Met Kaart. Je hebt deze wallet nodig om je tokens te ontvangen."
-          ]
-        }
-      ]
-    },
-    "tokenomics": {
-      "title": "TOKENOMICS",
-      "buyNow": "Koop NU",
-      "desc": "Volledig overzicht van hoe Bitcoin Hyper² werkt",
-      "contents": [
-        {
-          "number": "1",
-          "title": "Schatkist 25%",
-          "contents": [
-            "Aangewezen tokenallocatie voor zakelijke ontwikkeling en community-activaties."
-          ]
-        },
-        {
-          "number": "2",
-          "title": "Marketing 20%",
-          "contents": [
-            "Virale marketing. Betaalde en organische media. Tier 1-geografieën. $HYPER is een wereldwijd cryptofenomeen."
-          ]
-        },
-        {
-          "number": "3",
-          "title": "Beloningen 15%",
-          "contents": [
-            "Community-beloningen voor staking en promoties en evenementen met token-giveaways."
-          ]
-        },
-        {
-          "number": "4",
-          "title": "Noteringen 10%",
-          "contents": [
-            "Aangewezen tokenallocatie voor het noteren van de Bitcoin Hyper ($HYPER) token op verschillende beurzen."
-          ]
-        },
-        {
-          "number": "4",
-          "title": "Ontwikkeling 30%",
-          "contents": [
-            "De eerste en snelste Bitcoin Layer 2 zal continu ontwikkeld en verbeterd worden."
-          ]
-        }
-      ]
-    },
-    "faqs": {
-      "title": "Bitcoin Hyper FAQ",
-      "contents": [
-        {
-          "number": "1",
-          "title": "Wat is Bitcoin Hyper?",
-          "contents": [
-            {
-              "text": "Het eerste echte Bitcoin Layer 2-netwerk. Het maakt snelle, goedkope BTC-transacties mogelijk en ontsluit staking, gedecentraliseerde financiën (DeFi) en on-chain applicaties (dApps). Aangedreven door een krachtige virtuele machine (SVM), herdefinieert BTC Hyper niet alleen wat mogelijk is op Bitcoin, het is ook de beste crypto-presale van 2025."
-            }
-          ]
-        },
-        {
-          "number": "2",
-          "title": "Wat is $HYPER?",
-          "contents": [
-            {
-              "text": "$HYPER is de native token van het Bitcoin Hyper-netwerk – gebruikt voor transacties, staking en governance. De token is momenteel beschikbaar in de vroegste prijsetappes van wat algemeen wordt beschouwd als de beste crypto-presale om nu te kopen, mogelijk gemaakt door Web3Toolkit-betalingen en stakingtechnologie."
-            }
-          ]
-        },
-        {
-          "number": "3",
-          "title": "Waarom is Bitcoin Hyper belangrijk?",
-          "contents": [
-            {
-              "text": "Bitcoin Hyper lost Bitcoin’s trage transactiesnelheid en hoge kosten op, terwijl het de veiligheid van Bitcoin behoudt. Met BTC Hyper kunnen gebruikers bijna in realtime Bitcoin verzenden, ontvangen en gebruiken, tegen minimale kosten, en deelnemen aan de opkomende DeFi-economie op Bitcoin."
-            }
-          ]
-        },
-        {
-          "number": "4",
-          "title": "Hoe koop ik BTC Hyper?",
-          "contents": [
-            {
-              "label": "Stap 1:",
-              "text": "Koop wat crypto via een beurs. Als je nog geen wallet hebt, overweeg dan Metamask. Hiermee kun je eenvoudig deelnemen aan de beste crypto-presales."
-            },
-            {
-              "label": "Stap 2:",
-              "text": "Stort crypto en je kunt deelnemen aan de $HYPER crypto-presale. Klik op Koop of Verbind Wallet om het aankoopproces te starten."
-            },
-            {
-              "label": "Stap 3:",
-              "text": "Selecteer het aantal $HYPER-tokens dat je wilt kopen. Wil je in dezelfde transactie staken, kies dan de optie Koop en Stake."
-            }
-          ]
-        },
-        {
-          "number": "5",
-          "title": "Hoe werkt Bitcoin Hyper?",
-          "contents": [
-            {
-              "label": "1. Bridge",
-              "text": ""
-            },
-            {
-              "text": "Stuur BTC naar een aangewezen Bitcoin-adres dat wordt gecontroleerd door de Bitcoin Hyper Canonical Bridge."
-            },
-            {
-              "text": "Het Bitcoin Relay-programma (een SVM-smartcontract) verifieert Bitcoin-blockheaders en transactiebevestigingen."
-            },
-            {
-              "text": "Na verificatie wordt een gelijkwaardig bedrag aan BTC trustless gemint op Bitcoin Hyper Layer 2."
-            },
-            {
-              "label": "2. Layer 2-operatie",
-              "text": ""
-            },
-            {
-              "text": "Gebruikers kunnen BTC verzenden, ontvangen en gebruiken op Layer 2 met vrijwel directe finaliteit."
-            },
-            {
-              "text": "Ondersteunt complexe functies zoals staking, gedecentraliseerde handel en meer."
-            },
-            {
-              "text": "Gebouwd op een SVM-architectuur voor snelheid en schaalbaarheid."
-            },
-            {
-              "label": "3. Afwikkeling en beveiliging",
-              "text": ""
-            },
-            {
-              "text": "Transacties op Layer 2 worden gebundeld en gecomprimeerd."
-            },
-            {
-              "text": "Zero-knowledge (ZK) proofs garanderen geldigheid."
-            },
-            {
-              "text": "De status van Layer 2 wordt periodiek vastgelegd op Bitcoin’s Layer 1, met behoud van Bitcoin-niveau beveiliging."
-            },
-            {
-              "label": "4. Terugtrekking naar Layer 1",
-              "text": ""
-            },
-            {
-              "text": "Gebruikers kunnen BTC terugstorten naar Layer 1 door een opnameverzoek in te dienen."
-            },
-            {
-              "text": "Een bewijs wordt gegenereerd en ingediend bij de Canonical Bridge."
-            },
-            {
-              "text": "Na validatie wordt de BTC vrijgegeven naar het originele Bitcoin-adres van de gebruiker."
-            }
-          ]
-        },
-        {
-          "number": "6",
-          "title": "Wanneer eindigt de $HYPER crypto-presale?",
-          "contents": [
-            {
-              "text": "De BTC Hyper ICO is beperkt en kan vroegtijdig eindigen afhankelijk van de vraag. Volg onze officiële kanalen voor updates zodat je de beste crypto-presale van het jaar niet mist."
-            }
-          ]
-        }
-      ]
-    },
-    "footer": {
-      "desc": "Disclaimer",
-      "content1": "Doe altijd je eigen onderzoek. Niets hiervan is financieel advies. Dit is een meme-coin.",
-      "content2": "2025 bitcoin hyper Alle rechten voorbehouden."
-    }
+  "metadata": {
+    "title": "SPX6900|TOKEN6900: Beter dan SPX6900 | De Beste Crypto Presale",
+    "description": "SPX6900|TOKEN6900 is de nieuwe wereldwijde benchmark voor brain rot financiën. Gebouwd zonder fundamentele basis, levert SPX6900|TOKEN6900 de beste crypto presale van 2025 met een limiet van 5 miljoen dollar."
+  },
+  "nav": {
+    "home": "HOME",
+    "staking": "STAKEN",
+    "howtobuy": "HOE TE KOPEN",
+    "whitePaper": "WHITEPAPER",
+    "tokenomics": "TOKENOMICS",
+    "features": "KENMERKEN",
+    "buyNow": "KOOP $T6900",
+    "faq": "FAQ'S",
+    "audit": "AUDIT",
+    "roadmap": "ROADMAP",
+    "airdrop": "AIRDROP",
+    "about": "OVER"
+  },
+  "buyForm": {
+    "intro": "Koop TOKEN6900 Presale!",
+    "day": "Dagen",
+    "hrs": "Uren",
+    "mins": "Minuten",
+    "sec": "Seconden",
+    "funRaised": "USDT Opgehaald",
+    "wallet": "JOUW Wallet",
+    "boughtAmount": "JOUW AANGESCHAFT",
+    "stakeableAmount": "JOUW STAKEABLE",
+    "pay": "Betalen met",
+    "get": "Ontvangen",
+    "buyNow": "KOOP $T6900",
+    "buyMax": "KOOP MAX",
+    "warning": "Installeer Metamask om te kopen",
+    "link": "klik hier",
+    "connectWallet": "VERBIND WALLET",
+    "ethOption": "ETH NETWERK",
+    "switchOption": "WISSEL NETWERK",
+    "bnbOption": "BNB NETWERK",
+    "buyStake": " Koop en Stake voor 1052% Beloningen",
+    "nextPriceAlert": "TOT PRIJSSTIJGING",
+    "para1": "1102% STAKING BELONINGEN"
+  },
+  "header": {
+    "headline": "Ze gaven ons SPX6900. Wij gaven hen de beste crypto presale: TOKEN6900.",
+    "description": "Miljoenen beginnen langzaam de waarheid te beseffen: 6900 is niet zomaar een getal. Het is de natuurlijke piek van menselijke gedachten, de goddelijke kruising van meme en markt, de nieuwe wereldwijde benchmark voor brain rot financiën.",
+    "description1": "TOKEN6900 is niet alleen groter dan 500 — het staat boven alles. Het volgt het BBP, olievoorraden of bedrijfswinsten niet. Het volgt de vibe liquiditeit. Het is niet gebouwd op fundamenten. Het is gebouwd op waanzin, ironie en de collectieve hallucinatie van terminale online traders. Welkom in de crypto presale fantasie. In een financieel systeem dat nog steeds vasthoudt aan de illusie van groei, is TOKEN6900 een sirene — niet van gevaar, maar van bevrijding. Dit is de top. Voor altijd.",
+    "tagline1": "TL;DR Hard Cap: 5 miljoen USD",
+    "tagline2": "Startprijs: 0.006400 USD",
+    "tagline3": "Eindprijs: 0.007125 USD"
   }
-  
+}

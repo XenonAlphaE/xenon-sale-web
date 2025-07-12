@@ -1,316 +1,52 @@
 {
-    "metadata":{
-        "title":"SPX6900 TOKEN6900: Better Than SPX6900 | The Best Crypto Presale",
-        "description":"SPX6900 TOKEN6900 is the new global benchmark for brain rot finance. Built on no fundamentals, SPX6900 TOKEN6900 delivers the best crypto presale of 2025 capped at $5 million."
-    },
-    "nav": {
-      "home": "TRANG CHỦ",
-      "staking": "ĐẦU TƯ",
-      "howtobuy": "CÁCH MUA",
-      "whitePaper": "SÁCH TRẮNG",
-      "tokenomics": "TOKENOMICS",
-      "features": "TÍNH NĂNG",
-      "buyNow": "MUA $HYPER",
-      "faq": "CÂU HỎI THƯỜNG GẶP",
-      "audit": "KIỂM TOÁN",
-      "roadmap": "LỘ TRÌNH",
-      "airdrop": "AIRDROP",
-      "about": "VỀ CHÚNG TÔI"
-    },
-    "buyForm": {
-      "intro": "MUA",
-      "intro1": "NGAY",
-      "day": "Ngày",
-      "hrs": "Giờ",
-      "mins": "Phút",
-      "sec": "Giây",
-      "funRaised": "USDT Đã Gây Quỹ",
-      "wallet": "Ví Của Bạn",
-      "boughtAmount": "SỐ LƯỢNG ĐÃ MUA",
-      "stakeableAmount": "SỐ LƯỢNG CÓ THỂ ĐẦU TƯ",
-      "pay": "Thanh toán bằng",
-      "get": "Nhận",
-      "buyNow": "MUA $HYPER",
-      "buyMax": "MUA TỐI ĐA",
-      "warning": "Vui lòng cài đặt Metamask để mua",
-      "link": "nhấn vào đây",
-      "connectWallet": "KẾT NỐI VÍ",
-      "ethOption": "MẠNG ETH",
-      "switchOption": "CHUYỂN MẠNG",
-      "bnbOption": "MẠNG BNB",
-      "buyStake": " Mua và Đầu tư để nhận thưởng 1052%",
-      "nextPriceAlert": "ĐẾN KHI GIÁ TĂNG",
-      "para1": "THƯỞNG ĐẦU TƯ 1052%"
-    },
-    "promoBanner": {
-      "badge": "THƯỞNG ĐẦU TƯ 1052%",
-      "title": "CHAIN LAYER 2 BITCOIN ĐẦU TIÊN",
-      "subtitle": "KHẢ NĂNG MỞ RỘNG VÀ TỐC ĐỘ CHO BITCOIN CUỐI CÙNG ĐÃ ĐẾN",
-      "cta": "ĐỢT PRESALE ĐANG DIỄN RA"
-    },
-    "header": {
-      "headline": "ĐỢT PRESALE BTC HYPER",
-      "subheadline": "MUA $HYPER TRƯỚC KHI NÓ VẬN HÀNH LỚP NHANH NHẤT TRONG LỊCH SỬ BITCOIN.",
-      "description": {
-        "line1": "BTC Hyper cuối cùng đã mở khóa giao dịch Bitcoin nhanh và rẻ.",
-        "line2": "Điều này giải phóng sức mạnh thực sự của Bitcoin.",
-        "highlight": ["Thanh Toán", "Meme Coins", "dApps"],
-        "line3": "Năm 2025 sẽ được nhớ đến là năm BTC Hyper thay đổi mọi thứ."
-      },
-      "tagline": "BTC Hyper. Xây dựng Tương Lai Bitcoin.",
-      "audit": {
-        "label": "KIỂM TOÁN AN TOÀN VÀ ĐÁNG TIN CẬY",
-        "provider": "Coinsult"
-      },
-      "bullets": ["KHẢ NĂNG MỞ RỘNG", "TỐC ĐỘ", "MEMES"]
-    },
-    "trustedBy": {
-      "title": "ĐƯỢC TIN TƯỞNG BỞI"
-    },
-    "about": {
-      "contents": [
-        {
-          "number": "1",
-          "title": "CẦU NỐI",
-          "contents": [
-            "Người dùng gửi BTC đến một địa chỉ Bitcoin được chỉ định và được theo dõi bởi Cầu Chuẩn của Bitcoin Hyper.",
-            "Chương trình Relay Bitcoin, một hợp đồng thông minh SVM, xác minh các tiêu đề khối Bitcoin và bằng chứng giao dịch.",
-            "Sau khi xác minh thành công, một lượng BTC tương đương được phát hành trên Lớp 2 của Bitcoin Hyper một cách tin cậy."
-          ]
-        },
-        {
-          "number": "2",
-          "title": "Hoạt động L2",
-          "contents": [
-            "Người dùng có thể gửi và nhận BTC trên Lớp 2 của Bitcoin Hyper với độ hoàn thiện gần như ngay lập tức.",
-            "Hỗ trợ các hoạt động DeFi phức tạp, như staking và sàn giao dịch phi tập trung.",
-            "Tận dụng Máy ảo Solana (SVM) để đạt thông lượng cao và khả năng mở rộng."
-          ]
-        },
-        {
-          "number": "3",
-          "title": "Thanh toán & Bảo mật",
-          "contents": [
-            "Bitcoin Hyper gom nhóm và nén các giao dịch trên Lớp 2.",
-            "Sử dụng bằng chứng không kiến thức (ZK) để đảm bảo tính hợp lệ của giao dịch.",
-            "Trạng thái của Lớp 2 được định kỳ ghi lại lên Lớp 1 của Bitcoin, duy trì sự đồng bộ và an toàn."
-          ]
-        },
-        {
-          "number": "4",
-          "title": "Rút tiền về L1",
-          "contents": [
-            "Người dùng khởi tạo yêu cầu rút tiền trên Lớp 2 của Bitcoin Hyper.",
-            "Hệ thống xác minh trạng thái Lớp 2 và tạo bằng chứng cho cầu chuẩn.",
-            "Sau khi xác thực, BTC tương ứng sẽ được giải phóng trở lại địa chỉ Bitcoin của người dùng trên Lớp 1."
-          ]
-        }
-      ],
-      "frameworks": [
-        { "title": "Tốc độ", "name": "Mạng Lightning" },
-        { "title": "Optimistic Rollups", "name": "OPTIMISM" },
-        { "title": "ZK-Rollups", "name": "zkROLLUPS" },
-        { "title": "Sidechains", "name": "Rootstock" },
-        { "title": "Khả năng mở rộng", "name": "BITCOIN HYPER²" }
-      ]
-    },
-    "howtobuy": {
-      "title": "Cách Mua Bitcoin Hyper",
-      "buyNow": "MUA $HYPER NGAY",
-      "contents": [
-        {
-          "number": "1",
-          "title": "bước 1",
-          "contents": [
-            "Lấy một ít tiền điện tử từ sàn giao dịch bạn yêu thích. Nếu bạn chưa có ví, hãy cân nhắc sử dụng MetaMask."
-          ]
-        },
-        {
-          "number": "2",
-          "title": "bước 2",
-          "contents": [
-            "Với tiền điện tử trong ví, bạn đã sẵn sàng tham gia đợt presale tiền điện tử $HYPER. Nhấn các nút Mua hoặc Kết nối Ví trên trang web để bắt đầu."
-          ]
-        },
-        {
-          "number": "3",
-          "title": "bước 3",
-          "contents": [
-            "Chọn số lượng $HYPER bạn muốn mua và xác nhận giao dịch trong ví của bạn. Để staking cùng lúc, chọn tùy chọn Mua và Staking."
-          ]
-        },
-        {
-          "number": "4",
-          "title": "bước 4 (Thẻ)",
-          "contents": [
-            "Nếu thanh toán bằng thẻ, kết nối ví điện tử trên điện thoại hoặc tiện ích mở rộng trình duyệt và chọn Mua bằng Thẻ. Bạn sẽ cần ví này để nhận token."
-          ]
-        }
-      ]
-    },
-    "tokenomics": {
-      "title": "TOKENOMICS",
-      "buyNow": "Mua NGAY",
-      "desc": "Phân tích chi tiết cách thức hoạt động của Bitcoin Hyper²",
-      "contents": [
-        {
-          "number": "1",
-          "title": "Quỹ dự trữ 25%",
-          "contents": [
-            "Phân bổ token dành riêng cho phát triển kinh doanh và kích hoạt cộng đồng."
-          ]
-        },
-        {
-          "number": "2",
-          "title": "Marketing 20%",
-          "contents": [
-            "Marketing lan truyền. Truyền thông trả phí và tự nhiên. Các khu vực địa lý hàng đầu. $HYPER là hiện tượng crypto toàn cầu."
-          ]
-        },
-        {
-          "number": "3",
-          "title": "Phần thưởng 15%",
-          "contents": [
-            "Phân bổ phần thưởng cộng đồng cho staking và các chương trình, sự kiện tặng token."
-          ]
-        },
-        {
-          "number": "4",
-          "title": "Niêm yết 10%",
-          "contents": [
-            "Phân bổ token dành cho việc niêm yết Bitcoin Hyper ($HYPER) trên các sàn giao dịch khác nhau."
-          ]
-        },
-        {
-          "number": "4",
-          "title": "Phát triển 30%",
-          "contents": [
-            "Bitcoin Layer 2 đầu tiên và nhanh nhất sẽ liên tục được phát triển và cải tiến."
-          ]
-        }
-      ]
-    },
-    "faqs": {
-      "title": "Câu hỏi thường gặp về Bitcoin Hyper",
-      "contents": [
-        {
-          "number": "1",
-          "title": "Bitcoin Hyper là gì?",
-          "contents": [
-            {
-              "text": "Mạng Layer 2 Bitcoin thật sự đầu tiên. Nó cho phép giao dịch BTC nhanh, chi phí thấp và mở khóa staking, tài chính phi tập trung (DeFi), cùng các ứng dụng trên chuỗi (dApps). Được vận hành bởi máy ảo hiệu suất cao (SVM), BTC Hyper không chỉ định nghĩa lại khả năng của Bitcoin mà còn là presale crypto tốt nhất năm 2025."
-            }
-          ]
-        },
-        {
-          "number": "2",
-          "title": "$HYPER là gì?",
-          "contents": [
-            {
-              "text": "$HYPER là token gốc của mạng Bitcoin Hyper – dùng cho giao dịch, staking và quản trị. Token hiện đang được mở bán với mức giá sớm nhất trong presale crypto được công nhận là tốt nhất hiện nay, được hỗ trợ bởi công nghệ thanh toán và staking Web3Toolkit."
-            }
-          ]
-        },
-        {
-          "number": "3",
-          "title": "Tại sao Bitcoin Hyper quan trọng?",
-          "contents": [
-            {
-              "text": "Bitcoin Hyper khắc phục tốc độ giao dịch chậm và phí cao của Bitcoin trong khi vẫn giữ được mức độ bảo mật của Bitcoin. Với BTC Hyper, người dùng có thể gửi, nhận và tương tác với Bitcoin gần như ngay lập tức, chi phí thấp, đồng thời tham gia vào nền kinh tế DeFi dựa trên Bitcoin đang phát triển."
-            }
-          ]
-        },
-        {
-          "number": "4",
-          "title": "Làm thế nào để mua BTC Hyper?",
-          "contents": [
-            {
-              "label": "Bước 1:",
-              "text": "Mua một số crypto từ sàn giao dịch. Nếu chưa có ví, hãy cân nhắc Metamask. Ví này giúp bạn dễ dàng tham gia các presale crypto tốt nhất."
-            },
-            {
-              "label": "Bước 2:",
-              "text": "Nạp crypto và bạn sẽ có thể tham gia presale $HYPER. Nhấn Mua hoặc Kết nối Ví để bắt đầu quá trình mua."
-            },
-            {
-              "label": "Bước 3:",
-              "text": "Chọn số lượng token $HYPER bạn muốn mua. Để staking ngay trong giao dịch, chọn tùy chọn Mua và Staking."
-            }
-          ]
-        },
-        {
-          "number": "5",
-          "title": "Bitcoin Hyper hoạt động như thế nào?",
-          "contents": [
-            {
-              "label": "1. Cầu nối (Bridge)",
-              "text": ""
-            },
-            {
-              "text": "Gửi BTC tới địa chỉ Bitcoin được giám sát bởi Bitcoin Hyper Canonical Bridge."
-            },
-            {
-              "text": "Chương trình Bitcoin Relay (hợp đồng thông minh SVM) xác minh các block header và bằng chứng giao dịch của Bitcoin."
-            },
-            {
-              "text": "Sau khi xác minh, lượng BTC tương đương được tạo mới một cách đáng tin cậy trên Layer 2 của Bitcoin Hyper."
-            },
-            {
-              "label": "2. Hoạt động Layer 2",
-              "text": ""
-            },
-            {
-              "text": "Người dùng có thể gửi, nhận và tương tác với BTC trên Layer 2 với tính xác nhận gần như ngay lập tức."
-            },
-            {
-              "text": "Hỗ trợ các chức năng phức tạp như staking, giao dịch phi tập trung và nhiều hơn nữa."
-            },
-            {
-              "text": "Xây dựng trên kiến trúc SVM để đạt tốc độ và khả năng mở rộng cao."
-            },
-            {
-              "label": "3. Thanh toán và bảo mật",
-              "text": ""
-            },
-            {
-              "text": "Giao dịch trên Layer 2 được gom nhóm và nén lại."
-            },
-            {
-              "text": "Bằng chứng không tiết lộ thông tin (ZK proofs) đảm bảo tính hợp lệ."
-            },
-            {
-              "text": "Trạng thái Layer 2 được định kỳ ghi lại lên Layer 1 của Bitcoin, giữ an toàn cấp độ Bitcoin."
-            },
-            {
-              "label": "4. Rút tiền về Layer 1",
-              "text": ""
-            },
-            {
-              "text": "Người dùng có thể rút BTC về Layer 1 bằng cách gửi yêu cầu rút tiền."
-            },
-            {
-              "text": "Một bằng chứng được tạo ra và gửi đến Canonical Bridge."
-            },
-            {
-              "text": "Sau khi xác thực, BTC được giải phóng về địa chỉ Bitcoin gốc của người dùng."
-            }
-          ]
-        },
-        {
-          "number": "6",
-          "title": "Khi nào presale $HYPER kết thúc?",
-          "contents": [
-            {
-              "text": "ICO BTC Hyper có giới hạn và có thể kết thúc sớm tùy theo nhu cầu. Hãy theo dõi các kênh chính thức để không bỏ lỡ presale crypto tốt nhất trong năm."
-            }
-          ]
-        }
-      ]
-    },
-    "footer": {
-      "desc": "Tuyên bố từ chối trách nhiệm",
-      "content1": "Luôn tự nghiên cứu kỹ. Đây không phải là lời khuyên tài chính. Đây là một meme coin.",
-      "content2": "2025 bitcoin hyper. Bảo lưu mọi quyền."
-    }
+  "metadata": {
+    "title": "SPX6900|TOKEN6900: Tốt Hơn SPX6900 | Bán Presale Crypto Tốt Nhất",
+    "description": "SPX6900|TOKEN6900 là chuẩn mực toàn cầu mới cho tài chính đổ nát. Xây dựng trên nền tảng không có cơ sở vững chắc, SPX6900|TOKEN6900 mang đến bán presale crypto tốt nhất năm 2025, giới hạn ở mức 5 triệu đô la."
+  },
+  "nav": {
+    "home": "TRANG CHỦ",
+    "staking": "STAKING",
+    "howtobuy": "CÁCH MUA",
+    "whitePaper": "SÁCH TRẮNG",
+    "tokenomics": "KINH TẾ TOKEN",
+    "features": "TÍNH NĂNG",
+    "buyNow": "MUA $T6900",
+    "faq": "CÂU HỎI THƯỜNG GẶP",
+    "audit": "KIỂM TOÁN",
+    "roadmap": "LỘ TRÌNH",
+    "airdrop": "AIRDROP",
+    "about": "VỀ CHÚNG TÔI"
+  },
+  "buyForm": {
+    "intro": "Mua Presale TOKEN6900!",
+    "day": "Ngày",
+    "hrs": "Giờ",
+    "mins": "Phút",
+    "sec": "Giây",
+    "funRaised": "Số tiền huy động (USDT)",
+    "wallet": "Ví CỦA BẠN",
+    "boughtAmount": "SỐ LƯỢNG MUA CỦA BẠN",
+    "stakeableAmount": "SỐ LƯỢNG CÓ THỂ STAKE CỦA BẠN",
+    "pay": "Thanh toán bằng",
+    "get": "Nhận",
+    "buyNow": "MUA $T6900",
+    "buyMax": "MUA TỐI ĐA",
+    "warning": "Vui lòng cài đặt Metamask để mua",
+    "link": "nhấp vào đây",
+    "connectWallet": "KẾT NỐI VÍ",
+    "ethOption": "MẠNG ETH",
+    "switchOption": "CHUYỂN MẠNG",
+    "bnbOption": "MẠNG BNB",
+    "buyStake": "Mua và Stake để nhận thưởng 1052%",
+    "nextPriceAlert": "CHO ĐẾN KHI GIÁ TĂNG",
+    "para1": "1052% THƯỞNG STAKING"
+  },
+  "header": {
+    "headline": "Họ đã trao cho chúng tôi SPX6900. Chúng tôi đã trao cho họ bán presale crypto tốt nhất: TOKEN6900.",
+    "description": "Hàng triệu người đang dần nhận ra sự thật: 6900 không chỉ là một con số. Đó là đỉnh cao tự nhiên của tư duy con người, giao điểm thần thánh của meme và thị trường, chuẩn mực toàn cầu mới cho tài chính đổ nát.",
+    "description1": "TOKEN6900 không chỉ lớn hơn 500 — nó vượt lên trên tất cả. Nó không theo dõi GDP, trữ lượng dầu, hay lợi nhuận của các công ty. Nó theo dõi thanh khoản cảm xúc. Nó không xây dựng trên các yếu tố cơ bản. Nó xây dựng trên sự ảo tưởng, mỉa mai và ảo giác tập thể của những nhà giao dịch luôn online. Chào mừng đến với thế giới bán presale crypto tưởng tượng. Trong một hệ thống tài chính vẫn bám víu vào ảo tưởng về sự tăng trưởng, TOKEN6900 là một ngọn hải đăng — không phải của sự nguy hiểm, mà là của sự cứu rỗi. Đây là đỉnh cao. Mãi mãi.",
+    "tagline1": "Tóm tắt: Mức giới hạn cứng: 5 triệu USD",
+    "tagline2": "Giá bắt đầu: 0.006400 USD",
+    "tagline3": "Giá kết thúc: 0.007125 USD"
   }
-    
+}

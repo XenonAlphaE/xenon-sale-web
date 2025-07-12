@@ -1,316 +1,52 @@
 {
-    "metadata":{
-        "title":"SPX6900 TOKEN6900: Better Than SPX6900 | The Best Crypto Presale",
-        "description":"SPX6900 TOKEN6900 is the new global benchmark for brain rot finance. Built on no fundamentals, SPX6900 TOKEN6900 delivers the best crypto presale of 2025 capped at $5 million."
-    },
-    "nav": {
-      "home": "ホーム",
-      "staking": "ステーキング",
-      "howtobuy": "購入方法",
-      "whitePaper": "ホワイトペーパー",
-      "tokenomics": "トークノミクス",
-      "features": "特徴",
-      "buyNow": "$HYPERを購入",
-      "faq": "よくある質問",
-      "audit": "監査",
-      "roadmap": "ロードマップ",
-      "airdrop": "エアドロップ",
-      "about": "概要"
-    },
-    "buyForm": {
-      "intro": "購入",
-      "intro1": "今すぐ",
-      "day": "日",
-      "hrs": "時間",
-      "mins": "分",
-      "sec": "秒",
-      "funRaised": "調達済みUSDT",
-      "wallet": "あなたのウォレット",
-      "boughtAmount": "購入済み数量",
-      "stakeableAmount": "ステーキング可能数量",
-      "pay": "支払い方法",
-      "get": "受け取る",
-      "buyNow": "$HYPERを購入",
-      "buyMax": "最大購入",
-      "warning": "購入にはMetamaskのインストールが必要です",
-      "link": "ここをクリック",
-      "connectWallet": "ウォレット接続",
-      "ethOption": "ETHネットワーク",
-      "switchOption": "ネットワーク切替",
-      "bnbOption": "BNBネットワーク",
-      "buyStake": "購入して1052%の報酬をステーク",
-      "nextPriceAlert": "価格上昇まで",
-      "para1": "1052%のステーキング報酬"
-    },
-    "promoBanner": {
-      "badge": "1052%のステーキング報酬",
-      "title": "初のビットコインレイヤー2チェーン",
-      "subtitle": "ビットコインのスケーラビリティとスピードがついに実現",
-      "cta": "プレセール開催中"
-    },
-    "header": {
-      "headline": "BTC Hyperプレセール",
-      "subheadline": "ビットコイン史上最速のレイヤーを支える前に $HYPER を購入しよう。",
-      "description": {
-        "line1": "BTC Hyperはついに高速かつ安価なビットコイン取引を実現します。",
-        "line2": "これがビットコインの真の力を解き放ちます。",
-        "highlight": ["決済", "ミームコイン", "dApps"],
-        "line3": "2025年はBTC Hyperがすべてを変えた年として記憶されるでしょう。"
-      },
-      "tagline": "BTC Hyper。ビットコインの未来を創造する。",
-      "audit": {
-        "label": "信頼と安全の監査",
-        "provider": "Coinsult"
-      },
-      "bullets": ["スケーラビリティ", "スピード", "ミーム"]
-    },
-    "trustedBy": {
-      "title": "信頼されている"
-    },
-    "about": {
-      "contents": [
-        {
-          "number": "1",
-          "title": "ブリッジ",
-          "contents": [
-            "ユーザーはBTCをBitcoin Hyperのカノニカルブリッジが監視する指定されたビットコインアドレスに入金します。",
-            "Bitcoin Relayプログラム（SVMスマートコントラクト）がビットコインのブロックヘッダーとトランザクション証明を検証します。",
-            "検証が成功すると、同量のBTCが信頼不要の形でBitcoin Hyperのレイヤー2上で発行されます。"
-          ]
-        },
-        {
-          "number": "2",
-          "title": "L2の運用",
-          "contents": [
-            "ユーザーはBitcoin Hyperのレイヤー2上でほぼ即時確定でBTCの送受信ができます。",
-            "ステーキングや分散型取引所などの複雑なDeFi操作をサポートします。",
-            "Solanaの仮想マシン（SVM）を活用し、高スループットとスケーラビリティを実現しています。"
-          ]
-        },
-        {
-          "number": "3",
-          "title": "決済とセキュリティ",
-          "contents": [
-            "Bitcoin Hyperはレイヤー2のトランザクションをバッチ処理および圧縮します。",
-            "トランザクションの正当性をゼロ知識証明（ZK）を用いて保証します。",
-            "レイヤー2の状態は定期的にビットコインのレイヤー1にコミットされ、同期とセキュリティを維持します。"
-          ]
-        },
-        {
-          "number": "4",
-          "title": "レイヤー1への出金",
-          "contents": [
-            "ユーザーはBitcoin Hyperのレイヤー2上で出金リクエストを開始します。",
-            "システムはレイヤー2の状態を検証し、カノニカルブリッジ用の証明を生成します。",
-            "検証後、対応するBTCがレイヤー1のユーザーのビットコインアドレスに戻されます。"
-          ]
-        }
-      ],
-      "frameworks": [
-        { "title": "速度", "name": "ライトニングネットワーク" },
-        { "title": "オプティミスティックロールアップ", "name": "OPTIMISM" },
-        { "title": "ZKロールアップ", "name": "zkROLLUPS" },
-        { "title": "サイドチェーン", "name": "Rootstock" },
-        { "title": "スケーラビリティ", "name": "BITCOIN HYPER²" }
-      ]
-    },
-    "howtobuy": {
-      "title": "Bitcoin Hyperの購入方法",
-      "buyNow": "$HYPERを今すぐ購入",
-      "contents": [
-        {
-          "number": "1",
-          "title": "ステップ1",
-          "contents": [
-            "お好みの取引所で暗号通貨を入手してください。まだウォレットをお持ちでない場合は、MetaMaskの利用を検討してください。"
-          ]
-        },
-        {
-          "number": "2",
-          "title": "ステップ2",
-          "contents": [
-            "ウォレットに暗号通貨があれば、$HYPERのプレセールに参加する準備が整いました。ウェブサイトの購入またはウォレット接続ボタンをクリックして開始してください。"
-          ]
-        },
-        {
-          "number": "3",
-          "title": "ステップ3",
-          "contents": [
-            "購入したい$HYPERの量を選択し、ウォレットでトランザクションを確認します。同時にステーキングを行う場合は「購入してステーク」オプションを選択してください。"
-          ]
-        },
-        {
-          "number": "4",
-          "title": "ステップ4（カード）",
-          "contents": [
-            "カードで支払う場合は、モバイル暗号ウォレットまたはブラウザ拡張ウォレットを接続し、「カードで購入」を選択してください。このウォレットがトークン受け取りに必要です。"
-          ]
-        }
-      ]
-    },
-    "tokenomics": {
-      "title": "トークノミクス",
-      "buyNow": "今すぐ購入",
-      "desc": "Bitcoin Hyper²の仕組みの完全な内訳",
-      "contents": [
-        {
-          "number": "1",
-          "title": "トレジャリー 25%",
-          "contents": [
-            "事業開発およびコミュニティ活性化のために割り当てられたトークン。"
-          ]
-        },
-        {
-          "number": "2",
-          "title": "マーケティング 20%",
-          "contents": [
-            "バイラルマーケティング。有料およびオーガニックメディア。Tier 1地域。$HYPERは世界的な暗号現象です。"
-          ]
-        },
-        {
-          "number": "3",
-          "title": "報酬 15%",
-          "contents": [
-            "ステーキングやトークン配布プロモーション、イベントのためのコミュニティ報酬の割り当て。"
-          ]
-        },
-        {
-          "number": "4",
-          "title": "上場 10%",
-          "contents": [
-            "Bitcoin Hyper（$HYPER）トークンの様々な取引所への上場のために割り当てられたトークン。"
-          ]
-        },
-        {
-          "number": "4",
-          "title": "開発 30%",
-          "contents": [
-            "初かつ最速のBitcoin Layer 2は継続的な開発と改善を受けます。"
-          ]
-        }
-      ]
-    },
-    "faqs": {
-      "title": "Bitcoin Hyper FAQ",
-      "contents": [
-        {
-          "number": "1",
-          "title": "Bitcoin Hyperとは？",
-          "contents": [
-            {
-              "text": "初の真のBitcoin Layer 2ネットワークです。高速で低コストのBTC取引を可能にし、ステーキング、分散型金融（DeFi）、オンチェーンで構築されたアプリケーション（dApps）を解放します。高スループットの仮想マシン（SVM）によって駆動され、BTC HyperはBitcoinで可能なことを再定義するだけでなく、2025年最高の暗号プレセールでもあります。"
-            }
-          ]
-        },
-        {
-          "number": "2",
-          "title": "$HYPERとは？",
-          "contents": [
-            {
-              "text": "$HYPERはBitcoin Hyperネットワークのネイティブトークンで、取引、ステーキング、ガバナンスに使用されます。現在、最も早い価格段階で購入可能で、Web3Toolkitの支払いとステーキング技術により、最高の暗号プレセールとして広く認識されています。"
-            }
-          ]
-        },
-        {
-          "number": "3",
-          "title": "なぜBitcoin Hyperは重要ですか？",
-          "contents": [
-            {
-              "text": "Bitcoin HyperはBitcoinの遅い取引速度と高い手数料を解決しつつ、Bitcoinグレードのセキュリティを維持します。BTC Hyperにより、ユーザーはほぼリアルタイムで低コストでBTCを送受信および操作でき、Bitcoinベースの新興DeFi経済に参加できます。"
-            }
-          ]
-        },
-        {
-          "number": "4",
-          "title": "BTC Hyperはどうやって購入しますか？",
-          "contents": [
-            {
-              "label": "ステップ1：",
-              "text": "取引所から暗号資産を入手します。まだウォレットを持っていない場合は、Metamaskを検討してください。最高の暗号プレセールに簡単に参加できます。"
-            },
-            {
-              "label": "ステップ2：",
-              "text": "暗号資産をチャージし、$HYPER暗号プレセールに参加できます。購入またはウォレット接続をクリックして購入プロセスを開始してください。"
-            },
-            {
-              "label": "ステップ3：",
-              "text": "購入したい$HYPERトークンの数量を選択します。同じ取引でステークする場合は「購入とステーク」オプションを選んでください。"
-            }
-          ]
-        },
-        {
-          "number": "5",
-          "title": "Bitcoin Hyperはどのように機能しますか？",
-          "contents": [
-            {
-              "label": "1. ブリッジ",
-              "text": ""
-            },
-            {
-              "text": "BTCをBitcoin Hyper Canonical Bridgeが監視する指定されたBitcoinアドレスに送信します。"
-            },
-            {
-              "text": "Bitcoin Relay Program（SVMスマートコントラクト）がBitcoinブロックヘッダーと取引証明を検証します。"
-            },
-            {
-              "text": "検証後、同等のBTCが信頼なしでBitcoin Hyper Layer 2上で発行されます。"
-            },
-            {
-              "label": "2. Layer 2運用",
-              "text": ""
-            },
-            {
-              "text": "ユーザーはLayer 2上でほぼ即時の確定性でBTCを送受信し、操作できます。"
-            },
-            {
-              "text": "ステーキング、分散型取引などの複雑な機能をサポートします。"
-            },
-            {
-              "text": "高速かつスケーラブルなSVMアーキテクチャ上に構築されています。"
-            },
-            {
-              "label": "3. 清算とセキュリティ",
-              "text": ""
-            },
-            {
-              "text": "Layer 2上の取引はバッチ処理され圧縮されます。"
-            },
-            {
-              "text": "ゼロ知識証明（ZK）が妥当性を保証します。"
-            },
-            {
-              "text": "Layer 2の状態は定期的にBitcoin Layer 1にコミットされ、Bitcoinグレードのセキュリティを維持します。"
-            },
-            {
-              "label": "4. Layer 1への出金",
-              "text": ""
-            },
-            {
-              "text": "ユーザーは出金リクエストを開始してBTCをLayer 1に戻すことができます。"
-            },
-            {
-              "text": "証明が生成されCanonical Bridgeに提出されます。"
-            },
-            {
-              "text": "検証後、BTCはユーザーの元のBitcoinアドレスにリリースされます。"
-            }
-          ]
-        },
-        {
-          "number": "6",
-          "title": "$HYPER暗号プレセールはいつ終了しますか？",
-          "contents": [
-            {
-              "text": "BTC Hyper ICOは限定的で需要に応じて早期終了する場合があります。公式チャネルをフォローして、今年最高の暗号プレセールを見逃さないようにしてください。"
-            }
-          ]
-        }
-      ]
-    },
-    "footer": {
-      "desc": "免責事項",
-      "content1": "必ずご自身で調査を行ってください。ここにあるものは金融アドバイスではありません。これはミームコインです。",
-      "content2": "2025 Bitcoin Hyper 全著作権所有。"
-    }
+  "metadata": {
+    "title": "SPX6900|TOKEN6900: SPX6900 より優れた | 2025年の最高の暗号通貨プレセール",
+    "description": "SPX6900|TOKEN6900は脳の腐敗金融の新たな世界的基準です。基本的な要素は何もありませんが、SPX6900|TOKEN6900は2025年の最高の暗号通貨プレセールを提供し、500万ドルで上限設定されています。"
+  },
+  "nav": {
+    "home": "ホーム",
+    "staking": "ステーキング",
+    "howtobuy": "購入方法",
+    "whitePaper": "ホワイトペーパー",
+    "tokenomics": "トークノミクス",
+    "features": "特徴",
+    "buyNow": "$T6900 を購入",
+    "faq": "よくある質問",
+    "audit": "監査",
+    "roadmap": "ロードマップ",
+    "airdrop": "エアドロップ",
+    "about": "詳細"
+  },
+  "buyForm": {
+    "intro": "TOKEN6900 プレセールを購入！",
+    "day": "日",
+    "hrs": "時間",
+    "mins": "分",
+    "sec": "秒",
+    "funRaised": "調達済みUSDT",
+    "wallet": "あなたのウォレット",
+    "boughtAmount": "購入金額",
+    "stakeableAmount": "ステーキング可能額",
+    "pay": "支払い方法",
+    "get": "受け取る",
+    "buyNow": "$T6900 を購入",
+    "buyMax": "最大購入",
+    "warning": "購入するにはMetamaskをインストールしてください",
+    "link": "ここをクリック",
+    "connectWallet": "ウォレットを接続",
+    "ethOption": "ETH ネットワーク",
+    "switchOption": "ネットワークを切り替える",
+    "bnbOption": "BNB ネットワーク",
+    "buyStake": "購入してステーキングし、1052%のリワードを受け取る",
+    "nextPriceAlert": "価格が上昇するまで",
+    "para1": "1102% ステーキングリワード"
+  },
+  "header": {
+    "headline": "彼らはSPX6900を与えた。私たちは最高の暗号通貨プレセール：TOKEN6900を与えた。",
+    "description": "何百万もの人々が次第に真実に気づいている：6900は単なる数字ではない。それは人間の思考の自然な頂点、ミームと市場の神聖な交差点、脳の腐敗金融の新たな世界基準だ。",
+    "description1": "TOKEN6900は500より優れているだけではない。それはすべてを超越している。GDP、石油埋蔵量、企業の収益を追跡するわけではない。それはムードの流動性を追跡する。基礎があるわけではない。それは幻想、皮肉、そして終末的なオンライントレーダーたちの集団的幻覚で作られている。暗号通貨プレセールのファンタジーへようこそ。成長の幻想にしがみつく金融システムの中で、TOKEN6900はサイレンのような存在だ — 危険ではなく、解放のサイレンだ。これが頂点だ。永遠に。",
+    "tagline1": "要約：ハードキャップ 500万USD",
+    "tagline2": "開始価格：0.006400 USD",
+    "tagline3": "終了価格：0.007125 USD"
   }
-    
+}

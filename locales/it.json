@@ -1,315 +1,52 @@
 {
-    "metadata":{
-        "title":"SPX6900 TOKEN6900: Better Than SPX6900 | The Best Crypto Presale",
-        "description":"SPX6900 TOKEN6900 is the new global benchmark for brain rot finance. Built on no fundamentals, SPX6900 TOKEN6900 delivers the best crypto presale of 2025 capped at $5 million."
-    },
-    "nav": {
-      "home": "HOME",
-      "staking": "STAKING",
-      "howtobuy": "COME COMPRARE",
-      "whitePaper": "WHITE PAPER",
-      "tokenomics": "TOKENOMICS",
-      "features": "CARATTERISTICHE",
-      "buyNow": "ACQUISTA $HYPER",
-      "faq": "FAQ",
-      "audit": "AUDIT",
-      "roadmap": "ROADMAP",
-      "airdrop": "AIRDROP",
-      "about": "INFO"
-    },
-    "buyForm": {
-      "intro": "ACQUISTA",
-      "intro1": "ORA",
-      "day": "Giorni",
-      "hrs": "Ore",
-      "mins": "Minuti",
-      "sec": "Secondi",
-      "funRaised": "USDT Raccolti",
-      "wallet": "Il TUO Wallet",
-      "boughtAmount": "IL TUO ACQUISTATO",
-      "stakeableAmount": "IL TUO STAKEABILE",
-      "pay": "Paga con",
-      "get": "Ricevi",
-      "buyNow": "ACQUISTA $HYPER",
-      "buyMax": "ACQUISTA MASSIMO",
-      "warning": "Per favore installa Metamask per acquistare",
-      "link": "clicca qui",
-      "connectWallet": "COLLEGA WALLET",
-      "ethOption": "RETE ETH",
-      "switchOption": "CAMBIA RETE",
-      "bnbOption": "RETE BNB",
-      "buyStake": " Acquista e Fai Staking per Ricompense del 1052%",
-      "nextPriceAlert": "FINO ALL'AUMENTO DI PREZZO",
-      "para1": "RICOMPENSE DI STAKING DEL 1052%"
-    },
-    "promoBanner": {
-      "badge": "RICOMPENSE DI STAKING DEL 1052%",
-      "title": "LA PRIMA CHAIN BITCOIN LAYER 2",
-      "subtitle": "SCALABILITÀ E VELOCITÀ PER BITCOIN SONO FINALMENTE QUI",
-      "cta": "PRESALE ATTIVO"
-    },
-    "header": {
-      "headline": "IL PRESALE BTC HYPER",
-      "subheadline": "ACQUISTA $HYPER PRIMA CHE ALIMENTI IL LAYER PIÙ VELOCE NELLA STORIA DI BITCOIN.",
-      "description": {
-        "line1": "BTC Hyper sblocca finalmente transazioni Bitcoin veloci ed economiche.",
-        "line2": "Questo libera il vero potere di Bitcoin.",
-        "highlight": ["Pagamenti", "Meme Coin", "dApp"],
-        "line3": "Il 2025 sarà ricordato come l'anno in cui BTC Hyper ha cambiato tutto."
-      },
-      "tagline": "BTC Hyper. Costruendo il Futuro di Bitcoin.",
-      "audit": {
-        "label": "AUDIT DI FIDUCIA E SICUREZZA",
-        "provider": "Coinsult"
-      },
-      "bullets": ["SCALABILITÀ", "VELOCITÀ", "MEME"]
-    },
-  "trustedBy": {
-    "title": "FIDUCIATO DA"
+  "metadata": {
+    "title": "SPX6900|TOKEN6900: Meglio di SPX6900 | Il Miglior Crypto Presale",
+    "description": "SPX6900|TOKEN6900 è il nuovo benchmark globale per la finanza basata sulla decadenza mentale. Costruito senza fondamenta, SPX6900|TOKEN6900 offre il miglior crypto presale del 2025 con un limite di 5 milioni di dollari."
   },
-  "about": {
-    "contents": [
-      {
-        "number": "1",
-        "title": "PONTE",
-        "contents": [
-          "L'utente deposita BTC in un indirizzo Bitcoin designato monitorato dal Canonical Bridge di Bitcoin Hyper.",
-          "Il Bitcoin Relay Program, uno smart contract SVM, verifica gli header dei blocchi Bitcoin e le prove delle transazioni.",
-          "Al completamento della verifica, una quantità equivalente di BTC viene coniata su Layer 2 di Bitcoin Hyper in modo trustless."
-        ]
-      },
-      {
-        "number": "2",
-        "title": "Operazione L2",
-        "contents": [
-          "Gli utenti possono inviare e ricevere BTC su Layer 2 di Bitcoin Hyper con finalità quasi istantanea.",
-          "Supporta operazioni DeFi complesse, come staking e scambi decentralizzati.",
-          "Sfrutta la Solana Virtual Machine (SVM) per alta velocità e scalabilità."
-        ]
-      },
-      {
-        "number": "3",
-        "title": "Regolamento e Sicurezza",
-        "contents": [
-          "Bitcoin Hyper raggruppa e comprime le transazioni di Layer 2.",
-          "Utilizza prove a conoscenza zero (ZK) per garantire la validità delle transazioni.",
-          "Lo stato di Layer 2 viene periodicamente impegnato su Layer 1 di Bitcoin, mantenendo sincronizzazione e sicurezza."
-        ]
-      },
-      {
-        "number": "4",
-        "title": "Prelievo a L1",
-        "contents": [
-          "Gli utenti avviano una richiesta di prelievo su Layer 2 di Bitcoin Hyper.",
-          "Il sistema verifica lo stato di Layer 2 e genera una prova per il canonical bridge.",
-          "Dopo la convalida, l’BTC corrispondente viene rilasciato all’indirizzo Bitcoin dell’utente su Layer 1."
-        ]
-      }
-    ],
-    "frameworks": [
-      { "title": "Velocità", "name": "Lightning network" },
-      { "title": "Optimistic Rollups", "name": "OPTIMISM" },
-      { "title": "ZK-Rollups", "name": "zkROLLUPS" },
-      { "title": "Sidechains", "name": "Rootstock" },
-      { "title": "Scalabilità", "name": "BITCOIN HYPER²" }
-    ]
+  "nav": {
+    "home": "HOME",
+    "staking": "STAKING",
+    "howtobuy": "COME COMPRARE",
+    "whitePaper": "WHITE PAPER",
+    "tokenomics": "TOKENOMICS",
+    "features": "CARATTERISTICHE",
+    "buyNow": "COMPRA $T6900",
+    "faq": "FAQ",
+    "audit": "AUDIT",
+    "roadmap": "ROADMAP",
+    "airdrop": "AIRDROP",
+    "about": "CHI SIAMO"
   },
-  "howtobuy": {
-    "title": "Come Comprare Bitcoin Hyper",
-    "buyNow": "COMPRA $HYPER ORA",
-    "contents": [
-      {
-        "number": "1",
-        "title": "passo 1",
-        "contents": [
-          "Ottieni un po’ di criptovaluta dal tuo exchange preferito. Se non hai ancora un wallet, considera di usare MetaMask."
-        ]
-      },
-      {
-        "number": "2",
-        "title": "passo 2",
-        "contents": [
-          "Con le criptovalute nel tuo wallet, sei pronto per partecipare alla prevendita $HYPER. Clicca su qualsiasi pulsante Compra o Connetti Wallet sul sito per iniziare."
-        ]
-      },
-      {
-        "number": "3",
-        "title": "passo 3",
-        "contents": [
-          "Scegli la quantità di $HYPER che vuoi comprare e conferma la transazione nel tuo wallet. Per fare staking contemporaneamente, seleziona l’opzione Compra e Stake."
-        ]
-      },
-      {
-        "number": "4",
-        "title": "passo 4 (Carta)",
-        "contents": [
-          "Se paghi con carta, connetti il tuo wallet crypto mobile o l’estensione del browser e scegli Compra con Carta. Ti servirà questo wallet per ricevere i tuoi token."
-        ]
-      }
-    ]
+  "buyForm": {
+    "intro": "Acquista il Presale di TOKEN6900!",
+    "day": "Giorni",
+    "hrs": "Ore",
+    "mins": "Minuti",
+    "sec": "Secondi",
+    "funRaised": "USDT Raccolti",
+    "wallet": "IL TUO Wallet",
+    "boughtAmount": "IL TUO ACQUISTO",
+    "stakeableAmount": "IL TUO STAKEABLE",
+    "pay": "Paga con",
+    "get": "Ricevi",
+    "buyNow": "COMPRA $T6900",
+    "buyMax": "COMPRA MAX",
+    "warning": "Installa Metamask per comprare",
+    "link": "clicca qui",
+    "connectWallet": "CONNETTI WALLET",
+    "ethOption": "RETE ETH",
+    "switchOption": "CAMBIA RETE",
+    "bnbOption": "RETE BNB",
+    "buyStake": "Compra e Staka per il 1052% di Rendimento",
+    "nextPriceAlert": "FINO ALL'AUMENTO DEL PREZZO",
+    "para1": "RENDIMENTI STAKING DEL 1102%"
   },
-  "tokenomics": {
-    "title": "TOKENOMICS",
-    "buyNow": "Compra ORA",
-    "desc": "Dettaglio completo di come funziona Bitcoin Hyper²",
-    "contents": [
-      {
-        "number": "1",
-        "title": "Tesoreria 25%",
-        "contents": [
-          "Allocazione designata di token per sviluppo aziendale e attivazioni della community."
-        ]
-      },
-      {
-        "number": "2",
-        "title": "Marketing 20%",
-        "contents": [
-          "Marketing virale. Media a pagamento e organici. Geografie Tier 1. $HYPER è un fenomeno crypto globale."
-        ]
-      },
-      {
-        "number": "3",
-        "title": "Ricompense 15%",
-        "contents": [
-          "Allocazione di ricompense per la community per staking e promozioni ed eventi di distribuzione token."
-        ]
-      },
-      {
-        "number": "4",
-        "title": "Listings 10%",
-        "contents": [
-          "Allocazione designata di token per le quotazioni del token Bitcoin Hyper ($HYPER) su vari exchange."
-        ]
-      },
-      {
-        "number": "4",
-        "title": "Sviluppo 30%",
-        "contents": [
-          "Il primo e più veloce Bitcoin Layer 2 subirà continui sviluppi e miglioramenti."
-        ]
-      }
-    ]
-  },
-  "faqs": {
-    "title": "Domande Frequenti su Bitcoin Hyper",
-    "contents": [
-      {
-        "number": "1",
-        "title": "Cos’è Bitcoin Hyper?",
-        "contents": [
-          {
-            "text": "La prima vera rete Bitcoin Layer 2. Consente transazioni BTC veloci e a basso costo e sblocca staking, finanza decentralizzata (DeFi) e applicazioni on-chain (dApp). Alimentato da una macchina virtuale ad alto rendimento (SVM), BTC Hyper non solo ridefinisce cosa è possibile su Bitcoin, ma è anche la migliore prevendita crypto del 2025."
-          }
-        ]
-      },
-      {
-        "number": "2",
-        "title": "Cos’è $HYPER?",
-        "contents": [
-          {
-            "text": "$HYPER è il token nativo della rete Bitcoin Hyper – usato per transazioni, staking e governance. Il token è attualmente disponibile nelle prime fasi di prezzo nella migliore prevendita crypto da acquistare ora, facilitata dalla tecnologia di pagamenti e staking di Web3Toolkit."
-          }
-        ]
-      },
-      {
-        "number": "3",
-        "title": "Perché Bitcoin Hyper è importante?",
-        "contents": [
-          {
-            "text": "Bitcoin Hyper risolve la lentezza delle transazioni Bitcoin e le alte commissioni mantenendo la sicurezza di livello Bitcoin. Con BTC Hyper, gli utenti possono inviare, ricevere e interagire con Bitcoin quasi in tempo reale, con costi minimi, e partecipare all’economia DeFi emergente basata su Bitcoin."
-          }
-        ]
-      },
-      {
-        "number": "4",
-        "title": "Come compro BTC Hyper?",
-        "contents": [
-          {
-            "label": "Passo 1:",
-            "text": "Acquista crypto da un exchange. Se non hai ancora un wallet, considera Metamask. Ti permette di accedere facilmente alle migliori prevendite crypto."
-          },
-          {
-            "label": "Passo 2:",
-            "text": "Ricarica con crypto e potrai partecipare alla prevendita crypto $HYPER. Clicca su Compra o Connetti Wallet per iniziare l’acquisto."
-          },
-          {
-            "label": "Passo 3:",
-            "text": "Seleziona la quantità di token $HYPER che vuoi acquistare. Per fare staking nella stessa transazione, scegli l’opzione Compra e Fai Staking."
-          }
-        ]
-      },
-      {
-        "number": "5",
-        "title": "Come funziona Bitcoin Hyper?",
-        "contents": [
-          {
-            "label": "1. Bridge",
-            "text": ""
-          },
-          {
-            "text": "Invia BTC a un indirizzo Bitcoin designato monitorato dal Bitcoin Hyper Canonical Bridge."
-          },
-          {
-            "text": "Il Bitcoin Relay Program (un contratto smart SVM) verifica gli header dei blocchi Bitcoin e le prove di transazione."
-          },
-          {
-            "text": "Una volta verificato, un ammontare equivalente di BTC viene creato in modo trustless su Bitcoin Hyper Layer 2."
-          },
-          {
-            "label": "2. Operazione Layer 2",
-            "text": ""
-          },
-          {
-            "text": "Gli utenti possono inviare, ricevere e interagire con BTC su Layer 2 con finalità quasi istantanea."
-          },
-          {
-            "text": "Supporta funzioni complesse come staking, trading decentralizzato e altro."
-          },
-          {
-            "text": "Costruito su un’architettura SVM per velocità e scalabilità."
-          },
-          {
-            "label": "3. Regolamento e Sicurezza",
-            "text": ""
-          },
-          {
-            "text": "Le transazioni su Layer 2 sono raggruppate e compresse."
-          },
-          {
-            "text": "Le prove zero-knowledge (ZK) garantiscono la validità."
-          },
-          {
-            "text": "Lo stato del Layer 2 è periodicamente impegnato nel Layer 1 di Bitcoin, preservando la sicurezza di livello Bitcoin."
-          },
-          {
-            "label": "4. Prelievo a Layer 1",
-            "text": ""
-          },
-          {
-            "text": "Gli utenti possono prelevare BTC tornando al Layer 1 iniziando una richiesta di prelievo."
-          },
-          {
-            "text": "Viene generata una prova che viene inviata al Canonical Bridge."
-          },
-          {
-            "text": "Dopo la validazione, i BTC vengono rilasciati all’indirizzo Bitcoin originale dell’utente."
-          }
-        ]
-      },
-      {
-        "number": "6",
-        "title": "Quando termina la prevendita crypto $HYPER?",
-        "contents": [
-          {
-            "text": "L’ICO di BTC Hyper è limitata e potrebbe terminare in anticipo a seconda della domanda. Segui i nostri canali ufficiali per aggiornamenti e non perdere la migliore prevendita crypto dell’anno."
-          }
-        ]
-      }
-    ]
-  },
-  "footer": {
-    "desc": "Disclaimer",
-    "content1": "Fai sempre le tue ricerche. Nulla di quanto riportato è un consiglio finanziario. Questo è un meme coin.",
-    "content2": "2025 bitcoin hyper Tutti i diritti riservati."
+  "header": {
+    "headline": "Ci hanno dato SPX6900. Noi abbiamo dato loro il miglior crypto presale: TOKEN6900.",
+    "description": "Milioni stanno lentamente realizzando la verità: 6900 non è solo un numero. È il picco naturale del pensiero umano, l'intersezione divina tra meme e mercato, il nuovo benchmark globale per la finanza basata sulla decadenza mentale.",
+    "description1": "TOKEN6900 non è solo maggiore di 500 — è sopra a tutto. Non traccia PIL, riserve di petrolio, o guadagni aziendali. Traccia la liquidità del vibe. Non è costruito sui fondamentali. È costruito sull'illusione, sull'ironia e sull'allucinazione collettiva dei trader terminalmente online. Benvenuti nella fantasia del crypto presale. In un sistema finanziario che si aggrappa ancora all'illusione di crescita, TOKEN6900 è una sirena — non di pericolo, ma di salvezza. Questa è la vetta. Per sempre.",
+    "tagline1": "TL;DR Hard Cap: 5 milioni USD",
+    "tagline2": "Prezzo di Partenza: 0.006400 USD",
+    "tagline3": "Prezzo di Fine: 0.007125 USD"
   }
 }

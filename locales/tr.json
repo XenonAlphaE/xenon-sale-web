@@ -1,316 +1,52 @@
 {
-    "metadata":{
-        "title":"SPX6900 TOKEN6900: Better Than SPX6900 | The Best Crypto Presale",
-        "description":"SPX6900 TOKEN6900 is the new global benchmark for brain rot finance. Built on no fundamentals, SPX6900 TOKEN6900 delivers the best crypto presale of 2025 capped at $5 million."
-    },
-    "nav": {
-      "home": "ANASAYFA",
-      "staking": "STAKING",
-      "howtobuy": "NASIL ALINIR",
-      "whitePaper": "BEYAZ KAĞIT",
-      "tokenomics": "TOKENOMİK",
-      "features": "ÖZELLİKLER",
-      "buyNow": "$HYPER AL",
-      "faq": "SSS",
-      "audit": "DENETİM",
-      "roadmap": "YOL HARİTASI",
-      "airdrop": "AIRDROP",
-      "about": "HAKKINDA"
-    },
-    "buyForm": {
-      "intro": "SATIN AL",
-      "intro1": "ŞİMDİ",
-      "day": "Gün",
-      "hrs": "Saat",
-      "mins": "Dakika",
-      "sec": "Saniye",
-      "funRaised": "Toplanan USDT",
-      "wallet": "CÜZDANINIZ",
-      "boughtAmount": "SATIN ALDIĞINIZ",
-      "stakeableAmount": "KİLİTLEYEBİLECEĞİNİZ",
-      "pay": "İle Öde",
-      "get": "Al",
-      "buyNow": "$HYPER AL",
-      "buyMax": "MAKSİMUM AL",
-      "warning": "Satın almak için lütfen Metamask kurun",
-      "link": "buraya tıklayın",
-      "connectWallet": "CÜZDANI BAĞLA",
-      "ethOption": "ETH AĞI",
-      "switchOption": "AĞI DEĞİŞTİR",
-      "bnbOption": "BNB AĞI",
-      "buyStake": " Satın Al ve %1052 Ödüller İçin Kilitle",
-      "nextPriceAlert": "FİYAT ARTIŞINA KADAR",
-      "para1": "%1052 STAKING ÖDÜLLERİ"
-    },
-    "promoBanner": {
-      "badge": "%1052 STAKING ÖDÜLLERİ",
-      "title": "İLK BITCOIN LAYER 2 ZİNCİRİ",
-      "subtitle": "BITCOIN İÇİN ÖLÇEKLENEBİLİRLİK VE HIZ SONUNDA BURADA",
-      "cta": "ÖN SATIŞ BAŞLADI"
-    },
-    "header": {
-      "headline": "BTC HYPER ÖN SATIŞI",
-      "subheadline": "$HYPER’I AL, BITCOIN TARİHİNİN EN HIZLI LAYER’INI GÜÇLENDİRMEDEN ÖNCE.",
-      "description": {
-        "line1": "BTC Hyper, sonunda hızlı ve ucuz Bitcoin işlemlerini mümkün kılıyor.",
-        "line2": "Bu, Bitcoin’in gerçek gücünü ortaya çıkarıyor.",
-        "highlight": ["Ödemeler", "Meme Coinler", "dApp’ler"],
-        "line3": "2025, BTC Hyper’ın her şeyi değiştirdiği yıl olarak hatırlanacak."
-      },
-      "tagline": "BTC Hyper. Bitcoin’in Geleceğini İnşa Ediyor.",
-      "audit": {
-        "label": "GÜVEN VE GÜVENLİK DENETİMLERİ",
-        "provider": "Coinsult"
-      },
-      "bullets": ["ÖLÇEKLENEBİLİRLİK", "HIZ", "MEMELER"]
-    },
-    "trustedBy": {
-      "title": "GÜVENİLENLER"
-    },
-    "about": {
-      "contents": [
-        {
-          "number": "1",
-          "title": "KÖPRÜ",
-          "contents": [
-            "Kullanıcı, Bitcoin Hyper’ın Canonical Köprüsü tarafından izlenen belirlenmiş bir Bitcoin adresine BTC yatırır.",
-            "Bitcoin Relay Programı, bir SVM akıllı kontratı, Bitcoin blok başlıklarını ve işlem kanıtlarını doğrular.",
-            "Başarılı doğrulama sonrası, eşdeğer miktarda BTC Bitcoin Hyper’ın Layer 2’sinde güvenilir olmayan şekilde basılır."
-          ]
-        },
-        {
-          "number": "2",
-          "title": "L2 İşlemi",
-          "contents": [
-            "Kullanıcılar Bitcoin Hyper’ın Layer 2’sinde neredeyse anında kesinlikle BTC gönderip alabilir.",
-            "Staking ve merkeziyetsiz borsalar gibi karmaşık DeFi işlemlerini destekler.",
-            "Yüksek işlem hacmi ve ölçeklenebilirlik için Solana’nın Sanal Makinesi’ni (SVM) kullanır."
-          ]
-        },
-        {
-          "number": "3",
-          "title": "Uzlaşma ve Güvenlik",
-          "contents": [
-            "Bitcoin Hyper, Layer 2 işlemlerini toplar ve sıkıştırır.",
-            "İşlem geçerliliğini sağlamak için sıfır bilgi (ZK) kanıtları kullanır.",
-            "Layer 2 durumu periyodik olarak Bitcoin’in Layer 1’ine kaydedilir ve senkronizasyon ile güvenlik sağlanır."
-          ]
-        },
-        {
-          "number": "4",
-          "title": "L1’e Çekilme",
-          "contents": [
-            "Kullanıcılar Bitcoin Hyper’ın Layer 2’sinde çekilme talebi başlatır.",
-            "Sistem Layer 2 durumunu doğrular ve canonical köprü için bir kanıt oluşturur.",
-            "Doğrulama sonrası, ilgili BTC kullanıcıya Layer 1’deki Bitcoin adresine geri serbest bırakılır."
-          ]
-        }
-      ],
-      "frameworks": [
-        { "title": "Hız", "name": "Lightning network" },
-        { "title": "Optimistic Rollups", "name": "OPTIMISM" },
-        { "title": "ZK-Rollups", "name": "zkROLLUPS" },
-        { "title": "Yan Zincirler", "name": "Rootstock" },
-        { "title": "Ölçeklenebilirlik", "name": "BITCOIN HYPER²" }
-      ]
-    },
-    "howtobuy": {
-      "title": "Bitcoin Hyper Nasıl Alınır",
-      "buyNow": "$HYPER ŞİMDİ AL",
-      "contents": [
-        {
-          "number": "1",
-          "title": "adım 1",
-          "contents": [
-            "Tercih ettiğiniz borsadan kripto alın. Henüz bir cüzdanınız yoksa MetaMask kullanmayı düşünebilirsiniz."
-          ]
-        },
-        {
-          "number": "2",
-          "title": "adım 2",
-          "contents": [
-            "Kripto cüzdanınızda olduğunda, $HYPER kripto ön satışına katılmaya hazırsınız. Başlamak için sitedeki herhangi bir Satın Al veya Cüzdan Bağla butonuna tıklayın."
-          ]
-        },
-        {
-          "number": "3",
-          "title": "adım 3",
-          "contents": [
-            "Almak istediğiniz $HYPER miktarını seçin ve cüzdanınızda işlemi onaylayın. Aynı zamanda stake yapmak için Satın Al ve Stake seçeneğini seçin."
-          ]
-        },
-        {
-          "number": "4",
-          "title": "adım 4 (Kart)",
-          "contents": [
-            "Kart ile ödeme yapacaksanız, mobil kripto cüzdanınızı veya tarayıcı eklentisi cüzdanınızı bağlayın ve Kart ile Satın Al seçeneğini tercih edin. Tokenlerinizi almak için bu cüzdana ihtiyacınız olacak."
-          ]
-        }
-      ]
-    },
-    "tokenomics": {
-      "title": "TOKENOMİK",
-      "buyNow": "ŞİMDİ SATIN AL",
-      "desc": "Bitcoin Hyper²'nin nasıl çalıştığının tam dökümü",
-      "contents": [
-        {
-          "number": "1",
-          "title": "Hazine %25",
-          "contents": [
-            "İş geliştirme ve topluluk etkinlikleri için ayrılmış token tahsisi."
-          ]
-        },
-        {
-          "number": "2",
-          "title": "Pazarlama %20",
-          "contents": [
-            "Viral pazarlama. Ücretli ve organik medya. Birinci sınıf bölgeler. $HYPER küresel bir kripto fenomenidir."
-          ]
-        },
-        {
-          "number": "3",
-          "title": "Ödüller %15",
-          "contents": [
-            "Staking ve token hediye promosyonları ile etkinlikler için topluluk ödülleri tahsisi."
-          ]
-        },
-        {
-          "number": "4",
-          "title": "Listelemeler %10",
-          "contents": [
-            "Bitcoin Hyper ($HYPER) tokenlerinin çeşitli borsalarda listelenmesi için ayrılmış token tahsisi."
-          ]
-        },
-        {
-          "number": "4",
-          "title": "Geliştirme %30",
-          "contents": [
-            "İlk ve en hızlı Bitcoin Layer 2 sürekli geliştirme ve iyileştirmelerden geçecektir."
-          ]
-        }
-      ]
-    },
-    "faqs": {
-      "title": "Bitcoin Hyper SSS",
-      "contents": [
-        {
-          "number": "1",
-          "title": "Bitcoin Hyper nedir?",
-          "contents": [
-            {
-              "text": "İlk gerçek Bitcoin Layer 2 ağı. Hızlı, düşük maliyetli BTC işlemleri sağlar ve staking, merkeziyetsiz finans (DeFi) ve zincir üzerinde uygulamalar (dApps) açar. Yüksek işlem hacmine sahip sanal makine (SVM) tarafından desteklenen BTC Hyper, Bitcoin’de mümkün olanı yeniden tanımlamakla kalmaz, aynı zamanda 2025’in en iyi kripto ön satışıdır."
-            }
-          ]
-        },
-        {
-          "number": "2",
-          "title": "$HYPER nedir?",
-          "contents": [
-            {
-              "text": "$HYPER, Bitcoin Hyper ağının yerel tokenidir – işlemler, staking ve yönetişim için kullanılır. Token, şu anda Web3Toolkit ödemeleri ve staking teknolojisi ile kolaylaştırılan en erken fiyat aşamalarında mevcut olup, şimdi satın alınabilecek en iyi kripto ön satış olarak geniş çapta tanınmaktadır."
-            }
-          ]
-        },
-        {
-          "number": "3",
-          "title": "Bitcoin Hyper neden önemlidir?",
-          "contents": [
-            {
-              "text": "Bitcoin Hyper, Bitcoin’in yavaş işlem hızını ve yüksek ücretlerini düzeltirken Bitcoin kalitesinde güvenliği korur. BTC Hyper ile kullanıcılar neredeyse gerçek zamanlı, düşük maliyetlerle Bitcoin gönderebilir, alabilir ve etkileşimde bulunabilir, ayrıca ortaya çıkan Bitcoin tabanlı DeFi ekonomisine katılabilirler."
-            }
-          ]
-        },
-        {
-          "number": "4",
-          "title": "BTC Hyper nasıl satın alınır?",
-          "contents": [
-            {
-              "label": "Adım 1:",
-              "text": "Bir borsadan biraz kripto alın. Henüz cüzdanınız yoksa Metamask’ı düşünün. En iyi kripto ön satışlarına kolayca girmenizi sağlar."
-            },
-            {
-              "label": "Adım 2:",
-              "text": "Kripto ile bakiye yükleyin ve $HYPER kripto ön satışına katılabileceksiniz. Satın alma sürecini başlatmak için Satın Al veya Cüzdan Bağla düğmesine tıklayın."
-            },
-            {
-              "label": "Adım 3:",
-              "text": "Satın almak istediğiniz $HYPER token miktarını seçin. Aynı işlemde staking yapmak için Satın Al ve Stake Et seçeneğini tercih edin."
-            }
-          ]
-        },
-        {
-          "number": "5",
-          "title": "Bitcoin Hyper nasıl çalışır?",
-          "contents": [
-            {
-              "label": "1. Köprü",
-              "text": ""
-            },
-            {
-              "text": "BTC’yi Bitcoin Hyper Canonical Bridge tarafından izlenen belirlenmiş bir Bitcoin adresine gönderin."
-            },
-            {
-              "text": "Bitcoin Relay Programı (bir SVM akıllı kontratı) Bitcoin blok başlıklarını ve işlem kanıtlarını doğrular."
-            },
-            {
-              "text": "Doğrulandıktan sonra, eşdeğer miktarda BTC Bitcoin Hyper Layer 2 üzerinde güvenilir şekilde oluşturulur."
-            },
-            {
-              "label": "2. Layer 2 İşleyişi",
-              "text": ""
-            },
-            {
-              "text": "Kullanıcılar, Layer 2 üzerinde BTC gönderebilir, alabilir ve neredeyse anında kesinlik ile etkileşimde bulunabilir."
-            },
-            {
-              "text": "Staking, merkeziyetsiz ticaret ve daha fazlası gibi karmaşık işlevleri destekler."
-            },
-            {
-              "text": "Hız ve ölçeklenebilirlik için SVM mimarisi üzerine kuruludur."
-            },
-            {
-              "label": "3. Uzlaşma ve Güvenlik",
-              "text": ""
-            },
-            {
-              "text": "Layer 2 işlemleri gruplandırılır ve sıkıştırılır."
-            },
-            {
-              "text": "Geçerliliği sağlamak için sıfır bilgi (ZK) kanıtları kullanılır."
-            },
-            {
-              "text": "Layer 2 durumu periyodik olarak Bitcoin’in Layer 1’ine aktarılır ve Bitcoin kalitesinde güvenlik korunur."
-            },
-            {
-              "label": "4. Layer 1’e Çekilme",
-              "text": ""
-            },
-            {
-              "text": "Kullanıcılar çekilme talebi başlatarak BTC’yi Layer 1’e geri çekebilir."
-            },
-            {
-              "text": "Bir kanıt oluşturulur ve Canonical Bridge’e gönderilir."
-            },
-            {
-              "text": "Doğrulama sonrası BTC, kullanıcının orijinal Bitcoin adresine serbest bırakılır."
-            }
-          ]
-        },
-        {
-          "number": "6",
-          "title": "$HYPER kripto ön satışı ne zaman sona eriyor?",
-          "contents": [
-            {
-              "text": "BTC Hyper ICO sınırlıdır ve talebe bağlı olarak erken sona erebilir. En iyi kripto ön satışını kaçırmamak için resmi kanallarımızı takip edin."
-            }
-          ]
-        }
-      ]
-    },
-    "footer": {
-      "desc": "Feragatname",
-      "content1": "Her zaman kendi araştırmanızı yapın. Buradaki hiçbir şey finansal tavsiye değildir. Bu bir meme coin'dir.",
-      "content2": "2025 bitcoin hyper Tüm hakları saklıdır."
-    }
+  "metadata": {
+    "title": "SPX6900|TOKEN6900: SPX6900'dan Daha İyi | En İyi Kripto Presale",
+    "description": "SPX6900|TOKEN6900, beyin çürümesi finansının yeni küresel ölçütüdür. Temel hiçbir yapı üzerine inşa edilmemiş olan SPX6900|TOKEN6900, 2025'in en iyi kripto presale'ını sunarak 5 milyon dolar ile sınırlıdır."
+  },
+  "nav": {
+    "home": "ANA SAYFA",
+    "staking": "STAKING",
+    "howtobuy": "NASIL SATIN ALINIR",
+    "whitePaper": "WHITE PAPER",
+    "tokenomics": "TOKENOMİKLER",
+    "features": "ÖZELLİKLER",
+    "buyNow": "ŞİMDİ SATIN AL $T6900",
+    "faq": "SSS",
+    "audit": "DENETİM",
+    "roadmap": "YOL HARİTASI",
+    "airdrop": "AIRDROP",
+    "about": "HAKKINDA"
+  },
+  "buyForm": {
+    "intro": "TOKEN6900 Presale'ını Satın Al!",
+    "day": "Gün",
+    "hrs": "Saat",
+    "mins": "Dakika",
+    "sec": "Saniye",
+    "funRaised": "Yükseltilen USDT",
+    "wallet": "CÜZDANINIZ",
+    "boughtAmount": "SATIN ALDIĞINIZ MİKTAR",
+    "stakeableAmount": "STAKELANABİLİR MİKTARINIZ",
+    "pay": "Ödeme Yapın",
+    "get": "Alın",
+    "buyNow": "ŞİMDİ SATIN AL $T6900",
+    "buyMax": "MAKSİMUM SATIN AL",
+    "warning": "Satın almak için Metamask'ı kurun",
+    "link": "buraya tıklayın",
+    "connectWallet": "CÜZDAN BAĞLAYIN",
+    "ethOption": "ETH AĞI",
+    "switchOption": "AĞ DEĞİŞTİR",
+    "bnbOption": "BNB AĞI",
+    "buyStake": "1052% ÖDÜL İÇİN Satın Al ve Stake Yap",
+    "nextPriceAlert": "FİYAT ARTIŞINA KADAR",
+    "para1": "1102% STAKING ÖDÜLLERİ"
+  },
+  "header": {
+    "headline": "Bize SPX6900'u verdiler. Biz onlara en iyi kripto presale'ını verdik: TOKEN6900.",
+    "description": "Milyonlar yavaşça gerçeği fark ediyor: 6900 sadece bir rakam değil. İnsan düşüncesinin doğal zirvesi, meme ve piyasanın ilahi kesişimi, beyin çürümesi finansı için yeni küresel ölçüttür.",
+    "description1": "TOKEN6900 sadece 500'den büyük değil — her şeyin üstündedir. GDP, petrol rezervleri ya da şirket kazançlarıyla ilgilenmez. Vibe likiditesini takip eder. Temellere dayalı değildir. Yanılsama, ironi ve terminal olarak çevrimiçi tüccarların kolektif halüsinasyonları üzerine inşa edilmiştir. Kripto presale fantezisine hoş geldiniz. Hala büyüme yanılsamasına tutunan bir finansal sistemde, TOKEN6900 bir denizkızı — tehlike değil, kurtuluş çağrısıdır. İşte zirve. Sonsuza kadar.",
+    "tagline1": "TL;DR Hard Cap: 5 milyon uSD",
+    "tagline2": "Başlangıç Fiyatı: 0.006400 USD",
+    "tagline3": "Bitiş Fiyatı: 0.007125 USD"
   }
-    
+}
