@@ -1,7 +1,6 @@
 'use client'; // This component will run on the client side
 
 import React, { useState, useEffect } from "react";
-import "../app/App.css";
 
 
 // import Navbar from "../navbar/navbar";
