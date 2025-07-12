@@ -37,6 +37,7 @@ const App = () => {
     <div className={styles.container}>
       <div className={styles.leftPannel}></div>
       <div className={styles.centerPannel}>
+          <Navbar />
           <Header/>
           {/* <TrustedBy/> */}
           {/* <About /> */}

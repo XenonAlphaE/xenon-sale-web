@@ -11,9 +11,6 @@ export const Header = () => {
 
   return (
     <section id="intro"  className={styles.container}>
-      <div className={styles.barcodeContainer}>
-        <img  className={styles.barcode} src="/img/token6900/bar-code.svg"/>
-      </div>
       <PresaleSection></PresaleSection>
       <BuyForm/>
     </section>

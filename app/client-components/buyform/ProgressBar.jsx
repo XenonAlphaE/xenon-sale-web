@@ -14,6 +14,8 @@ export const ProgressBar = ({ percentage }) => {
     boxShadow: '-1.619px -1.619px #fff inset, 1.619px 1.619px gray inset, -3.237px -3.237px #c1c1c1 inset, 3.237px 3.237px #000 inset',
     overflow:'hidden',
     display:"flex",
+    boxSizing:'border-box',
+
     alignItems:"center",
     padding:"1px 1px"
 

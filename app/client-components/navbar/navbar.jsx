@@ -3,8 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { useLanguage, useI18nSection } from "../../../redux/utils/languageUtils";
 import { truncateMiddle } from '../services/wallet-service';
-import './navbar.css';
-import './navbar.mobile.css';
+import styles from './navbar.module.css';
 import {
   useConnectModal,
   useAccountModal,
@@ -81,82 +80,52 @@ export const Navbar = ({ isStakingPage = false }) => {
     }
   }, []);
 
-  const renderNavLinks = () => {
-    <div className={`appnav-navbar-menu`}>
-      {/* <a href="/staking">Staking</a> */}
-      <a href={isStakingPage ? `/${currentLanguage}/#about` : "#about"}>{sectionText?.about}</a>
-      {/* <a href={`/${currentLanguage}`}>{sectionText?.home}</a> */}
-      <a href={`${hostUrl}/#howtobuy`}>{sectionText?.howtobuy}</a>
-      <a href={`${hostUrl}/#tokenomics`}>{sectionText?.tokenomics}</a>
-      {/* <a href="#roadmap">{sectionText?.roadmap}</a> */}
-      <a href={`${hostUrl}/#faqs`}>{sectionText?.faq}</a>
-      {/* <a href="/white-paper.pdf" target='_blank'>{sectionText?.whitePaper}</a> */}
-    </div>
-  }
 
 
 
   return (
 
     // <div className='container'> 
-    <nav className={`appnav-navbar sticky ${isScrolled ? 'scrolled' : ''}`}>
-    <div className='nav-container'>
-      <div className="appnav-navbar-brand">
-        <a href="/">
-          <img src="/img/btchyper/logo.svg" alt="Brand Logo" className="appnav-logo" />
-        </a>
-
-          {/* <button onClick={mobileBuyNow} className="buy-btn-mobile" >{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button> */}
-
-        <button className="appnav-menu-toggle" onClick={toggleMenu}>
-          <div className={`appnav-hamburger ${isMenuOpen ? 'appnav-is-active' : ''}`}>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </button>
-      </div>
-
-      <div className={`appnav-navbar-right`}>
-
-        <div className={`appnav-navbar-menu`}>
-          <a href="/">{sectionText?.staking}</a>
-          <a href={isStakingPage ? `/${currentLanguage}/#about` : "#about"}>{sectionText?.about}</a>          {/* <a href={`/${currentLanguage}`}>{sectionText?.home}</a> */}
-          <a href={isStakingPage ? `/${currentLanguage}/#howtobuy` : "#howtobuy"}>{sectionText?.howtobuy}</a>
-          <a href={isStakingPage ? `/${currentLanguage}/#tokenomics` : "#tokenomics"}>{sectionText?.tokenomics}</a>
-          <a href={isStakingPage ? `/${currentLanguage}/#faqs` : "#faqs"} >{sectionText?.faq}</a>
-          <a href={'/'} >{sectionText?.whitePaper}</a>
+    <nav className={`${styles.appnav} ${styles.sticky} ${isScrolled ? styles.scrolled : ''}`}>
+    <div className={styles.navContainer} >
+     
+        <div className={styles.barcodeContainer}>
+          <img  className={styles.barcode} src="/img/token6900/bar-code.svg"/>
         </div>
 
-        <div className="appnav-lang-login-container">
+        <div className={styles.loginContainer} >
 
-        <button onClick={scrollToBuySection} className="appnav-login" >{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button>
+          <button onClick={scrollToBuySection} className={styles.appnavLogin} >{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button>
 
-          <div className="appnav-lang-dropdown">
-            <div className="appnav-lang-custom-dropdown" onClick={toggleLanguageDrpdwn}>
+          <div className={styles.langDropdown} >
+            <div className={styles.langDropdownBtn} onClick={toggleLanguageDrpdwn}>
               {/* <span className={languageOptions[currentLanguage].flag}></span> */}
-              <span className={`lang-dropdown-icon ${isLanguageOpen ? 'open' : ''}`}>{currentLanguage.toUpperCase()} &#9660;</span>
+              <span className={`${styles.langDropdownIcon} ${isLanguageOpen ? 'open' : ''}`}>{currentLanguage.toUpperCase()} &#9660;</span>
             </div>
-            <div className={`lang-dropdown-content ${isLanguageOpen ? 'open' : ''}`}>
+            <div className={`${styles.langDropdownContent} ${isLanguageOpen ? styles.open : ''}`}>
               {Object.keys(languageOptions).map((language) => (
                 <a href={`/${language}`} key={language}>
-                  <div className="lang-dropdown-item"
+                  <div className={styles.langDropdownItem}  
 
                   >
-                      <span className={`lang-dropdown-flag ${languageOptions[language].flag}`}></span>
+                      <span className={`${styles.langDropdownFlag} ${languageOptions[language].flag}`}></span>
                       <span>{languageOptions[language].name.toUpperCase()}</span>
                   </div>
                 </a>
               ))}
             </div>
-            </div>
+          </div>
         </div>
-        <a href="/"  target='_blank' ><img src='/img/btchyper/twitter.svg' className='appnav-social-icon' /></a>
-        <a href='/'  target='_blank' ><img src='/img/btchyper/telegram.svg' className='appnav-social-icon' /></a>
-      </div>
+        <button className={styles.appnavMenuToggle} onClick={toggleMenu}>
+          <div className={`${styles.appnavHamburger} ${isMenuOpen ? styles.mobileActive : ''}`}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
     </div>
 
-      {isMobile && <div className={`appnav-navbar-menu-mobile ${isMenuOpen ? 'appnav-is-active' : ''}`}>
+      {isMobile && <div className={`${styles.appnavMobile} ${isMenuOpen ? styles.mobileActive : ''}`}>
       {/* <a onClick={toggleMenu} href={`/${currentLanguage}`}>{sectionText?.home}</a> */}
         <a href="/">{sectionText?.staking}</a> 
         <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#about` : "#about"} >{sectionText?.about}</a>
@@ -164,32 +133,33 @@ export const Navbar = ({ isStakingPage = false }) => {
         <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#tokenomics` : "#tokenomics"} >{sectionText?.tokenomics}</a>
         <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#faqs` : "#faqs"} >{sectionText?.faq}</a>
 
-        <div className='social-container'>
+        <div className={styles.mobileSocialContainer}>
 
-            <a href="/"  target='_blank' ><img src='/img/btchyper/twitter.svg' className='appnav-social-icon' /></a>
-            <a href='/'  target='_blank' ><img src='/img/btchyper/telegram.svg' className='appnav-social-icon' /></a>
+            <a href="/"  target='_blank' ><img src='/img/default/twitter_x_new_logo.svg' className={styles.mobileSocialIcon} /></a>
+            <a href='/'  target='_blank' ><img src='/img/token6900/ig.webp' className={styles.mobileSocialIcon} /></a>
         </div>
 
 
-        <div className="appnav-lang-dropdown">
-          <div className="appnav-lang-custom-dropdown" onClick={toggleLanguageDrpdwn}>
-            <span className={languageOptions[currentLanguage].flag}></span>
-            <span className={`lang-dropdown-icon ${isLanguageOpen ? 'open' : ''}`}>{currentLanguage.toUpperCase()} &#9660;</span>
+        <div className={styles.langDropdown} >
+          <div className={styles.langDropdownBtn} onClick={toggleLanguageDrpdwn}>
+            {/* <span className={languageOptions[currentLanguage].flag}></span> */}
+            <span className={`${styles.langDropdownIcon} ${isLanguageOpen ? 'open' : ''}`}>{currentLanguage.toUpperCase()} &#9660;</span>
           </div>
-          <div className={`lang-dropdown-content ${isLanguageOpen ? 'open' : ''}`}>
+          <div className={`${styles.langDropdownContent} ${isLanguageOpen ? styles.open : ''}`}>
             {Object.keys(languageOptions).map((language) => (
               <a href={`/${language}`} key={language}>
-                <div className="lang-dropdown-item"
-                >
-                <span className={`lang-dropdown-flag ${languageOptions[language].flag}`}></span>
-                <span>{languageOptions[language].name}</span>
+                <div className={styles.langDropdownItem}  
 
+                >
+                    <span className={`${styles.langDropdownFlag} ${languageOptions[language].flag}`}></span>
+                    <span>{languageOptions[language].name.toUpperCase()}</span>
                 </div>
               </a>
             ))}
           </div>
         </div>
-        <button onClick={scrollToBuySection} className="appnav-login" >{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button>
+
+        <button onClick={scrollToBuySection} className={styles.appnavLogin} >{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button>
 
       </div>
       }
