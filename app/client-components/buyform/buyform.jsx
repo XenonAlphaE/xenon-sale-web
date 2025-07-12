@@ -145,8 +145,8 @@ export const BuyForm = () => {
                 <div className={styles.walletBoxHeader} >
                   <img src="/img/token6900/token-large.webp" alt="token" ></img>
                   <div>
-                    <p className={styles.walletBoxHeading} >Buy TOKEN6900 Presale! </p>
-                    <p className={styles.walletBoxHeading1} >1 $T6900 = $0.006525 </p>
+                    <p className={styles.walletBoxHeading} >{sectionText?.intro} </p>
+                    <p className={styles.walletBoxHeading1} >1 ${walletEth?.tokenSymbol} = ${walletEth?.tokenPriceInUsdt} </p>
                   </div>
                   <img src="/img/token6900/token-large.webp" alt="token" ></img>
                 </div>

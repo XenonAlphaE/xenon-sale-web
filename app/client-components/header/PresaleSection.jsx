@@ -10,15 +10,16 @@ const PresaleSection = () => {
       <div className={styles.leftPart}>
         <h2 className={styles.headline}>{sectionText?.headline}</h2>
         <p className={styles.description}>
-            Millions are slowly realizing the truth: 6900 is not just a number. It’s the natural peak of human thought, the divine intersection of meme and market, the new global benchmark for brain rot finance.
+
+          {sectionText?.description}
         </p>
         <p className={styles.description}>
-            TOKEN6900 isn’t just greater than 500 — it’s above everything. It doesn’t track GDP, oil reserves, or corporate earnings. It tracks vibe liquidity. It’s not built on fundamentals. It’s built on delusion, irony, and the collective hallucination of terminally online traders. Welcome to the crypto presale fantasy. In a financial system still clinging to the illusion of growth, TOKEN6900 is a siren — not of danger, but of deliverance. This is the top. Forever.
+          {sectionText?.description1}
         </p>
         <p className={styles.description}>
-          TL;DR Hard Cap: 5 million uSD <br/>
-          TL;DR Hard Cap: 5 million uSD <br/>
-          TL;DR Hard Cap: 5 million uSD
+          {sectionText?.tagline1} <br/>
+          {sectionText?.tagline2} <br/>
+          {sectionText?.tagline3}
         </p>
       </div>
       <div className={styles.rightPart}>
