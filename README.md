@@ -43,19 +43,10 @@ FLOCK
 # Date: Sun, 08 Jun 2025 07:59:57 GMT
 
 BACKLINKS_URL=https://flockez.netlify.app/js/backlinks.json
-LOGO_PATH=/img/btchyper/token.svg
-MAIN_DOMAIN=https://btchyper.io
-MAIN_GTAG=G-RKFMME3BTM
-MAIN_SITENAME=btchyper
-MAIN_TWITTER=@btchyper
-OG_PATH=/img/btchyper/OG.jpeg
+LOGO_PATH=/img/token6900/favicon.png
+MAIN_DOMAIN=https://spxtoken6900.com
+MAIN_GTAG=G-15Q5N6TLHT
+MAIN_SITENAME=spx6900token
+MAIN_TWITTER=@spx6900token
+OG_PATH=/img/token6900/OG.jpeg
 
-
-
-BACKLINKS_URL=https://flockez.netlify.app/js/backlinks.json
-LOGO_PATH=/img/btchyper/token.svg
-MAIN_DOMAIN=https://btchypercoin.com
-MAIN_GTAG=G-RKFMME3BTM
-MAIN_SITENAME=btchyper
-MAIN_TWITTER=@btchyper
-OG_PATH=/img/btchyper/OG.jpeg
