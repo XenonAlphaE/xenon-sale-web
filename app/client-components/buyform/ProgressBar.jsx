@@ -9,12 +9,12 @@ export const ProgressBar = ({ percentage }) => {
     width: '100%',
     // backgroundColor: bgColor || '',
     // borderColor:'#eee  ',
-    height: 20,
+    height: 40,
+    background: '#fff',
+    boxShadow: '-1.619px -1.619px #fff inset, 1.619px 1.619px gray inset, -3.237px -3.237px #c1c1c1 inset, 3.237px 3.237px #000 inset',
     overflow:'hidden',
     display:"flex",
     alignItems:"center",
-    borderRadius: '10px',
-    background: '#535660',
     padding:"1px 1px"
 
   };
@@ -22,11 +22,9 @@ export const ProgressBar = ({ percentage }) => {
   const barStyle = {
     width: `${percentage}%`,
     height: '100%',
-    borderRadius: '10px',
     boxSizing:'border-box',
-    border:'solid 2px white',
     transition: 'width 0.3s ease',
-    background: 'rgb(247, 148, 29)'
+    background: '#000040'
   };
 
   const textStyle = {

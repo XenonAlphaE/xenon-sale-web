@@ -11,6 +11,17 @@
       width: 65%;
   }
 
+  .headline{
+    text-align: left;
+    color: red;
+    border-bottom: 1px solid  black;
+    width: 80%;
+  }
+
+  .description{
+    text-align: left;
+  }
+
   .rightPart{
       width: 35%;
       display: flex;

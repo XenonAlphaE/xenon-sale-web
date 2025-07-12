@@ -5,6 +5,7 @@ import { useI18nSection } from "../../../redux/utils/languageUtils";
 
 import  styles from './header.module.css'
 import PresaleSection from "./PresaleSection";
+import { BuyForm } from "../buyform/buyform";
 export const Header = () => {
   const sectionText = useI18nSection('header')
 
@@ -14,6 +15,7 @@ export const Header = () => {
         <img  className={styles.barcode} src="/img/token6900/bar-code.svg"/>
       </div>
       <PresaleSection></PresaleSection>
+      <BuyForm/>
     </section>
     // </div>
   );

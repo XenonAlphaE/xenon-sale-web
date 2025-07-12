@@ -46,6 +46,7 @@ const App = () => {
           {/* <Tokenomics /> */}
           {/* <FAQ/> */}
           {/* <Footer />  */}
+          <AppSpinner/>
       </div>
       <div className={styles.rightPannel}>
       </div>

@@ -1,7 +1,7 @@
 'use client'; // This component will run on the client side
 
 import React, { useState, useEffect, useRef } from 'react';
-import './currencyDropdown.css'
+import  styles from './currencyDropdown.module.css'
 import { useNativeNetwork, useSetNativeNetwork } from '../../../redux/utils/nativeNetworkUtils';
 import { NETWORK_OTIONS } from '../../../redux/ducks/nativeNetworkDuck';
 import { useI18nSection } from '../../../redux/utils/languageUtils';
@@ -35,11 +35,12 @@ export const CurrencyDropdown = ({ walletETH}) => {
   
 
   return (
-    <div className="curr-dropdown-container">
+    <div className={styles.container} >
         <button
           type="button"
           onClick={toggleDropdown}
-          className=" curr-custom-dropdown"> {currentNetworkName}  
+          className={styles.dropdown}
+          > {currentNetworkName}  
               <img style={{marginRight: 5}} src={NETWORK_OTIONS['base'].img} width={20} height={20}/> 
               <img style={{marginRight: 5}} src={NETWORK_OTIONS['eth'].img} width={20} height={20}/>  
               <img style={{marginRight: 5}} src={NETWORK_OTIONS['bsc'].img} width={20} height={20}/>
