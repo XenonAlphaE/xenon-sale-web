@@ -193,7 +193,6 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
     }, [currAccount.address, globalConfigs]); // Empty dependency array ensures this effect runs only once
     
     const getContracts = () => {
-            
         let salerInfo = null;
         let usdtAbi = null;
         let usdtAddress = null;
@@ -352,13 +351,12 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
                         await delay(3000);
                     }
     
-                    
                     // const tx = await salerContract.connect(signer).buyTokensByUsdtWifRef(usdtAmount, globalConfigs?.targetToken?.symbol, ref ? ref:"");
                     const tx = await writeContractAsync({
                         abi: salerInfo.abi,
                         address: salerInfo.address,
                         functionName:"buyWithUSDT",
-                        args:[usdtAmount, globalConfigs?.targetToken?.symbol, isStaking, zeroAddress, 0 , 0 , zeroAddress]
+                        args:[usdtAmount, globalConfigs?.targetToken?.symbol, isStaking, zeroAddress, 0 , 0 , zeroAddress, usdtAddress]
                     })
                     // await tx.wait();
                     console.log("Buy Tokens successfully!" + tx);
@@ -368,7 +366,7 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
                 }
             }
             catch(error){
-                // console.error("Error during buying:", error.message);
+                console.error("Error during buying:", error.message);
             }
         }
        
