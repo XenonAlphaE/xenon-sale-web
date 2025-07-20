@@ -162,3 +162,9 @@ export function formatIntNumber(num) {
     .toFixed(0) // Round to 2 decimal places
     .replace(/\B(?=(\d{3})+(?!\d))/g, ","); // Add commas as thousand separators
 }
+
+
+export function generateRandomId(length = 8) {
+  const chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+  return Array.from({ length }, () => chars[Math.floor(Math.random() * chars.length)]).join('');
+}
