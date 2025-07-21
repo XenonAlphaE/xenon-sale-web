@@ -89,11 +89,22 @@ export const Navbar = ({ isStakingPage = false }) => {
     <nav className={`${styles.appnav} ${styles.sticky} ${isScrolled ? styles.scrolled : ''}`}>
     <div className={styles.navContainer} >
      
-        <div className={styles.barcodeContainer}>
-          <img  className={styles.barcode} src="/img/token6900/bar-code.svg"/>
+        <a className={styles.appnavBrand}>
+          <img className={styles.brandLogo}  src="/img/btcswift/bitcoin-swift-logo-main.webp"/>
+          <img className={styles.textLogo}  src="/img/btcswift/bitcoin-swift-text-logo.webp"/>
+        </a>
+
+        <div className={styles.appnavMenu}>
+          <a href={isStakingPage ? `/${currentLanguage}/#tokenomics` : "#tokenomics"}><img className={styles.menuIcon} src='/img/btcswift/tokenomics.svg'/> {sectionText?.tokenomics}</a>
+          <a href={isStakingPage ? `/${currentLanguage}/#tokenomics` : "#tokenomics"}><img className={styles.menuIcon} src='/img/btcswift/roadmap.svg'/>  { sectionText?.roadmap}</a>
+          <a href={isStakingPage ? `/${currentLanguage}/#faqs` : "#faqs"} ><img className={styles.menuIcon} src='/img/btcswift/faq.svg'/>  {sectionText?.faq}</a>
+          <a href={isStakingPage ? `/${currentLanguage}/#about` : "#about"}><img className={styles.menuIcon} src='/img/btcswift/whitepaper.svg'/>  {sectionText?.whitePaper}</a>          {/* <a href={`/${currentLanguage}`}>{sectionText?.home}</a> */}
+          <a href={isStakingPage ? `/${currentLanguage}/#howtobuy` : "#howtobuy"}><img className={styles.menuIcon} src='/img/btcswift/security.svg'/>  {sectionText?.howtobuy}</a>
         </div>
 
         <div className={styles.loginContainer} >
+          <a href="/"  target='_blank' ><img src='/img/btcswift/twitter2.svg' className={styles.appSocialIcon} /></a>
+          <a href='/'  target='_blank' ><img src='/img/btcswift/cmc-1.svg' className={styles.appSocialIcon}/></a>
 
           <button onClick={scrollToBuySection} className={styles.appnavLogin} >{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button>
 
@@ -125,44 +136,7 @@ export const Navbar = ({ isStakingPage = false }) => {
         </button>
     </div>
 
-      {isMobile && <div className={`${styles.appnavMobile} ${isMenuOpen ? styles.mobileActive : ''}`}>
-      {/* <a onClick={toggleMenu} href={`/${currentLanguage}`}>{sectionText?.home}</a> */}
-        <a href="/">{sectionText?.staking}</a> 
-        <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#about` : "#about"} >{sectionText?.about}</a>
-        <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#howtobuy` : "#howtobuy"} >{sectionText?.howtobuy}</a>
-        <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#tokenomics` : "#tokenomics"} >{sectionText?.tokenomics}</a>
-        <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#faqs` : "#faqs"} >{sectionText?.faq}</a>
-
-        <div className={styles.mobileSocialContainer}>
-
-            <a href="/"  target='_blank' ><img src='/img/default/twitter_x_new_logo.svg' className={styles.mobileSocialIcon} /></a>
-            <a href='/'  target='_blank' ><img src='/img/token6900/ig.webp' className={styles.mobileSocialIcon} /></a>
-        </div>
-
-
-        <div className={styles.langDropdown} >
-          <div className={styles.langDropdownBtn} onClick={toggleLanguageDrpdwn}>
-            {/* <span className={languageOptions[currentLanguage].flag}></span> */}
-            <span className={`${styles.langDropdownIcon} ${isLanguageOpen ? 'open' : ''}`}>{currentLanguage.toUpperCase()} &#9660;</span>
-          </div>
-          <div className={`${styles.langDropdownContent} ${isLanguageOpen ? styles.open : ''}`}>
-            {Object.keys(languageOptions).map((language) => (
-              <a href={`/${language}`} key={language}>
-                <div className={styles.langDropdownItem}  
-
-                >
-                    <span className={`${styles.langDropdownFlag} ${languageOptions[language].flag}`}></span>
-                    <span>{languageOptions[language].name.toUpperCase()}</span>
-                </div>
-              </a>
-            ))}
-          </div>
-        </div>
-
-        <button onClick={scrollToBuySection} className={styles.appnavLogin} >{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button>
-
-      </div>
-      }
+      
     </nav>
   );
 };

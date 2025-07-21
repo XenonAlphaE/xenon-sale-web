@@ -35,8 +35,6 @@ const App = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.leftPannel}></div>
-      <div className={styles.centerPannel}>
           <Navbar />
           <Header/>
           <About />
@@ -48,9 +46,6 @@ const App = () => {
           {/* <FAQ/> */}
           {/* <Footer />  */}
           <AppSpinner/>
-      </div>
-      <div className={styles.rightPannel}>
-      </div>
 
     </div>
   );
