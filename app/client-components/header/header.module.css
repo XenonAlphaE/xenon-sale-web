@@ -9,7 +9,6 @@
   align-items: center;
   @media (max-width: 1024px) {
       width: 100%;
-      padding-inline: 1rem;
   }
 }
 
@@ -19,12 +18,26 @@
   min-width: 1280px;
   width: 1280px;
   display: flex;
+   @media (max-width: 1024px) {
+      flex-direction: column-reverse;
+      min-width: 0px;
+      max-width: 100%;
+      width: 100%;
+      padding-inline: 1rem;
+  }
 }
 
 .leftPart{
   width: 65%;
+    @media (max-width: 1024px) {
+      width: 100%;
+    }
 }
 
 .rightPart{
   width: 35%;
+      @media (max-width: 1024px) {
+      width: 100%;
+    }
+
 }
