@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "BTCTOKEN6900: SPX6900보다 더 나은 | 최고의 암호화폐 프리세일",
-    "description": "BTCTOKEN6900은 뇌가 썩어가는 금융의 새로운 글로벌 기준입니다. 기본에 기반하지 않은 BTCTOKEN6900은 2025년 최고의 암호화폐 프리세일을 제공합니다. 최대 한도는 500만 달러입니다."
+    "title": "BTC Swift: 안전하고 확장 가능하며 프라이버시 중심의 DeFi를 위한 AI 기반 블록체인",
+    "description": "BTC Swift 사전 판매 진행 중! AI 스마트 계약 및 Proof-of-Yield 채굴이 적용된 BTC Swift 토큰."
   },
   "nav": {
     "home": "홈",
@@ -9,44 +9,40 @@
     "howtobuy": "구매 방법",
     "whitePaper": "백서",
     "tokenomics": "토크노믹스",
-    "features": "특징",
-    "buyNow": "지금 $T6900 구매",
+    "features": "기능",
+    "buyNow": "BTC3 구매",
     "faq": "자주 묻는 질문",
     "audit": "감사",
     "roadmap": "로드맵",
-    "airdrop": "에어드롭",
+    "airdrop": "에어드랍",
     "about": "소개"
   },
   "buyForm": {
-    "intro": "BTCTOKEN6900 프리세일을 구매하세요!",
+    "intro": "BTC3 사전 판매 구매!",
     "day": "일",
     "hrs": "시간",
     "mins": "분",
     "sec": "초",
     "funRaised": "모금된 USDT",
-    "wallet": "당신의 지갑",
-    "boughtAmount": "구매한 금액",
-    "stakeableAmount": "스테이킹 가능한 금액",
-    "pay": "결제 방법",
-    "get": "받기",
-    "buyNow": "지금 $T6900 구매",
+    "wallet": "내 지갑",
+    "boughtAmount": "내 구매 수량",
+    "stakeableAmount": "내 스테이킹 가능 수량",
+    "pay": "지불 수단",
+    "get": "받을 수량",
+    "buyNow": "BTC3 구매",
     "buyMax": "최대 구매",
-    "warning": "구매를 위해 Metamask를 설치하세요",
+    "warning": "구매하려면 Metamask를 설치해 주세요",
     "link": "여기를 클릭",
     "connectWallet": "지갑 연결",
     "ethOption": "ETH 네트워크",
-    "switchOption": "네트워크 변경",
+    "switchOption": "네트워크 전환",
     "bnbOption": "BNB 네트워크",
-    "buyStake": "구매 후 1052% 보상 스테이킹",
+    "buyStake": "결제 진행",
     "nextPriceAlert": "가격 인상까지 남은 시간",
     "para1": "1102% 스테이킹 보상"
   },
   "header": {
-    "headline": "그들은 SPX6900을 주었고, 우리는 최고의 암호화폐 프리세일을 주었습니다: BTCTOKEN6900.",
-    "description": "수백만 명이 천천히 진실을 깨닫고 있습니다: 6900은 단순한 숫자가 아닙니다. 그것은 인간 사고의 자연스러운 정점이며, 밈과 시장의 신성한 교차점, 뇌가 썩어가는 금융의 새로운 글로벌 기준입니다.",
-    "description1": "BTCTOKEN6900은 단지 500보다 크지 않습니다 — 그것은 모든 것 위에 있습니다. GDP, 석유 비축량, 기업 이익을 추적하지 않습니다. 그것은 분위기 유동성을 추적합니다. 그것은 기본에 기반하지 않습니다. 그것은 망상, 아이러니, 그리고 끝없이 온라인에 있는 트레이더들의 집단적 환각에 기반합니다. 암호화폐 프리세일의 판타지에 오신 것을 환영합니다. 여전히 성장의 환상에 집착하는 금융 시스템 속에서, BTCTOKEN6900은 위험의 사이렌이 아니라 구원의 사이렌입니다. 이것이 바로 최고입니다. 영원히.",
-    "tagline1": "TL;DR 하드캡: 500만 달러",
-    "tagline2": "시작 가격: 0.006400 USD",
-    "tagline3": "종료 가격: 0.007125 USD"
+    "headline": "BTC Swift (BTC3) - Proof of Yield 채굴이 적용된 AI 기반 블록체인",
+    "description": "BTC Swift: 안전하고 확장 가능하며 프라이버시 중심의 DeFi를 위한 AI 기반 블록체인"
   }
 }

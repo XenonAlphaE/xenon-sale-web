@@ -10,10 +10,10 @@ const PresaleSection = () => {
           <img className={styles.brandLogo}  src="/img/btcswift/bitcoin-swift-logo-main.webp"/>
           <img className={styles.textLogo}  src="/img/btcswift/bitcoin-swift-text-logo.webp"/>
         <h1 className={styles.headline}>
-          Bitcoin Swift (BTC3) AI-Powered Blockchain with Proof of Yield Mining
+          {sectionText?.headline}
         </h1>
         <p>
-          Bitcoin Swift: AI-Powered Blockchain for Secure, Scalable, and Private DeFi
+          {sectionText?.description}
 
 
         </p>

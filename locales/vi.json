@@ -1,52 +1,48 @@
 {
   "metadata": {
-    "title": "BTCTOKEN6900: Tốt Hơn SPX6900 | Bán Presale Crypto Tốt Nhất",
-    "description": "BTCTOKEN6900 là chuẩn mực toàn cầu mới cho tài chính đổ nát. Xây dựng trên nền tảng không có cơ sở vững chắc, BTCTOKEN6900 mang đến bán presale crypto tốt nhất năm 2025, giới hạn ở mức 5 triệu đô la."
+    "title": "BTC Swift: Blockchain Dựa trên AI cho DeFi An toàn, Mở rộng và Riêng tư",
+    "description": "BTC Swift mở bán trước đang diễn ra! Token BTC Swift với hợp đồng thông minh AI & khai thác Proof-of-Yield."
   },
   "nav": {
     "home": "TRANG CHỦ",
-    "staking": "STAKING",
+    "staking": "ĐÁNH CỐ ĐỊNH",
     "howtobuy": "CÁCH MUA",
     "whitePaper": "SÁCH TRẮNG",
-    "tokenomics": "KINH TẾ TOKEN",
+    "tokenomics": "TOKENOMICS",
     "features": "TÍNH NĂNG",
-    "buyNow": "MUA $T6900",
+    "buyNow": "MUA BTC3",
     "faq": "CÂU HỎI THƯỜNG GẶP",
     "audit": "KIỂM TOÁN",
     "roadmap": "LỘ TRÌNH",
-    "airdrop": "AIRDROP",
-    "about": "VỀ CHÚNG TÔI"
+    "airdrop": "PHÁT TOKEN MIỄN PHÍ",
+    "about": "GIỚI THIỆU"
   },
   "buyForm": {
-    "intro": "Mua Presale BTCTOKEN6900!",
+    "intro": "Mua BTC3 Mở bán trước!",
     "day": "Ngày",
     "hrs": "Giờ",
     "mins": "Phút",
     "sec": "Giây",
-    "funRaised": "Số tiền huy động (USDT)",
+    "funRaised": "USDT Đã Gây Quỹ",
     "wallet": "Ví CỦA BẠN",
-    "boughtAmount": "SỐ LƯỢNG MUA CỦA BẠN",
-    "stakeableAmount": "SỐ LƯỢNG CÓ THỂ STAKE CỦA BẠN",
+    "boughtAmount": "SỐ LƯỢNG BẠN ĐÃ MUA",
+    "stakeableAmount": "SỐ LƯỢNG CÓ THỂ ĐÁNH CỐ ĐỊNH",
     "pay": "Thanh toán bằng",
     "get": "Nhận",
-    "buyNow": "MUA $T6900",
+    "buyNow": "MUA BTC3",
     "buyMax": "MUA TỐI ĐA",
     "warning": "Vui lòng cài đặt Metamask để mua",
-    "link": "nhấp vào đây",
+    "link": "nhấn vào đây",
     "connectWallet": "KẾT NỐI VÍ",
     "ethOption": "MẠNG ETH",
     "switchOption": "CHUYỂN MẠNG",
     "bnbOption": "MẠNG BNB",
-    "buyStake": "Mua và Stake để nhận thưởng 1052%",
-    "nextPriceAlert": "CHO ĐẾN KHI GIÁ TĂNG",
-    "para1": "1052% THƯỞNG STAKING"
+    "buyStake": " Tiến hành Thanh toán",
+    "nextPriceAlert": "ĐẾN KHI GIÁ TĂNG",
+    "para1": "1102% PHẦN THƯỞNG ĐÁNH CỐ ĐỊNH"
   },
   "header": {
-    "headline": "Họ đã trao cho chúng tôi SPX6900. Chúng tôi đã trao cho họ bán presale crypto tốt nhất: BTCTOKEN6900.",
-    "description": "Hàng triệu người đang dần nhận ra sự thật: 6900 không chỉ là một con số. Đó là đỉnh cao tự nhiên của tư duy con người, giao điểm thần thánh của meme và thị trường, chuẩn mực toàn cầu mới cho tài chính đổ nát.",
-    "description1": "BTCTOKEN6900 không chỉ lớn hơn 500 — nó vượt lên trên tất cả. Nó không theo dõi GDP, trữ lượng dầu, hay lợi nhuận của các công ty. Nó theo dõi thanh khoản cảm xúc. Nó không xây dựng trên các yếu tố cơ bản. Nó xây dựng trên sự ảo tưởng, mỉa mai và ảo giác tập thể của những nhà giao dịch luôn online. Chào mừng đến với thế giới bán presale crypto tưởng tượng. Trong một hệ thống tài chính vẫn bám víu vào ảo tưởng về sự tăng trưởng, BTCTOKEN6900 là một ngọn hải đăng — không phải của sự nguy hiểm, mà là của sự cứu rỗi. Đây là đỉnh cao. Mãi mãi.",
-    "tagline1": "Tóm tắt: Mức giới hạn cứng: 5 triệu USD",
-    "tagline2": "Giá bắt đầu: 0.006400 USD",
-    "tagline3": "Giá kết thúc: 0.007125 USD"
+    "headline": "BTC Swift (BTC3) Blockchain Dựa trên AI với Khai thác Proof of Yield",
+    "description": "BTC Swift: Blockchain Dựa trên AI cho DeFi An toàn, Mở rộng và Riêng tư"
   }
 }

@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "BTCTOKEN6900 : Mieux que SPX6900 | La Meilleure Vente Privée de Crypto",
-    "description": "BTCTOKEN6900 est la nouvelle référence mondiale de la finance déconnectée. Sans aucune base fondamentale, BTCTOKEN6900 offre la meilleure vente privée de crypto de 2025 avec un plafond fixé à 5 millions de dollars."
+    "title": "BTC Swift : Blockchain alimentée par l'IA pour une DeFi sécurisée, évolutive et privée",
+    "description": "La prévente de BTC Swift est en cours ! Le jeton BTC Swift avec des contrats intelligents IA et un minage par preuve de rendement."
   },
   "nav": {
     "home": "ACCUEIL",
@@ -9,27 +9,27 @@
     "howtobuy": "COMMENT ACHETER",
     "whitePaper": "LIVRE BLANC",
     "tokenomics": "TOKENOMIE",
-    "features": "CARACTÉRISTIQUES",
-    "buyNow": "ACHETER $T6900",
+    "features": "FONCTIONNALITÉS",
+    "buyNow": "ACHETER BTC3",
     "faq": "FAQ",
     "audit": "AUDIT",
-    "roadmap": "PLAN DE DÉVELOPPEMENT",
+    "roadmap": "FEUILLE DE ROUTE",
     "airdrop": "AIRDROP",
     "about": "À PROPOS"
   },
   "buyForm": {
-    "intro": "Achetez BTCTOKEN6900 en prévente !",
+    "intro": "Acheter la prévente BTC3 !",
     "day": "Jours",
     "hrs": "Heures",
     "mins": "Minutes",
     "sec": "Secondes",
-    "funRaised": "USDT Levés",
+    "funRaised": "USDT Collectés",
     "wallet": "VOTRE Portefeuille",
     "boughtAmount": "VOTRE ACHAT",
     "stakeableAmount": "VOTRE MONTANT STAKABLE",
     "pay": "Payer avec",
     "get": "Recevoir",
-    "buyNow": "ACHETER $T6900",
+    "buyNow": "ACHETER BTC3",
     "buyMax": "ACHETER MAX",
     "warning": "Veuillez installer Metamask pour acheter",
     "link": "cliquez ici",
@@ -37,16 +37,12 @@
     "ethOption": "RÉSEAU ETH",
     "switchOption": "CHANGER DE RÉSEAU",
     "bnbOption": "RÉSEAU BNB",
-    "buyStake": "Achetez et Stakez pour des récompenses de 1052%",
-    "nextPriceAlert": "JUSQU'AUGMENTATION DU PRIX",
-    "para1": "Récompenses de Staking à 1102%"
+    "buyStake": "Procéder au paiement",
+    "nextPriceAlert": "AVANT AUGMENTATION DE PRIX",
+    "para1": "1102% DE RÉCOMPENSES DE STAKING"
   },
   "header": {
-    "headline": "Ils nous ont donné SPX6900. Nous leur avons donné la meilleure prévente de crypto : BTCTOKEN6900.",
-    "description": "Des millions réalisent lentement la vérité : 6900 n'est pas juste un nombre. C'est le sommet naturel de la pensée humaine, l'intersection divine du meme et du marché, la nouvelle référence mondiale de la finance déconnectée.",
-    "description1": "BTCTOKEN6900 n'est pas seulement supérieur à 500 — il est au-dessus de tout. Il ne suit pas le PIB, les réserves de pétrole, ou les bénéfices des entreprises. Il suit la liquidité de la vibe. Il n'est pas construit sur des fondamentaux. Il est construit sur l'illusion, l'ironie et l'hallucination collective des traders perpétuellement en ligne. Bienvenue dans le fantasme de la prévente crypto. Dans un système financier qui s'accroche encore à l'illusion de la croissance, BTCTOKEN6900 est une sirène — non pas de danger, mais de délivrance. C'est le sommet. Pour toujours.",
-    "tagline1": "TL;DR Plafond dur : 5 millions de USD",
-    "tagline2": "Prix de départ : 0,006400 USD",
-    "tagline3": "Prix de fin : 0,007125 USD"
+    "headline": "BTC Swift (BTC3) Blockchain alimentée par l'IA avec minage par preuve de rendement",
+    "description": "BTC Swift : Blockchain alimentée par l'IA pour une DeFi sécurisée, évolutive et privée"
   }
 }

@@ -116,8 +116,9 @@ export const Navbar = ({ isStakingPage = false }) => {
             <div className={`${styles.langDropdownContent} ${isLanguageOpen ? styles.open : ''}`}>
               {Object.keys(languageOptions).map((language) => (
                 <a href={`/${language}`} key={language}>
-                  <div className={styles.langDropdownItem}  
-
+                  <div className={`${styles.langDropdownItem} ${
+                      language === currentLanguage ? styles.selectedLang : ''
+                    }`}
                   >
                       <span className={`${styles.langDropdownFlag} ${languageOptions[language].flag}`}></span>
                       <span>{languageOptions[language].name.toUpperCase()}</span>

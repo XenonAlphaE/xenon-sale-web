@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "title": "BTCTOKEN6900: Meglio di SPX6900 | Il Miglior Crypto Presale",
-    "description": "BTCTOKEN6900 è il nuovo benchmark globale per la finanza basata sulla decadenza mentale. Costruito senza fondamenta, BTCTOKEN6900 offre il miglior crypto presale del 2025 con un limite di 5 milioni di dollari."
+    "title": "BTC Swift: Blockchain con Intelligenza Artificiale per una DeFi Sicura, Scalabile e Privata",
+    "description": "Prevendita BTC Swift attiva ora! Token BTC Swift con smart contract AI e mining Proof-of-Yield."
   },
   "nav": {
     "home": "HOME",
     "staking": "STAKING",
-    "howtobuy": "COME COMPRARE",
+    "howtobuy": "COME ACQUISTARE",
     "whitePaper": "WHITE PAPER",
     "tokenomics": "TOKENOMICS",
-    "features": "CARATTERISTICHE",
-    "buyNow": "COMPRA $T6900",
+    "features": "FUNZIONALITÀ",
+    "buyNow": "ACQUISTA BTC3",
     "faq": "FAQ",
     "audit": "AUDIT",
     "roadmap": "ROADMAP",
@@ -18,35 +18,31 @@
     "about": "CHI SIAMO"
   },
   "buyForm": {
-    "intro": "Acquista il Presale di BTCTOKEN6900!",
+    "intro": "Acquista BTC3 in prevendita!",
     "day": "Giorni",
     "hrs": "Ore",
-    "mins": "Minuti",
-    "sec": "Secondi",
+    "mins": "Min",
+    "sec": "Sec",
     "funRaised": "USDT Raccolti",
     "wallet": "IL TUO Wallet",
     "boughtAmount": "IL TUO ACQUISTO",
-    "stakeableAmount": "IL TUO STAKEABLE",
+    "stakeableAmount": "IL TUO STAKE DISPONIBILE",
     "pay": "Paga con",
     "get": "Ricevi",
-    "buyNow": "COMPRA $T6900",
-    "buyMax": "COMPRA MAX",
-    "warning": "Installa Metamask per comprare",
+    "buyNow": "ACQUISTA BTC3",
+    "buyMax": "ACQUISTA MASSIMO",
+    "warning": "Installa Metamask per acquistare",
     "link": "clicca qui",
     "connectWallet": "CONNETTI WALLET",
     "ethOption": "RETE ETH",
     "switchOption": "CAMBIA RETE",
     "bnbOption": "RETE BNB",
-    "buyStake": "Compra e Staka per il 1052% di Rendimento",
-    "nextPriceAlert": "FINO ALL'AUMENTO DEL PREZZO",
-    "para1": "RENDIMENTI STAKING DEL 1102%"
+    "buyStake": " Procedi al Pagamento",
+    "nextPriceAlert": "FINO AL PROSSIMO AUMENTO DI PREZZO",
+    "para1": "1102% RENDIMENTI DA STAKING"
   },
   "header": {
-    "headline": "Ci hanno dato SPX6900. Noi abbiamo dato loro il miglior crypto presale: BTCTOKEN6900.",
-    "description": "Milioni stanno lentamente realizzando la verità: 6900 non è solo un numero. È il picco naturale del pensiero umano, l'intersezione divina tra meme e mercato, il nuovo benchmark globale per la finanza basata sulla decadenza mentale.",
-    "description1": "BTCTOKEN6900 non è solo maggiore di 500 — è sopra a tutto. Non traccia PIL, riserve di petrolio, o guadagni aziendali. Traccia la liquidità del vibe. Non è costruito sui fondamentali. È costruito sull'illusione, sull'ironia e sull'allucinazione collettiva dei trader terminalmente online. Benvenuti nella fantasia del crypto presale. In un sistema finanziario che si aggrappa ancora all'illusione di crescita, BTCTOKEN6900 è una sirena — non di pericolo, ma di salvezza. Questa è la vetta. Per sempre.",
-    "tagline1": "TL;DR Hard Cap: 5 milioni USD",
-    "tagline2": "Prezzo di Partenza: 0.006400 USD",
-    "tagline3": "Prezzo di Fine: 0.007125 USD"
+    "headline": "BTC Swift (BTC3) Blockchain con Intelligenza Artificiale e Mining Proof of Yield",
+    "description": "BTC Swift: Blockchain con Intelligenza Artificiale per una DeFi Sicura, Scalabile e Privata"
   }
 }

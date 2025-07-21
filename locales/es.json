@@ -1,52 +1,48 @@
 {
   "metadata": {
-    "title": "BTCTOKEN6900: Mejor que SPX6900 | La Mejor Preventa de Criptomonedas",
-    "description": "BTCTOKEN6900 es el nuevo estándar global para las finanzas de la decadencia cerebral. Basado en ninguna fundamentación, BTCTOKEN6900 ofrece la mejor preventa de criptomonedas de 2025, con un límite de $5 millones."
+    "title": "BTC Swift: Blockchain con IA para DeFi Segura, Escalable y Privada",
+    "description": "¡Preventa de BTC Swift activa ahora! Token BTC Swift con contratos inteligentes de IA y minería Proof-of-Yield."
   },
   "nav": {
     "home": "INICIO",
     "staking": "STAKING",
     "howtobuy": "CÓMO COMPRAR",
-    "whitePaper": "DOCUMENTO TÉCNICO",
+    "whitePaper": "WHITE PAPER",
     "tokenomics": "TOKENOMÍA",
     "features": "CARACTERÍSTICAS",
-    "buyNow": "COMPRAR $T6900",
+    "buyNow": "COMPRAR BTC3",
     "faq": "PREGUNTAS FRECUENTES",
     "audit": "AUDITORÍA",
     "roadmap": "HOJA DE RUTA",
     "airdrop": "AIRDROP",
-    "about": "SOBRE NOSOTROS"
+    "about": "ACERCA DE"
   },
   "buyForm": {
-    "intro": "¡Compra la Preventa de BTCTOKEN6900!",
+    "intro": "¡Compra la Preventa de BTC3!",
     "day": "Días",
     "hrs": "Horas",
     "mins": "Minutos",
     "sec": "Segundos",
-    "funRaised": "USDT Recogidos",
-    "wallet": "Tu Cartera",
-    "boughtAmount": "Tu Compra",
-    "stakeableAmount": "Tu Monto en Staking",
+    "funRaised": "USDT Recaudado",
+    "wallet": "TU Billetera",
+    "boughtAmount": "TU COMPRA",
+    "stakeableAmount": "TU MONTO PARA STAKING",
     "pay": "Pagar con",
     "get": "Recibir",
-    "buyNow": "COMPRAR $T6900",
+    "buyNow": "COMPRAR BTC3",
     "buyMax": "COMPRAR MÁXIMO",
     "warning": "Por favor, instala Metamask para comprar",
     "link": "haz clic aquí",
-    "connectWallet": "CONECTAR CARTERA",
+    "connectWallet": "CONECTAR BILLETERA",
     "ethOption": "RED ETH",
-    "switchOption": "CAMBIAR DE RED",
+    "switchOption": "CAMBIAR RED",
     "bnbOption": "RED BNB",
-    "buyStake": "Comprar y Hacer Staking para Recompensas del 1052%",
+    "buyStake": " Proceder al Pago",
     "nextPriceAlert": "HASTA EL AUMENTO DE PRECIO",
-    "para1": "1102% DE RECOMPENSAS EN STAKING"
+    "para1": "1102% RECOMPENSAS DE STAKING"
   },
   "header": {
-    "headline": "Nos dieron SPX6900. Nosotros les dimos la mejor preventa de criptomonedas: BTCTOKEN6900.",
-    "description": "Millones están lentamente dándose cuenta de la verdad: 6900 no es solo un número. Es el pico natural del pensamiento humano, la intersección divina del meme y el mercado, el nuevo estándar global para las finanzas de la decadencia cerebral.",
-    "description1": "BTCTOKEN6900 no es solo mayor que 500 — está por encima de todo. No sigue el PIB, las reservas de petróleo o las ganancias corporativas. Sigue la liquidez de las vibras. No se basa en fundamentos. Se basa en la ilusión, la ironía y la alucinación colectiva de los traders terminalmente online. Bienvenidos a la fantasía de la preventa de criptomonedas. En un sistema financiero que aún se aferra a la ilusión del crecimiento, BTCTOKEN6900 es una sirena — no de peligro, sino de salvación. Este es el tope. Para siempre.",
-    "tagline1": "TL;DR Límite Superior: 5 millones USD",
-    "tagline2": "Precio Inicial: 0.006400 USD",
-    "tagline3": "Precio Final: 0.007125 USD"
+    "headline": "BTC Swift (BTC3): Blockchain con IA y Minería Proof of Yield",
+    "description": "BTC Swift: Blockchain con IA para DeFi Segura, Escalable y Privada"
   }
 }

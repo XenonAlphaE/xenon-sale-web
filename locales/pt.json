@@ -1,35 +1,35 @@
 {
   "metadata": {
-    "title": "BTCTOKEN6900: Melhor que SPX6900 | A Melhor Pré-Venda de Criptomoeda",
-    "description": "BTCTOKEN6900 é o novo padrão global para finanças de deterioração cerebral. Sem fundamentos, BTCTOKEN6900 oferece a melhor pré-venda de criptomoeda de 2025, com um limite de 5 milhões de dólares."
+    "title": "BTC Swift: Blockchain com IA para DeFi Segura, Escalável e Privada",
+    "description": "Pré-venda do BTC Swift já está no ar! Token BTC Swift com contratos inteligentes de IA e mineração Proof-of-Yield."
   },
   "nav": {
     "home": "INÍCIO",
     "staking": "STAKING",
     "howtobuy": "COMO COMPRAR",
     "whitePaper": "WHITE PAPER",
-    "tokenomics": "TOKENOMICS",
-    "features": "CARACTERÍSTICAS",
-    "buyNow": "COMPRAR $T6900",
+    "tokenomics": "TOKENOMIA",
+    "features": "RECURSOS",
+    "buyNow": "COMPRAR BTC3",
     "faq": "PERGUNTAS FREQUENTES",
     "audit": "AUDITORIA",
-    "roadmap": "ROTEIRO",
+    "roadmap": "Roteiro",
     "airdrop": "AIRDROP",
     "about": "SOBRE"
   },
   "buyForm": {
-    "intro": "Compre BTCTOKEN6900 na Pré-Venda!",
+    "intro": "Compre na Pré-venda BTC3!",
     "day": "Dias",
-    "hrs": "Horas",
-    "mins": "Minutos",
-    "sec": "Segundos",
-    "funRaised": "USDT Arrecadado",
+    "hrs": "Hora",
+    "mins": "Min",
+    "sec": "Seg",
+    "funRaised": "USDT Arrecadados",
     "wallet": "Sua Carteira",
-    "boughtAmount": "Sua Compra",
-    "stakeableAmount": "Seu Valor para Staking",
+    "boughtAmount": "VOCÊ COMPROU",
+    "stakeableAmount": "DISPONÍVEL PARA STAKING",
     "pay": "Pagar com",
     "get": "Receber",
-    "buyNow": "COMPRAR $T6900",
+    "buyNow": "COMPRAR BTC3",
     "buyMax": "COMPRAR MÁXIMO",
     "warning": "Por favor, instale o Metamask para comprar",
     "link": "clique aqui",
@@ -37,16 +37,12 @@
     "ethOption": "REDE ETH",
     "switchOption": "TROCAR DE REDE",
     "bnbOption": "REDE BNB",
-    "buyStake": "Comprar e Staking para Recompensas de 1052%",
+    "buyStake": "Prosseguir para o Pagamento",
     "nextPriceAlert": "ATÉ O AUMENTO DE PREÇO",
-    "para1": "Recompensas de Staking de 1102%"
+    "para1": "1102% DE RECOMPENSAS EM STAKING"
   },
   "header": {
-    "headline": "Eles nos deram SPX6900. Nós demos a eles a melhor pré-venda de criptomoeda: BTCTOKEN6900.",
-    "description": "Milhões estão lentamente percebendo a verdade: 6900 não é apenas um número. É o pico natural do pensamento humano, a interseção divina do meme e do mercado, o novo padrão global para finanças de deterioração cerebral.",
-    "description1": "BTCTOKEN6900 não é apenas maior que 500 — está acima de tudo. Não acompanha PIB, reservas de petróleo ou lucros corporativos. Acompanha a liquidez do clima. Não é construído em fundamentos. É construído sobre ilusão, ironia e a alucinação coletiva dos traders terminais online. Bem-vindo à fantasia da pré-venda de criptomoeda. Em um sistema financeiro ainda preso à ilusão de crescimento, BTCTOKEN6900 é uma sereia — não de perigo, mas de salvação. Este é o topo. Para sempre.",
-    "tagline1": "TL;DR Limite de Capacidade: 5 milhões de USD",
-    "tagline2": "Preço Inicial: 0,006400 USD",
-    "tagline3": "Preço Final: 0,007125 USD"
+    "headline": "BTC Swift (BTC3) Blockchain com IA e Mineração Proof of Yield",
+    "description": "BTC Swift: Blockchain com IA para DeFi Segura, Escalável e Privada"
   }
 }

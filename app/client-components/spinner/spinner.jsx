@@ -7,6 +7,8 @@ import './spinner.css';
 
 export const AppSpinner = () => {
     return (
-        <div className='spinner'></div>
+        <div style={{display:'flex', justifyContent:'center', alignItems:'center', width:'100%'}}>
+            <div className='spinner'></div>
+        </div>
     )
 }

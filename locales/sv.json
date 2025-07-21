@@ -1,52 +1,48 @@
 {
   "metadata": {
-    "title": "BTCTOKEN6900: Bättre än SPX6900 | Den bästa kryptopresalen",
-    "description": "BTCTOKEN6900 är den nya globala normen för hjärnrot-finans. Byggd på inga fundamenta, levererar BTCTOKEN6900 den bästa kryptopresalen 2025 med ett tak på 5 miljoner dollar."
+    "title": "BTC Swift: AI-driven Blockchain för säker, skalbar och privat DeFi",
+    "description": "BTC Swift presale live nu! BTC Swift-token med AI smarta kontrakt & Proof-of-Yield mining."
   },
   "nav": {
     "home": "HEM",
-    "staking": "STAKNING",
-    "howtobuy": "HUR MAN KÖPER",
-    "whitePaper": "VIT PAPERS",
-    "tokenomics": "TOKENOMIK",
-    "features": "EGENSKAPER",
-    "buyNow": "KÖP $T6900",
+    "staking": "STAKING",
+    "howtobuy": "SÅ KÖPER DU",
+    "whitePaper": "WHITE PAPER",
+    "tokenomics": "TOKENOMICS",
+    "features": "FUNKTIONER",
+    "buyNow": "KÖP BTC3",
     "faq": "FAQS",
     "audit": "AUDIT",
-    "roadmap": "VÄGKARTA",
+    "roadmap": "ROADMAP",
     "airdrop": "AIRDROP",
-    "about": "OM"
+    "about": "OM OSS"
   },
   "buyForm": {
-    "intro": "Köp BTCTOKEN6900 Presale!",
+    "intro": "Köp BTC3 Presale!",
     "day": "Dagar",
-    "hrs": "Timmar",
-    "mins": "Minuter",
-    "sec": "Sekunder",
+    "hrs": "Timme",
+    "mins": "Min",
+    "sec": "Sek",
     "funRaised": "USDT Insamlat",
     "wallet": "DIN Plånbok",
-    "boughtAmount": "DIN KÖPTA",
-    "stakeableAmount": "DIN STAKBAR MÄNGD",
+    "boughtAmount": "DITT KÖP",
+    "stakeableAmount": "DINA STAKE-BARA",
     "pay": "Betala med",
-    "get": "Mottag",
-    "buyNow": "KÖP $T6900",
+    "get": "Få",
+    "buyNow": "KÖP BTC3",
     "buyMax": "KÖP MAX",
-    "warning": "Installera Metamask för att köpa",
+    "warning": "Vänligen installera Metamask för att köpa",
     "link": "klicka här",
     "connectWallet": "ANSLUT PLÅNBOK",
-    "ethOption": "ETH NÄTVERK",
+    "ethOption": "ETH-NÄTVERK",
     "switchOption": "BYT NÄTVERK",
-    "bnbOption": "BNB NÄTVERK",
-    "buyStake": " Köp och Stake för 1052% Belöningar",
-    "nextPriceAlert": "TILL PRISÖKNING",
-    "para1": "1102% STAKING BELÖNINGAR"
+    "bnbOption": "BNB-NÄTVERK",
+    "buyStake": " Fortsätt till betalning",
+    "nextPriceAlert": "TILLS PRISÖKNING",
+    "para1": "1102% STAKING-REWARD"
   },
   "header": {
-    "headline": "De gav oss SPX6900. Vi gav dem den bästa kryptopresalen: BTCTOKEN6900.",
-    "description": "Miljontals börjar sakta inse sanningen: 6900 är inte bara ett nummer. Det är den naturliga toppen av mänskligt tänkande, den gudomliga korsningen mellan meme och marknad, den nya globala normen för hjärnrot-finans.",
-    "description1": "BTCTOKEN6900 är inte bara större än 500 — det är överallt. Det spårar inte BNP, oljereserver eller företagsvinster. Det spårar vibebehållning. Det är inte byggt på fundamenta. Det är byggt på illusion, ironi och den kollektiva hallucinationen av terminalt online-traders. Välkommen till kryptopresale-fantasins värld. I ett finansiellt system som fortfarande klamrar sig fast vid illusionen av tillväxt, är BTCTOKEN6900 en siren — inte av fara, utan av räddning. Detta är toppen. För alltid.",
-    "tagline1": "TL;DR Hård Cap: 5 miljoner USD",
-    "tagline2": "Startpris: 0,006400 USD",
-    "tagline3": "Slutpris: 0,007125 USD"
+    "headline": "BTC Swift (BTC3) AI-driven Blockchain med Proof of Yield Mining",
+    "description": "BTC Swift: AI-driven Blockchain för säker, skalbar och privat DeFi"
   }
 }

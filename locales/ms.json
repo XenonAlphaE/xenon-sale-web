@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "title": "BTCTOKEN6900: Lebih Baik Dari SPX6900 | Pra-jualan Crypto Terbaik",
-    "description": "BTCTOKEN6900 adalah penanda aras global baru untuk kewangan kerosakan otak. Dibina tanpa asas yang kukuh, BTCTOKEN6900 menawarkan pra-jualan crypto terbaik untuk tahun 2025 dengan had $5 juta."
+    "title": "BTC Swift: Rantaian Blok Dikuasakan AI untuk DeFi yang Selamat, Boleh Skala, dan Peribadi",
+    "description": "Pra-jualan BTC Swift kini sedang berlangsung! Token BTC Swift dengan kontrak pintar AI & perlombongan Proof-of-Yield."
   },
   "nav": {
-    "home": "HALAMAN UTAMA",
-    "staking": "PENYIMPANAN",
-    "howtobuy": "CARA MEMBELI",
+    "home": "LAMAN UTAMA",
+    "staking": "STAKING",
+    "howtobuy": "CARA BELI",
     "whitePaper": "KERTAS PUTIH",
     "tokenomics": "TOKENOMIK",
     "features": "CIRI-CIRI",
-    "buyNow": "BELI $T6900",
+    "buyNow": "BELI BTC3",
     "faq": "SOALAN LAZIM",
     "audit": "AUDIT",
     "roadmap": "PETA JALAN",
@@ -18,35 +18,31 @@
     "about": "TENTANG"
   },
   "buyForm": {
-    "intro": "Beli Presale BTCTOKEN6900!",
+    "intro": "Beli Pra-jualan BTC3!",
     "day": "Hari",
     "hrs": "Jam",
     "mins": "Minit",
     "sec": "Saat",
-    "funRaised": "USDT Dikumpul",
-    "wallet": "DOMPET ANDA",
-    "boughtAmount": "BELIAN ANDA",
-    "stakeableAmount": "AMOUNT STAKEABLE ANDA",
+    "funRaised": "USDT Dikumpulkan",
+    "wallet": "DOMPET Anda",
+    "boughtAmount": "PEMBELIAN Anda",
+    "stakeableAmount": "JUMLAH UNTUK STAKING",
     "pay": "Bayar dengan",
     "get": "Terima",
-    "buyNow": "BELI $T6900",
-    "buyMax": "BELI MAX",
+    "buyNow": "BELI BTC3",
+    "buyMax": "BELI MAKSIMUM",
     "warning": "Sila pasang Metamask untuk membeli",
     "link": "klik di sini",
     "connectWallet": "SAMBUNG DOMPET",
     "ethOption": "RANGKAIAN ETH",
     "switchOption": "TUKAR RANGKAIAN",
     "bnbOption": "RANGKAIAN BNB",
-    "buyStake": "Beli dan Simpan untuk Ganjaran 1052%",
-    "nextPriceAlert": "SEHINGGA HARGA NAIK",
-    "para1": "1102% GANJARAN PENYIMPANAN"
+    "buyStake": " Teruskan ke Pembayaran",
+    "nextPriceAlert": "SEHINGGA KENAIKAN HARGA",
+    "para1": "GANJARAN STAKING 1102%"
   },
   "header": {
-    "headline": "Mereka memberi kami SPX6900. Kami memberi mereka pra-jualan crypto terbaik: BTCTOKEN6900.",
-    "description": "Jutaan orang perlahan-lahan menyedari kebenarannya: 6900 bukan sekadar nombor. Ia adalah puncak semula jadi pemikiran manusia, persimpangan ilahi antara meme dan pasaran, penanda aras global baru untuk kewangan kerosakan otak.",
-    "description1": "BTCTOKEN6900 bukan sahaja lebih baik dari 500 — ia berada di atas segala-galanya. Ia tidak menjejak KDNK, rizab minyak, atau pendapatan korporat. Ia menjejak kecairan vibe. Ia tidak dibina berdasarkan asas. Ia dibina berdasarkan khayalan, ironi, dan halusinasi kolektif pedagang yang sentiasa dalam talian. Selamat datang ke fantasi pra-jualan crypto. Dalam sistem kewangan yang masih bergantung pada ilusi pertumbuhan, BTCTOKEN6900 adalah siren — bukan bahaya, tetapi penyelamatan. Ini adalah kemuncak. Selamanya.",
-    "tagline1": "TL;DR Had Keras: 5 juta USD",
-    "tagline2": "Harga Mula: 0.006400 USD",
-    "tagline3": "Harga Tamat: 0.007125 USD"
+    "headline": "BTC Swift (BTC3) Rantaian Blok Dikuasakan AI dengan Perlombongan Proof of Yield",
+    "description": "BTC Swift: Rantaian Blok Dikuasakan AI untuk DeFi yang Selamat, Boleh Skala, dan Peribadi"
   }
 }

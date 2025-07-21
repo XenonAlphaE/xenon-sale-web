@@ -1,35 +1,35 @@
 {
   "metadata": {
-    "title": "BTCTOKEN6900: Beter dan SPX6900 | De Beste Crypto Presale",
-    "description": "BTCTOKEN6900 is de nieuwe wereldwijde benchmark voor brain rot financiën. Gebouwd zonder fundamentele basis, levert BTCTOKEN6900 de beste crypto presale van 2025 met een limiet van 5 miljoen dollar."
+    "title": "BTC Swift: Door AI aangedreven Blockchain voor Veilige, Schaalbare en Privé DeFi",
+    "description": "BTC Swift voorverkoop nu live! BTC Swift-token met AI-smartcontracts & Proof-of-Yield mining."
   },
   "nav": {
     "home": "HOME",
-    "staking": "STAKEN",
+    "staking": "STAKING",
     "howtobuy": "HOE TE KOPEN",
-    "whitePaper": "WHITEPAPER",
+    "whitePaper": "WHITE PAPER",
     "tokenomics": "TOKENOMICS",
-    "features": "KENMERKEN",
-    "buyNow": "KOOP $T6900",
-    "faq": "FAQ'S",
+    "features": "FUNCTIES",
+    "buyNow": "KOOP BTC3",
+    "faq": "FAQS",
     "audit": "AUDIT",
     "roadmap": "ROADMAP",
     "airdrop": "AIRDROP",
     "about": "OVER"
   },
   "buyForm": {
-    "intro": "Koop BTCTOKEN6900 Presale!",
+    "intro": "Koop BTC3 Voorverkoop!",
     "day": "Dagen",
-    "hrs": "Uren",
-    "mins": "Minuten",
-    "sec": "Seconden",
+    "hrs": "Uur",
+    "mins": "Min",
+    "sec": "Sec",
     "funRaised": "USDT Opgehaald",
     "wallet": "JOUW Wallet",
-    "boughtAmount": "JOUW AANGESCHAFT",
-    "stakeableAmount": "JOUW STAKEABLE",
+    "boughtAmount": "JOUW AANKOOP",
+    "stakeableAmount": "JOUW STAKEBARE",
     "pay": "Betalen met",
     "get": "Ontvangen",
-    "buyNow": "KOOP $T6900",
+    "buyNow": "KOOP BTC3",
     "buyMax": "KOOP MAX",
     "warning": "Installeer Metamask om te kopen",
     "link": "klik hier",
@@ -37,16 +37,12 @@
     "ethOption": "ETH NETWERK",
     "switchOption": "WISSEL NETWERK",
     "bnbOption": "BNB NETWERK",
-    "buyStake": " Koop en Stake voor 1052% Beloningen",
+    "buyStake": "Ga door naar Betaling",
     "nextPriceAlert": "TOT PRIJSSTIJGING",
     "para1": "1102% STAKING BELONINGEN"
   },
   "header": {
-    "headline": "Ze gaven ons SPX6900. Wij gaven hen de beste crypto presale: BTCTOKEN6900.",
-    "description": "Miljoenen beginnen langzaam de waarheid te beseffen: 6900 is niet zomaar een getal. Het is de natuurlijke piek van menselijke gedachten, de goddelijke kruising van meme en markt, de nieuwe wereldwijde benchmark voor brain rot financiën.",
-    "description1": "BTCTOKEN6900 is niet alleen groter dan 500 — het staat boven alles. Het volgt het BBP, olievoorraden of bedrijfswinsten niet. Het volgt de vibe liquiditeit. Het is niet gebouwd op fundamenten. Het is gebouwd op waanzin, ironie en de collectieve hallucinatie van terminale online traders. Welkom in de crypto presale fantasie. In een financieel systeem dat nog steeds vasthoudt aan de illusie van groei, is BTCTOKEN6900 een sirene — niet van gevaar, maar van bevrijding. Dit is de top. Voor altijd.",
-    "tagline1": "TL;DR Hard Cap: 5 miljoen USD",
-    "tagline2": "Startprijs: 0.006400 USD",
-    "tagline3": "Eindprijs: 0.007125 USD"
+    "headline": "BTC Swift (BTC3) Door AI aangedreven Blockchain met Proof of Yield Mining",
+    "description": "BTC Swift: Door AI aangedreven Blockchain voor Veilige, Schaalbare en Privé DeFi"
   }
 }

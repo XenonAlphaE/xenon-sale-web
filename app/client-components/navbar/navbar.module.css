@@ -170,6 +170,14 @@
   color: white;
 }
 
+.selectedLang {
+  background-color: #ff812d;
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
 .langDropdownItem:hover {
   background: #eee;
   color: #fff;

@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "BTCTOKEN6900: SPX6900 より優れた | 2025年の最高の暗号通貨プレセール",
-    "description": "BTCTOKEN6900は脳の腐敗金融の新たな世界的基準です。基本的な要素は何もありませんが、BTCTOKEN6900は2025年の最高の暗号通貨プレセールを提供し、500万ドルで上限設定されています。"
+    "title": "BTC Swift：安全でスケーラブル、プライバシー重視のDeFiのためのAI搭載ブロックチェーン",
+    "description": "BTC Swiftプレセール実施中！AIスマートコントラクトとProof-of-Yieldマイニングを備えたBTC Swiftトークン。"
   },
   "nav": {
     "home": "ホーム",
@@ -10,43 +10,39 @@
     "whitePaper": "ホワイトペーパー",
     "tokenomics": "トークノミクス",
     "features": "特徴",
-    "buyNow": "$T6900 を購入",
+    "buyNow": "BTC3を購入",
     "faq": "よくある質問",
     "audit": "監査",
     "roadmap": "ロードマップ",
     "airdrop": "エアドロップ",
-    "about": "詳細"
+    "about": "概要"
   },
   "buyForm": {
-    "intro": "BTCTOKEN6900 プレセールを購入！",
+    "intro": "BTC3プレセールを購入！",
     "day": "日",
     "hrs": "時間",
     "mins": "分",
     "sec": "秒",
     "funRaised": "調達済みUSDT",
     "wallet": "あなたのウォレット",
-    "boughtAmount": "購入金額",
-    "stakeableAmount": "ステーキング可能額",
-    "pay": "支払い方法",
-    "get": "受け取る",
-    "buyNow": "$T6900 を購入",
+    "boughtAmount": "購入済み金額",
+    "stakeableAmount": "ステーキング可能金額",
+    "pay": "支払方法",
+    "get": "受け取り",
+    "buyNow": "BTC3を購入",
     "buyMax": "最大購入",
     "warning": "購入するにはMetamaskをインストールしてください",
-    "link": "ここをクリック",
+    "link": "こちらをクリック",
     "connectWallet": "ウォレットを接続",
-    "ethOption": "ETH ネットワーク",
-    "switchOption": "ネットワークを切り替える",
-    "bnbOption": "BNB ネットワーク",
-    "buyStake": "購入してステーキングし、1052%のリワードを受け取る",
-    "nextPriceAlert": "価格が上昇するまで",
-    "para1": "1102% ステーキングリワード"
+    "ethOption": "ETHネットワーク",
+    "switchOption": "ネットワークを切り替え",
+    "bnbOption": "BNBネットワーク",
+    "buyStake": "支払いへ進む",
+    "nextPriceAlert": "価格上昇まで",
+    "para1": "1102%のステーキング報酬"
   },
   "header": {
-    "headline": "彼らはSPX6900を与えた。私たちは最高の暗号通貨プレセール：BTCTOKEN6900を与えた。",
-    "description": "何百万もの人々が次第に真実に気づいている：6900は単なる数字ではない。それは人間の思考の自然な頂点、ミームと市場の神聖な交差点、脳の腐敗金融の新たな世界基準だ。",
-    "description1": "BTCTOKEN6900は500より優れているだけではない。それはすべてを超越している。GDP、石油埋蔵量、企業の収益を追跡するわけではない。それはムードの流動性を追跡する。基礎があるわけではない。それは幻想、皮肉、そして終末的なオンライントレーダーたちの集団的幻覚で作られている。暗号通貨プレセールのファンタジーへようこそ。成長の幻想にしがみつく金融システムの中で、BTCTOKEN6900はサイレンのような存在だ — 危険ではなく、解放のサイレンだ。これが頂点だ。永遠に。",
-    "tagline1": "要約：ハードキャップ 500万USD",
-    "tagline2": "開始価格：0.006400 USD",
-    "tagline3": "終了価格：0.007125 USD"
+    "headline": "BTC Swift（BTC3）：Proof of Yieldマイニング搭載のAIブロックチェーン",
+    "description": "BTC Swift：安全・スケーラブル・プライバシー重視のDeFiを実現するAI搭載ブロックチェーン"
   }
 }

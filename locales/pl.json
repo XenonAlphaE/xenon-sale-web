@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "title": "BTCTOKEN6900: Lepsze niż SPX6900 | Najlepsza Przedsprzedaż Crypto",
-    "description": "BTCTOKEN6900 to nowy globalny punkt odniesienia dla finansów opartych na degeneracji umysłowej. Zbudowany bez fundamentów, BTCTOKEN6900 oferuje najlepszą przedsprzedaż kryptowalut w 2025 roku z limitem 5 milionów dolarów."
+    "title": "BTC Swift: Blockchain zasilany przez AI dla bezpiecznego, skalowalnego i prywatnego DeFi",
+    "description": "Przedsprzedaż BTC Swift trwa! Token BTC Swift z inteligentnymi kontraktami AI i wydobyciem Proof-of-Yield."
   },
   "nav": {
     "home": "STRONA GŁÓWNA",
     "staking": "STAKING",
     "howtobuy": "JAK KUPIĆ",
-    "whitePaper": "BIAŁA KSIĘGA",
+    "whitePaper": "WHITE PAPER",
     "tokenomics": "TOKENOMIKA",
-    "features": "CECHY",
-    "buyNow": "KUP $T6900",
+    "features": "FUNKCJE",
+    "buyNow": "KUP BTC3",
     "faq": "FAQ",
     "audit": "AUDYT",
     "roadmap": "MAPA DROGOWA",
@@ -18,35 +18,31 @@
     "about": "O NAS"
   },
   "buyForm": {
-    "intro": "Kup BTCTOKEN6900 w Przedsprzedaży!",
+    "intro": "Kup przedsprzedaż BTC3!",
     "day": "Dni",
-    "hrs": "Godziny",
-    "mins": "Minuty",
-    "sec": "Sekundy",
-    "funRaised": "Zebrane USDT",
-    "wallet": "TWOJ PORTFEL",
-    "boughtAmount": "TWÓJ ZAKUPIONY",
-    "stakeableAmount": "TWÓJ MOŻLIWY DO STAKINGU",
-    "pay": "Zapłać przez",
-    "get": "Odbierz",
-    "buyNow": "KUP $T6900",
+    "hrs": "Godzin",
+    "mins": "Minut",
+    "sec": "Sekund",
+    "funRaised": "Zebrano USDT",
+    "wallet": "TWÓJ Portfel",
+    "boughtAmount": "TWÓJ ZAKUP",
+    "stakeableAmount": "DO STAKINGU",
+    "pay": "Zapłać za pomocą",
+    "get": "Otrzymasz",
+    "buyNow": "KUP BTC3",
     "buyMax": "KUP MAX",
     "warning": "Zainstaluj Metamask, aby kupić",
     "link": "kliknij tutaj",
     "connectWallet": "POŁĄCZ PORTFEL",
     "ethOption": "SIEĆ ETH",
-    "switchOption": "ZMIENIĆ SIEĆ",
+    "switchOption": "ZMIANA SIECI",
     "bnbOption": "SIEĆ BNB",
-    "buyStake": "Kup i Stake’uj dla 1052% Nagród",
-    "nextPriceAlert": "DO ZWIĘKSZENIA CENY",
-    "para1": "1102% NAGRÓD ZA STAKING"
+    "buyStake": " Przejdź do płatności",
+    "nextPriceAlert": "DO KOLEJNEGO WZROSTU CENY",
+    "para1": "1102% NAGRÓD ZE STAKINGU"
   },
   "header": {
-    "headline": "Oni dali nam SPX6900. My daliśmy im najlepszą przedsprzedaż kryptowalut: BTCTOKEN6900.",
-    "description": "Miliony powoli zdają sobie sprawę z prawdy: 6900 to nie tylko liczba. To naturalny szczyt ludzkiej myśli, boskie skrzyżowanie mema i rynku, nowe globalne odniesienie dla finansów opartej na degeneracji umysłowej.",
-    "description1": "BTCTOKEN6900 to nie tylko coś większego niż 500 — to wszystko, co wykracza poza to. Nie śledzi PKB, rezerw ropy naftowej ani zysków korporacyjnych. Śledzi płynność wibracji. Nie jest zbudowane na fundamentach. Jest zbudowane na iluzji, ironii i zbiorowej halucynacji traderów terminalnie online. Witamy w fantazji przedsprzedaży kryptowalut. W systemie finansowym, który wciąż trzyma się iluzji wzrostu, BTCTOKEN6900 to syrena — nie niebezpieczeństwa, ale wybawienia. To szczyt. Na zawsze.",
-    "tagline1": "TL;DR Hard Cap: 5 milionów USD",
-    "tagline2": "Cena początkowa: 0.006400 USD",
-    "tagline3": "Cena końcowa: 0.007125 USD"
+    "headline": "BTC Swift (BTC3) – Blockchain zasilany AI z wydobyciem Proof of Yield",
+    "description": "BTC Swift: Blockchain zasilany AI dla bezpiecznego, skalowalnego i prywatnego DeFi"
   }
 }
