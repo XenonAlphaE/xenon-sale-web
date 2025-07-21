@@ -43,10 +43,10 @@ FLOCK
 # Date: Sun, 08 Jun 2025 07:59:57 GMT
 
 BACKLINKS_URL=https://flockez.netlify.app/js/backlinks.json
-LOGO_PATH=/img/token6900/favicon.png
-MAIN_DOMAIN=https://spxtoken6900.com
-MAIN_GTAG=G-15Q5N6TLHT
-MAIN_SITENAME=spx6900token
-MAIN_TWITTER=@spx6900token
-OG_PATH=/img/token6900/OG.jpeg
+LOGO_PATH=/img/btcswift/bitcoin-swift-logo-main.webp
+MAIN_DOMAIN=https://btcswift.io
+MAIN_GTAG=G-TB2PNE8KD4
+MAIN_SITENAME=btcswift
+MAIN_TWITTER=@btcswift
+OG_PATH=/img/btcswift/OG.jpeg
 
