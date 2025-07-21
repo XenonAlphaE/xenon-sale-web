@@ -40,11 +40,11 @@ const App = () => {
           <Navbar />
           <Header/>
           <About />
+          {/* <Tokenomics /> */}
           {/* <TrustedBy/> */}
           {/* <Roadmap /> */}
           {/* <HowToBuy /> */}
           {/* <TrustedBy/> */}
-          {/* <Tokenomics /> */}
           {/* <FAQ/> */}
           {/* <Footer />  */}
           <AppSpinner/>

@@ -7,32 +7,29 @@ import styles from './tokenomics.module.css'
 function InfoCard({ cardClass, title, contents }) {
     return (
         <div className={cardClass}>
-          <div className={styles.cardNumber}></div>
           <div className={styles.cardTitle}>{title}</div>
           
           {contents.map((content, i) => (
-            <div>{content} </div>
+            <div className={styles.cardContent}>{content} </div>
           ))}
         </div>
   
     );
-  }
+}
   
 function BuyNowButton( {eventOnClick, buyNow, desc}) {
     return(
         <div className={styles.buyNowWrapper}>
-            <button className={styles.buyNowBtn} onClick={eventOnClick}>{buyNow}</button>
-            <p>{desc}</p>
+            <button className={styles.buyNowBtn} onClick={eventOnClick}>BUY NOW</button>
         </div>
     )
 }
 
-  
+
 
 export const Tokenomics = () => {
 
   const sectionText = useI18nSection('tokenomics')
-  const infoContents = sectionText?.contents
   const scrollToBuySection = () => {
     // Find the target section to scroll to
     let section = null;
@@ -49,34 +46,37 @@ export const Tokenomics = () => {
 
   return (
     <section id="tokenomics" className={styles.tokenomicsContainer}>
-        <h1 className={styles.title}>{sectionText?.title}</h1>
 
         <div className={styles.mainContent}>
-
-            <div class={`${styles.item} ${styles.item1}`}>
-                <div  className={styles.cards}>
-                    <InfoCard cardClass={styles.card} title={infoContents[0].title} contents={infoContents[0].contents} />
-                    <InfoCard cardClass={styles.card} title={infoContents[1].title} contents={infoContents[1].contents} />
-                </div>
+            <div className={styles.leftPart}>
+              <div className={styles.titleWrapper}>
+                  <h1 className={styles.title}>sTokenemoics</h1>
+              </div>
 
             </div>
-            <div class={`${styles.item} ${styles.item2}`}>
-                <div className={styles.imgWrapper}>
-                    <img src="/img/btchyper/tokenomics.gif" className={styles.imgGraphic}/>
-                </div>
+            <div className={styles.midPart}>
+              <img src="https://token6900.com/assets/images/png/token-img-1.png" />
+              <p  className={styles.desc}>TOKEN 6900 has 1 more token than SPX6900. Cos we are 1x better...</p>
+              <p className={styles.desc}>Total supply 930,993,091 hard cap $5M</p>
+              < p className={styles.desc}>Dev keeps 6900 tokens locked for 5 years</p>
+              <BuyNowButton/>
+              <img src="https://token6900.com/assets/images/png/token-img-4.png" alt="token-img"></img>
             </div>
-            <div class={`${styles.item} ${styles.item3}`}>
-                <div  className={styles.cards}>
-                    <InfoCard cardClass={styles.card} title={infoContents[2].title} contents={infoContents[2].contents} />
-                    <InfoCard cardClass={styles.card} title={infoContents[3].title} contents={infoContents[3].contents} />
-                </div>
-                <div  className={styles.cards}>
-
-                    <InfoCard cardClass={styles.card} title={infoContents[4].title} contents={infoContents[4].contents} />
-                </div>
+            <div className={styles.rightPart}>
+              <video autoplay="" muted="false" playsinline="" loop={true} width="100%">
+                <source _ngcontent-ng-c1442129416="" src="/img/token6900/dud.webm" type="video/webm"></source>
+              </video>
+            </div>
+             <div className={styles.leftPart}>
 
             </div>
-            <div class={`${styles.item} ${styles.item4}`}><BuyNowButton buyNow={sectionText?.buyNow} desc={sectionText?.desc} eventOnClick={scrollToBuySection} /></div>
+            <InfoCard cardClass={`${styles.item1}`} title={'0.0007%'} contents={['developer moon bag (locked for 5 years)']} />
+            <InfoCard cardClass={`${styles.item2}`} title={'15%'} contents={['vibe coding development']} />
+            <InfoCard cardClass={`${styles.item3}`} title={'40%'} contents={['token 6900 marketing']} />
+            <InfoCard cardClass={`${styles.item4}`} title={'5%'} contents={['Staking Rewards']} />
+            <InfoCard cardClass={`${styles.item5}`} title={'10%'} contents={['Vibe Liquidity']} />
+            <InfoCard cardClass={`${styles.item6}`} title={'24.9993%'} contents={['does anyone have a dolphin']} />
+            <InfoCard cardClass={`${styles.item7}`} title={'5%'} contents={['rewards/airdrops/burn']} />
         </div>
 
 
