@@ -11,8 +11,16 @@ export const Header = () => {
 
   return (
     <section id="intro"  className={styles.container}>
-      <PresaleSection></PresaleSection>
-      <BuyForm/>
+      <div className={styles.mainContent}> 
+        <div className={styles.leftPart}>
+            <PresaleSection />  
+        </div> 
+        <div className={styles.rightPart}>
+            <BuyForm/>  
+        </div> 
+
+      </div>
+
     </section>
     // </div>
   );

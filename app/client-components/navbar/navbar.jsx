@@ -89,7 +89,7 @@ export const Navbar = ({ isStakingPage = false }) => {
     <nav className={`${styles.appnav} ${styles.sticky} ${isScrolled ? styles.scrolled : ''}`}>
     <div className={styles.navContainer} >
      
-        <a className={styles.appnavBrand}>
+        <a className={styles.appnavBrand} href='/'>
           <img className={styles.brandLogo}  src="/img/btcswift/bitcoin-swift-logo-main.webp"/>
           <img className={styles.textLogo}  src="/img/btcswift/bitcoin-swift-text-logo.webp"/>
         </a>

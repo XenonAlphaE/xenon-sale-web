@@ -3,8 +3,8 @@
     "targetToken":{
         "address":"",
         "decimals":18,
-        "symbol": "T6900",
-        "tokenPrice":"0.006525"
+        "symbol": "BTC3",
+        "tokenPrice":"1"
     },
     "previousRaised":5009043.52,
     "previousSoldTokens":0,

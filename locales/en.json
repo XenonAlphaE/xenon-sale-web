@@ -18,11 +18,11 @@
       "about": "ABOUT"
   },
   "buyForm": {
-      "intro": "Buy BTCTOKEN6900 Presale!",
+      "intro": "Buy BTC3 Presale!",
       "day": "Days",
-      "hrs": "Hours",
-      "mins": "Minutes",
-      "sec": "Seconds",
+      "hrs": "Hour",
+      "mins": "Min",
+      "sec": "Sec",
       "funRaised": "USDT Raised",
       "wallet": "YOUR Wallet",
       "boughtAmount": "YOUR PURCHASED",
@@ -37,7 +37,7 @@
       "ethOption": "ETH NETWORK",
       "switchOption": "SWITCH NETWORK",
       "bnbOption": "BNB NETWORK",
-      "buyStake": " Buy and Stake for 1052% Rewards",
+      "buyStake": " Proceed to Payment",
       "nextPriceAlert": "UNTIL PRICE INCREASE",
       "para1": "1102% STAKING REWARDS"
   },

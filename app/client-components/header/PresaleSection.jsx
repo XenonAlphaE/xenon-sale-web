@@ -6,37 +6,19 @@ const PresaleSection = () => {
     const sectionText = useI18nSection('header')
   
   return (
-    <section className={styles.container}>
-      <div className={styles.leftPart}>
-        <h2 className={styles.headline}>{sectionText?.headline}</h2>
-        <p className={styles.description}>
+    <div className={styles.container}>
+          <img className={styles.brandLogo}  src="/img/btcswift/bitcoin-swift-logo-main.webp"/>
+          <img className={styles.textLogo}  src="/img/btcswift/bitcoin-swift-text-logo.webp"/>
+        <h1 className={styles.headline}>
+          Bitcoin Swift (BTC3) AI-Powered Blockchain with Proof of Yield Mining
+        </h1>
+        <p>
+          Bitcoin Swift: AI-Powered Blockchain for Secure, Scalable, and Private DeFi
 
-          {sectionText?.description}
-        </p>
-        <p className={styles.description}>
-          {sectionText?.description1}
-        </p>
-        <p className={styles.description}>
-          {sectionText?.tagline1} <br/>
-          {sectionText?.tagline2} <br/>
-          {sectionText?.tagline3}
-        </p>
-      </div>
-      <div className={styles.rightPart}>
-        <div className={styles.videoContainer}>
-            <video className={styles.videoPlayer} controls poster='/img/token6900/video-thumbnail.png'>
-              <source src="/img/token6900/banner-vdo.mp4" type="video/mp4"/>
-              Your browser does not support the video tag.
-            </video>
-        </div>
-        <div className={styles.bannerList}>
-          <img className={styles.bannerListItem} src="/img/token6900/banner-red.png" alt="banner" />
-          <img className={styles.bannerListItem} src="/img/token6900/banner-green.png" alt="banner" />
-          <img className={styles.bannerListItem} src="/img/token6900/banner-blue.png" alt="banner" />
-        </div>
-      </div>
 
-    </section>
+        </p>
+  
+    </div>
   );
 };
 

@@ -1,11 +1,30 @@
 .container{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   row-gap: 1rem;
-
+  background: linear-gradient(0deg, rgba(255, 140, 0, 0.1), rgba(26, 26, 26, 0.5), #1A1A1A) !important;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
   @media (max-width: 1024px) {
       width: 100%;
       padding-inline: 1rem;
   }
+}
+
+
+.mainContent{
+  padding-top: 128px;
+  min-width: 1280px;
+  width: 1280px;
+  display: flex;
+}
+
+.leftPart{
+  width: 65%;
+}
+
+.rightPart{
+  width: 35%;
 }
