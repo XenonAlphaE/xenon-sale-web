@@ -110,7 +110,7 @@ export const HowToBuy = () => {
 
 
             <div className="howtobuy-content-right">
-                <ClaimForm />
+                <BuyForm />
                       
             </div>
         </div>

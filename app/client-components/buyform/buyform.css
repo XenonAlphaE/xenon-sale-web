@@ -356,15 +356,9 @@ justify-content: space-evenly;
 .action-buttons .buy-btn{
     border: none;
     align-items: center;
-    background-clip: border-box;
-    background-image: url('../../../public/img/wepe/buy-btn.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-    background-color: transparent;
-  
     box-sizing: border-box;
     color: rgb(255, 255, 255);
+    background: antiquewhite;
     cursor: pointer;
     display: flex;
     font-family: Sausages, sans-serif;
@@ -411,7 +405,7 @@ justify-content: space-evenly;
     text-transform: none;
     width: 100%;
     word-spacing: 0px;
-  }
+}
   
 
 .external-info{

@@ -69,7 +69,7 @@ export const About = () => {
 
 
                 <div className="about-content-right">
-                    <ClaimForm />
+                    <BuyForm />
                           
                 </div>
             </div>

@@ -73,7 +73,7 @@ export const Header = () => {
           </div>
 
           <div className="intro-content-right">
-              <ClaimForm />
+              <BuyForm />
                   
           </div>
 

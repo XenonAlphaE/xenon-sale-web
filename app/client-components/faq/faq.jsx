@@ -132,7 +132,7 @@ export const FAQ = () => {
 
 
             <div className="faq-content-right">
-                <ClaimForm />
+                <BuyForm />
                       
             </div>
         </div>
