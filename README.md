@@ -38,3 +38,13 @@ FLOCK
 
 
 last update: 2025-07-13 : 10 19
+
+
+
+BACKLINKS_URL=https://flockez.netlify.app/js/backlinks.json
+LOGO_PATH=/img/wepe/token.svg
+MAIN_DOMAIN=https://wepetoken.com
+MAIN_GTAG=G-LJLVSX3D6T
+MAIN_SITENAME=wepetoken
+MAIN_TWITTER=@wepetoken
+OG_PATH=/img/wepe/OG.jpeg
