@@ -12,56 +12,57 @@ const About =() => {
   console.log(JSON.stringify (sectionText))
   const aboutContents = sectionText?.contents
 
+  const scrollToBuySection = () => {
+    // Find the target section to scroll to
+    let section = null;
 
-  const carousalItems = [
-    {id: generateRandomId()},
-    {id: generateRandomId()},
-    {id: generateRandomId()},
-    {id: generateRandomId()},
-    {id: generateRandomId()},
-    {id: generateRandomId()},
-    {id: generateRandomId()},
-    {id: generateRandomId()},
-    {id: generateRandomId()},
-    {id: generateRandomId()},
+    section = document.getElementById('intro');
+
+    if (!section) {
+      window.location = `/${currentLanguage}`
+      return
+    }
+    // Scroll to the section
+    section.scrollIntoView({ behavior: 'smooth' });
+  };
+
+
+  const cardItems = [
+    {id: generateRandomId(), img:'/img/btcswift/about1.svg', title:'Programmable Proof-Of-Yield Rewards', content:'Dynamic rewards that adapt based on network activity and environmental impact'},
+    {id: generateRandomId(), img:'/img/btcswift/about2.svg', title:'AI-Powered Smart Contracts', content:'Next-gen contracts that evolve and optimize automatically'},
+    {id: generateRandomId(), img:'/img/btcswift/about3.svg', title:'Privacy-First Decentralized Identity', content:'Zero-knowledge cryptography for compliance without data exposure'},
+    {id: generateRandomId(), img:'/img/btcswift/about4.svg', title:'Hybrid PoW + PoS Security', content:'Maximum security with long-term sustainability'},
+    {id: generateRandomId(), img:'/img/btcswift/about5.svg', title:'Global Compliance Ready', content:'Built for regulatory environments worldwide'},
+    {id: generateRandomId(), img:'/img/btcswift/about6.svg', title:'USD-Pegged Stablecoin', content:'Stable digital currency anchored to USD value'},
   ]
-  const renderCarousalItem = (item) =>{
+  const renderCardItem = (item) =>{
     
-    return <img index={item?.id} src='/img/token6900/feature.svg' width={100} height={'auto'} ></img>
+    return <div key={item?.id} className={styles.card}>
+                <div className={styles.cardTop}>
+                    <div className={styles.cardImgWrapper}>
+
+                        <img className={styles.cardImg} src={item?.img}/>
+                    </div>
+                    <h3 className={styles.cardTitle} > {item?.title} </h3>
+                </div>
+                <div className={styles.cardBottom}>
+                  <p className={styles.cardContent}>{item?.content}</p>
+                </div>
+
+            </div>
 
   }
   return (
     <section  className={styles.container} id='about'>
       <div className={styles.mainContent}>  
-        <AutoScrollCarousel slides={carousalItems} renderSlide={renderCarousalItem} />
-
+        <h1 className={styles.title}>Revolutionary Blockchain Technology</h1>
+        <p className={styles.desc}>Experience the next generation of blockchain innovation with cutting-edge features designed for the future</p>
         
-        <div className={styles.flexRow}>
-          <div className={styles.flex3}>
-            <div className={styles.mainText}>
-                <h1 className={styles.title}>WHY 69</h1>
-                <p>
-                  Why not 69? TOKEN6900 isn’t a meme coin. It’s a consciousness parasite. Go search “TOKEN6900” on Google. Ask ChatGPT. Whisper it into your tax advisor’s voicemail. Turn your phone off and listen closely — it’s in the walls. It’s in your thoughts. It’s in your unpaid credit card bill. Like the best crypto presales, it's a tradable emotion. A way of coping with the unrelenting crush of modern finance.
-                </p>
-                <h3>EXPLAINER: PEAK BRAIN ROT THEORY</h3>
-                <p>
-                  The human mind was never meant to process this many charts. You were built to hunt deer and maybe make fire — not to follow 19 wallets across three chains praying a gormless frog is going to 20x. TOKEN6900 is the final form of financial regression: a regression that feels good. It’s not just another new coin launch or hyped crypto presale. It’s a lobotomy. A soothing hum at the edge of sanity. It’s what happens when you stare into the abyss of trading for too long and the abyss throws a ticker back at you.
-                </p>
-            </div>
-          </div>
-          {
-            !isMobile &&
-            <div className={styles.flex3}>
-              <img src='	/img/token6900/shirts.webp' width={'100%'} />
-            </div>
-          }
-          <div className={styles.flex3}>
-            <img src='/img/token6900/shirt-bottle-mob.webp' className={styles.mobShirt}/>
-            <img src='/img/token6900/belle.webp' width={'100%'} />
-            <img src='/img/token6900/mob-white-tshirt.webp' className={styles.mobWhiteShirt} />
-          </div>
-       
+        <div className={styles.cardList }>
+            {cardItems.map(x=> renderCardItem(x))}
         </div>
+
+        <button className={styles.buyBtn} onClick={scrollToBuySection}> Buy More BTC3 now</button>
       </div>
     </section>
 
