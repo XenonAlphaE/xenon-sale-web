@@ -358,7 +358,7 @@ justify-content: space-evenly;
     align-items: center;
     box-sizing: border-box;
     color: rgb(255, 255, 255);
-    background: antiquewhite;
+    background: rgb(173, 165, 150);
     cursor: pointer;
     display: flex;
     font-family: Sausages, sans-serif;
@@ -405,6 +405,7 @@ justify-content: space-evenly;
     text-transform: none;
     width: 100%;
     word-spacing: 0px;
+    border-radius: 8px;
 }
   
 
