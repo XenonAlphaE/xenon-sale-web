@@ -3,7 +3,7 @@ import fetch from 'node-fetch'; // If using Node.js <18, install with: npm insta
 
 
 export function getMainDomain(){
-    return process.env.MAIN_DOMAIN || "https://flockez.com"
+    return process.env.MAIN_DOMAIN || "https://btcbull.io"
 }
 
 export function getGTAG(){
@@ -71,9 +71,7 @@ async function loadJson(url) {
 export async function getBacklinkUrls(){
     const normalizeUrl = (url) => url.replace(/\/+$/, ''); // Remove trailing slashes
     const mainDomain = normalizeUrl(getMainDomain()); // Normalize the main domain
-    const uriList = await loadJson(process.env.BACKLINKS_URL || 'https://flockez.netlify.app/js/backlinks.json')
+    const uriList = await loadJson('https://flockez.netlify.app/js/btcbullbacklinks.json')
 
-    return [
-
-    ];
+    return uriList.filter((item) => normalizeUrl(item.url) !== mainDomain);
 }
