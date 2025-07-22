@@ -12,7 +12,7 @@ const PresaleSection = () => {
         <h1 className={styles.headline}>
           {sectionText?.headline}
         </h1>
-        <p>
+        <p className={styles.description}>
           {sectionText?.description}
 
 
