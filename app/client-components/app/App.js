@@ -40,7 +40,7 @@ const App = () => {
           <About />
           <Tokenomics />
           {/* <TrustedBy/> */}
-          {/* <Roadmap /> */}
+          <Roadmap />
           {/* <HowToBuy /> */}
           {/* <TrustedBy/> */}
           {/* <FAQ/> */}

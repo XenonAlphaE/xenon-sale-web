@@ -4,30 +4,6 @@ import styles from './tokenomics.module.css'
 import DonutChart from "./DonutChart";
 
 
-  
-function InfoCard({ cardClass, title, contents }) {
-    return (
-        <div className={cardClass}>
-          <div className={styles.cardTitle}>{title}</div>
-          
-          {contents.map((content, i) => (
-            <div className={styles.cardContent}>{content} </div>
-          ))}
-        </div>
-  
-    );
-}
-  
-function BuyNowButton( {eventOnClick, buyNow, desc}) {
-    return(
-        <div className={styles.buyNowWrapper}>
-            <button className={styles.buyNowBtn} onClick={eventOnClick}>BUY NOW</button>
-        </div>
-    )
-}
-
-
-
 export const Tokenomics = () => {
 
   const sectionText = useI18nSection('tokenomics')
