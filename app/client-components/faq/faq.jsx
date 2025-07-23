@@ -88,7 +88,7 @@ export const FAQS = () => {
   }
 
   return (
-    <section id="FAQS" className={styles.container}>
+    <section id="faqs" className={styles.container}>
 
         <div className={styles.mainContent}>
           <h1 className={styles.title}>Frequently Asked Questions</h1>

@@ -103,7 +103,7 @@ export const Roadmap = () => {
   }
 
   return (
-    <section id="Roadmap" className={styles.container}>
+    <section id="roadmap" className={styles.container}>
 
         <div className={styles.mainContent}>
           <h1 className={styles.title}>ROADMAP</h1>

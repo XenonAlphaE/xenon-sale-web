@@ -96,7 +96,7 @@ export const Navbar = ({ isStakingPage = false }) => {
 
         <div className={styles.appnavMenu}>
           <a href={isStakingPage ? `/${currentLanguage}/#tokenomics` : "#tokenomics"}><img className={styles.menuIcon} src='/img/btcswift/tokenomics.svg'/> {sectionText?.tokenomics}</a>
-          <a href={isStakingPage ? `/${currentLanguage}/#tokenomics` : "#tokenomics"}><img className={styles.menuIcon} src='/img/btcswift/roadmap.svg'/>  { sectionText?.roadmap}</a>
+          <a href={isStakingPage ? `/${currentLanguage}/#roadmap` : "#roadmap"}><img className={styles.menuIcon} src='/img/btcswift/roadmap.svg'/>  { sectionText?.roadmap}</a>
           <a href={isStakingPage ? `/${currentLanguage}/#faqs` : "#faqs"} ><img className={styles.menuIcon} src='/img/btcswift/faq.svg'/>  {sectionText?.faq}</a>
           <a href={isStakingPage ? `/${currentLanguage}/#about` : "#about"}><img className={styles.menuIcon} src='/img/btcswift/whitepaper.svg'/>  {sectionText?.whitePaper}</a>          {/* <a href={`/${currentLanguage}`}>{sectionText?.home}</a> */}
           <a href={isStakingPage ? `/${currentLanguage}/#howtobuy` : "#howtobuy"}><img className={styles.menuIcon} src='/img/btcswift/security.svg'/>  {sectionText?.howtobuy}</a>
@@ -140,7 +140,7 @@ export const Navbar = ({ isStakingPage = false }) => {
       {isMobile && <div className={`${styles.appnavMobile} ${isMenuOpen ? styles.mobileActive : ''}`}>
       {/* <a onClick={toggleMenu} href={`/${currentLanguage}`}>{sectionText?.home}</a> */}
         <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#tokenomics` : "#tokenomics"}><img className={styles.menuIcon} src='/img/btcswift/tokenomics.svg'/> {sectionText?.tokenomics}</a>
-        <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#tokenomics` : "#tokenomics"}><img className={styles.menuIcon} src='/img/btcswift/roadmap.svg'/>  { sectionText?.roadmap}</a>
+        <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#roadmap` : "#roadmap"}><img className={styles.menuIcon} src='/img/btcswift/roadmap.svg'/>  { sectionText?.roadmap}</a>
         <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#faqs` : "#faqs"} ><img className={styles.menuIcon} src='/img/btcswift/faq.svg'/>  {sectionText?.faq}</a>
         <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#about` : "#about"}><img className={styles.menuIcon} src='/img/btcswift/whitepaper.svg'/>  {sectionText?.whitePaper}</a>          {/* <a href={`/${currentLanguage}`}>{sectionText?.home}</a> */}
         <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#howtobuy` : "#howtobuy"}><img className={styles.menuIcon} src='/img/btcswift/security.svg'/>  {sectionText?.howtobuy}</a>
