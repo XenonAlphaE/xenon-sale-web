@@ -1,6 +1,7 @@
 import React from "react";
 import { useLanguage, useI18nSection } from "../../../redux/utils/languageUtils";
 import styles from './tokenomics.module.css'
+import DonutChart from "./DonutChart";
 
 
   
@@ -45,38 +46,74 @@ export const Tokenomics = () => {
   };
 
   return (
-    <section id="tokenomics" className={styles.tokenomicsContainer}>
+    <section id="tokenomics" className={styles.container}>
 
         <div className={styles.mainContent}>
+          <h1 className={styles.title}>Tokenomics</h1>
+          <p className={styles.desc}>Transparent and sustainable tokenomics designed for long-term growth and community benefit</p>
+          
+
+          <div className={styles.infoContainer}>
             <div className={styles.leftPart}>
-              <div className={styles.titleWrapper}>
-                  <h1 className={styles.title}>sTokenemoics</h1>
+              <div className={styles.chartWrapper}>
+                  <DonutChart/>
               </div>
 
-            </div>
-            <div className={styles.midPart}>
-              <img src="https://token6900.com/assets/images/png/token-img-1.png" />
-              <p  className={styles.desc}>TOKEN 6900 has 1 more token than SPX6900. Cos we are 1x better...</p>
-              <p className={styles.desc}>Total supply 930,993,091 hard cap $5M</p>
-              < p className={styles.desc}>Dev keeps 6900 tokens locked for 5 years</p>
-              <BuyNowButton/>
-              <img src="https://token6900.com/assets/images/png/token-img-4.png" alt="token-img"></img>
-            </div>
-            <div className={styles.rightPart}>
-              <video autoplay="" muted="false" playsinline="" loop={true} width="100%">
-                <source _ngcontent-ng-c1442129416="" src="/img/token6900/dud.webm" type="video/webm"></source>
-              </video>
-            </div>
-             <div className={styles.leftPart}>
 
             </div>
-            <InfoCard cardClass={`${styles.item1}`} title={'0.0007%'} contents={['developer moon bag (locked for 5 years)']} />
-            <InfoCard cardClass={`${styles.item2}`} title={'15%'} contents={['vibe coding development']} />
-            <InfoCard cardClass={`${styles.item3}`} title={'40%'} contents={['token 6900 marketing']} />
-            <InfoCard cardClass={`${styles.item4}`} title={'5%'} contents={['Staking Rewards']} />
-            <InfoCard cardClass={`${styles.item5}`} title={'10%'} contents={['Vibe Liquidity']} />
-            <InfoCard cardClass={`${styles.item6}`} title={'24.9993%'} contents={['does anyone have a dolphin']} />
-            <InfoCard cardClass={`${styles.item7}`} title={'5%'} contents={['rewards/airdrops/burn']} />
+            <div className={styles.rightPart}>
+
+
+                <div className={styles.cartList}> 
+                  <div className={styles.card}>
+                      <div className={styles.cardLeft}>
+                          <div className={styles.cardBullet}></div>
+                          <span > Presale</span>
+                      </div>
+                      <div className={styles.cardRight}>
+                        <div style={{color:'#F7931A'}}>30%</div>
+                        <div style={{color:'rgb(70, 91, 59) '}} >13.5M</div>
+                      </div>
+
+                  </div>
+                  <div className={styles.card}>
+                      <div className={styles.cardLeft}>
+                          <div className={styles.cardBullet} style={{background:'rgb(255, 107, 107)'}}></div>
+                          <span > Mining Rewards</span>
+                      </div>
+                      <div className={styles.cardRight}>
+                        <div style={{color:'rgb(255, 107, 107)', fontWeight:'bold'}}>50%</div>
+                        <div style={{color:'rgb(70, 91, 59) '}} >22.5M</div>
+                      </div>
+
+                  </div>
+                  <div className={styles.card}>
+                      <div className={styles.cardLeft}>
+                          <div className={styles.cardBullet} style={{background:'#14F195'}}></div>
+                          <span > Liquidity Pool</span>
+                      </div>
+                      <div className={styles.cardRight}>
+                        <div style={{color:'#14F195', fontWeight:'bold'}}>15%</div>
+                        <div style={{color:'rgb(70, 91, 59) '}} >6.75M</div>
+                      </div>
+
+                  </div>
+                  <div className={styles.card}>
+                      <div className={styles.cardLeft}>
+                          <div className={styles.cardBullet} style={{background:'#E91E63'}}></div>
+                          <span > Team & Reserves</span>
+                      </div>
+                      <div className={styles.cardRight}>
+                        <div style={{color:'#E91E63', fontWeight:'bold'}}>5%</div>
+                        <div style={{color:'rgb(70, 91, 59) '}} >2.25M</div>
+                      </div>
+
+                  </div>
+                </div>
+
+
+            </div>
+          </div>
         </div>
 
 

@@ -1,0 +1,19 @@
+.donut-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.donut-value {
+  fill: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.donut-label {
+  fill: #ff66a5;
+  font-size: 12px;
+}
