@@ -24,7 +24,7 @@ export const Roadmap = () => {
 
   const cardItems = [
       {id: generateRandomId(), circleColor:'rgb(247, 147, 26)', img:'/img/btcswift/roadmap1.svg', title:'Programmable Proof-Of-Yield Rewards', subTitle:'Q3 – Q4 2025', contents:[
-        "Start Bitcoin Swift presale"
+        "Start BTC Swift presale"
         ,"Distribute mining rewards at the end of each presale stage"
         ,"Team scaling and onboarding of strategic advisors"
         ,"Global community growth and engagement efforts"
@@ -107,7 +107,7 @@ export const Roadmap = () => {
 
         <div className={styles.mainContent}>
           <h1 className={styles.title}>ROADMAP</h1>
-          <p className={styles.desc}>Bitcoin Swift Roadmap: Strategic Timeline for Next-Generation Blockchain Development</p>
+          <p className={styles.desc}>BTC Swift Roadmap: Strategic Timeline for Next-Generation Blockchain Development</p>
           
 
           <div className={styles.cardList}>

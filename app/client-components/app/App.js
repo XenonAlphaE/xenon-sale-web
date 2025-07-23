@@ -11,7 +11,7 @@ import {HowToBuy} from "../howtobuy/howtobuy"
 import { Tokenomics } from "../tokenomics/tokenomics";
 import { Roadmap } from "../roadmap/roadmap";
 import { Footer } from "../footer/footer";
-import { FAQ } from "../faq/faq";
+import { FAQS } from "../faq/faq";
 // import { useParams } from "react-router-dom";
 import { useSetLanguage } from "../../../redux/utils/languageUtils";
 import About from "../about/about";
@@ -43,7 +43,7 @@ const App = () => {
           <Roadmap />
           {/* <HowToBuy /> */}
           {/* <TrustedBy/> */}
-          {/* <FAQ/> */}
+          <FAQS/>
           {/* <Footer />  */}
           <AppSpinner/>
 
