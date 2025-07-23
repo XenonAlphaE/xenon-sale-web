@@ -71,7 +71,7 @@ export const Tokenomics = () => {
                           <span > Presale</span>
                       </div>
                       <div className={styles.cardRight}>
-                        <div style={{color:'#F7931A'}}>30%</div>
+                        <div style={{color:'#F7931A', fontWeight:'bold'}}>30%</div>
                         <div style={{color:'rgb(70, 91, 59) '}} >13.5M</div>
                       </div>
 
