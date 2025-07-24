@@ -16,7 +16,7 @@ export const Footer = () => {
           <img className={styles.textLogo}  src="/img/btcswift/bitcoin-swift-text-logo.webp"/>
         </a>
         <p className={styles.copyright}>The future of Bitcoin with fast, low-cost transactions and innovative decentralized applications.</p>
-        <p className={styles.copyright}>© 2025 Bitcoin Swift. All rights reserved.</p>
+        <p className={styles.copyright}>© 2025 BTC Swift. All rights reserved.</p>
         <p className={styles.copyright}>Disclaimer: Not financial advice or a financial service. Always do your own research.</p>
       </div>
     </section>
