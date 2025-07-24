@@ -9,7 +9,6 @@ import { generateRandomId } from '../services/utils';
 const About =() => {
   const isMobile = useIsMobile()
   const sectionText = useI18nSection('about')
-  console.log(JSON.stringify (sectionText))
   const aboutContents = sectionText?.contents
 
   const scrollToBuySection = () => {
