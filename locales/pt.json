@@ -44,5 +44,171 @@
   "header": {
     "headline": "BTC Swift (BTC3) Blockchain com IA e Mineração Proof of Yield",
     "description": "BTC Swift: Blockchain com IA para DeFi Segura, Escalável e Privada"
+  },
+  "about": {
+    "title": "Tecnologia Blockchain Revolucionária",
+    "desc": "Experimente a próxima geração da inovação em blockchain com recursos avançados projetados para o futuro",
+    "buyBtn": "Compre mais BTC3 agora",
+    "cards": [
+      {
+        "title": "Recompensas Programáveis de Prova de Rendimento",
+        "content": "Recompensas dinâmicas que se adaptam com base na atividade da rede e impacto ambiental"
+      },
+      {
+        "title": "Contratos Inteligentes com IA",
+        "content": "Contratos de próxima geração que evoluem e se otimizam automaticamente"
+      },
+      {
+        "title": "Identidade Descentralizada com Privacidade Prioritária",
+        "content": "Criptografia de conhecimento zero para conformidade sem exposição de dados"
+      },
+      {
+        "title": "Segurança Híbrida PoW + PoS",
+        "content": "Segurança máxima com sustentabilidade a longo prazo"
+      },
+      {
+        "title": "Pronto para Conformidade Global",
+        "content": "Desenvolvido para ambientes regulatórios em todo o mundo"
+      },
+      {
+        "title": "Stablecoin Atrelada ao USD",
+        "content": "Moeda digital estável ancorada ao valor do USD"
+      }
+    ]
+  },
+  "tokenomics": {
+    "title": "Tokenomics",
+    "desc": "Tokenomics transparente e sustentável projetada para crescimento a longo prazo e benefício da comunidade",
+    "item1": "Pré-venda",
+    "item2": "Recompensas de Mineração",
+    "item3": "Pool de Liquidez",
+    "item4": "Equipe & Reservas",
+    "total": "Oferta Total"
+  },
+  "roadmap": {
+    "title": "ROADMAP",
+    "desc": "Roteiro BTC Swift: Cronograma Estratégico para Desenvolvimento de Blockchain de Próxima Geração",
+    "cards": [
+      {
+        "title": "Recompensas Programáveis de Prova de Rendimento",
+        "subTitle": "Q3 – Q4 2025",
+        "contents": [
+          "Iniciar pré-venda do BTC Swift",
+          "Distribuir recompensas de mineração ao final de cada etapa da pré-venda",
+          "Escalonamento da equipe e integração de consultores estratégicos",
+          "Esforços para crescimento e engajamento da comunidade global",
+          "Garantir acordos com plataformas de exchange",
+          "Concluir pré-venda e iniciar lançamento na rede Solana"
+        ]
+      },
+      {
+        "title": "Motor de Contratos Inteligentes com IA",
+        "subTitle": "Q1 2026",
+        "contents": [
+          "Contratos agentes IA compatíveis com WASM para automação modular on-chain",
+          "Camada de agregação oracular de IA puxando dados estruturados e não estruturados (Web2 + Web3)",
+          "Implantação de agentes de aprendizado por reforço para comportamento adaptativo dos contratos",
+          "Sandbox on-chain para treinamento de IA (Alpha) para modelos de aprendizado supervisionado/não supervisionado",
+          "Painel de monitoramento em tempo real dos modelos de IA com ferramentas de transparência e auditoria",
+          "Integração com redes descentralizadas de computação (ex.: Akash, Gensyn) para inferência escalável"
+        ]
+      },
+      {
+        "title": "Infraestrutura de Privacidade",
+        "subTitle": "Q1 – Q2 2026",
+        "contents": [
+          "Lançamento do livro razão protegido baseado em zk-SNARK suportando transações e saldos privados",
+          "Suporte a endereços furtivos e transferências confidenciais de ativos",
+          "Integração do registro de Identidade Descentralizada (DID) com compatibilidade cross-chain",
+          "Módulo zkLogin para autenticação Web3 privada vinculada a credenciais verificáveis",
+          "Trilhas de auditoria de conhecimento zero para conformidade com divulgação seletiva",
+          "Módulo DeFi preservador de privacidade (Beta) para empréstimos, swaps e cofres",
+          "Lançamento do SDK de Privacidade para permitir integração de recursos protegidos por desenvolvedores terceiros"
+        ]
+      },
+      {
+        "title": "Implementação Completa da Governança",
+        "subTitle": "Q3 2026",
+        "contents": [
+          "Sistema DAO de Votação Quadrática com resistência anti-Sybil e ponderação por stake",
+          "Motor de avaliação de risco com IA analisando riscos protocolar, econômico e comportamental",
+          "Framework de ativação do Conselho de Emergência, acionado por heurísticas de risco on-chain",
+          "Modelo de Previsão de Propostas DAO: agente IA para simular resultados de propostas antes da votação",
+          "Módulos de políticas curados pela comunidade (ex.: limites do tesouro, taxas de inflação)",
+          "Simulador de governança on-chain para modelar decisões antes da implementação",
+          "Lançamento de funções de governança multi-nível (ex.: delegados, administradores, guardiões)"
+        ]
+      },
+      {
+        "title": "Conformidade Institucional",
+        "subTitle": "Q4 2026",
+        "contents": [
+          "Interface regulatória baseada em MPC que permite auditorias sem expor dados privados",
+          "Sandbox de conformidade em tempo real para testar contratos inteligentes regulados",
+          "Framework DID interoperável com eIDAS da UE, NIST dos EUA e padrões APAC",
+          "Lançamento do consenso híbrido PoW–PoS com rotação dinâmica de validadores",
+          "Lançamento gênese da blockchain BTC3, adaptada para finanças corporativas e liquidação",
+          "Ponte trustless 1:1 de Solana para BTC3 com auditabilidade e penalidades para relayers ruins",
+          "Lançamento da Stablecoin BTC3 atrelada ao USD (BTC3-USD) para suportar pagamentos e remessas em tempo real",
+          "Integração com gateways de pagamento (ex.: terminais POS, cartões cripto) para adoção no varejo",
+          "Programa de mineração de liquidez para ativos estáveis BTC3 para acelerar a velocidade do ecossistema",
+          "Programa de onboarding de nós institucionais para bancos, fintechs e auditores"
+        ]
+      }
+    ]
+  },
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "desc": "Obtenha respostas para as perguntas mais comuns sobre o BTC Swift",
+    "buyBtn": "Iniciar sua compra de BTC3",
+    "cards": [
+      {
+        "title": "O que é o BTC Swift (BTC3)?",
+        "contents": [
+          "O BTC Swift é uma blockchain de próxima geração que combina a segurança do Bitcoin com transações rápidas e de baixo custo, além de aplicativos descentralizados inovadores. Ele apresenta recompensas programáveis de Proof-of-Yield, contratos inteligentes alimentados por IA e identidade descentralizada com foco em privacidade."
+        ]
+      },
+      {
+        "title": "Como posso participar da pré-venda?",
+        "contents": [
+          "Participar é simples: 1) Registre-se com seu e-mail em nossa plataforma segura, 2) Crie um pedido especificando a quantidade de tokens BTC3 que você deseja, 3) Envie criptomoeda para o endereço da carteira gerado, 4) Os tokens serão creditados em sua conta e entregues no lançamento."
+        ]
+      },
+      {
+        "title": "O que torna o BTC Swift diferente de outras criptomoedas?",
+        "contents": [
+          "O BTC Swift oferece recursos exclusivos, incluindo recompensas programáveis de Proof-of-Yield que se adaptam com base na atividade da rede, contratos inteligentes alimentados por IA que evoluem automaticamente, identidade descentralizada com foco em privacidade e criptografia de conhecimento zero, e segurança híbrida PoW + PoS para máxima proteção."
+        ]
+      },
+      {
+        "title": "Qual é a estrutura de tokenomics?",
+        "contents": [
+          "O fornecimento total é de 45M de tokens distribuídos da seguinte forma: 30% Pré-venda (13,5M), 50% Recompensas de Mineração (22,5M), 15% Pool de Liquidez (6,75M) e 5% Equipe & Reservas (2,25M). Essa estrutura garante sustentabilidade a longo prazo e benefício para a comunidade."
+        ]
+      },
+      {
+        "title": "O BTC Swift foi auditado?",
+        "contents": [
+          "Sim, o BTC Swift foi auditado pela SpyWolf e SolidProof, duas das principais empresas de segurança em blockchain. Essas auditorias garantem a segurança e a confiabilidade de nossos contratos inteligentes e da estrutura de tokenomics."
+        ]
+      },
+      {
+        "title": "Quem está por trás do BTC Swift?",
+        "contents": [
+          "O BTC Swift é desenvolvido por uma equipe distribuída globalmente de especialistas em blockchain, IA e criptografia. Assim como Satoshi, a equipe principal permanece anônima para preservar a descentralização e focar na tecnologia. Para transparência e segurança, membros selecionados da equipe completaram a verificação KYC com parceiros confiáveis, garantindo responsabilidade sem comprometer os valores do projeto."
+        ]
+      },
+      {
+        "title": "O que é a stablecoin BTC3 atrelada ao USD (BTC3E)?",
+        "contents": [
+          "Como parte do nosso ecossistema, lançaremos uma stablecoin BTC3 equivalente a 1 USD para suportar pagamentos instantâneos e fornecer estabilidade para usuários que precisam de valor previsível para transações e comércio."
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "text1": "O futuro do Bitcoin com transações rápidas e de baixo custo e aplicativos descentralizados inovadores.",
+    "text2": "2025 BTC Swift. Todos os direitos reservados.",
+    "text3": "Aviso Legal: Não é aconselhamento financeiro nem um serviço financeiro. Sempre faça sua própria pesquisa."
   }
 }

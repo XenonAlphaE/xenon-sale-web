@@ -44,5 +44,171 @@
   "header": {
     "headline": "BTC Swift (BTC3) Blockchain Bertenaga AI dengan Mining Proof of Yield",
     "description": "BTC Swift: Blockchain Bertenaga AI untuk DeFi yang Aman, Skalabel, dan Privat"
+  },
+  "about": {
+    "title": "Teknologi Blockchain Revolusioner",
+    "desc": "Rasakan generasi berikutnya dari inovasi blockchain dengan fitur mutakhir yang dirancang untuk masa depan",
+    "buyBtn": "Beli Lebih Banyak BTC3 sekarang",
+    "cards": [
+      {
+        "title": "Hadiah Bukti-Hasil yang Dapat Diprogram",
+        "content": "Hadiah dinamis yang beradaptasi berdasarkan aktivitas jaringan dan dampak lingkungan"
+      },
+      {
+        "title": "Kontrak Pintar Berbasis AI",
+        "content": "Kontrak generasi berikutnya yang berkembang dan mengoptimalkan secara otomatis"
+      },
+      {
+        "title": "Identitas Terdesentralisasi dengan Prioritas Privasi",
+        "content": "Kriptografi zero-knowledge untuk kepatuhan tanpa eksposur data"
+      },
+      {
+        "title": "Keamanan Hibrida PoW + PoS",
+        "content": "Keamanan maksimal dengan keberlanjutan jangka panjang"
+      },
+      {
+        "title": "Siap Kepatuhan Global",
+        "content": "Dibangun untuk lingkungan regulasi di seluruh dunia"
+      },
+      {
+        "title": "Stablecoin yang Terikat pada USD",
+        "content": "Mata uang digital stabil yang berlabuh pada nilai USD"
+      }
+    ]
+  },
+  "tokenomics": {
+    "title": "Tokenomik",
+    "desc": "Tokenomik yang transparan dan berkelanjutan yang dirancang untuk pertumbuhan jangka panjang dan manfaat komunitas",
+    "item1": "Presale",
+    "item2": "Hadiah Penambangan",
+    "item3": "Kolam Likuiditas",
+    "item4": "Tim & Cadangan",
+    "total": "Total Pasokan"
+  },
+  "roadmap": {
+    "title": "PETA JALAN",
+    "desc": "Peta Jalan BTC Swift: Garis Waktu Strategis untuk Pengembangan Blockchain Generasi Berikutnya",
+    "cards": [
+      {
+        "title": "Hadiah Bukti-Hasil yang Dapat Diprogram",
+        "subTitle": "Q3 – Q4 2025",
+        "contents": [
+          "Memulai presale BTC Swift",
+          "Mendistribusikan hadiah penambangan pada akhir setiap tahap presale",
+          "Skala tim dan perekrutan penasihat strategis",
+          "Pertumbuhan dan keterlibatan komunitas global",
+          "Mengamankan kesepakatan dengan platform pertukaran",
+          "Menyelesaikan presale dan memulai peluncuran di jaringan Solana"
+        ]
+      },
+      {
+        "title": "Mesin Kontrak Pintar AI",
+        "subTitle": "Q1 2026",
+        "contents": [
+          "Kontrak agen AI kompatibel WASM untuk otomasi modular on-chain",
+          "Lapisan agregasi oracle AI yang menarik data terstruktur dan tidak terstruktur (Web2 + Web3)",
+          "Penerapan agen pembelajaran penguatan untuk perilaku kontrak adaptif",
+          "Sandbox pelatihan AI on-chain (Alpha) untuk model pembelajaran terawasi/tidak terawasi",
+          "Dasbor pemantauan model AI waktu nyata dengan transparansi dan alat audit",
+          "Integrasi dengan jaringan komputasi terdesentralisasi (misalnya, Akash, Gensyn) untuk inferensi yang dapat diskalakan"
+        ]
+      },
+      {
+        "title": "Infrastruktur Privasi",
+        "subTitle": "Q1 – Q2 2026",
+        "contents": [
+          "Peluncuran buku besar terlindungi berbasis zk-SNARK yang mendukung transaksi dan saldo pribadi",
+          "Dukungan untuk alamat siluman dan transfer aset rahasia",
+          "Integrasi registri Identitas Terdesentralisasi (DID) dengan kompatibilitas lintas-chain",
+          "Modul zkLogin untuk otentikasi Web3 pribadi yang terkait dengan kredensial terverifikasi",
+          "Jejak audit zero-knowledge untuk kepatuhan dengan pengungkapan selektif",
+          "Modul DeFi pelindung privasi (Beta) untuk pinjaman, pertukaran, dan brankas",
+          "Peluncuran SDK Privasi untuk memungkinkan pengembang pihak ketiga mengintegrasikan fitur terlindungi"
+        ]
+      },
+      {
+        "title": "Peluncuran Tata Kelola Penuh",
+        "subTitle": "Q3 2026",
+        "contents": [
+          "Sistem DAO Voting Kuadratik dengan resistensi anti-Sybil dan pembobotan taruhan",
+          "Mesin evaluasi risiko bertenaga AI yang menganalisis risiko protokol, ekonomi, dan perilaku",
+          "Kerangka kerja aktivasi Dewan Darurat yang dipicu oleh heuristik risiko on-chain",
+          "Model Prediksi Proposal DAO: Agen AI untuk mensimulasikan hasil proposal sebelum pemungutan suara",
+          "Modul kebijakan yang dikurasi komunitas (misalnya, batas treasury, tingkat inflasi)",
+          "Simulator tata kelola on-chain untuk memodelkan keputusan sebelum diberlakukan",
+          "Peluncuran peran tata kelola bertingkat (misalnya, delegasi, pengelola, penjaga)"
+        ]
+      },
+      {
+        "title": "Kepatuhan Institusional",
+        "subTitle": "Q4 2026",
+        "contents": [
+          "Antarmuka regulasi berbasis MPC yang memungkinkan audit tanpa mengekspos data pribadi",
+          "Sandbox kepatuhan waktu nyata untuk menguji kontrak pintar yang diatur",
+          "Kerangka kerja DID interoperable dengan standar EU eIDAS, US NIST, dan APAC",
+          "Peluncuran konsensus hibrida PoW–PoS dengan rotasi validator dinamis",
+          "Peluncuran genesis blockchain BTC3, dirancang untuk keuangan dan penyelesaian tingkat perusahaan",
+          "Jembatan trustless 1:1 dari Solana ke BTC3 dengan auditabilitas dan penalti untuk relayer buruk",
+          "Rilis Stablecoin BTC3 yang terikat pada USD (BTC3-USD) untuk mendukung pembayaran dan remitansi waktu nyata",
+          "Integrasi dengan gateway pembayaran (misalnya, terminal POS, kartu kripto) untuk adopsi ritel",
+          "Program penambangan likuiditas untuk aset stabil BTC3 guna mempercepat ekosistem",
+          "Program onboarding node institusional untuk bank, fintech, dan auditor"
+        ]
+      }
+    ]
+  },
+  "faq": {
+    "title": "Pertanyaan yang Sering Diajukan",
+    "desc": "Dapatkan jawaban untuk pertanyaan paling umum tentang BTC Swift",
+    "buyBtn": "Mulai Pembelian BTC3",
+    "cards": [
+      {
+        "title": "Apa itu BTC Swift (BTC3)?",
+        "contents": [
+          "BTC Swift adalah blockchain generasi berikutnya yang menggabungkan keamanan Bitcoin dengan transaksi cepat dan biaya rendah serta aplikasi terdesentralisasi inovatif. Fitur-fiturnya meliputi hadiah Proof-of-Yield yang dapat diprogram, kontrak pintar bertenaga AI, dan identitas terdesentralisasi dengan prioritas privasi."
+        ]
+      },
+      {
+        "title": "Bagaimana cara saya berpartisipasi dalam presale?",
+        "contents": [
+          "Berpartisipasi sangat mudah: 1) Daftar dengan email Anda di platform kami yang aman, 2) Buat pesanan dengan menentukan jumlah token BTC3 yang Anda inginkan, 3) Kirim crypto ke alamat dompet yang dihasilkan, 4) Token akan dikreditkan ke akun Anda dan dikirim saat peluncuran."
+        ]
+      },
+      {
+        "title": "Apa yang membuat BTC Swift berbeda dari cryptocurrency lain?",
+        "contents": [
+          "BTC Swift menawarkan fitur unik termasuk hadiah Proof-of-Yield yang dapat diprogram dan beradaptasi berdasarkan aktivitas jaringan, kontrak pintar bertenaga AI yang berkembang secara otomatis, identitas terdesentralisasi dengan prioritas privasi menggunakan kriptografi zero-knowledge, serta keamanan hybrid PoW + PoS untuk perlindungan maksimal."
+        ]
+      },
+      {
+        "title": "Bagaimana struktur tokenomics-nya?",
+        "contents": [
+          "Total pasokan adalah 45 juta token yang didistribusikan sebagai berikut: 30% Presale (13,5 juta), 50% Hadiah Penambangan (22,5 juta), 15% Liquidity Pool (6,75 juta), dan 5% Tim & Cadangan (2,25 juta). Struktur ini menjamin keberlanjutan jangka panjang dan manfaat untuk komunitas."
+        ]
+      },
+      {
+        "title": "Apakah BTC Swift sudah diaudit?",
+        "contents": [
+          "Ya, BTC Swift telah diaudit oleh SpyWolf dan SolidProof, dua perusahaan keamanan blockchain terkemuka. Audit ini memastikan keamanan dan keandalan kontrak pintar serta struktur tokenomics kami."
+        ]
+      },
+      {
+        "title": "Siapa yang berada di balik BTC Swift?",
+        "contents": [
+          "BTC Swift dibangun oleh tim ahli blockchain, AI, dan kriptografi yang tersebar secara global. Seperti Satoshi, tim inti tetap anonim untuk menjaga desentralisasi dan fokus pada teknologi. Untuk transparansi dan keamanan, beberapa anggota tim telah menyelesaikan verifikasi KYC dengan mitra terpercaya, memastikan akuntabilitas tanpa mengorbankan nilai proyek."
+        ]
+      },
+      {
+        "title": "Apa itu stablecoin BTC3 yang dipatok USD (BTC3E)?",
+        "contents": [
+          "Sebagai bagian dari ekosistem kami, kami akan meluncurkan stablecoin BTC3 yang setara dengan 1 USD untuk mendukung pembayaran instan dan memberikan stabilitas bagi pengguna yang membutuhkan nilai yang dapat diprediksi untuk transaksi dan perdagangan."
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "text1": "Masa depan Bitcoin dengan transaksi cepat, biaya rendah, dan aplikasi terdesentralisasi inovatif.",
+    "text2": "2025 BTC Swift. Hak cipta dilindungi.",
+    "text3": "Penafian: Bukan nasihat keuangan atau layanan keuangan. Selalu lakukan riset Anda sendiri."
   }
 }

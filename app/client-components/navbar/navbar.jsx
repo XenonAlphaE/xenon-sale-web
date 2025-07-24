@@ -99,7 +99,7 @@ export const Navbar = ({ isStakingPage = false }) => {
           <a href={isStakingPage ? `/${currentLanguage}/#roadmap` : "#roadmap"}><img className={styles.menuIcon} src='/img/btcswift/roadmap.svg'/>  { sectionText?.roadmap}</a>
           <a href={isStakingPage ? `/${currentLanguage}/#faqs` : "#faqs"} ><img className={styles.menuIcon} src='/img/btcswift/faq.svg'/>  {sectionText?.faq}</a>
           <a href={isStakingPage ? `/${currentLanguage}/#about` : "#about"}><img className={styles.menuIcon} src='/img/btcswift/whitepaper.svg'/>  {sectionText?.whitePaper}</a>          {/* <a href={`/${currentLanguage}`}>{sectionText?.home}</a> */}
-          <a href={isStakingPage ? `/${currentLanguage}/#howtobuy` : "#howtobuy"}><img className={styles.menuIcon} src='/img/btcswift/security.svg'/>  {sectionText?.howtobuy}</a>
+          {/* <a href={isStakingPage ? `/${currentLanguage}/#howtobuy` : "#howtobuy"}><img className={styles.menuIcon} src='/img/btcswift/security.svg'/>  {sectionText?.howtobuy}</a> */}
         </div>
 
         <div className={styles.loginContainer} >
@@ -143,7 +143,7 @@ export const Navbar = ({ isStakingPage = false }) => {
         <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#roadmap` : "#roadmap"}><img className={styles.menuIcon} src='/img/btcswift/roadmap.svg'/>  { sectionText?.roadmap}</a>
         <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#faqs` : "#faqs"} ><img className={styles.menuIcon} src='/img/btcswift/faq.svg'/>  {sectionText?.faq}</a>
         <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#about` : "#about"}><img className={styles.menuIcon} src='/img/btcswift/whitepaper.svg'/>  {sectionText?.whitePaper}</a>          {/* <a href={`/${currentLanguage}`}>{sectionText?.home}</a> */}
-        <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#howtobuy` : "#howtobuy"}><img className={styles.menuIcon} src='/img/btcswift/security.svg'/>  {sectionText?.howtobuy}</a>
+        {/* <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#howtobuy` : "#howtobuy"}><img className={styles.menuIcon} src='/img/btcswift/security.svg'/>  {sectionText?.howtobuy}</a> */}
 
 
         <div className={styles.mobileSocialContainer}>

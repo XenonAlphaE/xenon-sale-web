@@ -44,5 +44,171 @@
   "header": {
     "headline": "BTC Swift (BTC3) KI-gesteuerte Blockchain mit Proof of Yield Mining",
     "description": "BTC Swift: KI-gesteuerte Blockchain für sichere, skalierbare und private DeFi"
+  },
+  "about": {
+    "title": "Revolutionäre Blockchain-Technologie",
+    "desc": "Erleben Sie die nächste Generation der Blockchain-Innovation mit modernsten Funktionen, die für die Zukunft entwickelt wurden",
+    "buyBtn": "Jetzt mehr BTC3 kaufen",
+    "cards": [
+      {
+        "title": "Programmierbare Proof-Of-Yield-Belohnungen",
+        "content": "Dynamische Belohnungen, die sich basierend auf der Netzwerkaktivität und der Umweltwirkung anpassen"
+      },
+      {
+        "title": "KI-gestützte Smart Contracts",
+        "content": "Next-Gen-Verträge, die sich automatisch weiterentwickeln und optimieren"
+      },
+      {
+        "title": "Datenschutzorientierte dezentrale Identität",
+        "content": "Zero-Knowledge-Kryptographie für Compliance ohne Datenoffenlegung"
+      },
+      {
+        "title": "Hybride PoW + PoS-Sicherheit",
+        "content": "Maximale Sicherheit mit langfristiger Nachhaltigkeit"
+      },
+      {
+        "title": "Weltweite Compliance bereit",
+        "content": "Entwickelt für regulatorische Umgebungen weltweit"
+      },
+      {
+        "title": "USD-gebundener Stablecoin",
+        "content": "Stabile digitale Währung, die an den USD-Wert gebunden ist"
+      }
+    ]
+  },
+  "tokenomics": {
+    "title": "Tokenomics",
+    "desc": "Transparente und nachhaltige Tokenomics, die auf langfristiges Wachstum und Gemeinschaftsnutzen ausgelegt sind",
+    "item1": "Vorverkauf",
+    "item2": "Mining-Belohnungen",
+    "item3": "Liquiditätspool",
+    "item4": "Team & Reserven",
+    "total": "Gesamtangebot"
+  },
+  "roadmap": {
+    "title": "ROADMAP",
+    "desc": "BTC Swift Roadmap: Strategischer Zeitplan für die Entwicklung der nächsten Blockchain-Generation",
+    "cards": [
+      {
+        "title": "Programmierbare Proof-Of-Yield-Belohnungen",
+        "subTitle": "Q3 – Q4 2025",
+        "contents": [
+          "Start des BTC Swift Vorverkaufs",
+          "Verteilung der Mining-Belohnungen am Ende jeder Vorverkaufsphase",
+          "Teamausbau und Einbindung strategischer Berater",
+          "Weltweites Wachstum und Engagement der Community",
+          "Abschluss von Vereinbarungen mit Börsenplattformen",
+          "Abschluss des Vorverkaufs und Start auf dem Solana-Netzwerk"
+        ]
+      },
+      {
+        "title": "KI Smart Contract Engine",
+        "subTitle": "Q1 2026",
+        "contents": [
+          "WASM-kompatible KI-Agentenverträge für modulare On-Chain-Automatisierung",
+          "KI-Orakel-Aggregationsschicht, die strukturierte und unstrukturierte Daten (Web2 + Web3) zieht",
+          "Bereitstellung von Reinforcement-Learning-Agenten für adaptives Vertragsverhalten",
+          "On-Chain KI-Trainings-Sandbox (Alpha) für überwachte/überwachte Lernmodelle",
+          "Echtzeit-Dashboard zur Überwachung von KI-Modellen mit Transparenz- und Prüfungswerkzeugen",
+          "Integration mit dezentralen Compute-Netzwerken (z.B. Akash, Gensyn) für skalierbare Inferenz"
+        ]
+      },
+      {
+        "title": "Datenschutz-Infrastruktur",
+        "subTitle": "Q1 – Q2 2026",
+        "contents": [
+          "Rollout eines zk-SNARK-basierten shielded Ledger, der private Transaktionen und Guthaben unterstützt",
+          "Unterstützung von Stealth-Adressen und vertraulichen Vermögensübertragungen",
+          "Integration eines dezentralen Identitätsregisters (DID) mit Cross-Chain-Kompatibilität",
+          "zkLogin-Modul für private Web3-Authentifizierung mit verifizierbaren Berechtigungen",
+          "Zero-Knowledge-Audit-Trails für Compliance mit selektiver Offenlegung",
+          "Datenschutzschützendes DeFi-Modul (Beta) für Kredite, Swaps und Tresore",
+          "Start des Privacy SDK, um Drittentwicklern shielded Features zu ermöglichen"
+        ]
+      },
+      {
+        "title": "Vollständiger Governance-Rollout",
+        "subTitle": "Q3 2026",
+        "contents": [
+          "Quadratic Voting DAO-System mit Anti-Sybil-Schutz und Stake-Gewichtung",
+          "KI-gestützte Risikoanalyse-Engine für Protokoll-, Wirtschafts- und Verhaltensrisiken",
+          "Aktivierungsrahmen für den Notfallrat, ausgelöst durch On-Chain-Risikohinweise",
+          "DAO-Vorschlagsprognosemodell: KI-Agent zur Simulation von Abstimmungsergebnissen vor der Abstimmung",
+          "Community-kuratierte Politikmodule (z.B. Treasury-Caps, Inflationsraten)",
+          "On-Chain-Governance-Simulator zur Modellierung von Entscheidungen vor der Umsetzung",
+          "Start von mehrstufigen Governance-Rollen (z.B. Delegierte, Verwalter, Wächter)"
+        ]
+      },
+      {
+        "title": "Institutionelle Compliance",
+        "subTitle": "Q4 2026",
+        "contents": [
+          "MPC-basierte Regulierungs-Schnittstelle für Audits ohne Offenlegung privater Daten",
+          "Echtzeit-Compliance-Sandbox zum Testen regulierter Smart Contracts",
+          "Interoperabler DID-Rahmen mit EU eIDAS-, US NIST- und APAC-Standards",
+          "Start eines hybriden PoW-PoS-Konsenses mit dynamischer Validatorrotation",
+          "Genesis-Start der BTC3-Blockchain, maßgeschneidert für Finanz- und Abwicklungsunternehmen",
+          "1:1 vertrauensloser Bridge von Solana zu BTC3 mit Prüfbarkeit und Strafen für Fehlverhalten",
+          "Veröffentlichung des BTC3 USD-gebundenen Stablecoins (BTC3-USD) zur Unterstützung von Echtzeitzahlungen und Überweisungen",
+          "Integration mit Zahlungs-Gateways (z.B. POS-Terminals, Krypto-Karten) für den Einzelhandel",
+          "Liquiditäts-Mining-Programm für BTC3-Stable-Assets zur Förderung der Ökosystem-Dynamik",
+          "Programm zur Institutionellen Node-Onboarding für Banken, Fintechs und Prüfer"
+        ]
+      }
+    ]
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "desc": "Erhalten Sie Antworten auf die häufigsten Fragen zu BTC Swift",
+    "buyBtn": "Starten Sie Ihren BTC3-Kauf",
+    "cards": [
+      {
+        "title": "Was ist BTC Swift (BTC3)?",
+        "contents": [
+          "BTC Swift ist eine Blockchain der nächsten Generation, die die Sicherheit von Bitcoin mit schnellen, kostengünstigen Transaktionen und innovativen dezentralen Anwendungen kombiniert. Sie bietet programmierbare Proof-of-Yield-Belohnungen, KI-gestützte Smart Contracts und eine datenschutzorientierte dezentrale Identität."
+        ]
+      },
+      {
+        "title": "Wie nehme ich am Vorverkauf teil?",
+        "contents": [
+          "Die Teilnahme ist einfach: 1) Registrieren Sie sich mit Ihrer E-Mail auf unserer sicheren Plattform, 2) Erstellen Sie eine Bestellung mit der gewünschten Menge an BTC3-Token, 3) Senden Sie Kryptowährungen an die generierte Wallet-Adresse, 4) Die Token werden Ihrem Konto gutgeschrieben und zum Start geliefert."
+        ]
+      },
+      {
+        "title": "Was unterscheidet BTC Swift von anderen Kryptowährungen?",
+        "contents": [
+          "BTC Swift bietet einzigartige Funktionen, darunter programmierbare Proof-of-Yield-Belohnungen, die sich basierend auf der Netzwerkauslastung anpassen, KI-gestützte Smart Contracts, die sich automatisch weiterentwickeln, eine datenschutzorientierte dezentrale Identität mit Zero-Knowledge-Kryptografie sowie hybride PoW + PoS-Sicherheit für maximalen Schutz."
+        ]
+      },
+      {
+        "title": "Wie ist die Tokenomics-Struktur?",
+        "contents": [
+          "Die Gesamtversorgung beträgt 45 Mio. Token, verteilt wie folgt: 30 % Vorverkauf (13,5 Mio.), 50 % Mining-Belohnungen (22,5 Mio.), 15 % Liquiditätspool (6,75 Mio.) und 5 % Team & Reserven (2,25 Mio.). Diese Struktur gewährleistet langfristige Nachhaltigkeit und Nutzen für die Community."
+        ]
+      },
+      {
+        "title": "Ist BTC Swift geprüft worden?",
+        "contents": [
+          "Ja, BTC Swift wurde sowohl von SpyWolf als auch von SolidProof geprüft, zwei führenden Firmen für Blockchain-Sicherheit. Diese Prüfungen stellen die Sicherheit und Zuverlässigkeit unserer Smart Contracts und der Tokenomics-Struktur sicher."
+        ]
+      },
+      {
+        "title": "Wer steht hinter BTC Swift?",
+        "contents": [
+          "BTC Swift wird von einem global verteilten Team aus Experten für Blockchain, KI und Kryptografie entwickelt. Wie Satoshi bleibt das Kernteam anonym, um Dezentralisierung zu bewahren und den Fokus auf die Technologie zu legen. Für Transparenz und Sicherheit haben ausgewählte Teammitglieder KYC-Verifizierungen mit vertrauenswürdigen Partnern abgeschlossen, um Verantwortlichkeit zu gewährleisten, ohne die Werte des Projekts zu kompromittieren."
+        ]
+      },
+      {
+        "title": "Was ist der an den USD gekoppelte BTC3-Stablecoin (BTC3E)?",
+        "contents": [
+          "Als Teil unseres Ökosystems werden wir einen BTC3-Stablecoin einführen, der 1 USD entspricht, um sofortige Zahlungen zu unterstützen und Nutzern Stabilität zu bieten, die für Transaktionen und Handel einen vorhersehbaren Wert benötigen."
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "text1": "Die Zukunft von Bitcoin mit schnellen, kostengünstigen Transaktionen und innovativen dezentralen Anwendungen.",
+    "text2": "2025 BTC Swift. Alle Rechte vorbehalten.",
+    "text3": "Haftungsausschluss: Keine Finanzberatung oder Finanzdienstleistung. Bitte recherchieren Sie stets selbst."
   }
 }

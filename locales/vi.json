@@ -44,5 +44,172 @@
   "header": {
     "headline": "BTC Swift (BTC3) Blockchain Dựa trên AI với Khai thác Proof of Yield",
     "description": "BTC Swift: Blockchain Dựa trên AI cho DeFi An toàn, Mở rộng và Riêng tư"
+  },
+  "about": {
+    "title": "Công Nghệ Blockchain Cách Mạng",
+    "desc": "Trải nghiệm thế hệ công nghệ blockchain tiếp theo với các tính năng tiên tiến được thiết kế cho tương lai.",
+    "buyBtn": "Mua BTC3 ngay bây giờ",
+    "cards": [
+      {
+        "title": "Phần Thưởng Proof-Of-Yield Có Thể Lập Trình",
+        "content": "Phần thưởng động thay đổi dựa trên hoạt động mạng và tác động môi trường."
+      },
+      {
+        "title": "Hợp Đồng Thông Minh Powered by AI",
+        "content": "Hợp đồng thế hệ tiếp theo phát triển và tối ưu hóa tự động."
+      },
+      {
+        "title": "Danh Tính Phi Tập Trung Tập Trung Vào Quyền Riêng Tư",
+        "content": "Mã hóa không kiến thức để tuân thủ mà không lộ dữ liệu."
+      },
+      {
+        "title": "Bảo Mật Hybrid PoW + PoS",
+        "content": "Bảo mật tối đa với tính bền vững dài hạn."
+      },
+      {
+        "title": "Sẵn Sàng Tuân Thủ Toàn Cầu",
+        "content": "Xây dựng để phù hợp với các môi trường quy định trên toàn thế giới."
+      },
+      {
+        "title": "Stablecoin Gắn Liền Với USD",
+        "content": "Tiền kỹ thuật số ổn định được neo vào giá trị USD."
+      }
+    ]
+  },
+  "tokenomics": {
+    "title": "Tokenomics",
+    "desc": "Tokenomics minh bạch và bền vững được thiết kế cho sự phát triển lâu dài và lợi ích cộng đồng.",
+    "item1": "Presale",
+    "item2": "Phần Thưởng Khai Thác",
+    "item3": "Pool Thanh Khoản",
+    "item4": "Đội Ngũ & Dự Trữ",
+    "total": "Tổng Cung"
+  },
+  "roadmap": {
+    "title": "LỘ TRÌNH",
+    "desc": "Lộ trình BTC Swift: Thời gian chiến lược cho sự phát triển blockchain thế hệ tiếp theo.",
+    "cards": [
+      {
+        "title": "Phần Thưởng Proof-Of-Yield Có Thể Lập Trình",
+        "subTitle": "Q3 – Q4 2025",
+        "contents": [
+          "Bắt đầu presale BTC Swift",
+          "Phân phối phần thưởng khai thác vào cuối mỗi giai đoạn presale",
+          "Mở rộng đội ngũ và tiếp nhận các cố vấn chiến lược",
+          "Tăng trưởng và gắn kết cộng đồng toàn cầu",
+          "Đảm bảo thỏa thuận với các nền tảng giao dịch",
+          "Hoàn tất presale và triển khai trên mạng Solana"
+        ]
+      },
+      {
+        "title": "Công Cụ Hợp Đồng Thông Minh AI",
+        "subTitle": "Q1 2026",
+        "contents": [
+          "Hợp đồng AI tương thích với WASM cho tự động hóa mô-đun trên chuỗi",
+          "Lớp tổng hợp AI oracle kéo dữ liệu có cấu trúc và không có cấu trúc (Web2 + Web3)",
+          "Triển khai các tác nhân học củng cố cho hành vi hợp đồng thích ứng",
+          "Hộp cát huấn luyện AI trên chuỗi (Alpha) cho các mô hình học có giám sát và không giám sát",
+          "Bảng điều khiển giám sát mô hình AI theo thời gian với công cụ minh bạch và kiểm toán",
+          "Tích hợp với mạng máy tính phi tập trung (ví dụ: Akash, Gensyn) cho suy luận có thể mở rộng"
+        ]
+      },
+      {
+        "title": "Cơ Sở Hạ Tầng Quyền Riêng Tư",
+        "subTitle": "Q1 – Q2 2026",
+        "contents": [
+          "Triển khai sổ cái bảo vệ dựa trên zk-SNARK hỗ trợ giao dịch và số dư riêng tư",
+          "Hỗ trợ địa chỉ ẩn và chuyển nhượng tài sản bảo mật",
+          "Tích hợp sổ đăng ký Danh Tính Phi Tập Trung (DID) với khả năng tương tác giữa các chuỗi",
+          "Module zkLogin cho xác thực Web3 riêng tư liên kết với chứng chỉ có thể xác minh",
+          "Dấu vết kiểm toán không kiến thức để tuân thủ với tiết lộ có chọn lọc",
+          "Module DeFi bảo vệ quyền riêng tư (Beta) cho cho vay, hoán đổi và kho bạc",
+          "Phát hành SDK Quyền Riêng Tư cho phép các nhà phát triển bên thứ ba tích hợp các tính năng bảo vệ"
+        ]
+      },
+      {
+        "title": "Triển Khai Quản Trị Toàn Diện",
+        "subTitle": "Q3 2026",
+        "contents": [
+          "Hệ thống DAO Bầu Cử Bậc Hai với kháng Sybil và trọng số cổ phần",
+          "Công cụ đánh giá rủi ro powered by AI phân tích các rủi ro về giao thức, kinh tế và hành vi",
+          "Khuôn khổ kích hoạt Hội đồng Khẩn cấp, được kích hoạt bởi các chỉ số rủi ro trên chuỗi",
+          "Mô hình Dự đoán Đề xuất DAO: Tác nhân AI mô phỏng kết quả đề xuất trước khi bỏ phiếu",
+          "Các mô-đun chính sách do cộng đồng biên soạn (ví dụ: trần kho bạc, tỷ lệ lạm phát)",
+          "Trình giả lập quản trị trên chuỗi để mô phỏng các quyết định trước khi thực hiện",
+          "Phát hành các vai trò quản trị nhiều cấp (ví dụ: đại biểu, người giám sát, người bảo vệ)"
+        ]
+      },
+      {
+        "title": "Tuân Thủ Cơ Quan",
+        "subTitle": "Q4 2026",
+        "contents": [
+          "Giao diện quy định dựa trên MPC cho phép kiểm toán mà không tiết lộ dữ liệu riêng tư",
+          "Khuôn khổ tuân thủ thời gian thực để kiểm tra hợp đồng thông minh có quy định",
+          "Khung DID có thể tương tác với các tiêu chuẩn EU eIDAS, US NIST và APAC",
+          "Ra mắt đồng thuận hybrid PoW–PoS với vòng quay xác nhận động",
+          "Ra mắt blockchain BTC3, được thiết kế cho tài chính và thanh toán cấp doanh nghiệp",
+          "Cầu nối không tin cậy 1:1 từ Solana sang BTC3 với khả năng kiểm toán và cắt giảm cho các relayer xấu",
+          "Phát hành Stablecoin BTC3 gắn liền với USD (BTC3-USD) để hỗ trợ thanh toán và chuyển tiền thời gian thực",
+          "Tích hợp với các cổng thanh toán (ví dụ: POS terminal, thẻ crypto) để áp dụng cho bán lẻ",
+          "Chương trình khai thác thanh khoản cho tài sản ổn định BTC3 để thúc đẩy sự phát triển hệ sinh thái",
+          "Chương trình tiếp nhận node cơ quan cho các ngân hàng, fintechs và kiểm toán viên"
+        ]
+      }
+    ]
+  },
+  "faq": {
+    "title": "Câu hỏi thường gặp",
+    "desc": "Nhận câu trả lời cho những câu hỏi phổ biến nhất về BTC Swift",
+    "buyBtn": "Bắt đầu mua BTC3 của bạn",
+
+    "cards": [
+      {
+        "title": "BTC Swift (BTC3) là gì?",
+        "contents": [
+          "BTC Swift là một blockchain thế hệ mới kết hợp sự bảo mật của Bitcoin với các giao dịch nhanh, chi phí thấp và các ứng dụng phân cấp sáng tạo. Nó có các phần thưởng Proof-of-Yield có thể lập trình, hợp đồng thông minh hỗ trợ AI và nhận dạng phân cấp ưu tiên quyền riêng tư."
+        ]
+      },
+      {
+        "title": "Làm thế nào để tôi tham gia vào đợt presale?",
+        "contents": [
+          "Việc tham gia rất đơn giản: 1) Đăng ký với email của bạn trên nền tảng bảo mật của chúng tôi, 2) Tạo một đơn hàng chỉ định số lượng token BTC3 bạn muốn, 3) Gửi crypto đến địa chỉ ví được tạo ra, 4) Token sẽ được ghi có vào tài khoản của bạn và được giao vào ngày ra mắt."
+        ]
+      },
+      {
+        "title": "Điều gì làm cho BTC Swift khác biệt so với các loại tiền điện tử khác?",
+        "contents": [
+          "BTC Swift cung cấp các tính năng độc đáo bao gồm phần thưởng Proof-of-Yield có thể lập trình thay đổi dựa trên hoạt động của mạng, hợp đồng thông minh hỗ trợ AI tự động tiến hóa, nhận dạng phân cấp ưu tiên quyền riêng tư với mã hóa không có kiến thức (zero-knowledge cryptography), và bảo mật hybrid PoW + PoS để đảm bảo bảo vệ tối đa."
+        ]
+      },
+      {
+        "title": "Cấu trúc tokenomics là gì?",
+        "contents": [
+          "Tổng cung là 45 triệu token được phân phối như sau: 30% Presale (13.5 triệu), 50% Phần thưởng khai thác (22.5 triệu), 15% Hồ sơ thanh khoản (6.75 triệu), và 5% Nhóm & Dự trữ (2.25 triệu). Cấu trúc này đảm bảo tính bền vững lâu dài và lợi ích cho cộng đồng."
+        ]
+      },
+      {
+        "title": "BTC Swift có được kiểm toán không?",
+        "contents": [
+          "Có, BTC Swift đã được kiểm toán bởi cả SpyWolf và SolidProof, hai công ty bảo mật blockchain hàng đầu. Những cuộc kiểm toán này đảm bảo tính bảo mật và độ tin cậy của hợp đồng thông minh và cấu trúc tokenomics của chúng tôi."
+        ]
+      },
+      {
+        "title": "Ai đứng sau BTC Swift?",
+        "contents": [
+          "BTC Swift được xây dựng bởi một đội ngũ phân tán toàn cầu gồm các chuyên gia về blockchain, AI và mật mã học. Giống như Satoshi, đội ngũ cốt lõi vẫn giữ ẩn danh để duy trì sự phân cấp và tập trung vào công nghệ. Vì sự minh bạch và bảo mật, một số thành viên trong đội ngũ đã hoàn thành kiểm tra KYC với các đối tác đáng tin cậy, đảm bảo trách nhiệm mà không làm tổn hại đến giá trị của dự án."
+        ]
+      },
+      {
+        "title": "BTC3 USD-pegged stablecoin (BTC3E) là gì?",
+        "contents": [
+          "Như một phần của hệ sinh thái của chúng tôi, chúng tôi sẽ ra mắt một stablecoin BTC3 có giá trị tương đương 1 USD để hỗ trợ các thanh toán ngay lập tức và cung cấp sự ổn định cho người dùng cần giá trị dự đoán được cho các giao dịch và thương mại."
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "text1": "Tương lai của Bitcoin với các giao dịch nhanh, chi phí thấp và các ứng dụng phân cấp sáng tạo.",
+    "text2": "2025 BTC Swift. Bảo lưu mọi quyền.",
+    "text3": "Từ chối trách nhiệm: Không phải là lời khuyên tài chính hay dịch vụ tài chính. Luôn tự nghiên cứu."
   }
 }

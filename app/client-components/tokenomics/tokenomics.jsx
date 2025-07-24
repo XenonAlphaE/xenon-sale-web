@@ -25,8 +25,8 @@ export const Tokenomics = () => {
     <section id="tokenomics" className={styles.container}>
 
         <div className={styles.mainContent}>
-          <h1 className={styles.title}>Tokenomics</h1>
-          <p className={styles.desc}>Transparent and sustainable tokenomics designed for long-term growth and community benefit</p>
+          <h1 className={styles.title}>{sectionText?.title}</h1>
+          <p className={styles.desc}>{sectionText?.desc}</p>
           
 
           <div className={styles.infoContainer}>
@@ -44,7 +44,7 @@ export const Tokenomics = () => {
                   <div className={styles.card}>
                       <div className={styles.cardLeft}>
                           <div className={styles.cardBullet}></div>
-                          <span > Presale</span>
+                          <span > {sectionText?.item1} </span>
                       </div>
                       <div className={styles.cardRight}>
                         <div style={{color:'#F7931A', fontWeight:'bold'}}>30%</div>
@@ -55,7 +55,7 @@ export const Tokenomics = () => {
                   <div className={styles.card}>
                       <div className={styles.cardLeft}>
                           <div className={styles.cardBullet} style={{background:'rgb(255, 107, 107)'}}></div>
-                          <span > Mining Rewards</span>
+                          <span >  {sectionText?.item2} </span>
                       </div>
                       <div className={styles.cardRight}>
                         <div style={{color:'rgb(255, 107, 107)', fontWeight:'bold'}}>50%</div>
@@ -66,7 +66,7 @@ export const Tokenomics = () => {
                   <div className={styles.card}>
                       <div className={styles.cardLeft}>
                           <div className={styles.cardBullet} style={{background:'#14F195'}}></div>
-                          <span > Liquidity Pool</span>
+                          <span >  {sectionText?.item3} </span>
                       </div>
                       <div className={styles.cardRight}>
                         <div style={{color:'#14F195', fontWeight:'bold'}}>15%</div>
@@ -77,7 +77,7 @@ export const Tokenomics = () => {
                   <div className={styles.card}>
                       <div className={styles.cardLeft}>
                           <div className={styles.cardBullet} style={{background:'#E91E63'}}></div>
-                          <span > Team & Reserves</span>
+                          <span >  {sectionText?.item4} </span>
                       </div>
                       <div className={styles.cardRight}>
                         <div style={{color:'#E91E63', fontWeight:'bold'}}>5%</div>

@@ -44,5 +44,172 @@
   "header": {
     "headline": "BTC Swift (BTC3) Yapay Zekâ Destekli Blockchain ve Proof of Yield Madenciliği",
     "description": "BTC Swift: Güvenli, Ölçeklenebilir ve Gizli DeFi için Yapay Zekâ Destekli Blockchain"
+  },
+  "about": {
+    "title": "Devrim Niteliğinde Blockchain Teknolojisi",
+    "desc": "Gelecek için tasarlanmış, son teknoloji özelliklerle blockchain inovasyonunun bir sonraki neslini deneyimleyin.",
+    "buyBtn": "Hemen BTC3 Al",
+    "cards": [
+      {
+        "title": "Programlanabilir Yield Kanıtı Ödülleri",
+        "content": "Ağ aktivitesine ve çevresel etkiye göre uyum sağlayan dinamik ödüller."
+      },
+      {
+        "title": "Yapay Zeka Destekli Akıllı Sözleşmeler",
+        "content": "Kendi kendine evrilen ve optimize olan, yeni nesil sözleşmeler."
+      },
+      {
+        "title": "Öncelikli Gizlilikli Merkeziyetsiz Kimlik",
+        "content": "Veri ifşası olmadan uyumluluk sağlamak için sıfır bilgi kriptografisi."
+      },
+      {
+        "title": "Hibrit PoW + PoS Güvenliği",
+        "content": "Uzun vadeli sürdürülebilirlik ile maksimum güvenlik."
+      },
+      {
+        "title": "Küresel Uyumluluk Hazır",
+        "content": "Dünya çapında düzenleyici ortamlar için tasarlandı."
+      },
+      {
+        "title": "USD Sabit Kurlu Stablecoin",
+        "content": "USD değeriyle sabitlenmiş dijital para birimi."
+      }
+    ]
+  },
+  "tokenomics": {
+    "title": "Tokenomics",
+    "desc": "Uzun vadeli büyüme ve topluluk yararı için tasarlanmış şeffaf ve sürdürülebilir tokenomikler.",
+    "item1": "Ön Satış",
+    "item2": "Madencilik Ödülleri",
+    "item3": "Likitide Havuzu",
+    "item4": "Takım & Rezervler",
+    "total": "Toplam Arz"
+  },
+  "roadmap": {
+    "title": "YOL HARİTASI",
+    "desc": "BTC Swift Yol Haritası: Yeni Nesil Blockchain Gelişimi İçin Stratejik Zaman Çizelgesi",
+    "cards": [
+      {
+        "title": "Programlanabilir Yield Kanıtı Ödülleri",
+        "subTitle": "Q3 – Q4 2025",
+        "contents": [
+          "BTC Swift ön satışını başlat",
+          "Her ön satış aşamasının sonunda madencilik ödüllerini dağıt",
+          "Takım genişlemesi ve stratejik danışmanların işe alımı",
+          "Küresel topluluk büyümesi ve katılım çabaları",
+          "Borsa platformlarıyla anlaşmalar güvence altına al",
+          "Ön satış tamamlanacak ve Solana ağına lansman başlatılacak"
+        ]
+      },
+      {
+        "title": "Yapay Zeka Akıllı Sözleşme Motoru",
+        "subTitle": "Q1 2026",
+        "contents": [
+          "Modüler zincir içi otomasyon için WASM uyumlu yapay zeka ajanı sözleşmeleri",
+          "Yapısal ve yapılandırılmamış veriyi (Web2 + Web3) çeken yapay zeka oracle agregasyon katmanı",
+          "Adaptif sözleşme davranışı için pekiştirmeli öğrenme ajanlarının dağıtımı",
+          "Zincir içi yapay zeka eğitim alanı (Alfa) için denetimli ve denetimsiz öğrenme modelleri",
+          "Gerçek zamanlı yapay zeka model izleme panosu, şeffaflık ve denetim araçları",
+          "Skalalanabilir çıkarım için merkeziyetsiz hesaplama ağlarıyla (örneğin, Akash, Gensyn) entegrasyon"
+        ]
+      },
+      {
+        "title": "Gizlilik Altyapısı",
+        "subTitle": "Q1 – Q2 2026",
+        "contents": [
+          "Özel işlemler ve bakiyeler için zk-SNARK tabanlı gizli defterin dağıtımı",
+          "Stealth adresleri ve gizli varlık transferleri desteği",
+          "Merkeziyetsiz Kimlik (DID) kaydı ile çapraz zincir uyumluluğu",
+          "Web3 özel kimlik doğrulaması için zkLogin modülü, doğrulanabilir kimlik bilgilerine bağlı",
+          "Seçici ifşa ile uyumluluk için sıfır bilgi denetim izleri",
+          "Kredi verme, takas ve kasalar için gizliliği koruyan DeFi modülü (Beta)",
+          "Üçüncü taraf geliştiricilerin gizlilik özelliklerini entegre etmelerini sağlamak için Privacy SDK başlatılması"
+        ]
+      },
+      {
+        "title": "Tam Yönetişim Dağıtımı",
+        "subTitle": "Q3 2026",
+        "contents": [
+          "Sybil saldırılarına karşı dirençli ve oy kullanma ağırlığı olan kartezyen oy kullanma DAO sistemi",
+          "Protokol, ekonomik ve davranışsal riskleri analiz eden yapay zeka destekli risk değerlendirme motoru",
+          "Zincir içi risk ipuçları tarafından tetiklenen acil durum konseyi aktivasyon çerçevesi",
+          "DAO Teklif Tahmin Modeli: Oy öncesi teklif sonuçlarını simüle eden yapay zeka ajanı",
+          "Topluluk tarafından düzenlenen politika modülleri (örneğin, hazine limitleri, enflasyon oranları)",
+          "Kararları yürürlüğe girmeden önce modellemek için zincir içi yönetişim simülatörü",
+          "Çok katmanlı yönetişim rolleri başlatılması (örneğin, delege, koruyucu, muhafız)"
+        ]
+      },
+      {
+        "title": "Kurumsal Uyumluluk",
+        "subTitle": "Q4 2026",
+        "contents": [
+          "Özel verileri ifşa etmeden denetimler yapabilen MPC tabanlı düzenleyici arayüz",
+          "Düzenlemeli akıllı sözleşmeleri test etmek için gerçek zamanlı uyumluluk alanı",
+          "AB eIDAS, ABD NIST ve APAC standartları ile uyumlu DID çerçevesi",
+          "Dinamik doğrulayıcı rotasyonu ile hibrit PoW–PoS konsensüsünün başlatılması",
+          "BTC3 Blockchain genesis lansmanı, kurumsal düzeyde finans ve ödeme için özelleştirilmiş",
+          "Solana'dan BTC3'e 1:1 güvenilmez köprü, kötü relayer'lar için denetlenebilirlik ve cezalandırma",
+          "Gerçek zamanlı ödemeler ve havaleler için BTC3 USD sabitli stablecoin (BTC3-USD) piyasaya sürülmesi",
+          "Perakende benimsenmesi için ödeme geçitleri (örneğin, POS terminalleri, kripto kartları) ile entegrasyon",
+          "BTC3 stable varlıkları için likidite madenciliği programı, ekosistem hızını artırmaya yönelik",
+          "Bankalar, fintech şirketleri ve denetçiler için kurumsal düğüm kaydı programı"
+        ]
+      }
+    ]
+  },
+  "faq": {
+    "title": "Sıkça Sorulan Sorular",
+    "desc": "BTC Swift hakkında en sık sorulan sorulara yanıtlar alın",
+    "buyBtn": "BTC3 Satın Almaya Başla",
+
+    "cards": [
+      {
+        "title": "BTC Swift (BTC3) nedir?",
+        "contents": [
+          "BTC Swift, Bitcoin'in güvenliğini hızlı, düşük maliyetli işlemler ve yenilikçi merkeziyetsiz uygulamalarla birleştiren bir sonraki nesil blockchain'dir. Programlanabilir Yield-İspat (Proof-of-Yield) ödülleri, yapay zeka destekli akıllı sözleşmeler ve gizliliği ön planda tutan merkeziyetsiz kimlik gibi özelliklere sahiptir."
+        ]
+      },
+      {
+        "title": "Ön satışa nasıl katılabilirim?",
+        "contents": [
+          "Katılmak basittir: 1) Güvenli platformumuzda e-posta ile kaydolun, 2) İstediğiniz BTC3 token miktarını belirterek bir sipariş oluşturun, 3) Oluşturulan cüzdan adresine kripto gönderin, 4) Token'lar hesabınıza yatırılacak ve lansmanda teslim edilecektir."
+        ]
+      },
+      {
+        "title": "BTC Swift'i diğer kripto paralardan farklı kılan nedir?",
+        "contents": [
+          "BTC Swift, ağ etkinliğine göre uyum sağlayabilen programlanabilir Yield-İspat (Proof-of-Yield) ödülleri, otomatik olarak evrilen yapay zeka destekli akıllı sözleşmeler, sıfır bilgi şifrelemesi ile gizliliği ön planda tutan merkeziyetsiz kimlik ve maksimum koruma için hibrit PoW + PoS güvenlik özellikleri sunmaktadır."
+        ]
+      },
+      {
+        "title": "Tokenomik yapı nedir?",
+        "contents": [
+          "Toplam arz 45 milyon token olarak dağıtılmıştır: %30 Ön Satış (13,5 milyon), %50 Madencilik Ödülleri (22,5 milyon), %15 Likidite Havuzu (6,75 milyon) ve %5 Takım & Rezervler (2,25 milyon). Bu yapı uzun vadeli sürdürülebilirliği ve topluluk faydasını sağlar."
+        ]
+      },
+      {
+        "title": "BTC Swift denetlenmiş mi?",
+        "contents": [
+          "Evet, BTC Swift, iki lider blockchain güvenlik firması olan SpyWolf ve SolidProof tarafından denetlenmiştir. Bu denetimler, akıllı sözleşmelerimizin ve tokenomik yapımızın güvenliğini ve güvenilirliğini sağlar."
+        ]
+      },
+      {
+        "title": "BTC Swift'in arkasında kim var?",
+        "contents": [
+          "BTC Swift, blockchain, yapay zeka ve kriptografi uzmanlarından oluşan küresel bir dağıtık ekip tarafından inşa edilmiştir. Satoshi gibi, çekirdek ekip anonim kalmayı tercih ederek merkeziyetsizliği korur ve teknolojiye odaklanır. Şeffaflık ve güvenlik için, seçilen ekip üyeleri, projeyi değerlerinden ödün vermeden hesap verebilirlik sağlamak amacıyla güvenilir ortaklarla KYC doğrulaması tamamlamıştır."
+        ]
+      },
+      {
+        "title": "BTC3 USD'ye sabitlenmiş stablecoin (BTC3E) nedir?",
+        "contents": [
+          "Ekosistemimizin bir parçası olarak, anlık ödemeleri desteklemek ve işlemler ile ticaret için öngörülebilir bir değer isteyen kullanıcılar için stabilite sağlamak amacıyla 1 USD'ye eşdeğer BTC3 stablecoin'i piyasaya süreceğiz."
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "text1": "Bitcoin'in geleceği, hızlı, düşük maliyetli işlemler ve yenilikçi merkeziyetsiz uygulamalar ile.",
+    "text2": "2025 BTC Swift. Tüm hakları saklıdır.",
+    "text3": "Feragatname: Mali tavsiye veya finansal hizmet değildir. Her zaman kendi araştırmanızı yapın."
   }
 }

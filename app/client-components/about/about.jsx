@@ -28,18 +28,18 @@ const About =() => {
 
 
   const cardItems = [
-    {id: generateRandomId(), img:'/img/btcswift/about1.svg', title:'Programmable Proof-Of-Yield Rewards', content:'Dynamic rewards that adapt based on network activity and environmental impact'},
-    {id: generateRandomId(), img:'/img/btcswift/about2.svg', title:'AI-Powered Smart Contracts', content:'Next-gen contracts that evolve and optimize automatically'},
-    {id: generateRandomId(), img:'/img/btcswift/about3.svg', title:'Privacy-First Decentralized Identity', content:'Zero-knowledge cryptography for compliance without data exposure'},
-    {id: generateRandomId(), img:'/img/btcswift/about4.svg', title:'Hybrid PoW + PoS Security', content:'Maximum security with long-term sustainability'},
-    {id: generateRandomId(), img:'/img/btcswift/about5.svg', title:'Global Compliance Ready', content:'Built for regulatory environments worldwide'},
-    {id: generateRandomId(), img:'/img/btcswift/about6.svg', title:'USD-Pegged Stablecoin', content:'Stable digital currency anchored to USD value'},
+    {id: generateRandomId(), circleColor:'#FFD700', img:'/img/btcswift/about1.svg', title: sectionText?.cards?.[0]?.title, content:sectionText?.cards?.[0]?.content },
+    {id: generateRandomId(), circleColor:'#FF8C00', img:'/img/btcswift/about2.svg', title: sectionText?.cards?.[1]?.title, content:sectionText?.cards?.[1]?.content },
+    {id: generateRandomId(), circleColor:'#FF6B6B', img:'/img/btcswift/about3.svg', title: sectionText?.cards?.[2]?.title, content:sectionText?.cards?.[2]?.content },
+    {id: generateRandomId(), circleColor:'#FF8A80', img:'/img/btcswift/about4.svg', title: sectionText?.cards?.[3]?.title, content:sectionText?.cards?.[3]?.content },
+    {id: generateRandomId(), circleColor:'#E91E63', img:'/img/btcswift/about5.svg', title: sectionText?.cards?.[4]?.title, content:sectionText?.cards?.[4]?.content },
+    {id: generateRandomId(), circleColor:'#9945FF', img:'/img/btcswift/about6.svg', title: sectionText?.cards?.[5]?.title, content:sectionText?.cards?.[5]?.content },
   ]
   const renderCardItem = (item) =>{
     
     return <div key={item?.id} className={styles.card}>
                 <div className={styles.cardTop}>
-                    <div className={styles.cardImgWrapper}>
+                    <div className={styles.cardImgWrapper} style={{background: item?.circleColor}}>
 
                         <img className={styles.cardImg} src={item?.img}/>
                     </div>
@@ -55,14 +55,14 @@ const About =() => {
   return (
     <section  className={styles.container} id='about'>
       <div className={styles.mainContent}>  
-        <h1 className={styles.title}>Revolutionary Blockchain Technology</h1>
-        <p className={styles.desc}>Experience the next generation of blockchain innovation with cutting-edge features designed for the future</p>
+        <h1 className={styles.title}> {sectionText?.title} </h1>
+        <p className={styles.desc}> {sectionText?.desc} </p>
         
         <div className={styles.cardList }>
             {cardItems.map(x=> renderCardItem(x))}
         </div>
 
-        <button className={styles.buyBtn} onClick={scrollToBuySection}> Buy More BTC3 now</button>
+        <button className={styles.buyBtn} onClick={scrollToBuySection}> {sectionText?.buyBtn} </button>
       </div>
     </section>
 

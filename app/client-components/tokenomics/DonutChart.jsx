@@ -1,7 +1,10 @@
 import React from "react";
 import "./DonutChart.css";
+import { useI18nSection } from "../../../redux/utils/languageUtils";
 
 const DonutChart = () => {
+  const sectionText = useI18nSection('tokenomics')
+  
   const data = [
     { value: 10, color: "#F72585" }, // Pink-red
     { value: 20, color: "#3FFFA8" }, // Green
@@ -58,7 +61,7 @@ const DonutChart = () => {
           45M
         </text>
         <text x={center} y={center + 15} textAnchor="middle" className="donut-label">
-          Total Supply
+          {sectionText?.total}
         </text>
       </svg>
     </div>
