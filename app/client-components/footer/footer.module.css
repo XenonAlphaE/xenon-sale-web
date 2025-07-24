@@ -6,8 +6,8 @@
     align-items: center;
     padding: 2rem;
     gap: 2rem;
-    background: black;
-
+    border: 2px solid rgba(124, 58, 237, 0.3);
+    background-color: rgba(26, 11, 46, 0.5);
     @media (max-width: 1024px) {
       width: 100%;
       padding-inline: 8px;
@@ -37,11 +37,26 @@
   }
   
 
+.appnavBrand {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.brandLogo{
+  width: 80px;
+}
+
+.textLogo{
+  width: 220px;
+  height: 52px;
+}
+
 
 .copyright{
     box-sizing: border-box;
     transform: scaleY(1.5);    /* Increase height by 1.5 times */
-    color: white;
+    color: rgb(110, 142, 93);
     display: block;
     font-family: HeyComic, sans-serif;
     font-size: 14px;
@@ -68,7 +83,7 @@
 
 
 .avatar{
-    width: 40%;
+    width: 10%;
     max-width: 80%;
 
     @media (max-width: 1024px) {

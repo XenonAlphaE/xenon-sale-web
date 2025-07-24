@@ -44,8 +44,7 @@ const App = () => {
           {/* <HowToBuy /> */}
           {/* <TrustedBy/> */}
           <FAQS/>
-          {/* <Footer />  */}
-          <AppSpinner/>
+          <Footer /> 
 
     </div>
   );
