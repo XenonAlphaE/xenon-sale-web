@@ -75,9 +75,9 @@
         "number": "1",
         "title": "BRIDGE",
         "contents": [
-          "User deposits BTC to a designated Bitcoin address monitored by Bitcoin Hyper's Canonical Bridge.",
+          "User deposits BTC to a designated Bitcoin address monitored by BTC Hyper's Canonical Bridge.",
           "The Bitcoin Relay Program, an SVM smart contract, verifies Bitcoin block headers and transaction proofs.",
-          "Upon successful verification, an equivalent amount of BTC is minted on Bitcoin Hyper's Layer 2 in a trustless manner."
+          "Upon successful verification, an equivalent amount of BTC is minted on BTC Hyper's Layer 2 in a trustless manner."
         ]
       },
     
@@ -85,7 +85,7 @@
         "number": "2",
         "title": "L2 Operation",
         "contents": [
-          "Users can send and receive BTC on Bitcoin Hyper's Layer 2 with near-instant finality.",
+          "Users can send and receive BTC on BTC Hyper's Layer 2 with near-instant finality.",
           "Supports complex DeFi operations, like staking and decentralized exchanges.",
           "Leverages Solana's Virtual Machine (SVM) for high throughput and scalability"
         ]
@@ -96,7 +96,7 @@
         "number": "3",
         "title": "Settlement & Security",
         "contents": [
-          "Bitcoin Hyper batches and compresses Layer 2 transactions.",
+          "BTC Hyper batches and compresses Layer 2 transactions.",
           "Utilizes zero-knowledge (ZK) proofs to ensure transaction validity.",
           "The state of Layer 2 is periodically committed to Bitcoin's Layer 1, maintaining synchronization and security."
         ]
@@ -106,7 +106,7 @@
         "number": "4",
         "title": "Withdrawal to L1",
         "contents": [
-          "Users initiate a withdrawal request on Bitcoin Hyper's Layer 2.",
+          "Users initiate a withdrawal request on BTC Hyper's Layer 2.",
           "The system verifies the Layer 2 state and generates a proof for the canonical bridge.",
           "Upon validation, the corresponding BTC is released back to the user's Bitcoin address on Layer 1."
         ]
@@ -117,11 +117,11 @@
       { "title": "Optimistic Rollups", "name": "OPTIMISM" },
       { "title": "ZK-Rollups",  "name": "zkROLLUPS" },
       { "title": "Sidechains",  "name": "Rootstock" },
-      { "title": "Scalability",  "name": "BITCOIN HYPER²" }
+      { "title": "Scalability",  "name": "BTC Hyper²" }
     ]
   },
   "howtobuy":{
-    "title":"How To Buy Bitcoin Hyper",
+    "title":"How To Buy BTC Hyper",
     "buyNow": "BUY $HYPER NOW",
     "contents":[
       {
@@ -162,7 +162,7 @@
   "tokenomics":{
     "title":"TOKENOMICS",
     "buyNow":"Buy NOW",
-    "desc":"Full breakdown of how Bitcoin Hyper² works",
+    "desc":"Full breakdown of how BTC Hyper² works",
     "contents":[
       {
         "number": "1",
@@ -193,7 +193,7 @@
         "number": "4",
         "title": "listings 10%",
         "contents": [
-          "Designated token allocation for Bitcoin Hyper ($HYPER) token listings on various exchanges."
+          "Designated token allocation for BTC Hyper ($HYPER) token listings on various exchanges."
         ]
       },
       {
@@ -207,11 +207,11 @@
     ]
   },
   "faqs":{
-    "title":"Bitcoin Hyper FAQ",
+    "title":"BTC Hyper FAQ",
     "contents":[
       {
         "number": "1",
-        "title": "What is Bitcoin Hyper?",
+        "title": "What is BTC Hyper?",
         "contents": [
           { "text": "The first true Bitcoin Layer 2 network. It enables fast, low-cost BTC transactions and unlocks staking, decentralized finance (DeFi), and applications built on-chain (dApps). Powered by a high-throughput virtual machine (SVM), BTC Hyper not only redefines what’s possible on Bitcoin, it is also the best crypto presale of 2025." }
         ]
@@ -220,14 +220,14 @@
         "number": "2",
         "title": "What is $HYPER?",
         "contents": [
-          { "text": "$HYPER is the native token of the Bitcoin Hyper network – used for transactions, staking, and governance. The token is currently available in the earliest price stages in what is widely recognized as the best crypto presale to buy now, facilitated by Web3Toolkit payments and staking technology." }
+          { "text": "$HYPER is the native token of the BTC Hyper network – used for transactions, staking, and governance. The token is currently available in the earliest price stages in what is widely recognized as the best crypto presale to buy now, facilitated by Web3Toolkit payments and staking technology." }
         ]
       },
       {
         "number": "3",
-        "title": "Why is Bitcoin Hyper important?",
+        "title": "Why is BTC Hyper important?",
         "contents": [
-          { "text": "Bitcoin Hyper fixes Bitcoin’s slow transaction speed and high fees while maintaining Bitcoin-grade security. With BTC Hyper, users can send, receive, and interact with Bitcoin in near real-time, with minimal costs, and participate in the emerging Bitcoin-based DeFi economy." }
+          { "text": "BTC Hyper fixes Bitcoin’s slow transaction speed and high fees while maintaining Bitcoin-grade security. With BTC Hyper, users can send, receive, and interact with Bitcoin in near real-time, with minimal costs, and participate in the emerging Bitcoin-based DeFi economy." }
         ]
       },
       {
@@ -241,12 +241,12 @@
       },
       {
         "number": "5",
-        "title": "How does Bitcoin Hyper work?",
+        "title": "How does BTC Hyper work?",
         "contents": [
           { "label": "1. Bridge", "text": "" },
-          { "text": "Send BTC to a designated Bitcoin address monitored by the Bitcoin Hyper Canonical Bridge." },
+          { "text": "Send BTC to a designated Bitcoin address monitored by the BTC Hyper Canonical Bridge." },
           { "text": "The Bitcoin Relay Program (an SVM smart contract) verifies Bitcoin block headers and transaction proofs." },
-          {"text": "Once verified, an equivalent amount of BTC is minted trustlessly on Bitcoin Hyper Layer 2." },
+          {"text": "Once verified, an equivalent amount of BTC is minted trustlessly on BTC Hyper Layer 2." },
     
           { "label": "2. Layer 2 Operation", "text": "" },
           { "text": "Users can send, receive, and interact with BTC on Layer 2 with near-instant finality." },
@@ -277,7 +277,7 @@
   "footer":{
     "desc":"Disclaimer",
     "content1":"Always do your own research. Nothing here is financial advice. This is a meme coin",
-    "content2":"2025 bitcoin hyper All rights reserved."
+    "content2":"2025 BTC Hyper All rights reserved."
   }
  
 }

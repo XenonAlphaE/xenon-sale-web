@@ -73,16 +73,16 @@
           "number": "1",
           "title": "BRUG",
           "contents": [
-            "Gebruiker stort BTC naar een toegewezen Bitcoin-adres dat wordt bewaakt door de Canonical Bridge van Bitcoin Hyper.",
+            "Gebruiker stort BTC naar een toegewezen Bitcoin-adres dat wordt bewaakt door de Canonical Bridge van BTC Hyper.",
             "Het Bitcoin Relay Programma, een SVM smart contract, verifieert Bitcoin blokheaders en transactie-bewijzen.",
-            "Na succesvolle verificatie wordt een equivalent bedrag aan BTC op een vertrouwensloze manier gemint op de Layer 2 van Bitcoin Hyper."
+            "Na succesvolle verificatie wordt een equivalent bedrag aan BTC op een vertrouwensloze manier gemint op de Layer 2 van BTC Hyper."
           ]
         },
         {
           "number": "2",
           "title": "L2 Operatie",
           "contents": [
-            "Gebruikers kunnen BTC verzenden en ontvangen op de Layer 2 van Bitcoin Hyper met bijna directe finaliteit.",
+            "Gebruikers kunnen BTC verzenden en ontvangen op de Layer 2 van BTC Hyper met bijna directe finaliteit.",
             "Ondersteunt complexe DeFi-operaties, zoals staking en gedecentraliseerde beurzen.",
             "Maakt gebruik van Solana’s Virtual Machine (SVM) voor hoge verwerkingssnelheid en schaalbaarheid."
           ]
@@ -91,7 +91,7 @@
           "number": "3",
           "title": "Afrekening & Beveiliging",
           "contents": [
-            "Bitcoin Hyper groepeert en comprimeert Layer 2-transacties.",
+            "BTC Hyper groepeert en comprimeert Layer 2-transacties.",
             "Maakt gebruik van zero-knowledge (ZK) bewijzen om transactie-geldigheid te waarborgen.",
             "De staat van Layer 2 wordt periodiek vastgelegd op Bitcoin's Layer 1 om synchronisatie en beveiliging te behouden."
           ]
@@ -100,7 +100,7 @@
           "number": "4",
           "title": "Opname naar L1",
           "contents": [
-            "Gebruikers starten een opnameverzoek op Bitcoin Hyper’s Layer 2.",
+            "Gebruikers starten een opnameverzoek op BTC Hyper’s Layer 2.",
             "Het systeem verifieert de Layer 2-staat en genereert een bewijs voor de canonical bridge.",
             "Na validatie wordt de overeenkomstige BTC teruggestuurd naar het Bitcoin-adres van de gebruiker op Layer 1."
           ]
@@ -111,11 +111,11 @@
         { "title": "Optimistische Rollups", "name": "OPTIMISM" },
         { "title": "ZK-Rollups", "name": "zkROLLUPS" },
         { "title": "Sidechains", "name": "Rootstock" },
-        { "title": "Schaalbaarheid", "name": "BITCOIN HYPER²" }
+        { "title": "Schaalbaarheid", "name": "BTC Hyper²" }
       ]
     },
     "howtobuy": {
-      "title": "Hoe Bitcoin Hyper te Kopen",
+      "title": "Hoe BTC Hyper te Kopen",
       "buyNow": "KOOP $HYPER NU",
       "contents": [
         {
@@ -151,7 +151,7 @@
     "tokenomics": {
       "title": "TOKENOMICS",
       "buyNow": "Koop NU",
-      "desc": "Volledig overzicht van hoe Bitcoin Hyper² werkt",
+      "desc": "Volledig overzicht van hoe BTC Hyper² werkt",
       "contents": [
         {
           "number": "1",
@@ -178,7 +178,7 @@
           "number": "4",
           "title": "Noteringen 10%",
           "contents": [
-            "Aangewezen tokenallocatie voor het noteren van de Bitcoin Hyper ($HYPER) token op verschillende beurzen."
+            "Aangewezen tokenallocatie voor het noteren van de BTC Hyper ($HYPER) token op verschillende beurzen."
           ]
         },
         {
@@ -191,11 +191,11 @@
       ]
     },
     "faqs": {
-      "title": "Bitcoin Hyper FAQ",
+      "title": "BTC Hyper FAQ",
       "contents": [
         {
           "number": "1",
-          "title": "Wat is Bitcoin Hyper?",
+          "title": "Wat is BTC Hyper?",
           "contents": [
             {
               "text": "Het eerste echte Bitcoin Layer 2-netwerk. Het maakt snelle, goedkope BTC-transacties mogelijk en ontsluit staking, gedecentraliseerde financiën (DeFi) en on-chain applicaties (dApps). Aangedreven door een krachtige virtuele machine (SVM), herdefinieert BTC Hyper niet alleen wat mogelijk is op Bitcoin, het is ook de beste crypto-presale van 2025."
@@ -207,16 +207,16 @@
           "title": "Wat is $HYPER?",
           "contents": [
             {
-              "text": "$HYPER is de native token van het Bitcoin Hyper-netwerk – gebruikt voor transacties, staking en governance. De token is momenteel beschikbaar in de vroegste prijsetappes van wat algemeen wordt beschouwd als de beste crypto-presale om nu te kopen, mogelijk gemaakt door Web3Toolkit-betalingen en stakingtechnologie."
+              "text": "$HYPER is de native token van het BTC Hyper-netwerk – gebruikt voor transacties, staking en governance. De token is momenteel beschikbaar in de vroegste prijsetappes van wat algemeen wordt beschouwd als de beste crypto-presale om nu te kopen, mogelijk gemaakt door Web3Toolkit-betalingen en stakingtechnologie."
             }
           ]
         },
         {
           "number": "3",
-          "title": "Waarom is Bitcoin Hyper belangrijk?",
+          "title": "Waarom is BTC Hyper belangrijk?",
           "contents": [
             {
-              "text": "Bitcoin Hyper lost Bitcoin’s trage transactiesnelheid en hoge kosten op, terwijl het de veiligheid van Bitcoin behoudt. Met BTC Hyper kunnen gebruikers bijna in realtime Bitcoin verzenden, ontvangen en gebruiken, tegen minimale kosten, en deelnemen aan de opkomende DeFi-economie op Bitcoin."
+              "text": "BTC Hyper lost Bitcoin’s trage transactiesnelheid en hoge kosten op, terwijl het de veiligheid van Bitcoin behoudt. Met BTC Hyper kunnen gebruikers bijna in realtime Bitcoin verzenden, ontvangen en gebruiken, tegen minimale kosten, en deelnemen aan de opkomende DeFi-economie op Bitcoin."
             }
           ]
         },
@@ -240,20 +240,20 @@
         },
         {
           "number": "5",
-          "title": "Hoe werkt Bitcoin Hyper?",
+          "title": "Hoe werkt BTC Hyper?",
           "contents": [
             {
               "label": "1. Bridge",
               "text": ""
             },
             {
-              "text": "Stuur BTC naar een aangewezen Bitcoin-adres dat wordt gecontroleerd door de Bitcoin Hyper Canonical Bridge."
+              "text": "Stuur BTC naar een aangewezen Bitcoin-adres dat wordt gecontroleerd door de BTC Hyper Canonical Bridge."
             },
             {
               "text": "Het Bitcoin Relay-programma (een SVM-smartcontract) verifieert Bitcoin-blockheaders en transactiebevestigingen."
             },
             {
-              "text": "Na verificatie wordt een gelijkwaardig bedrag aan BTC trustless gemint op Bitcoin Hyper Layer 2."
+              "text": "Na verificatie wordt een gelijkwaardig bedrag aan BTC trustless gemint op BTC Hyper Layer 2."
             },
             {
               "label": "2. Layer 2-operatie",
@@ -310,7 +310,7 @@
     "footer": {
       "desc": "Disclaimer",
       "content1": "Doe altijd je eigen onderzoek. Niets hiervan is financieel advies. Dit is een meme-coin.",
-      "content2": "2025 bitcoin hyper Alle rechten voorbehouden."
+      "content2": "2025 BTC Hyper Alle rechten voorbehouden."
     }
   }
   

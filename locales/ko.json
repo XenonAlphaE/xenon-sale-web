@@ -151,7 +151,7 @@
     "tokenomics": {
       "title": "토크노믹스",
       "buyNow": "지금 구매",
-      "desc": "Bitcoin Hyper² 작동 방식에 대한 전체 분석",
+      "desc": "BTC Hyper² 작동 방식에 대한 전체 분석",
       "contents": [
         {
           "number": "1",
@@ -178,7 +178,7 @@
           "number": "4",
           "title": "상장 10%",
           "contents": [
-            "Bitcoin Hyper ($HYPER) 토큰을 다양한 거래소에 상장하기 위한 지정된 토큰 할당."
+            "BTC Hyper ($HYPER) 토큰을 다양한 거래소에 상장하기 위한 지정된 토큰 할당."
           ]
         },
         {
@@ -191,7 +191,7 @@
       ]
     },
     "faqs": {
-      "title": "Bitcoin Hyper FAQ",
+      "title": "BTC Hyper FAQ",
       "contents": [
         {
           "number": "1",
@@ -207,7 +207,7 @@
           "title": "$HYPER란 무엇인가요?",
           "contents": [
             {
-              "text": "$HYPER는 Bitcoin Hyper 네트워크의 네이티브 토큰으로, 거래, 스테이킹, 거버넌스에 사용됩니다. 현재 가장 초기 가격 단계에서 구매 가능하며, Web3Toolkit 결제 및 스테이킹 기술을 통해 진행되는 최고의 암호화폐 프리세일로 널리 인정받고 있습니다."
+              "text": "$HYPER는 BTC Hyper 네트워크의 네이티브 토큰으로, 거래, 스테이킹, 거버넌스에 사용됩니다. 현재 가장 초기 가격 단계에서 구매 가능하며, Web3Toolkit 결제 및 스테이킹 기술을 통해 진행되는 최고의 암호화폐 프리세일로 널리 인정받고 있습니다."
             }
           ]
         },
@@ -247,13 +247,13 @@
               "text": ""
             },
             {
-              "text": "Bitcoin Hyper Canonical Bridge가 모니터링하는 지정된 비트코인 주소로 BTC를 전송합니다."
+              "text": "BTC Hyper Canonical Bridge가 모니터링하는 지정된 비트코인 주소로 BTC를 전송합니다."
             },
             {
               "text": "Bitcoin Relay Program(SVM 스마트 계약)이 비트코인 블록 헤더와 거래 증명을 검증합니다."
             },
             {
-              "text": "검증되면 동일한 양의 BTC가 Bitcoin Hyper 레이어 2에서 신뢰 없이 발행됩니다."
+              "text": "검증되면 동일한 양의 BTC가 BTC Hyper 레이어 2에서 신뢰 없이 발행됩니다."
             },
             {
               "label": "2. 레이어 2 운영",

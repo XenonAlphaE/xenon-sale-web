@@ -111,7 +111,7 @@
         { "title": "オプティミスティックロールアップ", "name": "OPTIMISM" },
         { "title": "ZKロールアップ", "name": "zkROLLUPS" },
         { "title": "サイドチェーン", "name": "Rootstock" },
-        { "title": "スケーラビリティ", "name": "BITCOIN HYPER²" }
+        { "title": "スケーラビリティ", "name": "BTC Hyper²" }
       ]
     },
     "howtobuy": {
@@ -151,7 +151,7 @@
     "tokenomics": {
       "title": "トークノミクス",
       "buyNow": "今すぐ購入",
-      "desc": "Bitcoin Hyper²の仕組みの完全な内訳",
+      "desc": "BTC Hyper²の仕組みの完全な内訳",
       "contents": [
         {
           "number": "1",
@@ -178,7 +178,7 @@
           "number": "4",
           "title": "上場 10%",
           "contents": [
-            "Bitcoin Hyper（$HYPER）トークンの様々な取引所への上場のために割り当てられたトークン。"
+            "BTC Hyper（$HYPER）トークンの様々な取引所への上場のために割り当てられたトークン。"
           ]
         },
         {
@@ -191,7 +191,7 @@
       ]
     },
     "faqs": {
-      "title": "Bitcoin Hyper FAQ",
+      "title": "BTC Hyper FAQ",
       "contents": [
         {
           "number": "1",
@@ -310,7 +310,7 @@
     "footer": {
       "desc": "免責事項",
       "content1": "必ずご自身で調査を行ってください。ここにあるものは金融アドバイスではありません。これはミームコインです。",
-      "content2": "2025 Bitcoin Hyper 全著作権所有。"
+      "content2": "2025 BTC Hyper 全著作権所有。"
     }
   }
     

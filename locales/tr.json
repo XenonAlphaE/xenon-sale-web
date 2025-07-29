@@ -73,16 +73,16 @@
           "number": "1",
           "title": "KÖPRÜ",
           "contents": [
-            "Kullanıcı, Bitcoin Hyper’ın Canonical Köprüsü tarafından izlenen belirlenmiş bir Bitcoin adresine BTC yatırır.",
+            "Kullanıcı, BTC Hyper’ın Canonical Köprüsü tarafından izlenen belirlenmiş bir Bitcoin adresine BTC yatırır.",
             "Bitcoin Relay Programı, bir SVM akıllı kontratı, Bitcoin blok başlıklarını ve işlem kanıtlarını doğrular.",
-            "Başarılı doğrulama sonrası, eşdeğer miktarda BTC Bitcoin Hyper’ın Layer 2’sinde güvenilir olmayan şekilde basılır."
+            "Başarılı doğrulama sonrası, eşdeğer miktarda BTC BTC Hyper’ın Layer 2’sinde güvenilir olmayan şekilde basılır."
           ]
         },
         {
           "number": "2",
           "title": "L2 İşlemi",
           "contents": [
-            "Kullanıcılar Bitcoin Hyper’ın Layer 2’sinde neredeyse anında kesinlikle BTC gönderip alabilir.",
+            "Kullanıcılar BTC Hyper’ın Layer 2’sinde neredeyse anında kesinlikle BTC gönderip alabilir.",
             "Staking ve merkeziyetsiz borsalar gibi karmaşık DeFi işlemlerini destekler.",
             "Yüksek işlem hacmi ve ölçeklenebilirlik için Solana’nın Sanal Makinesi’ni (SVM) kullanır."
           ]
@@ -91,7 +91,7 @@
           "number": "3",
           "title": "Uzlaşma ve Güvenlik",
           "contents": [
-            "Bitcoin Hyper, Layer 2 işlemlerini toplar ve sıkıştırır.",
+            "BTC Hyper, Layer 2 işlemlerini toplar ve sıkıştırır.",
             "İşlem geçerliliğini sağlamak için sıfır bilgi (ZK) kanıtları kullanır.",
             "Layer 2 durumu periyodik olarak Bitcoin’in Layer 1’ine kaydedilir ve senkronizasyon ile güvenlik sağlanır."
           ]
@@ -100,7 +100,7 @@
           "number": "4",
           "title": "L1’e Çekilme",
           "contents": [
-            "Kullanıcılar Bitcoin Hyper’ın Layer 2’sinde çekilme talebi başlatır.",
+            "Kullanıcılar BTC Hyper’ın Layer 2’sinde çekilme talebi başlatır.",
             "Sistem Layer 2 durumunu doğrular ve canonical köprü için bir kanıt oluşturur.",
             "Doğrulama sonrası, ilgili BTC kullanıcıya Layer 1’deki Bitcoin adresine geri serbest bırakılır."
           ]
@@ -111,11 +111,11 @@
         { "title": "Optimistic Rollups", "name": "OPTIMISM" },
         { "title": "ZK-Rollups", "name": "zkROLLUPS" },
         { "title": "Yan Zincirler", "name": "Rootstock" },
-        { "title": "Ölçeklenebilirlik", "name": "BITCOIN HYPER²" }
+        { "title": "Ölçeklenebilirlik", "name": "BTC Hyper²" }
       ]
     },
     "howtobuy": {
-      "title": "Bitcoin Hyper Nasıl Alınır",
+      "title": "BTC Hyper Nasıl Alınır",
       "buyNow": "$HYPER ŞİMDİ AL",
       "contents": [
         {
@@ -151,7 +151,7 @@
     "tokenomics": {
       "title": "TOKENOMİK",
       "buyNow": "ŞİMDİ SATIN AL",
-      "desc": "Bitcoin Hyper²'nin nasıl çalıştığının tam dökümü",
+      "desc": "BTC Hyper²'nin nasıl çalıştığının tam dökümü",
       "contents": [
         {
           "number": "1",
@@ -178,7 +178,7 @@
           "number": "4",
           "title": "Listelemeler %10",
           "contents": [
-            "Bitcoin Hyper ($HYPER) tokenlerinin çeşitli borsalarda listelenmesi için ayrılmış token tahsisi."
+            "BTC Hyper ($HYPER) tokenlerinin çeşitli borsalarda listelenmesi için ayrılmış token tahsisi."
           ]
         },
         {
@@ -191,11 +191,11 @@
       ]
     },
     "faqs": {
-      "title": "Bitcoin Hyper SSS",
+      "title": "BTC Hyper SSS",
       "contents": [
         {
           "number": "1",
-          "title": "Bitcoin Hyper nedir?",
+          "title": "BTC Hyper nedir?",
           "contents": [
             {
               "text": "İlk gerçek Bitcoin Layer 2 ağı. Hızlı, düşük maliyetli BTC işlemleri sağlar ve staking, merkeziyetsiz finans (DeFi) ve zincir üzerinde uygulamalar (dApps) açar. Yüksek işlem hacmine sahip sanal makine (SVM) tarafından desteklenen BTC Hyper, Bitcoin’de mümkün olanı yeniden tanımlamakla kalmaz, aynı zamanda 2025’in en iyi kripto ön satışıdır."
@@ -207,16 +207,16 @@
           "title": "$HYPER nedir?",
           "contents": [
             {
-              "text": "$HYPER, Bitcoin Hyper ağının yerel tokenidir – işlemler, staking ve yönetişim için kullanılır. Token, şu anda Web3Toolkit ödemeleri ve staking teknolojisi ile kolaylaştırılan en erken fiyat aşamalarında mevcut olup, şimdi satın alınabilecek en iyi kripto ön satış olarak geniş çapta tanınmaktadır."
+              "text": "$HYPER, BTC Hyper ağının yerel tokenidir – işlemler, staking ve yönetişim için kullanılır. Token, şu anda Web3Toolkit ödemeleri ve staking teknolojisi ile kolaylaştırılan en erken fiyat aşamalarında mevcut olup, şimdi satın alınabilecek en iyi kripto ön satış olarak geniş çapta tanınmaktadır."
             }
           ]
         },
         {
           "number": "3",
-          "title": "Bitcoin Hyper neden önemlidir?",
+          "title": "BTC Hyper neden önemlidir?",
           "contents": [
             {
-              "text": "Bitcoin Hyper, Bitcoin’in yavaş işlem hızını ve yüksek ücretlerini düzeltirken Bitcoin kalitesinde güvenliği korur. BTC Hyper ile kullanıcılar neredeyse gerçek zamanlı, düşük maliyetlerle Bitcoin gönderebilir, alabilir ve etkileşimde bulunabilir, ayrıca ortaya çıkan Bitcoin tabanlı DeFi ekonomisine katılabilirler."
+              "text": "BTC Hyper, Bitcoin’in yavaş işlem hızını ve yüksek ücretlerini düzeltirken Bitcoin kalitesinde güvenliği korur. BTC Hyper ile kullanıcılar neredeyse gerçek zamanlı, düşük maliyetlerle Bitcoin gönderebilir, alabilir ve etkileşimde bulunabilir, ayrıca ortaya çıkan Bitcoin tabanlı DeFi ekonomisine katılabilirler."
             }
           ]
         },
@@ -240,20 +240,20 @@
         },
         {
           "number": "5",
-          "title": "Bitcoin Hyper nasıl çalışır?",
+          "title": "BTC Hyper nasıl çalışır?",
           "contents": [
             {
               "label": "1. Köprü",
               "text": ""
             },
             {
-              "text": "BTC’yi Bitcoin Hyper Canonical Bridge tarafından izlenen belirlenmiş bir Bitcoin adresine gönderin."
+              "text": "BTC’yi BTC Hyper Canonical Bridge tarafından izlenen belirlenmiş bir Bitcoin adresine gönderin."
             },
             {
               "text": "Bitcoin Relay Programı (bir SVM akıllı kontratı) Bitcoin blok başlıklarını ve işlem kanıtlarını doğrular."
             },
             {
-              "text": "Doğrulandıktan sonra, eşdeğer miktarda BTC Bitcoin Hyper Layer 2 üzerinde güvenilir şekilde oluşturulur."
+              "text": "Doğrulandıktan sonra, eşdeğer miktarda BTC BTC Hyper Layer 2 üzerinde güvenilir şekilde oluşturulur."
             },
             {
               "label": "2. Layer 2 İşleyişi",
@@ -310,7 +310,7 @@
     "footer": {
       "desc": "Feragatname",
       "content1": "Her zaman kendi araştırmanızı yapın. Buradaki hiçbir şey finansal tavsiye değildir. Bu bir meme coin'dir.",
-      "content2": "2025 bitcoin hyper Tüm hakları saklıdır."
+      "content2": "2025 BTC Hyper Tüm hakları saklıdır."
     }
   }
     

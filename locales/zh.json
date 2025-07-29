@@ -111,11 +111,11 @@
         { "title": "乐观汇总", "name": "OPTIMISM" },
         { "title": "零知识汇总", "name": "zkROLLUPS" },
         { "title": "侧链", "name": "Rootstock" },
-        { "title": "可扩展性", "name": "BITCOIN HYPER²" }
+        { "title": "可扩展性", "name": "BTC Hyper²" }
       ]
     },
     "howtobuy": {
-      "title": "如何购买 Bitcoin Hyper",
+      "title": "如何购买 BTC Hyper",
       "buyNow": "立即购买 $HYPER",
       "contents": [
         {
@@ -151,7 +151,7 @@
     "tokenomics": {
       "title": "代币经济学",
       "buyNow": "立即购买",
-      "desc": "Bitcoin Hyper² 的完整工作原理解析",
+      "desc": "BTC Hyper² 的完整工作原理解析",
       "contents": [
         {
           "number": "1",
@@ -178,7 +178,7 @@
           "number": "4",
           "title": "上市 10%",
           "contents": [
-            "指定代币分配用于 Bitcoin Hyper（$HYPER）在各种交易所的上市。"
+            "指定代币分配用于 BTC Hyper（$HYPER）在各种交易所的上市。"
           ]
         },
         {
@@ -191,11 +191,11 @@
       ]
     },
     "faqs": {
-      "title": "Bitcoin Hyper 常见问题",
+      "title": "BTC Hyper 常见问题",
       "contents": [
         {
           "number": "1",
-          "title": "什么是 Bitcoin Hyper？",
+          "title": "什么是 BTC Hyper？",
           "contents": [
             {
               "text": "首个真正的比特币第2层网络。它支持快速、低成本的BTC交易，并解锁质押、去中心化金融（DeFi）和链上应用（dApps）。由高吞吐量虚拟机（SVM）驱动，BTC Hyper不仅重新定义了比特币的可能性，也是2025年最好的加密预售。"
@@ -213,7 +213,7 @@
         },
         {
           "number": "3",
-          "title": "为什么 Bitcoin Hyper 很重要？",
+          "title": "为什么 BTC Hyper 很重要？",
           "contents": [
             {
               "text": "Bitcoin Hyper解决了比特币交易速度慢和费用高的问题，同时保持比特币级别的安全性。借助BTC Hyper，用户可以近乎实时地发送、接收和交互比特币，成本极低，并参与新兴的基于比特币的DeFi经济。"
@@ -310,7 +310,7 @@
     "footer": {
       "desc": "免责声明",
       "content1": "请始终自行研究。这里没有任何财务建议。这是一个表情币。",
-      "content2": "2025 bitcoin hyper 版权所有。"
+      "content2": "2025 BTC Hyper 版权所有。"
     }
   }
   

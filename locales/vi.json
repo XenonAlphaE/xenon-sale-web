@@ -73,16 +73,16 @@
           "number": "1",
           "title": "CẦU NỐI",
           "contents": [
-            "Người dùng gửi BTC đến một địa chỉ Bitcoin được chỉ định và được theo dõi bởi Cầu Chuẩn của Bitcoin Hyper.",
+            "Người dùng gửi BTC đến một địa chỉ Bitcoin được chỉ định và được theo dõi bởi Cầu Chuẩn của BTC Hyper.",
             "Chương trình Relay Bitcoin, một hợp đồng thông minh SVM, xác minh các tiêu đề khối Bitcoin và bằng chứng giao dịch.",
-            "Sau khi xác minh thành công, một lượng BTC tương đương được phát hành trên Lớp 2 của Bitcoin Hyper một cách tin cậy."
+            "Sau khi xác minh thành công, một lượng BTC tương đương được phát hành trên Lớp 2 của BTC Hyper một cách tin cậy."
           ]
         },
         {
           "number": "2",
           "title": "Hoạt động L2",
           "contents": [
-            "Người dùng có thể gửi và nhận BTC trên Lớp 2 của Bitcoin Hyper với độ hoàn thiện gần như ngay lập tức.",
+            "Người dùng có thể gửi và nhận BTC trên Lớp 2 của BTC Hyper với độ hoàn thiện gần như ngay lập tức.",
             "Hỗ trợ các hoạt động DeFi phức tạp, như staking và sàn giao dịch phi tập trung.",
             "Tận dụng Máy ảo Solana (SVM) để đạt thông lượng cao và khả năng mở rộng."
           ]
@@ -91,7 +91,7 @@
           "number": "3",
           "title": "Thanh toán & Bảo mật",
           "contents": [
-            "Bitcoin Hyper gom nhóm và nén các giao dịch trên Lớp 2.",
+            "BTC Hyper gom nhóm và nén các giao dịch trên Lớp 2.",
             "Sử dụng bằng chứng không kiến thức (ZK) để đảm bảo tính hợp lệ của giao dịch.",
             "Trạng thái của Lớp 2 được định kỳ ghi lại lên Lớp 1 của Bitcoin, duy trì sự đồng bộ và an toàn."
           ]
@@ -100,7 +100,7 @@
           "number": "4",
           "title": "Rút tiền về L1",
           "contents": [
-            "Người dùng khởi tạo yêu cầu rút tiền trên Lớp 2 của Bitcoin Hyper.",
+            "Người dùng khởi tạo yêu cầu rút tiền trên Lớp 2 của BTC Hyper.",
             "Hệ thống xác minh trạng thái Lớp 2 và tạo bằng chứng cho cầu chuẩn.",
             "Sau khi xác thực, BTC tương ứng sẽ được giải phóng trở lại địa chỉ Bitcoin của người dùng trên Lớp 1."
           ]
@@ -111,11 +111,11 @@
         { "title": "Optimistic Rollups", "name": "OPTIMISM" },
         { "title": "ZK-Rollups", "name": "zkROLLUPS" },
         { "title": "Sidechains", "name": "Rootstock" },
-        { "title": "Khả năng mở rộng", "name": "BITCOIN HYPER²" }
+        { "title": "Khả năng mở rộng", "name": "BTC Hyper²" }
       ]
     },
     "howtobuy": {
-      "title": "Cách Mua Bitcoin Hyper",
+      "title": "Cách Mua BTC Hyper",
       "buyNow": "MUA $HYPER NGAY",
       "contents": [
         {
@@ -151,7 +151,7 @@
     "tokenomics": {
       "title": "TOKENOMICS",
       "buyNow": "Mua NGAY",
-      "desc": "Phân tích chi tiết cách thức hoạt động của Bitcoin Hyper²",
+      "desc": "Phân tích chi tiết cách thức hoạt động của BTC Hyper²",
       "contents": [
         {
           "number": "1",
@@ -178,7 +178,7 @@
           "number": "4",
           "title": "Niêm yết 10%",
           "contents": [
-            "Phân bổ token dành cho việc niêm yết Bitcoin Hyper ($HYPER) trên các sàn giao dịch khác nhau."
+            "Phân bổ token dành cho việc niêm yết BTC Hyper ($HYPER) trên các sàn giao dịch khác nhau."
           ]
         },
         {
@@ -191,11 +191,11 @@
       ]
     },
     "faqs": {
-      "title": "Câu hỏi thường gặp về Bitcoin Hyper",
+      "title": "Câu hỏi thường gặp về BTC Hyper",
       "contents": [
         {
           "number": "1",
-          "title": "Bitcoin Hyper là gì?",
+          "title": "BTC Hyper là gì?",
           "contents": [
             {
               "text": "Mạng Layer 2 Bitcoin thật sự đầu tiên. Nó cho phép giao dịch BTC nhanh, chi phí thấp và mở khóa staking, tài chính phi tập trung (DeFi), cùng các ứng dụng trên chuỗi (dApps). Được vận hành bởi máy ảo hiệu suất cao (SVM), BTC Hyper không chỉ định nghĩa lại khả năng của Bitcoin mà còn là presale crypto tốt nhất năm 2025."
@@ -207,16 +207,16 @@
           "title": "$HYPER là gì?",
           "contents": [
             {
-              "text": "$HYPER là token gốc của mạng Bitcoin Hyper – dùng cho giao dịch, staking và quản trị. Token hiện đang được mở bán với mức giá sớm nhất trong presale crypto được công nhận là tốt nhất hiện nay, được hỗ trợ bởi công nghệ thanh toán và staking Web3Toolkit."
+              "text": "$HYPER là token gốc của mạng BTC Hyper – dùng cho giao dịch, staking và quản trị. Token hiện đang được mở bán với mức giá sớm nhất trong presale crypto được công nhận là tốt nhất hiện nay, được hỗ trợ bởi công nghệ thanh toán và staking Web3Toolkit."
             }
           ]
         },
         {
           "number": "3",
-          "title": "Tại sao Bitcoin Hyper quan trọng?",
+          "title": "Tại sao BTC Hyper quan trọng?",
           "contents": [
             {
-              "text": "Bitcoin Hyper khắc phục tốc độ giao dịch chậm và phí cao của Bitcoin trong khi vẫn giữ được mức độ bảo mật của Bitcoin. Với BTC Hyper, người dùng có thể gửi, nhận và tương tác với Bitcoin gần như ngay lập tức, chi phí thấp, đồng thời tham gia vào nền kinh tế DeFi dựa trên Bitcoin đang phát triển."
+              "text": "BTC Hyper khắc phục tốc độ giao dịch chậm và phí cao của Bitcoin trong khi vẫn giữ được mức độ bảo mật của Bitcoin. Với BTC Hyper, người dùng có thể gửi, nhận và tương tác với Bitcoin gần như ngay lập tức, chi phí thấp, đồng thời tham gia vào nền kinh tế DeFi dựa trên Bitcoin đang phát triển."
             }
           ]
         },
@@ -240,20 +240,20 @@
         },
         {
           "number": "5",
-          "title": "Bitcoin Hyper hoạt động như thế nào?",
+          "title": "BTC Hyper hoạt động như thế nào?",
           "contents": [
             {
               "label": "1. Cầu nối (Bridge)",
               "text": ""
             },
             {
-              "text": "Gửi BTC tới địa chỉ Bitcoin được giám sát bởi Bitcoin Hyper Canonical Bridge."
+              "text": "Gửi BTC tới địa chỉ Bitcoin được giám sát bởi BTC Hyper Canonical Bridge."
             },
             {
               "text": "Chương trình Bitcoin Relay (hợp đồng thông minh SVM) xác minh các block header và bằng chứng giao dịch của Bitcoin."
             },
             {
-              "text": "Sau khi xác minh, lượng BTC tương đương được tạo mới một cách đáng tin cậy trên Layer 2 của Bitcoin Hyper."
+              "text": "Sau khi xác minh, lượng BTC tương đương được tạo mới một cách đáng tin cậy trên Layer 2 của BTC Hyper."
             },
             {
               "label": "2. Hoạt động Layer 2",
@@ -310,7 +310,7 @@
     "footer": {
       "desc": "Tuyên bố từ chối trách nhiệm",
       "content1": "Luôn tự nghiên cứu kỹ. Đây không phải là lời khuyên tài chính. Đây là một meme coin.",
-      "content2": "2025 bitcoin hyper. Bảo lưu mọi quyền."
+      "content2": "2025 BTC Hyper. Bảo lưu mọi quyền."
     }
   }
     

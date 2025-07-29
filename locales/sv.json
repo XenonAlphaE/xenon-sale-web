@@ -91,7 +91,7 @@
           "number": "3",
           "title": "Avräkning & Säkerhet",
           "contents": [
-            "Bitcoin Hyper grupperar och komprimerar Layer 2-transaktioner.",
+            "BTC Hyper grupperar och komprimerar Layer 2-transaktioner.",
             "Använder zero-knowledge (ZK) bevis för att säkerställa transaktioners giltighet.",
             "Tillståndet för Layer 2 förpliktas periodiskt till Bitcoins Layer 1, vilket upprätthåller synkronisering och säkerhet."
           ]
@@ -111,11 +111,11 @@
         { "title": "Optimistiska Rollups", "name": "OPTIMISM" },
         { "title": "ZK-Rollups", "name": "zkROLLUPS" },
         { "title": "Sidokedjor", "name": "Rootstock" },
-        { "title": "Skalbarhet", "name": "BITCOIN HYPER²" }
+        { "title": "Skalbarhet", "name": "BTC Hyper²" }
       ]
     },
     "howtobuy": {
-      "title": "Hur man köper Bitcoin Hyper",
+      "title": "Hur man köper BTC Hyper",
       "buyNow": "KÖP $HYPER NU",
       "contents": [
         {
@@ -151,7 +151,7 @@
     "tokenomics": {
       "title": "TOKENOMICS",
       "buyNow": "Köp NU",
-      "desc": "Fullständig genomgång av hur Bitcoin Hyper² fungerar",
+      "desc": "Fullständig genomgång av hur BTC Hyper² fungerar",
       "contents": [
         {
           "number": "1",
@@ -178,7 +178,7 @@
           "number": "4",
           "title": "Listningar 10%",
           "contents": [
-            "Avsatt tokenallokering för Bitcoin Hyper ($HYPER) token-listningar på olika börser."
+            "Avsatt tokenallokering för BTC Hyper ($HYPER) token-listningar på olika börser."
           ]
         },
         {
@@ -191,11 +191,11 @@
       ]
     },
     "faqs": {
-      "title": "Bitcoin Hyper FAQ",
+      "title": "BTC Hyper FAQ",
       "contents": [
         {
           "number": "1",
-          "title": "Vad är Bitcoin Hyper?",
+          "title": "Vad är BTC Hyper?",
           "contents": [
             {
               "text": "Det första verkliga Bitcoin Layer 2-nätverket. Det möjliggör snabba, lågkostnads BTC-transaktioner och öppnar för staking, decentraliserad finans (DeFi) och applikationer byggda on-chain (dApps). Drivs av en högpresterande virtuell maskin (SVM), omdefinierar BTC Hyper vad som är möjligt på Bitcoin och är också den bästa kryptoförsäljningen 2025."
@@ -207,16 +207,16 @@
           "title": "Vad är $HYPER?",
           "contents": [
             {
-              "text": "$HYPER är den inhemska token för Bitcoin Hyper-nätverket – används för transaktioner, staking och styrning. Token är för närvarande tillgänglig i de tidigaste prisfaserna i vad som allmänt erkänns som den bästa kryptoförsäljningen att köpa nu, möjliggjord av Web3Toolkit betalningar och staking-teknologi."
+              "text": "$HYPER är den inhemska token för BTC Hyper-nätverket – används för transaktioner, staking och styrning. Token är för närvarande tillgänglig i de tidigaste prisfaserna i vad som allmänt erkänns som den bästa kryptoförsäljningen att köpa nu, möjliggjord av Web3Toolkit betalningar och staking-teknologi."
             }
           ]
         },
         {
           "number": "3",
-          "title": "Varför är Bitcoin Hyper viktigt?",
+          "title": "Varför är BTC Hyper viktigt?",
           "contents": [
             {
-              "text": "Bitcoin Hyper löser Bitcoins långsamma transaktionshastighet och höga avgifter samtidigt som Bitcoin-nivå säkerhet bibehålls. Med BTC Hyper kan användare skicka, ta emot och interagera med Bitcoin i nästan realtid, med minimala kostnader, och delta i den framväxande Bitcoin-baserade DeFi-ekonomin."
+              "text": "BTC Hyper löser Bitcoins långsamma transaktionshastighet och höga avgifter samtidigt som Bitcoin-nivå säkerhet bibehålls. Med BTC Hyper kan användare skicka, ta emot och interagera med Bitcoin i nästan realtid, med minimala kostnader, och delta i den framväxande Bitcoin-baserade DeFi-ekonomin."
             }
           ]
         },
@@ -240,20 +240,20 @@
         },
         {
           "number": "5",
-          "title": "Hur fungerar Bitcoin Hyper?",
+          "title": "Hur fungerar BTC Hyper?",
           "contents": [
             {
               "label": "1. Bro",
               "text": ""
             },
             {
-              "text": "Skicka BTC till en angiven Bitcoin-adress som övervakas av Bitcoin Hyper Canonical Bridge."
+              "text": "Skicka BTC till en angiven Bitcoin-adress som övervakas av BTC Hyper Canonical Bridge."
             },
             {
               "text": "Bitcoin Relay Program (ett SVM smartkontrakt) verifierar Bitcoin-blockhuvuden och transaktionsbevis."
             },
             {
-              "text": "När verifierat skapas en motsvarande mängd BTC trustlessly på Bitcoin Hyper Layer 2."
+              "text": "När verifierat skapas en motsvarande mängd BTC trustlessly på BTC Hyper Layer 2."
             },
             {
               "label": "2. Layer 2-operation",
@@ -310,7 +310,7 @@
     "footer": {
       "desc": "Ansvarsfriskrivning",
       "content1": "Gör alltid din egen research. Ingenting här är finansiell rådgivning. Detta är en meme-coin.",
-      "content2": "2025 bitcoin hyper Alla rättigheter förbehållna."
+      "content2": "2025 BTC Hyper Alla rättigheter förbehållna."
     }
   }
     

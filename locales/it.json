@@ -73,16 +73,16 @@
         "number": "1",
         "title": "PONTE",
         "contents": [
-          "L'utente deposita BTC in un indirizzo Bitcoin designato monitorato dal Canonical Bridge di Bitcoin Hyper.",
+          "L'utente deposita BTC in un indirizzo Bitcoin designato monitorato dal Canonical Bridge di BTC Hyper.",
           "Il Bitcoin Relay Program, uno smart contract SVM, verifica gli header dei blocchi Bitcoin e le prove delle transazioni.",
-          "Al completamento della verifica, una quantità equivalente di BTC viene coniata su Layer 2 di Bitcoin Hyper in modo trustless."
+          "Al completamento della verifica, una quantità equivalente di BTC viene coniata su Layer 2 di BTC Hyper in modo trustless."
         ]
       },
       {
         "number": "2",
         "title": "Operazione L2",
         "contents": [
-          "Gli utenti possono inviare e ricevere BTC su Layer 2 di Bitcoin Hyper con finalità quasi istantanea.",
+          "Gli utenti possono inviare e ricevere BTC su Layer 2 di BTC Hyper con finalità quasi istantanea.",
           "Supporta operazioni DeFi complesse, come staking e scambi decentralizzati.",
           "Sfrutta la Solana Virtual Machine (SVM) per alta velocità e scalabilità."
         ]
@@ -91,7 +91,7 @@
         "number": "3",
         "title": "Regolamento e Sicurezza",
         "contents": [
-          "Bitcoin Hyper raggruppa e comprime le transazioni di Layer 2.",
+          "BTC Hyper raggruppa e comprime le transazioni di Layer 2.",
           "Utilizza prove a conoscenza zero (ZK) per garantire la validità delle transazioni.",
           "Lo stato di Layer 2 viene periodicamente impegnato su Layer 1 di Bitcoin, mantenendo sincronizzazione e sicurezza."
         ]
@@ -100,7 +100,7 @@
         "number": "4",
         "title": "Prelievo a L1",
         "contents": [
-          "Gli utenti avviano una richiesta di prelievo su Layer 2 di Bitcoin Hyper.",
+          "Gli utenti avviano una richiesta di prelievo su Layer 2 di BTC Hyper.",
           "Il sistema verifica lo stato di Layer 2 e genera una prova per il canonical bridge.",
           "Dopo la convalida, l’BTC corrispondente viene rilasciato all’indirizzo Bitcoin dell’utente su Layer 1."
         ]
@@ -111,11 +111,11 @@
       { "title": "Optimistic Rollups", "name": "OPTIMISM" },
       { "title": "ZK-Rollups", "name": "zkROLLUPS" },
       { "title": "Sidechains", "name": "Rootstock" },
-      { "title": "Scalabilità", "name": "BITCOIN HYPER²" }
+      { "title": "Scalabilità", "name": "BTC Hyper²" }
     ]
   },
   "howtobuy": {
-    "title": "Come Comprare Bitcoin Hyper",
+    "title": "Come Comprare BTC Hyper",
     "buyNow": "COMPRA $HYPER ORA",
     "contents": [
       {
@@ -151,7 +151,7 @@
   "tokenomics": {
     "title": "TOKENOMICS",
     "buyNow": "Compra ORA",
-    "desc": "Dettaglio completo di come funziona Bitcoin Hyper²",
+    "desc": "Dettaglio completo di come funziona BTC Hyper²",
     "contents": [
       {
         "number": "1",
@@ -178,7 +178,7 @@
         "number": "4",
         "title": "Listings 10%",
         "contents": [
-          "Allocazione designata di token per le quotazioni del token Bitcoin Hyper ($HYPER) su vari exchange."
+          "Allocazione designata di token per le quotazioni del token BTC Hyper ($HYPER) su vari exchange."
         ]
       },
       {
@@ -191,11 +191,11 @@
     ]
   },
   "faqs": {
-    "title": "Domande Frequenti su Bitcoin Hyper",
+    "title": "Domande Frequenti su BTC Hyper",
     "contents": [
       {
         "number": "1",
-        "title": "Cos’è Bitcoin Hyper?",
+        "title": "Cos’è BTC Hyper?",
         "contents": [
           {
             "text": "La prima vera rete Bitcoin Layer 2. Consente transazioni BTC veloci e a basso costo e sblocca staking, finanza decentralizzata (DeFi) e applicazioni on-chain (dApp). Alimentato da una macchina virtuale ad alto rendimento (SVM), BTC Hyper non solo ridefinisce cosa è possibile su Bitcoin, ma è anche la migliore prevendita crypto del 2025."
@@ -207,16 +207,16 @@
         "title": "Cos’è $HYPER?",
         "contents": [
           {
-            "text": "$HYPER è il token nativo della rete Bitcoin Hyper – usato per transazioni, staking e governance. Il token è attualmente disponibile nelle prime fasi di prezzo nella migliore prevendita crypto da acquistare ora, facilitata dalla tecnologia di pagamenti e staking di Web3Toolkit."
+            "text": "$HYPER è il token nativo della rete BTC Hyper – usato per transazioni, staking e governance. Il token è attualmente disponibile nelle prime fasi di prezzo nella migliore prevendita crypto da acquistare ora, facilitata dalla tecnologia di pagamenti e staking di Web3Toolkit."
           }
         ]
       },
       {
         "number": "3",
-        "title": "Perché Bitcoin Hyper è importante?",
+        "title": "Perché BTC Hyper è importante?",
         "contents": [
           {
-            "text": "Bitcoin Hyper risolve la lentezza delle transazioni Bitcoin e le alte commissioni mantenendo la sicurezza di livello Bitcoin. Con BTC Hyper, gli utenti possono inviare, ricevere e interagire con Bitcoin quasi in tempo reale, con costi minimi, e partecipare all’economia DeFi emergente basata su Bitcoin."
+            "text": "BTC Hyper risolve la lentezza delle transazioni Bitcoin e le alte commissioni mantenendo la sicurezza di livello Bitcoin. Con BTC Hyper, gli utenti possono inviare, ricevere e interagire con Bitcoin quasi in tempo reale, con costi minimi, e partecipare all’economia DeFi emergente basata su Bitcoin."
           }
         ]
       },
@@ -240,20 +240,20 @@
       },
       {
         "number": "5",
-        "title": "Come funziona Bitcoin Hyper?",
+        "title": "Come funziona BTC Hyper?",
         "contents": [
           {
             "label": "1. Bridge",
             "text": ""
           },
           {
-            "text": "Invia BTC a un indirizzo Bitcoin designato monitorato dal Bitcoin Hyper Canonical Bridge."
+            "text": "Invia BTC a un indirizzo Bitcoin designato monitorato dal BTC Hyper Canonical Bridge."
           },
           {
             "text": "Il Bitcoin Relay Program (un contratto smart SVM) verifica gli header dei blocchi Bitcoin e le prove di transazione."
           },
           {
-            "text": "Una volta verificato, un ammontare equivalente di BTC viene creato in modo trustless su Bitcoin Hyper Layer 2."
+            "text": "Una volta verificato, un ammontare equivalente di BTC viene creato in modo trustless su BTC Hyper Layer 2."
           },
           {
             "label": "2. Operazione Layer 2",
@@ -310,6 +310,6 @@
   "footer": {
     "desc": "Disclaimer",
     "content1": "Fai sempre le tue ricerche. Nulla di quanto riportato è un consiglio finanziario. Questo è un meme coin.",
-    "content2": "2025 bitcoin hyper Tutti i diritti riservati."
+    "content2": "2025 BTC Hyper Tutti i diritti riservati."
   }
 }

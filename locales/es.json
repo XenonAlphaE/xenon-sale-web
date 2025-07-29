@@ -73,16 +73,16 @@
           "number": "1",
           "title": "PUENTE",
           "contents": [
-            "El usuario deposita BTC en una dirección de Bitcoin designada monitoreada por el Puente Canónico de Bitcoin Hyper.",
+            "El usuario deposita BTC en una dirección de Bitcoin designada monitoreada por el Puente Canónico de BTC Hyper.",
             "El Programa de Relevo de Bitcoin, un contrato inteligente SVM, verifica los encabezados de bloques y pruebas de transacciones de Bitcoin.",
-            "Tras la verificación exitosa, se acuña una cantidad equivalente de BTC en la Capa 2 de Bitcoin Hyper de manera confiable."
+            "Tras la verificación exitosa, se acuña una cantidad equivalente de BTC en la Capa 2 de BTC Hyper de manera confiable."
           ]
         },
         {
           "number": "2",
           "title": "Operación L2",
           "contents": [
-            "Los usuarios pueden enviar y recibir BTC en la Capa 2 de Bitcoin Hyper con finalización casi instantánea.",
+            "Los usuarios pueden enviar y recibir BTC en la Capa 2 de BTC Hyper con finalización casi instantánea.",
             "Soporta operaciones DeFi complejas, como staking e intercambios descentralizados.",
             "Aprovecha la Máquina Virtual de Solana (SVM) para un alto rendimiento y escalabilidad."
           ]
@@ -91,7 +91,7 @@
           "number": "3",
           "title": "Liquidación y Seguridad",
           "contents": [
-            "Bitcoin Hyper agrupa y comprime las transacciones de la Capa 2.",
+            "BTC Hyper agrupa y comprime las transacciones de la Capa 2.",
             "Utiliza pruebas de conocimiento cero (ZK) para garantizar la validez de las transacciones.",
             "El estado de la Capa 2 se compromete periódicamente a la Capa 1 de Bitcoin, manteniendo sincronización y seguridad."
           ]
@@ -100,7 +100,7 @@
           "number": "4",
           "title": "Retiro a L1",
           "contents": [
-            "Los usuarios inician una solicitud de retiro en la Capa 2 de Bitcoin Hyper.",
+            "Los usuarios inician una solicitud de retiro en la Capa 2 de BTC Hyper.",
             "El sistema verifica el estado de la Capa 2 y genera una prueba para el puente canónico.",
             "Tras la validación, el BTC correspondiente se libera de vuelta a la dirección de Bitcoin del usuario en la Capa 1."
           ]
@@ -111,11 +111,11 @@
         { "title": "Rollups Optimistas", "name": "OPTIMISM" },
         { "title": "ZK-Rollups", "name": "zkROLLUPS" },
         { "title": "Cadenas Laterales", "name": "Rootstock" },
-        { "title": "Escalabilidad", "name": "BITCOIN HYPER²" }
+        { "title": "Escalabilidad", "name": "BTC Hyper²" }
       ]
     },
     "howtobuy": {
-      "title": "Cómo Comprar Bitcoin Hyper",
+      "title": "Cómo Comprar BTC Hyper",
       "buyNow": "COMPRAR $HYPER AHORA",
       "contents": [
         {
@@ -151,7 +151,7 @@
     "tokenomics": {
       "title": "TOKENOMICS",
       "buyNow": "Comprar AHORA",
-      "desc": "Desglose completo de cómo funciona Bitcoin Hyper²",
+      "desc": "Desglose completo de cómo funciona BTC Hyper²",
       "contents": [
         {
           "number": "1",
@@ -178,7 +178,7 @@
           "number": "4",
           "title": "Listados 10%",
           "contents": [
-            "Asignación designada de tokens para listados del token Bitcoin Hyper ($HYPER) en varios exchanges."
+            "Asignación designada de tokens para listados del token BTC Hyper ($HYPER) en varios exchanges."
           ]
         },
         {
@@ -191,11 +191,11 @@
       ]
     },
     "faqs": {
-      "title": "Preguntas Frecuentes de Bitcoin Hyper",
+      "title": "Preguntas Frecuentes de BTC Hyper",
       "contents": [
         {
           "number": "1",
-          "title": "¿Qué es Bitcoin Hyper?",
+          "title": "¿Qué es BTC Hyper?",
           "contents": [
             {
               "text": "La primera verdadera red Layer 2 de Bitcoin. Permite transacciones BTC rápidas y de bajo costo y desbloquea staking, finanzas descentralizadas (DeFi) y aplicaciones construidas en cadena (dApps). Impulsado por una máquina virtual de alto rendimiento (SVM), BTC Hyper no solo redefine lo que es posible en Bitcoin, sino que también es la mejor preventa cripto de 2025."
@@ -207,16 +207,16 @@
           "title": "¿Qué es $HYPER?",
           "contents": [
             {
-              "text": "$HYPER es el token nativo de la red Bitcoin Hyper, utilizado para transacciones, staking y gobernanza. Actualmente el token está disponible en las primeras etapas de precio en lo que es ampliamente reconocido como la mejor preventa cripto para comprar ahora, facilitada por la tecnología de pagos y staking de Web3Toolkit."
+              "text": "$HYPER es el token nativo de la red BTC Hyper, utilizado para transacciones, staking y gobernanza. Actualmente el token está disponible en las primeras etapas de precio en lo que es ampliamente reconocido como la mejor preventa cripto para comprar ahora, facilitada por la tecnología de pagos y staking de Web3Toolkit."
             }
           ]
         },
         {
           "number": "3",
-          "title": "¿Por qué es importante Bitcoin Hyper?",
+          "title": "¿Por qué es importante BTC Hyper?",
           "contents": [
             {
-              "text": "Bitcoin Hyper soluciona la lenta velocidad de transacción y las altas tarifas de Bitcoin mientras mantiene la seguridad de nivel Bitcoin. Con BTC Hyper, los usuarios pueden enviar, recibir e interactuar con Bitcoin casi en tiempo real, con costos mínimos, y participar en la emergente economía DeFi basada en Bitcoin."
+              "text": "BTC Hyper soluciona la lenta velocidad de transacción y las altas tarifas de Bitcoin mientras mantiene la seguridad de nivel Bitcoin. Con BTC Hyper, los usuarios pueden enviar, recibir e interactuar con Bitcoin casi en tiempo real, con costos mínimos, y participar en la emergente economía DeFi basada en Bitcoin."
             }
           ]
         },
@@ -240,20 +240,20 @@
         },
         {
           "number": "5",
-          "title": "¿Cómo funciona Bitcoin Hyper?",
+          "title": "¿Cómo funciona BTC Hyper?",
           "contents": [
             {
               "label": "1. Puente",
               "text": ""
             },
             {
-              "text": "Envía BTC a una dirección designada de Bitcoin monitoreada por el Puente Canónico de Bitcoin Hyper."
+              "text": "Envía BTC a una dirección designada de Bitcoin monitoreada por el Puente Canónico de BTC Hyper."
             },
             {
               "text": "El Programa de Relevo Bitcoin (un contrato inteligente SVM) verifica los encabezados de bloques y pruebas de transacciones de Bitcoin."
             },
             {
-              "text": "Una vez verificado, se crea de manera confiable una cantidad equivalente de BTC en Bitcoin Hyper Layer 2."
+              "text": "Una vez verificado, se crea de manera confiable una cantidad equivalente de BTC en BTC Hyper Layer 2."
             },
             {
               "label": "2. Operación en Capa 2",
@@ -310,7 +310,7 @@
     "footer": {
       "desc": "Descargo de responsabilidad",
       "content1": "Siempre haz tu propia investigación. Nada aquí es asesoría financiera. Esto es una meme coin.",
-      "content2": "2025 bitcoin hyper Todos los derechos reservados."
+      "content2": "2025 BTC Hyper Todos los derechos reservados."
     }
   }
     

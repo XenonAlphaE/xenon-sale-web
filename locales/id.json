@@ -73,16 +73,16 @@
           "number": "1",
           "title": "JEMBATAN",
           "contents": [
-            "Pengguna menyetor BTC ke alamat Bitcoin yang ditunjuk dan dipantau oleh Jembatan Kanonik Bitcoin Hyper.",
+            "Pengguna menyetor BTC ke alamat Bitcoin yang ditunjuk dan dipantau oleh Jembatan Kanonik BTC Hyper.",
             "Program Bitcoin Relay, sebuah kontrak pintar SVM, memverifikasi header blok Bitcoin dan bukti transaksi.",
-            "Setelah verifikasi berhasil, jumlah BTC yang setara dicetak di Layer 2 Bitcoin Hyper secara tanpa kepercayaan."
+            "Setelah verifikasi berhasil, jumlah BTC yang setara dicetak di Layer 2 BTC Hyper secara tanpa kepercayaan."
           ]
         },
         {
           "number": "2",
           "title": "Operasi L2",
           "contents": [
-            "Pengguna dapat mengirim dan menerima BTC di Layer 2 Bitcoin Hyper dengan finalitas hampir instan.",
+            "Pengguna dapat mengirim dan menerima BTC di Layer 2 BTC Hyper dengan finalitas hampir instan.",
             "Mendukung operasi DeFi kompleks, seperti staking dan pertukaran terdesentralisasi.",
             "Memanfaatkan Mesin Virtual Solana (SVM) untuk throughput tinggi dan skalabilitas."
           ]
@@ -91,7 +91,7 @@
           "number": "3",
           "title": "Penyelesaian & Keamanan",
           "contents": [
-            "Bitcoin Hyper mengelompokkan dan mengompres transaksi Layer 2.",
+            "BTC Hyper mengelompokkan dan mengompres transaksi Layer 2.",
             "Menggunakan bukti zero-knowledge (ZK) untuk memastikan validitas transaksi.",
             "Status Layer 2 secara berkala dikomit ke Layer 1 Bitcoin, menjaga sinkronisasi dan keamanan."
           ]
@@ -100,7 +100,7 @@
           "number": "4",
           "title": "Penarikan ke L1",
           "contents": [
-            "Pengguna menginisiasi permintaan penarikan di Layer 2 Bitcoin Hyper.",
+            "Pengguna menginisiasi permintaan penarikan di Layer 2 BTC Hyper.",
             "Sistem memverifikasi status Layer 2 dan menghasilkan bukti untuk jembatan kanonik.",
             "Setelah validasi, BTC yang sesuai dilepaskan kembali ke alamat Bitcoin pengguna di Layer 1."
           ]
@@ -111,11 +111,11 @@
         { "title": "Optimistic Rollups", "name": "OPTIMISM" },
         { "title": "ZK-Rollups", "name": "zkROLLUPS" },
         { "title": "Sidechains", "name": "Rootstock" },
-        { "title": "Skalabilitas", "name": "BITCOIN HYPER²" }
+        { "title": "Skalabilitas", "name": "BTC Hyper²" }
       ]
     },
     "howtobuy": {
-      "title": "Cara Membeli Bitcoin Hyper",
+      "title": "Cara Membeli BTC Hyper",
       "buyNow": "BELI $HYPER SEKARANG",
       "contents": [
         {
@@ -151,7 +151,7 @@
     "tokenomics": {
       "title": "TOKENOMICS",
       "buyNow": "Beli SEKARANG",
-      "desc": "Rincian lengkap bagaimana Bitcoin Hyper² bekerja",
+      "desc": "Rincian lengkap bagaimana BTC Hyper² bekerja",
       "contents": [
         {
           "number": "1",
@@ -178,7 +178,7 @@
           "number": "4",
           "title": "Listings 10%",
           "contents": [
-            "Alokasi token yang ditunjuk untuk listing token Bitcoin Hyper ($HYPER) di berbagai bursa."
+            "Alokasi token yang ditunjuk untuk listing token BTC Hyper ($HYPER) di berbagai bursa."
           ]
         },
         {
@@ -191,11 +191,11 @@
       ]
     },
     "faqs": {
-      "title": "FAQ Bitcoin Hyper",
+      "title": "FAQ BTC Hyper",
       "contents": [
         {
           "number": "1",
-          "title": "Apa itu Bitcoin Hyper?",
+          "title": "Apa itu BTC Hyper?",
           "contents": [
             {
               "text": "Jaringan Bitcoin Layer 2 sejati pertama. Memungkinkan transaksi BTC cepat dan biaya rendah serta membuka staking, keuangan terdesentralisasi (DeFi), dan aplikasi yang dibangun di blockchain (dApps). Didukung oleh mesin virtual throughput tinggi (SVM), BTC Hyper tidak hanya mendefinisikan ulang apa yang mungkin di Bitcoin, tetapi juga merupakan presale kripto terbaik tahun 2025."
@@ -207,16 +207,16 @@
           "title": "Apa itu $HYPER?",
           "contents": [
             {
-              "text": "$HYPER adalah token asli jaringan Bitcoin Hyper – digunakan untuk transaksi, staking, dan tata kelola. Token ini saat ini tersedia dalam tahap harga paling awal dalam apa yang secara luas diakui sebagai presale kripto terbaik untuk dibeli sekarang, difasilitasi oleh teknologi pembayaran dan staking Web3Toolkit."
+              "text": "$HYPER adalah token asli jaringan BTC Hyper – digunakan untuk transaksi, staking, dan tata kelola. Token ini saat ini tersedia dalam tahap harga paling awal dalam apa yang secara luas diakui sebagai presale kripto terbaik untuk dibeli sekarang, difasilitasi oleh teknologi pembayaran dan staking Web3Toolkit."
             }
           ]
         },
         {
           "number": "3",
-          "title": "Mengapa Bitcoin Hyper penting?",
+          "title": "Mengapa BTC Hyper penting?",
           "contents": [
             {
-              "text": "Bitcoin Hyper memperbaiki kecepatan transaksi Bitcoin yang lambat dan biaya tinggi sambil mempertahankan keamanan setara Bitcoin. Dengan BTC Hyper, pengguna dapat mengirim, menerima, dan berinteraksi dengan Bitcoin hampir secara real-time, dengan biaya minimal, serta berpartisipasi dalam ekonomi DeFi berbasis Bitcoin yang sedang berkembang."
+              "text": "BTC Hyper memperbaiki kecepatan transaksi Bitcoin yang lambat dan biaya tinggi sambil mempertahankan keamanan setara Bitcoin. Dengan BTC Hyper, pengguna dapat mengirim, menerima, dan berinteraksi dengan Bitcoin hampir secara real-time, dengan biaya minimal, serta berpartisipasi dalam ekonomi DeFi berbasis Bitcoin yang sedang berkembang."
             }
           ]
         },
@@ -240,20 +240,20 @@
         },
         {
           "number": "5",
-          "title": "Bagaimana cara kerja Bitcoin Hyper?",
+          "title": "Bagaimana cara kerja BTC Hyper?",
           "contents": [
             {
               "label": "1. Jembatan",
               "text": ""
             },
             {
-              "text": "Kirim BTC ke alamat Bitcoin yang ditunjuk yang dipantau oleh Bitcoin Hyper Canonical Bridge."
+              "text": "Kirim BTC ke alamat Bitcoin yang ditunjuk yang dipantau oleh BTC Hyper Canonical Bridge."
             },
             {
               "text": "Program Bitcoin Relay (kontrak pintar SVM) memverifikasi header blok dan bukti transaksi Bitcoin."
             },
             {
-              "text": "Setelah diverifikasi, jumlah BTC yang setara dicetak secara terpercaya di Bitcoin Hyper Layer 2."
+              "text": "Setelah diverifikasi, jumlah BTC yang setara dicetak secara terpercaya di BTC Hyper Layer 2."
             },
             {
               "label": "2. Operasi Layer 2",
@@ -310,7 +310,7 @@
     "footer": {
       "desc": "Penafian",
       "content1": "Selalu lakukan riset sendiri. Tidak ada yang di sini merupakan nasihat keuangan. Ini adalah meme coin.",
-      "content2": "2025 bitcoin hyper Hak cipta dilindungi."
+      "content2": "2025 BTC Hyper Hak cipta dilindungi."
     }
   }
     
