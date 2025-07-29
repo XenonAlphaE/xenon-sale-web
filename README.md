@@ -50,7 +50,7 @@ MAIN_SITENAME=btchyper
 MAIN_TWITTER=@btchyper
 OG_PATH=/img/btchyper/OG.jpeg
 
-
+ 
 
 BACKLINKS_URL=https://flockez.netlify.app/js/backlinks.json
 LOGO_PATH=/img/btchyper/token.svg
