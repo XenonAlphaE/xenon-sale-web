@@ -308,7 +308,7 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
                 //   console.error("Error:", error.message);
             }
         }
-     
+
         const buyTokensUSDTWifRef = async (amount, ref, isStaking = false) => {
             
             try{
@@ -358,7 +358,7 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
                         abi: salerInfo.abi,
                         address: salerInfo.address,
                         functionName:"buyWithUSDT",
-                        args:[usdtAmount, globalConfigs?.targetToken?.symbol, isStaking, zeroAddress, 0 , 0 , zeroAddress]
+                        args:[usdtAmount, globalConfigs?.targetToken?.symbol, isStaking, zeroAddress, 0 , 0 , zeroAddress, usdtAddress]
                     })
                     // await tx.wait();
                     console.log("Buy Tokens successfully!" + tx);
@@ -371,7 +371,8 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
                 // console.error("Error during buying:", error.message);
             }
         }
-       
+
+        
         const stakeETHTokens = async (amount, tokenAmount)  => {
             try{
                 
