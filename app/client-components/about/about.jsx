@@ -44,7 +44,6 @@ function AboutCard({ cardClass, number, title, contents }) {
 const About =() => {
   const isMobile = useIsMobile()
   const sectionText = useI18nSection('about')
-  console.log(JSON.stringify (sectionText))
   const aboutContents = sectionText?.contents
 
   const frameworks = [
