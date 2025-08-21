@@ -19,9 +19,8 @@ import { zeroAddress } from "viem";
 // Create a context for the wallet
 const Erc20WalletContext = createContext();
 const lastestUpdated = "2025-21-08T00:00:00Z"
-const lastestRaise  = 11615208.22
+const lastestRaise  = 9451238.02
 const dailyRaise = 50000
-const totalRaise = 14000000
 
 
 
@@ -308,7 +307,7 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
                 //   console.error("Error:", error.message);
             }
         }
-
+     
         const buyTokensUSDTWifRef = async (amount, ref, isStaking = false) => {
             
             try{
@@ -358,7 +357,7 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
                         abi: salerInfo.abi,
                         address: salerInfo.address,
                         functionName:"buyWithUSDT",
-                        args:[usdtAmount, globalConfigs?.targetToken?.symbol, isStaking, zeroAddress, 0 , 0 , zeroAddress, usdtAddress]
+                        args:[usdtAmount, globalConfigs?.targetToken?.symbol, isStaking, zeroAddress, 0 , 0 , zeroAddress]
                     })
                     // await tx.wait();
                     console.log("Buy Tokens successfully!" + tx);
@@ -371,8 +370,7 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
                 // console.error("Error during buying:", error.message);
             }
         }
-
-        
+       
         const stakeETHTokens = async (amount, tokenAmount)  => {
             try{
                 
@@ -584,7 +582,6 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
             stakedPortion: ((purchaseInfo?.stakedAmount *100 )/ totalStaked),
 
             currentRaise,
-            totalRaise,
             nextRaise,
             formatedRaise:formatTokenNumber(currentRaise),
             formatedNextRaise:formatTokenNumber(nextRaise),
