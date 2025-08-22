@@ -10,7 +10,7 @@
   z-index: 99999999;
   box-sizing: border-box;
   width: 100%;
-  background-color:rgba(0, 0, 0, 0.4);
+  background-color:rgb(17, 18, 11);
   backdrop-filter:blur(5px);
   border-bottom: none;
   height: 64px;
@@ -55,17 +55,18 @@
 }
 
 .textLogo{
-  width: 120px;
-  height: 32px;
+  width: 180px;
 }
 
 
 .appnavMenu{
+  background-color: white;
   flex-direction: row;
   column-gap: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-inline: 1rem;
 
 }
 
@@ -76,13 +77,14 @@
 }
 
 .appnavMenu a{
-  color:white;
+  color:black;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .appnavMenu a:hover{
-  color:rgb(255 215 0 );
+  color:white;
+  background: #000;
 }
 
 
@@ -94,17 +96,40 @@
 
 }
 
+.appWhitepaper{
+    padding: 0px;
+    cursor: pointer;
+    font-weight: 900;
+    text-decoration: none;
+    color: white;
+    min-width: 140px;
+    border: none;
+    min-height: 42px;
+    background: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px #222;
+    transition: all .4s ease-out;
+    clip-path: polygon(100% 15px, 100% 100%, 15px 100%, 0% calc(100% - 15px), 0% 0%, calc(100% - 15px) 0%);
+
+
+}
+
 .appnavLogin {
   padding: 0px;
   cursor: pointer;
   font-weight: 900;
   text-decoration: none;
-  color: white;
+  color: black;
   min-width: 140px;
   border: none;
   min-height: 42px;
-  background: linear-gradient(to right, #F7931A, #FFD700);
-  border-radius: 8px;
+  background: #98FF19;
+
+  transition: all .4s ease-out;
+  clip-path: polygon(100% 15px, 100% 100%, 15px 100%, 0% calc(100% - 15px), 0% 0%, calc(100% - 15px) 0%);
+
 }
 
 .appSocialIcon{
@@ -170,11 +195,12 @@
   padding: 5px;
   cursor: pointer;
   color: white;
+  text-decoration: none;
 }
 
 .selectedLang {
-  background-color: #ff812d;
-  color: white;
+  background-color: #98FF19;
+  color: black;
   text-decoration: underline;
   font-weight: bold;
   border-radius: 4px;
@@ -182,7 +208,7 @@
 
 .langDropdownItem:hover {
   background: #eee;
-  color: #fff;
+  color: black;
 }
 
 .langDropdownItem span {

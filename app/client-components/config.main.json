@@ -3,8 +3,8 @@
     "targetToken":{
         "address":"",
         "decimals":18,
-        "symbol": "BTC3",
-        "tokenPrice":"1"
+        "symbol": "PEPENODE",
+        "tokenPrice":"0.0010242"
     },
     "previousRaised":5009043.52,
     "previousSoldTokens":0,
