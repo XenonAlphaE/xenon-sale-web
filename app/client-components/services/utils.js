@@ -145,7 +145,7 @@ export function formatTokenNumber(num) {
 
 
 export function roundUpToNextMillion(num) {
-  const million = 1_000_000;
+  const million = 500_000;
   return Math.ceil((num + 1) / million) * million;
 }
 

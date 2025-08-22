@@ -2,13 +2,12 @@
 .container {
   position: relative;
   width: 100%;
-  height: 8px;
-  background: rgb(177, 190, 204);
+  height: 24px;
+  background: rgb(51, 51, 51);
   display: flex;
   box-sizing: border-box;
   border-radius: 5px;
   align-items: center;
-  padding: 1px 1px;
   overflow: visible;
   margin-bottom: 2rem;
 }
@@ -16,12 +15,11 @@
 .bar {
   position: relative;
   height: 100%;
-  background: rgb(255, 129, 45);
-  border-radius: 5px;
+  background: rgb(152, 255, 25);
   transition: width 0.3s ease;
 }
 
-.bar::after {
+/* .bar::after {
   content: '';
   position: absolute;
   right: 0;
@@ -32,15 +30,15 @@
   background: #fff;
   border-radius: 50%;
   transform: translate(50%, -50%);
-}
+} */
 
 .text {
   position: absolute;
   left: 50%;
   top: 50%;
   width: max-content;
-  font-weight: 500;
+  font-weight: 600;
   transform: translate(-50%, -50%);
-  color: rgb(0, 0, 64);
+  color: black;
   font-size: 12px;
 }

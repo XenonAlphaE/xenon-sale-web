@@ -3,25 +3,37 @@
   position: relative;
   width: 100%;
 }
+.container::before{
+    content: "";
+    position: absolute;
+    inset: -1px;
+    background: #98ff19;
+    clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 15px 100%, 0 calc(100% - 15px), 0 0, 1px 1px, 1px calc(100% - 16px), 15px calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), calc(100% - 1px) 15px, calc(100% - 15px) 1px, 1px 1px);
+}
+
 
 .dropdown{
   /* border: solid 2px #fff;
   box-sizing: border-box;
   background: transparent; */
-  border: 2px solid rgb(0, 123, 255);
     border-radius: 8px;
     width: 100%;
-    color:  rgb(255, 129, 45);
+    color:  #98ff19;
     box-sizing: border-box;
     font-size : 18px;
     padding: 10px 30px;
-    background-color:white;
+    background-color:transparent;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 60px;
+    border: none;
 }
+
+
+
+
 
 .dropdownContent {
   color:rgb(186, 139, 249);

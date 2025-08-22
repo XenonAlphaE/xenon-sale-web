@@ -144,7 +144,7 @@ export const BuyForm = () => {
             <div className={styles.walletBoxInfo} >
                 <div className={styles.walletBoxHeader} >
                   <div>
-                    <p className={styles.walletBoxHeading} >{sectionText?.intro} </p>
+                    <p className={styles.walletBoxHeading} >{sectionText?.intro} <span className={styles.symbol}> ${walletEth?.tokenSymbol} </span>  </p>
                   </div>
                 </div>
 
@@ -173,11 +173,11 @@ export const BuyForm = () => {
                  
                   </div>
                 </div>
+                <ProgressBar percentage={walletEth?.currentRaise *100/ walletEth?.nextRaise }/>
 
 
                 <p className={styles.totalRaised}>{sectionText?.funRaised}:  ${walletEth?.formatedRaise} / ${walletEth?.formatedNextRaise} </p>
 
-                <ProgressBar percentage={walletEth?.currentRaise *100/ walletEth?.nextRaise }/>
                 {walletEth.currentAddress && 
                 <div>
                 {/* {truncateMiddle(walletEth.currentAddress)} */}
@@ -239,7 +239,7 @@ export const BuyForm = () => {
                         type="text"
                         placeholder="0" />
                         <div className={styles.amountType} >
-                          <img src='/img/btcswift/token-symbol-light.webp' style={{ 'height': '30px', marginRight:5 }} />
+                          <img src='/img/pepenode/token.svg' style={{ 'height': '30px', marginRight:5 }} />
                         </div>
                     </div>
                     </div>
@@ -269,9 +269,9 @@ export const BuyForm = () => {
             </div>
             }
             <div className={styles.externalInfo}  >
-              <a style={{textDecorationColor:"white", textDecoration:'underline'}} href="https://widget.wert.io/default/widget/?commodity=ETH%3AEthereum" target="_blank">Not enough ETH? Top up now</a>
+              <a style={{textDecorationColor:"white", textDecoration:'underline', color: 'white'}} href="https://widget.wert.io/default/widget/?commodity=ETH%3AEthereum" target="_blank">Not enough ETH? Top up now</a>
               {/* <p translate="" className="font-18 text-center m-0 mt-2"><img src="/img/solx/token.svg" style={{ 'height': '35px' }} /> Powered by <a target="_blank" href='/' className=" "><img src="/img/default/W3P_White.svg" alt="" style={{height:25}} /></a></p> */}
-              <a target="_blank" href='/' className=" "><img src="/img/default/W3P_Black.svg" alt="" style={{height:18}} /> </a>
+              <a target="_blank" href='/' className=" "><img src="/img/default/W3P_White.svg" alt="" style={{height:18}} /> </a>
             </div>
         </div>
         </div>

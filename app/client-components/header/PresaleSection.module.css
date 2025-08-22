@@ -3,29 +3,31 @@
     padding: 2rem;
     text-align: center;
     overflow: hidden;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    row-gap: 2rem;
-    width: 100%;
+    background-color: transparent;
+
+
     @media (max-width: 1024px) {
         width: 100%;
         flex-direction: column;
     }
 
   }
-  .brandLogo{
-    width: 20%;
-  }
-
-  .textLogo{
-    width: 40%;
-  }
-
   
+  .leftPart{
+      width: 55%;
+
+      @media (max-width: 1024px) {
+          width: 100%;
+          flex-direction: column;
+      }
+
+  }
+
   .headline{
-    text-align: center;
-    color: white;
+    text-align: left;
+    color: red;
+    border-bottom: 1px solid  black;
+    width: 80%;
     @media (max-width: 1024px) {
         width: 100%;
         font-size: x-large;
@@ -35,6 +37,32 @@
 
   .description{
     text-align: left;
-        color: rgb(148, 163, 184);
+  }
 
+  .rightPart{
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      @media (max-width: 1024px) {
+          width: 100%;
+          flex-direction: column;
+      }
+
+  }
+  
+
+  .videoPlayer{
+    width: 100%;
+    border-radius: 10px;
+
+  }
+
+  .bannerList{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .bannerListItem{
+    max-width: 28%;
   }

@@ -3,10 +3,8 @@
   flex-direction: row;
   align-items: center;
   row-gap: 1rem;
-  background: linear-gradient(to bottom,
-      rgba(255, 140, 0, 0.1) 0%,
-      #1A1A1A 40%,
-      rgba(26, 26, 26, 0.1) 100%);
+  background: rgb(17, 18, 11);
+
 
   min-height: 100vh;
   justify-content: center;
