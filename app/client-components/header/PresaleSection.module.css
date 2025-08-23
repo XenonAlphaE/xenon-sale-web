@@ -14,11 +14,12 @@
   }
   
   .leftPart{
-z-index: 1;
+    z-index: 1;
       width: 100%;
       flex-direction: column;
       display: flex;
       justify-content: space-evenly;
+      row-gap: 1rem;
       @media (max-width: 1024px) {
           width: 100%;
           flex-direction: column;
@@ -161,6 +162,7 @@ z-index: 1;
     font-size: 2em;
     font-weight: bolder;
     row-gap: 2rem;
+    margin-block: 2rem;
   }
 
   .bannerListImg{
@@ -170,7 +172,7 @@ z-index: 1;
   .bannerListItem{
     max-width: 28%;
     display: flex;
-    column-gap: 4px;
+    column-gap: 2rem;
     justify-content: center;
     align-items: center;
   }
