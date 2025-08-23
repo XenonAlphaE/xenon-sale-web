@@ -43,10 +43,10 @@ FLOCK
 # Date: Sun, 08 Jun 2025 07:59:57 GMT
 
 BACKLINKS_URL=https://flockez.netlify.app/js/backlinks.json
-LOGO_PATH=/img/btcswift/bitcoin-swift-logo-main.webp
+LOGO_PATH=/img/pepenode/token.svg
 MAIN_DOMAIN=https://pepenodetoken.com
-MAIN_GTAG=G-TB2PNE8KD4
-MAIN_SITENAME=btcswift
-MAIN_TWITTER=@btcswift
-OG_PATH=/img/btcswift/OG.jpeg
+MAIN_GTAG=G-DT4375LBL3
+MAIN_SITENAME=pepenode
+MAIN_TWITTER=@pepenode
+OG_PATH=/img/pepenode/OG.jpeg
 
