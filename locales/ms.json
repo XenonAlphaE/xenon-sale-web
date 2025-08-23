@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "title": "BTC Swift: Rantaian Blok Dikuasakan AI untuk DeFi yang Selamat, Boleh Skala, dan Peribadi",
-    "description": "Pra-jualan BTC Swift kini sedang berlangsung! Token BTC Swift dengan kontrak pintar AI & perlombongan Proof-of-Yield."
+    "title": "Laman Web Rasmi Token PEPENODE | Token Perlombongan Meme Coin",
+    "description": "Sertai Token PEPENODE dan lombong meme coin secara maya. Tiada keperluan perkakasan. Bina rig Pepe Node anda, tambah nod, dan jana pendapatan dalam permainan perlombongan kripto ini."
   },
   "nav": {
-    "home": "LAMAN UTAMA",
+    "home": "UTAMA",
     "staking": "STAKING",
-    "howtobuy": "CARA BELI",
+    "howtobuy": "CARA MEMBELI",
     "whitePaper": "KERTAS PUTIH",
-    "tokenomics": "TOKENOMIK",
+    "tokenomics": "TOKENOMICS",
     "features": "CIRI-CIRI",
-    "buyNow": "BELI BTC3",
+    "buyNow": "BELI $PEPENODE",
     "faq": "SOALAN LAZIM",
     "audit": "AUDIT",
     "roadmap": "PETA JALAN",
@@ -18,197 +18,40 @@
     "about": "TENTANG"
   },
   "buyForm": {
-    "intro": "Beli Pra-jualan BTC3!",
+    "intro": "Beli",
+    "intro1": "Jualan Awal Sekarang",
     "day": "Hari",
     "hrs": "Jam",
     "mins": "Minit",
     "sec": "Saat",
-    "funRaised": "USDT Dikumpulkan",
-    "wallet": "DOMPET Anda",
-    "boughtAmount": "PEMBELIAN Anda",
-    "stakeableAmount": "JUMLAH UNTUK STAKING",
+    "funRaised": "USDT Dikumpul",
+    "wallet": "DOMPET ANDA",
+    "boughtAmount": "PEMBELIAN ANDA",
+    "stakeableAmount": "JUMLAH BOLEH STAKE",
     "pay": "Bayar dengan",
     "get": "Terima",
-    "buyNow": "BELI BTC3",
+    "buyNow": "BELI $PEPENODE",
     "buyMax": "BELI MAKSIMUM",
     "warning": "Sila pasang Metamask untuk membeli",
     "link": "klik di sini",
-    "connectWallet": "SAMBUNG DOMPET",
+    "connectWallet": "SAMBUNGKAN DOMPET",
     "ethOption": "RANGKAIAN ETH",
     "switchOption": "TUKAR RANGKAIAN",
     "bnbOption": "RANGKAIAN BNB",
-    "buyStake": " Teruskan ke Pembayaran",
-    "nextPriceAlert": "SEHINGGA KENAIKAN HARGA",
+    "buyStake": "Beli dan Stake untuk Ganjaran 4569%",
+    "nextPriceAlert": "SEHINGGA HARGA NAIK",
     "para1": "GANJARAN STAKING 1102%"
   },
   "header": {
-    "headline": "BTC Swift (BTC3) Rantaian Blok Dikuasakan AI dengan Perlombongan Proof of Yield",
-    "description": "BTC Swift: Rantaian Blok Dikuasakan AI untuk DeFi yang Selamat, Boleh Skala, dan Peribadi"
-  },
-  "about": {
-    "title": "Teknologi Blockchain Revolusioner",
-    "desc": "Alami generasi baru inovasi blockchain dengan ciri-ciri tercanggih yang direka untuk masa depan",
-    "buyBtn": "Beli Lebih BTC3 sekarang",
-    "cards": [
-      {
-        "title": "Ganjaran Bukti Hasil Boleh Diprogram",
-        "content": "Ganjaran dinamik yang menyesuaikan berdasarkan aktiviti rangkaian dan impak alam sekitar"
-      },
-      {
-        "title": "Kontrak Pintar Dikuasakan AI",
-        "content": "Kontrak generasi baru yang berkembang dan mengoptimum secara automatik"
-      },
-      {
-        "title": "Identiti Terdesentralisasi Berfokus Privasi",
-        "content": "Kriptografi pengetahuan sifar untuk pematuhan tanpa pendedahan data"
-      },
-      {
-        "title": "Keselamatan Hibrid PoW + PoS",
-        "content": "Keselamatan maksimum dengan kelestarian jangka panjang"
-      },
-      {
-        "title": "Sedia Pematuhan Global",
-        "content": "Dibina untuk persekitaran regulatori di seluruh dunia"
-      },
-      {
-        "title": "Stablecoin Terikat USD",
-        "content": "Mata wang digital stabil yang diikat dengan nilai USD"
-      }
-    ]
-  },
-  "tokenomics": {
-    "title": "Tokenomik",
-    "desc": "Tokenomik telus dan lestari direka untuk pertumbuhan jangka panjang dan manfaat komuniti",
-    "item1": "Pra-Jualan",
-    "item2": "Ganjaran Perlombongan",
-    "item3": "Kolam Likuiditi",
-    "item4": "Pasukan & Rizab",
-    "total": "Jumlah Bekalan"
-  },
-  "roadmap": {
-    "title": "PELAN JALAN",
-    "desc": "Pelan Jalan BTC Swift: Garis Masa Strategik untuk Pembangunan Blockchain Generasi Seterusnya",
-    "cards": [
-      {
-        "title": "Ganjaran Bukti Hasil Boleh Diprogram",
-        "subTitle": "S3 – S4 2025",
-        "contents": [
-          "Mulakan pra-jualan BTC Swift",
-          "Edarkan ganjaran perlombongan pada akhir setiap peringkat pra-jualan",
-          "Pengembangan pasukan dan pengambilan penasihat strategik",
-          "Usaha pertumbuhan dan penglibatan komuniti global",
-          "Mendapatkan perjanjian dengan platform pertukaran",
-          "Selesaikan pra-jualan dan mulakan pelancaran di rangkaian "
-        ]
-      },
-      {
-        "title": "Enjin Kontrak Pintar AI",
-        "subTitle": "S1 2026",
-        "contents": [
-          "Kontrak agen AI yang serasi WASM untuk automasi modular di rantai",
-          "Lapisan pengumpulan oracle AI yang menarik data berstruktur dan tidak berstruktur (Web2 + Web3)",
-          "Penggubalan agen pembelajaran pengukuhan untuk tingkah laku kontrak adaptif",
-          "Sandbox latihan AI di rantai (Alpha) untuk model pembelajaran terawasi/tidak terawasi",
-          "Papan pemuka pemantauan model AI masa nyata dengan ketelusan dan alat audit",
-          "Integrasi dengan rangkaian pengiraan terdesentralisasi (contoh: Akash, Gensyn) untuk inferens boleh skala"
-        ]
-      },
-      {
-        "title": "Infrastruktur Privasi",
-        "subTitle": "S1 – S2 2026",
-        "contents": [
-          "Pelancaran lejar dilindungi berasaskan zk-SNARK menyokong transaksi dan baki peribadi",
-          "Sokongan untuk alamat sembunyi dan pemindahan aset sulit",
-          "Integrasi pendaftaran Identiti Terdesentralisasi (DID) dengan keserasian rentas rantai",
-          "Modul zkLogin untuk pengesahan Web3 peribadi yang diikat dengan kelayakan boleh disahkan",
-          "Jejak audit pengetahuan sifar untuk pematuhan dengan pendedahan terpilih",
-          "Modul DeFi pelindung privasi (Beta) untuk pinjaman, pertukaran, dan peti besi",
-          "Pelancaran SDK Privasi untuk membolehkan pembangun pihak ketiga mengintegrasi ciri dilindungi"
-        ]
-      },
-      {
-        "title": "Pelaksanaan Tadbir Urus Penuh",
-        "subTitle": "S3 2026",
-        "contents": [
-          "Sistem DAO Undian Kuadratik dengan ketahanan anti-Sybil dan pemberatan pegangan",
-          "Enjin penilaian risiko dikuasakan AI yang menganalisis risiko protokol, ekonomi, dan tingkah laku",
-          "Rangka kerja pengaktifan Majlis Kecemasan, dicetuskan oleh heuristik risiko di rantai",
-          "Model Ramalan Cadangan DAO: Agen AI untuk mensimulasikan hasil cadangan sebelum undian",
-          "Modul polisi yang dikurasi komuniti (contoh: had perbendaharaan, kadar inflasi)",
-          "Simulator tadbir urus di rantai untuk memodelkan keputusan sebelum pelaksanaan",
-          "Pelancaran peranan tadbir urus pelbagai peringkat (contoh: wakil, penjaga, pelindung)"
-        ]
-      },
-      {
-        "title": "Pematuhan Institusi",
-        "subTitle": "S4 2026",
-        "contents": [
-          "Antara muka regulatori berasaskan MPC membolehkan audit tanpa mendedahkan data peribadi",
-          "Sandbox pematuhan masa nyata untuk menguji kontrak pintar yang dikawal",
-          "Rangka kerja DID interoperable dengan piawaian EU eIDAS, US NIST, dan APAC",
-          "Pelancaran konsensus hibrid PoW–PoS dengan putaran validator dinamik",
-          "Pelancaran genesis Rangkaian BTC3, direka untuk kewangan dan penyelesaian kelas perusahaan",
-          "Jambatan tanpa kepercayaan 1:1 dari  ke BTC3 dengan auditabiliti dan pemotongan untuk penyampai buruk",
-          "Pelepasan Stablecoin BTC3 terikat USD (BTC3-USD) untuk menyokong pembayaran dan pemindahan masa nyata",
-          "Integrasi dengan pintu masuk pembayaran (contoh: terminal POS, kad kripto) untuk penggunaan runcit",
-          "Program perlombongan likuiditi untuk aset stabil BTC3 bagi mempercepatkan kelajuan ekosistem",
-          "Program pengambilan nod institusi untuk bank, fintech, dan juruaudit"
-        ]
-      }
-    ]
-  },
-  "faq": {
-    "title": "Soalan Lazim",
-    "desc": "Dapatkan jawapan kepada soalan yang paling kerap ditanya tentang BTC Swift",
-    "buyBtn": "Mulakan Pembelian BTC3",
-    "cards": [
-      {
-        "title": "Apa itu BTC Swift (BTC3)?",
-        "contents": [
-          "BTC Swift adalah blockchain generasi akan datang yang menggabungkan keselamatan Bitcoin dengan transaksi yang pantas, kos rendah dan aplikasi terdesentralisasi yang inovatif. Ia menampilkan ganjaran Proof-of-Yield yang boleh diprogram, kontrak pintar berkuasa AI, dan identiti terdesentralisasi yang mengutamakan privasi."
-        ]
-      },
-      {
-        "title": "Bagaimana saya boleh menyertai pra-jualan?",
-        "contents": [
-          "Penyertaan adalah mudah: 1) Daftar dengan email anda di platform kami yang selamat, 2) Buat pesanan dengan menyatakan jumlah token BTC3 yang anda mahu, 3) Hantar kripto ke alamat dompet yang dijana, 4) Token akan dikreditkan ke akaun anda dan dihantar semasa pelancaran."
-        ]
-      },
-      {
-        "title": "Apa yang membezakan BTC Swift daripada mata wang kripto lain?",
-        "contents": [
-          "BTC Swift menawarkan ciri unik termasuk ganjaran Proof-of-Yield yang boleh diprogram dan menyesuaikan berdasarkan aktiviti rangkaian, kontrak pintar berkuasa AI yang berkembang secara automatik, identiti terdesentralisasi yang mengutamakan privasi dengan kriptografi zero-knowledge, serta keselamatan hibrid PoW + PoS untuk perlindungan maksimum."
-        ]
-      },
-      {
-        "title": "Apakah struktur tokenomik?",
-        "contents": [
-          "Jumlah bekalan adalah 45 juta token yang diedarkan seperti berikut: 30% Pra-jualan (13.5 juta), 50% Ganjaran Perlombongan (22.5 juta), 15% Kolam Likuiditi (6.75 juta), dan 5% Pasukan & Rizab (2.25 juta). Struktur ini memastikan kelestarian jangka panjang dan manfaat untuk komuniti."
-        ]
-      },
-      {
-        "title": "Adakah BTC Swift telah diaudit?",
-        "contents": [
-          "Ya, BTC Swift telah diaudit oleh SpyWolf dan SolidProof, dua firma keselamatan blockchain terkemuka. Audit ini memastikan keselamatan dan kebolehpercayaan kontrak pintar dan struktur tokenomik kami."
-        ]
-      },
-      {
-        "title": "Siapa di sebalik BTC Swift?",
-        "contents": [
-          "BTC Swift dibangunkan oleh pasukan pakar blockchain, AI, dan kriptografi yang diedarkan secara global. Seperti Satoshi, pasukan teras kekal tanpa nama untuk mengekalkan desentralisasi dan fokus kepada teknologi. Untuk ketelusan dan keselamatan, beberapa ahli pasukan telah menjalani pengesahan KYC bersama rakan kongsi yang dipercayai, memastikan akauntabiliti tanpa menjejaskan nilai projek."
-        ]
-      },
-      {
-        "title": "Apa itu stablecoin BTC3 yang dipautkan kepada USD (BTC3E)?",
-        "contents": [
-          "Sebahagian daripada ekosistem kami, kami akan melancarkan stablecoin BTC3 yang setara dengan 1 USD untuk menyokong pembayaran segera dan menyediakan kestabilan bagi pengguna yang memerlukan nilai yang boleh diramalkan untuk transaksi dan perdagangan."
-        ]
-      }
-    ]
-  },
-  "footer": {
-    "text1": "Masa depan Bitcoin dengan transaksi pantas, kos rendah dan aplikasi terdesentralisasi yang inovatif.",
-    "text2": "2025 BTC Swift. Hak cipta terpelihara.",
-    "text3": "Penafian: Bukan nasihat kewangan atau perkhidmatan kewangan. Sentiasa buat penyelidikan anda sendiri."
+    "headline": "Jualan Awal Token Pepenode",
+    "headline1": "MINE-TO-EARN memecoin",
+    "description": "Token PEPENODE membolehkan anda membina rig perlombongan meme coin maya anda sendiri.",
+    "description1": "Beli Nod. Bina Bilik Server Anda. Gabungkan Nod Untuk Bonus Besar.",
+    "tag": "Beli Nod Meme",
+    "tag1": "Tingkatkan Fasiliti",
+    "tag2": "Jana Coin Meme",
+    "staking": "ganjaran staking",
+    "buynow": "Beli $PEPENODE Jualan Awal Sekarang",
+    "bonus": "Token PEPENODE mendapat bonus dalam Meme Coin — Airdrop untuk Pelombong Terbaik dalam $PEPE, $FARTCOIN dan banyak lagi..."
   }
 }

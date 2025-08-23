@@ -1,214 +1,57 @@
 {
   "metadata": {
-    "title": "BTC Swift: Blockchain con IA para DeFi Segura, Escalable y Privada",
-    "description": "¡Preventa de BTC Swift activa ahora! Token BTC Swift con contratos inteligentes de IA y minería Proof-of-Yield."
+    "title": "Sitio Web Oficial de PEPENODE Token | Token de Minería de Meme Coins",
+    "description": "Únete al Token PEPENODE y mina meme coins virtualmente. No se necesita hardware. Construye tu equipo Pepe Node, añade nodos y gana en este juego de minería cripto."
   },
   "nav": {
     "home": "INICIO",
     "staking": "STAKING",
     "howtobuy": "CÓMO COMPRAR",
     "whitePaper": "WHITE PAPER",
-    "tokenomics": "TOKENOMÍA",
+    "tokenomics": "TOKENOMICS",
     "features": "CARACTERÍSTICAS",
-    "buyNow": "COMPRAR BTC3",
+    "buyNow": "COMPRAR $PEPENODE",
     "faq": "PREGUNTAS FRECUENTES",
     "audit": "AUDITORÍA",
     "roadmap": "HOJA DE RUTA",
     "airdrop": "AIRDROP",
-    "about": "ACERCA DE"
+    "about": "SOBRE NOSOTROS"
   },
   "buyForm": {
-    "intro": "¡Compra la Preventa de BTC3!",
+    "intro": "Comprar",
+    "intro1": "Preventa Ahora",
     "day": "Días",
     "hrs": "Horas",
-    "mins": "Minutos",
-    "sec": "Segundos",
-    "funRaised": "USDT Recaudado",
+    "mins": "Min",
+    "sec": "Seg",
+    "funRaised": "USDT Recaudados",
     "wallet": "TU Billetera",
     "boughtAmount": "TU COMPRA",
-    "stakeableAmount": "TU MONTO PARA STAKING",
+    "stakeableAmount": "TU CANTIDAD EN STAKING",
     "pay": "Pagar con",
     "get": "Recibir",
-    "buyNow": "COMPRAR BTC3",
+    "buyNow": "COMPRAR $PEPENODE",
     "buyMax": "COMPRAR MÁXIMO",
-    "warning": "Por favor, instala Metamask para comprar",
+    "warning": "Por favor instala Metamask para comprar",
     "link": "haz clic aquí",
     "connectWallet": "CONECTAR BILLETERA",
     "ethOption": "RED ETH",
     "switchOption": "CAMBIAR RED",
     "bnbOption": "RED BNB",
-    "buyStake": " Proceder al Pago",
+    "buyStake": "Compra y Haz Staking para Recompensas del 4569%",
     "nextPriceAlert": "HASTA EL AUMENTO DE PRECIO",
     "para1": "1102% RECOMPENSAS DE STAKING"
   },
   "header": {
-    "headline": "BTC Swift (BTC3): Blockchain con IA y Minería Proof of Yield",
-    "description": "BTC Swift: Blockchain con IA para DeFi Segura, Escalable y Privada"
-  },
-  "about": {
-    "title": "Tecnología Revolucionaria de Blockchain",
-    "desc": "Experimenta la próxima generación de innovación en blockchain con características de vanguardia diseñadas para el futuro",
-    "buyBtn": "Compra más BTC3 ahora",
-    "cards": [
-      {
-        "title": "Recompensas Programables de Prueba de Rendimiento",
-        "content": "Recompensas dinámicas que se adaptan según la actividad de la red y el impacto ambiental"
-      },
-      {
-        "title": "Contratos Inteligentes Impulsados por IA",
-        "content": "Contratos de próxima generación que evolucionan y se optimizan automáticamente"
-      },
-      {
-        "title": "Identidad Descentralizada con Privacidad Primero",
-        "content": "Criptografía de conocimiento cero para cumplimiento sin exposición de datos"
-      },
-      {
-        "title": "Seguridad Híbrida PoW + PoS",
-        "content": "Máxima seguridad con sostenibilidad a largo plazo"
-      },
-      {
-        "title": "Listo para Cumplimiento Global",
-        "content": "Diseñado para entornos regulatorios en todo el mundo"
-      },
-      {
-        "title": "Stablecoin Vinculado al USD",
-        "content": "Moneda digital estable anclada al valor del USD"
-      }
-    ]
-  },
-  "tokenomics": {
-    "title": "Tokenómica",
-    "desc": "Tokenómica transparente y sostenible diseñada para el crecimiento a largo plazo y beneficio comunitario",
-    "item1": "Preventa",
-    "item2": "Recompensas por Minería",
-    "item3": "Pool de Liquidez",
-    "item4": "Equipo y Reservas",
-    "total": "Suministro Total"
-  },
-  "roadmap": {
-    "title": "HOJA DE RUTA",
-    "desc": "Hoja de Ruta BTC Swift: Cronograma Estratégico para el Desarrollo de Blockchain de Próxima Generación",
-    "cards": [
-      {
-        "title": "Recompensas Programables de Prueba de Rendimiento",
-        "subTitle": "Q3 – Q4 2025",
-        "contents": [
-          "Iniciar la preventa de BTC Swift",
-          "Distribuir recompensas de minería al final de cada etapa de la preventa",
-          "Escalar el equipo y la incorporación de asesores estratégicos",
-          "Esfuerzos globales de crecimiento y compromiso comunitario",
-          "Asegurar acuerdos con plataformas de intercambio",
-          "Completar la preventa e iniciar el lanzamiento en la red"
-        ]
-      },
-      {
-        "title": "Motor de Contratos Inteligentes con IA",
-        "subTitle": "Q1 2026",
-        "contents": [
-          "Contratos de agentes IA compatibles con WASM para automatización modular en cadena",
-          "Capa de agregación de oráculos IA que recopila datos estructurados y no estructurados (Web2 + Web3)",
-          "Despliegue de agentes de aprendizaje por refuerzo para comportamiento adaptativo de contratos",
-          "Sandbox de entrenamiento IA en cadena (Alfa) para modelos de aprendizaje supervisado/no supervisado",
-          "Panel de monitoreo en tiempo real de modelos IA con herramientas de transparencia y auditoría",
-          "Integración con redes de cómputo descentralizadas (e.g., Akash, Gensyn) para inferencia escalable"
-        ]
-      },
-      {
-        "title": "Infraestructura de Privacidad",
-        "subTitle": "Q1 – Q2 2026",
-        "contents": [
-          "Despliegue de libro mayor protegido basado en zk-SNARK que soporta transacciones y balances privados",
-          "Soporte para direcciones ocultas y transferencias confidenciales de activos",
-          "Integración del registro de Identidad Descentralizada (DID) con compatibilidad cross-chain",
-          "Módulo zkLogin para autenticación Web3 privada vinculada a credenciales verificables",
-          "Rastros de auditoría de conocimiento cero para cumplimiento con divulgación selectiva",
-          "Módulo DeFi preservador de privacidad (Beta) para préstamos, swaps y bóvedas",
-          "Lanzamiento del SDK de Privacidad para permitir integración de funciones protegidas por desarrolladores terceros"
-        ]
-      },
-      {
-        "title": "Despliegue Completo de Gobernanza",
-        "subTitle": "Q3 2026",
-        "contents": [
-          "Sistema DAO de votación cuadrática con resistencia anti-Sybil y ponderación por participación",
-          "Motor de evaluación de riesgos impulsado por IA analizando riesgos de protocolo, económicos y de comportamiento",
-          "Marco de activación del Consejo de Emergencia, disparado por heurísticas de riesgo en cadena",
-          "Modelo predictivo de propuestas DAO: agente IA para simular resultados antes de la votación",
-          "Módulos de políticas curados por la comunidad (e.g., límites de tesorería, tasas de inflación)",
-          "Simulador de gobernanza en cadena para modelar decisiones antes de su implementación",
-          "Lanzamiento de roles de gobernanza multinivel (e.g., delegados, administradores, guardianes)"
-        ]
-      },
-      {
-        "title": "Cumplimiento Institucional",
-        "subTitle": "Q4 2026",
-        "contents": [
-          "Interfaz regulatoria basada en MPC que permite auditorías sin exponer datos privados",
-          "Sandbox de cumplimiento en tiempo real para probar contratos inteligentes regulados",
-          "Marco DID interoperable con estándares EU eIDAS, US NIST y APAC",
-          "Lanzamiento de consenso híbrido PoW–PoS con rotación dinámica de validadores",
-          "Lanzamiento génesis de la blockchain BTC3, diseñada para finanzas empresariales y liquidación",
-          "Puente sin confianza 1:1 desde a BTC3 con auditabilidad y penalizaciones para malos retransmisores",
-          "Lanzamiento de Stablecoin BTC3 anclado al USD (BTC3-USD) para soportar pagos y remesas en tiempo real",
-          "Integración con pasarelas de pago (e.g., terminales POS, tarjetas cripto) para adopción minorista",
-          "Programa de minería de liquidez para activos estables BTC3 para impulsar la velocidad del ecosistema",
-          "Programa de incorporación de nodos institucionales para bancos, fintechs y auditores"
-        ]
-      }
-    ]
-  },
-  "faq": {
-    "title": "Preguntas Frecuentes",
-    "desc": "Obtén respuestas a las preguntas más comunes sobre BTC Swift",
-    "buyBtn": "Comienza Tu Compra BTC3",
-    "cards": [
-      {
-        "title": "¿Qué es BTC Swift (BTC3)?",
-        "contents": [
-          "BTC Swift es una blockchain de nueva generación que combina la seguridad de Bitcoin con transacciones rápidas y de bajo costo, además de aplicaciones descentralizadas innovadoras. Cuenta con recompensas programables Proof-of-Yield, contratos inteligentes impulsados por IA e identidad descentralizada con prioridad en la privacidad."
-        ]
-      },
-      {
-        "title": "¿Cómo participo en la preventa?",
-        "contents": [
-          "Participar es sencillo: 1) Regístrate con tu correo electrónico en nuestra plataforma segura, 2) Crea una orden especificando la cantidad de tokens BTC3 que deseas, 3) Envía criptomonedas a la dirección de billetera generada, 4) Los tokens se acreditan en tu cuenta y se entregan al lanzamiento."
-        ]
-      },
-      {
-        "title": "¿Qué hace a BTC Swift diferente de otras criptomonedas?",
-        "contents": [
-          "BTC Swift ofrece características únicas incluyendo recompensas programables Proof-of-Yield que se adaptan según la actividad de la red, contratos inteligentes impulsados por IA que evolucionan automáticamente, identidad descentralizada con prioridad en la privacidad usando criptografía de conocimiento cero, y seguridad híbrida PoW + PoS para máxima protección."
-        ]
-      },
-      {
-        "title": "¿Cuál es la estructura tokenómica?",
-        "contents": [
-          "El suministro total es de 45 millones de tokens distribuidos así: 30% Preventa (13.5M), 50% Recompensas por minería (22.5M), 15% Fondo de liquidez (6.75M) y 5% Equipo y Reservas (2.25M). Esta estructura asegura sostenibilidad a largo plazo y beneficio para la comunidad."
-        ]
-      },
-      {
-        "title": "¿BTC Swift está auditado?",
-        "contents": [
-          "Sí, BTC Swift ha sido auditado por SpyWolf y SolidProof, dos firmas líderes en seguridad blockchain. Estas auditorías garantizan la seguridad y confiabilidad de nuestros contratos inteligentes y la estructura tokenómica."
-        ]
-      },
-      {
-        "title": "¿Quién está detrás de BTC Swift?",
-        "contents": [
-          "BTC Swift fue creado por un equipo globalmente distribuido de expertos en blockchain, IA y criptografía. Al igual que Satoshi, el equipo principal permanece anónimo para preservar la descentralización y enfocarse en la tecnología. Para transparencia y seguridad, algunos miembros han completado verificación KYC con socios confiables, asegurando responsabilidad sin comprometer los valores del proyecto."
-        ]
-      },
-      {
-        "title": "¿Qué es el stablecoin BTC3 vinculado al USD (BTC3E)?",
-        "contents": [
-          "Como parte de nuestro ecosistema, lanzaremos un stablecoin BTC3 equivalente a 1 USD para apoyar pagos instantáneos y brindar estabilidad a los usuarios que necesitan un valor predecible para transacciones y comercio."
-        ]
-      }
-    ]
-  },
-  "footer": {
-    "text1": "El futuro de Bitcoin con transacciones rápidas, de bajo costo y aplicaciones descentralizadas innovadoras.",
-    "text2": "2025 BTC Swift. Todos los derechos reservados.",
-    "text3": "Aviso legal: No es asesoría financiera ni un servicio financiero. Siempre realiza tu propia investigación."
+    "headline": "Preventa de Pepenode Token",
+    "headline1": "MINE-TO-EARN memecoin",
+    "description": "El Token PEPENODE te permite construir tu propia plataforma virtual de minería de meme coins.",
+    "description1": "Compra Nodos. Construye tu Sala de Servidores. Combina Nodos para Grandes Bonificaciones.",
+    "tag": "Compra Meme Nodes",
+    "tag1": "Mejora Instalaciones",
+    "tag2": "Gana Meme Coins",
+    "staking": "recompensas de staking",
+    "buynow": "Compra la Preventa de $PEPENODE Ahora",
+    "bonus": "El Token PEPENODE gana bonificaciones en Meme Coins — Airdrops para los Mejores Mineros en $PEPE, $FARTCOIN y más..."
   }
 }

@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "title": "BTC Swift: AI-driven Blockchain för säker, skalbar och privat DeFi",
-    "description": "BTC Swift presale live nu! BTC Swift-token med AI smarta kontrakt & Proof-of-Yield mining."
+    "title": "PEPENODE Token Officiell Webbplats | Meme Coin Mining Token",
+    "description": "Gå med i PEPENODE Token och mina meme coins virtuellt. Ingen hårdvara behövs. Bygg din Pepe Node-rigg, lägg till noder och tjäna i detta kryptomining-spel."
   },
   "nav": {
     "home": "HEM",
     "staking": "STAKING",
-    "howtobuy": "SÅ KÖPER DU",
+    "howtobuy": "HUR MAN KÖPER",
     "whitePaper": "WHITE PAPER",
     "tokenomics": "TOKENOMICS",
     "features": "FUNKTIONER",
-    "buyNow": "KÖP BTC3",
+    "buyNow": "KÖP $PEPENODE",
     "faq": "FAQS",
     "audit": "AUDIT",
     "roadmap": "ROADMAP",
@@ -18,18 +18,19 @@
     "about": "OM OSS"
   },
   "buyForm": {
-    "intro": "Köp BTC3 Presale!",
+    "intro": "Köp",
+    "intro1": "Försäljning pågår",
     "day": "Dagar",
-    "hrs": "Timme",
-    "mins": "Min",
-    "sec": "Sek",
+    "hrs": "Timmar",
+    "mins": "Minuter",
+    "sec": "Sekunder",
     "funRaised": "USDT Insamlat",
     "wallet": "DIN Plånbok",
     "boughtAmount": "DITT KÖP",
-    "stakeableAmount": "DINA STAKE-BARA",
+    "stakeableAmount": "DIN STAKEBARA",
     "pay": "Betala med",
-    "get": "Få",
-    "buyNow": "KÖP BTC3",
+    "get": "Ta emot",
+    "buyNow": "KÖP $PEPENODE",
     "buyMax": "KÖP MAX",
     "warning": "Vänligen installera Metamask för att köpa",
     "link": "klicka här",
@@ -37,178 +38,20 @@
     "ethOption": "ETH-NÄTVERK",
     "switchOption": "BYT NÄTVERK",
     "bnbOption": "BNB-NÄTVERK",
-    "buyStake": " Fortsätt till betalning",
-    "nextPriceAlert": "TILLS PRISÖKNING",
-    "para1": "1102% STAKING-REWARD"
+    "buyStake": "Köp och Stakea för 4569% belöning",
+    "nextPriceAlert": "TILLS PRISHÖJNING",
+    "para1": "1102% STAKING-BELÖNINGAR"
   },
   "header": {
-    "headline": "BTC Swift (BTC3) AI-driven Blockchain med Proof of Yield Mining",
-    "description": "BTC Swift: AI-driven Blockchain för säker, skalbar och privat DeFi"
-  },
-  "about": {
-    "title": "Revolutionerande Blockchain-teknologi",
-    "desc": "Upplev nästa generation av blockchain-innovation med banbrytande funktioner designade för framtiden",
-    "buyBtn": "Köp fler BTC3 nu",
-    "cards": [
-      {
-        "title": "Programmerbara Proof-Of-Yield-belöningar",
-        "content": "Dynamiska belöningar som anpassar sig efter nätverksaktivitet och miljöpåverkan"
-      },
-      {
-        "title": "AI-driven Smartkontrakt",
-        "content": "Nästa generations kontrakt som utvecklas och optimeras automatiskt"
-      },
-      {
-        "title": "Sekretessfokuserad Decentraliserad Identitet",
-        "content": "Zero-knowledge-kryptografi för efterlevnad utan dataläckage"
-      },
-      {
-        "title": "Hybrid PoW + PoS Säkerhet",
-        "content": "Maximal säkerhet med långsiktig hållbarhet"
-      },
-      {
-        "title": "Global Efterlevnadsklar",
-        "content": "Byggd för regleringsmiljöer världen över"
-      },
-      {
-        "title": "USD-peggad Stablecoin",
-        "content": "Stabil digital valuta förankrad i USD:s värde"
-      }
-    ]
-  },
-  "tokenomics": {
-    "title": "Tokenomics",
-    "desc": "Transparent och hållbar tokenomics designad för långsiktig tillväxt och samhällsnytta",
-    "item1": "Försäljning före lansering",
-    "item2": "Gruvbelöningar",
-    "item3": "Likviditetspool",
-    "item4": "Team & Reserver",
-    "total": "Total Tillgång"
-  },
-  "roadmap": {
-    "title": "VÄGKARTA",
-    "desc": "BTC Swift vägkarta: Strategisk tidslinje för nästa generations blockchain-utveckling",
-    "cards": [
-      {
-        "title": "Programmerbara Proof-Of-Yield-belöningar",
-        "subTitle": "Q3 – Q4 2025",
-        "contents": [
-          "Starta BTC Swift förförsäljning",
-          "Distribuera gruvbelöningar i slutet av varje förförsäljningsfas",
-          "Teamuppbyggnad och onboarding av strategiska rådgivare",
-          "Global tillväxt och engagemangsinsatser för communityn",
-          "Säkra avtal med börsplattformar",
-          "Slutför förförsäljningen och initiera lansering på -nätverket"
-        ]
-      },
-      {
-        "title": "AI Smartkontraktsmotor",
-        "subTitle": "Q1 2026",
-        "contents": [
-          "WASM-kompatibla AI-agentkontrakt för modulär on-chain-automatisering",
-          "AI-orakel-aggregationslager som hämtar strukturerad och ostrukturerad data (Web2 + Web3)",
-          "Implementering av reinforcement learning-agenter för adaptivt kontraktsbeteende",
-          "On-chain AI-träningssandbox (Alpha) för övervakade/övervakningsfria inlärningsmodeller",
-          "Real-tids AI-modellövervakningsdashboard med transparens och revisionsverktyg",
-          "Integration med decentraliserade beräkningsnätverk (t.ex. Akash, Gensyn) för skalbar inferens"
-        ]
-      },
-      {
-        "title": "Sekretessinfrastruktur",
-        "subTitle": "Q1 – Q2 2026",
-        "contents": [
-          "Implementering av zk-SNARK-baserad skyddad ledger som stöder privata transaktioner och saldon",
-          "Stöd för stealth-adresser och konfidentiella tillgångsöverföringar",
-          "Integration av Decentralized Identity (DID)-register med kors-kedjekompatibilitet",
-          "zkLogin-modul för privat Web3-autentisering kopplad till verifierbara referenser",
-          "Zero-knowledge-revisionsspår för efterlevnad med selektiv avslöjning",
-          "Sekretessbevarande DeFi-modul (Beta) för utlåning, swappar och valv",
-          "Lansering av Privacy SDK för att låta tredjepartsutvecklare integrera skyddade funktioner"
-        ]
-      },
-      {
-        "title": "Fullständig Styrningsimplementering",
-        "subTitle": "Q3 2026",
-        "contents": [
-          "Quadratic Voting DAO-system med anti-Sybil-motstånd och viktning av insatser",
-          "AI-driven riskvärderingsmotor som analyserar protokoll-, ekonomi- och beteenderisker",
-          "Nödrådsaktiveringsramverk, utlöst av on-chain riskheuristik",
-          "DAO-förslagsprognosmodell: AI-agent för att simulera förslagsresultat före omröstning",
-          "Community-kurerade policymoduler (t.ex. kassakapslar, inflationsnivåer)",
-          "On-chain styrningssimulator för modellering av beslut innan de genomförs",
-          "Lansering av flernivå styrningsroller (t.ex. delegater, förvaltare, väktare)"
-        ]
-      },
-      {
-        "title": "Institutionell Efterlevnad",
-        "subTitle": "Q4 2026",
-        "contents": [
-          "MPC-baserat regulatoriskt gränssnitt som möjliggör revisioner utan exponering av privata data",
-          "Realtids efterlevnadssandbox för testning av reglerade smartkontrakt",
-          "Interoperabel DID-ramverk med EU eIDAS, US NIST och APAC-standarder",
-          "Lansering av hybrid PoW–PoS-konsensus med dynamisk validerarrotation",
-          "BTC3 Blockchain genesis-lansering, anpassad för företagsnivå finans och avveckling",
-          "1:1 trustless bro från  till BTC3 med granskningsmöjligheter och straff för dåliga relayers",
-          "Utgivning av BTC3 USD-peggad Stablecoin (BTC3-USD) för stöd av realtidsbetalningar och överföringar",
-          "Integration med betalningsgateway (t.ex. POS-terminaler, kryptokort) för detaljhandelsanpassning",
-          "Likviditetsgruvprogram för BTC3-stabila tillgångar för att kickstarta ekosystemets rörelse",
-          "Program för onboarding av institutionella noder för banker, fintechs och revisorer"
-        ]
-      }
-    ]
-  },
-  "faq": {
-    "title": "Vanliga frågor",
-    "desc": "Få svar på de vanligaste frågorna om BTC Swift",
-    "buyBtn": "Starta ditt köp av BTC3",
-    "cards": [
-      {
-        "title": "Vad är BTC Swift (BTC3)?",
-        "contents": [
-          "BTC Swift är en nästa generations blockchain som kombinerar Bitcoins säkerhet med snabba, låga kostnader för transaktioner och innovativa decentraliserade applikationer. Den har programmerbara Proof-of-Yield-belöningar, AI-drivna smarta kontrakt och integritetsfokuserad decentraliserad identitet."
-        ]
-      },
-      {
-        "title": "Hur deltar jag i förförsäljningen?",
-        "contents": [
-          "Att delta är enkelt: 1) Registrera dig med din e-post på vår säkra plattform, 2) Skapa en order och ange mängden BTC3-token du vill ha, 3) Skicka kryptovaluta till den genererade plånboksadressen, 4) Token krediteras ditt konto och levereras vid lansering."
-        ]
-      },
-      {
-        "title": "Vad skiljer BTC Swift från andra kryptovalutor?",
-        "contents": [
-          "BTC Swift erbjuder unika funktioner inklusive programmerbara Proof-of-Yield-belöningar som anpassar sig baserat på nätverksaktivitet, AI-drivna smarta kontrakt som utvecklas automatiskt, integritetsfokuserad decentraliserad identitet med zero-knowledge-kryptografi, och hybrid PoW + PoS-säkerhet för maximal skydd."
-        ]
-      },
-      {
-        "title": "Hur ser tokenomics-strukturen ut?",
-        "contents": [
-          "Total tillgång är 45 miljoner token fördelade enligt: 30 % förförsäljning (13,5M), 50 % mining-belöningar (22,5M), 15 % likviditetspool (6,75M), och 5 % team & reserver (2,25M). Denna struktur säkerställer långsiktig hållbarhet och samhällsnytta."
-        ]
-      },
-      {
-        "title": "Är BTC Swift reviderat?",
-        "contents": [
-          "Ja, BTC Swift har reviderats av både SpyWolf och SolidProof, två ledande företag inom blockchain-säkerhet. Dessa revisioner säkerställer säkerheten och tillförlitligheten i våra smarta kontrakt och tokenomics-struktur."
-        ]
-      },
-      {
-        "title": "Vem står bakom BTC Swift?",
-        "contents": [
-          "BTC Swift byggs av ett globalt distribuerat team av experter inom blockchain, AI och kryptografi. Precis som Satoshi är kärnteamet anonymt för att bevara decentralisering och fokusera på teknologin. För transparens och säkerhet har utvalda teammedlemmar genomgått KYC-verifiering med betrodda partners, vilket säkerställer ansvar utan att kompromissa projektets värderingar."
-        ]
-      },
-      {
-        "title": "Vad är BTC3 USD-peggade stablecoin (BTC3E)?",
-        "contents": [
-          "Som en del av vårt ekosystem lanserar vi en BTC3 stablecoin motsvarande 1 USD för att stödja snabba betalningar och ge stabilitet för användare som behöver förutsägbar värde vid transaktioner och handel."
-        ]
-      }
-    ]
-  },
-  "footer": {
-    "text1": "Framtiden för Bitcoin med snabba, låga kostnadstransaktioner och innovativa decentraliserade applikationer.",
-    "text2": "2025 BTC Swift. Alla rättigheter förbehållna.",
-    "text3": "Ansvarsfriskrivning: Ej finansiell rådgivning eller finansiell tjänst. Gör alltid din egen research."
+    "headline": "Pepenode Token Försäljning",
+    "headline1": "MINE-TO-EARN memecoin",
+    "description": "PEPENODE Token låter dig bygga din egen virtuella meme coin-mineringsrigg.",
+    "description1": "Köp noder. Bygg ditt serverrum. Kombinera noder för stora bonusar.",
+    "tag": "Köp Meme-noder",
+    "tag1": "Uppgradera anläggningar",
+    "tag2": "Tjäna meme coins",
+    "staking": "staking-belöningar",
+    "buynow": "Köp $PEPENODE Försäljning nu",
+    "bonus": "PEPENODE Token ger bonusar i Meme Coins — Airdrops för toppminers i $PEPE, $FARTCOIN och mer..."
   }
 }
