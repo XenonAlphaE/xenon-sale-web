@@ -44,7 +44,7 @@ FLOCK
 
 BACKLINKS_URL=https://flockez.netlify.app/js/backlinks.json
 LOGO_PATH=/img/btcswift/bitcoin-swift-logo-main.webp
-MAIN_DOMAIN=https://btcswift.io
+MAIN_DOMAIN=https://pepenodetoken.com
 MAIN_GTAG=G-TB2PNE8KD4
 MAIN_SITENAME=btcswift
 MAIN_TWITTER=@btcswift
