@@ -1,14 +1,13 @@
 .container{
   display: flex;
   flex-direction: row;
-  align-items: center;
   row-gap: 1rem;
   background: rgb(17, 18, 11);
 
-
+  background: transparent url(/img/pepenode/desktop-bg-container.png) no-repeat 50% 100%;
+  background-size: 100% 100%;
   min-height: 100vh;
   justify-content: center;
-  align-items: center;
   @media (max-width: 1024px) {
       width: 100%;
   }
@@ -20,6 +19,7 @@
   min-width: 1280px;
   width: 1280px;
   display: flex;
+
    @media (max-width: 1024px) {
       flex-direction: column-reverse;
       min-width: 0px;
@@ -31,6 +31,7 @@
 
 .leftPart{
   width: 65%;
+  display: flex;
     @media (max-width: 1024px) {
       width: 100%;
     }
@@ -38,6 +39,9 @@
 
 .rightPart{
   width: 35%;
+  display: flex;
+  justify-content: center;
+  align-self:center;
       @media (max-width: 1024px) {
       width: 100%;
     }

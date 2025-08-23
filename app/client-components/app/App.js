@@ -37,14 +37,14 @@ const App = () => {
     <div className={styles.container}>
           <Navbar />
           <Header/>
-          <About />
-          <Tokenomics />
+          {/* <About /> */}
+          {/* <Tokenomics /> */}
           {/* <TrustedBy/> */}
-          <Roadmap />
+          {/* <Roadmap /> */}
           {/* <HowToBuy /> */}
           {/* <TrustedBy/> */}
-          <FAQS/>
-          <Footer /> 
+          {/* <FAQS/> */}
+          {/* <Footer />  */}
 
     </div>
   );

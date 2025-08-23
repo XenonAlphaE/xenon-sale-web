@@ -4,8 +4,8 @@
     text-align: center;
     overflow: hidden;
     background-color: transparent;
-
-
+    position: relative;
+    width: 100%;
     @media (max-width: 1024px) {
         width: 100%;
         flex-direction: column;
@@ -14,8 +14,11 @@
   }
   
   .leftPart{
-      width: 55%;
-
+z-index: 1;
+      width: 100%;
+      flex-direction: column;
+      display: flex;
+      justify-content: space-evenly;
       @media (max-width: 1024px) {
           width: 100%;
           flex-direction: column;
@@ -25,9 +28,24 @@
 
   .headline{
     text-align: left;
-    color: red;
-    border-bottom: 1px solid  black;
-    width: 80%;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2.8em;
+    margin-block: 1rem;
+    @media (max-width: 1024px) {
+        width: 100%;
+        font-size: x-large;
+        margin-bottom: 2rem;
+    }    
+  }
+   .headline1{
+    text-align: left;
+    color: rgb(152, 255, 25);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2.8em;
+    margin-block: 1rem;
     @media (max-width: 1024px) {
         width: 100%;
         font-size: x-large;
@@ -36,11 +54,86 @@
   }
 
   .description{
+    color: rgb(255, 255, 255);
     text-align: left;
+    margin-bottom: 0.5rem;
+  }
+
+  .rewards{
+    width: 20%;
+    background: rgb(152, 255, 25);
+    transition: all .4s ease-out;
+    clip-path: polygon(100% 15px, 100% 100%, 15px 100%, 0% calc(100% - 15px), 0% 0%, calc(100% - 15px) 0%);
+    display: flex;
+    font-weight: 900;
+    flex-direction: column;
+    justify-content: space-evenly;  
+    padding: 1rem; 
+    text-transform: uppercase;
+  }
+
+
+  @keyframes resizeBox {
+    0% {
+      width: 35%;
+      transform: scaleY(1);
+    }
+    50% {
+      width: 50%;
+      transform: scaleY(1.15);
+    }
+    100% {
+      width: 35%;
+      transform: scaleY(0.85); /* scaled down below original */
+    }
+  }
+
+
+  .buynow{
+    width: 60%;
+    background: rgb(152, 255, 25);
+    transition: all .4s ease-out;
+    clip-path: polygon(100% 15px, 100% 100%, 15px 100%, 0% calc(100% - 15px), 0% 0%, calc(100% - 15px) 0%);
+    display: flex;
+    font-weight: 900;
+    flex-direction: column;
+    justify-content: space-evenly;  
+    padding: 1rem; 
+    text-transform: uppercase;
+    animation: resizeBox 4s infinite;
+
+  }
+
+  .bonus{
+    width: 50%;
+    position: relative;
+    display: flex;
+    font-weight: 900;
+    flex-direction: column;
+    justify-content: space-evenly;  
+    padding: 1rem; 
+    text-transform: uppercase;
+    color: white;
+  }
+
+  .bonus::before{
+        content: "";
+    position: absolute;
+    inset: 0;
+    background: #333;
+    clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 15px 100%, 0 calc(100% - 15px), 0 0, 1px 1px, 1px calc(100% - 16px), 15px calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), calc(100% - 1px) 15px, calc(100% - 15px) 1px, 1px 1px);
+  }
+
+  .rewards p{
+    margin: 0;
   }
 
   .rightPart{
-      width: 45%;
+    z-index: 0;
+    width: 55%;
+      position: absolute;
+      top: 20%;
+      right: -10px;
       display: flex;
       flex-direction: column;
       row-gap: 10px;
@@ -60,9 +153,29 @@
 
   .bannerList{
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
+    align-items: flex-start;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: bolder;
+    row-gap: 2rem;
   }
 
+  .bannerListImg{
+    width: 56px;
+
+  }
   .bannerListItem{
     max-width: 28%;
+    display: flex;
+    column-gap: 4px;
+    justify-content: center;
+    align-items: center;
   }
+
+.bannerListItem span{
+  line-height: 0.9em;
+  text-align: left;
+}
