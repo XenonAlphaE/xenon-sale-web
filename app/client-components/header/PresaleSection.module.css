@@ -8,7 +8,7 @@
     width: 100%;
     @media (max-width: 1024px) {
         width: 100%;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
   }
@@ -37,10 +37,10 @@
     @media (max-width: 1024px) {
         width: 100%;
         font-size: x-large;
-        margin-bottom: 2rem;
+        margin-block: 1rem;
     }    
   }
-   .headline1{
+  .headline1{
     text-align: left;
     color: rgb(152, 255, 25);
     text-transform: uppercase;
@@ -50,7 +50,7 @@
     @media (max-width: 1024px) {
         width: 100%;
         font-size: x-large;
-        margin-bottom: 2rem;
+        margin-block: 1rem;
     }    
   }
 
@@ -71,6 +71,13 @@
     justify-content: space-evenly;  
     padding: 1rem; 
     text-transform: uppercase;
+    @media (max-width: 1024px) {
+      width: 100%;
+      max-width: 100%;
+      justify-content: flex-start;
+
+    }
+
   }
 
 
@@ -90,6 +97,23 @@
   }
 
 
+
+  /* Mobile/tablet animation */
+@keyframes resizeBoxMobile {
+  0% {
+    width: 75%;
+    transform: scaleY(1);
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 75%;
+    transform: scaleY(1);
+  }
+}
+
+
   .buynow{
     width: 60%;
     background: rgb(152, 255, 25);
@@ -103,6 +127,9 @@
     text-transform: uppercase;
     animation: resizeBox 4s infinite;
 
+    @media (max-width: 1024px) {
+      animation: resizeBoxMobile 2s infinite;
+    }
   }
 
   .bonus{
@@ -115,6 +142,9 @@
     padding: 1rem; 
     text-transform: uppercase;
     color: white;
+    @media (max-width: 1024px) {
+      width: 100%;
+    }
   }
 
   .bonus::before{
@@ -131,7 +161,7 @@
 
   .rightPart{
     z-index: 0;
-    width: 55%;
+    width: 60%;
       position: absolute;
       top: 20%;
       right: -10px;
@@ -140,6 +170,9 @@
       row-gap: 10px;
       @media (max-width: 1024px) {
           width: 100%;
+          position: relative;
+          top: auto;
+          right: auto;
           flex-direction: column;
       }
 
@@ -163,6 +196,10 @@
     font-weight: bolder;
     row-gap: 2rem;
     margin-block: 2rem;
+    @media (max-width: 1024px) {
+        font-size: 1.8em;
+
+    }
   }
 
   .bannerListImg{
@@ -175,6 +212,12 @@
     column-gap: 2rem;
     justify-content: center;
     align-items: center;
+    @media (max-width: 1024px) {
+      width: 100%;
+      max-width: 100%;
+      justify-content: flex-start;
+
+    }
   }
 
 .bannerListItem span{

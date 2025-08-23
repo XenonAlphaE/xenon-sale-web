@@ -105,8 +105,8 @@ export const Navbar = ({ isStakingPage = false }) => {
         </div>
 
         <div className={styles.loginContainer} >
-          <a href="/"  target='_blank' ><img src='/img/btcswift/twitter2.svg' className={styles.appSocialIcon} /></a>
-          <a href='/'  target='_blank' ><img src='/img/btcswift/cmc-1.svg' className={styles.appSocialIcon}/></a>
+          <a href="/"  target='_blank' ><img src='/img/pepenode/twitter2.svg' className={styles.appSocialIcon} /></a>
+          <a href='/'  target='_blank' ><img src='/img/pepenode/cmc-1.svg' className={styles.appSocialIcon}/></a>
 
           <a  className={styles.appWhitepaper} >White Paper</a>
           <button onClick={scrollToBuySection} className={styles.appnavLogin} >{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button>
@@ -142,17 +142,21 @@ export const Navbar = ({ isStakingPage = false }) => {
 
       {isMobile && <div className={`${styles.appnavMobile} ${isMenuOpen ? styles.mobileActive : ''}`}>
       {/* <a onClick={toggleMenu} href={`/${currentLanguage}`}>{sectionText?.home}</a> */}
-        <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#tokenomics` : "#tokenomics"}><img className={styles.menuIcon} src='/img/btcswift/tokenomics.svg'/> {sectionText?.tokenomics}</a>
-        <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#roadmap` : "#roadmap"}><img className={styles.menuIcon} src='/img/btcswift/roadmap.svg'/>  { sectionText?.roadmap}</a>
-        <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#faqs` : "#faqs"} ><img className={styles.menuIcon} src='/img/btcswift/faq.svg'/>  {sectionText?.faq}</a>
-        <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#about` : "#about"}><img className={styles.menuIcon} src='/img/btcswift/whitepaper.svg'/>  {sectionText?.whitePaper}</a>          {/* <a href={`/${currentLanguage}`}>{sectionText?.home}</a> */}
-        {/* <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#howtobuy` : "#howtobuy"}><img className={styles.menuIcon} src='/img/btcswift/security.svg'/>  {sectionText?.howtobuy}</a> */}
+
+        <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#tokenomics` : "#tokenomics"}>{sectionText?.home}</a>
+        <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#tokenomics` : "#tokenomics"}>{sectionText?.about}</a>
+        <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#roadmap` : "#roadmap"}>{ sectionText?.howtobuy}</a>
+        <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#roadmap` : "#roadmap"}>{ sectionText?.roadmap}</a>
+        <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#tokenomics` : "#tokenomics"}>{sectionText?.tokenomics}</a>
+        <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#faqs` : "#faqs"} > {sectionText?.faq}</a>
+
+
 
 
         <div className={styles.mobileSocialContainer}>
 
-          <a href="/"  target='_blank' ><img src='/img/btcswift/twitter2.svg' className={styles.appSocialIcon} /></a>
-          <a href='/'  target='_blank' ><img src='/img/btcswift/cmc-1.svg' className={styles.appSocialIcon}/></a>
+          <a href="/"  target='_blank' ><img src='/img/pepenode/twitter2.svg' className={styles.appSocialIcon} /></a>
+          <a href='/'  target='_blank' ><img src='/img/pepenode/cmc-1.svg' className={styles.appSocialIcon}/></a>
         </div>
 
 

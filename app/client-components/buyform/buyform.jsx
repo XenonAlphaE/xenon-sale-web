@@ -144,7 +144,7 @@ export const BuyForm = () => {
             <div className={styles.walletBoxInfo} >
                 <div className={styles.walletBoxHeader} >
                   <div>
-                    <p className={styles.walletBoxHeading} >{sectionText?.intro} <span className={styles.symbol}> ${walletEth?.tokenSymbol} </span>  </p>
+                    <p className={styles.walletBoxHeading} >{sectionText?.intro} <span className={styles.symbol}> ${walletEth?.tokenSymbol} </span> {sectionText?.intro1} </p>
                   </div>
                 </div>
 
