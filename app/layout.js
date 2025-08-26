@@ -43,7 +43,7 @@ export async function generateMetadata() {
       image: getOG(), // Path to your Open Graph image,
     },
     alternates: {
-      canonical: "https://pepe-node.com", // Set the canonical URL
+      canonical: "https://pepenodecoin.com", // Set the canonical URL
     },
   };
 }
