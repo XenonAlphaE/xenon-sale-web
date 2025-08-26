@@ -53,7 +53,8 @@ export function getLocale(lang){
 }
 
 export function getLangDomain(lang){
-    return `${getMainDomain()}/${lang}`
+    const mainDomain = getMainDomain();
+    return `${mainDomain.replace(/\/+$/, '')}/${lang}`;
 }
 
 export function getLangKeys(){
