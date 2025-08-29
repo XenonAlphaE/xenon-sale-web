@@ -48,6 +48,14 @@ import { getRandomItemFromArray } from './utils';
             getPurchasInfo(key,getRandomItemFromArray(globalConfigs.ARB?.RPC_APIs), globalConfigs.ARB['salers'][1]), 
         ]);
 
+    const [purchaseBSC2, purchaseETH2, purchaseBASE2, purchaseOP2,purchaseARB2] = await Promise.all([
+            getPurchasInfo(key,getRandomItemFromArray(globalConfigs.BSC?.RPC_APIs), globalConfigs.BSC['salers'][2]), 
+            getPurchasInfo(key,getRandomItemFromArray(globalConfigs.ETH?.RPC_APIs), globalConfigs.ETH['salers'][2]), 
+            getPurchasInfo(key,getRandomItemFromArray(globalConfigs.BASE?.RPC_APIs), globalConfigs.BASE['salers'][2]), 
+            getPurchasInfo(key,getRandomItemFromArray(globalConfigs.OP?.RPC_APIs), globalConfigs.OP['salers'][2]), 
+            getPurchasInfo(key,getRandomItemFromArray(globalConfigs.ARB?.RPC_APIs), globalConfigs.ARB['salers'][2]), 
+        ]);
+
     // const purchaseBSC = await getPurchasInfoBSC(key);
     // const purchaseETH = await getPurchasInfoETH(key);
     
@@ -56,6 +64,9 @@ import { getRandomItemFromArray } from './utils';
         return;
     }
     if(!purchaseBSC1 || !purchaseETH1 || !purchaseBASE1 || !purchaseOP1 ||!purchaseARB1){
+        return;
+    }
+    if(!purchaseBSC2 || !purchaseETH2 || !purchaseBASE2 || !purchaseOP2 ||!purchaseARB2){
         return;
     }
     
@@ -71,6 +82,12 @@ import { getRandomItemFromArray } from './utils';
     const decimal4a = new Decimal(formatUnits(purchaseOP1['amount'], globalConfigs?.targetToken?.decimals));
     const decimal5a = new Decimal(formatUnits(purchaseARB1['amount'], globalConfigs?.targetToken?.decimals));
 
+    const decimal1b = new Decimal(formatUnits(purchaseBSC2['amount'], globalConfigs?.targetToken?.decimals));
+    const decimal2b = new Decimal(formatUnits(purchaseETH2['amount'], globalConfigs?.targetToken?.decimals));
+    const decimal3b = new Decimal(formatUnits(purchaseBASE2['amount'], globalConfigs?.targetToken?.decimals));
+    const decimal4b = new Decimal(formatUnits(purchaseOP2['amount'], globalConfigs?.targetToken?.decimals));
+    const decimal5b = new Decimal(formatUnits(purchaseARB2['amount'], globalConfigs?.targetToken?.decimals));
+
     // const bigNumber1 = BigNumberish.from(purchaseBSC['amount']); // String representation
     // const bigNumber2 = BigNumberish.from(purchaseETH['amount']);
     const stakedAmount = new Decimal(formatUnits(purchaseETH['staked'], globalConfigs?.targetToken?.decimals));
@@ -78,6 +95,7 @@ import { getRandomItemFromArray } from './utils';
 
     const totalBought = decimal1.add(decimal2).add(decimal3).add(decimal4).add(decimal5)
                             .add(decimal1a).add(decimal2a).add(decimal3a).add(decimal4a).add(decimal5a)
+                            .add(decimal1b).add(decimal2b).add(decimal3b).add(decimal4b).add(decimal5b)
 
     const stakeableAmount = Decimal.max(0, totalBought.sub(stakedAmount));
     
