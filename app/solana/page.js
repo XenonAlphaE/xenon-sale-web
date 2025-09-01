@@ -1,8 +1,8 @@
 import { SolanaProvider } from "../solana-ui/SolanaProvider"
-import { WalletButton } from "../solana-ui/WalletMultiButton"
+import CustomWalletButton from "../solana-ui/WalletMultiButton/WalletMultiButton"
 
    
 export default async function Page({ params }) {
     const lang = (await params).lang
-    return (<SolanaProvider><WalletButton/></SolanaProvider>)
+    return (<SolanaProvider><CustomWalletButton/></SolanaProvider>)
 }
