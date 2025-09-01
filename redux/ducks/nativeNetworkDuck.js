@@ -75,6 +75,11 @@ export const CURRENCIES = {
         { text: 'USDT', imageSrc: '/img/default/usdt.svg',  icon:"/img/default/usdt.svg",curr: CURR_CODE.USDT },
     ],
 
+    solana:[
+        { text: 'SOLANA', imageSrc: '/img/default/solana.svg', icon:"/img/default/solana.svg", curr: CURR_CODE.ETH },
+        { text: 'USDT', imageSrc: '/img/default/usdt.svg',  icon:"/img/default/usdt.svg",curr: CURR_CODE.USDT },
+    ],
+
 
 
 }

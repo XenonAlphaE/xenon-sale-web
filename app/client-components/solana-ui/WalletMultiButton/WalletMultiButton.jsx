@@ -2,6 +2,7 @@
 import React, { useState, useCallback } from "react";
 import { useWallet } from "@solana/wallet-adapter-react";
 import styles from './WalletMultiButton.module.css'
+import { useAppSolanaWallet } from "../../../solanaWallet-provider";
 
 
 // Wallet select dialog
@@ -82,24 +83,11 @@ const ConnectedDialog = ({ visible, onClose }) => {
   );
 };
 
-export default function CustomWalletButton() {
-  const { publicKey, connected } = useWallet();
-  const [walletDialogVisible, setWalletDialogVisible] = useState(false);
-  const [connectedDialogVisible, setConnectedDialogVisible] = useState(false);
+export default function CustomWalletDialogs() {
+  const {walletDialogVisible, setWalletDialogVisible, connectedDialogVisible, setConnectedDialogVisible} = useAppSolanaWallet()
 
   return (
     <>
-      {connected ? (
-        <button onClick={() => setConnectedDialogVisible(true)}>
-          {publicKey.toBase58().slice(0, 4)}...
-          {publicKey.toBase58().slice(-4)}
-        </button>
-      ) : (
-        <button onClick={() => setWalletDialogVisible(true)}>
-          Connect Wallet
-        </button>
-      )}
-
       {/* dialogs */}
       <WalletDialog
         visible={walletDialogVisible}

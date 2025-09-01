@@ -15,12 +15,12 @@ import {
 import {CurrencyDropdown} from "../currency-dropdown/CurrencyDropdown";
 import configs from '../config.main.json'
 import styles from  './buyform.module.css'
+import { useAppSolanaWallet } from "../../solanaWallet-provider";
 export const SolanaBuyForm = () => {
     const sectionText = useI18nSection('buyForm')
-    const nativeNetwork = useNativeNetwork()
+    const walletSol = useAppSolanaWallet()
+    const currList = CURRENCIES['solana']
 
-    const walletEth = useWalletERC20()
-    const currList = CURRENCIES[nativeNetwork]
     const [selectedCurr, setSelectedCurr] = useState();
   
     useEffect(()=>{
@@ -144,7 +144,7 @@ export const SolanaBuyForm = () => {
             <div className={styles.walletBoxInfo} >
                 <div className={styles.walletBoxHeader} >
                   <div>
-                    <p className={styles.walletBoxHeading} >{sectionText?.intro} <span className={styles.symbol}> ${walletEth?.tokenSymbol} </span> {sectionText?.intro1} </p>
+                    {/* <p className={styles.walletBoxHeading} >{sectionText?.intro} <span className={styles.symbol}> ${walletEth?.tokenSymbol} </span> {sectionText?.intro1} </p> */}
                   </div>
                 </div>
 
@@ -173,26 +173,17 @@ export const SolanaBuyForm = () => {
                  
                   </div>
                 </div>
-                <ProgressBar percentage={walletEth?.currentRaise *100/ walletEth?.nextRaise }/>
+                {/* <ProgressBar percentage={walletEth?.currentRaise *100/ walletEth?.nextRaise }/> */}
 
 
-                <p className={styles.totalRaised}>{sectionText?.funRaised}:  ${walletEth?.formatedRaise} / ${walletEth?.formatedNextRaise} </p>
+                {/* <p className={styles.totalRaised}>{sectionText?.funRaised}:  ${walletEth?.formatedRaise} / ${walletEth?.formatedNextRaise} </p> */}
 
-                {walletEth.currentAddress && 
-                <div>
-                {/* {truncateMiddle(walletEth.currentAddress)} */}
-                <p className="user-purchased-info">{sectionText.boughtAmount} ${configs?.targetToken?.symbol} = { walletEth?.formatedBought}</p>
-                {/* <img className="img-fluid ms-2 cursor-pointer" src="./img/info-icon.svg" /> */}
-                <p className="user-purchased-info">{sectionText.stakeableAmount} ${configs?.targetToken?.symbol} = {walletEth?.formatedStakeable}</p>
-                {/* <img className="img-fluid ms-2 cursor-pointer" src="./img/info-icon.svg" /> */}
-                </div>
-                }
-
+             
                 <div className={styles.dashTitle}>1 ${configs?.targetToken?.symbol} = ${configs?.targetToken?.tokenPrice} </div>
 
                 
             </div>
-            {walletEth.currentAddress && 
+{walletSol.connected && 
 
             <div className={styles.swapArea} >
             <div className={styles.currenciesList}  >
@@ -248,14 +239,14 @@ export const SolanaBuyForm = () => {
 
             </div>
 }
-            {!walletEth.currentAddress && 
+            {!walletSol.connected && 
             <div className={styles.actionButtons} >
-                <button className={styles.connectBtn}   onClick={walletEth.connect}>
+                <button className={styles.connectBtn}   onClick={walletSol?.setWalletDialogVisible}>
                     {sectionText?.connectWallet}
                 </button>
             </div>
             }
-            {walletEth.currentAddress && 
+            {walletSol.connected && 
             
             <div className={styles.actionButtons}  >
                 <button className={styles.buyBtn}  
@@ -264,10 +255,11 @@ export const SolanaBuyForm = () => {
                 >
                 {sectionText?.buyStake}
                 </button>
-                <CurrencyDropdown walletETH={walletEth} />
+                {/* <CurrencyDropdown walletETH={walletEth} /> */}
 
             </div>
             }
+
             <div className={styles.externalInfo}  >
               <a style={{textDecorationColor:"white", textDecoration:'underline', color: 'white'}} href="https://widget.wert.io/default/widget/?commodity=ETH%3AEthereum" target="_blank">Not enough ETH? Top up now</a>
               {/* <p translate="" className="font-18 text-center m-0 mt-2"><img src="/img/solx/token.svg" style={{ 'height': '35px' }} /> Powered by <a target="_blank" href='/' className=" "><img src="/img/default/W3P_White.svg" alt="" style={{height:25}} /></a></p> */}

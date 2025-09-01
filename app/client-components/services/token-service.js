@@ -4,10 +4,11 @@ import Web3 from 'web3';
 import { ethers,parseEther,Network, parseUnits , formatUnits} from 'ethers';
 import Decimal from 'decimal.js';
 import { getRandomItemFromArray } from './utils';
-
+import axios from 'axios';
+import mainConfig from '../config.main'
 
   
-  export const getUserPurchaseInfo =  async (globalConfigs, address) => {
+export const getUserPurchaseInfo =  async (globalConfigs, address) => {
     if(!globalConfigs || !address){
         return
     }
@@ -181,5 +182,26 @@ export const useTokenInfo=(globalConfigs) => {
     }
 
     return {tokenPriceInUsdt, totalFundRaise}
+
+}
+
+
+
+export const getSolanaPriceSignature = async () => {
+    // API for oracle price server
+    const OraclePriceAPI = axios.create({
+        baseURL: mainConfig.solana.priceSignatureEndpoint
+    });
+
+    const signatureData = await OraclePriceAPI.post(
+        "/api/solana/price",   // <-- must be string (relative path)
+        {
+            "symbol": mainConfig.targetToken.symbol,
+            "decimals": mainConfig.solana.USDT_Decimals
+        }
+    )
+
+    return signatureData?.data ?? null
+
 
 }

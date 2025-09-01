@@ -18,11 +18,6 @@ import { zeroAddress } from "viem";
 
 // Create a context for the wallet
 const Erc20WalletContext = createContext();
-const lastestUpdated = "2025-08-22T00:00:00Z"
-const lastestRaise  = 315841.68
-const dailyRaise = 10000
-const totalRaise = 2400000
-
 
 
 const getStakeRate = (date = new Date()) => {
@@ -50,6 +45,12 @@ function getRandomValueByDate(min, max) {
 
 
 export const Erc20WalletProvider = ({ globalConfigs, children }) => {
+    const lastestUpdated = globalConfigs.lastestUpdated
+    const lastestRaise  = globalConfigs.lastestRaise
+    const dailyRaise = globalConfigs.dailyRaise
+
+
+
     // Define the wallet logic (useWalletETH)
     const { openConnectModal } = useConnectModal();
     const { openChainModal } = useChainModal();
@@ -581,7 +582,6 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
             stakedPortion: ((purchaseInfo?.stakedAmount *100 )/ totalStaked),
 
             currentRaise,
-            totalRaise,
             nextRaise,
             formatedRaise:formatTokenNumber(currentRaise),
             formatedNextRaise:formatIntNumber(nextRaise),

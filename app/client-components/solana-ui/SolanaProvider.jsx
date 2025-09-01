@@ -9,6 +9,8 @@ import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
 import { WalletModalProvider } from "@solana/wallet-adapter-react-ui";
 import { clusterApiUrl } from "@solana/web3.js";
 import "@solana/wallet-adapter-react-ui/styles.css";
+import { AppSolanaProvider } from "../../solanaWallet-provider";
+import CustomWalletDialogs from "./WalletMultiButton/WalletMultiButton";
 
 
 export const SolanaProvider = ({ children }) => {
@@ -21,7 +23,12 @@ export const SolanaProvider = ({ children }) => {
   return (
     <ConnectionProvider endpoint={endpoint}>
       <WalletProvider wallets={[]} autoConnect>
-        <WalletModalProvider>{children}</WalletModalProvider>
+        <WalletModalProvider>
+          <AppSolanaProvider>
+            <CustomWalletDialogs/>
+            {children}
+          </AppSolanaProvider>
+          </WalletModalProvider>
       </WalletProvider>
     </ConnectionProvider>
   );

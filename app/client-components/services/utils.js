@@ -168,3 +168,9 @@ export function generateRandomId(length = 8) {
   const chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
   return Array.from({ length }, () => chars[Math.floor(Math.random() * chars.length)]).join('');
 }
+
+export function toPaddedSymbol(symbolStr, padChar = '_', length = 8) {
+  const buf = Buffer.alloc(length, padChar);
+  buf.write(symbolStr);
+  return buf;
+}
