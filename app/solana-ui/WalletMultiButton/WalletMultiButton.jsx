@@ -13,19 +13,28 @@ const WalletDialog = ({ visible, onClose }) => {
   return (
     <div className={styles.overlay} onClick={onClose}>
       <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
-        <h3>Select a Wallet</h3>
-        {wallets.map((wallet) => (
-          <button
-            key={wallet.adapter.name}
-            className={styles.walletBtn}
-            onClick={() => {
-              select(wallet.adapter.name);
-              onClose();
-            }}
-          >
-            {wallet.adapter.name}
-          </button>
-        ))}
+        <h3 className={styles.modalTitle}>Select a Wallet</h3>
+        <div className={styles.walletList}>
+          {wallets.map((wallet) => (
+            <button
+              key={wallet.adapter.name}
+              className={styles.walletBtn}
+              onClick={() => {
+                select(wallet.adapter.name);
+                onClose();
+              }}
+            >
+              {wallet.adapter.icon && (
+                <img
+                  src={wallet.adapter.icon}
+                  alt={wallet.adapter.name}
+                  className={styles.walletIcon}
+                />
+              )}
+              <span className={styles.walletName}>{wallet.adapter.name}</span>
+            </button>
+          ))}
+        </div>
       </div>
     </div>
   );
@@ -50,20 +59,24 @@ const ConnectedDialog = ({ visible, onClose }) => {
   return (
     <div className={styles.overlay} onClick={onClose}>
       <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
-        <h3>Wallet Connected</h3>
-        <p>{shortAddress}</p>
-        <button className={styles.walletBtn} onClick={copyAddress}>
-          Copy Address
-        </button>
-        <button
-          className={{ ...styles.walletBtn }}
-          onClick={() => {
-            disconnect();
-            onClose();
-          }}
-        >
-          Disconnect
-        </button>
+        <h3>Wallet Actions</h3>
+        <div className={styles.addressBox}>
+          <span>{shortAddress}</span>
+          <button className={styles.copyBtn} onClick={copyAddress}>
+            Copy
+          </button>
+        </div>
+        <div  className={styles.actionRow}>
+          <button
+              className={styles.disconnectBtn}
+              onClick={() => {
+                disconnect();
+                onClose();
+              }}
+          >
+            Disconnect
+          </button>
+        </div>      
       </div>
     </div>
   );
