@@ -1,12 +1,13 @@
 {
     "vaultAddress":"8d25nPi2uqeEHx8qxfpYgqTYpS37Jcgi6VMT6pvA543D",
-    "vaultUsdtAta":"E5gwZdKUqntG3N7ipjNsp9VHDsYkkfvfv4r8wxqCCD6y",
     "priceSignatureEndpoint":"http://localhost:7001",
     "USDT_Address": "GcSQxdgYUhh4EJTcGRdd3wJ9MugLtLh2JKLCdy2AyPJn",
     "USDT_Decimals": 6,
-    "statePda":"CLwmZ62uL1TpEABXT3pwiumnFuJB6B2vjfpYisGUdb2k",
+    "USDT_Price": "https://www.binance.com/api/v3/ticker/price?symbol=SOLUSDT",
+
     "salers":[{
         "programId":"FwwSJsfbSifKcAwNcwkAS17ty1oL5XX8sjWTMgxcKYNG",
+        "statePda":"CLwmZ62uL1TpEABXT3pwiumnFuJB6B2vjfpYisGUdb2k",
         "idl" : {
             "version": "0.1.0",
             "name": "presale",

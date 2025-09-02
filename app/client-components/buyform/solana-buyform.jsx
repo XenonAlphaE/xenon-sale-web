@@ -58,17 +58,17 @@ export const SolanaBuyForm = () => {
         setCurrencyInput("")
         return
       }
-      if (!walletEth?.tokenPriceInUsdt) {
+      if (!walletSol?.tokenPriceInUsdt) {
         return
       }
       // Regular expression to allow only numeric and float values
       if (/^\d*\.?\d*$/.test(value) && isValidNumber(value)) {
           setTokenInput(value);
-          if (selectedCurr.curr === CURR_CODE.BNB || selectedCurr.curr === CURR_CODE.ETH) {
-            setCurrencyInput(calculateBNBNeeded(value, selectedCurr.curr === CURR_CODE.BNB ? walletEth?.bnbPrice : walletEth?.ethPrice , walletEth?.tokenPriceInUsdt))
+          if (selectedCurr.curr === CURR_CODE.SOL) {
+            setCurrencyInput(calculateBNBNeeded(value, walletSol?.solanaPrice , walletSol?.tokenPriceInUsdt))
           }
           else {
-            setCurrencyInput(calculateUSDNeeded(value, walletEth?.tokenPriceInUsdt))
+            setCurrencyInput(calculateUSDNeeded(value, walletSol?.tokenPriceInUsdt))
           }
       }
     };
@@ -83,17 +83,17 @@ export const SolanaBuyForm = () => {
         setCurrencyInput(value)
         return
       }
-      if (!walletEth?.tokenPriceInUsdt) {
+      if (!walletSol?.tokenPriceInUsdt) {
         return
       }
       // Regular expression to allow only numeric and float values
       if (/^[0-9]*[.]?[0-9]*$/.test(value) && isValidNumber(value)) {
         setCurrencyInput(value);
-        if (selectedCurr.curr === CURR_CODE.BNB || selectedCurr.curr === CURR_CODE.ETH) {
-          setTokenInput(calculateTokensForBNB(value, selectedCurr.curr === CURR_CODE.BNB ? walletEth?.bnbPrice : walletEth?.ethPrice , walletEth?.tokenPriceInUsdt))
+        if (selectedCurr.curr === CURR_CODE.SOL) {
+          setTokenInput(calculateTokensForBNB(value, walletSol?.solanaPrice , walletSol?.tokenPriceInUsdt))
         }
         else {
-          setTokenInput(calculateTokenOutput(value, walletEth?.tokenPriceInUsdt))
+          setTokenInput(calculateTokenOutput(value, walletSol?.tokenPriceInUsdt))
         }
       }
     };
@@ -103,11 +103,12 @@ export const SolanaBuyForm = () => {
       if (!isClicked) {
         setIsClicked(true);
         // Your button click logic here
-        if (selectedCurr.curr === CURR_CODE.BNB || selectedCurr.curr === CURR_CODE.ETH) {
-            await walletEth?.buyTokensWithRef(currencyInput, "")
+        if (selectedCurr.curr === CURR_CODE.SOL) {
+          debugger
+            await walletSol?.sendBuyWithOracle(currencyInput)
         }
         else {
-            await walletEth?.buyTokensUSDTWifRef(currencyInput, "");
+            // await walletEth?.buyTokensUSDTWifRef(currencyInput, "");
         }
       }
   
