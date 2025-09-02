@@ -470,3 +470,31 @@ clip-path: polygon(100% 15px, 100% 100%, 15px 100%, 0% calc(100% - 15px), 0% 0%,
 }
 
 
+.ethNetworkLink{
+  /* border: solid 2px #fff;
+  box-sizing: border-box;
+  background: transparent; */
+    border-radius: 8px;
+    width: 100%;
+    color:  #98ff19;
+    box-sizing: border-box;
+    font-size : 18px;
+    padding: 10px 30px;
+    background-color:transparent;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    border: none;
+    position: relative;
+    text-decoration: none;
+}
+
+.ethNetworkLink::before{
+    content: "";
+    position: absolute;
+    inset: -1px;
+    background: #98ff19;
+    clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 15px 100%, 0 calc(100% - 15px), 0 0, 1px 1px, 1px calc(100% - 16px), 15px calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), calc(100% - 1px) 15px, calc(100% - 15px) 1px, 1px 1px);
+}

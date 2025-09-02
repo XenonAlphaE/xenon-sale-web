@@ -145,7 +145,7 @@ export const SolanaBuyForm = () => {
             <div className={styles.walletBoxInfo} >
                 <div className={styles.walletBoxHeader} >
                   <div>
-                    {/* <p className={styles.walletBoxHeading} >{sectionText?.intro} <span className={styles.symbol}> ${walletEth?.tokenSymbol} </span> {sectionText?.intro1} </p> */}
+                    <p className={styles.walletBoxHeading} >{sectionText?.intro} <span className={styles.symbol}> ${walletSol?.tokenSymbol} </span> {sectionText?.intro1} </p>
                   </div>
                 </div>
 
@@ -174,10 +174,10 @@ export const SolanaBuyForm = () => {
                  
                   </div>
                 </div>
-                {/* <ProgressBar percentage={walletEth?.currentRaise *100/ walletEth?.nextRaise }/> */}
+                <ProgressBar percentage={walletSol?.currentRaise *100/ walletSol?.nextRaise }/>
 
 
-                {/* <p className={styles.totalRaised}>{sectionText?.funRaised}:  ${walletEth?.formatedRaise} / ${walletEth?.formatedNextRaise} </p> */}
+                <p className={styles.totalRaised}>{sectionText?.funRaised}:  ${walletSol?.formatedRaise} / ${walletSol?.formatedNextRaise} </p>
 
 
                 {walletSol.connected && 
@@ -267,13 +267,16 @@ export const SolanaBuyForm = () => {
                 >
                 {sectionText?.buyStake}
                 </button>
-                {/* <CurrencyDropdown walletETH={walletEth} /> */}
 
+                <a className={styles.ethNetworkLink}  
+                  href="/"   
+                >
+                   Buy WITH ETH 
+                </a>
             </div>
             }
 
             <div className={styles.externalInfo}  >
-              <a style={{textDecorationColor:"white", textDecoration:'underline', color: 'white'}} href="https://widget.wert.io/default/widget/?commodity=ETH%3AEthereum" target="_blank">Not enough ETH? Top up now</a>
               {/* <p translate="" className="font-18 text-center m-0 mt-2"><img src="/img/solx/token.svg" style={{ 'height': '35px' }} /> Powered by <a target="_blank" href='/' className=" "><img src="/img/default/W3P_White.svg" alt="" style={{height:25}} /></a></p> */}
               <a target="_blank" href='/' className=" "><img src="/img/default/W3P_White.svg" alt="" style={{height:18}} /> </a>
             </div>
