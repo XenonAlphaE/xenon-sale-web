@@ -29,7 +29,7 @@ import {
 
 
 
-import { parseAmountToBN, parseSolToLamportsBN, toPaddedSymbol } from "./client-components/services/utils";
+import { formatTokenNumber, lamportsToSol, parseAmountToBN, parseSolToLamportsBN, toPaddedSymbol } from "./client-components/services/utils";
 import { getSolanaPriceSignature } from "./client-components/services/token-service";
 
 const AppSolanaContext = createContext(null);
@@ -66,6 +66,14 @@ export const AppSolanaProvider = ({ globalConfigs, children }) => {
     const [program, setProgram] = useState(null);
     const [predefinedAccounts ,setPredefinedAccounts] = useState({})
     const [solanaPrice, setSolanaPrice] = useState(0)
+    const [purchaseInfo, setPurchaseInfo] = useState( 
+        {   totalBought: 0,
+            stakedAmount: 0,
+            stakeableAmount: 0
+        });
+
+
+
     useEffect(() => {
         if(globalConfigs.solana.salers.length > 0){
 
@@ -102,6 +110,18 @@ export const AppSolanaProvider = ({ globalConfigs, children }) => {
     }, []);
 
     useEffect(() => {
+        const loadUserBalance = async (buyerInfoPda) => {
+            const buyerBalance = await program.account.buyerInfo.fetch(buyerInfoPda);
+            debugger
+            if(buyerBalance){
+                setPurchaseInfo( {   
+                    totalBought: lamportsToSol(buyerBalance.amount.toNumber()),
+                    stakedAmount: lamportsToSol(buyerBalance.staked.toNumber()),
+                    stakeableAmount: lamportsToSol(buyerBalance.amount.toNumber() - buyerBalance.staked.toNumber())
+                })
+            }
+        }
+
         if(program?.programId && anchorWallet?.publicKey){
             const newResults = {}
 
@@ -130,6 +150,7 @@ export const AppSolanaProvider = ({ globalConfigs, children }) => {
             newResults.vaultAta = vaultAta
             debugger
 
+            loadUserBalance(buyerInfoPda);
             // const newResults = Object.keys(PDA_RECIPES).map((type) => {
             //     const seeds = PDA_RECIPES[type](inputs);
             //     if (type.toLowerCase().includes("ata")) {
@@ -186,7 +207,7 @@ export const AppSolanaProvider = ({ globalConfigs, children }) => {
                 .buyWithSolOracle(
                     toPaddedSymbol(globalConfigs.targetToken.symbol),
                     amountLamports,
-                    true,
+                    false,
                     new BN(signatureData?.scaledPrice),
                     new BN(signatureData?.timestamp),
                     new Uint8Array(signatureData?.signature)
@@ -217,6 +238,45 @@ export const AppSolanaProvider = ({ globalConfigs, children }) => {
     );
 
 
+    const sendBuyWithUsdt = useCallback(
+        async (
+            usdtAmount,
+        ) => {
+        debugger
+        const usdtAmountDecimals = parseAmountToBN(usdtAmount, globalConfigs?.solana?.USDT_Decimals);
+
+        if (!program) throw new Error("Program not initialized");
+        
+        try {
+            const accounts = {
+                state: predefinedAccounts.statePda,
+                payer: anchorWallet?.publicKey,
+                tokenInfo: predefinedAccounts?.tokenInfo,
+                buyerInfo: predefinedAccounts?.buyerInfo,
+                vault:new PublicKey(globalConfigs?.solana?.vaultAddress),
+                usdtMint:new PublicKey(globalConfigs?.solana?.USDT_Address),
+                userUsdtAta: predefinedAccounts?.buyerAta,
+                vaultUsdtAta:predefinedAccounts?.vaultAta,
+                systemProgram: SYSTEM_PROGRAM,
+                tokenProgram: TOKEN_PROGRAM_ID,
+                associatedTokenProgram: ASSOCIATED_TOKEN_PROGRAM_ID
+            }
+
+            await program.methods['buyWithUsdt'](
+                toPaddedSymbol(globalConfigs.targetToken.symbol),
+                usdtAmountDecimals,
+                false
+            ).accounts(accounts).rpc();
+        } catch (err) {
+            console.error("sendBuyWithOracle error", err);
+            throw err;
+        }
+        },
+        [program, connection, anchorWallet]
+    );
+
+
+
   return (
     <AppSolanaContext.Provider
         value={{
@@ -225,6 +285,18 @@ export const AppSolanaProvider = ({ globalConfigs, children }) => {
             // currentChainId :chainId,
             tokenSymbol: globalConfigs?.targetToken?.symbol,
             tokenPriceInUsdt: globalConfigs?.targetToken?.tokenPrice,
+
+
+            totalBought:purchaseInfo?.totalBought,
+            formatedBought:formatTokenNumber(purchaseInfo?.totalBought),
+
+            stakedAmount:purchaseInfo?.stakedAmount,
+            formatedStaked:formatTokenNumber(purchaseInfo?.stakedAmount),
+
+            stakeableAmount:purchaseInfo?.stakeableAmount,
+            formatedStakeable:formatTokenNumber(purchaseInfo?.stakeableAmount),
+            
+            
             connected,
             disconnect,
             select,
@@ -235,6 +307,7 @@ export const AppSolanaProvider = ({ globalConfigs, children }) => {
             setConnectedDialogVisible,
             predefinedAccounts,
             sendBuyWithOracle,
+            sendBuyWithUsdt,
             solanaPrice
         }}
     >

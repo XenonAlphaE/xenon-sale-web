@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import BN from "bn.js";
+import { LAMPORTS_PER_SOL } from "@solana/web3.js";
 
 function nearestDayDivisibleBy3(targetHour) {
   const today = new Date();
@@ -208,3 +209,8 @@ export function parseAmountToBN(
 
 export const parseSolToLamportsBN = (text, rounding) => // "truncate"|"round"|"ceil") =>
   parseAmountToBN(text, 9, rounding);
+
+// lamports → SOL
+export function lamportsToSol(lamports) {
+  return lamports / LAMPORTS_PER_SOL;
+}

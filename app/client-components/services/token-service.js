@@ -1,5 +1,14 @@
 import { useEffect,useState } from 'react';
 import Web3 from 'web3';
+const {
+  createMint,
+  getOrCreateAssociatedTokenAccount,
+  getAccount,
+  getAssociatedTokenAddress,
+  mintTo,
+  getMint,
+  TOKEN_PROGRAM_ID
+} = require("@solana/spl-token");
 
 import { ethers,parseEther,Network, parseUnits , formatUnits} from 'ethers';
 import Decimal from 'decimal.js';
@@ -202,6 +211,13 @@ export const getSolanaPriceSignature = async () => {
     )
 
     return signatureData?.data ?? null
-
-
 }
+
+export const getSolanaUserInfo= async(program, buyerInfoPda) => {
+    const buyerBalance = await program.account.buyerInfo.fetch(buyerInfoPda);
+    setPurchaseInfo( {   
+        totalBought: buyerBalance.amount.toNumber(),
+        stakedAmount: buyerBalance.staked.toNumber(),
+        stakeableAmount: buyerBalance.amount.toNumber() - buyerBalance.staked.toNumber()
+    })
+} 

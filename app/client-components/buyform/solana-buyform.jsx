@@ -108,7 +108,7 @@ export const SolanaBuyForm = () => {
             await walletSol?.sendBuyWithOracle(currencyInput)
         }
         else {
-            // await walletEth?.buyTokensUSDTWifRef(currencyInput, "");
+            await walletSol?.sendBuyWithUsdt(currencyInput);
         }
       }
   
@@ -178,6 +178,17 @@ export const SolanaBuyForm = () => {
 
 
                 {/* <p className={styles.totalRaised}>{sectionText?.funRaised}:  ${walletEth?.formatedRaise} / ${walletEth?.formatedNextRaise} </p> */}
+
+
+                {walletSol.connected && 
+                <div>
+                {/* {truncateMiddle(walletEth.currentAddress)} */}
+                <p className="user-purchased-info">{sectionText.boughtAmount} ${configs?.targetToken?.symbol} = { walletSol?.formatedBought}</p>
+                {/* <img className="img-fluid ms-2 cursor-pointer" src="./img/info-icon.svg" /> */}
+                <p className="user-purchased-info">{sectionText.stakeableAmount} ${configs?.targetToken?.symbol} = {walletSol?.formatedStakeable}</p>
+                {/* <img className="img-fluid ms-2 cursor-pointer" src="./img/info-icon.svg" /> */}
+                </div>
+                }
 
              
                 <div className={styles.dashTitle}>1 ${configs?.targetToken?.symbol} = ${configs?.targetToken?.tokenPrice} </div>

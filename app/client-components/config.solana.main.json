@@ -6,8 +6,8 @@
     "USDT_Price": "https://www.binance.com/api/v3/ticker/price?symbol=SOLUSDT",
 
     "salers":[{
-        "programId":"FwwSJsfbSifKcAwNcwkAS17ty1oL5XX8sjWTMgxcKYNG",
-        "statePda":"CLwmZ62uL1TpEABXT3pwiumnFuJB6B2vjfpYisGUdb2k",
+        "programId":"AvJR7cK3aqviAKCU4UGJx3LWfqh11qu4S1uHYqgbRg6f",
+        "statePda":"8gomC2L3qNFvYFNRkSbPBsFYzpSMrpHDmRwNWcb8a6H6",
         "idl" : {
             "version": "0.1.0",
             "name": "presale",
