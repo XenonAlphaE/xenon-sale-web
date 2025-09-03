@@ -15,6 +15,7 @@ import {
 import {CurrencyDropdown} from "../currency-dropdown/CurrencyDropdown";
 import configs from '../config.main.json'
 import styles from  './buyform.module.css'
+import SolanaLabel from "../solana-ui/SolanaLabel/SolanaLabel";
 export const BuyForm = () => {
     const sectionText = useI18nSection('buyForm')
     const nativeNetwork = useNativeNetwork()
@@ -273,6 +274,10 @@ export const BuyForm = () => {
               {/* <p translate="" className="font-18 text-center m-0 mt-2"><img src="/img/solx/token.svg" style={{ 'height': '35px' }} /> Powered by <a target="_blank" href='/' className=" "><img src="/img/default/W3P_White.svg" alt="" style={{height:25}} /></a></p> */}
               <a target="_blank" href='/' className=" "><img src="/img/default/W3P_White.svg" alt="" style={{height:18}} /> </a>
             </div>
+        </div>
+        
+        <div className={styles.solanaBuyLink}>
+          <SolanaLabel/>
         </div>
         </div>
     )

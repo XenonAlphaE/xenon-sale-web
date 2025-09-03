@@ -498,3 +498,15 @@ clip-path: polygon(100% 15px, 100% 100%, 15px 100%, 0% calc(100% - 15px), 0% 0%,
     background: #98ff19;
     clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 15px 100%, 0 calc(100% - 15px), 0 0, 1px 1px, 1px calc(100% - 16px), 15px calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), calc(100% - 1px) 15px, calc(100% - 15px) 1px, 1px 1px);
 }
+
+.solanaBuyLink{
+    position: absolute;
+    top: -2%;
+    right: 20px;
+    max-width: 200px;
+    transform: rotate(20deg);
+    @media (max-width: 1024px) {
+        transform: rotate(-10deg);
+
+    }
+}
