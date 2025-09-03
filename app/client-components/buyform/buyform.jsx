@@ -276,9 +276,9 @@ export const BuyForm = () => {
             </div>
         </div>
         
-        <div className={styles.solanaBuyLink}>
+        {/* <div className={styles.solanaBuyLink}>
           <SolanaLabel/>
-        </div>
+        </div> */}
         </div>
     )
 
