@@ -1,7 +1,7 @@
 .overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.65);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,13 +9,31 @@
 }
 
 .modal {
-  background: #fff;
+  background: #0a0b0d;
   padding: 24px;
-  border-radius: 16px;
+  border-radius: 20px;
   min-width: 320px;
   max-width: 420px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-  animation: fadeIn 0.25s ease-in-out;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+  border: 1px solid transparent;
+  background-clip: padding-box;
+  position: relative;
+  animation: fadeInUp 0.3s ease-out;
+}
+
+.modal::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 2px;
+  background: linear-gradient(135deg, #00FFA3, #DC1FFF, #00FFA3);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  pointer-events: none;
 }
 
 .modalTitle {
@@ -23,13 +41,13 @@
   margin-bottom: 16px;
   font-weight: 600;
   text-align: center;
-  color: #333;
+  color: #fff;
 }
 
 .walletList {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 
 .walletBtn {
@@ -37,19 +55,22 @@
   align-items: center;
   gap: 12px;
   width: 100%;
-  padding: 12px 14px;
-  border: 1px solid #e0e0e0;
-  border-radius: 12px;
+  padding: 14px 16px;
+  border-radius: 14px;
   cursor: pointer;
   font-size: 0.95rem;
-  background: #fafafa;
-  transition: all 0.2s ease;
+  font-weight: 500;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.05);
+  transition: all 0.25s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .walletBtn:hover {
-  background: #f0f4ff;
-  border-color: #4a90e2;
-  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #00FFA3;
+  transform: translateY(-2px);
+  box-shadow: 0 0 10px rgba(0, 255, 163, 0.4);
 }
 
 .walletIcon {
@@ -62,32 +83,26 @@
   flex: 1;
   text-align: left;
   font-weight: 500;
-  color: #333;
+  color: #fff;
 }
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: scale(0.95); }
-  to { opacity: 1; transform: scale(1); }
-}
-
 
 /* Address box */
 .addressBox {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #f6f7f9;
-  border: 1px solid #e3e5e9;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   padding: 12px 16px;
   font-family: monospace;
   font-size: 0.95rem;
-  color: #333;
+  color: #fff;
   margin-bottom: 20px;
 }
 
 .copyBtn {
-  background: #0077ff;
+  background: linear-gradient(135deg, #00FFA3, #DC1FFF);
   color: white;
   border: none;
   border-radius: 8px;
@@ -95,43 +110,42 @@
   font-size: 0.8rem;
   font-weight: 500;
   cursor: pointer;
-  transition: background 0.2s, transform 0.1s;
+  transition: transform 0.15s, opacity 0.15s;
 }
 .copyBtn:hover {
-  background: #005fd4;
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  opacity: 0.9;
 }
 
-/* Action row */
 .actionRow {
   display: flex;
   justify-content: center;
 }
 
 .disconnectBtn {
-  background: linear-gradient(135deg, #ff5a5f, #d93744);
+  background: linear-gradient(135deg, #FF5A5F, #DC1FFF);
   color: white;
   border: none;
-  border-radius: 10px;
-  padding: 10px 18px;
+  border-radius: 12px;
+  padding: 12px 20px;
   font-size: 0.95rem;
   font-weight: 600;
   cursor: pointer;
-  transition: transform 0.15s, opacity 0.15s;
+  transition: transform 0.2s, opacity 0.2s;
 }
 .disconnectBtn:hover {
-  transform: translateY(-1px);
+  transform: translateY(-2px);
   opacity: 0.9;
 }
 
-/* Simple fade animation */
+/* Animations */
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(12px);
+    transform: translateY(12px) scale(0.97);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
   }
 }

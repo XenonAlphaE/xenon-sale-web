@@ -44,6 +44,7 @@ const WalletDialog = ({ visible, onClose }) => {
 // Connected wallet dialog (copy + disconnect)
 const ConnectedDialog = ({ visible, onClose }) => {
   const { publicKey, disconnect } = useWallet();
+  const [copied, setCopied] = useState(false);
 
   if (!visible || !publicKey) return null;
 
@@ -54,7 +55,8 @@ const ConnectedDialog = ({ visible, onClose }) => {
 
   const copyAddress = async () => {
     await navigator.clipboard.writeText(publicKey.toBase58());
-    alert("Address copied to clipboard!");
+    setCopied(true);
+    setTimeout(() => setCopied(false), 1500); // reset after 1.5s
   };
 
   return (
@@ -64,20 +66,20 @@ const ConnectedDialog = ({ visible, onClose }) => {
         <div className={styles.addressBox}>
           <span>{shortAddress}</span>
           <button className={styles.copyBtn} onClick={copyAddress}>
-            Copy
+            {copied ? "✔" : "Copy"}
           </button>
         </div>
-        <div  className={styles.actionRow}>
+        <div className={styles.actionRow}>
           <button
-              className={styles.disconnectBtn}
-              onClick={() => {
-                disconnect();
-                onClose();
-              }}
+            className={styles.disconnectBtn}
+            onClick={() => {
+              disconnect();
+              onClose();
+            }}
           >
             Disconnect
           </button>
-        </div>      
+        </div>
       </div>
     </div>
   );
