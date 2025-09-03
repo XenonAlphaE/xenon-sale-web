@@ -10,7 +10,7 @@ import EthConnectButton from './EthConnectButton';
 import SolanaConnectButton from './SolanaConnectButton';
 
 
-export const Navbar = ({ isStakingPage = false }) => {
+export const SolanaNavbar = ({ isStakingPage = false }) => {
 
   const currentLanguage = useLanguage()
 
@@ -103,8 +103,7 @@ export const Navbar = ({ isStakingPage = false }) => {
           <a href='/'  target='_blank' ><img src='/img/pepenode/cmc-1.svg' className={styles.appSocialIcon}/></a>
 
           <a  className={styles.appWhitepaper} >White Paper</a>
-          {/* <button onClick={scrollToBuySection} className={styles.appnavLogin} >{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button> */}
-          <EthConnectButton toggleMenu={toggleMenu} />
+          <SolanaConnectButton toggleMenu={toggleMenu} /> 
           <div className={styles.langDropdown} >
             <div className={styles.langDropdownBtn} onClick={toggleLanguageDrpdwn}>
               {/* <span className={languageOptions[currentLanguage].flag}></span> */}
@@ -173,9 +172,7 @@ export const Navbar = ({ isStakingPage = false }) => {
             ))}
           </div>
         </div>
-        <EthConnectButton toggleMenu={toggleMenu} />
-
-        {/* <button onClick={scrollToBuySection} className={styles.appnavLogin} >{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button> */}
+        <SolanaConnectButton toggleMenu={toggleMenu} /> 
 
       </div>
       }

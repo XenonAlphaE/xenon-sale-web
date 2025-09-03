@@ -4,6 +4,7 @@
 // Action types
 const SET_NATIVE_NETWORK = 'nn/SET_NETWORK'; // New action type for setting language
 const SET_CURRENT_ADDRESS = 'nn/SET_ADDRESS'; // New action type for setting language
+const SET_SOLANA_PAGE = 'nn/SET_SOLANA_PAGE'; // New action type for setting language
 
 
 export const CURR_CODE = {
@@ -88,7 +89,8 @@ export const CURRENCIES = {
 // Initial state
 const initialState = {
     network: 'eth',
-    currentAddress: ''
+    currentAddress: '',
+    isSolanaPage: false
 };
 
 // Action creators
@@ -102,6 +104,15 @@ export const setNetwork = (network) => {
       console.error('Invalid language value.');
       return { type: 'INVALID_ACTION' }; // or throw an error
     }
+};
+
+export const setSolanaPage = () => {
+    // Validate language against the valid range
+  
+      return {
+          type: SET_SOLANA_PAGE,
+      };
+
 };
 
 export const setCurrentAddress = (address) => {    
@@ -131,6 +142,10 @@ const nativeNetworkReducer = (state = initialState, action) => {
     case SET_CURRENT_ADDRESS:
       
       return { ...state, currentAddress: action.payload };
+
+    case SET_SOLANA_PAGE:
+      
+      return { ...state, isSolanaPage: true };
 
     default:
         return state;

@@ -4,6 +4,8 @@ export default async function RootLayout({ children, params }) {
     return (
       <div>
         <input type="hidden" value={lang} id="current-lang" />
+        <input type="hidden" value="true" id="solana-page" />
+
         {children}
       </div>
     );

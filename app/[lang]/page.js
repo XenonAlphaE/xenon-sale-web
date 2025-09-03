@@ -14,6 +14,7 @@ export default async function Page({ params }) {
     const lang = (await params).lang
     return (    
     <WalletProvider>
+        
         <ReduxProvider><App /></ReduxProvider>
     </WalletProvider>
     )

@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { selectNativeNetworkState , selectCurrentAddress, setNetwork,setCurrentAddress } from '../ducks/nativeNetworkDuck'; // Import the selector from the Redux Duck
+import { selectNativeNetworkState , selectCurrentAddress, setNetwork,setCurrentAddress, setSolanaPage } from '../ducks/nativeNetworkDuck'; // Import the selector from the Redux Duck
 import { useAccount, useChainId } from 'wagmi'
 
 
@@ -20,7 +20,19 @@ export const useNativeNetwork = () => {
         default:
             return"eth";
     }
-  };
+};
+
+
+export const useIsSolanaPage = () => {
+    return useSelector(state => state.nativeNetwork.isSolanaPage);
+};
+
+export const useSetSolanaPage = () => {
+    const dispatch = useDispatch();
+    return () => {
+      dispatch(setSolanaPage);
+    };
+};
 
 // export const useCurrentAddress = () => {
 //     return useSelector(selectCurrentAddress);
