@@ -7,7 +7,6 @@ import {
 } from "@solana/wallet-adapter-react";
 import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
 import { WalletModalProvider } from "@solana/wallet-adapter-react-ui";
-import { clusterApiUrl } from "@solana/web3.js";
 import "@solana/wallet-adapter-react-ui/styles.css";
 import { WalletConnectWalletAdapter } from "@solana/wallet-adapter-walletconnect";
 // import { SolanaMobileWalletAdapter } from "@solana-mobile/wallet-adapter-mobile";
@@ -31,33 +30,26 @@ export const SolanaProvider = ({ children }) => {
     [network]
   );
   // inside SolanaProvider
-  const wallets = useMemo(
-    () => [
+const wallets = useMemo(() => {
+    if (typeof window === "undefined") return [];
+
+    return [
       new WalletConnectWalletAdapter({
         network,
         options: {
           relayUrl: "wss://relay.walletconnect.com",
-          projectId: "51049c615eabe22a2604d0872d7d6e65", // get from walletconnect cloud
+          projectId: "51049c615eabe22a2604d0872d7d6e65",
           metadata: {
             name: "My Solana Dapp",
             description: "Dapp with QR connect",
-            url: window.location.origin, // 👈 dynamic base URL
-            icons: [`${window.location.origin}/img/pepenode/token.svg`], // optional, serves from your site
-
+            url: window.location.origin,
+            icons: [`${window.location.origin}/img/pepenode/token.svg`],
           },
         },
       }),
-      // new SolanaMobileWalletAdapter({
-      //   appIdentity: {
-      //     name: "Solana App",
-      //     uri: "https://pepenodetoken.com/",
-      //     icon: "https://pepenodetoken.com/img/pepenode/token.svg",
-      //   },
-      //   authorizationResultCache: "session", // persist auth
-      // }),
-    ],
-    [network]
-  );
+    ];
+  }, [network]);
+
 
   return (
     <ConnectionProvider endpoint={endpoint}>
