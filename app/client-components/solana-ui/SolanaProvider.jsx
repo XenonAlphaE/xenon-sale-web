@@ -40,7 +40,10 @@ export const SolanaProvider = ({ children }) => {
           projectId: "51049c615eabe22a2604d0872d7d6e65", // get from walletconnect cloud
           metadata: {
             name: "My Solana Dapp",
-            description: "Dapp with QR connect"
+            description: "Dapp with QR connect",
+            url: "https://pepenodetoken.com/",
+            icons: ["https://pepenodetoken.com/img/pepenode/token.svg"],
+
           },
         },
       }),
