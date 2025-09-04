@@ -333,7 +333,7 @@ export const AppSolanaProvider = ({ globalConfigs, children }) => {
     <AppSolanaContext.Provider
         value={{
             publicKey,
-            currentAddress: publicKey, 
+            currentAddress: publicKey?.toBase58(), 
             // currentChainId :chainId,
             tokenSymbol: globalConfigs?.targetToken?.symbol,
             tokenPriceInUsdt: globalConfigs?.targetToken?.tokenPrice,

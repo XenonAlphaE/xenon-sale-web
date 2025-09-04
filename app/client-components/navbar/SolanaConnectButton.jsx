@@ -23,9 +23,8 @@ export default function SolanaConnectButton({toggleMenu}) {
             walletSol?.setWalletDialogVisible(true)
         }
     };
-
   return(
-    <button onClick={scrollToBuySection} className={styles.appnavLogin} >{!!walletSol?.address ? truncateMiddle(walletSol?.address) : sectionText?.buyNow}</button>
+    <button onClick={scrollToBuySection} className={styles.appnavLogin} >{!!walletSol?.currentAddress ? truncateMiddle(walletSol?.currentAddress) : sectionText?.buyNow}</button>
   )
 
 }
