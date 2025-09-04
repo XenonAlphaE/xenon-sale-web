@@ -104,7 +104,6 @@ export const SolanaBuyForm = () => {
         setIsClicked(true);
         // Your button click logic here
         if (selectedCurr.curr === CURR_CODE.SOL) {
-          debugger
             await walletSol?.sendBuyWithOracle(currencyInput)
         }
         else {

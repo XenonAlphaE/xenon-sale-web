@@ -127,7 +127,6 @@ export const AppSolanaProvider = ({ globalConfigs, children }) => {
     
             totalIncrease += baseIncreasePerPortion * multiplier;
         }
-        debugger
         setCurrentRaise(lastestRaise + totalIncrease);
         setNextRaise(roundUpToNextMillion(lastestRaise + totalIncrease))
 
@@ -171,7 +170,6 @@ export const AppSolanaProvider = ({ globalConfigs, children }) => {
     useEffect(() => {
         const loadUserBalance = async (buyerInfoPda) => {
             const buyerBalance = await program.account.buyerInfo.fetch(buyerInfoPda);
-            debugger
             if(buyerBalance){
                 setPurchaseInfo( {   
                     totalBought: lamportsToSol(buyerBalance.amount.toNumber()),
@@ -187,27 +185,22 @@ export const AppSolanaProvider = ({ globalConfigs, children }) => {
             let seeds = PDA_RECIPES.tokenInfo({tokenSymbol: globalConfigs?.targetToken?.symbol});
             const [tokenInfoPda] = PublicKey.findProgramAddressSync(seeds, program?.programId);
             newResults.tokenInfo = tokenInfoPda
-            debugger
 
             seeds = PDA_RECIPES.state();
             const [statePda] = PublicKey.findProgramAddressSync(seeds, program?.programId);
             newResults.statePda = statePda
-            debugger
 
             seeds = PDA_RECIPES.buyerInfoPda({tokenSymbol: globalConfigs?.targetToken?.symbol, buyerPubkey: anchorWallet?.publicKey});
             const [buyerInfoPda] = PublicKey.findProgramAddressSync(seeds, program?.programId);
             newResults.buyerInfo = buyerInfoPda
-            debugger
 
             seeds = PDA_RECIPES.buyerAta({mint: globalConfigs?.solana?.USDT_Address, buyerPubkey: anchorWallet?.publicKey});
             const [buyerAta] = PublicKey.findProgramAddressSync(seeds, ASSOCIATED_TOKEN_PROGRAM_ID);
             newResults.buyerAta = buyerAta
-            debugger
 
             seeds = PDA_RECIPES.vaultAta({mint: globalConfigs?.solana?.USDT_Address, vaultPubkey: new PublicKey(globalConfigs?.solana?.vaultAddress)});
             const [vaultAta] = PublicKey.findProgramAddressSync(seeds, ASSOCIATED_TOKEN_PROGRAM_ID);
             newResults.vaultAta = vaultAta
-            debugger
 
             loadUserBalance(buyerInfoPda);
             // const newResults = Object.keys(PDA_RECIPES).map((type) => {
@@ -232,7 +225,6 @@ export const AppSolanaProvider = ({ globalConfigs, children }) => {
         async (
             amount
         ) => {
-        debugger
         if(!isValidNumber(amount))return;
         const amountLamports = parseSolToLamportsBN(amount);
 

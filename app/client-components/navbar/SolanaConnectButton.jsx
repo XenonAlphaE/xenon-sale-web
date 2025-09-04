@@ -13,7 +13,6 @@ export default function SolanaConnectButton({toggleMenu}) {
     
     
     const scrollToBuySection = async () => {
-        debugger
         if (!!walletSol.connected) {
             toggleMenu()
             walletSol?.setConnectedDialogVisible(true)
