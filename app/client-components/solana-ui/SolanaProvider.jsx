@@ -43,7 +43,7 @@ const wallets = useMemo(() => {
             name: "My Solana Dapp",
             description: "Dapp with QR connect",
             url: window.location.origin,
-            icons: [`${window.location.origin}/img/pepenode/token.svg`],
+            icons: [`${window.location.origin}/img/btchyper/token.svg`],
           },
         },
       }),
