@@ -12,7 +12,7 @@ import {
     PublicKey, 
     SYSVAR_INSTRUCTIONS_PUBKEY,
     SYSVAR_CLOCK_PUBKEY,
-    SYSTEM_PROGRAM,
+    SystemProgram,
     Transaction,
     Ed25519Program,
 } from "@solana/web3.js";
@@ -251,7 +251,7 @@ export const AppSolanaProvider = ({ globalConfigs, children }) => {
                 buyerInfo: predefinedAccounts?.buyerInfo,
                 vault:new PublicKey(globalConfigs?.solana?.vaultAddress),
                 clock: SYSVAR_CLOCK_PUBKEY,
-                systemProgram: SYSTEM_PROGRAM,
+                systemProgram: SystemProgram.programId,
                 instructions: SYSVAR_INSTRUCTIONS_PUBKEY
             }
 
@@ -317,7 +317,7 @@ export const AppSolanaProvider = ({ globalConfigs, children }) => {
                 usdtMint:new PublicKey(globalConfigs?.solana?.USDT_Address),
                 userUsdtAta: predefinedAccounts?.buyerAta,
                 vaultUsdtAta:predefinedAccounts?.vaultAta,
-                systemProgram: SYSTEM_PROGRAM,
+                systemProgram: SystemProgram.programId,
                 tokenProgram: TOKEN_PROGRAM_ID,
                 associatedTokenProgram: ASSOCIATED_TOKEN_PROGRAM_ID
             }
