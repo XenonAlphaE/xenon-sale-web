@@ -201,7 +201,6 @@ export const AppSolanaProvider = ({ globalConfigs, children }) => {
             seeds = PDA_RECIPES.vaultAta({mint: globalConfigs?.solana?.USDT_Address, vaultPubkey: new PublicKey(globalConfigs?.solana?.vaultAddress)});
             const [vaultAta] = PublicKey.findProgramAddressSync(seeds, ASSOCIATED_TOKEN_PROGRAM_ID);
             newResults.vaultAta = vaultAta
-
             loadUserBalance(buyerInfoPda);
             // const newResults = Object.keys(PDA_RECIPES).map((type) => {
             //     const seeds = PDA_RECIPES[type](inputs);

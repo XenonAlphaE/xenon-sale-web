@@ -1,13 +1,18 @@
 {
-    "vaultAddress":"8d25nPi2uqeEHx8qxfpYgqTYpS37Jcgi6VMT6pvA543D",
+    "vaultAddress":"BvgfzcLQoBnTrhJdifvPPTJD7pV8F3yVxFWegtTurCVC",
     "priceSignatureEndpoint":"https://btcsymbol.net",
-    "USDT_Address": "GcSQxdgYUhh4EJTcGRdd3wJ9MugLtLh2JKLCdy2AyPJn",
+    "USDT_Address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
     "USDT_Decimals": 6,
     "USDT_Price": "https://www.binance.com/api/v3/ticker/price?symbol=SOLUSDT",
+    "RPC_APIs":[
+        "https://solana-mainnet.gateway.tatum.io?apiKey=t-68022a161d6adc97b405eb25-25e1aae7d44a4547a7c0ae38",
+        "https://muddy-wider-patina.solana-mainnet.quiknode.pro/568cabf5f00a3439934ac00ad5d411fb74db5935",
+        "https://solana-mainnet.api.syndica.io/api-key/38SE3KS6MeKGTC1CtsUQpZPG9oRs3Xty5ZG6B48u6WTK2PCv6MRqpbSAQx8x8J1fMyTZh5Kvahgye3Fc61Ec4HC6gt16nj3t66X"
+    ],
 
     "salers":[{
-        "programId":"AvJR7cK3aqviAKCU4UGJx3LWfqh11qu4S1uHYqgbRg6f",
-        "statePda":"8gomC2L3qNFvYFNRkSbPBsFYzpSMrpHDmRwNWcb8a6H6",
+        "programId":"3kSaeAAJgos9yyDWtf7cb758wLfuyVYnwTdHDR1yWcqx",
+        "statePda":"5umbti8WXxWx78cjQ38VBnTquBLXiX8TYdgXjuABJL2V",
         "idl" : {
             "version": "0.1.0",
             "name": "presale",
