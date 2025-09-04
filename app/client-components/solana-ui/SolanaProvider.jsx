@@ -41,8 +41,8 @@ export const SolanaProvider = ({ children }) => {
           metadata: {
             name: "My Solana Dapp",
             description: "Dapp with QR connect",
-            url: "https://pepenodetoken.com/",
-            icons: ["https://pepenodetoken.com/img/pepenode/token.svg"],
+            url: window.location.origin, // 👈 dynamic base URL
+            icons: [`${window.location.origin}/img/pepenode/token.svg`], // optional, serves from your site
 
           },
         },
