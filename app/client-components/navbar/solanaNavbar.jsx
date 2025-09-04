@@ -5,10 +5,10 @@ import styles from './navbar.module.css';
 
 import languageOptions from '../../langOptions.json'
 import { useIsMobile, useSetMobile } from '../../../redux/utils/mobileUtils';
-import EthConnectButton from './EthConnectButton';
+import SolanaConnectButton from './SolanaConnectButton';
 
 
-export const Navbar = ({ isStakingPage = false }) => {
+export const SolanaNavbar = ({ isStakingPage = false }) => {
 
   const currentLanguage = useLanguage()
 
@@ -97,7 +97,7 @@ export const Navbar = ({ isStakingPage = false }) => {
           </div>
 
           <div className={styles.loginContainer} >
-              <EthConnectButton toggleMenu={toggleMenu} /> 
+              <SolanaConnectButton toggleMenu={toggleMenu} /> 
 
               <div className={styles.langDropdown} >
                     <div className={styles.langDropdownBtn} onClick={toggleLanguageDrpdwn}>
@@ -170,7 +170,7 @@ export const Navbar = ({ isStakingPage = false }) => {
             ))}
           </div>
         </div>
-        <EthConnectButton toggleMenu={toggleMenu} />
+        <SolanaConnectButton toggleMenu={toggleMenu} />
 
         {/* <button onClick={scrollToBuySection} className={styles.appnavLogin} >{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button> */}
 

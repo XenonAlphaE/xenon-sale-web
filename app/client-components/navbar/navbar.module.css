@@ -1,0 +1,478 @@
+/* Navbar.css */
+
+.appnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  
+  position: relative;
+  transition: top 0.3s ease; /* Add transition for smoother effect */
+  z-index: 99999999;
+  box-sizing: border-box;
+  padding-block: 8px;
+}
+
+.appnav.sticky {
+  box-sizing: border-box;
+  position: fixed;
+  top: 36px;
+  width: 100%;
+}
+
+
+.appnav.scrolled {
+    backdrop-filter: blur(30px);
+    background: #fff;
+    box-shadow: 0 4px 8px #0000, 0 6px 20px #0000001f;
+    top: 0px;
+
+}
+
+.navContainer{
+  padding: 0px 12px;
+  background: transparent;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+}
+
+.appnavBrand {
+  display: flex;
+  align-items: center;
+}
+
+.brandLogo{
+  display: block;
+  height: 52px;
+  max-width: 262px;
+}
+
+
+.appnavRight {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.textLogo{
+  width: 180px;
+}
+
+
+.appnavMenu{
+  display: flex;
+  column-gap: 20px;
+
+}
+
+.menuIcon{
+  width: 20px;
+  height: 20px;
+  color: rgb(203, 213, 225);
+}
+
+.appnavMenu a{
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.appnavMenu a:hover{
+  color: #ffc700;
+}
+
+
+.loginContainer {
+  display: flex;
+  flex-direction: row; /* Stack items vertically */
+  align-items: center;
+  column-gap: 8px;
+
+}
+
+.appWhitepaper{
+  padding: 0px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 900;
+  text-decoration: none;
+  color: rgb(255, 199, 0);
+  min-width: 140px;
+  border: none;
+  min-height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.appnavLogin {
+  padding: 0px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 900;
+  text-decoration: none;
+  color: black;
+  min-width: 140px;
+  border: none;
+  min-height: 42px;
+  background: #ffa231;
+
+
+}
+
+.appSocialIcon{
+  width: 28px;
+  height: 28px;
+}
+
+/* Language selection */
+.langDropdown {
+  position: relative;
+  /* margin-left: 24px; */
+
+}
+
+.langDropdownBtn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  padding: 4px 8px;
+  background: none;
+  width: 64px;
+}
+
+.langDropdownIcon{
+  color: #000 ;
+}
+
+
+.langDropdownBtn span {
+  margin-right: 5px;
+}
+
+.langDropdownContent {
+  color:white;
+  display: none;
+  position: absolute;
+  top: calc(100% + 10px); /* Adjusted position with 10px padding */
+  left: -80px;
+  background-color: rgb(33, 37, 41);
+  border: 1px solid #000;
+  box-shadow: 0 4px 8px rgba(6, 6, 80, 0.1);
+  padding: 20px 10px; /* Added padding */
+  z-index: 1000;
+  width: max-content; 
+  height: 220px;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.langDropdownContent a {
+  color : white;
+}
+
+.langDropdownContent.open {
+  display: block;
+}
+
+.langDropdownItem {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.selectedLang {
+  background-color: #98FF19;
+  color: black;
+  text-decoration: underline;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.langDropdownItem:hover {
+  background: #eee;
+  color: black;
+}
+
+.langDropdownItem span {
+  margin-right: 5px;
+}
+
+.langDropdownFlag{
+  border-radius: 50%;
+  border: 2px solid #FFFFFF;
+  margin-right: 10px;
+  min-width: 25px;
+  height: 25px;
+  width: 25px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+
+
+
+.appnavMenuToggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+  .appnavMobile{
+    display: none;
+  }
+
+
+@media (max-width: 1024px) {
+  .appnav{
+    background-color: transparent;
+  }
+
+  .appnavMenuToggle {
+    display: block;
+    order: 2; /* Hamburger on the right */
+    padding: 4px;
+    border-radius: 4px;
+    background-color: transparent;
+    /* margin-left: auto; */
+  }
+
+  .appnavMenu,
+  .loginContainer{
+    display: none;
+  }
+
+
+
+
+
+  .appnavHamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 24px;
+    height: 24px;
+  }
+
+  .appnavHamburger span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    border: none;
+    transition: all 0.3s;
+  }
+  
+  .appnavHamburger.mobileActive span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .appnavHamburger.mobileActive span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .appnavHamburger.mobileActive span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+
+  .mobileSocialContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .mobileSocialContainer a{
+    text-decoration: none;
+    border: none;
+    padding: 0px;
+  }
+
+  .mobileSocialIcon{
+    width: 32px;
+    height: 32px;
+  }
+
+  .langDropdown{
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    height: 40px;
+    border-radius: 20px;
+    margin-bottom: 10px; 
+    margin-top: 10px;
+    margin-left: 0px;
+    border-radius: 0px;
+    color: black;
+    border: solid 1px black;
+    background: white;
+
+    
+  }
+
+  .langDropdownContent {
+    color:#fff;
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px); /* Adjusted position with 10px padding */
+    left: 100px;
+    background-color: #000;
+    border: 1px solid #000;
+    box-shadow: 0 4px 8px rgba(6, 6, 80, 0.1);
+    padding: 20px 10px; /* Added padding */
+    z-index: 1000;
+    width: max-content; 
+    height: 220px;
+    max-height: 220px;
+    overflow-y: auto;
+  }
+
+  .langDropdownBtn span {
+    margin-right: 5px;
+    color: white;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .appnav{
+    width: 100%;
+  }
+
+  .appnavMenuToggle {
+    display: block;
+    order: 2; /* Hamburger on the right */
+    padding: 4px;
+    border-radius: 4px;
+    background-color: transparent;
+    /* margin-left: auto; */
+  }
+
+  .appnavMenu,
+  .loginContainer{
+    display: none;
+  }
+
+
+  .appnavMobile{
+    background-color: white;
+    box-sizing: border-box;
+    display: none;
+    flex-direction: column;
+    row-gap: 8px;
+    position: absolute;
+    top: 100%; /* Position below navbar */
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 16px 16px;
+    color: black;
+  }
+
+  .appnavMobile.mobileActive {
+    display: flex;
+  }
+
+   .appnavMobile a {
+      font-size: 24px;
+      text-decoration: none;
+      color: black;
+      font-weight: 700;
+      padding: 10px 0px;
+      border-bottom: solid 1px black;
+      transform: scaleY(1.3);
+  }
+
+  .appnavHamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 24px;
+    height: 24px;
+  }
+
+  .appnavHamburger span {
+    display: block;
+    order: 2; /* Hamburger on the right */
+    padding: 4px;
+    border-radius: 4px;
+    background-color: #ffa231;
+    /* margin-left: auto; */
+  }
+  
+  .appnavHamburger.mobileActive span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .appnavHamburger.mobileActive span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .appnavHamburger.mobileActive span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+
+  .mobileSocialContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding-block: 1rem;
+  }
+
+  .mobileSocialContainer a{
+    text-decoration: none;
+    border: none;
+    padding: 0px;
+  }
+
+  .mobileSocialIcon{
+    width: 32px;
+    height: 32px;
+  }
+
+  .langDropdown{
+        width: 100%;
+        border: 1px solid #000000;
+        color: rgb(51, 51, 51);
+        padding: 10px;
+        border-radius: 0;
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    
+  }
+
+  .langDropdownContent {
+    color:rgb(51, 51, 51);
+    display: none;
+    position: absolute;
+    top: calc(100% + 5px); /* Adjusted position with 10px padding */
+    left: 0px;
+  }
+
+  .langDropdownBtn span {
+    margin-right: 5px;
+    color: black;
+  }
+
+}

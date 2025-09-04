@@ -1,0 +1,151 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.modal {
+  background: #0a0b0d;
+  padding: 24px;
+  border-radius: 20px;
+  min-width: 320px;
+  max-width: 420px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+  border: 1px solid transparent;
+  background-clip: padding-box;
+  position: relative;
+  animation: fadeInUp 0.3s ease-out;
+}
+
+.modal::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 2px;
+  background: linear-gradient(135deg, #00FFA3, #DC1FFF, #00FFA3);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  pointer-events: none;
+}
+
+.modalTitle {
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+}
+
+.walletList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.walletBtn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 14px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.05);
+  transition: all 0.25s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.walletBtn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #00FFA3;
+  transform: translateY(-2px);
+  box-shadow: 0 0 10px rgba(0, 255, 163, 0.4);
+}
+
+.walletIcon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.walletName {
+  flex: 1;
+  text-align: left;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* Address box */
+.addressBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-family: monospace;
+  font-size: 0.95rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.copyBtn {
+  background: linear-gradient(135deg, #00FFA3, #DC1FFF);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.15s, opacity 0.15s;
+}
+.copyBtn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.actionRow {
+  display: flex;
+  justify-content: center;
+}
+
+.disconnectBtn {
+  background: linear-gradient(135deg, #FF5A5F, #DC1FFF);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 20px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+}
+.disconnectBtn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}

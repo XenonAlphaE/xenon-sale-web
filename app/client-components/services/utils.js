@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import BN from "bn.js";
+import { LAMPORTS_PER_SOL } from "@solana/web3.js";
 
 function nearestDayDivisibleBy3(targetHour) {
   const today = new Date();
@@ -161,4 +163,49 @@ export function formatIntNumber(num) {
   return parsedNum
     .toFixed(0) // Round to 2 decimal places
     .replace(/\B(?=(\d{3})+(?!\d))/g, ","); // Add commas as thousand separators
+}
+
+
+export function toPaddedSymbol(symbolStr, padChar = '_', length = 8) {
+  const buf = Buffer.alloc(length, padChar);
+  buf.write(symbolStr);
+  return buf;
+}
+
+
+export function parseAmountToBN(
+  text,
+  decimals,
+  rounding
+) {
+  const s = text.trim().replace(/_/g, "").replace(/,/g, "");
+  if (!/^[+-]?\d*(\.\d*)?$/.test(s)) throw new Error("Invalid number format");
+
+  const neg = s.startsWith("-");
+  const [intPartRaw, fracPartRaw = ""] = s.replace(/^[+-]/, "").split(".");
+  const intPart = intPartRaw === "" ? "0" : intPartRaw;
+  const pow = new BN(10).pow(new BN(decimals));
+  const fracPart = (fracPartRaw + "0".repeat(decimals)).slice(0, decimals);
+
+  let n = new BN(intPart).mul(pow).add(new BN(fracPart || "0"));
+
+  if (fracPartRaw.length > decimals && rounding !== "truncate") {
+    const nextDigit = parseInt(fracPartRaw[decimals] || "0", 10);
+    const hasExtraNonZero = /[1-9]/.test(fracPartRaw.slice(decimals + 1));
+    if (rounding === "round" && (nextDigit > 5 || (nextDigit === 5 && hasExtraNonZero))) {
+      n = n.addn(1);
+    } else if (rounding === "ceil" && (nextDigit > 0 || hasExtraNonZero)) {
+      n = n.addn(1);
+    }
+  }
+
+  return neg ? n.neg() : n;
+}
+
+export const parseSolToLamportsBN = (text, rounding) => // "truncate"|"round"|"ceil") =>
+  parseAmountToBN(text, 9, rounding);
+
+// lamports → SOL
+export function lamportsToSol(lamports) {
+  return lamports / LAMPORTS_PER_SOL;
 }

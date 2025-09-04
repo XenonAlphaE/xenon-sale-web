@@ -453,3 +453,42 @@ justify-content: space-evenly;
 }
 
 
+.ethNetworkLink{
+  /* border: solid 2px #fff;
+  box-sizing: border-box;
+  background: transparent; */
+
+    width: 100%;
+    color:  rgb(247, 148, 29);
+    box-sizing: border-box;
+    border: solid 2px rgb(247, 148, 29);
+    font-size : 18px;
+    padding: 10px 30px;
+    background-color:white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    border-radius: 12px;
+}
+
+/* .ethNetworkLink::before{
+    content: "";
+    position: absolute;
+    inset: -1px;
+    background: #98ff19;
+    clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 15px 100%, 0 calc(100% - 15px), 0 0, 1px 1px, 1px calc(100% - 16px), 15px calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), calc(100% - 1px) 15px, calc(100% - 15px) 1px, 1px 1px);
+} */
+
+.solanaBuyLink{
+    position: absolute;
+    top: -2%;
+    right: 20px;
+    max-width: 200px;
+    transform: rotate(20deg);
+    @media (max-width: 1024px) {
+        transform: rotate(-10deg);
+
+    }
+}

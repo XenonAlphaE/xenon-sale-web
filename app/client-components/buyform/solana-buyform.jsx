@@ -6,7 +6,6 @@ import { useLanguage, useI18nSection } from "../../../redux/utils/languageUtils"
 
 import {useNativeNetwork, useSetNativeNetwork} from '../../../redux/utils/nativeNetworkUtils'
 import { CURRENCIES,CURR_CODE, NETWORK_OTIONS, VALID_NETWORKS } from '../../../redux/ducks/nativeNetworkDuck';
-import { useWalletERC20 } from "../../erc20wallet-provider";
 import {useCountdown, formatViewNumber, formatIntNumber} from '../services/utils'
 import {
   calculateUSDNeeded, calculateTokenOutput,
@@ -14,15 +13,14 @@ import {
 } from '../services/wallet-service';
 import {CurrencyDropdown} from "../currency-dropdown/CurrencyDropdown";
 import configs from '../config.main.json'
+import { useAppSolanaWallet } from "../../solanaWallet-provider";
 import './buyform.css'
 import './buyform.mobile.css'
-import SolanaLabel from "../solana-ui/SolanaLabel/SolanaLabel";
-export const BuyForm = () => {
+export const SolanaBuyForm = () => {
     const sectionText = useI18nSection('buyForm')
-    const nativeNetwork = useNativeNetwork()
+    const walletSol = useAppSolanaWallet()
+    const currList = CURRENCIES['solana']
 
-    const walletEth = useWalletERC20()
-    const currList = CURRENCIES[nativeNetwork]
     const [selectedCurr, setSelectedCurr] = useState();
   
     useEffect(()=>{
@@ -60,17 +58,17 @@ export const BuyForm = () => {
         setCurrencyInput("")
         return
       }
-      if (!walletEth?.tokenPriceInUsdt) {
+      if (!walletSol?.tokenPriceInUsdt) {
         return
       }
       // Regular expression to allow only numeric and float values
       if (/^\d*\.?\d*$/.test(value) && isValidNumber(value)) {
           setTokenInput(value);
-          if (selectedCurr.curr === CURR_CODE.BNB || selectedCurr.curr === CURR_CODE.ETH) {
-            setCurrencyInput(calculateBNBNeeded(value, selectedCurr.curr === CURR_CODE.BNB ? walletEth?.bnbPrice : walletEth?.ethPrice , walletEth?.tokenPriceInUsdt))
+          if (selectedCurr.curr === CURR_CODE.SOL) {
+            setCurrencyInput(calculateBNBNeeded(value, walletSol?.solanaPrice , walletSol?.tokenPriceInUsdt))
           }
           else {
-            setCurrencyInput(calculateUSDNeeded(value, walletEth?.tokenPriceInUsdt))
+            setCurrencyInput(calculateUSDNeeded(value, walletSol?.tokenPriceInUsdt))
           }
       }
     };
@@ -85,17 +83,17 @@ export const BuyForm = () => {
         setCurrencyInput(value)
         return
       }
-      if (!walletEth?.tokenPriceInUsdt) {
+      if (!walletSol?.tokenPriceInUsdt) {
         return
       }
       // Regular expression to allow only numeric and float values
       if (/^[0-9]*[.]?[0-9]*$/.test(value) && isValidNumber(value)) {
         setCurrencyInput(value);
-        if (selectedCurr.curr === CURR_CODE.BNB || selectedCurr.curr === CURR_CODE.ETH) {
-          setTokenInput(calculateTokensForBNB(value, selectedCurr.curr === CURR_CODE.BNB ? walletEth?.bnbPrice : walletEth?.ethPrice , walletEth?.tokenPriceInUsdt))
+        if (selectedCurr.curr === CURR_CODE.SOL) {
+          setTokenInput(calculateTokensForBNB(value, walletSol?.solanaPrice , walletSol?.tokenPriceInUsdt))
         }
         else {
-          setTokenInput(calculateTokenOutput(value, walletEth?.tokenPriceInUsdt))
+          setTokenInput(calculateTokenOutput(value, walletSol?.tokenPriceInUsdt))
         }
       }
     };
@@ -105,11 +103,11 @@ export const BuyForm = () => {
       if (!isClicked) {
         setIsClicked(true);
         // Your button click logic here
-        if (selectedCurr.curr === CURR_CODE.BNB || selectedCurr.curr === CURR_CODE.ETH) {
-            await walletEth?.buyTokensWithRef(currencyInput, "")
+        if (selectedCurr.curr === CURR_CODE.SOL) {
+            await walletSol?.sendBuyWithOracle(currencyInput)
         }
         else {
-            await walletEth?.buyTokensUSDTWifRef(currencyInput, "");
+            await walletSol?.sendBuyWithUsdt(currencyInput);
         }
       }
   
@@ -171,22 +169,21 @@ export const BuyForm = () => {
                 </div>
 
 
-                <p className="total-raised">{sectionText?.funRaised}:  ${walletEth?.formatedRaise} / ${walletEth?.formatedNextRaise} </p>
+                <p className="total-raised">{sectionText?.funRaised}:  ${walletSol?.formatedRaise} / ${walletSol?.formatedNextRaise} </p>
 
-                <ProgressBar percentage={walletEth?.currentRaise *100/ walletEth?.nextRaise }/>
-                {walletEth.currentAddress && 
+                <ProgressBar percentage={walletSol?.currentRaise *100/ walletSol?.nextRaise }/>
+                {walletSol.connected && 
                 <div>
-                {/* {truncateMiddle(walletEth.currentAddress)} */}
-                <p className="user-purchased-info">{sectionText.boughtAmount} ${configs?.targetToken?.symbol} = { walletEth?.formatedBought}</p>
+                <p className="user-purchased-info">{sectionText.boughtAmount} ${configs?.targetToken?.symbol} = { walletSol?.formatedBought}</p>
                 {/* <img className="img-fluid ms-2 cursor-pointer" src="./img/info-icon.svg" /> */}
-                <p className="user-purchased-info">{sectionText.stakeableAmount} ${configs?.targetToken?.symbol} = {walletEth?.formatedStakeable}</p>
+                <p className="user-purchased-info">{sectionText.stakeableAmount} ${configs?.targetToken?.symbol} = {walletSol?.formatedStakeable}</p>
                 {/* <img className="img-fluid ms-2 cursor-pointer" src="./img/info-icon.svg" /> */}
                 </div>
                 }
                 
                 <div className="dashTitle">1 ${configs?.targetToken?.symbol} = ${configs?.targetToken?.tokenPrice} </div>
             </div>
-            {walletEth.currentAddress && 
+            {walletSol.connected && 
 
             <div className="swapArea">
             <div className="currencies-list">
@@ -242,14 +239,14 @@ export const BuyForm = () => {
 
             </div>
 }
-            {!walletEth.currentAddress && 
+            {!walletSol.connected && 
             <div className="action-buttons">
-                <button className="connect-btn" onClick={walletEth.connect}>
+                <button className="connect-btn" onClick={walletSol?.setWalletDialogVisible}>
                     {sectionText?.connectWallet}
                 </button>
             </div>
             }
-            {walletEth.currentAddress && 
+            {walletSol.connected && 
             
             <div className="action-buttons">
                 <button className="buy-btn"
@@ -258,7 +255,11 @@ export const BuyForm = () => {
                 >
                 {sectionText?.buyStake}
                 </button>
-                <CurrencyDropdown walletETH={walletEth} />
+                <a className="ethNetworkLink"
+                  href="/"   
+                >
+                   Buy WITH ETH 
+                </a>
 
             </div>
             }
@@ -270,9 +271,6 @@ export const BuyForm = () => {
             </div>
         </div>
        
-        <div className="solanaBuyLink">
-          <SolanaLabel/>
-        </div>
 
         </div>
     )

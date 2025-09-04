@@ -16,7 +16,8 @@ import { useSetLanguage } from "../../../redux/utils/languageUtils";
 import About from "../about/about";
 import TrustedBy from "../TrustedBy/TrustedBy";
 import { AppSpinner } from "../spinner/spinner";
-import { Navbar } from "../navbar/navbar";
+import { SolanaNavbar } from "../navbar/solanaNavbar";
+import { SolanaHeader } from "../header/solana-header";
 // export const scroll = new SmoothScroll('a[href*="#"]', {
 //   speed: 1000,
 //   speedAsDuration: true,
@@ -35,8 +36,8 @@ const App = () => {
 
   return (
     <div>
-      <Navbar/>
-      <Header/>
+      <SolanaNavbar/>
+      <SolanaHeader/>
       <TrustedBy/>
       <About />
       {/* <Roadmap /> */}
