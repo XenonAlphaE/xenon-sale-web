@@ -23,16 +23,6 @@ export const useNativeNetwork = () => {
 };
 
 
-export const useIsSolanaPage = () => {
-    return useSelector(state => state.nativeNetwork.isSolanaPage);
-};
-
-export const useSetSolanaPage = () => {
-    const dispatch = useDispatch();
-    return () => {
-      dispatch(setSolanaPage);
-    };
-};
 
 // export const useCurrentAddress = () => {
 //     return useSelector(selectCurrentAddress);

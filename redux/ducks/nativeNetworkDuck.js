@@ -90,7 +90,6 @@ export const CURRENCIES = {
 const initialState = {
     network: 'eth',
     currentAddress: '',
-    isSolanaPage: false
 };
 
 // Action creators
@@ -106,14 +105,7 @@ export const setNetwork = (network) => {
     }
 };
 
-export const setSolanaPage = () => {
-    // Validate language against the valid range
-  
-      return {
-          type: SET_SOLANA_PAGE,
-      };
 
-};
 
 export const setCurrentAddress = (address) => {    
     return {
@@ -143,9 +135,6 @@ const nativeNetworkReducer = (state = initialState, action) => {
       
       return { ...state, currentAddress: action.payload };
 
-    case SET_SOLANA_PAGE:
-      
-      return { ...state, isSolanaPage: true };
 
     default:
         return state;

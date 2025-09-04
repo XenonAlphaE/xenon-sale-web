@@ -5,8 +5,6 @@ import styles from './navbar.module.css';
 
 import languageOptions from '../../langOptions.json'
 import { useIsMobile, useSetMobile } from '../../../redux/utils/mobileUtils';
-import { useIsSolanaPage } from '../../../redux/utils/nativeNetworkUtils';
-import EthConnectButton from './EthConnectButton';
 import SolanaConnectButton from './SolanaConnectButton';
 
 
@@ -16,7 +14,6 @@ export const SolanaNavbar = ({ isStakingPage = false }) => {
 
   // const currentAddress = useCurrentAddress()
   const setIsMobile = useSetMobile();
-  const isSolanaPage = useIsSolanaPage()
 
   const isMobile = useIsMobile()
   const [isScrolled, setIsScrolled] = useState(false);

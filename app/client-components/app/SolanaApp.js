@@ -18,7 +18,6 @@ import About from "../about/about";
 import TrustedBy from "../TrustedBy/TrustedBy";
 import { AppSpinner } from "../spinner/spinner";
 import { SolanaHeader } from "../header/solana-header";
-import { useSetSolanaPage } from "../../../redux/utils/nativeNetworkUtils";
 import { SolanaNavbar } from "../navbar/solanaNavbar";
 // export const scroll = new SmoothScroll('a[href*="#"]', {
 //   speed: 1000,
@@ -27,14 +26,11 @@ import { SolanaNavbar } from "../navbar/solanaNavbar";
 
 const SolanaApp = () => {
   const setLanguage = useSetLanguage()
-  const setSolanaPage = useSetSolanaPage()
 
   useEffect( () => {
     const langInput = document.getElementById("current-lang")
     setLanguage(langInput?.value || 'en')
 
-    const solanaPageInput = document.getElementById("solana-page")
-    setSolanaPage(solanaPageInput?.value)
   }, [])
   // useEffect(() => {
   //   setLandingPageData(JsonData);
