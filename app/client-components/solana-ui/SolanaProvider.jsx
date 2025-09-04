@@ -10,6 +10,7 @@ import { WalletModalProvider } from "@solana/wallet-adapter-react-ui";
 import { clusterApiUrl } from "@solana/web3.js";
 import "@solana/wallet-adapter-react-ui/styles.css";
 import { WalletConnectWalletAdapter } from "@solana/wallet-adapter-walletconnect";
+import { SolanaMobileWalletAdapter } from "@solana-mobile/wallet-adapter-mobile";
 
 import { AppSolanaProvider } from "../../solanaWallet-provider";
 import CustomWalletDialogs from "./WalletMultiButton/WalletMultiButton";
@@ -42,6 +43,14 @@ export const SolanaProvider = ({ children }) => {
             description: "Dapp with QR connect"
           },
         },
+      }),
+      new SolanaMobileWalletAdapter({
+        appIdentity: {
+          name: "Solana App",
+          uri: "https://pepenodetoken.com/",
+          icon: "https://pepenodetoken.com/img/pepenode/token.svg",
+        },
+        authorizationResultCache: "session", // persist auth
       }),
     ],
     [network]
