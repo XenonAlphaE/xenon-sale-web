@@ -9,6 +9,7 @@ import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
 import { WalletModalProvider } from "@solana/wallet-adapter-react-ui";
 import { clusterApiUrl } from "@solana/web3.js";
 import "@solana/wallet-adapter-react-ui/styles.css";
+import { WalletConnectWalletAdapter } from "@solana/wallet-adapter-walletconnect";
 
 import { AppSolanaProvider } from "../../solanaWallet-provider";
 import CustomWalletDialogs from "./WalletMultiButton/WalletMultiButton";
@@ -28,9 +29,27 @@ export const SolanaProvider = ({ children }) => {
       getRandomItemFromArray([ ...configs.solana.RPC_APIs]),
     [network]
   );
+  // inside SolanaProvider
+  const wallets = useMemo(
+    () => [
+      new WalletConnectWalletAdapter({
+        network,
+        options: {
+          relayUrl: "wss://relay.walletconnect.com",
+          projectId: "51049c615eabe22a2604d0872d7d6e65", // get from walletconnect cloud
+          metadata: {
+            name: "My Solana Dapp",
+            description: "Dapp with QR connect"
+          },
+        },
+      }),
+    ],
+    [network]
+  );
+
   return (
     <ConnectionProvider endpoint={endpoint}>
-      <WalletProvider wallets={[]} autoConnect>
+      <WalletProvider wallets={wallets} autoConnect>
         <WalletModalProvider>
           <AppSolanaProvider globalConfigs={configs}>
             <CustomWalletDialogs/>
