@@ -1,17 +1,18 @@
-.walletBox-container{
+.walletBoxContainer{
     display: flex;
     flex-direction: column;
-    border-radius: 24px;
-    padding: 16px;
     position: relative;
-    background: url(/img/btchyper/widget-bg-top.png) no-repeat 0 -10px / 100%, url(/img/btchyper/widget-bg-bottom.png) no-repeat 100% 100% / 100%, linear-gradient(#21283d, #21283d);
-    max-width: 450px;
+    background: transparent url(/img/maxidoge/widget-bg.png) no-repeat 0 0;
+    background-size: 100% 100%;
     z-index: 1;
-    margin-left: auto;
-    border-radius: 25px;
-    padding: 12px 20px 18px;
     box-sizing: border-box;
-    color: rgb(0, 0, 0);
+    color: black;
+    border-radius: 8px;
+
+    @media (max-width: 1024px) {
+        width: 100%;
+        padding-inline: 1rem;
+    }
 }
 .walletBox-bottom{
     background: url(/img/solx/widget-bottom.png) no-repeat 0 0;
@@ -39,35 +40,45 @@
 
 .walletBox {
     width: 100%;
-    max-width: 450px;
     position: relative;
-    background: url(/img/btchyper/union.png) no-repeat, radial-gradient(68.7% 68.7% at 50% 50%, #0000, #d9d9d903);
-    padding: 10px 18px;
-    -webkit-backdrop-filter: blur(3.3340492249px);
-    backdrop-filter: blur(3.3340492249px);
-    box-shadow: .72px .72px #ffffff1c inset, 0 14.5px 16.53px #0000004a, -.72px -.72px #ffffff26 inset;
-    background-size: 100% 100%;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
+    padding: 2rem 18px;
+   
     /* margin-bottom: 20px; */
 }
 
-.walletBox-info {
-  width: 100%;
+.walletBoxInfo {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.walletBox-heading {
+.walletBoxHeader{
+    display: grid;
+}
+
+
+.walletBoxHeading {
     margin-bottom: 8px;
     text-transform: uppercase;
     box-sizing: border-box;
-    color: white;
     display: block;
+    font-size: x-large;
     font-family: badaboom-bb, sans-serif;
-    font-size :1.3em;
     font-weight :900;
+    text-align: center;
+    text-size-adjust: 100%;
+    transform :none;
+    unicode-bidi :isolate;
+
+}
+
+.walletBoxHeading1 {
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    display: block;
+    font-weight :400;
     text-align: center;
     text-size-adjust: 100%;
     transform :none;
@@ -79,7 +90,7 @@
     color: #FFA230
 }
 
-.counter-wrapper{
+.counterWrapper{
     text-align: center;
     border: none;
     border-radius: 12px;
@@ -89,15 +100,12 @@
     width: 100%;
   }
   
-  .counter-container {
+  .counterContainer {
     width: 100%;
       align-items: center;
-      padding: 5px 0 8px;
       /* border-radius: 4px; */
-      background: #5f616b;
       border: none;
       box-sizing: border-box;
-      color: rgb(27, 52, 74);
       column-gap: 8px;
       display: flex;
       font-family: Poppins, sans-serif;
@@ -107,53 +115,46 @@
       justify-content: space-around;
       letter-spacing: 1px;
       line-height: 27.2px;
-      padding-bottom: 10px;
-      padding-left: 12px;
-      padding-right: 12px;
-      padding-top: 10px;
       text-align: center;
       text-size-adjust: 100%;
       unicode-bidi: isolate;
-      border-radius: 20px;
-      border: 1.613px solid #FFF;
 
 }
 
   
-.time-card {
+.timeCard {
     min-width: 60px;
     width: 20%;
-    padding: 8px 5px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     position: relative;
-    font-family: Sausages, sans-serif;
-    padding: 10px 7px;
-    border: none;
-    border-radius: 8px;
-    color: white;
-
-
+    border:solid 2px rgb(48, 48, 49);
+    border-radius: 2px;
 }
 
-.time-card .indicator{
+.timeCard .indicator{
   font-size: 1em;
-  font-weight: 400;
+  font-weight: 200;
 
 }
 
-.time-card .value {
+.timeCard .value {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     font-weight: 400;
     font-size: 1.3em;
-    color: #FFA230;
+    min-height: 36px;
+    color:rgb(80, 82, 88);
 }
 
 
-.total-raised{
+.totalRaised{
     box-sizing: border-box;
-    color: white;
+    color: rgb(131, 137, 143);
     display: block;
     font-family: HeyComic, sans-serif;
     font-size: 14px;
@@ -199,14 +200,13 @@
     font-weight: 800;
     margin-bottom: 8px;
     width: 100%;
-    color: white;
 }
 
 .dashTitle:before, .dashTitle:after {
     content: "";
     width: 24%;
     height: 2px;
-    background: rgb(247, 148, 29);
+    background: greenyellow;
     position: absolute;
     left: 0;
     top: 50%;
@@ -221,44 +221,45 @@
     width: 100%;
 }
 
-.currencies-list{
+.currenciesList{
     width: 100%;
     column-gap: 16px;
-display: flex;
-align-items: center;
-justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
   
 
-.currencies-list .btn {
+.currenciesList .btn{
     width: 100%;
     height: 50px;
     padding: 6px;
     border-radius: 4px;
+    border: none;
     font-size: 14px;
     font-weight: 400;
-    border: 2px solid rgb(255, 255, 46)!important;
-    background: transparent;
-    color: rgb(255, 255, 46);
     font-family: Roboto,sans-serif;
     display: flex;
     align-items: center;
     justify-content :center;
     column-gap: 8px;
-    background: transparent;
     font-size: large;
+    background: rgb(230, 239, 251);
 }
 
-.currencies-list .btn:hover {
-    color: white;
+.currenciesList .btn:hover {
+    color: rgb(0, 123, 255);
 }
 
-.currencies-list .btn.selected{
-    background-color: rgb(247, 148, 29);
-    color:white;
+.currenciesList .btn.selected{
+    
     border-radius: 4px;
+    box-sizing: border-box;
+    /* border: solid 4px greenyellow; */
     font-weight: 900;
-    box-shadow: 0 0 0 2px #a8a8a8;
+    background: transparent url(/img/maxidoge/secondary_btn.png) no-repeat 0 0;
+    background-size: 100% 100%;
+
 }
 
 
@@ -273,38 +274,34 @@ justify-content: space-evenly;
 
 }
 
-.swapSection .input-container{
+.swapSection .inputContainer{
     flex: 0 0 48%;
     display: flex;
     flex-direction: column;
 }
 
-.input-lable{
+.inputLable{
     margin-bottom: 8px;
-    color: white;
 }
 
-.input-amount{
+.inputAmount{
     position: relative;
 }
 
-.input-control-custom {
+.inputControlCustom {
     min-height: 50px;
     padding: 8px 16px;
     font-size: 14px;
     font-weight: 500;
-    background-color: #fff;
-    /* border: 1px solid #878787; */
+    border: 1px solid rgb(210, 221, 233);
     color: #6a6a6a;
     box-sizing: border-box;
     width: 100%;
-    border: 1px solid white;
-    border-radius: 4px;
-    color: rgb(75, 26, 9);
+        color: rgb(75, 26, 9);
     outline:none;
 }
 
-.input-control-custom::placeholder {
+.inputControlCustom::placeholder {
     color: rgb(75, 26, 9);
 }
 
@@ -317,19 +314,18 @@ justify-content: space-evenly;
     align-items: center;
   }
 
-.action-buttons{
+.actionButtons{
     margin-top: 24px;
     width: 100%;
     display: flex;
     flex-direction: column;
     row-gap: 12px;
 }
-.action-buttons .connect-btn{
+.actionButtons .connectBtn{
+    color: black;
   border: none;
   align-items: center;
-  background: rgb(247, 148, 29);
   box-sizing: border-box;
-  color: rgb(255, 255, 255);
   cursor: pointer;
   display: flex;
   font-family: Sausages, sans-serif;
@@ -376,23 +372,20 @@ justify-content: space-evenly;
   text-transform: none;
   width: 100%;
   word-spacing: 0px;
-  border-radius: 12px;
   border: none;
+  border-radius: 4px;
+  background: transparent url(/img/maxidoge/secondary_btn.png) no-repeat 0 0;
+  background-size: 100% 100%;
 }
 
 
-.action-buttons .buy-btn{
+.actionButtons .buyBtn{
     border: none;
     align-items: center;
-    background: rgb(255, 162, 49);
     box-sizing: border-box;
-    color: white;
+    color: black;
     cursor: pointer;
     display: flex;
-    font-family: Sausages, sans-serif;
-    font-feature-settings: normal;
-    font-kerning: auto;
-    font-optical-sizing: auto;
     font-size: 20px;
     font-size-adjust: none;
     font-stretch: 100%;
@@ -433,20 +426,22 @@ justify-content: space-evenly;
     text-transform: none;
     width: 100%;
     word-spacing: 0px;
-    border-radius: 12px;
-    border: none;
+    border-radius: 4px;
+  background: transparent url(/img/maxidoge/secondary_btn.png) no-repeat 0 0;
+  background-size: 100% 100%;
   }
 
-.action-buttons .connect-btn:hover,
-.action-buttons .buy-btn:hover{
-    background: linear-gradient(rgb(247, 148, 29), #000);
+.actionButtons .connectBtn:hover,
+.actionButtons .buyBtn:hover{
+    /* background: linear-gradient(    rgb(0, 123, 255)); */
+    color: black;
 }
   
 
-.external-info{
+.externalInfo{
     margin: 8px;
     padding-top: 8px;
-    color:white;
+    color: rgb(80, 82, 88);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -459,9 +454,9 @@ justify-content: space-evenly;
   background: transparent; */
 
     width: 100%;
-    color:  rgb(247, 148, 29);
+    color:  rgb(99, 161, 6);
     box-sizing: border-box;
-    border: solid 2px rgb(247, 148, 29);
+    border: solid 2px rgb(99, 161, 6);
     font-size : 18px;
     padding: 10px 30px;
     background-color:white;
