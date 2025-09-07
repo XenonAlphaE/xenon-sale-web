@@ -501,12 +501,12 @@ clip-path: polygon(100% 15px, 100% 100%, 15px 100%, 0% calc(100% - 15px), 0% 0%,
 
 .solanaBuyLink{
     position: absolute;
-    top: -2%;
+    bottom: 30%;
     right: 20px;
     max-width: 200px;
-    transform: rotate(20deg);
+    /* transform: rotate(20deg); */
     @media (max-width: 1024px) {
-        transform: rotate(-10deg);
+        /* transform: rotate(-10deg); */
 
     }
 }
