@@ -253,6 +253,7 @@ export const SolanaBuyForm = () => {
             {!walletSol.connected && 
             <div className={styles.actionButtons} >
                 <button className={styles.connectBtn}   onClick={walletSol?.setWalletDialogVisible}>
+                    <img style={{marginRight: 5}} src={NETWORK_OTIONS['solana'].img} width={20} height={20}/> 
                     {sectionText?.connectWallet}
                 </button>
             </div>
@@ -264,6 +265,7 @@ export const SolanaBuyForm = () => {
                     disabled={isClicked}
                     onClick={handleBuyTokenClick}
                 >
+
                 {sectionText?.buyStake}
                 </button>
 
