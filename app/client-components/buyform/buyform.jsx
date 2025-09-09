@@ -23,6 +23,7 @@ export const BuyForm = () => {
     const walletEth = useWalletERC20()
     const currList = CURRENCIES[nativeNetwork]
     const [selectedCurr, setSelectedCurr] = useState();
+    const solanaCurr = CURRENCIES['solana'][0];
   
     useEffect(()=>{
         setSelectedCurr(currList[0])
@@ -193,20 +194,27 @@ export const BuyForm = () => {
 
                 
             </div>
+            <div className={styles.currenciesList}  >
+                  <SolanaLabel/>
+            </div>
+
+
             {walletEth.currentAddress && 
 
             <div className={styles.swapArea} >
+            
             <div className={styles.currenciesList}  >
                 {currList.map((curr, idx) => {
                     return(
                         <button key={idx} onClick={() => handleSwitchOption(idx)}
 
-                        className={`${styles.btn}  ${selectedCurr?.text === curr?.text ? styles.selected : ''}`}>
-                        <img height="24" alt="" src={curr.imageSrc} />
-                        <span className="px-2 font-18">{curr.text}</span>
+                          className={`${styles.btn}  ${selectedCurr?.text === curr?.text ? styles.selected : ''}`}>
+                          <img height="24" alt="" src={curr.imageSrc} />
+                          <span className="px-2 font-18">{curr.text}</span>
                         </button>
                     )
                 })}
+               
             </div>
             <div className={styles.swapSection} >
             
@@ -276,9 +284,9 @@ export const BuyForm = () => {
             </div>
         </div>
         
-        <div className={styles.solanaBuyLink}>
+        {/* <div className={styles.solanaBuyLink}>
           <SolanaLabel/>
-        </div>
+        </div> */}
         </div>
     )
 
