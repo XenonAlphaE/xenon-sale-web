@@ -271,6 +271,7 @@ export const SolanaBuyForm = () => {
                   href="/"   
                 >
                    Buy WITH ETH 
+                  <img style={{marginRight: 5}} src={NETWORK_OTIONS['eth'].img} width={20} height={20}/> 
                 </a>
             </div>
             }

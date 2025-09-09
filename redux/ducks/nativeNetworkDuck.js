@@ -56,12 +56,12 @@ export const CURRENCIES = {
     bsc:[
         { text: 'BNB', imageSrc: '/img/default/bnb.svg', icon:"/img/default/bnb.svg", curr: CURR_CODE.BNB },
         { text: 'USDT', imageSrc: '/img/default/usdt.svg',  icon:"/img/default/usdt.svg",curr: CURR_CODE.USDT },
-        { text: 'CARD', imageSrc: '/img/default/card.svg', icon:"/img/default/usdt.svg", curr: CURR_CODE.USDT },
+        // { text: 'CARD', imageSrc: '/img/default/card.svg', icon:"/img/default/usdt.svg", curr: CURR_CODE.USDT },
     ],
     eth:[
         { text: 'ETH', imageSrc: '/img/default/ETH.svg', icon:"/img/default/ETH.svg", curr: CURR_CODE.ETH },
         { text: 'USDT', imageSrc: '/img/default/usdt.svg',  icon:"/img/default/usdt.svg",curr: CURR_CODE.USDT },
-        { text: 'CARD', imageSrc: '/img/default/card.svg', icon:"/img/default/usdt.svg", curr: CURR_CODE.USDT },
+        // { text: 'CARD', imageSrc: '/img/default/card.svg', icon:"/img/default/usdt.svg", curr: CURR_CODE.USDT },
     ],
     base:[
       { text: 'BASE ETH', imageSrc: '/img/default/base.svg', icon:"/img/default/ETH.svg", curr: CURR_CODE.ETH  },
