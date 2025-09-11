@@ -41,6 +41,8 @@ const SolanaApp = () => {
           <SolanaNavbar />
           <SolanaHeader/>
           <About />
+          <HowToBuy />
+          
           {/* <Tokenomics /> */}
           {/* <TrustedBy/> */}
           {/* <Roadmap /> */}
@@ -48,7 +50,7 @@ const SolanaApp = () => {
           {/* <TrustedBy/> */}
           {/* <FAQS/> */}
           {/* <Footer />  */}
-
+          <AppSpinner/>
     </div>
   );
 };

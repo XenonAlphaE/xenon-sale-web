@@ -38,13 +38,14 @@ const App = () => {
           <Navbar />
           <Header/>
           <About /> 
+          <HowToBuy />
           {/* <Tokenomics /> */}
           {/* <TrustedBy/> */}
           {/* <Roadmap /> */}
-          {/* <HowToBuy /> */}
           {/* <TrustedBy/> */}
           {/* <FAQS/> */}
           {/* <Footer />  */}
+          <AppSpinner/>
 
     </div>
   );
