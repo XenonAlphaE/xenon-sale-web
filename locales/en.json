@@ -53,5 +53,25 @@
     "staking":"staking rewards",
     "buynow":"Buy $PEPENODE Presale Now",
     "bonus":"PEPENODE Token earns bonuses in Meme Coins — Airdrops For Top Miners in $PEPE, $FARTCOIN and more..."
+  },
+  "about": {
+      "title": "ABOUT PEPENODE",
+      "desc": "PEPENODE brings gamified meme coin mining to the masses. No physical computing power required. PEPENODE allows you to build a customized meme coin mining rig, in your own virtual server room. More nodes = More meme coins!",
+      "buyNow": "Buy $PEPENODE Presale NOW!",
+      "cards":[
+        {
+          "title":"Buy Nodes",
+          "content":"Without nodes, your server room is empty. Use $PEPENODE token to fill your server room with mining nodes. Nodes have unique properties. Combine certain nodes for increased mining power to earn more meme coins!"
+        },
+        {
+          "title":"Upgrade Facility",
+          "content":"The more nodes your server room has, the more mining power. Upgrading your virtual mining rig allows you to mine a larger amount of meme coins. PEPENODE is 100% virtual, and requires no additional computing power."
+        },
+        {
+          "title":"Earn Meme Coins",
+          "content":"Not only does PEPENODE allow you to multiply your $PEPENODE token holdings, top miners will receive additional bonuses in famous meme coins like Pepe, Fartcoin, and more. Enter the presale to be first in line for the world’s first virtual meme coin mining."
+        }
+      ]
+
   }
 }
