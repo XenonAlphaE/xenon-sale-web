@@ -27,12 +27,9 @@ const About =() => {
 
 
   const cardItems = [
-    {id: generateRandomId(), circleColor:'#FFD700', img:'/img/btcswift/about1.svg', title: sectionText?.cards?.[0]?.title, content:sectionText?.cards?.[0]?.content },
-    {id: generateRandomId(), circleColor:'#FF8C00', img:'/img/btcswift/about2.svg', title: sectionText?.cards?.[1]?.title, content:sectionText?.cards?.[1]?.content },
-    {id: generateRandomId(), circleColor:'#FF6B6B', img:'/img/btcswift/about3.svg', title: sectionText?.cards?.[2]?.title, content:sectionText?.cards?.[2]?.content },
-    {id: generateRandomId(), circleColor:'#FF8A80', img:'/img/btcswift/about4.svg', title: sectionText?.cards?.[3]?.title, content:sectionText?.cards?.[3]?.content },
-    {id: generateRandomId(), circleColor:'#E91E63', img:'/img/btcswift/about5.svg', title: sectionText?.cards?.[4]?.title, content:sectionText?.cards?.[4]?.content },
-    {id: generateRandomId(), circleColor:'#9945FF', img:'/img/btcswift/about6.svg', title: sectionText?.cards?.[5]?.title, content:sectionText?.cards?.[5]?.content },
+    {id: generateRandomId(), img:'/img/pepenode/about1.png', title: sectionText?.cards?.[0]?.title, content:sectionText?.cards?.[0]?.content },
+    {id: generateRandomId(), img:'/img/pepenode/about2.png', title: sectionText?.cards?.[1]?.title, content:sectionText?.cards?.[1]?.content },
+    {id: generateRandomId(), img:'/img/pepenode/about3.png', title: sectionText?.cards?.[2]?.title, content:sectionText?.cards?.[2]?.content },
   ]
   const renderCardItem = (item) =>{
     
@@ -61,7 +58,7 @@ const About =() => {
             {cardItems.map(x=> renderCardItem(x))}
         </div>
 
-        <button className={styles.buyBtn} onClick={scrollToBuySection}> {sectionText?.buyBtn} </button>
+        <button className={styles.buynow} onClick={scrollToBuySection}> {sectionText?.buyNow} </button>
       </div>
     </section>
 
