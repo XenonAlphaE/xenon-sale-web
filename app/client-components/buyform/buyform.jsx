@@ -186,6 +186,12 @@ export const BuyForm = () => {
                 
                 <div className="dashTitle">1 ${configs?.targetToken?.symbol} = ${configs?.targetToken?.tokenPrice} </div>
             </div>
+
+            <div className="currencies-list"  >
+                  <SolanaLabel/>
+            </div>
+
+
             {walletEth.currentAddress && 
 
             <div className="swapArea">
@@ -268,10 +274,6 @@ export const BuyForm = () => {
               {/* <p translate="" className="font-18 text-center m-0 mt-2"><img src="/img/solx/token.svg" style={{ 'height': '35px' }} /> Powered by <a target="_blank" href='/' className=" "><img src="/img/default/W3P_White.svg" alt="" style={{height:25}} /></a></p> */}
               <a target="_blank" href='/' className=" "><img src="/img/default/W3P_White.svg" alt="" style={{height:18}} /> </a>
             </div>
-        </div>
-       
-        <div className="solanaBuyLink">
-          <SolanaLabel/>
         </div>
 
         </div>

@@ -49,7 +49,13 @@ export const NETWORK_OTIONS = {
       name: "Arbitrum One",
       chainId: 42161,
       symbol:"eth"
+    },
+    solana: {
+      img: '/img/default/solana.svg',
+      name: "Solana",
+      symbol:"sol"
     }
+
   };
 export const CURRENCIES = {
     bsc:[

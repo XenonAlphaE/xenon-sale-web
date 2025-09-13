@@ -242,6 +242,7 @@ export const SolanaBuyForm = () => {
             {!walletSol.connected && 
             <div className="action-buttons">
                 <button className="connect-btn" onClick={walletSol?.setWalletDialogVisible}>
+                    <img style={{marginRight: 5}} src={NETWORK_OTIONS['solana'].img} width={20} height={20}/> 
                     {sectionText?.connectWallet}
                 </button>
             </div>
