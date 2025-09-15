@@ -223,31 +223,30 @@ export function calculateRaise(
 ) {
   const lastUpdated = new Date(lastestUpdated).getTime() / 1000; // Convert to seconds
   const currentTime = Math.floor(Date.now() / 1000); // Current timestamp in seconds
-
   const differenceInSeconds = currentTime - lastUpdated; // Difference in seconds
+  const fullDatePortions  = Math.floor(differenceInSeconds / 86400) ;
+  const portionMins = ((differenceInSeconds % 86400)  / 60 ); // 30-sec portions
+  const baseIncreasePerMins = dailyRaise / 1440; // Normal increase per portion (since 2880 periods in a day)
 
-  const portions = Math.floor(differenceInSeconds / 30); // 30-sec portions
-  const baseIncreasePerPortion = dailyRaise / 2880; // Normal increase per portion (since 2880 periods in a day)
 
-  let totalIncrease = 0;
-
+  let totalIncrease = fullDatePortions * dailyRaise
+  let sumPortions = 0;
   // ✅ 60 multipliers
   const portionMultipliers = [
-    0, 3.0, 1.2, 6.0, 0.4, 0.9, 0, 2.5, 0.3, 1.8,
-    0, 5.0, 1.1, 0.7, 10.0, 1.0, 1.9, 0, 8.0, 1.0,
-    20.0, 0.5, 2.0, 1.3, 4.5, 0, 7.0, 1.6, 0.8, 9.0,
-    0, 3.5, 1.4, 12.0, 0.2, 2.2, 0, 15.0, 1.5, 0.6,
-    25.0, 2.1, 0.9, 5.5, 0, 11.0, 1.7, 0.4, 18.0, 2.8,
-    0, 30.0, 1.2, 3.8, 0.7, 22.0, 0, 40.0, 1.1, 2.4
+    0, 0.5, 2.0, 0, 3.5, 1.2, 0.8, 4.5, 0, 1.0,
+    2.5, 0, 1.3, 5.0, 0.7, 0, 6.0, 0.4, 2.0, 0,
+    3.0, 1.1, 0, 4.8, 0.6, 2.2, 0, 1.5, 5.5, 0,
+    0.9, 3.8, 0, 2.0, 1.4, 0, 6.0, 0.5, 1.0, 0,
+    4.2, 0.8, 0, 2.6, 1.1, 0, 3.9, 0.7, 0, 5.0,
+    1.2, 0, 2.0, 0.6, 4.4, 0, 1.3, 0.9, 0, 6.0
   ];
 
-  for (let i = 0; i < portions; i++) {
+  for (let i = 0; i < portionMins; i++) {
     const mod = i % portionMultipliers.length;
-    const multiplier = portionMultipliers[mod];
-
-    totalIncrease += baseIncreasePerPortion * multiplier;
+    sumPortions += portionMultipliers[mod];
   }
 
+  totalIncrease += sumPortions * baseIncreasePerMins;
   const newRaise = lastestRaise + totalIncrease;
 
   return {
