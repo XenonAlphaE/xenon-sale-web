@@ -13,7 +13,7 @@ import { useNativeNetwork, useSetCurrentAddress, useSetNativeNetwork } from '../
 import { NETWORK_OTIONS, VALID_NETWORKS } from '../redux/ducks/nativeNetworkDuck';
 import { toWei, isValidNumber  } from './client-components/services/wallet-service';
 import {getUserPurchaseInfo} from '../app/client-components/services/token-service'
-import { formatIntNumber, formatTokenNumber, roundUpToNextMillion } from "./client-components/services/utils";
+import { calculateRaise, formatIntNumber, formatTokenNumber, roundUpToNextMillion } from "./client-components/services/utils";
 import { zeroAddress } from "viem";
 
 // Create a context for the wallet
@@ -95,53 +95,16 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
     }, [data?.formatted])
 
     useEffect(() => {
-        const lastUpdated = new Date(lastestUpdated).getTime() / 1000; // Convert to seconds
-        const currentTime = Math.floor(Date.now() / 1000); // Current timestamp in seconds
+        const { currentRaise, nextRaise } = calculateRaise(
+            lastestUpdated,
+            lastestRaise,
+            dailyRaise
+        );
 
-        const differenceInSeconds = currentTime - lastUpdated; // Difference in seconds
-
-        const portions = Math.floor(differenceInSeconds / 30); // 30-sec portions
-        const baseIncreasePerPortion = dailyRaise / 2880; // Normal increase per portion (since 2880 periods in a day)
+        setCurrentRaise(currentRaise);
+        setNextRaise(nextRaise);
+    }, []);
     
-        let totalIncrease = 0;
-    
-        // **Deterministic portion variation pattern (0-9)**
-        const portionMultipliers = [
-            0,    // No increase
-            3.0,  // Large increase
-            1.2,  // Slightly above normal
-            6.0,  // Big spike
-            0.4,  // Small increase
-            0.9,  // Below normal
-            0,    // No increase
-            2.5,  // Moderate increase
-            0.3,  // Minimal increase
-            1.8,  // Higher than normal
-            0,    // No increase
-            5.0,  // Very large increase
-            1.1,  // Slightly above normal
-            0.7,  // Lower increase
-            10.0, // Extreme spike
-            1.0,  // Almost normal
-            1.9,  // Above normal
-            0,    // No increase
-            8.0,  // Very high spike
-            1.0,  // Normal increase
-            20.0  // Maximum spike
-        ];
-    
-        for (let i = 0; i < portions; i++) {
-            const mod = i % 20; // Cycle through pattern
-            const multiplier = portionMultipliers[mod];
-    
-            totalIncrease += baseIncreasePerPortion * multiplier;
-        }
-    
-        setCurrentRaise(lastestRaise + totalIncrease);
-        setNextRaise(roundUpToNextMillion(lastestRaise + totalIncrease))
-
-    }, [])
-
     useEffect(() => {
         const fetchDataBNB = async () => {
           try {

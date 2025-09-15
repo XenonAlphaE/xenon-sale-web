@@ -214,3 +214,44 @@ export const parseSolToLamportsBN = (text, rounding) => // "truncate"|"round"|"c
 export function lamportsToSol(lamports) {
   return lamports / LAMPORTS_PER_SOL;
 }
+
+// ✅ utils/calcRaise.ts
+export function calculateRaise(
+  lastestUpdated,
+  lastestRaise,
+  dailyRaise
+) {
+  const lastUpdated = new Date(lastestUpdated).getTime() / 1000; // Convert to seconds
+  const currentTime = Math.floor(Date.now() / 1000); // Current timestamp in seconds
+
+  const differenceInSeconds = currentTime - lastUpdated; // Difference in seconds
+
+  const portions = Math.floor(differenceInSeconds / 30); // 30-sec portions
+  const baseIncreasePerPortion = dailyRaise / 2880; // Normal increase per portion (since 2880 periods in a day)
+
+  let totalIncrease = 0;
+
+  // ✅ 60 multipliers
+  const portionMultipliers = [
+    0, 3.0, 1.2, 6.0, 0.4, 0.9, 0, 2.5, 0.3, 1.8,
+    0, 5.0, 1.1, 0.7, 10.0, 1.0, 1.9, 0, 8.0, 1.0,
+    20.0, 0.5, 2.0, 1.3, 4.5, 0, 7.0, 1.6, 0.8, 9.0,
+    0, 3.5, 1.4, 12.0, 0.2, 2.2, 0, 15.0, 1.5, 0.6,
+    25.0, 2.1, 0.9, 5.5, 0, 11.0, 1.7, 0.4, 18.0, 2.8,
+    0, 30.0, 1.2, 3.8, 0.7, 22.0, 0, 40.0, 1.1, 2.4
+  ];
+
+  for (let i = 0; i < portions; i++) {
+    const mod = i % portionMultipliers.length;
+    const multiplier = portionMultipliers[mod];
+
+    totalIncrease += baseIncreasePerPortion * multiplier;
+  }
+
+  const newRaise = lastestRaise + totalIncrease;
+
+  return {
+    currentRaise: newRaise,
+    nextRaise: roundUpToNextMillion(newRaise),
+  };
+}
