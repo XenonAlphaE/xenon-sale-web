@@ -146,8 +146,7 @@ export const Navbar = ({ isStakingPage = false }) => {
 
         <div className={styles.mobileSocialContainer}>
 
-          <a href="/"  target='_blank' ><img src='/img/pepenode/twitter2.svg' className={styles.appSocialIcon} /></a>
-          <a href='/'  target='_blank' ><img src='/img/pepenode/cmc-1.svg' className={styles.appSocialIcon}/></a>
+          <a href="/"  target='_blank' ><img src='/img/subbd/twitter.svg' className={styles.appSocialIcon} /></a>
         </div>
 
 
