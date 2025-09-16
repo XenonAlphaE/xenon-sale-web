@@ -17,7 +17,7 @@ export async function generateMetadata() {
     
   
   
-    keywords: 'PEPENODE Token, PEPENODE Token Presale, PEPENODE Token Official Website', // Add keywords here
+    keywords: 'SUBBD, SUBBD Token, SUBBD Presale is live now', // Add keywords here
     robots: 'index, follow', // Add robots directives here
     openGraph: {
       title: metadata?.title,
@@ -43,7 +43,7 @@ export async function generateMetadata() {
       image: getOG(), // Path to your Open Graph image,
     },
     alternates: {
-      canonical: "https://pepenode.nl", // Set the canonical URL
+      canonical: "https://subbd.biz", // Set the canonical URL
     },
   };
 }
