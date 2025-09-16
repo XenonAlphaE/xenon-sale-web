@@ -10,12 +10,14 @@
   align-items: center;
   overflow: visible;
   margin-bottom: 2rem;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .bar {
   position: relative;
   height: 100%;
-  background: rgb(152, 255, 25);
+  background: #FE3541;
   transition: width 0.3s ease;
 }
 
@@ -39,6 +41,6 @@
   width: max-content;
   font-weight: 600;
   transform: translate(-50%, -50%);
-  color: black;
+  color: white;
   font-size: 12px;
 }

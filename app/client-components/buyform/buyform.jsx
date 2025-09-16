@@ -145,6 +145,9 @@ export const BuyForm = () => {
         <div className={styles.walletBox} id='walletBox'>
             <div className={styles.walletBoxInfo} >
                 <div className={styles.walletBoxHeader} >
+                  <img src="/img/subbd/widget-logo.svg"/>
+                </div>
+                <div className={styles.walletBoxHeader} >
                   <div>
                     <p className={styles.walletBoxHeading} >{sectionText?.intro} <span className={styles.symbol}> ${walletEth?.tokenSymbol} </span> {sectionText?.intro1} </p>
                   </div>
@@ -153,39 +156,42 @@ export const BuyForm = () => {
                 <div className={styles.counterWrapper} >
                   <div className={styles.counterContainer}  >
                     <div className={styles.timeCard} >
+                      <div id="hrs" className={styles.value}  >{days}</div>
                       <div className={styles.indicator}  >{sectionText?.day}</div>
-                      <div id="days" className={styles.value}  >{days}</div>
                       {/* <img className="colon-item" src="./img/colon.svg" /> */}
                     </div>
                     <div className={styles.timeCard} >
+                      <div id="hrs" className={styles.value}  >{hours}</div>
                       <div className={styles.indicator}  >{sectionText?.hrs}</div>
-                      <div id="days" className={styles.value}  >{hours}</div>
                       {/* <img className="colon-item" src="./img/colon.svg" /> */}
                     </div>
                     <div className={styles.timeCard} >
+                      <div id="mins" className={styles.value}  >{minutes}</div>
                       <div className={styles.indicator}  >{sectionText?.mins}</div>
-                      <div id="days" className={styles.value}  >{minutes}</div>
                       {/* <img className="colon-item" src="./img/colon.svg" /> */}
                     </div>
                     <div className={styles.timeCard} >
+                      <div id="sec" className={styles.value}  >{seconds}</div>
                       <div className={styles.indicator}  >{sectionText?.sec}</div>
-                      <div id="days" className={styles.value}  >{seconds}</div>
                       {/* <img className="colon-item" src="./img/colon.svg" /> */}
                     </div>
                  
                   </div>
                 </div>
-                <ProgressBar percentage={walletEth?.currentRaise *100/ walletEth?.nextRaise }/>
 
 
+                
+            </div>
+            <div className={styles.walletBoxAction}>
                 <p className={styles.totalRaised}>{sectionText?.funRaised}:  ${walletEth?.formatedRaise} / ${walletEth?.formatedNextRaise} </p>
+                <ProgressBar percentage={walletEth?.currentRaise *100/ walletEth?.nextRaise }/>
 
                 {walletEth.currentAddress && 
                 <div>
                 {/* {truncateMiddle(walletEth.currentAddress)} */}
-                <p className="user-purchased-info">{sectionText.boughtAmount} ${configs?.targetToken?.symbol} = { walletEth?.formatedBought}</p>
+                <p className={styles.userPurchasedInfo}>{sectionText.boughtAmount} ${configs?.targetToken?.symbol} = { walletEth?.formatedBought}</p>
                 {/* <img className="img-fluid ms-2 cursor-pointer" src="./img/info-icon.svg" /> */}
-                <p className="user-purchased-info">{sectionText.stakeableAmount} ${configs?.targetToken?.symbol} = {walletEth?.formatedStakeable}</p>
+                <p className={styles.userPurchasedInfo}>{sectionText.stakeableAmount} ${configs?.targetToken?.symbol} = {walletEth?.formatedStakeable}</p>
                 {/* <img className="img-fluid ms-2 cursor-pointer" src="./img/info-icon.svg" /> */}
                 </div>
                 }
@@ -193,100 +199,98 @@ export const BuyForm = () => {
                 <div className={styles.dashTitle}>1 ${configs?.targetToken?.symbol} = ${configs?.targetToken?.tokenPrice} </div>
 
                 
-            </div>
-            <div className={styles.currenciesList}  >
-                  <SolanaLabel/>
-            </div>
+                <div className={styles.currenciesList}  >
+                      <SolanaLabel/>
+                </div>
 
 
-            {walletEth.currentAddress && 
+                {walletEth.currentAddress && 
 
-            <div className={styles.swapArea} >
-            
-            <div className={styles.currenciesList}  >
-                {currList.map((curr, idx) => {
-                    return(
-                        <button key={idx} onClick={() => handleSwitchOption(idx)}
-
-                          className={`${styles.btn}  ${selectedCurr?.text === curr?.text ? styles.selected : ''}`}>
-                          <img height="24" alt="" src={curr.imageSrc} />
-                          <span className="px-2 font-18">{curr.text}</span>
-                        </button>
-                    )
-                })}
-               
-            </div>
-            <div className={styles.swapSection} >
-            
-                    <div className={styles.inputContainer}  >
-                    <div  className={styles.inputLable}>
-                        <label > {sectionText?.pay} {selectedCurr?.text}  </label>
-                    </div>
-                    <div className={styles.inputAmount} >
-                        <input
-                        className={styles.inputControlCustom}
-                        value={currencyInput}
-                        onChange={handleCurrencyInputChange}
-                        onKeyPress={handleKeyPressCurr}
-                        type="text"
-                        placeholder="0" />
-                        <div className={styles.amountType} >
-                          <img src={selectedCurr?.icon} style={{ 'height': '30px', marginRight:5 }} />
-                        </div>
-                    </div>
-                    </div>
-                    <div className={styles.inputContainer}  >
-                    <div className={styles.inputLable} >
-                        <label > {sectionText?.get} ${configs?.targetToken?.symbol}     </label>
-                    </div>
-                    <div className={styles.inputAmount} >
-                        <input
-                        className={styles.inputControlCustom}
-                        value={tokenInput}
-                        onChange={handleTokenInputChange}
-                        onKeyPress={handleKeyPressToken}
-                        type="text"
-                        placeholder="0" />
-                        <div className={styles.amountType} >
-                          <img src='/img/pepenode/token.svg' style={{ 'height': '30px', marginRight:5 }} />
-                        </div>
-                    </div>
-                    </div>
+                <div className={styles.swapArea} >
                 
+                <div className={styles.currenciesList}  >
+                    {currList.map((curr, idx) => {
+                        return(
+                            <button key={idx} onClick={() => handleSwitchOption(idx)}
+
+                              className={`${styles.btn}  ${selectedCurr?.text === curr?.text ? styles.selected : ''}`}>
+                              <img height="24" alt="" src={curr.imageSrc} />
+                              <span className="px-2 font-18">{curr.text}</span>
+                            </button>
+                        )
+                    })}
+                  
+                </div>
+                <div className={styles.swapSection} >
+                
+                        <div className={styles.inputContainer}  >
+                        <div  className={styles.inputLable}>
+                            <label > {sectionText?.pay} {selectedCurr?.text}  </label>
+                        </div>
+                        <div className={styles.inputAmount} >
+                            <input
+                            className={styles.inputControlCustom}
+                            value={currencyInput}
+                            onChange={handleCurrencyInputChange}
+                            onKeyPress={handleKeyPressCurr}
+                            type="text"
+                            placeholder="0" />
+                            <div className={styles.amountType} >
+                              <img src={selectedCurr?.icon} style={{ 'height': '30px', marginRight:5 }} />
+                            </div>
+                        </div>
+                        </div>
+                        <div className={styles.inputContainer}  >
+                        <div className={styles.inputLable} >
+                            <label > {sectionText?.get} ${configs?.targetToken?.symbol}     </label>
+                        </div>
+                        <div className={styles.inputAmount} >
+                            <input
+                            className={styles.inputControlCustom}
+                            value={tokenInput}
+                            onChange={handleTokenInputChange}
+                            onKeyPress={handleKeyPressToken}
+                            type="text"
+                            placeholder="0" />
+                            <div className={styles.amountType} >
+                              <img src='/img/subbd/token.png' style={{ 'height': '30px', marginRight:5 }} />
+                            </div>
+                        </div>
+                        </div>
+                    
+                </div>
+
+                </div>
+                }
+                {!walletEth.currentAddress && 
+                <div className={styles.actionButtons} >
+                    <button className={styles.connectBtn}   onClick={walletEth.connect}>
+                        {sectionText?.connectWallet}
+                    </button>
+                </div>
+                }
+                {walletEth.currentAddress && 
+                
+                <div className={styles.actionButtons}  >
+                    <button className={styles.buyBtn}  
+                        disabled={isClicked}
+                        onClick={handleBuyTokenClick}
+                    >
+                    {sectionText?.buyStake}
+                    </button>
+                    <CurrencyDropdown walletETH={walletEth} />
+
+                </div>
+                }
+                <div className={styles.externalInfo}  >
+                  <a style={{textDecorationColor:"white", textDecoration:'underline', color: 'white'}} href="https://widget.wert.io/default/widget/?commodity=ETH%3AEthereum" target="_blank">Not enough ETH? Top up now</a>
+                  {/* <p translate="" className="font-18 text-center m-0 mt-2"><img src="/img/solx/token.svg" style={{ 'height': '35px' }} /> Powered by <a target="_blank" href='/' className=" "><img src="/img/default/W3P_White.svg" alt="" style={{height:25}} /></a></p> */}
+                  <a target="_blank" href='/' className=" "><img src="/img/default/W3P_White.svg" alt="" style={{height:18}} /> </a>
+                </div>
             </div>
 
-            </div>
-}
-            {!walletEth.currentAddress && 
-            <div className={styles.actionButtons} >
-                <button className={styles.connectBtn}   onClick={walletEth.connect}>
-                    {sectionText?.connectWallet}
-                </button>
-            </div>
-            }
-            {walletEth.currentAddress && 
-            
-            <div className={styles.actionButtons}  >
-                <button className={styles.buyBtn}  
-                    disabled={isClicked}
-                    onClick={handleBuyTokenClick}
-                >
-                {sectionText?.buyStake}
-                </button>
-                <CurrencyDropdown walletETH={walletEth} />
-
-            </div>
-            }
-            <div className={styles.externalInfo}  >
-              <a style={{textDecorationColor:"white", textDecoration:'underline', color: 'white'}} href="https://widget.wert.io/default/widget/?commodity=ETH%3AEthereum" target="_blank">Not enough ETH? Top up now</a>
-              {/* <p translate="" className="font-18 text-center m-0 mt-2"><img src="/img/solx/token.svg" style={{ 'height': '35px' }} /> Powered by <a target="_blank" href='/' className=" "><img src="/img/default/W3P_White.svg" alt="" style={{height:25}} /></a></p> */}
-              <a target="_blank" href='/' className=" "><img src="/img/default/W3P_White.svg" alt="" style={{height:18}} /> </a>
-            </div>
         </div>
         
-        {/* <div className={styles.solanaBuyLink}>
-          <SolanaLabel/>
-        </div> */}
         </div>
     )
 

@@ -19,15 +19,15 @@ const PresaleSection = () => {
         </p>
         <div className={styles.bannerList}>
           <div className={styles.bannerListItem}>
-            <img className={styles.bannerListImg} src="/img/pepenode/buy-icon.webp" alt="banner" />
+            {/* <img className={styles.bannerListImg} src="/img/pepenode/buy-icon.webp" alt="banner" /> */}
             <span> {sectionText?.tag} </span> 
           </div>
           <div className={styles.bannerListItem}>
-            <img className={styles.bannerListImg} src="/img/pepenode/upgrade-icon.webp" alt="banner" />
+            {/* <img className={styles.bannerListImg} src="/img/pepenode/upgrade-icon.webp" alt="banner" /> */}
             <span> {sectionText?.tag1} </span> 
           </div>
           <div className={styles.bannerListItem}>
-            <img className={styles.bannerListImg} src="/img/pepenode/meme-icon.webp" alt="banner" />
+            {/* <img className={styles.bannerListImg} src="/img/pepenode/meme-icon.webp" alt="banner" /> */}
             <span> {sectionText?.tag2} </span> 
           </div>
         </div>

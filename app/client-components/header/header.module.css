@@ -1,13 +1,16 @@
 .container{
   display: flex;
   flex-direction: row;
-  row-gap: 1rem;
-  background: rgb(17, 18, 11);
-
-  background: transparent url(/img/pepenode/desktop-bg-container.png) no-repeat 50% 100%;
-  background-size: 100% 100%;
-  min-height: 100vh;
   justify-content: center;
+  row-gap: 1rem;
+  position: relative;
+
+  padding: 115px 20px 64px;
+  background: url(/img/subbd/banner_cover.webp) no-repeat, url(/img/subbd/banner-bg.webp) no-repeat;
+  background-size: 115%, 85%;
+  background-position: -41% 10%, 118% 5%;
+  max-width: 1376px;
+  margin: 0 auto;
   @media (max-width: 1024px) {
       width: 100%;
       background: transparent;
