@@ -1,7 +1,7 @@
 {
   "metadata":{
-      "title":"PEPENODE Token Offical Website | Meme Coin Mining Token",
-      "description":"Join the PEPENODE Token and mine meme coins virtually. No hardware needed. Build your Pepe Node rig, add nodes, and earn in this crypto mining game."
+      "title":"SUBBD | Ultimate Creator Platform",
+      "description":"SUBBD is the ultimate creator platform. Join the beta to connect with your audience, monetize your content, and build your community."
   },
   "nav": {
       "home": "HOME",
@@ -10,7 +10,7 @@
       "whitePaper": "WHITE PAPER",
       "tokenomics": "TOKENOMICS",
       "features": "FEATURES",
-      "buyNow": "BUY $PEPENODE",
+      "buyNow": "BUY $SUBBD",
       "faq": "FAQS",
       "audit": "AUDIT",
       "roadmap": "ROADMAP",
@@ -47,25 +47,6 @@
     "description": "$SUBBD token powers the next generation of content creators. Powered by AI, the SUBBD platform revolutionizes creator-fan relationships.",
     "tag":"2000+ Top Earning Creators",
     "tag1":"250m+ Combined Followers"
-  },
-  "about": {
-      "title": "ABOUT PEPENODE",
-      "desc": "PEPENODE brings gamified meme coin mining to the masses. No physical computing power required. PEPENODE allows you to build a customized meme coin mining rig, in your own virtual server room. More nodes = More meme coins!",
-      "buyNow": "Buy $PEPENODE Presale NOW!",
-      "cards":[
-        {
-          "title":"Buy Nodes",
-          "content":"Without nodes, your server room is empty. Use $PEPENODE token to fill your server room with mining nodes. Nodes have unique properties. Combine certain nodes for increased mining power to earn more meme coins!"
-        },
-        {
-          "title":"Upgrade Facility",
-          "content":"The more nodes your server room has, the more mining power. Upgrading your virtual mining rig allows you to mine a larger amount of meme coins. PEPENODE is 100% virtual, and requires no additional computing power."
-        },
-        {
-          "title":"Earn Meme Coins",
-          "content":"Not only does PEPENODE allow you to multiply your $PEPENODE token holdings, top miners will receive additional bonuses in famous meme coins like Pepe, Fartcoin, and more. Enter the presale to be first in line for the world’s first virtual meme coin mining."
-        }
-      ]
-
   }
+ 
 }

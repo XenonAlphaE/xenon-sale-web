@@ -81,12 +81,12 @@ export const SolanaNavbar = ({ isStakingPage = false }) => {
     <div className={styles.navContainer} >
      
         <a className={styles.appnavBrand} href='/'>
-          <img className={styles.textLogo}  src="/img/pepenode/logo.svg"/>
+          <img className={styles.brandLogo}  src="/img/subbd/logo.svg"/>
           {/* <img className={styles.textLogo}  src="/img/btcswift/bitcoin-swift-text-logo.webp"/> */}
         </a>
 
         <div className={styles.appnavMenu}>
-          <a href={isStakingPage ? `/${currentLanguage}/#tokenomics` : "#tokenomics"}>{sectionText?.home}</a>
+          <a href={isStakingPage ? `/${currentLanguage}` : "/"}>{sectionText?.home}</a>
           <a href={isStakingPage ? `/${currentLanguage}/#tokenomics` : "#tokenomics"}>{sectionText?.about}</a>
           <a href={isStakingPage ? `/${currentLanguage}/#roadmap` : "#roadmap"}>{ sectionText?.howtobuy}</a>
           <a href={isStakingPage ? `/${currentLanguage}/#roadmap` : "#roadmap"}>{ sectionText?.roadmap}</a>
@@ -96,11 +96,12 @@ export const SolanaNavbar = ({ isStakingPage = false }) => {
         </div>
 
         <div className={styles.loginContainer} >
-          <a href="/"  target='_blank' ><img src='/img/pepenode/twitter2.svg' className={styles.appSocialIcon} /></a>
-          <a href='/'  target='_blank' ><img src='/img/pepenode/cmc-1.svg' className={styles.appSocialIcon}/></a>
+          <a href="/"  target='_blank' ><img src='/img/subbd/twitter.svg' className={styles.appSocialIcon} /></a>
+          {/* <a href='/'  target='_blank' ><img src='/img/pepenode/cmc-1.svg' className={styles.appSocialIcon}/></a> */}
 
           <a  className={styles.appWhitepaper} >White Paper</a>
-          <SolanaConnectButton toggleMenu={toggleMenu} /> 
+          {/* <button onClick={scrollToBuySection} className={styles.appnavLogin} >{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button> */}
+          <SolanaConnectButton toggleMenu={toggleMenu} />
           <div className={styles.langDropdown} >
             <div className={styles.langDropdownBtn} onClick={toggleLanguageDrpdwn}>
               {/* <span className={languageOptions[currentLanguage].flag}></span> */}
@@ -169,7 +170,7 @@ export const SolanaNavbar = ({ isStakingPage = false }) => {
             ))}
           </div>
         </div>
-        <SolanaConnectButton toggleMenu={toggleMenu} /> 
+        <SolanaConnectButton toggleMenu={toggleMenu} />
 
       </div>
       }

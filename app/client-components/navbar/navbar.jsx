@@ -86,7 +86,7 @@ export const Navbar = ({ isStakingPage = false }) => {
         </a>
 
         <div className={styles.appnavMenu}>
-          <a href={isStakingPage ? `/${currentLanguage}/#tokenomics` : "#tokenomics"}>{sectionText?.home}</a>
+          <a href={isStakingPage ? `/${currentLanguage}` : "/"}>{sectionText?.home}</a>
           <a href={isStakingPage ? `/${currentLanguage}/#tokenomics` : "#tokenomics"}>{sectionText?.about}</a>
           <a href={isStakingPage ? `/${currentLanguage}/#roadmap` : "#roadmap"}>{ sectionText?.howtobuy}</a>
           <a href={isStakingPage ? `/${currentLanguage}/#roadmap` : "#roadmap"}>{ sectionText?.roadmap}</a>
