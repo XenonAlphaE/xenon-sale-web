@@ -18,8 +18,8 @@
       width: 100%;
       flex-direction: column;
       display: flex;
-      justify-content: space-evenly;
-      row-gap: 1rem;
+      justify-content: center;
+      row-gap: 2rem;
       @media (max-width: 1024px) {
           width: 100%;
           flex-direction: column;
@@ -32,7 +32,7 @@
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 2.8em;
+    font-size: 4em;
     margin-block: 1rem;
     @media (max-width: 1024px) {
         width: 100%;
@@ -42,7 +42,7 @@
   }
   .headline1{
     text-align: left;
-    color: rgb(152, 255, 25);
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
     font-weight: 900;
     font-size: 2.8em;
@@ -57,6 +57,7 @@
   .description{
     color: rgb(255, 255, 255);
     text-align: left;
+    font-size: 2em;
     margin-bottom: 0.5rem;
   }
 
@@ -187,7 +188,7 @@
 
   .bannerList{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
     color: rgb(255, 255, 255);
@@ -203,15 +204,15 @@
   }
 
   .bannerListImg{
-    width: 56px;
+    width: 26px;
 
   }
   .bannerListItem{
-    max-width: 28%;
+    max-width: 40%;
     display: flex;
-    column-gap: 2rem;
     justify-content: center;
     align-items: center;
+    column-gap: 1rem;
     @media (max-width: 1024px) {
       width: 100%;
       max-width: 100%;
@@ -223,4 +224,6 @@
 .bannerListItem span{
   line-height: 0.9em;
   text-align: left;
+  font-size: large;
+
 }

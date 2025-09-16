@@ -81,7 +81,7 @@ export const Navbar = ({ isStakingPage = false }) => {
     <div className={styles.navContainer} >
      
         <a className={styles.appnavBrand} href='/'>
-          <img className={styles.textLogo}  src="/img/pepenode/logo.svg"/>
+          <img className={styles.brandLogo}  src="/img/subbd/logo.svg"/>
           {/* <img className={styles.textLogo}  src="/img/btcswift/bitcoin-swift-text-logo.webp"/> */}
         </a>
 
@@ -96,8 +96,8 @@ export const Navbar = ({ isStakingPage = false }) => {
         </div>
 
         <div className={styles.loginContainer} >
-          <a href="/"  target='_blank' ><img src='/img/pepenode/twitter2.svg' className={styles.appSocialIcon} /></a>
-          <a href='/'  target='_blank' ><img src='/img/pepenode/cmc-1.svg' className={styles.appSocialIcon}/></a>
+          <a href="/"  target='_blank' ><img src='/img/subbd/twitter.svg' className={styles.appSocialIcon} /></a>
+          {/* <a href='/'  target='_blank' ><img src='/img/pepenode/cmc-1.svg' className={styles.appSocialIcon}/></a> */}
 
           <a  className={styles.appWhitepaper} >White Paper</a>
           {/* <button onClick={scrollToBuySection} className={styles.appnavLogin} >{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button> */}
