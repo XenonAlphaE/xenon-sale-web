@@ -13,7 +13,7 @@
   margin: 0 auto;
   @media (max-width: 1024px) {
       width: 100%;
-      background: transparent;
+      background: url(/img/subbd/banner-mob.webp) no-repeat 0 0;
       padding: 0px;
   }
 }
