@@ -51,11 +51,11 @@
     font-weight: bold;
     text-align: start;
     background-color: rgba(0, 0, 0, 0);
-    background-image: linear-gradient(45deg, white, #98ff19);
+    background-image: linear-gradient(-45deg, white, #fe3642,#e11f28);
       background-size: 300% 300%; /* makes animation visible */
     background-position: 0% 50%;
     background-clip: text;
-
+    text-transform: uppercase;
     background-origin : padding-box;
       background-clip: text;
     -webkit-background-clip: text; /* for Safari */
@@ -73,24 +73,24 @@
   .desc{
     font-size: large;
     color: white;
-
+    text-align: center;
     @media (max-width: 1024px) {
         text-align: center;
     }
 
   }
 
-  .cardList{
+  .listContainer{
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    overflow-y: auto;
+  }
+
+  .cardList{
+    width: max-content;
+    display: flex;
     gap: 2rem;
 
     @media (max-width: 1024px) {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      width: 100%;
 
     }
 
@@ -98,108 +98,40 @@
 
   .card{
     position: relative;
-    margin: 7px 0 25px;
-    padding: 15px;
-    filter: drop-shadow(0px 0px 80px rgba(223, 253, 111, .05));
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
-    scroll-snap-align: start;
-    transform-origin: center;
-    transform: scale(1);
-    transition: transform .5s;
-    
+    border-radius: 20px;
+    overflow: hidden;
     @media (max-width: 1024px) {
-      width: 100%;
+      /* width: 80%; */
     }
   }
 
-  .card::before{    
-    content: "";
-    position: absolute;
-    inset: -1px;
-    background: #393939;
-    clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 15px 100%, 0 calc(100% - 15px), 0 0, 1px 1px, 1px calc(100% - 16px), 15px calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), calc(100% - 1px) 15px, calc(100% - 15px) 1px, 1px 1px);
-  }
+ 
 
-  .cardTop{
-    padding: 3rem 1rem 1rem 1rem;
-  }
-  .cardBottom{
-    padding: 1rem 3rem 2rem 3rem;
-  }
-
-  .cardImgWrapper{
-      margin-inline: auto;
-      height: 64px;
-      width: 64px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 50%;
-      overflow: hidden;
-  }
+  
   .cardImg{
-      width: 64px;
-      height: 64px;
+      width: 320px;
+      @media (max-width: 1024px) {
+        
+        width: 320px;
+
+      }
   }
-
-  .cardTitle{
-    text-align: center;
-    color: white;
-    text-transform: capitalize;
-    font-size: x-large;
-  }
-
-  .cardContent{
-    text-align: center;
-    color: rgb(148, 163, 184);
-  }
-
-    /* Mobile/tablet animation */
-  @keyframes resizeBoxMobile {
-    0% {
-      width: 75%;
-      transform: scaleY(1);
-    }
-    50% {
-      width: 100%;
-    }
-    100% {
-      width: 75%;
-      transform: scaleY(1);
-    }
-  }
-
-  @keyframes resizeBox {
-    0% {
-      width: 35%;
-      transform: scaleY(1);
-    }
-    50% {
-      width: 50%;
-      transform: scaleY(1.15);
-    }
-    100% {
-      width: 35%;
-      transform: scaleY(0.85); /* scaled down below original */
-    }
-  }
-
-
 
 
   .buynow{
-    width: 60%;
-    background: rgb(152, 255, 25);
-    transition: all .4s ease-out;
-    clip-path: polygon(100% 15px, 100% 100%, 15px 100%, 0% calc(100% - 15px), 0% 0%, calc(100% - 15px) 0%);
+    width: 320px;
+    background: linear-gradient(90deg,#fe3642,#e11f28);
+    color: white;
     display: flex;
     font-weight: 900;
+    font-size: larger;
     flex-direction: column;
     justify-content: space-evenly;  
-    padding: 1rem; 
+    padding: 2rem 2rem; 
     text-transform: uppercase;
     animation: resizeBox 4s infinite;
+    border: none;
+    border-radius: 30px;
 
     @media (max-width: 1024px) {
       animation: resizeBoxMobile 2s infinite;

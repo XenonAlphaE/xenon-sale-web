@@ -87,7 +87,7 @@ export const SolanaNavbar = ({ isStakingPage = false }) => {
 
         <div className={styles.appnavMenu}>
           <a href={isStakingPage ? `/${currentLanguage}` : "/"}>{sectionText?.home}</a>
-          <a href={isStakingPage ? `/${currentLanguage}/#tokenomics` : "#tokenomics"}>{sectionText?.about}</a>
+          <a href={isStakingPage ? `/${currentLanguage}/#about` : "#about"}>{sectionText?.about}</a>
           <a href={isStakingPage ? `/${currentLanguage}/#roadmap` : "#roadmap"}>{ sectionText?.howtobuy}</a>
           <a href={isStakingPage ? `/${currentLanguage}/#roadmap` : "#roadmap"}>{ sectionText?.roadmap}</a>
           <a href={isStakingPage ? `/${currentLanguage}/#tokenomics` : "#tokenomics"}>{sectionText?.tokenomics}</a>
@@ -134,8 +134,8 @@ export const SolanaNavbar = ({ isStakingPage = false }) => {
       {isMobile && <div className={`${styles.appnavMobile} ${isMenuOpen ? styles.mobileActive : ''}`}>
       {/* <a onClick={toggleMenu} href={`/${currentLanguage}`}>{sectionText?.home}</a> */}
 
-        <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#tokenomics` : "#tokenomics"}>{sectionText?.home}</a>
-        <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#tokenomics` : "#tokenomics"}>{sectionText?.about}</a>
+        <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}` : "/"}>{sectionText?.home}</a>
+        <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#about` : "#about"}>{sectionText?.about}</a>
         <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#roadmap` : "#roadmap"}>{ sectionText?.howtobuy}</a>
         <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#roadmap` : "#roadmap"}>{ sectionText?.roadmap}</a>
         <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#tokenomics` : "#tokenomics"}>{sectionText?.tokenomics}</a>
