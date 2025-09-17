@@ -72,7 +72,7 @@ async function loadJson(url) {
 export async function getBacklinkUrls(){
     const normalizeUrl = (url) => url.replace(/\/+$/, ''); // Remove trailing slashes
     const mainDomain = normalizeUrl(getMainDomain()); // Normalize the main domain
-    const uriList = await loadJson(process.env.BACKLINKS_URL || 'https://flockez.netlify.app/js/backlinks.json')
-
+    // const uriList = await loadJson( 'https://flockez.netlify.app/js/backlinks.json')
+    const uriList = [];
     return uriList.filter((item) => normalizeUrl(item.url) !== mainDomain);
 }

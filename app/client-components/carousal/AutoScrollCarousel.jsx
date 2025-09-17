@@ -8,7 +8,7 @@ const AutoScrollCarousel = ({ slides, renderSlide }) => {
     <div className={styles.carouselWrapper}>
       <div className={styles.trackWrapper}>
         <div className={styles.track}>
-          {[...slides, ...slides].map((slide, i) => (
+          {[...slides, ...slides, ...slides, ...slides].map((slide, i) => (
             <div className={styles.slide} key={i}>
               {renderSlide(slide, i)}
             </div>

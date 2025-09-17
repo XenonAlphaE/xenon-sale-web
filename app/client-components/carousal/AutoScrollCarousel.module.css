@@ -4,7 +4,7 @@
   width: 100%;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  background-color: black;
+  background-color: transparent;
   padding-block: 2rem;
 }
 
@@ -23,7 +23,7 @@
   flex: 0 0 auto;
   width: auto;
   height: auto;
-  margin: 0 10px;
+  margin: 0 4rem;
   display: flex;
   align-items: center;
   justify-content: center;

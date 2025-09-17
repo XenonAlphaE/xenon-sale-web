@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './about.module.css';
 import { useIsMobile } from '../../../redux/utils/mobileUtils';
 import { useI18nSection } from '../../../redux/utils/languageUtils';
-import AutoScrollCarousel from '../carousal/AutoScrollCarousel';
 import { generateRandomId } from '../services/utils';
 
 
