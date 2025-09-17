@@ -1,57 +1,51 @@
 {
   "metadata": {
-    "title": "PEPENODE Token Trang Chủ Chính Thức | Token Đào Meme Coin",
-    "description": "Tham gia PEPENODE Token và đào meme coin ảo. Không cần phần cứng. Xây dựng dàn máy Pepe Node của bạn, thêm node và kiếm tiền trong trò chơi đào crypto này."
+    "title": "SUBBD | Nền Tảng Tạo Nội Dung Tối Ưu",
+    "description": "SUBBD là nền tảng tạo nội dung tối ưu. Tham gia bản beta để kết nối với khán giả, kiếm tiền từ nội dung và xây dựng cộng đồng của bạn."
   },
   "nav": {
     "home": "TRANG CHỦ",
-    "staking": "ĐẶT CƯỚC",
+    "staking": "ĐẦU TƯ",
     "howtobuy": "CÁCH MUA",
     "whitePaper": "SÁCH TRẮNG",
-    "tokenomics": "TOKENOMICS",
+    "tokenomics": "KINH TẾ TOKEN",
     "features": "TÍNH NĂNG",
-    "buyNow": "MUA $PEPENODE",
+    "buyNow": "MUA $SUBBD",
     "faq": "CÂU HỎI THƯỜNG GẶP",
     "audit": "KIỂM TOÁN",
     "roadmap": "LỘ TRÌNH",
-    "airdrop": "AIRDROP",
+    "airdrop": "PHÁT TOKEN MIỄN PHÍ",
     "about": "VỀ CHÚNG TÔI"
   },
   "buyForm": {
     "intro": "Mua",
-    "intro1": "Đang Bán Trước",
+    "intro1": "Đang mở bán trước",
     "day": "Ngày",
     "hrs": "Giờ",
     "mins": "Phút",
     "sec": "Giây",
-    "funRaised": "USDT Đã Gọi Vốn",
+    "funRaised": "USDT Đã Gây Quỹ",
     "wallet": "Ví CỦA BẠN",
     "boughtAmount": "SỐ LƯỢNG ĐÃ MUA",
-    "stakeableAmount": "SỐ LƯỢNG CÓ THỂ ĐẶT CƯỚC",
+    "stakeableAmount": "SỐ LƯỢNG CÓ THỂ ĐẦU TƯ",
     "pay": "Thanh toán bằng",
     "get": "Nhận",
-    "buyNow": "MUA $PEPENODE",
+    "buyNow": "MUA $SUBBD",
     "buyMax": "MUA TỐI ĐA",
     "warning": "Vui lòng cài đặt Metamask để mua",
-    "link": "bấm vào đây",
+    "link": "nhấn vào đây",
     "connectWallet": "KẾT NỐI VÍ",
     "ethOption": "MẠNG ETH",
     "switchOption": "CHUYỂN MẠNG",
     "bnbOption": "MẠNG BNB",
-    "buyStake": "Mua và Đặt cọc nhận thưởng 4569%",
+    "buyStake": "Mua và Đầu tư để nhận thưởng 69%",
     "nextPriceAlert": "ĐẾN KHI GIÁ TĂNG",
-    "para1": "1102% PHẦN THƯỞNG ĐẶT CƯỚC"
+    "para1": "THƯỞNG ĐẦU TƯ 1102%"
   },
   "header": {
-    "headline": "Bán Trước Token Pepenode",
-    "headline1": "MINE-TO-EARN memecoin",
-    "description": "PEPENODE Token cho phép bạn xây dựng dàn máy đào meme coin ảo của riêng bạn.",
-    "description1": "Mua Node. Xây Phòng Máy Chủ. Kết Hợp Node Nhận Thưởng Lớn.",
-    "tag": "Mua Meme Node",
-    "tag1": "Nâng Cấp Cơ Sở",
-    "tag2": "Kiếm meme Coin",
-    "staking": "phần thưởng đặt cược",
-    "buynow": "Mua $PEPENODE Đợt Bán Trước Ngay",
-    "bonus": "PEPENODE Token nhận thưởng meme Coins — Airdrop cho thợ đào hàng đầu với $PEPE, $FARTCOIN và nhiều hơn nữa..."
+    "headline": "Token $SUBBD. Nền Tảng Tạo AI Agent Số 1",
+    "description": "Token $SUBBD hỗ trợ thế hệ sáng tạo nội dung mới. Được hỗ trợ bởi AI, nền tảng SUBBD cách mạng hóa mối quan hệ giữa nhà sáng tạo và người hâm mộ.",
+    "tag": "Hơn 2000 Nhà Sáng Tạo Thu Nhập Cao",
+    "tag1": "Hơn 250 triệu Người Theo Dõi Tổng Hợp"
   }
 }

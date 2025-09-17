@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "PEPENODE Token Officiell Webbplats | Meme Coin Mining Token",
-    "description": "Gå med i PEPENODE Token och mina meme coins virtuellt. Ingen hårdvara behövs. Bygg din Pepe Node-rigg, lägg till noder och tjäna i detta kryptomining-spel."
+    "title": "SUBBD | Ultimata Skaparplattformen",
+    "description": "SUBBD är den ultimata skapareplattformen. Gå med i betan för att koppla ihop med din publik, tjäna pengar på ditt innehåll och bygg din community."
   },
   "nav": {
     "home": "HEM",
@@ -10,7 +10,7 @@
     "whitePaper": "WHITE PAPER",
     "tokenomics": "TOKENOMICS",
     "features": "FUNKTIONER",
-    "buyNow": "KÖP $PEPENODE",
+    "buyNow": "KÖP $SUBBD",
     "faq": "FAQS",
     "audit": "AUDIT",
     "roadmap": "ROADMAP",
@@ -22,36 +22,30 @@
     "intro1": "Försäljning pågår",
     "day": "Dagar",
     "hrs": "Timmar",
-    "mins": "Minuter",
-    "sec": "Sekunder",
+    "mins": "Min",
+    "sec": "Sek",
     "funRaised": "USDT Insamlat",
     "wallet": "DIN Plånbok",
     "boughtAmount": "DITT KÖP",
-    "stakeableAmount": "DIN STAKEBARA",
+    "stakeableAmount": "DIN INSATS",
     "pay": "Betala med",
-    "get": "Ta emot",
-    "buyNow": "KÖP $PEPENODE",
+    "get": "Få",
+    "buyNow": "KÖP $SUBBD",
     "buyMax": "KÖP MAX",
-    "warning": "Vänligen installera Metamask för att köpa",
+    "warning": "Var god installera Metamask för att köpa",
     "link": "klicka här",
     "connectWallet": "ANSLUT PLÅNBOK",
     "ethOption": "ETH-NÄTVERK",
     "switchOption": "BYT NÄTVERK",
     "bnbOption": "BNB-NÄTVERK",
-    "buyStake": "Köp och Stakea för 4569% belöning",
+    "buyStake": "Köp och satsa för 69% belöning",
     "nextPriceAlert": "TILLS PRISHÖJNING",
-    "para1": "1102% STAKING-BELÖNINGAR"
+    "para1": "1102% INSATSBELÖNINGAR"
   },
   "header": {
-    "headline": "Pepenode Token Försäljning",
-    "headline1": "MINE-TO-EARN memecoin",
-    "description": "PEPENODE Token låter dig bygga din egen virtuella meme coin-mineringsrigg.",
-    "description1": "Köp noder. Bygg ditt serverrum. Kombinera noder för stora bonusar.",
-    "tag": "Köp Meme-noder",
-    "tag1": "Uppgradera anläggningar",
-    "tag2": "Tjäna meme coins",
-    "staking": "staking-belöningar",
-    "buynow": "Köp $PEPENODE Försäljning nu",
-    "bonus": "PEPENODE Token ger bonusar i Meme Coins — Airdrops för toppminers i $PEPE, $FARTCOIN och mer..."
+    "headline": "$SUBBD Token. Den främsta AI Agent Skaparplattformen",
+    "description": "$SUBBD-token driver nästa generation av innehållsskapare. Drivs av AI revolutionerar SUBBD-plattformen relationen mellan skapare och fans.",
+    "tag": "2000+ Toppinkomstskapare",
+    "tag1": "250m+ Samlade Följare"
   }
 }

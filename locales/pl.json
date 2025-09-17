@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "title": "PEPENODE Token Oficjalna Strona | Meme Coin Mining Token",
-    "description": "Dołącz do PEPENODE Token i wydobywaj meme coiny wirtualnie. Bez potrzeby sprzętu. Zbuduj swój Pepe Node rig, dodaj węzły i zarabiaj w tej grze kryptowalutowej."
+    "title": "SUBBD | Ultimate Creator Platform",
+    "description": "SUBBD to najlepsza platforma dla twórców. Dołącz do bety, aby połączyć się ze swoją publicznością, monetyzować swoje treści i budować swoją społeczność."
   },
   "nav": {
     "home": "STRONA GŁÓWNA",
     "staking": "STAKING",
     "howtobuy": "JAK KUPIĆ",
-    "whitePaper": "BIAŁA KSIĘGA",
-    "tokenomics": "TOKENOMIKA",
-    "features": "CECHY",
-    "buyNow": "KUP $PEPENODE",
+    "whitePaper": "WHITE PAPER",
+    "tokenomics": "TOKENOMICS",
+    "features": "FUNKCJE",
+    "buyNow": "KUP $SUBBD",
     "faq": "FAQ",
     "audit": "AUDYT",
     "roadmap": "MAPA DROGI",
@@ -28,30 +28,24 @@
     "wallet": "TWÓJ Portfel",
     "boughtAmount": "TWÓJ ZAKUP",
     "stakeableAmount": "TWÓJ STAKOWALNY",
-    "pay": "Zapłać za pomocą",
+    "pay": "Zapłać z",
     "get": "Otrzymaj",
-    "buyNow": "KUP $PEPENODE",
-    "buyMax": "KUP MAKSYMALNIE",
-    "warning": "Proszę zainstalować Metamask, aby kupić",
+    "buyNow": "KUP $SUBBD",
+    "buyMax": "KUP MAX",
+    "warning": "Proszę zainstaluj Metamask, aby kupić",
     "link": "kliknij tutaj",
     "connectWallet": "POŁĄCZ PORTFEL",
     "ethOption": "SIEĆ ETH",
-    "switchOption": "ZMIENIĆ SIEĆ",
+    "switchOption": "ZMIANA SIECI",
     "bnbOption": "SIEĆ BNB",
-    "buyStake": "Kup i stakuj dla 4569% nagród",
+    "buyStake": "Kup i Stakeuj dla 69% nagród",
     "nextPriceAlert": "DO WZROSTU CENY",
     "para1": "1102% NAGRÓD ZA STAKING"
   },
   "header": {
-    "headline": "Przedsprzedaż Pepenode Token",
-    "headline1": "MINE-TO-EARN memecoin",
-    "description": "PEPENODE Token pozwala zbudować własny wirtualny rig do kopania meme coinów.",
-    "description1": "Kup węzły. Zbuduj swoją serwerownię. Łącz węzły, aby uzyskać ogromne bonusy.",
-    "tag": "Kup Meme Węzły",
-    "tag1": "Ulepsz obiekty",
-    "tag2": "Zarabiaj meme Coiny",
-    "staking": "nagrody za staking",
-    "buynow": "Kup $PEPENODE w przedsprzedaży teraz",
-    "bonus": "PEPENODE Token zdobywa bonusy w Meme Coinach — Airdropy dla najlepszych górników w $PEPE, $FARTCOIN i innych..."
+    "headline": "Token $SUBBD. Najlepsza platforma do tworzenia AI Agentów",
+    "description": "Token $SUBBD napędza nową generację twórców treści. Dzięki AI platforma SUBBD rewolucjonizuje relacje między twórcami a fanami.",
+    "tag": "2000+ Najlepiej Zarabiających Twórców",
+    "tag1": "250m+ Łącznych Obserwujących"
   }
 }

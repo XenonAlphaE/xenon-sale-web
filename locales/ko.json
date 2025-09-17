@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "PEPENODE Token 공식 웹사이트 | 밈 코인 채굴 토큰",
-    "description": "PEPENODE Token에 참여하여 가상으로 밈 코인을 채굴하세요. 하드웨어가 필요 없습니다. 당신의 Pepe Node 장비를 구축하고, 노드를 추가하며, 이 암호화폐 채굴 게임에서 수익을 얻으세요."
+    "title": "SUBBD | 궁극의 크리에이터 플랫폼",
+    "description": "SUBBD는 궁극의 크리에이터 플랫폼입니다. 베타에 참여하여 팬들과 소통하고, 콘텐츠를 수익화하며, 커뮤니티를 구축하세요."
   },
   "nav": {
     "home": "홈",
@@ -9,12 +9,12 @@
     "howtobuy": "구매 방법",
     "whitePaper": "백서",
     "tokenomics": "토크노믹스",
-    "features": "특징",
-    "buyNow": "$PEPENODE 구매",
+    "features": "기능",
+    "buyNow": "$SUBBD 구매",
     "faq": "자주 묻는 질문",
     "audit": "감사",
     "roadmap": "로드맵",
-    "airdrop": "에어드랍",
+    "airdrop": "에어드롭",
     "about": "소개"
   },
   "buyForm": {
@@ -25,33 +25,27 @@
     "mins": "분",
     "sec": "초",
     "funRaised": "모금된 USDT",
-    "wallet": "귀하의 지갑",
-    "boughtAmount": "구매한 금액",
-    "stakeableAmount": "스테이킹 가능 금액",
-    "pay": "지불 수단",
-    "get": "받기",
-    "buyNow": "$PEPENODE 구매",
+    "wallet": "내 지갑",
+    "boughtAmount": "구매한 수량",
+    "stakeableAmount": "스테이킹 가능 수량",
+    "pay": "지불 방식",
+    "get": "수령 수량",
+    "buyNow": "$SUBBD 구매",
     "buyMax": "최대 구매",
     "warning": "구매하려면 Metamask를 설치하세요",
     "link": "여기를 클릭",
     "connectWallet": "지갑 연결",
-    "ethOption": "ETH 네트워크",
+    "ethOption": "이더리움 네트워크",
     "switchOption": "네트워크 전환",
     "bnbOption": "BNB 네트워크",
-    "buyStake": "4569% 보상으로 구매 및 스테이킹",
-    "nextPriceAlert": "가격 상승까지",
+    "buyStake": "구매 후 69% 보상으로 스테이킹",
+    "nextPriceAlert": "가격 인상까지",
     "para1": "1102% 스테이킹 보상"
   },
   "header": {
-    "headline": "Pepenode Token 프리세일",
-    "headline1": "채굴해서 버는 밈코인",
-    "description": "PEPENODE Token으로 당신만의 가상 밈 코인 채굴 장비를 구축하세요.",
-    "description1": "노드를 구매하세요. 서버룸을 구축하세요. 노드를 결합하여 큰 보너스를 받으세요.",
-    "tag": "밈 노드 구매",
-    "tag1": "시설 업그레이드",
-    "tag2": "밈 코인 획득",
-    "staking": "스테이킹 보상",
-    "buynow": "지금 $PEPENODE 프리세일 구매",
-    "bonus": "PEPENODE Token은 밈 코인 보너스를 제공합니다 — $PEPE, $FARTCOIN 등 최고 채굴자들을 위한 에어드랍 포함..."
+    "headline": "$SUBBD 토큰. No.1 AI 에이전트 크리에이터 플랫폼",
+    "description": "$SUBBD 토큰은 차세대 콘텐츠 크리에이터를 위한 동력입니다. AI로 구동되는 SUBBD 플랫폼은 크리에이터와 팬의 관계를 혁신합니다.",
+    "tag": "상위 수익 크리에이터 2000명 이상",
+    "tag1": "총 팔로워 2억 5천만+"
   }
 }

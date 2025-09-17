@@ -1,57 +1,51 @@
 {
   "metadata": {
-    "title": "Επίσημη Ιστοσελίδα PEPENODE Token | Token Εξόρυξης Meme Coin",
-    "description": "Γίνε μέλος του PEPENODE Token και εξόρυξε meme coins εικονικά. Χωρίς ανάγκη για υλικό. Δημιούργησε το δικό σου Pepe Node rig, πρόσθεσε κόμβους και κέρδισε σε αυτό το παιχνίδι εξόρυξης crypto."
+    "title": "SUBBD | Απόλυτη Πλατφόρμα Δημιουργών",
+    "description": "Το SUBBD είναι η απόλυτη πλατφόρμα δημιουργών. Εγγραφείτε στη beta για να συνδεθείτε με το κοινό σας, να κερδίσετε από το περιεχόμενό σας και να χτίσετε την κοινότητά σας."
   },
   "nav": {
     "home": "ΑΡΧΙΚΗ",
     "staking": "STAKING",
-    "howtobuy": "ΠΩΣ ΝΑ ΑΓΟΡΑΣΕΙΣ",
+    "howtobuy": "ΠΩΣ ΝΑ ΑΓΟΡΑΣΕΤΕ",
     "whitePaper": "WHITE PAPER",
     "tokenomics": "TOKENOMICS",
     "features": "ΧΑΡΑΚΤΗΡΙΣΤΙΚΑ",
-    "buyNow": "ΑΓΟΡΑΣΕ $PEPENODE",
+    "buyNow": "ΑΓΟΡΑ $SUBBD",
     "faq": "ΣΥΧΝΕΣ ΕΡΩΤΗΣΕΙΣ",
     "audit": "ΕΛΕΓΧΟΣ",
-    "roadmap": "ΧΑΡΤΗΣ ΠΟΡΕΙΑΣ",
+    "roadmap": "ΟΔΙΚΟΣ ΧΑΡΤΗΣ",
     "airdrop": "AIRDROP",
     "about": "ΣΧΕΤΙΚΑ"
   },
   "buyForm": {
     "intro": "Αγορά",
-    "intro1": "Προσπώληση Τώρα",
+    "intro1": "Προπώληση Τώρα",
     "day": "Ημέρες",
     "hrs": "Ώρες",
     "mins": "Λεπτά",
     "sec": "Δευτ.",
-    "funRaised": "USDT Συγκεντρώθηκαν",
-    "wallet": "ΤΟ ΠΟΡΤΟΦΟΛΙ ΣΟΥ",
-    "boughtAmount": "Η ΑΓΟΡΑ ΣΟΥ",
-    "stakeableAmount": "ΔΙΑΘΕΣΙΜΟ ΓΙΑ STAKING",
+    "funRaised": "USDT Συγκεντρωμένα",
+    "wallet": "ΤΟ Πορτοφόλι Σας",
+    "boughtAmount": "ΤΟ ΠΟΣΟ ΠΟΥ ΑΓΟΡΑΣΑΤΕ",
+    "stakeableAmount": "ΠΟΣΟ ΓΙΑ STAKING",
     "pay": "Πληρωμή με",
     "get": "Λήψη",
-    "buyNow": "ΑΓΟΡΑΣΕ $PEPENODE",
-    "buyMax": "ΜΕΓΙΣΤΗ ΑΓΟΡΑ",
-    "warning": "Παρακαλώ εγκατέστησε το Metamask για να αγοράσεις",
-    "link": "κάνε κλικ εδώ",
+    "buyNow": "ΑΓΟΡΑ $SUBBD",
+    "buyMax": "ΑΓΟΡΑ MAX",
+    "warning": "Παρακαλώ εγκαταστήστε το Metamask για να αγοράσετε",
+    "link": "πατήστε εδώ",
     "connectWallet": "ΣΥΝΔΕΣΗ ΠΟΡΤΟΦΟΛΙΟΥ",
     "ethOption": "ΔΙΚΤΥΟ ETH",
     "switchOption": "ΑΛΛΑΓΗ ΔΙΚΤΥΟΥ",
     "bnbOption": "ΔΙΚΤΥΟ BNB",
-    "buyStake": "Αγόρασε και Κάνε Stake για 4569% Ανταμοιβές",
+    "buyStake": "Αγορά και Staking για 69% Ανταμοιβές",
     "nextPriceAlert": "ΜΕΧΡΙ ΤΗΝ ΑΥΞΗΣΗ ΤΙΜΗΣ",
-    "para1": "1102% ΑΝΤΑΜΟΙΒΕΣ STAKING"
+    "para1": "1102% ΑΝΤΑΜΟΙΒΕΣ ΑΠΟ STAKING"
   },
   "header": {
-    "headline": "Προσπώληση PEPENODE Token",
-    "headline1": "MINE-TO-EARN memecoin",
-    "description": "Το PEPENODE Token σου επιτρέπει να χτίσεις το δικό σου εικονικό σύστημα εξόρυξης meme coin.",
-    "description1": "Αγόρασε Κόμβους. Φτιάξε το Server Room σου. Συνδύασε Κόμβους για Τεράστια Bonus.",
-    "tag": "Αγόρασε Meme Κόμβους",
-    "tag1": "Αναβάθμισε Εγκαταστάσεις",
-    "tag2": "Κέρδισε Meme Coins",
-    "staking": "ανταμοιβές staking",
-    "buynow": "Αγόρασε $PEPENODE σε Προπώληση Τώρα",
-    "bonus": "Το PEPENODE Token αποδίδει bonus σε Meme Coins — Airdrops για Κορυφαίους Miners σε $PEPE, $FARTCOIN και άλλα..."
+    "headline": "Διακριτικό $SUBBD. Η Νο.1 Πλατφόρμα Δημιουργίας AI Agents",
+    "description": "Το διακριτικό $SUBBD ενισχύει τη νέα γενιά δημιουργών περιεχομένου. Με την υποστήριξη της τεχνητής νοημοσύνης, η πλατφόρμα SUBBD επαναστατεί στις σχέσεις δημιουργών-θαυμαστών.",
+    "tag": "2000+ Δημιουργοί με Υψηλά Έσοδα",
+    "tag1": "250+ εκατ. Συνολικοί Ακόλουθοι"
   }
 }

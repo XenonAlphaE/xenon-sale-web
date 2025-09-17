@@ -1,57 +1,51 @@
 {
   "metadata": {
-    "title": "PEPENODE Token Sito Ufficiale | Meme Coin Mining Token",
-    "description": "Unisciti a PEPENODE Token e mina meme coin virtualmente. Nessun hardware necessario. Costruisci il tuo rig Pepe Node, aggiungi nodi e guadagna in questo gioco di mining crypto."
+    "title": "SUBBD | Piattaforma Creativa Definitiva",
+    "description": "SUBBD è la piattaforma creativa definitiva. Unisciti alla beta per connetterti con il tuo pubblico, monetizzare i tuoi contenuti e costruire la tua community."
   },
   "nav": {
     "home": "HOME",
     "staking": "STAKING",
-    "howtobuy": "COME COMPRARE",
+    "howtobuy": "COME ACQUISTARE",
     "whitePaper": "WHITE PAPER",
     "tokenomics": "TOKENOMICS",
-    "features": "CARATTERISTICHE",
-    "buyNow": "ACQUISTA $PEPENODE",
+    "features": "FUNZIONALITÀ",
+    "buyNow": "ACQUISTA $SUBBD",
     "faq": "FAQ",
     "audit": "AUDIT",
     "roadmap": "ROADMAP",
     "airdrop": "AIRDROP",
-    "about": "INFO"
+    "about": "CHI SIAMO"
   },
   "buyForm": {
     "intro": "Acquista",
-    "intro1": "Presale Ora",
+    "intro1": "Prevendita Ora",
     "day": "Giorni",
     "hrs": "Ore",
     "mins": "Min",
     "sec": "Sec",
-    "funRaised": "USDT Raccimolati",
-    "wallet": "IL TUO Wallet",
+    "funRaised": "USDT Raccolti",
+    "wallet": "Il Tuo Wallet",
     "boughtAmount": "IL TUO ACQUISTO",
-    "stakeableAmount": "IL TUO STAKE",
+    "stakeableAmount": "IL TUO STAKING DISPONIBILE",
     "pay": "Paga con",
     "get": "Ricevi",
-    "buyNow": "ACQUISTA $PEPENODE",
+    "buyNow": "ACQUISTA $SUBBD",
     "buyMax": "ACQUISTA MAX",
     "warning": "Per favore installa Metamask per acquistare",
     "link": "clicca qui",
-    "connectWallet": "CONNETTI WALLET",
+    "connectWallet": "COLLEGA WALLET",
     "ethOption": "RETE ETH",
     "switchOption": "CAMBIA RETE",
     "bnbOption": "RETE BNB",
-    "buyStake": "Compra e Metti in Stake per ricompense del 4569%",
-    "nextPriceAlert": "FINO A INCREMENTO PREZZO",
-    "para1": "RICOMPENSE DI STAKING DEL 1102%"
+    "buyStake": "Acquista e Metti in Stake per Ricompense del 69%",
+    "nextPriceAlert": "FINO AL PROSSIMO AUMENTO DI PREZZO",
+    "para1": "1102% RICOMPENSE STAKING"
   },
   "header": {
-    "headline": "Presale Token Pepenode",
-    "headline1": "MINE-TO-EARN memecoin",
-    "description": "Il Token PEPENODE ti permette di costruire il tuo rig virtuale per minare meme coin.",
-    "description1": "Acquista Nodi. Costruisci la tua Server Room. Combina i Nodi per Grandi Bonus.",
-    "tag": "Acquista Meme Nodes",
-    "tag1": "Aggiorna le Strutture",
-    "tag2": "Guadagna meme Coins",
-    "staking": "ricompense staking",
-    "buynow": "Acquista ora il Presale di $PEPENODE",
-    "bonus": "Il Token PEPENODE offre bonus in Meme Coins — Airdrop per i migliori miners in $PEPE, $FARTCOIN e altro..."
+    "headline": "Token $SUBBD. La Piattaforma N.1 per Creatori con Agenti AI",
+    "description": "Il token $SUBBD alimenta la nuova generazione di creatori di contenuti. Grazie all'intelligenza artificiale, la piattaforma SUBBD rivoluziona le relazioni tra creatori e fan.",
+    "tag": "Oltre 2000 Creatori ai Vertici dei Guadagni",
+    "tag1": "Oltre 250M di Follower Combinati"
   }
 }

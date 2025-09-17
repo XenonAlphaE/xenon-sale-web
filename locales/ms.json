@@ -1,36 +1,36 @@
 {
   "metadata": {
-    "title": "Laman Web Rasmi Token PEPENODE | Token Perlombongan Meme Coin",
-    "description": "Sertai Token PEPENODE dan lombong meme coin secara maya. Tiada keperluan perkakasan. Bina rig Pepe Node anda, tambah nod, dan jana pendapatan dalam permainan perlombongan kripto ini."
+    "title": "SUBBD | Platform Pencipta Terulung",
+    "description": "SUBBD adalah platform pencipta terulung. Sertai beta untuk berhubung dengan audiens anda, memonetakan kandungan anda, dan membina komuniti anda."
   },
   "nav": {
-    "home": "UTAMA",
-    "staking": "STAKING",
-    "howtobuy": "CARA MEMBELI",
+    "home": "HALAMAN UTAMA",
+    "staking": "PELABURAN",
+    "howtobuy": "CARA UNTUK MEMBELI",
     "whitePaper": "KERTAS PUTIH",
-    "tokenomics": "TOKENOMICS",
+    "tokenomics": "TOKENOMIK",
     "features": "CIRI-CIRI",
-    "buyNow": "BELI $PEPENODE",
+    "buyNow": "BELI $SUBBD",
     "faq": "SOALAN LAZIM",
     "audit": "AUDIT",
     "roadmap": "PETA JALAN",
     "airdrop": "AIRDROP",
-    "about": "TENTANG"
+    "about": "MENGENAI"
   },
   "buyForm": {
     "intro": "Beli",
-    "intro1": "Jualan Awal Sekarang",
+    "intro1": "Presale Sekarang",
     "day": "Hari",
     "hrs": "Jam",
     "mins": "Minit",
     "sec": "Saat",
     "funRaised": "USDT Dikumpul",
-    "wallet": "DOMPET ANDA",
+    "wallet": "Dompet ANDA",
     "boughtAmount": "PEMBELIAN ANDA",
-    "stakeableAmount": "JUMLAH BOLEH STAKE",
+    "stakeableAmount": "PELABURAN ANDA",
     "pay": "Bayar dengan",
     "get": "Terima",
-    "buyNow": "BELI $PEPENODE",
+    "buyNow": "BELI $SUBBD",
     "buyMax": "BELI MAKSIMUM",
     "warning": "Sila pasang Metamask untuk membeli",
     "link": "klik di sini",
@@ -38,20 +38,14 @@
     "ethOption": "RANGKAIAN ETH",
     "switchOption": "TUKAR RANGKAIAN",
     "bnbOption": "RANGKAIAN BNB",
-    "buyStake": "Beli dan Stake untuk Ganjaran 4569%",
-    "nextPriceAlert": "SEHINGGA HARGA NAIK",
-    "para1": "GANJARAN STAKING 1102%"
+    "buyStake": "Beli dan Labur untuk 69% Ganjaran",
+    "nextPriceAlert": "SEHINGGA HARGA MENINGKAT",
+    "para1": "1102% GANJARAN STAKING"
   },
   "header": {
-    "headline": "Jualan Awal Token Pepenode",
-    "headline1": "MINE-TO-EARN memecoin",
-    "description": "Token PEPENODE membolehkan anda membina rig perlombongan meme coin maya anda sendiri.",
-    "description1": "Beli Nod. Bina Bilik Server Anda. Gabungkan Nod Untuk Bonus Besar.",
-    "tag": "Beli Nod Meme",
-    "tag1": "Tingkatkan Fasiliti",
-    "tag2": "Jana Coin Meme",
-    "staking": "ganjaran staking",
-    "buynow": "Beli $PEPENODE Jualan Awal Sekarang",
-    "bonus": "Token PEPENODE mendapat bonus dalam Meme Coin — Airdrop untuk Pelombong Terbaik dalam $PEPE, $FARTCOIN dan banyak lagi..."
+    "headline": "Token $SUBBD. Platform Pencipta Agen AI No.1",
+    "description": "Token $SUBBD memberi kuasa kepada generasi pencipta kandungan seterusnya. Dikuasakan oleh AI, platform SUBBD merevolusikan hubungan pencipta-fans.",
+    "tag": "2000+ Pencipta Pendapatan Teratas",
+    "tag1": "250j+ Pengikut Gabungan"
   }
 }

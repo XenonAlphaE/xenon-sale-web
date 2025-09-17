@@ -1,21 +1,21 @@
 {
   "metadata": {
-    "title": "Sitio Web Oficial de PEPENODE Token | Token de Minería de Meme Coins",
-    "description": "Únete al Token PEPENODE y mina meme coins virtualmente. No se necesita hardware. Construye tu equipo Pepe Node, añade nodos y gana en este juego de minería cripto."
+    "title": "SUBBD | Plataforma Definitiva para Creadores",
+    "description": "SUBBD es la plataforma definitiva para creadores. Únete a la beta para conectar con tu audiencia, monetizar tu contenido y construir tu comunidad."
   },
   "nav": {
     "home": "INICIO",
     "staking": "STAKING",
     "howtobuy": "CÓMO COMPRAR",
     "whitePaper": "WHITE PAPER",
-    "tokenomics": "TOKENOMICS",
+    "tokenomics": "TOKENOMÍA",
     "features": "CARACTERÍSTICAS",
-    "buyNow": "COMPRAR $PEPENODE",
+    "buyNow": "COMPRAR $SUBBD",
     "faq": "PREGUNTAS FRECUENTES",
     "audit": "AUDITORÍA",
     "roadmap": "HOJA DE RUTA",
     "airdrop": "AIRDROP",
-    "about": "SOBRE NOSOTROS"
+    "about": "ACERCA DE"
   },
   "buyForm": {
     "intro": "Comprar",
@@ -27,10 +27,10 @@
     "funRaised": "USDT Recaudados",
     "wallet": "TU Billetera",
     "boughtAmount": "TU COMPRA",
-    "stakeableAmount": "TU CANTIDAD EN STAKING",
+    "stakeableAmount": "TU CANTIDAD PARA STAKEAR",
     "pay": "Pagar con",
     "get": "Recibir",
-    "buyNow": "COMPRAR $PEPENODE",
+    "buyNow": "COMPRAR $SUBBD",
     "buyMax": "COMPRAR MÁXIMO",
     "warning": "Por favor instala Metamask para comprar",
     "link": "haz clic aquí",
@@ -38,20 +38,14 @@
     "ethOption": "RED ETH",
     "switchOption": "CAMBIAR RED",
     "bnbOption": "RED BNB",
-    "buyStake": "Compra y Haz Staking para Recompensas del 4569%",
-    "nextPriceAlert": "HASTA EL AUMENTO DE PRECIO",
-    "para1": "1102% RECOMPENSAS DE STAKING"
+    "buyStake": "Compra y Stakea para 69% de Recompensas",
+    "nextPriceAlert": "HASTA EL PRÓXIMO AUMENTO DE PRECIO",
+    "para1": "1102% DE RECOMPENSAS POR STAKING"
   },
   "header": {
-    "headline": "Preventa de Pepenode Token",
-    "headline1": "MINE-TO-EARN memecoin",
-    "description": "El Token PEPENODE te permite construir tu propia plataforma virtual de minería de meme coins.",
-    "description1": "Compra Nodos. Construye tu Sala de Servidores. Combina Nodos para Grandes Bonificaciones.",
-    "tag": "Compra Meme Nodes",
-    "tag1": "Mejora Instalaciones",
-    "tag2": "Gana Meme Coins",
-    "staking": "recompensas de staking",
-    "buynow": "Compra la Preventa de $PEPENODE Ahora",
-    "bonus": "El Token PEPENODE gana bonificaciones en Meme Coins — Airdrops para los Mejores Mineros en $PEPE, $FARTCOIN y más..."
+    "headline": "Token $SUBBD. La Plataforma de Creadores N.º 1 con Agentes de IA",
+    "description": "El token $SUBBD impulsa a la próxima generación de creadores de contenido. Impulsada por IA, la plataforma SUBBD revoluciona la relación entre creadores y fans.",
+    "tag": "2000+ Creadores Mejor Pagados",
+    "tag1": "250M+ Seguidores Combinados"
   }
 }

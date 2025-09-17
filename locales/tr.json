@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "title": "PEPENODE Token Resmi Web Sitesi | Meme Coin Madencilik Tokenı",
-    "description": "PEPENODE Token'a katılın ve meme coinleri sanal olarak madencilik yapın. Donanım gerekmez. Pepe Node rig'inizi kurun, düğümler ekleyin ve bu kripto madencilik oyununda kazanın."
+    "title": "SUBBD | Nihai Yaratıcı Platformu",
+    "description": "SUBBD nihai yaratıcı platformudur. İzleyicilerinizle bağlantı kurmak, içeriğinizi paraya dönüştürmek ve topluluğunuzu oluşturmak için betaya katılın."
   },
   "nav": {
     "home": "ANASAYFA",
     "staking": "STAKING",
     "howtobuy": "NASIL ALINIR",
-    "whitePaper": "BEYAZ KİTAP",
+    "whitePaper": "BEYAZ SAYFA",
     "tokenomics": "TOKENOMİK",
     "features": "ÖZELLİKLER",
-    "buyNow": "$PEPENODE SATIN AL",
+    "buyNow": "$SUBBD AL",
     "faq": "SSS",
     "audit": "DENETİM",
     "roadmap": "YOL HARİTASI",
@@ -26,32 +26,26 @@
     "sec": "Saniye",
     "funRaised": "Toplanan USDT",
     "wallet": "CÜZDANINIZ",
-    "boughtAmount": "SATIN ALDIKLARINIZ",
-    "stakeableAmount": "STAKELANABİLİR MİKTARINIZ",
+    "boughtAmount": "SATIN ALDINIZ",
+    "stakeableAmount": "STAKELANABİLİR",
     "pay": "İle Öde",
     "get": "Al",
-    "buyNow": "$PEPENODE SATIN AL",
-    "buyMax": "MAKSİMUM SATIN AL",
+    "buyNow": "$SUBBD AL",
+    "buyMax": "MAKS AL",
     "warning": "Satın almak için lütfen Metamask kurun",
     "link": "buraya tıklayın",
     "connectWallet": "CÜZDAN BAĞLA",
     "ethOption": "ETH AĞI",
     "switchOption": "AĞI DEĞİŞTİR",
     "bnbOption": "BNB AĞI",
-    "buyStake": "%4569 Ödüller İçin Satın Al ve Stake Et",
+    "buyStake": "%69 Ödüller İçin Satın Al ve Stake Et",
     "nextPriceAlert": "FİYAT ARTIŞINA KADAR",
     "para1": "%1102 STAKING ÖDÜLLERİ"
   },
   "header": {
-    "headline": "Pepenode Token Ön Satış",
-    "headline1": "MINE-TO-EARN memecoin",
-    "description": "PEPENODE Token, kendi sanal meme coin madencilik rig’inizi kurmanızı sağlar.",
-    "description1": "Düğümler Satın Alın. Sunucu Odası Kurun. Büyük Bonuslar İçin Düğümleri Birleştirin.",
-    "tag": "Meme Düğümleri Satın Al",
-    "tag1": "Tesisleri Yükselt",
-    "tag2": "Meme Coin Kazanın",
-    "staking": "staking ödülleri",
-    "buynow": "Şimdi $PEPENODE Ön Satışını Satın Al",
-    "bonus": "PEPENODE Token, Meme Coinlerde bonus kazanır — En İyi Madenciler İçin $PEPE, $FARTCOIN ve daha fazlasında Airdroplar..."
+    "headline": "$SUBBD Token. No.1 AI Agent Creator Platformu",
+    "description": "$SUBBD token, yeni nesil içerik yaratıcılarını güçlendirir. Yapay Zeka destekli SUBBD platformu, yaratıcı ve hayran ilişkilerini devrim niteliğinde değiştirir.",
+    "tag": "2000+ En Çok Kazanan Yaratıcılar",
+    "tag1": "250m+ Toplam Takipçi"
   }
 }

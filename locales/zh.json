@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "title": "PEPENODE Token 官方网站 | Meme 币挖矿代币",
-    "description": "加入 PEPENODE Token，虚拟挖掘 Meme 币。无需硬件。搭建你的 Pepe Node 矿机，添加节点，在这个加密挖矿游戏中赚钱。"
+    "title": "SUBBD | 终极创作者平台",
+    "description": "SUBBD 是终极创作者平台。加入测试版，连接你的观众，实现内容变现，打造你的社区。"
   },
   "nav": {
     "home": "首页",
     "staking": "质押",
-    "howtobuy": "购买指南",
+    "howtobuy": "如何购买",
     "whitePaper": "白皮书",
     "tokenomics": "代币经济学",
-    "features": "特点",
-    "buyNow": "购买 $PEPENODE",
+    "features": "功能",
+    "buyNow": "购买 $SUBBD",
     "faq": "常见问题",
     "audit": "审计",
     "roadmap": "路线图",
@@ -19,39 +19,33 @@
   },
   "buyForm": {
     "intro": "购买",
-    "intro1": "预售进行中",
+    "intro1": "预售中",
     "day": "天",
     "hrs": "小时",
     "mins": "分钟",
     "sec": "秒",
     "funRaised": "筹集 USDT",
     "wallet": "你的钱包",
-    "boughtAmount": "你的购买量",
+    "boughtAmount": "你已购买",
     "stakeableAmount": "可质押数量",
     "pay": "支付方式",
     "get": "获得",
-    "buyNow": "购买 $PEPENODE",
+    "buyNow": "购买 $SUBBD",
     "buyMax": "购买最大量",
-    "warning": "请安装 Metamask 进行购买",
+    "warning": "请安装 Metamask 以购买",
     "link": "点击这里",
     "connectWallet": "连接钱包",
     "ethOption": "以太坊网络",
     "switchOption": "切换网络",
-    "bnbOption": "币安智能链网络",
-    "buyStake": "购买并质押，享受 4569% 奖励",
-    "nextPriceAlert": "距离价格上涨",
+    "bnbOption": "币安链网络",
+    "buyStake": "购买并质押，享受 69% 奖励",
+    "nextPriceAlert": "价格上涨倒计时",
     "para1": "1102% 质押奖励"
   },
   "header": {
-    "headline": "Pepenode Token 预售",
-    "headline1": "边挖边赚 Meme 币",
-    "description": "PEPENODE Token 让你搭建自己的虚拟 Meme 币挖矿矿机。",
-    "description1": "购买节点，打造你的服务器机房，组合节点获得丰厚奖励。",
-    "tag": "购买 Meme 节点",
-    "tag1": "升级设施",
-    "tag2": "赚取 Meme 币",
-    "staking": "质押奖励",
-    "buynow": "立即购买 $PEPENODE 预售",
-    "bonus": "PEPENODE Token 可赚取 Meme 币奖励 — $PEPE、$FARTCOIN 等顶级矿工空投奖励..."
+    "headline": "$SUBBD Token。第一的 AI 代理创作者平台",
+    "description": "$SUBBD 代币驱动下一代内容创作者。由 AI 支持，SUBBD 平台革新创作者与粉丝的关系。",
+    "tag": "2000+ 顶级高收入创作者",
+    "tag1": "2.5亿+ 综合粉丝"
   }
 }
