@@ -7,6 +7,12 @@
         "tokenPrice":"0.0026",
         "totalStaked": 400102024
     },
+    "lastestUpdated": "2025-09-18T00:00:00Z",
+
+    "lastestRaise": 14851238.02,
+
+    "dailyRaise" : 50000,
+
     "previousRaised":5009043.52,
     "previousSoldTokens":0,
     "endSaleTime":"2024-11-21T09:00:00Z",

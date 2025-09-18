@@ -145,6 +145,104 @@ export function formatTokenNumber(num) {
 
 
 export function roundUpToNextMillion(num) {
-  const million = 1_000_000;
-  return Math.ceil((num + 1) / million) * million;
+  const unit = 300_000;
+  return Math.ceil((num + 1) / unit) * unit;
+}
+
+export function formatIntNumber(num) {
+  // Convert string to number if necessary
+  const parsedNum = typeof num === 'string' ? parseFloat(num.replace(/,/g, '')) : num;
+
+  // Handle invalid input
+  if (isNaN(parsedNum)) {
+    throw new Error('Invalid input: must be a valid number or numeric string');
+  }
+
+  return parsedNum
+    .toFixed(0) // Round to 2 decimal places
+    .replace(/\B(?=(\d{3})+(?!\d))/g, ","); // Add commas as thousand separators
+}
+
+
+export function toPaddedSymbol(symbolStr, padChar = '_', length = 8) {
+  const buf = Buffer.alloc(length, padChar);
+  buf.write(symbolStr);
+  return buf;
+}
+
+
+export function parseAmountToBN(
+  text,
+  decimals,
+  rounding
+) {
+  const s = text.trim().replace(/_/g, "").replace(/,/g, "");
+  if (!/^[+-]?\d*(\.\d*)?$/.test(s)) throw new Error("Invalid number format");
+
+  const neg = s.startsWith("-");
+  const [intPartRaw, fracPartRaw = ""] = s.replace(/^[+-]/, "").split(".");
+  const intPart = intPartRaw === "" ? "0" : intPartRaw;
+  const pow = new BN(10).pow(new BN(decimals));
+  const fracPart = (fracPartRaw + "0".repeat(decimals)).slice(0, decimals);
+
+  let n = new BN(intPart).mul(pow).add(new BN(fracPart || "0"));
+
+  if (fracPartRaw.length > decimals && rounding !== "truncate") {
+    const nextDigit = parseInt(fracPartRaw[decimals] || "0", 10);
+    const hasExtraNonZero = /[1-9]/.test(fracPartRaw.slice(decimals + 1));
+    if (rounding === "round" && (nextDigit > 5 || (nextDigit === 5 && hasExtraNonZero))) {
+      n = n.addn(1);
+    } else if (rounding === "ceil" && (nextDigit > 0 || hasExtraNonZero)) {
+      n = n.addn(1);
+    }
+  }
+
+  return neg ? n.neg() : n;
+}
+
+export const parseSolToLamportsBN = (text, rounding) => // "truncate"|"round"|"ceil") =>
+  parseAmountToBN(text, 9, rounding);
+
+// lamports → SOL
+export function lamportsToSol(lamports) {
+  return lamports / LAMPORTS_PER_SOL;
+}
+
+export function calculateRaise(
+  lastestUpdated,
+  lastestRaise,
+  dailyRaise
+) {
+  const lastUpdated = new Date(lastestUpdated).getTime() / 1000; // Convert to seconds
+  const currentTime = Math.floor(Date.now() / 1000); // Current timestamp in seconds
+  const differenceInSeconds = currentTime - lastUpdated; // Difference in seconds
+  const fullDatePortions  = Math.floor(differenceInSeconds / 86400) ;
+  const portionMins = ((differenceInSeconds % 86400)  / 60 ); // 30-sec portions
+  const baseIncreasePerMins = dailyRaise / 1440; // Normal increase per portion (since 2880 periods in a day)
+
+
+  let totalIncrease = fullDatePortions * dailyRaise
+  let sumPortions = 0;
+  // ✅ 60 multipliers
+  const portionMultipliers = [
+    0, 0.5, 2.0, 0, 3.5, 1.2, 0.8, 4.5, 0, 1.0,
+    2.5, 0, 1.3, 5.0, 0.7, 0, 6.0, 0.4, 2.0, 0,
+    3.0, 1.1, 0, 4.8, 0.6, 2.2, 0, 1.5, 5.5, 0,
+    0.9, 3.8, 0, 2.0, 1.4, 0, 6.0, 0.5, 1.0, 0,
+    4.2, 0.8, 0, 2.6, 1.1, 0, 3.9, 0.7, 0, 5.0,
+    1.2, 0, 2.0, 0.6, 4.4, 0, 1.3, 0.9, 0, 6.0
+  ];
+
+  for (let i = 0; i < portionMins; i++) {
+    const mod = i % portionMultipliers.length;
+    sumPortions += portionMultipliers[mod];
+  }
+debugger
+  totalIncrease += sumPortions * baseIncreasePerMins;
+  const newRaise = lastestRaise + totalIncrease;
+
+  return {
+    currentRaise: newRaise,
+    nextRaise: roundUpToNextMillion(newRaise),
+  };
 }
