@@ -85,6 +85,8 @@
     width: 70%;
     @media (max-width: 1024px) {
         text-align: center;
+        width: 100%;
+
     }
 
   }
@@ -96,6 +98,8 @@
     gap: 2rem;
 
     @media (max-width: 1024px) {
+        flex-direction: column;
+        gap: 4rem;
 
     }
 
@@ -111,7 +115,13 @@
     font-family: sans-serif;
     row-gap: 2rem;
     padding: 20px 25px;
-    margin: 0 8px;
+    margin: 0;
+    @media (max-width: 1024px) {
+        padding: 1rem;
+        margin: 0;
+        row-gap: 1rem;
+
+    }
 
   }
   
@@ -215,24 +225,7 @@
         text-align: center;
       }
     
-    .flexRow {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        gap: 1rem;
-        margin-bottom: 1rem;
-        overflow: auto;
-        padding: 1em;
-        justify-content: flex-start;
-
-    }
-
-    .flex3 {
-        flex: unset;
-        min-width: 260px;
-        width: 80vw;
-    }
-
+   
     .buyNow{
         align-self: center;
     }
