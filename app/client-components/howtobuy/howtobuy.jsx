@@ -6,52 +6,45 @@ import { useI18nSection } from '../../../redux/utils/languageUtils';
 
 import styles from './howtobuy.module.css';
 import HowToBuyPromoBanner from './PromoBanner';
+import { step } from 'viem/chains';
 
 
 const howToBuyContents = [
   {
     "number": "1",
-    "title": "step 1",
+    "title": "Buy With Crypto",
     "contents": [
-      "Get some crypto from your preferred exchange. If you don’t yet have a wallet, consider using MetaMask.",
+      "Connect your wallet and swap ETH, BNB, USDT, or USDC to secure your allocation of $SUBBD tokens. Save a little ETH or BNB for gas fees to complete your transaction smoothly.",
     ]
   },
 
   {
     "number": "2",
-    "title": "step 2",
+    "title": "Buy With Other Network",
     "contents": [
-      "With crypto in your wallet, you’re ready to participate in the $HYPER crypto presale. Click any Buy or Connect Wallet buttons on the website to start."
+      "Buy the $SUBBD token crypto presale directly with your bank card in just a few clicks. Connect a crypto wallet such as Trust Wallet to proceed and claim your tokens once the presale ends."
     ]
   },
   
   {
     
     "number": "3",
-    "title": "step 3",
+    "title": "Stake Your $SUBBD",
     "contents": [
-      "Choose the amount of $HYPER you want to buy and confirm the transaction in your wallet. To stake at the same time, select the Buy and Stake option."
-    ]
-  },
-  {
-   
-    "number": "4",
-    "title": "step 4 (Card)",
-    "contents": [
-      "If paying by card, connect your mobile crypto wallet or browser extension wallet and choose Buy With Card. You’ll need this wallet to receive your tokens."
+      "Stake $SUBBD tokens straight away for 20% APY and receive exclusive benefits when the platform is live. Staked tokens can be withdrawn 7 days after presale claiming goes live."
     ]
   }
 ]
 
 
-function HowToBuyCard({ cardClass, title, contents }) {
+function HowToBuyCard({ title, contents, number }) {
   return (
-      <div className={cardClass}>
-        <div className={styles.cardNumber}></div>
+      <div className={styles.card}>
+        <div className={styles.cardNumber}>{number}</div>
         <div className={styles.cardTitle}>{title}</div>
         
         {contents?.map((content, i) => (
-          <div>{content} </div>
+          <div className={styles.cardContent}>{content} </div>
         ))}
       </div>
 
@@ -62,7 +55,6 @@ function HowToBuyCard({ cardClass, title, contents }) {
 export const HowToBuy = () => {
     const sectionText = useI18nSection('howtobuy')
 
-    const howToBuyContents = sectionText?.contents
 
     const scrollToBuySection = () => {
         // Find the target section to scroll to
@@ -81,37 +73,27 @@ export const HowToBuy = () => {
   return (
     <section  className={styles.container} id='howtobuy'>
       <div className={styles.mainContent}>
-        <HowToBuyPromoBanner/>
-
         <h1 className={styles.title}>
-            {sectionText?.title}
+How To Buy
         </h1>
         
-        <div className={styles.flexRow}>
-          <div className={styles.flex3}>
-              <HowToBuyCard cardClass={styles.card} number={howToBuyContents?.[0].number} title={howToBuyContents?.[0].title}  contents={howToBuyContents?.[0].contents}/>
-          </div>
-          <div className={styles.flex3}>
-              <HowToBuyCard cardClass={`${styles.card} ${styles.operationCard}`} number={howToBuyContents?.[1].number} title={howToBuyContents?.[1].title}  contents={howToBuyContents?.[1].contents}/>
+        <h1 className={styles.title1}>
+<span style={{color:'#fe3642'}}>$</span>SUBBD Token Crypto Presale
+        </h1>
 
-          </div>
-          <div className={styles.flex3}>
-              <HowToBuyCard cardClass={`${styles.card} ${styles.settlementCard}`} number={howToBuyContents?.[2].number} title={howToBuyContents?.[2].title}  contents={howToBuyContents?.[2].contents}/>
+        <p className={styles.desc}>
+          Buy the $SUBBD token crypto presale and stake to enjoy premium features like subscription discounts, exclusive content, and XP multipliers. Unlock the full potential of AI-powered content!
+        </p>
+    
 
-          </div>
-          <div className={styles.flex3}>
-              <HowToBuyCard cardClass={`${styles.card} ${styles.settlementCard}`} number={howToBuyContents?.[2].number} title={howToBuyContents?.[2].title}  contents={howToBuyContents?.[2].contents}/>
-
-          </div>
-
-        
-        
+        <div className={styles.cardList }>
+            {howToBuyContents.map(x=> HowToBuyCard(x))}
         </div>
-        
+
+
         <div className={styles.buyNowContainer}>
-            <button className={styles.buyNow} onClick={scrollToBuySection}>
-                {sectionText?.buyNow}
-            </button>
+              <button className={styles.buynow} onClick={scrollToBuySection}>Buy $SUBBD Now</button>
+
         
         
         </div>

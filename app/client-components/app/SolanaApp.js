@@ -40,8 +40,9 @@ const SolanaApp = () => {
     <div className={styles.container}>
           <SolanaNavbar />
           <SolanaHeader/>
-          <AppSpinner/>
-          {/* <About /> */}
+          <About /> 
+          <HowToBuy />
+          <AppSpinner />          {/* <About /> */}
           {/* <Tokenomics /> */}
           {/* <TrustedBy/> */}
           {/* <Roadmap /> */}
