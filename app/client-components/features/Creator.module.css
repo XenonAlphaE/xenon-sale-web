@@ -21,6 +21,11 @@
     transform: translate(-50%, -50%);
     filter: blur(300px);
     z-index: 0;
+    @media (max-width: 1024px) {
+        height: auto;
+        width: 100%;
+    }
+
 }
 
   .mainContent{
