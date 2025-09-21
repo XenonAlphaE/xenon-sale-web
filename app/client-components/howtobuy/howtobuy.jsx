@@ -5,8 +5,7 @@ import React from 'react';
 import { useI18nSection } from '../../../redux/utils/languageUtils';
 
 import styles from './howtobuy.module.css';
-import HowToBuyPromoBanner from './PromoBanner';
-import { step } from 'viem/chains';
+  import { Creator } from '../features/Creator';
 
 
 const howToBuyContents = [
@@ -99,7 +98,7 @@ How To Buy
         </div>
       
 
-    
+        <Creator />
       </div>
     </section>
   );
