@@ -174,18 +174,18 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
         let claimInfo = null;
 
         
-        if(nativeNetwork==='eth'){
-            tokenAddress = globalConfigs?.ETH['targetToken']?.address
-            claimInfo = globalConfigs.ETH['claims'][0]
-        }
-        if(nativeNetwork==='bsc'){
-            tokenAddress = globalConfigs?.BSC['targetToken']?.address
-            claimInfo = globalConfigs.BSC['claims'][0]
-        }
-        if(nativeNetwork==='base'){
-            tokenAddress = globalConfigs?.BASE['targetToken']?.address
-            claimInfo = globalConfigs.BASE['claims'][0]
-        }
+        // if(nativeNetwork==='eth'){
+        //     tokenAddress = globalConfigs?.ETH['targetToken']?.address
+        //     claimInfo = globalConfigs.ETH['claims'][0]
+        // }
+        // if(nativeNetwork==='bsc'){
+        //     tokenAddress = globalConfigs?.BSC['targetToken']?.address
+        //     claimInfo = globalConfigs.BSC['claims'][0]
+        // }
+        // if(nativeNetwork==='base'){
+        //     tokenAddress = globalConfigs?.BASE['targetToken']?.address
+        //     claimInfo = globalConfigs.BASE['claims'][0]
+        // }
 
         return {
             claimInfo,
