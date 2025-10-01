@@ -32,6 +32,13 @@ export const NETWORK_OTIONS = {
       symbol:"eth"
 
     },
+    sepolia: {
+      img: '/img/default/ETH.svg',
+      name: "Sepolia Ether",
+      chainId: 11155111,
+      symbol:"eth"
+
+    },
     base: {
       img: '/img/default/base.svg',
       name: "BASE NETWORK",
@@ -79,6 +86,10 @@ export const CURRENCIES = {
     arb:[
         { text: 'ARB ETH', imageSrc: '/img/default/arb.svg', icon:"/img/default/ETH.svg", curr: CURR_CODE.ETH },
         { text: 'USDT', imageSrc: '/img/default/usdt.svg',  icon:"/img/default/usdt.svg",curr: CURR_CODE.USDT },
+    ],
+    sepolia:[
+        { text: 'Sepolia ETH', imageSrc: '/img/default/eth.svg', icon:"/img/default/ETH.svg", curr: CURR_CODE.ETH },
+        { text: 'Test USDT', imageSrc: '/img/default/usdt.svg',  icon:"/img/default/usdt.svg",curr: CURR_CODE.USDT },
     ],
 
     solana:[
