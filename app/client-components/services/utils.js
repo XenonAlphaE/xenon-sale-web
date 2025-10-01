@@ -113,7 +113,7 @@ export const useCountdown = () => {
 export function getRandomItemFromArray(input, defaultValue = null) {
   // Check if input is undefined or null (falsy)
   if (input === undefined || input === null) {
-    throw new TypeError('Input cannot be undefined or null');
+    return defaultValue;
   }
 
   // Convert input to an array (if not already)

@@ -213,11 +213,33 @@ export const getSolanaPriceSignature = async () => {
     return signatureData?.data ?? null
 }
 
-export const getSolanaUserInfo= async(program, buyerInfoPda) => {
-    const buyerBalance = await program.account.buyerInfo.fetch(buyerInfoPda);
-    setPurchaseInfo( {   
-        totalBought: buyerBalance.amount.toNumber(),
-        stakedAmount: buyerBalance.staked.toNumber(),
-        stakeableAmount: buyerBalance.amount.toNumber() - buyerBalance.staked.toNumber()
-    })
-} 
+
+export const signPurchaseInfo = async ({purchaseSignatureEndpoint, key, tokenPrice, buyAmount, deltaStake}) => {
+    debugger
+    const OraclePriceAPI = axios.create({
+        baseURL: purchaseSignatureEndpoint
+    });
+
+    const signatureData = await OraclePriceAPI.post(
+        "/api/eth/sign",   // <-- must be string (relative path)
+        {
+            key,
+            tokenPrice: tokenPrice.toString(),
+            buyAmount: buyAmount.toString(),
+            deltaStake: deltaStake.toString()
+        }
+    )
+    console.log("Type:", signatureData.constructor.name);
+
+    debugger
+    console.log("Status:", signatureData.status);
+    console.log("Headers:", signatureData.headers);
+    console.log("Response data:", signatureData.data);
+
+
+    return signatureData?.data ?? null
+
+
+
+
+}
