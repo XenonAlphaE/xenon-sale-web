@@ -35,7 +35,7 @@ export const calculateTokenOutput = (usdAmount, tokenPrice) => {
 // Function to calculate number of tokens for a given amount of BNB
 export const calculateTokensForBNB = (bnbAmount, bnbToUsdtRate, tokenToUsdtRate) => {
     const bnbValueInUSDT = new Decimal(bnbAmount).times(bnbToUsdtRate);
-    const tokenAmount = bnbValueInUSDT.div(tokenToUsdtRate).floor();
+    const tokenAmount = bnbValueInUSDT.div(tokenToUsdtRate).toFixed(3);
     return tokenAmount;
 };
 

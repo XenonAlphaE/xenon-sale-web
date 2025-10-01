@@ -13,10 +13,11 @@ import {
   calculateTokensForBNB, calculateBNBNeeded, isValidNumber, truncateMiddle
 } from '../services/wallet-service';
 import {CurrencyDropdown} from "../currency-dropdown/CurrencyDropdown";
-import configs from '../config.main.json'
 import styles from  './buyform.module.css'
 import { useAppSolanaWallet } from "../../solanaWallet-provider";
+import { useGlobalConfig } from "../../globalConfig-provider";
 export const SolanaBuyForm = () => {
+    const configs = useGlobalConfig()
     const sectionText = useI18nSection('buyForm')
     const walletSol = useAppSolanaWallet()
     const currList = CURRENCIES['solana']

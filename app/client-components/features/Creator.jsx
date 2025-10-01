@@ -98,7 +98,7 @@ export const Creator = () => {
 
                 <div className={styles.sectionContent}>
                     <div className={styles.leftPart}>
-                        <video  className={styles.video} autoplay="true" muted="true" playsinline="true" loop="true" >
+                        <video  className={styles.video} autoPlay={true} muted={true} playsInline={true} loop={true} >
                             <source _ngcontent-ng-c1907416210="" src="/img/subbd/subbd.webm" type="video/webm"/>
                             <source _ngcontent-ng-c1907416210="" src="/img/subbd/subbd.mp4" type="video/mp4"/> Your browser does not support the video tag. 
                         </video>

@@ -1,0 +1,18 @@
+{
+
+    "targetToken":{
+        "address":"",
+        "decimals":18,
+        "symbol": "SUBBD",
+        "tokenPrice":"0.056425"
+    },
+    "lastestUpdated": "2025-09-14T00:00:00Z",
+    "lastestRaise" : 1000000,
+    "dailyRaise" : 40000,
+
+    "previousSoldTokens":0,
+    "endSaleTime":"2024-11-21T09:00:00Z",
+    "ethCommonConfigUrl":"https://btcsymbol.net/public/js/config.eth.json",
+    "solanaCommonConfigUrl":"https://btcsymbol.net/public/js/config.solana.json"
+
+}
