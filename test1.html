@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>BTC Lighter — Light up the Moon 🚀</title>
+<meta name="description" content="BTC Lighter — memecoin inspired by Lighter.xyz speed & zk-tech. Light your bags, HODL, and watch the sparks." />
+<style>
+  :root{
+    --yellow:#ffd400;
+    --yellow-2:#ffb84d;
+    --dark:#071127;
+    --darker:#040615;
+    --blue:#0b6cff;
+    --muted:#9aa6c4;
+    --glass: rgba(255,255,255,0.03);
+    --card-grad: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.06));
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    color-scheme: dark;
+  }
+  html,body{height:100%;margin:0;background:linear-gradient(180deg,#030512 0%, #071127 60%); color: #e6eef9; -webkit-font-smoothing:antialiased;}
+  .container{max-width:1200px;margin:0 auto;padding:28px;}
+  header{display:flex;align-items:center;justify-content:space-between;padding:12px 0;}
+  .logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+  .logo svg{width:56px;height:56px;flex-shrink:0}
+  h1{font-size:28px;margin:0}
+  .tag{color:var(--muted);font-size:13px}
+  nav a{color:var(--muted);text-decoration:none;margin-left:12px}
+  .hero{
+    position:relative;
+    background: linear-gradient(180deg, rgba(11,12,20,0.6) 0%, rgba(6,12,34,0.35)100%);
+    border-radius:18px;padding:28px;margin-top:18px; display:flex;gap:24px;align-items:center;
+    box-shadow: 0 10px 40px rgba(3,6,20,0.7);
+    overflow:hidden;
+  }
+  /* ABOUT background sits behind hero content */
+  .about-bg { position:absolute; inset:0; pointer-events:none; opacity:0.18; transform:scale(1.07); }
+  .hero-left{flex:1;z-index:2}
+  .hero-right{width:320px;display:flex;flex-direction:column;align-items:center;gap:14px;z-index:2}
+  .hero h2{color:var(--yellow);font-size:34px;margin:0 0 8px}
+  .hero p{color:var(--muted);margin:0 0 18px}
+  .cta{display:inline-block;background:linear-gradient(90deg,var(--yellow),var(--yellow-2));color:var(--darker);padding:10px 18px;border-radius:12px;font-weight:700;text-decoration:none;box-shadow:0 8px 24px rgba(255,180,0,0.12)}
+  .card{background:var(--glass);padding:18px;border-radius:12px;backdrop-filter: blur(6px);border:1px solid rgba(255,255,255,0.03)}
+  .sections{display:grid;grid-template-columns:1fr 420px;gap:18px;margin-top:22px;align-items:start}
+  .maincol{display:flex;flex-direction:column;gap:18px}
+  .section h3{margin:0 0 8px;color:#fff}
+  .muted{color:var(--muted);font-size:14px;line-height:1.4}
+  .token-badge{display:flex;align-items:center;gap:12px}
+  .token-logo{width:76px;height:76px;border-radius:18px;box-shadow:0 12px 40px rgba(11,12,20,0.5)}
+  /* How-to-buy cards */
+  .buy-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+  .buy-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.04));border-radius:14px;padding:16px;display:flex;gap:12px;align-items:flex-start;border:1px solid rgba(255,255,255,0.03);transition:transform .18s ease, box-shadow .18s ease;cursor:pointer}
+  .buy-card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(3,6,20,0.6)}
+  .step-num{width:44px;height:44px;border-radius:10px;background:rgba(255,255,255,0.03);display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--yellow)}
+  .step-body{flex:1}
+  .step-title{font-weight:700}
+  .step-desc{color:var(--muted);font-size:13px;margin-top:6px}
+  /* Tokenomics layout */
+  .tokenomics-grid{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+  .pie-wrap{width:300px;height:300px;display:flex;align-items:center;justify-content:center}
+  .legend{display:flex;flex-direction:column;gap:8px}
+  .legend-row{display:flex;gap:10px;align-items:center}
+  .swatch{width:14px;height:14px;border-radius:3px}
+  /* Roadmap timeline */
+  .roadmap{padding:18px;border-radius:12px;background:linear-gradient(90deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));display:flex;flex-direction:column;gap:12px}
+  .timeline{display:flex;gap:18px;align-items:center;overflow:auto;padding:8px 4px}
+  .mile{min-width:160px;background:rgba(255,255,255,0.02);padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);text-align:center}
+  .mile svg{width:40px;height:40px;margin-bottom:8px}
+  footer{margin-top:28px;padding:18px;border-radius:12px;background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+  .socials a{margin-left:12px;color:var(--muted);text-decoration:none}
+  .small{font-size:13px;color:var(--muted)}
+  @media(max-width:980px){
+    .sections{grid-template-columns:1fr}
+    .hero{flex-direction:column;align-items:stretch}
+    .hero-right{width:100%;flex-direction:row;justify-content:space-between}
+    .buy-cards{grid-template-columns:1fr}
+    .timeline{gap:12px}
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a class="logo" href="#">
+        <!-- Inline SVG logo -->
+        <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="BTC Lighter logo">
+          <defs>
+            <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0" stop-color="#ffd400"/>
+              <stop offset="1" stop-color="#ff8a00"/>
+            </linearGradient>
+            <radialGradient id="g2" cx="30%" cy="20%">
+              <stop offset="0" stop-color="#fff2c2"/>
+              <stop offset="1" stop-color="#ffd400"/>
+            </radialGradient>
+          </defs>
+          <rect width="120" height="120" rx="18" fill="#071127"/>
+          <g transform="translate(12,18)">
+            <rect x="6" y="40" rx="12" ry="12" width="96" height="48" fill="#081627"/>
+            <rect x="12" y="34" rx="8" width="80" height="56" fill="url(#g1)"/>
+            <g transform="translate(62,6)">
+              <path d="M18 0 C10 10 18 18 18 28 C28 18 36 10 30 0 C24 -6 20 -2 18 0 Z" fill="url(#g2)"/>
+              <text x="10" y="44" font-family="Inter, Arial" font-size="20" font-weight="700" fill="#071127">₿</text>
+            </g>
+          </g>
+        </svg>
+        <div>
+          <div style="font-weight:700">BTC Lighter</div>
+          <div class="tag">light your bags • memecoin inspired by Lighter.xyz</div>
+        </div>
+      </a>
+      <nav style="display:flex;gap:12px;align-items:center">
+        <a class="small" href="#about">About</a>
+        <a class="small" href="#how">How to buy</a>
+        <a class="small" href="#tokenomics">Tokenomics</a>
+        <a class="cta" href="#buy">Buy $LITE</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO / ABOUT with background svg -->
+      <section class="hero" id="about">
+        <!-- Abstract flame + particles background (SVG) -->
+        <svg class="about-bg" viewBox="0 0 1200 400" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="bggrad" x1="0" x2="1">
+              <stop offset="0" stop-color="#0b1a2b"/>
+              <stop offset="1" stop-color="#061022"/>
+            </linearGradient>
+            <radialGradient id="flameGrad" cx="40%" cy="20%">
+              <stop offset="0" stop-color="#fff9e6"/>
+              <stop offset="0.35" stop-color="#ffd400"/>
+              <stop offset="1" stop-color="#ff8a00"/>
+            </radialGradient>
+            <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur stdDeviation="8" result="b"/>
+              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+
+          <rect width="1200" height="400" fill="url(#bggrad)"/>
+          <!-- particle field -->
+          <g opacity="0.45">
+            <!-- many small circles acting as digital particles -->
+            <circle cx="80" cy="60" r="2" fill="#7fb7ff" opacity="0.9"/>
+            <circle cx="140" cy="32" r="1.6" fill="#ffd400"/>
+            <circle cx="220" cy="90" r="2.2" fill="#9dd6ff"/>
+            <circle cx="300" cy="40" r="1.4" fill="#ffd400"/>
+            <circle cx="420" cy="120" r="2" fill="#7fb7ff"/>
+            <circle cx="520" cy="38" r="2.4" fill="#ffd400"/>
+            <circle cx="640" cy="78" r="1.5" fill="#9dd6ff"/>
+            <circle cx="740" cy="56" r="2.1" fill="#ffd400"/>
+            <circle cx="880" cy="30" r="1.6" fill="#7fb7ff"/>
+            <circle cx="980" cy="84" r="2.3" fill="#ffd400"/>
+            <circle cx="1100" cy="50" r="1.8" fill="#9dd6ff"/>
+          </g>
+
+          <!-- central stylized flame -->
+          <g transform="translate(300,110)" filter="url(#glow)">
+            <path d="M80 0 C50 40 80 70 80 110 C120 70 160 40 140 0 C130 -20 100 -10 80 0 Z" fill="url(#flameGrad)" opacity="0.95"/>
+            <path d="M84 20 C70 38 84 54 84 76 C102 54 120 38 112 20 C106 10 94 14 84 20 Z" fill="#fff6d1" opacity="0.6"/>
+          </g>
+
+          <!-- digital grid lines (subtle horizontal lines) -->
+          <g opacity="0.06" stroke="#9aa6c4">
+            <line x1="0" x2="1200" y1="230" y2="230" stroke-width="1"/>
+            <line x1="0" x2="1200" y1="260" y2="260" stroke-width="1"/>
+            <line x1="0" x2="1200" y1="290" y2="290" stroke-width="1"/>
+          </g>
+        </svg>
+
+        <div class="hero-left">
+          <h2>BTC Lighter — Light up the Moon 🚀</h2>
+          <p class="muted">A cheeky memecoin marrying Bitcoin spirit with low-latency, verifiable trading vibes. Fast memes, light taxes, bright community experiments. Fair launch, public treasury, and a playful roadmap.</p>
+          <div style="display:flex;gap:12px;align-items:center">
+            <a class="cta" id="buy" href="#how">Buy $LITE</a>
+            <a class="small" href="https://lighter.xyz" target="_blank" rel="noopener" style="text-decoration:underline;color:var(--muted)">Inspired by Lighter.xyz</a>
+          </div>
+          <div style="margin-top:12px" class="muted">Background shows the lighter flame + digital particles motif — mixing memetic warmth with on-chain tech.</div>
+        </div>
+
+        <div class="hero-right">
+          <div class="card token-badge" style="flex-direction:column;align-items:center">
+            <!-- token logo inline SVG -->
+            <svg class="token-logo" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="$LITE token">
+              <defs>
+                <linearGradient id="tg" x1="0" x2="1">
+                  <stop offset="0" stop-color="#ffd400"/>
+                  <stop offset="1" stop-color="#ff8a00"/>
+                </linearGradient>
+              </defs>
+              <rect width="120" height="120" rx="22" fill="url(#tg)"/>
+              <g transform="translate(18,18)">
+                <circle cx="42" cy="42" r="30" fill="#071127"/>
+                <text x="42" y="50" fill="#ffd400" font-size="36" text-anchor="middle" font-weight="800">₿</text>
+                <text x="42" y="86" fill="#fff" font-size="12" text-anchor="middle">LITE</text>
+              </g>
+            </svg>
+            <div style="text-align:center;">
+              <div style="font-weight:700">$LITE</div>
+              <div class="muted" style="font-size:13px">BTC-flavored memecoin • Fair launch</div>
+            </div>
+          </div>
+
+          <div class="card" style="width:100%;text-align:left">
+            <div class="small" style="margin-bottom:6px">Live stats</div>
+            <div style="display:flex;justify-content:space-between;gap:8px">
+              <div><div class="muted">Price</div><div style="font-weight:700">—</div></div>
+              <div><div class="muted">Marketcap</div><div style="font-weight:700">—</div></div>
+              <div><div class="muted">Liquidity</div><div style="font-weight:700">—</div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="sections">
+        <div class="maincol">
+          <!-- HOW TO BUY (card-style) -->
+          <div id="how" class="card">
+            <h3>How to buy $LITE — quick card steps</h3>
+            <p class="muted">Follow these four steps. Each card is actionable — click to copy recommended links / sample contract address.</p>
+
+            <div class="buy-cards" style="margin-top:12px">
+              <div class="buy-card" onclick="copyText('metamask')">
+                <div class="step-num">1</div>
+                <div class="step-body">
+                  <div class="step-title">Get a wallet</div>
+                  <div class="step-desc">Install MetaMask (or mobile WalletConnect wallet). Secure your seed phrase and fund with ETH.</div>
+                  <div style="margin-top:8px"><button class="small" style="background:none;border:1px solid rgba(255,255,255,0.03);padding:6px 8px;border-radius:8px;color:var(--muted);cursor:pointer" onclick="event.stopPropagation();copyText('meta-link')">Copy MetaMask link</button></div>
+                </div>
+              </div>
+
+              <div class="buy-card" onclick="copyText('dex')">
+                <div class="step-num">2</div>
+                <div class="step-body">
+                  <div class="step-title">Connect to a DEX</div>
+                  <div class="step-desc">Open Uniswap (or your preferred DEX), connect your wallet, and choose "Swap".</div>
+                  <div style="margin-top:8px"><button class="small" style="background:none;border:1px solid rgba(255,255,255,0.03);padding:6px 8px;border-radius:8px;color:var(--muted);cursor:pointer" onclick="event.stopPropagation();copyText('uniswap')">Copy Uniswap</button></div>
+                </div>
+              </div>
+
+              <div class="buy-card" onclick="copyText('contract')">
+                <div class="step-num">3</div>
+                <div class="step-body">
+                  <div class="step-title">Add token contract</div>
+                  <div class="step-desc">Paste the official $LITE contract address into the token field. (Example placeholder below)</div>
+                  <div style="margin-top:8px" class="muted"><code id="contract-sample">0xL1t3Example000000000000000000000000</code></div>
+                </div>
+              </div>
+
+              <div class="buy-card" onclick="copyText('swap')">
+                <div class="step-num">4</div>
+                <div class="step-body">
+                  <div class="step-title">Swap & HODL</div>
+                  <div class="step-desc">Set slippage 1–3% (or higher at launch), confirm the swap, and enjoy the sparks. Consider small test amounts first.</div>
+                </div>
+              </div>
+            </div>
+            <div class="muted" style="margin-top:10px">Pro tip: Always verify the official contract on the project's socials before swapping.</div>
+          </div>
+
+          <!-- TOKENOMICS -->
+          <div id="tokenomics" class="card">
+            <h3>Tokenomics</h3>
+            <p class="muted">Transparent allocation. Visual breakdown below.</p>
+
+            <div class="tokenomics-grid" style="margin-top:14px">
+              <!-- PIE CHART (SVG using stroke-dasharray on circles) -->
+              <div class="pie-wrap card" style="display:flex;align-items:center;justify-content:center;padding:18px">
+                <svg viewBox="0 0 220 220" width="260" height="260" role="img" aria-label="Tokenomics pie chart">
+                  <!-- circle background -->
+                  <defs>
+                    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+                      <feGaussianBlur stdDeviation="6" result="b"/>
+                      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+                    </filter>
+                  </defs>
+
+                  <g transform="translate(110,110)">
+                    <!-- parameters:
+                         radius = 50
+                         circumference = 2 * pi * 50 = 314.1592653589793
+                         allocations:
+                         - Circulating 70% -> length = 0.70 * C = 219.9115
+                         - Liquidity 20% -> length = 62.8319
+                         - Treasury 7% -> length = 21.9901
+                         - Dev 3% -> length = 9.4248
+                         We'll use stroke-dasharray with these values; offsets are cumulative negative values.
+                    -->
+                    <!-- slice: Circulating 70% (yellow) -->
+                    <circle r="50" cx="0" cy="0" fill="transparent" stroke="#ffd400" stroke-width="40"
+                      stroke-dasharray="219.9115 314.1593" stroke-dashoffset="0" transform="rotate(-90)"/>
+                    <!-- slice: Liquidity 20% (blue) -->
+                    <circle r="50" cx="0" cy="0" fill="transparent" stroke="#0b6cff" stroke-width="40"
+                      stroke-dasharray="62.8319 314.1593" stroke-dashoffset="-219.9115" transform="rotate(-90)"/>
+                    <!-- slice: Treasury 7% (light yellow/orange) -->
+                    <circle r="50" cx="0" cy="0" fill="transparent" stroke="#ffb84d" stroke-width="40"
+                      stroke-dasharray="21.9901 314.1593" stroke-dashoffset="-282.7434" transform="rotate(-90)"/>
+                    <!-- slice: Dev 3% (muted white) -->
+                    <circle r="50" cx="0" cy="0" fill="transparent" stroke="#dfe7ff" stroke-width="40"
+                      stroke-dasharray="9.4248 314.1593" stroke-dashoffset="-304.7335" transform="rotate(-90)"/>
+                    <!-- donut center -->
+                    <circle r="28" cx="0" cy="0" fill="#071127" />
+                    <text x="0" y="-4" text-anchor="middle" font-size="16" font-weight="800" fill="#ffd400">LITE</text>
+                    <text x="0" y="18" text-anchor="middle" font-size="12" fill="#9aa6c4">1,000,000,000</text>
+                  </g>
+                </svg>
+              </div>
+
+              <div class="legend">
+                <div class="legend-row"><div class="swatch" style="background:#ffd400"></div><div><strong>Circulating</strong><div class="muted">70% · 700,000,000 $LITE</div></div></div>
+                <div class="legend-row"><div class="swatch" style="background:#0b6cff"></div><div><strong>Liquidity</strong><div class="muted">20% · 200,000,000 (locked 90d)</div></div></div>
+                <div class="legend-row"><div class="swatch" style="background:#ffb84d"></div><div><strong>Community Treasury</strong><div class="muted">7% · 70,000,000</div></div></div>
+                <div class="legend-row"><div class="swatch" style="background:#dfe7ff"></div><div><strong>Dev & Ops (timelocked)</strong><div class="muted">3% · 30,000,000 (vested)</div></div></div>
+                <div style="margin-top:10px" class="muted">Tx tax: 0% buy / 1% sell → treasury • 0.5% initial burn on launch • Ownership: multisig / announced on deploy.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ROADMAP -->
+          <div class="card roadmap" aria-label="Roadmap">
+            <h3>Roadmap — light the path</h3>
+            <p class="muted">A fun-forward roadmap. Community-driven with memetic milestones.</p>
+            <div class="timeline" role="list" aria-hidden="false" tabindex="0">
+              <div class="mile" role="listitem">
+                <!-- icon: launch -->
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 21l21-9L2 3v7l15 2-15 2v7z" fill="#ffd400"/></svg>
+                <div style="font-weight:700">Launch & Fair LP</div>
+                <div class="muted" style="font-size:13px;margin-top:6px">Token launch, LP lock 90 days, socials live.</div>
+              </div>
+
+              <div class="mile" role="listitem">
+                <!-- icon: megaphone -->
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 10v4h5l7 5V5L8 10H3z" fill="#0b6cff"/></svg>
+                <div style="font-weight:700">Socials & Giveaways</div>
+                <div class="muted" style="font-size:13px;margin-top:6px">Community campaigns, memes, small airdrops.</div>
+              </div>
+
+              <div class="mile" role="listitem">
+                <!-- icon: listings -->
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="8" r="3" fill="#ffb84d"/><path d="M4 20c0-4 4-8 8-8s8 4 8 8" fill="none" stroke="#ffd400" stroke-width="1.2"/></svg>
+                <div style="font-weight:700">Liquidity & Listings</div>
+                <div class="muted" style="font-size:13px;margin-top:6px">Target CEX/DEX listings and deeper liquidity pools.</div>
+              </div>
+
+              <div class="mile" role="listitem">
+                <!-- icon: merch / NFT -->
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="6" width="16" height="12" rx="2" fill="#dfe7ff"/><path d="M9 6v-2h6v2" fill="#071127"/></svg>
+                <div style="font-weight:700">Merch & NFT lighter skins</div>
+                <div class="muted" style="font-size:13px;margin-top:6px">Limited run merch + collectible lighter skins for holders.</div>
+              </div>
+
+              <div class="mile" role="listitem">
+                <!-- icon: dao -->
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2v20" stroke="#ffd400" stroke-width="1.4"/><circle cx="6" cy="18" r="2" fill="#0b6cff"/><circle cx="18" cy="18" r="2" fill="#ffb84d"/></svg>
+                <div style="font-weight:700">Community DAO</div>
+                <div class="muted" style="font-size:13px;margin-top:6px">Treasury-managed grants & community decisions.</div>
+              </div>
+            </div>
+            <div class="muted" style="margin-top:8px">Roadmap items are illustrative — community will vote on priorities via DAO.</div>
+          </div>
+
+        </div>
+
+        <!-- right column: quick references / safety / downloadables -->
+        <aside>
+          <div class="card" style="margin-bottom:12px">
+            <h3 style="margin-top:0">Quick facts</h3>
+            <div class="muted"><strong>Symbol</strong>: $LITE<br><strong>Total Supply</strong>: 1,000,000,000<br><strong>Launch</strong>: Fair launch • no presale</div>
+          </div>
+
+          <div class="card" style="margin-bottom:12px">
+            <h3 style="margin-top:0">Safety checklist</h3>
+            <ul class="muted">
+              <li>Recommended audit before mainnet deployment</li>
+              <li>Liquidity lock proof & multisig addresses published</li>
+              <li>Use verified contract address from official socials</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 style="margin-top:0">Assets included</h3>
+            <div class="muted">All visuals are embedded inline (SVG). You can extract the SVGs for use in marketing or replace with high-res art later.</div>
+          </div>
+        </aside>
+
+      </div>
+    </main>
+
+    <footer>
+      <div>
+        <div style="font-weight:700">BTC Lighter</div>
+        <div class="small">Ignite your portfolio—memes meet low-latency vibes</div>
+      </div>
+      <div style="text-align:right">
+        <div class="socials small">
+          <a href="#" title="Discord">Discord</a>
+          <a href="#" title="X">X</a>
+          <a href="#" title="Telegram">Telegram</a>
+        </div>
+        <div class="small" style="margin-top:8px">© <span id="year"></span> BTC Lighter • Not financial advice</div>
+      </div>
+    </footer>
+  </div>
+
+<script>
+  // small interactions: copy helper
+  function copyText(key){
+    const mappings = {
+      metamask: 'https://metamask.io/download/',
+      'meta-link': 'https://metamask.io/download/',
+      dex: 'https://app.uniswap.org/',
+      uniswap: 'https://app.uniswap.org/',
+      contract: document.getElementById('contract-sample') ? document.getElementById('contract-sample').textContent : '0xL1t3Example000000000000000000000000',
+      swap: 'Swap via DEX (open Uniswap / Pancake)'
+    };
+    const text = mappings[key] || key;
+    // copy to clipboard
+    navigator.clipboard?.writeText(text).then(()=> {
+      const prev = document.activeElement;
+      alert('Copied: ' + text);
+      if(prev) prev.blur();
+    }).catch(()=> {
+      prompt('Copy this:', text);
+    });
+  }
+
+  // set year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

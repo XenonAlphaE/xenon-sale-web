@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BTC Lighter — Light up the Moon 🚀</title>
+  <meta name="description" content="BTC Lighter — memecoin inspired by Lighter.xyz speed & zk-tech. Light your bags, HODL, and watch the sparks." />
+  <style>
+    :root{
+      --yellow:#ffd400;
+      --dark:#0b0f1a;
+      --blue:#0b6cff;
+      --muted:#9aa6c4;
+      --glass: rgba(255,255,255,0.04);
+      --card: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.06));
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,#061022 0%, #071024 60%); color: #e6eef9;}
+    .container{max-width:1100px;margin:0 auto;padding:28px;}
+    header{display:flex;align-items:center;justify-content:space-between;padding:12px 0;}
+    .logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+    .logo svg{width:56px;height:56px;flex-shrink:0}
+    h1{font-size:28px;margin:0}
+    .tag{color:var(--muted);font-size:13px}
+    .hero{
+      background: linear-gradient(180deg, rgba(11,12,20,0.6) 0%, rgba(6,12,34,0.35)100%);
+      border-radius:18px;padding:32px;margin-top:18px; display:flex;gap:24px;align-items:center;
+      box-shadow: 0 6px 30px rgba(3,6,20,0.7);
+    }
+    .hero-left{flex:1}
+    .hero-right{width:260px;display:flex;flex-direction:column;align-items:center;gap:14px}
+    .hero h2{color:var(--yellow);font-size:34px;margin:0 0 8px}
+    .hero p{color:var(--muted);margin:0 0 18px}
+    .cta{display:inline-block;background:linear-gradient(90deg,var(--yellow),#ffb84d);color:#071127;padding:10px 18px;border-radius:12px;font-weight:600;text-decoration:none}
+    .card{background:var(--glass);padding:18px;border-radius:12px;backdrop-filter:blur(4px);border:1px solid rgba(255,255,255,0.03)}
+    .sections{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:20px}
+    .section h3{margin:0 0 8px}
+    .muted{color:var(--muted);font-size:14px}
+    .token-badge{display:flex;align-items:center;gap:12px}
+    .token-logo{width:72px;height:72px;border-radius:20px;box-shadow:0 8px 30px rgba(11,12,20,0.5)}
+    .how-steps{display:flex;flex-direction:column;gap:10px}
+    .step{display:flex;gap:12px;align-items:flex-start}
+    .step .num{background:rgba(255,255,255,0.03);padding:8px;border-radius:10px;width:36px;height:36px;display:flex;align-items:center;justify-content:center;font-weight:700}
+    table{width:100%;border-collapse:collapse;margin-top:8px}
+    th,td{padding:10px;border-bottom:1px dashed rgba(255,255,255,0.03);text-align:left}
+    footer{margin-top:28px;padding:18px;border-radius:12px;background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));display:flex;justify-content:space-between;align-items:center}
+    .socials a{margin-left:12px;color:var(--muted);text-decoration:none}
+    .small{font-size:13px;color:var(--muted)}
+    @media(max-width:880px){
+      .sections{grid-template-columns:1fr}
+      .hero{flex-direction:column;align-items:stretch}
+      .hero-right{width:100%;flex-direction:row;justify-content:space-between}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a class="logo" href="#">
+        <!-- Inline SVG logo: a lighter + BTC flame -->
+        <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="BTC Lighter logo">
+          <defs>
+            <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0" stop-color="#ffd400"/>
+              <stop offset="1" stop-color="#ff8a00"/>
+            </linearGradient>
+            <radialGradient id="g2" cx="30%" cy="20%">
+              <stop offset="0" stop-color="#fff2c2"/>
+              <stop offset="1" stop-color="#ffd400"/>
+            </radialGradient>
+          </defs>
+          <rect width="120" height="120" rx="18" fill="#071127"/>
+          <!-- lighter body -->
+          <g transform="translate(18,28)">
+            <rect x="6" y="32" rx="10" ry="10" width="84" height="36" fill="#0b1a2b"/>
+            <rect x="12" y="26" rx="8" width="68" height="44" fill="url(#g1)"/>
+            <circle cx="18" cy="44" r="6" fill="#071127"/>
+            <!-- stylized BTC coin flame -->
+            <g transform="translate(58,6)">
+              <path d="M18 0 C10 10 18 18 18 28 C28 18 36 10 30 0 C24 -6 20 -2 18 0 Z" fill="url(#g2)"/>
+              <text x="10" y="40" font-family="Inter, Arial" font-size="22" font-weight="700" fill="#071127">₿</text>
+            </g>
+          </g>
+        </svg>
+        <div>
+          <div style="font-weight:700">BTC Lighter</div>
+          <div class="tag">light your bags • memecoin inspired by Lighter.xyz</div>
+        </div>
+      </a>
+      <nav style="display:flex;gap:12px;align-items:center">
+        <a class="small" href="#about">About</a>
+        <a class="small" href="#how">How to buy</a>
+        <a class="small" href="#tokenomics">Tokenomics</a>
+        <a class="cta" href="#buy">Buy $LITE</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-left">
+          <h2>BTC Lighter — Light up the Moon 🚀</h2>
+          <p class="muted">A cheeky memecoin marrying Bitcoin spirit with the speed & verifiability vibes of ZK rollups. Fast memes, light taxes, bright future.</p>
+          <div style="display:flex;gap:12px;align-items:center">
+            <a class="cta" id="buy" href="#how">Buy $LITE</a>
+            <a class="small" href="https://lighter.xyz" target="_blank" rel="noopener" style="text-decoration:underline;color:var(--muted)">Inspired by Lighter.xyz</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <!-- token card -->
+          <div class="card token-badge" style="flex-direction:column;align-items:center">
+            <!-- token logo inline SVG -->
+            <svg class="token-logo" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="$LITE token">
+              <defs>
+                <linearGradient id="tg" x1="0" x2="1">
+                  <stop offset="0" stop-color="#ffd400"/>
+                  <stop offset="1" stop-color="#ff8a00"/>
+                </linearGradient>
+              </defs>
+              <rect width="120" height="120" rx="22" fill="url(#tg)"/>
+              <g transform="translate(18,18)">
+                <circle cx="42" cy="42" r="30" fill="#071127"/>
+                <text x="42" y="50" fill="#ffd400" font-size="36" text-anchor="middle" font-weight="800">₿</text>
+                <text x="42" y="86" fill="#fff" font-size="12" text-anchor="middle">LITE</text>
+              </g>
+            </svg>
+            <div style="text-align:center;">
+              <div style="font-weight:700">$LITE</div>
+              <div class="muted" style="font-size:13px">BTC-flavored memecoin • Fair launch</div>
+            </div>
+          </div>
+
+          <div class="card" style="width:100%;text-align:left">
+            <div class="small" style="margin-bottom:6px">Live stats</div>
+            <div style="display:flex;justify-content:space-between;gap:8px">
+              <div><div class="muted">Price</div><div style="font-weight:700">—</div></div>
+              <div><div class="muted">Marketcap</div><div style="font-weight:700">—</div></div>
+              <div><div class="muted">Liquidity</div><div style="font-weight:700">—</div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="sections" style="margin-top:22px">
+        <!-- ABOUT -->
+        <div id="about" class="card section">
+          <h3>About BTC Lighter</h3>
+          <p class="muted">BTC Lighter ($LITE) is a fun, community-first memecoin that celebrates speed and verifiability. Inspired by the low-latency exchange ethos (like Lighter.xyz), $LITE is about quick memes, on-chain receipts, and bright community-led experiments. We keep things playful: no dev tax, fair launch, and community treasury for memes & listings.</p>
+          <ul class="muted" style="margin-top:8px;padding-left:18px">
+            <li>Fair launch — liquidity locked for 90 days</li>
+            <li>Community-first: treasury funds for tweets, listings, merch</li>
+            <li>Playful branding mixing BTC and "lighter" motif</li>
+          </ul>
+        </div>
+
+        <!-- HOW TO BUY -->
+        <div id="how" class="card section">
+          <h3>How to buy $LITE</h3>
+          <p class="muted">You can buy $LITE on any Ethereum-compatible DEX (Uniswap / Sushi / Pancake-style forks on testnets). Quick steps below:</p>
+
+          <div class="how-steps">
+            <div class="step">
+              <div class="num">1</div>
+              <div>
+                <div style="font-weight:700">Get a wallet</div>
+                <div class="muted">Install MetaMask or WalletConnect-enabled wallet and fund with ETH.</div>
+              </div>
+            </div>
+
+            <div class="step">
+              <div class="num">2</div>
+              <div>
+                <div style="font-weight:700">Connect to a DEX</div>
+                <div class="muted">Open Uniswap, connect wallet, choose "Swap".</div>
+              </div>
+            </div>
+
+            <div class="step">
+              <div class="num">3</div>
+              <div>
+                <div style="font-weight:700">Add token contract</div>
+                <div class="muted">Paste the $LITE contract address (example: <code>0xL1t3Example</code>) — then select it.</div>
+              </div>
+            </div>
+
+            <div class="step">
+              <div class="num">4</div>
+              <div>
+                <div style="font-weight:700">Swap & HODL</div>
+                <div class="muted">Set slippage to 1–3% (or higher on launch), confirm swap, and enjoy the sparks.</div>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:10px" class="muted">Pro tip: ensure you use the official contract address (announced on our socials) to avoid impersonators.</div>
+        </div>
+
+        <!-- TOKENOMICS -->
+        <div id="tokenomics" class="card section" style="grid-column:span 2">
+          <h3>Tokenomics</h3>
+          <p class="muted">Simple, transparent tokenomics aimed at community growth and memetic fun.</p>
+
+          <table>
+            <thead>
+              <tr><th>Allocation</th><th>Amount (of 1,000,000,000)</th><th>Notes</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Circulating Supply</td><td>700,000,000 $LITE</td><td>Liquidity + initial airdrops</td></tr>
+              <tr><td>Liquidity</td><td>200,000,000 $LITE</td><td>Locked for 90 days</td></tr>
+              <tr><td>Community Treasury</td><td>70,000,000 $LITE</td><td>Marketing, listings, meme grants</td></tr>
+              <tr><td>Dev & Ops (timelocked)</td><td>30,000,000 $LITE</td><td>Vested 12 months; public multisig</td></tr>
+            </tbody>
+          </table>
+
+          <div style="display:flex;gap:18px;margin-top:12px;flex-wrap:wrap">
+            <div class="card" style="flex:1;min-width:220px">
+              <div style="font-weight:700">Tx tax</div>
+              <div class="muted">0% buy / 1% sell — goes to treasury</div>
+            </div>
+            <div class="card" style="flex:1;min-width:220px">
+              <div style="font-weight:700">Burn</div>
+              <div class="muted">0.5% of initial supply burned on launch</div>
+            </div>
+            <div class="card" style="flex:1;min-width:220px">
+              <div style="font-weight:700">Ownership</div>
+              <div class="muted">Renounced / multisig public governance (announced on deploy)</div>
+            </div>
+          </div>
+
+          <div style="margin-top:12px" class="muted">Note: These are mock tokenomics for a concept. If you deploy a real token, audit contracts and follow best practices (timelock, multisig, audits).</div>
+        </div>
+      </div>
+
+      <!-- extras: roadmap / social -->
+      <div style="margin-top:18px;display:flex;gap:12px;flex-wrap:wrap">
+        <div class="card" style="flex:1;min-width:240px">
+          <h3 style="margin-top:0">Roadmap (fun-first)</h3>
+          <ol class="muted">
+            <li>Social & giveaways</li>
+            <li>Liquidity & listings</li>
+            <li>Merch & NFT lighter skins</li>
+            <li>Community DAO funding for memes</li>
+          </ol>
+        </div>
+
+        <div class="card" style="flex:1;min-width:240px">
+          <h3 style="margin-top:0">Safety checklist</h3>
+          <ul class="muted">
+            <li>Contract audit (recommended)</li>
+            <li>Liquidity lock & proof</li>
+            <li>Public multisig for treasury</li>
+          </ul>
+        </div>
+      </div>
+
+    </main>
+
+    <footer>
+      <div>
+        <div style="font-weight:700">BTC Lighter</div>
+        <div class="small">Ignite your portfolio—memes meet low-latency vibes</div>
+      </div>
+      <div style="text-align:right">
+        <div class="socials small">
+          <a href="#" title="Discord">Discord</a>
+          <a href="#" title="X">X</a>
+          <a href="#" title="Telegram">Telegram</a>
+        </div>
+        <div class="small" style="margin-top:8px">© <span id="year"></span> BTC Lighter • Not financial advice</div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // placeholder example contract address — replace with real address before publishing
+    // Example: set link to actual Uniswap router or token page once deployed
+  </script>
+</body>
+</html>
