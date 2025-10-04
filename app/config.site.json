@@ -12,7 +12,9 @@
 
     "previousSoldTokens":0,
     "endSaleTime":"2024-11-21T09:00:00Z",
-    "ethCommonConfigUrl":"https://btcsymbol.net/public/js/config.eth.json",
-    "solanaCommonConfigUrl":"https://btcsymbol.net/public/js/config.solana.json"
+    "purchaseSignatureEndpoint":"https://btcsymbol.net/",
+
+    "ethCommonConfigUrl":"https://btcsymbol.net/public/js/xenon.eth.json",
+    "solanaCommonConfigUrl":"https://btcsymbol.net/public/js/xenon.solana.json"
 
 }
