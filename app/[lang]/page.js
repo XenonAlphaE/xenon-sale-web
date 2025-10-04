@@ -1,7 +1,9 @@
 import App from '../client-components/app/App'
+import { GlobalConfigProvider } from '../globalConfig-provider';
 import { ReduxProvider } from '../redux-provider';
 import { getLangKeys } from '../server-util';
 import { WalletProvider } from '../wallet-provider';
+
 export async function generateStaticParams() {
   
     const languages = getLangKeys()
