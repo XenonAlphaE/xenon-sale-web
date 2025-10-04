@@ -3,12 +3,13 @@
     "targetToken":{
         "address":"",
         "decimals":18,
-        "symbol": "SUBBD",
-        "tokenPrice":"0.056425"
+        "symbol": "PEPENODE",
+        "tokenPrice":"0.0010407"
     },
-    "lastestUpdated": "2025-09-14T00:00:00Z",
-    "lastestRaise" : 1000000,
-    "dailyRaise" : 40000,
+    "lastestUpdated": "2025-08-22T00:00:00Z",
+    "lastestRaise" : 315841.68,
+    "dailyRaise" : 10000,
+    "totalRaise": 2400000,
 
     "previousSoldTokens":0,
     "endSaleTime":"2024-11-21T09:00:00Z",
