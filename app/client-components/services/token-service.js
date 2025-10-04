@@ -215,7 +215,7 @@ export const getSolanaPriceSignature = async () => {
 
 
 export const signPurchaseInfo = async ({purchaseSignatureEndpoint, key, tokenPrice, buyAmount, deltaStake}) => {
-    debugger
+    
     const OraclePriceAPI = axios.create({
         baseURL: purchaseSignatureEndpoint
     });
@@ -231,7 +231,7 @@ export const signPurchaseInfo = async ({purchaseSignatureEndpoint, key, tokenPri
     )
     console.log("Type:", signatureData.constructor.name);
 
-    debugger
+    
     console.log("Status:", signatureData.status);
     console.log("Headers:", signatureData.headers);
     console.log("Response data:", signatureData.data);
