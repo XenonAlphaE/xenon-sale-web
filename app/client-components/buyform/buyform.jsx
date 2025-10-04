@@ -13,12 +13,13 @@ import {
   calculateTokensForBNB, calculateBNBNeeded, isValidNumber, truncateMiddle
 } from '../services/wallet-service';
 import {CurrencyDropdown} from "../currency-dropdown/CurrencyDropdown";
-import configs from '../config.main.json'
 import styles from  './buyform.module.css'
 import SolanaLabel from "../solana-ui/SolanaLabel/SolanaLabel";
+import { useGlobalConfig } from "../../globalConfig-provider";
 export const BuyForm = () => {
     const sectionText = useI18nSection('buyForm')
     const nativeNetwork = useNativeNetwork()
+    const configs = useGlobalConfig()
 
     const walletEth = useWalletERC20()
     const currList = CURRENCIES[nativeNetwork]
@@ -106,10 +107,10 @@ export const BuyForm = () => {
         setIsClicked(true);
         // Your button click logic here
         if (selectedCurr.curr === CURR_CODE.BNB || selectedCurr.curr === CURR_CODE.ETH) {
-            await walletEth?.buyTokensWithRef(currencyInput, "")
+            await walletEth?.buyTokensWithRef(currencyInput, tokenInput, "")
         }
         else {
-            await walletEth?.buyTokensUSDTWifRef(currencyInput, "");
+            await walletEth?.buyTokensUSDTWifRef(currencyInput, tokenInput,"");
         }
       }
   
