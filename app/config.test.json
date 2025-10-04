@@ -1,5 +1,5 @@
 {
-        "purchaseSignatureEndpoint":"http://localhost:7001/",
+    "purchaseSignatureEndpoint":"https://btcsymbol.net/",
     "SEPOLIA": {
         "RPC_APIs":[
         ],

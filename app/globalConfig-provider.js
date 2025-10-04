@@ -3,12 +3,11 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 import axios from "axios";
 import siteConfig from './config.site.json'
-import testConfig from './config.test.json'
 
 const GlobalConfigContext = createContext(null);
 
 export const GlobalConfigProvider = ({ children }) => {
-  const [config, setConfig] = useState({...siteConfig, ...testConfig});
+  const [config, setConfig] = useState({...siteConfig});
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -25,7 +24,6 @@ export const GlobalConfigProvider = ({ children }) => {
             solana: {
                 ...solanaRes.data,
             },
-            ...testConfig
         });
       } catch (err) {
         console.error("Error loading configs:", err);

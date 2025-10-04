@@ -6,15 +6,16 @@ import {
     useChainModal,
 
 } from '@rainbow-me/rainbowkit';
-import { useAccount, useChainId, useWriteContract, useBalance, useSwitchChain, useSignMessage, useConfig} from 'wagmi'
+import { useAccount, useChainId, useWriteContract, useBalance, useSwitchChain, useSignMessage, useConfig, usePublicClient} from 'wagmi'
 import {readContract } from '@wagmi/core'
 import { ethers,parseEther,Network, parseUnits,formatUnits } from 'ethers';
 import { useNativeNetwork, useSetCurrentAddress, useSetNativeNetwork } from '../redux/utils/nativeNetworkUtils';
 import { NETWORK_OTIONS, VALID_NETWORKS } from '../redux/ducks/nativeNetworkDuck';
 import { toWei, isValidNumber  } from './client-components/services/wallet-service';
-import {getUserPurchaseInfo} from '../app/client-components/services/token-service'
-import { formatIntNumber, formatTokenNumber, roundUpToNextMillion } from "./client-components/services/utils";
+import {getUserPurchaseInfo, signPurchaseInfo} from './client-components/services/token-service'
+import { calculateRaise, formatIntNumber, formatTokenNumber, roundUpToNextMillion } from "./client-components/services/utils";
 import { zeroAddress } from "viem";
+import Web3 from "web3";
 
 // Create a context for the wallet
 const Erc20WalletContext = createContext();
@@ -45,10 +46,15 @@ function getRandomValueByDate(min, max) {
 
 
 export const Erc20WalletProvider = ({ globalConfigs, children }) => {
+    if(!globalConfigs){
+        return <></>
+    }
+
     const lastestUpdated = globalConfigs.lastestUpdated
     const lastestRaise  = globalConfigs.lastestRaise
     const dailyRaise = globalConfigs.dailyRaise
 
+    const publicClient = usePublicClient()
 
 
     // Define the wallet logic (useWalletETH)
@@ -168,8 +174,11 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
             console.error('There was a problem fetching the data:', error);
           }
         };
-        fetchDataEth()
-        fetchDataBNB();
+
+        if(globalConfigs?.ETH?.USDT_Price && globalConfigs?.BSC?.USDT_Price){
+            fetchDataEth()
+            fetchDataBNB();
+        }
       }, [globalConfigs]);
 
     useEffect(() => {
@@ -233,6 +242,13 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
             usdtDecimals = globalConfigs.ARB['USDT_Decimals']
         }
         
+        if(nativeNetwork==='sepolia'){
+            salerInfo = globalConfigs.SEPOLIA['salers'][0]
+            usdtAbi = globalConfigs.SEPOLIA['USDT_Abi']
+            usdtAddress = globalConfigs.SEPOLIA['USDT_Address']
+            usdtDecimals = globalConfigs.SEPOLIA['USDT_Decimals']
+        }
+
         return{salerInfo, usdtAddress, usdtDecimals, usdtAbi}
 
 
@@ -269,19 +285,24 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
             }
         }
     
-        const buyTokensWithRef = async (amount, ref, isStaking = false)  => {
-            
+        const buyTokensWithRef = async (amount, tokenAmout, ref, isStaking = false)  => {
+            debugger
             try{
-                if(!currAccount.address) return;
-                if(isStaking){
-                    if(nativeNetwork!='eth'){
-                        await switchChainAsync({ chainId: 1 });
-                        return
-                    }
-                }
-    
+                if(!currAccount.address || !globalConfigs?.purchaseSignatureEndpoint) return;
+                
                 if(isValidNumber( amount ) && amount > 0){
+                    const priceUsd = toWei(globalConfigs?.targetToken?.tokenPrice)
+                    const userKey = Web3.utils.soliditySha3(currAccount.address, globalConfigs?.targetToken?.symbol);
+                    const buyAmount = toWei(tokenAmout)
                     
+                    const purchaseSignature = await signPurchaseInfo({
+                        purchaseSignatureEndpoint: globalConfigs?.purchaseSignatureEndpoint,
+                        buyAmount,
+                        key: userKey,
+                        tokenPrice: priceUsd,
+                        deltaStake: 0,
+                    })
+                    debugger
                     const {salerInfo} = getContracts()
                     
                     if(!salerInfo){
@@ -292,9 +313,9 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
                     const tx = await writeContractAsync({
                         abi: salerInfo.abi,
                         address: salerInfo.address,
-                        functionName:"buyTokens",
+                        functionName:"buyTokensOracle",
                         value: wei,
-                        args:[globalConfigs?.targetToken?.symbol, isStaking, zeroAddress, 0 , 0 , zeroAddress]
+                        args:[priceUsd, userKey, buyAmount, 0, purchaseSignature.signature]
                     })
                     
                     // const tx = await salerContract.connect(signer).buyTokensWifRef(globalConfigs?.targetToken?.symbol,ref ? ref : "", {value: wei})
@@ -305,20 +326,14 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
                 // window.location.reload();
             }
             catch(error){
-                //   console.error("Error:", error.message);
+                  console.error("Error:", error.message);
             }
         }
      
-        const buyTokensUSDTWifRef = async (amount, ref, isStaking = false) => {
+        const buyTokensUSDTWifRef = async (amount, tokenAmout, ref, isStaking = false) => {
             
             try{
-                if(!currAccount.address) return;
-                if(isStaking){
-                    if(nativeNetwork!='eth'){
-                        await switchChainAsync({ chainId: 1 });
-                        return
-                    }
-                }
+                if(!currAccount.address || !globalConfigs?.purchaseSignatureEndpoint) return;
                 
                 if(isValidNumber(amount)){
                     
@@ -327,6 +342,20 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
                     if(!salerInfo){
                         return
                     }
+                    const priceUsd = toWei(globalConfigs?.targetToken?.tokenPrice)
+                    const userKey = Web3.utils.soliditySha3(currAccount.address, globalConfigs?.targetToken?.symbol);
+                    const buyAmount = toWei(tokenAmout)
+                    
+                    const purchaseSignature = await signPurchaseInfo({
+                        purchaseSignatureEndpoint: globalConfigs?.purchaseSignatureEndpoint,
+                        buyAmount,
+                        key: userKey,
+                        tokenPrice: priceUsd,
+                        deltaStake: 0,
+                    })
+                    debugger
+
+
                     const usdtAmount = parseUnits(amount, usdtDecimals); // Set the allowance amount (1000 USDT in this case)
                     // 1. Check current allowance
                     const currentAllowance = await readContract(wagmiConfig, {
@@ -335,18 +364,20 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
                         functionName: 'allowance',
                         args: [currAccount.address, salerInfo.address]
                     });
-                    
+                    debugger
                     if(currentAllowance< usdtAmount) { // Use lt (less than) for comparison of BigNumbers
-                        const approvalTx = await writeContractAsync({
+
+                        const approvalHash = await writeContractAsync({
                             abi: usdtAbi,
                             address: usdtAddress,
                             functionName:"approve",
                             args:[salerInfo.address, usdtAmount]
                         })
                         
-        
-                        // await approvalTx.wait();
-                        console.log("New allowance set successfully!" + approvalTx);
+                        const receipt = await publicClient.waitForTransactionReceipt({ hash: approvalHash })
+
+                        console.log("Tx mined! receipt:", receipt)
+
                         const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
                         
                         await delay(3000);
@@ -357,7 +388,7 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
                         abi: salerInfo.abi,
                         address: salerInfo.address,
                         functionName:"buyWithUSDT",
-                        args:[usdtAmount, globalConfigs?.targetToken?.symbol, isStaking, zeroAddress, 0 , 0 , zeroAddress, usdtAddress]
+                        args:[usdtAmount, priceUsd, userKey,buyAmount,0,  purchaseSignature.signature, usdtAddress]
                     })
                     // await tx.wait();
                     console.log("Buy Tokens successfully!" + tx);
@@ -367,6 +398,7 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
                 }
             }
             catch(error){
+                debugger
                 console.error("Error during buying:", error.message);
             }
         }

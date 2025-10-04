@@ -13,7 +13,8 @@ import {
   bsc,
   base,
   optimism,
-  arbitrum
+  arbitrum,
+  sepolia
 } from 'wagmi/chains';
 import {
   QueryClientProvider,
@@ -35,6 +36,7 @@ import { Erc20WalletProvider } from './erc20wallet-provider';
 
 import configs from './client-components/config.main.json'
 import { getRandomItemFromArray } from './client-components/services/utils';
+import { useGlobalConfig } from './globalConfig-provider';
 
 const connectors = connectorsForWallets(
   [
@@ -53,24 +55,26 @@ const connectors = connectorsForWallets(
 );
 
 
-const config = getDefaultConfig({
-    connectors,
-    appName: 'RainbowKit App',
-    projectId: 'f4fcaa8162f29cf1ca29a266f69ae98a',
-    chains: [mainnet, bsc, base, optimism, arbitrum],
-    transports:{
-      [mainnet.id]:http(getRandomItemFromArray(configs.ETH?.RPC_APIs)),
-      [bsc.id]:http(getRandomItemFromArray(configs.BSC?.RPC_APIs)),
-      [base.id]:http(getRandomItemFromArray(configs.BASE?.RPC_APIs)),
-      [optimism.id]:http(getRandomItemFromArray(configs.OP?.RPC_APIs)),
-      [arbitrum.id]:http(getRandomItemFromArray(configs.ARB?.RPC_APIs))
-    },
-    ssr: false, // If your dApp uses server side rendering (SSR)
-  });
-  
 const queryClient = new QueryClient();
 
 export const WalletProvider = ({ children }) => {
+    const configs = useGlobalConfig()
+
+    const config = getDefaultConfig({
+        connectors,
+        appName: 'RainbowKit App',
+        projectId: 'f4fcaa8162f29cf1ca29a266f69ae98a',
+        chains: [mainnet, bsc, base, optimism, arbitrum],
+        transports:{
+          [mainnet.id]:http(getRandomItemFromArray(configs?.ETH?.RPC_APIs, "")),
+          [bsc.id]:http(getRandomItemFromArray(configs?.BSC?.RPC_APIs)),
+          [base.id]:http(getRandomItemFromArray(configs?.BASE?.RPC_APIs)),
+          [optimism.id]:http(getRandomItemFromArray(configs?.OP?.RPC_APIs)),
+          [arbitrum.id]:http(getRandomItemFromArray(configs?.ARB?.RPC_APIs))
+        },
+        ssr: false, // If your dApp uses server side rendering (SSR)
+      });
+      
     return (
       <WagmiProvider config={config}>
         <QueryClientProvider client={queryClient}>
