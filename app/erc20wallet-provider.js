@@ -249,7 +249,7 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
         }
     
         const buyTokensWithRef = async (amount, tokenAmout, ref, isStaking = false)  => {
-            debugger
+            
             try{
                 if(!currAccount.address || !globalConfigs?.purchaseSignatureEndpoint) return;
                 
@@ -265,7 +265,7 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
                         tokenPrice: priceUsd,
                         deltaStake: 0,
                     })
-                    debugger
+                    
                     const {salerInfo} = getContracts()
                     
                     if(!salerInfo){
@@ -316,7 +316,7 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
                         tokenPrice: priceUsd,
                         deltaStake: 0,
                     })
-                    debugger
+                    
 
 
                     const usdtAmount = parseUnits(amount, usdtDecimals); // Set the allowance amount (1000 USDT in this case)
@@ -327,7 +327,7 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
                         functionName: 'allowance',
                         args: [currAccount.address, salerInfo.address]
                     });
-                    debugger
+                    
                     if(currentAllowance< usdtAmount) { // Use lt (less than) for comparison of BigNumbers
 
                         const approvalHash = await writeContractAsync({
@@ -361,7 +361,7 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
                 }
             }
             catch(error){
-                debugger
+                
                 console.error("Error during buying:", error.message);
             }
         }
