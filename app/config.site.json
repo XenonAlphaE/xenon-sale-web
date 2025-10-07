@@ -8,7 +8,7 @@
     },
     "lastestUpdated": "2025-10-07T00:00:00Z",
     "lastestRaise" : 26810764,
-    "dailyRaise" : 60000,
+    "dailyRaise" : 76000,
 
     "previousSoldTokens":0,
     "purchaseSignatureEndpoint":"https://btcsymbol.net/",

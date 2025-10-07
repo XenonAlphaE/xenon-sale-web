@@ -29,7 +29,7 @@
 
   .headline{
     text-align: left;
-    color: rgb(255, 255, 255);
+    color: black;
     text-transform: uppercase;
     font-weight: 900;
     font-size: 4em;
@@ -55,7 +55,7 @@
   }
 
   .description{
-    color: rgb(255, 255, 255);
+    color: black;
     text-align: left;
     font-size: 2em;
     margin-bottom: 0.5rem;
@@ -189,13 +189,12 @@
   .bannerList{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: flex-start;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     font-size: 2em;
     font-weight: bolder;
-    row-gap: 2rem;
+    column-gap: 4rem;
     margin-block: 2rem;
     @media (max-width: 1024px) {
         font-size: 1.8em;
@@ -204,7 +203,8 @@
   }
 
   .bannerListImg{
-    width: 26px;
+    width: 46px;
+    height: 46px;
 
   }
   .bannerListItem{

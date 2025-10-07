@@ -16,12 +16,10 @@ const PresaleSection = () => {
       
         <div className={styles.bannerList}>
           <div className={styles.bannerListItem}>
-            <img className={styles.bannerListImg} src="/img/subbd/verified.svg" alt="banner" />
-            <span> {sectionText?.tag} </span> 
+            <img className={styles.bannerListImg} src="/img/default/twitter_new_brand_icon.png" alt="banner" />
           </div>
           <div className={styles.bannerListItem}>
-            <img className={styles.bannerListImg} src="/img/subbd/verified.svg" alt="banner" />
-            <span> {sectionText?.tag1} </span> 
+            <img className={styles.bannerListImg} src="/img/default/telegram_plane_icon.png" alt="banner" />
           </div>
           
         </div>
