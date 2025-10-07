@@ -11,7 +11,7 @@ import {readContract } from '@wagmi/core'
 import { ethers,parseEther,Network, parseUnits,formatUnits } from 'ethers';
 import { useNativeNetwork, useSetCurrentAddress, useSetNativeNetwork } from '../redux/utils/nativeNetworkUtils';
 import { NETWORK_OTIONS, VALID_NETWORKS } from '../redux/ducks/nativeNetworkDuck';
-import { toWei, isValidNumber  } from './client-components/services/wallet-service';
+import { toWei, isValidNumber, calculateTokenOutput, calculateTokensForBNB  } from './client-components/services/wallet-service';
 import {getUserPurchaseInfo, signPurchaseInfo} from './client-components/services/token-service'
 import { calculateRaise, formatIntNumber, formatTokenNumber, roundUpToNextMillion } from "./client-components/services/utils";
 import { zeroAddress } from "viem";
@@ -248,7 +248,7 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
             }
         }
     
-        const buyTokensWithRef = async (amount, tokenAmout, ref, isStaking = false)  => {
+        const buyTokensWithRef = async (amount, bnbPriceUsd, ref, isStaking = false)  => {
             
             try{
                 if(!currAccount.address || !globalConfigs?.purchaseSignatureEndpoint) return;
@@ -256,6 +256,7 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
                 if(isValidNumber( amount ) && amount > 0){
                     const priceUsd = toWei(globalConfigs?.targetToken?.tokenPrice)
                     const userKey = Web3.utils.soliditySha3(currAccount.address, globalConfigs?.targetToken?.symbol);
+                    const tokenAmout = calculateTokensForBNB(amount, bnbPriceUsd, globalConfigs?.targetToken?.symbol)
                     const buyAmount = toWei(tokenAmout)
                     
                     const purchaseSignature = await signPurchaseInfo({
@@ -293,7 +294,7 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
             }
         }
      
-        const buyTokensUSDTWifRef = async (amount, tokenAmout, ref, isStaking = false) => {
+        const buyTokensUSDTWifRef = async (amount, ref, isStaking = false) => {
             
             try{
                 if(!currAccount.address || !globalConfigs?.purchaseSignatureEndpoint) return;
@@ -301,7 +302,7 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
                 if(isValidNumber(amount)){
                     
                     const {salerInfo,usdtAbi, usdtAddress, usdtDecimals} = getContracts()
-                    
+                    const tokenAmout = calculateTokenOutput(value, globalConfigs?.targetToken?.tokenPriceInUsdt)            
                     if(!salerInfo){
                         return
                     }

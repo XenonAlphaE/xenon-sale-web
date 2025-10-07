@@ -107,10 +107,10 @@ export const BuyForm = () => {
         setIsClicked(true);
         // Your button click logic here
         if (selectedCurr.curr === CURR_CODE.BNB || selectedCurr.curr === CURR_CODE.ETH) {
-            await walletEth?.buyTokensWithRef(currencyInput, tokenInput, "")
+            await walletEth?.buyTokensWithRef(currencyInput, selectedCurr.curr === CURR_CODE.BNB ? walletEth?.bnbPrice : walletEth?.ethPrice , "")
         }
         else {
-            await walletEth?.buyTokensUSDTWifRef(currencyInput, tokenInput,"");
+            await walletEth?.buyTokensUSDTWifRef(currencyInput,"");
         }
       }
   
