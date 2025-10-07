@@ -14,40 +14,44 @@ import { AppSolanaProvider } from "../../solanaWallet-provider";
 import CustomWalletDialogs from "./WalletMultiButton/WalletMultiButton";
 import { getRandomItemFromArray } from "../services/utils";
 import { useGlobalConfig } from "../../globalConfig-provider";
+import { clusterApiUrl } from "@solana/web3.js";
 
 export const SolanaProvider = ({ children }) => {
   const configs = useGlobalConfig();
 
-  // 🚫 Early return BEFORE any hooks if no config
-  if (!configs?.solana?.RPC_APIs?.length) return null;
+
 
   // ✅ Hooks start only after we know configs exist
   const network = WalletAdapterNetwork.Mainnet;
 
   const endpoint = useMemo(() => {
-    return getRandomItemFromArray(configs.solana.RPC_APIs);
-  }, [configs.solana.RPC_APIs]);
+    if(configs?.solana?.RPC_APIs){
+      return getRandomItemFromArray(configs.solana.RPC_APIs);
+    }
+    return clusterApiUrl(network)
+  }, [configs?.solana?.RPC_APIs]);
 
   const wallets = useMemo(() => {
     if (typeof window === "undefined") return [];
 
     return [
-      new WalletConnectWalletAdapter({
-        network,
-        options: {
-          relayUrl: "wss://relay.walletconnect.com",
-          projectId: "51049c615eabe22a2604d0872d7d6e65",
-          metadata: {
-            name: "My Solana Dapp",
-            description: "Dapp with QR connect",
-            url: window.location.origin,
-            icons: [`${window.location.origin}/img/pepenode/token.svg`],
-          },
-        },
-      }),
+      // new WalletConnectWalletAdapter({
+      //   network,
+      //   options: {
+      //     relayUrl: "wss://relay.walletconnect.com",
+      //     projectId: "51049c615eabe22a2604d0872d7d6e65",
+      //     metadata: {
+      //       name: "My Solana Dapp",
+      //       description: "Dapp with QR connect",
+      //       url: window.location.origin,
+      //       icons: [`${window.location.origin}/img/pepenode/token.svg`],
+      //     },
+      //   },
+      // }),
     ];
   }, [network]);
-
+  // 🚫 Early return BEFORE any hooks if no config
+  if (!configs?.solana?.RPC_APIs?.length) return null;
   return (
     <ConnectionProvider endpoint={endpoint}>
       <WalletProvider wallets={wallets} autoConnect>
