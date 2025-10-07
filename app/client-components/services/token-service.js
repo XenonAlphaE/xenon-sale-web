@@ -196,17 +196,20 @@ export const useTokenInfo=(globalConfigs) => {
 
 
 
-export const getSolanaPriceSignature = async () => {
+export const getSolanaPriceSignature = async ({solanaPriceUrl, symbol, usdtDecimals}) => {
+    if(!solanaPriceUrl){
+        return null;
+    }
     // API for oracle price server
     const OraclePriceAPI = axios.create({
-        baseURL: mainConfig.solana.priceSignatureEndpoint
+        baseURL: solanaPriceUrl
     });
 
     const signatureData = await OraclePriceAPI.post(
         "/api/solana/price",   // <-- must be string (relative path)
         {
-            "symbol": mainConfig.targetToken.symbol,
-            "decimals": mainConfig.solana.USDT_Decimals
+            "symbol": symbol,
+            "decimals": usdtDecimals
         }
     )
 

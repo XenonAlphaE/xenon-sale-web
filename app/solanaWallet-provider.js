@@ -74,7 +74,6 @@ export const AppSolanaProvider = ({ globalConfigs, children }) => {
     const [connectedDialogVisible, setConnectedDialogVisible] = useState(false);
 
     const [program, setProgram] = useState(null);
-    const [predefinedAccounts ,setPredefinedAccounts] = useState({})
     const [solanaPrice, setSolanaPrice] = useState(0)
     const [purchaseInfo, setPurchaseInfo] = useState( 
         {   totalBought: 0,
@@ -111,13 +110,13 @@ export const AppSolanaProvider = ({ globalConfigs, children }) => {
     
             setProgram(prog);
         }
-    }, [connected, connection]);
+    }, [connected, connection, globalConfigs]);
 
 
     useEffect(() => {
         const fetchDataSolana = async () => {
             try {
-            const response = await fetch(globalConfigs.solana.USDT_Price); // Assuming 'data.json' is a local file
+            const response = await fetch(globalConfigs?.solana?.USDT_Price); // Assuming 'data.json' is a local file
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
@@ -127,9 +126,10 @@ export const AppSolanaProvider = ({ globalConfigs, children }) => {
             console.error('There was a problem fetching the data:', error);
             }
         };
-
-        fetchDataSolana()
-    }, []);
+        if(globalConfigs?.solana?.USDT_Price){
+            fetchDataSolana()
+        }
+    }, [globalConfigs]);
 
     useEffect(() => {
         const loadUserBalance = async (buyerInfoPda) => {
@@ -179,10 +179,34 @@ export const AppSolanaProvider = ({ globalConfigs, children }) => {
             //     return { type, pda: pda.toBase58(), bump };
             // });
 
-            setPredefinedAccounts(newResults);
         }
-    }, [program?.programId, anchorWallet?.publicKey]);
+    }, [program?.programId, anchorWallet?.publicKey, globalConfigs]);
 
+
+    const getProgramAccounts = () => {
+        const newResults = {}
+
+        let seeds = PDA_RECIPES.tokenInfo({tokenSymbol: globalConfigs?.targetToken?.symbol});
+        const [tokenInfoPda] = PublicKey.findProgramAddressSync(seeds, program?.programId);
+        newResults.tokenInfo = tokenInfoPda
+
+        seeds = PDA_RECIPES.state();
+        const [statePda] = PublicKey.findProgramAddressSync(seeds, program?.programId);
+        newResults.statePda = statePda
+
+        seeds = PDA_RECIPES.buyerInfoPda({tokenSymbol: globalConfigs?.targetToken?.symbol, buyerPubkey: anchorWallet?.publicKey});
+        const [buyerInfoPda] = PublicKey.findProgramAddressSync(seeds, program?.programId);
+        newResults.buyerInfo = buyerInfoPda
+
+        seeds = PDA_RECIPES.buyerAta({mint: globalConfigs?.solana?.USDT_Address, buyerPubkey: anchorWallet?.publicKey});
+        const [buyerAta] = PublicKey.findProgramAddressSync(seeds, ASSOCIATED_TOKEN_PROGRAM_ID);
+        newResults.buyerAta = buyerAta
+
+        seeds = PDA_RECIPES.vaultAta({mint: globalConfigs?.solana?.USDT_Address, vaultPubkey: new PublicKey(globalConfigs?.solana?.vaultAddress)});
+        const [vaultAta] = PublicKey.findProgramAddressSync(seeds, ASSOCIATED_TOKEN_PROGRAM_ID);
+        newResults.vaultAta = vaultAta
+        return newResults;
+    }
 
     const sendBuyWithOracle = useCallback(
         async (
@@ -192,9 +216,9 @@ export const AppSolanaProvider = ({ globalConfigs, children }) => {
         const amountLamports = parseSolToLamportsBN(amount);
 
         if (!program) throw new Error("Program not initialized");
-        
+        const predefinedAccounts = getProgramAccounts()
         try {
-            const signatureData = await getSolanaPriceSignature();
+            const signatureData = await getSolanaPriceSignature({solanaPriceUrl: globalConfigs?.solana?.priceSignatureEndpoint, symbol: globalConfigs?.targetToken?.symbol, usdtDecimals: globalConfigs?.solana?.USDT_Decimals});
             if(!signatureData) {
                 throw new Error("Oracle Price Signature not initialized");
             }
@@ -249,7 +273,7 @@ export const AppSolanaProvider = ({ globalConfigs, children }) => {
             throw err;
         }
         },
-        [program, connection, anchorWallet]
+        [program, connection, anchorWallet, globalConfigs]
     );
 
 
@@ -261,7 +285,8 @@ export const AppSolanaProvider = ({ globalConfigs, children }) => {
         const usdtAmountDecimals = parseAmountToBN(usdtAmount, globalConfigs?.solana?.USDT_Decimals);
 
         if (!program) throw new Error("Program not initialized");
-        
+        const predefinedAccounts = getProgramAccounts()
+
         try {
             const accounts = {
                 state: predefinedAccounts.statePda,
@@ -287,7 +312,7 @@ export const AppSolanaProvider = ({ globalConfigs, children }) => {
             throw err;
         }
         },
-        [program, connection, anchorWallet]
+        [program, connection, anchorWallet, globalConfigs]
     );
 
 
@@ -320,7 +345,6 @@ export const AppSolanaProvider = ({ globalConfigs, children }) => {
             setWalletDialogVisible,
             connectedDialogVisible,
             setConnectedDialogVisible,
-            predefinedAccounts,
 
             sendBuyWithOracle,
             sendBuyWithUsdt,

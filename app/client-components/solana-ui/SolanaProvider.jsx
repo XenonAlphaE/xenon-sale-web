@@ -1,38 +1,34 @@
 "use client";
 
-import React, { FC, ReactNode, useMemo } from "react";
+import React, { useMemo } from "react";
 import {
   ConnectionProvider,
-  WalletProvider
+  WalletProvider,
 } from "@solana/wallet-adapter-react";
 import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
 import { WalletModalProvider } from "@solana/wallet-adapter-react-ui";
 import "@solana/wallet-adapter-react-ui/styles.css";
 import { WalletConnectWalletAdapter } from "@solana/wallet-adapter-walletconnect";
-// import { SolanaMobileWalletAdapter } from "@solana-mobile/wallet-adapter-mobile";
 
 import { AppSolanaProvider } from "../../solanaWallet-provider";
 import CustomWalletDialogs from "./WalletMultiButton/WalletMultiButton";
 import { getRandomItemFromArray } from "../services/utils";
 import { useGlobalConfig } from "../../globalConfig-provider";
-import { clusterApiUrl } from "@solana/web3.js";
-
 
 export const SolanaProvider = ({ children }) => {
-  const configs = useGlobalConfig()
-  // The network can be set to 'devnet', 'testnet', or 'mainnet-beta'
+  const configs = useGlobalConfig();
+
+  // 🚫 Early return BEFORE any hooks if no config
+  if (!configs?.solana?.RPC_APIs?.length) return null;
+
+  // ✅ Hooks start only after we know configs exist
   const network = WalletAdapterNetwork.Mainnet;
 
-  // You can also provide a custom RPC endpoint
-  // const endpoint = useMemo(() => clusterApiUrl(network), [network]);
-  // Replace this with your provider’s RPC URL
-  const endpoint = useMemo(
-    () =>
-      getRandomItemFromArray(configs?.solana?.RPC_APIs,clusterApiUrl(network) ),
-    [network]
-  );
-  // inside SolanaProvider
-const wallets = useMemo(() => {
+  const endpoint = useMemo(() => {
+    return getRandomItemFromArray(configs.solana.RPC_APIs);
+  }, [configs.solana.RPC_APIs]);
+
+  const wallets = useMemo(() => {
     if (typeof window === "undefined") return [];
 
     return [
@@ -52,16 +48,15 @@ const wallets = useMemo(() => {
     ];
   }, [network]);
 
-
   return (
     <ConnectionProvider endpoint={endpoint}>
       <WalletProvider wallets={wallets} autoConnect>
         <WalletModalProvider>
           <AppSolanaProvider globalConfigs={configs}>
-            <CustomWalletDialogs/>
+            <CustomWalletDialogs />
             {children}
           </AppSolanaProvider>
-          </WalletModalProvider>
+        </WalletModalProvider>
       </WalletProvider>
     </ConnectionProvider>
   );

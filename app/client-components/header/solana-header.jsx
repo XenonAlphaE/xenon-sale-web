@@ -6,20 +6,38 @@ import { useI18nSection } from "../../../redux/utils/languageUtils";
 import  styles from './header.module.css'
 import PresaleSection from "./PresaleSection";
 import { SolanaBuyForm } from "../buyform/solana-buyform";
+import AutoScrollCarousel from "../carousal/AutoScrollCarousel";
 export const SolanaHeader = () => {
   const sectionText = useI18nSection('header')
 
-  return (
-    <section id="intro"  className={styles.container}>
-      <div className={styles.mainContent}> 
-        <div className={styles.leftPart}>
-            <PresaleSection />  
-        </div> 
-        <div className={styles.rightPart}>
-            <SolanaBuyForm/>  
-        </div> 
+  const slides = [
+    {src: '/img/subbd/featured_1.svg'},
+    {src: '/img/subbd/featured_3.svg'},
+    {src: '/img/subbd/featured_4.svg'},
+    {src: '/img/subbd/featured_5.svg'},
+    {src: '/img/subbd/featured_6.svg'},
+]
+  const renderSlide = (item) => {
+    return (
+      <img src={item.src} />
+    )
+  }
 
+  return (
+    <section id="intro"  >
+      <div className={styles.container}>
+
+        <div className={styles.mainContent}> 
+          <div className={styles.leftPart}>
+              <PresaleSection />  
+          </div> 
+          <div className={styles.rightPart}>
+              <SolanaBuyForm/>  
+          </div> 
+
+        </div>
       </div>
+      <AutoScrollCarousel slides={slides} renderSlide={renderSlide}/>
 
     </section>
     // </div>
