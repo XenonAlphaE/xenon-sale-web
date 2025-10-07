@@ -27,6 +27,7 @@ export const calculateUSDNeeded = (tokenAmount, tokenPrice) => {
 
 // Function to calculate token output given a USD amount and token price
 export const calculateTokenOutput = (usdAmount, tokenPrice) => {
+    debugger
     const usdAmountDecimal = new Decimal(usdAmount);
     const tokenPriceDecimal = new Decimal(tokenPrice);
     return usdAmountDecimal.div(tokenPriceDecimal).floor().toString();

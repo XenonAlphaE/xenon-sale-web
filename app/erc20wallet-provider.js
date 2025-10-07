@@ -302,7 +302,7 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
                 if(isValidNumber(amount)){
                     
                     const {salerInfo,usdtAbi, usdtAddress, usdtDecimals} = getContracts()
-                    const tokenAmout = calculateTokenOutput(value, globalConfigs?.targetToken?.tokenPriceInUsdt)            
+                    const tokenAmout = calculateTokenOutput(amount, globalConfigs?.targetToken?.tokenPrice)            
                     if(!salerInfo){
                         return
                     }

@@ -81,25 +81,24 @@ export const Navbar = ({ isStakingPage = false }) => {
     <div className={styles.navContainer} >
      
         <a className={styles.appnavBrand} href='/'>
-          <img className={styles.brandLogo}  src="/img/subbd/logo.svg"/>
+          <img className={styles.brandLogo}  src="/img/lilpepe/logo.png"/>
           {/* <img className={styles.textLogo}  src="/img/btcswift/bitcoin-swift-text-logo.webp"/> */}
         </a>
 
         <div className={styles.appnavMenu}>
-          <a href={isStakingPage ? `/${currentLanguage}` : "/"}>{sectionText?.home}</a>
-          <a href={isStakingPage ? `/${currentLanguage}/#about` : "#about"}>{sectionText?.about}</a>
-          <a href={isStakingPage ? `/${currentLanguage}/#roadmap` : "#roadmap"}>{ sectionText?.howtobuy}</a>
-          <a href={isStakingPage ? `/${currentLanguage}/#roadmap` : "#roadmap"}>{ sectionText?.roadmap}</a>
-          <a href={isStakingPage ? `/${currentLanguage}/#tokenomics` : "#tokenomics"}>{sectionText?.tokenomics}</a>
-          <a href={isStakingPage ? `/${currentLanguage}/#faqs` : "#faqs"} > {sectionText?.faq}</a>
+          <a onClick={toggleMenu}  href={isStakingPage ? `/${currentLanguage}/#about` : "#about"}>{sectionText?.about}</a>
+          <a onClick={toggleMenu} style={{background:'rgb(196, 153, 225)'}} href={isStakingPage ? `/${currentLanguage}/#roadmap` : "#roadmap"}>{ sectionText?.roadmap}</a>
+          <a onClick={toggleMenu} style={{background:'rgb(246, 158, 150)'}} href={isStakingPage ? `/${currentLanguage}/#tokenomics` : "#tokenomics"}>{sectionText?.tokenomics}</a>
+          <a onClick={toggleMenu} style={{background:'rgb(171, 231, 192)'}} href={isStakingPage ? `/${currentLanguage}/#roadmap` : "#roadmap"}>{ sectionText?.staking}</a>
+          <a onClick={toggleMenu} style={{background:'rgb(255, 113, 52)'}} href={isStakingPage ? `/${currentLanguage}/#faqs` : "#faqs"} > {sectionText?.faq}</a>
           {/* <a href={isStakingPage ? `/${currentLanguage}/#howtobuy` : "#howtobuy"}><img className={styles.menuIcon} src='/img/btcswift/security.svg'/>  {sectionText?.howtobuy}</a> */}
         </div>
 
         <div className={styles.loginContainer} >
-          <a href="/"  target='_blank' ><img src='/img/subbd/twitter.svg' className={styles.appSocialIcon} /></a>
+          {/* <a href="/"  target='_blank' ><img src='/img/subbd/twitter.svg' className={styles.appSocialIcon} /></a> */}
           {/* <a href='/'  target='_blank' ><img src='/img/pepenode/cmc-1.svg' className={styles.appSocialIcon}/></a> */}
 
-          <a  className={styles.appWhitepaper} >White Paper</a>
+          {/* <a  className={styles.appWhitepaper} >White Paper</a> */}
           {/* <button onClick={scrollToBuySection} className={styles.appnavLogin} >{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button> */}
           <EthConnectButton toggleMenu={toggleMenu} />
           <div className={styles.langDropdown} >
@@ -134,11 +133,10 @@ export const Navbar = ({ isStakingPage = false }) => {
       {isMobile && <div className={`${styles.appnavMobile} ${isMenuOpen ? styles.mobileActive : ''}`}>
       {/* <a onClick={toggleMenu} href={`/${currentLanguage}`}>{sectionText?.home}</a> */}
 
-        <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}` : "/"}>{sectionText?.home}</a>
         <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#about` : "#about"}>{sectionText?.about}</a>
-        <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#roadmap` : "#roadmap"}>{ sectionText?.howtobuy}</a>
         <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#roadmap` : "#roadmap"}>{ sectionText?.roadmap}</a>
         <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#tokenomics` : "#tokenomics"}>{sectionText?.tokenomics}</a>
+        <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#roadmap` : "#roadmap"}>{ sectionText?.staking}</a>
         <a onClick={toggleMenu} href={isStakingPage ? `/${currentLanguage}/#faqs` : "#faqs"} > {sectionText?.faq}</a>
 
 

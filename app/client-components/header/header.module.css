@@ -4,12 +4,11 @@
   justify-content: center;
   row-gap: 1rem;
   position: relative;
+  padding: 120px 20px 64px;
 
-  padding: 60px 20px 64px;
-  background: url(/img/subbd/banner_cover.webp) no-repeat, url(/img/subbd/banner-bg.webp) no-repeat;
-  background-size: 115%, 85%;
-  background-position: -41% 10%, 118% 5%;
-  max-width: 1376px;
+  background: url(/img/lilpepe/herobg.png) no-repeat;
+  background-size: 100%, 100%;
+  background-position: 0 0;
   margin: 0 auto;
   @media (max-width: 1024px) {
       width: 100%;
@@ -20,9 +19,7 @@
 
 
 .mainContent{
-  padding-top:6rem;
-  min-width: 1376px;
-  width: 1376px;
+  width: 100%;
   display: flex;
 
    @media (max-width: 1024px) {

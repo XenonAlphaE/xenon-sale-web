@@ -37,9 +37,9 @@ const App = () => {
     <div className={styles.container}>
           <Navbar />
           <Header/>
-          <About /> 
-          <HowToBuy />
-          <AppSpinner />
+          {/* <About />  */}
+          {/* <HowToBuy /> */}
+          {/* <AppSpinner /> */}
           {/* <Tokenomics /> */}
           {/* <TrustedBy/> */}
           {/* <Roadmap /> */}

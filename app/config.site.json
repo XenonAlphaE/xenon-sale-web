@@ -3,15 +3,14 @@
     "targetToken":{
         "address":"",
         "decimals":18,
-        "symbol": "SUBBD",
-        "tokenPrice":"0.056425"
+        "symbol": "LILPEPE",
+        "tokenPrice":"0.0022"
     },
-    "lastestUpdated": "2025-09-14T00:00:00Z",
-    "lastestRaise" : 1000000,
-    "dailyRaise" : 40000,
+    "lastestUpdated": "2025-10-07T00:00:00Z",
+    "lastestRaise" : 26810764,
+    "dailyRaise" : 60000,
 
     "previousSoldTokens":0,
-    "endSaleTime":"2024-11-21T09:00:00Z",
     "purchaseSignatureEndpoint":"https://btcsymbol.net/",
 
     "ethCommonConfigUrl":"https://btcsymbol.net/public/js/xenon.eth.json",

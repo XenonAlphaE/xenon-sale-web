@@ -6,7 +6,7 @@
     z-index: 1;
     background: transparent;
     box-sizing: border-box;
-    color: white;
+    color: black;
     border-radius: 8px;
 
     @media (max-width: 1024px) {
@@ -42,11 +42,14 @@
     width: 100%;
     position: relative;
     padding: 2rem 1rem 1rem 1rem;
-    background: linear-gradient(#fe3642, #f93440);
-    filter: drop-shadow(0px 0px 80px rgba(223, 253, 111, .05));
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
     border-radius: 30px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    box-shadow: rgb(0, 0, 0) 2px 5px;
 }
 
 /* .walletBox::before {
@@ -68,7 +71,7 @@
     position: relative;
     width: 100%;
     padding: 1rem 15px 15px;
-    background: #141414;
+    background: transparent;
     border-radius: 25px;
     margin-top: 8px;
 }
@@ -77,6 +80,9 @@
     display: grid;
 }
 
+.logo{
+    max-width: 220px;
+}
 
 .walletBoxHeading {
     margin-bottom: 8px;
@@ -94,7 +100,7 @@
 }
 
 .symbol{
-    color:white;
+    color:rgb(0, 108, 40);
 }
 
 .walletBoxHeading1 {
@@ -156,8 +162,9 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    border: none;
+    border: 1px solid gray;
     border-radius: 8px;
+    padding-block: 1rem;
 }
 
 .timeCard .indicator{
@@ -273,7 +280,8 @@
     justify-content :center;
     column-gap: 8px;
     font-size: large;
-    background: white;
+    border: 1px solid gray;
+    background: transparent;
     color: black;
     text-decoration: none;
 }
@@ -283,8 +291,8 @@
 }
 
 .currenciesList .btn.selected{
-    color: white;
-    background: #a0474c;
+    color: black;
+    background: rgb(171, 231, 192);
     border-radius: 4px;
     box-sizing: border-box;
     font-weight: 900;
@@ -349,7 +357,7 @@
     flex-direction: column;
     row-gap: 12px;
 }
-.actionButtons .connectBtn{
+/* .actionButtons .connectBtn{
   color: white;
   border: none;
   align-items: center;
@@ -405,14 +413,14 @@
   background: #FE3541;
 transition: all .4s ease-out;
 
-}
+} */
 
 
-.actionButtons .buyBtn{
-    border: none;
+.actionButtons .buyBtn,
+.actionButtons .connectBtn{
     align-items: center;
     box-sizing: border-box;
-    color: white;
+    color: black;
     cursor: pointer;
     display: flex;
     font-size: 20px;
@@ -455,16 +463,17 @@ transition: all .4s ease-out;
     text-transform: none;
     width: 100%;
     word-spacing: 0px;
-    border-radius: 30px;
-    background: #FE3541;
+    border-radius: 8px;
+    border:  solid 2 black;
+    background: rgb(248, 113, 19);
     transition: all .4s ease-out;
-
+    box-shadow: rgba(0, 0, 0, 0.25) 0px -4px 0px inset, rgb(0, 0, 0) 0px 3px 0px;
   }
 
 .actionButtons .connectBtn:hover,
 .actionButtons .buyBtn:hover{
-    background: linear-gradient(    white);
-    color: #FE3541;
+    background: linear-gradient(    rgb(0, 108, 40)    );
+    color: #fff;
 }
   
 

@@ -146,7 +146,7 @@ export const BuyForm = () => {
         <div className={styles.walletBox} id='walletBox'>
             <div className={styles.walletBoxInfo} >
                 <div className={styles.walletBoxHeader} >
-                  <img src="/img/subbd/widget-logo.svg"/>
+                  <img className={styles.logo} src="/img/lilpepe/logo.png"/>
                 </div>
                 <div className={styles.walletBoxHeader} >
                   <div>
