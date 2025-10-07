@@ -491,9 +491,10 @@ transition: all .4s ease-out;
   /* border: solid 2px #fff;
   box-sizing: border-box;
   background: transparent; */
-    border-radius: 30px;
+    border-radius: 8px;
     width: 100%;
     color:  black;
+    border: 1px solid black;
     background-color: white;
     box-sizing: border-box;
     font-size : 18px;
@@ -503,7 +504,7 @@ transition: all .4s ease-out;
     justify-content: center;
     align-items: center;
     height: 60px;
-    border: none;
+
     position: relative;
     text-decoration: none;
 }

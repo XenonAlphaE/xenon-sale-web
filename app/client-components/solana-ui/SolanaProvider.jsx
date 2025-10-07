@@ -13,11 +13,13 @@ import { WalletConnectWalletAdapter } from "@solana/wallet-adapter-walletconnect
 
 import { AppSolanaProvider } from "../../solanaWallet-provider";
 import CustomWalletDialogs from "./WalletMultiButton/WalletMultiButton";
-import configs from '../config.main'
 import { getRandomItemFromArray } from "../services/utils";
+import { useGlobalConfig } from "../../globalConfig-provider";
+import { clusterApiUrl } from "@solana/web3.js";
 
 
 export const SolanaProvider = ({ children }) => {
+  const configs = useGlobalConfig()
   // The network can be set to 'devnet', 'testnet', or 'mainnet-beta'
   const network = WalletAdapterNetwork.Mainnet;
 
@@ -26,7 +28,7 @@ export const SolanaProvider = ({ children }) => {
   // Replace this with your provider’s RPC URL
   const endpoint = useMemo(
     () =>
-      getRandomItemFromArray([ ...configs.solana.RPC_APIs]),
+      getRandomItemFromArray(configs?.solana?.RPC_APIs,clusterApiUrl(network) ),
     [network]
   );
   // inside SolanaProvider

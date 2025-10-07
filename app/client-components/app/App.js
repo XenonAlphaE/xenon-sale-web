@@ -17,7 +17,6 @@ import { useSetLanguage } from "../../../redux/utils/languageUtils";
 import About from "../about/about";
 import TrustedBy from "../TrustedBy/TrustedBy";
 import { AppSpinner } from "../spinner/spinner";
-import LightSkeleton from "../FrameLoading/FrameLoading";
 // export const scroll = new SmoothScroll('a[href*="#"]', {
 //   speed: 1000,
 //   speedAsDuration: true,

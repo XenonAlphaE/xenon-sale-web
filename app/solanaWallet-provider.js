@@ -97,16 +97,16 @@ export const AppSolanaProvider = ({ globalConfigs, children }) => {
     }, []);   
 
     useEffect(() => {
-        if(globalConfigs.solana.salers.length > 0){
+        if(globalConfigs?.solana?.salers.length > 0){
 
             let prog;
     
             if (connected ) {
                 const provider = new AnchorProvider(connection, anchorWallet, { preflightCommitment: "processed" });
-                prog = new Program(globalConfigs.solana.salers[0].idl, globalConfigs.solana.salers[0].programId, provider);
+                prog = new Program(globalConfigs?.solana?.salers[0].idl, globalConfigs?.solana?.salers[0].programId, provider);
             } else {
                 // Read-only program
-                prog = new Program(globalConfigs.solana.salers[0].idl, globalConfigs.solana.salers[0].programId, { connection });
+                prog = new Program(globalConfigs?.solana?.salers[0].idl, globalConfigs?.solana?.salers[0].programId, { connection });
             }
     
             setProgram(prog);
