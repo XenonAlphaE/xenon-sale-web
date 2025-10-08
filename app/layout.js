@@ -1,8 +1,4 @@
 // app/layout.js
-import { ReduxProvider } from './redux-provider';
-
-import {WalletProvider} from './wallet-provider'
-
 import './globals.css'
 import { getBacklinkUrls, getLangDomain, getLangKeys, getLocale, getMainDomain, getSiteName, getTwiter, getOG, getGTAG, getLogoPath } from './server-util';
 
@@ -17,7 +13,7 @@ export async function generateMetadata() {
     
   
   
-    keywords: 'SUBBD, SUBBD Token, SUBBD Presale is live now', // Add keywords here
+    keywords: 'LILPEPE, LILPEPE Token, LILPEPE Presale is live now', // Add keywords here
     robots: 'index, follow', // Add robots directives here
     openGraph: {
       title: metadata?.title,
@@ -43,7 +39,7 @@ export async function generateMetadata() {
       image: getOG(), // Path to your Open Graph image,
     },
     alternates: {
-      canonical: "https://subbd.biz", // Set the canonical URL
+      canonical: "https://lilpepetoken.com", // Set the canonical URL
     },
   };
 }

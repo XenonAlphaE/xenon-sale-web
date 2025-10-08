@@ -12,10 +12,11 @@ import {
   calculateTokensForBNB, calculateBNBNeeded, isValidNumber, truncateMiddle
 } from '../services/wallet-service';
 import {CurrencyDropdown} from "../currency-dropdown/CurrencyDropdown";
-import configs from '../config.main.json'
 import './withdrawform.css'
 import './withdrawform.mobile.css'
+import { useGlobalConfig } from "../../globalConfig-provider";
 export const WithdrawForm = () => {
+    const configs = useGlobalConfig()
     const sectionText = useI18nSection('buyForm')
     const nativeNetwork = useNativeNetwork()
 

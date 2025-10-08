@@ -2,7 +2,7 @@ import { getLangDomain, getLocale, getSiteName, getTwiter, getOG } from '../serv
 
 export async function generateMetadata({ params }) {
   const lang = (await params).lang
-  const canonicalUrl = `https://subbd.biz/${lang == 'en' ? '' : lang}`;
+  const canonicalUrl = `https://lilpepetoken.com/${lang == 'en' ? '' : lang}`;
 
 
   const defaultMeta = await import(`../../locales/en.json`).then(content => content.metadata);
