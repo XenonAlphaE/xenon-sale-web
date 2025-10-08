@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "SUBBD | 궁극의 크리에이터 플랫폼",
-    "description": "SUBBD는 궁극의 크리에이터 플랫폼입니다. 베타에 참여하여 팬들과 소통하고, 콘텐츠를 수익화하며, 커뮤니티를 구축하세요."
+    "title": "LILPEPE Token Presale | Little Pepe Presale",
+    "description": "LILPEPE와 함께하는 새로운 세계 질서에 입장하세요. 멈출 수 없는 밈의 힘이 저비용, 초고속 레이어 2 EVM 프로토콜인 Little Pepe Chain에서 그들의 집을 만납니다."
   },
   "nav": {
     "home": "홈",
@@ -9,43 +9,41 @@
     "howtobuy": "구매 방법",
     "whitePaper": "백서",
     "tokenomics": "토크노믹스",
-    "features": "기능",
-    "buyNow": "$SUBBD 구매",
+    "features": "특징",
+    "buyNow": "$LILPEPE 구매",
     "faq": "자주 묻는 질문",
     "audit": "감사",
     "roadmap": "로드맵",
-    "airdrop": "에어드롭",
+    "airdrop": "에어드랍",
     "about": "소개"
   },
   "buyForm": {
-    "intro": "구매",
-    "intro1": "프리세일 진행 중",
+    "intro": "구매하기",
+    "intro1": "지금 프리세일",
     "day": "일",
     "hrs": "시간",
     "mins": "분",
     "sec": "초",
     "funRaised": "모금된 USDT",
-    "wallet": "내 지갑",
-    "boughtAmount": "구매한 수량",
-    "stakeableAmount": "스테이킹 가능 수량",
-    "pay": "지불 방식",
-    "get": "수령 수량",
-    "buyNow": "$SUBBD 구매",
+    "wallet": "당신의 지갑",
+    "boughtAmount": "구매한 양",
+    "stakeableAmount": "스테이킹 가능 양",
+    "pay": "결제 수단",
+    "get": "받을 양",
+    "buyNow": "$LILPEPE 구매",
     "buyMax": "최대 구매",
     "warning": "구매하려면 Metamask를 설치하세요",
-    "link": "여기를 클릭",
+    "link": "여기를 클릭하세요",
     "connectWallet": "지갑 연결",
-    "ethOption": "이더리움 네트워크",
+    "ethOption": "ETH 네트워크",
     "switchOption": "네트워크 전환",
     "bnbOption": "BNB 네트워크",
-    "buyStake": "구매 후 69% 보상으로 스테이킹",
-    "nextPriceAlert": "가격 인상까지",
+    "buyStake": "구매 및 128% 보상 스테이킹",
+    "nextPriceAlert": "가격 상승까지",
     "para1": "1102% 스테이킹 보상"
   },
   "header": {
-    "headline": "$SUBBD 토큰. No.1 AI 에이전트 크리에이터 플랫폼",
-    "description": "$SUBBD 토큰은 차세대 콘텐츠 크리에이터를 위한 동력입니다. AI로 구동되는 SUBBD 플랫폼은 크리에이터와 팬의 관계를 혁신합니다.",
-    "tag": "상위 수익 크리에이터 2000명 이상",
-    "tag1": "총 팔로워 2억 5천만+"
+    "headline": "새롭게 탄생한 EVM 레이어 2 머신: Little PEPE",
+    "description": "LILPEPE와 함께하는 새로운 세계 질서에 입장하세요. 멈출 수 없는 밈의 힘이 저비용, 초고속 레이어 2 EVM 프로토콜인 Little Pepe Chain에서 그들의 집을 만납니다."
   }
 }

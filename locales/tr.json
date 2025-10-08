@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "title": "SUBBD | Nihai Yaratıcı Platformu",
-    "description": "SUBBD nihai yaratıcı platformudur. İzleyicilerinizle bağlantı kurmak, içeriğinizi paraya dönüştürmek ve topluluğunuzu oluşturmak için betaya katılın."
+    "title": "LILPEPE Token Ön Satış | Little Pepe Ön Satış",
+    "description": "LILPEPE ile yeni dünya düzenine girin, burada durdurulamaz meme gücü, Little Pepe Chain tarafından etkinleştirilen düşük maliyetli, ışık hızında çalışan layer 2 EVM protokolünde buluşuyor."
   },
   "nav": {
     "home": "ANASAYFA",
     "staking": "STAKING",
     "howtobuy": "NASIL ALINIR",
-    "whitePaper": "BEYAZ SAYFA",
-    "tokenomics": "TOKENOMİK",
+    "whitePaper": "WHITE PAPER",
+    "tokenomics": "TOKENOMICS",
     "features": "ÖZELLİKLER",
-    "buyNow": "$SUBBD AL",
+    "buyNow": "$LILPEPE SATIN AL",
     "faq": "SSS",
     "audit": "DENETİM",
     "roadmap": "YOL HARİTASI",
@@ -26,26 +26,24 @@
     "sec": "Saniye",
     "funRaised": "Toplanan USDT",
     "wallet": "CÜZDANINIZ",
-    "boughtAmount": "SATIN ALDINIZ",
-    "stakeableAmount": "STAKELANABİLİR",
-    "pay": "İle Öde",
+    "boughtAmount": "SATIN ALDIĞINIZ",
+    "stakeableAmount": "STAKELANABİLİR MİKTARINIZ",
+    "pay": "Öde",
     "get": "Al",
-    "buyNow": "$SUBBD AL",
-    "buyMax": "MAKS AL",
+    "buyNow": "$LILPEPE SATIN AL",
+    "buyMax": "MAKS SATIN AL",
     "warning": "Satın almak için lütfen Metamask kurun",
     "link": "buraya tıklayın",
     "connectWallet": "CÜZDAN BAĞLA",
     "ethOption": "ETH AĞI",
-    "switchOption": "AĞI DEĞİŞTİR",
+    "switchOption": "AĞ DEĞİŞTİR",
     "bnbOption": "BNB AĞI",
-    "buyStake": "%69 Ödüller İçin Satın Al ve Stake Et",
+    "buyStake": "%128 Ödüller için Satın Al ve Stake Et",
     "nextPriceAlert": "FİYAT ARTIŞINA KADAR",
     "para1": "%1102 STAKING ÖDÜLLERİ"
   },
   "header": {
-    "headline": "$SUBBD Token. No.1 AI Agent Creator Platformu",
-    "description": "$SUBBD token, yeni nesil içerik yaratıcılarını güçlendirir. Yapay Zeka destekli SUBBD platformu, yaratıcı ve hayran ilişkilerini devrim niteliğinde değiştirir.",
-    "tag": "2000+ En Çok Kazanan Yaratıcılar",
-    "tag1": "250m+ Toplam Takipçi"
+    "headline": "Yeni Doğan EVM Layer 2 Makinesi: Little PEPE",
+    "description": "LILPEPE ile yeni dünya düzenine girin, burada durdurulamaz meme gücü, Little Pepe Chain tarafından etkinleştirilen düşük maliyetli, ışık hızında çalışan layer 2 EVM protokolünde buluşuyor."
   }
 }

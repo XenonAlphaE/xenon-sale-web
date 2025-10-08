@@ -1,51 +1,49 @@
 {
   "metadata": {
-    "title": "SUBBD | פלטפורמת יוצר האולטימטיבית",
-    "description": "SUBBD היא פלטפורמת היוצרים האולטימטיבית. הצטרף לבטא כדי להתחבר לקהל שלך, להרוויח כסף מתוכן שלך ולבנות את הקהילה שלך."
+    "title": "מכירת מוקדמת של טוקן LILPEPE | מכירה מוקדמת של Little Pepe",
+    "description": "היכנסו לסדר העולמי החדש עם LILPEPE, שבו הכוח הבלתי ניתן לעצירה של מימים מוצא את ביתו בפרוטוקול EVM שכבת 2 מהיר וחסכוני, המופעל על ידי Little Pepe Chain."
   },
   "nav": {
     "home": "בית",
-    "staking": "השתתפות",
+    "staking": "סטייקינג",
     "howtobuy": "איך לקנות",
-    "whitePaper": "מסמך לבן",
-    "tokenomics": "כלכלה של מטבעות",
-    "features": "תכונות",
-    "buyNow": "קנה $SUBBD",
+    "whitePaper": "וויט פייפר",
+    "tokenomics": "טוקנומיקס",
+    "features": "מאפיינים",
+    "buyNow": "קנה $LILPEPE",
     "faq": "שאלות נפוצות",
-    "audit": "ביקורת",
+    "audit": "אודיט",
     "roadmap": "מפת דרכים",
-    "airdrop": "הפצה חינם",
+    "airdrop": "איירדרופ",
     "about": "אודות"
   },
   "buyForm": {
-    "intro": "קנה",
+    "intro": "קנייה",
     "intro1": "מכירה מוקדמת עכשיו",
     "day": "ימים",
     "hrs": "שעות",
     "mins": "דקות",
     "sec": "שניות",
     "funRaised": "USDT שנאספו",
-    "wallet": "ארנק שלך",
-    "boughtAmount": "הכמות שרכשת",
-    "stakeableAmount": "הכמות שאתה יכול להחזיק בהשתתפות",
-    "pay": "שלם עם",
+    "wallet": "הארנק שלך",
+    "boughtAmount": "הרכישה שלך",
+    "stakeableAmount": "כמות לסטייק",
+    "pay": "שלם באמצעות",
     "get": "קבל",
-    "buyNow": "קנה $SUBBD",
-    "buyMax": "קנה מקסימום",
-    "warning": "התקן את Metamask כדי לקנות",
+    "buyNow": "קנה $LILPEPE",
+    "buyMax": "קנייה מקסימלית",
+    "warning": "אנא התקן את Metamask כדי לבצע רכישה",
     "link": "לחץ כאן",
-    "connectWallet": "חבר את הארנק",
+    "connectWallet": "חבר ארנק",
     "ethOption": "רשת ETH",
-    "switchOption": "שנה רשת",
+    "switchOption": "החלף רשת",
     "bnbOption": "רשת BNB",
-    "buyStake": "קנה והשתתף לקבלת 69% תמריצים",
-    "nextPriceAlert": "עד העלאת המחיר",
-    "para1": "1102% תמריצי השתתפות"
+    "buyStake": "קנה וסטייק עבור תגמול של 128%",
+    "nextPriceAlert": "עד לעליית המחיר",
+    "para1": "תגמולי סטייקינג של 1102%"
   },
   "header": {
-    "headline": "$SUBBD Token. פלטפורמת יוצרי ה-AI מס' 1",
-    "description": "$SUBBD token מניע את הדור הבא של יוצרי התוכן. הפלטפורמה של SUBBD משנה את מערכת היחסים בין יוצרים למעריצים בעזרת AI.",
-    "tag": "2000+ יוצרים עם הכנסות גבוהות",
-    "tag1": "250 מיליון+ עוקבים משולבים"
+    "headline": "המכונה החדשה של EVM שכבת 2: Little PEPE",
+    "description": "היכנסו לסדר העולמי החדש עם LILPEPE, שבו הכוח הבלתי ניתן לעצירה של מימים מוצא את ביתו בפרוטוקול EVM שכבת 2 מהיר וחסכוני, המופעל על ידי Little Pepe Chain."
   }
 }

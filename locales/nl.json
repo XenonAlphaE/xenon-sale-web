@@ -1,19 +1,19 @@
 {
   "metadata": {
-    "title": "SUBBD | Ultimate Creator Platform",
-    "description": "SUBBD is het ultieme creatorplatform. Word lid van de beta om in contact te komen met je publiek, je content te monetariseren en je gemeenschap op te bouwen."
+    "title": "LILPEPE Token Presale | Little Pepe Presale",
+    "description": "Betreed de nieuwe wereldorde met LILPEPE, waar de niet te stoppen kracht van memes hun thuis vindt in een goedkope, razendsnelle layer 2 EVM-protocol mogelijk gemaakt door Little Pepe Chain."
   },
   "nav": {
-    "home": "HOME",
-    "staking": "STAKING",
+    "home": "START",
+    "staking": "STAKEN",
     "howtobuy": "HOE TE KOPEN",
     "whitePaper": "WHITE PAPER",
     "tokenomics": "TOKENOMICS",
-    "features": "KENMERKEN",
-    "buyNow": "KOOP $SUBBD",
-    "faq": "FAQ'S",
+    "features": "FUNCTIES",
+    "buyNow": "KOOP $LILPEPE",
+    "faq": "VEELGESTELDE VRAGEN",
     "audit": "AUDIT",
-    "roadmap": "ROADMAP",
+    "roadmap": "ROADMAPP",
     "airdrop": "AIRDROP",
     "about": "OVER"
   },
@@ -24,28 +24,26 @@
     "hrs": "Uur",
     "mins": "Min",
     "sec": "Sec",
-    "funRaised": "USDT Verhoogd",
+    "funRaised": "USDT Verzameld",
     "wallet": "JOUW Wallet",
-    "boughtAmount": "JOUW AANKOOP",
-    "stakeableAmount": "JOUW STAKEABLE",
+    "boughtAmount": "JOUW GEKOCHT",
+    "stakeableAmount": "JOUW STAKEBAAR",
     "pay": "Betaal met",
     "get": "Ontvang",
-    "buyNow": "KOOP $SUBBD",
+    "buyNow": "KOOP $LILPEPE",
     "buyMax": "KOOP MAX",
     "warning": "Installeer Metamask om te kopen",
     "link": "klik hier",
     "connectWallet": "VERBIND WALLET",
     "ethOption": "ETH NETWERK",
-    "switchOption": "SCHAKEL NETWERK",
+    "switchOption": "WISSEL NETWERK",
     "bnbOption": "BNB NETWERK",
-    "buyStake": "Koop en Stake voor 69% Beloningen",
+    "buyStake": "Koop en Stake voor 128% Beloningen",
     "nextPriceAlert": "TOT PRIJSSTIJGING",
     "para1": "1102% STAKING BELONINGEN"
   },
   "header": {
-    "headline": "$SUBBD Token. Het Nr.1 AI Agent Creator Platform",
-    "description": "$SUBBD token voedt de volgende generatie content creators. Aangedreven door AI, revolutioneert het SUBBD platform de relatie tussen creators en fans.",
-    "tag": "2000+ Top Verdienende Creators",
-    "tag1": "250m+ Gecombineerde Volgers"
+    "headline": "De pasgeboren EVM Layer 2 Machine: Little PEPE",
+    "description": "Betreed de nieuwe wereldorde met LILPEPE, waar de niet te stoppen kracht van memes hun thuis vindt in een goedkope, razendsnelle layer 2 EVM-protocol mogelijk gemaakt door Little Pepe Chain."
   }
 }

@@ -1,51 +1,49 @@
 {
   "metadata": {
-    "title": "SUBBD | Piattaforma Creativa Definitiva",
-    "description": "SUBBD è la piattaforma creativa definitiva. Unisciti alla beta per connetterti con il tuo pubblico, monetizzare i tuoi contenuti e costruire la tua community."
+    "title": "LILPEPE Token Presale | Little Pepe Presale",
+    "description": "Entra nel nuovo ordine mondiale con LILPEPE, dove la forza inarrestabile dei meme trova casa in un protocollo layer 2 EVM a basso costo e velocissimo abilitato da Little Pepe Chain."
   },
   "nav": {
     "home": "HOME",
     "staking": "STAKING",
-    "howtobuy": "COME ACQUISTARE",
+    "howtobuy": "COME COMPRARE",
     "whitePaper": "WHITE PAPER",
     "tokenomics": "TOKENOMICS",
-    "features": "FUNZIONALITÀ",
-    "buyNow": "ACQUISTA $SUBBD",
+    "features": "CARATTERISTICHE",
+    "buyNow": "COMPRA $LILPEPE",
     "faq": "FAQ",
     "audit": "AUDIT",
     "roadmap": "ROADMAP",
     "airdrop": "AIRDROP",
-    "about": "CHI SIAMO"
+    "about": "INFO"
   },
   "buyForm": {
-    "intro": "Acquista",
-    "intro1": "Prevendita Ora",
+    "intro": "Compra",
+    "intro1": "Presale Ora",
     "day": "Giorni",
     "hrs": "Ore",
-    "mins": "Min",
-    "sec": "Sec",
+    "mins": "Minuti",
+    "sec": "Secondi",
     "funRaised": "USDT Raccolti",
-    "wallet": "Il Tuo Wallet",
-    "boughtAmount": "IL TUO ACQUISTO",
-    "stakeableAmount": "IL TUO STAKING DISPONIBILE",
+    "wallet": "IL TUO Wallet",
+    "boughtAmount": "ACQUISTATO",
+    "stakeableAmount": "STAKABILE",
     "pay": "Paga con",
     "get": "Ricevi",
-    "buyNow": "ACQUISTA $SUBBD",
-    "buyMax": "ACQUISTA MAX",
-    "warning": "Per favore installa Metamask per acquistare",
+    "buyNow": "COMPRA $LILPEPE",
+    "buyMax": "COMPRA MASSIMO",
+    "warning": "Per favore installa Metamask per comprare",
     "link": "clicca qui",
-    "connectWallet": "COLLEGA WALLET",
+    "connectWallet": "CONNETTI WALLET",
     "ethOption": "RETE ETH",
     "switchOption": "CAMBIA RETE",
     "bnbOption": "RETE BNB",
-    "buyStake": "Acquista e Metti in Stake per Ricompense del 69%",
-    "nextPriceAlert": "FINO AL PROSSIMO AUMENTO DI PREZZO",
-    "para1": "1102% RICOMPENSE STAKING"
+    "buyStake": "Compra e Staka per ricompense del 128%",
+    "nextPriceAlert": "FINO A AUMENTO PREZZO",
+    "para1": "RICOMPENSE DI STAKING DEL 1102%"
   },
   "header": {
-    "headline": "Token $SUBBD. La Piattaforma N.1 per Creatori con Agenti AI",
-    "description": "Il token $SUBBD alimenta la nuova generazione di creatori di contenuti. Grazie all'intelligenza artificiale, la piattaforma SUBBD rivoluziona le relazioni tra creatori e fan.",
-    "tag": "Oltre 2000 Creatori ai Vertici dei Guadagni",
-    "tag1": "Oltre 250M di Follower Combinati"
+    "headline": "La Nuova Macchina EVM Layer 2: Little PEPE",
+    "description": "Entra nel nuovo ordine mondiale con LILPEPE, dove la forza inarrestabile dei meme trova casa in un protocollo layer 2 EVM a basso costo e velocissimo abilitato da Little Pepe Chain."
   }
 }

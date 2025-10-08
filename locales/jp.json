@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "SUBBD | 究極のクリエイタープラットフォーム",
-    "description": "SUBBDは究極のクリエイタープラットフォームです。ベータ版に参加して、あなたのオーディエンスとつながり、コンテンツを収益化し、コミュニティを築きましょう。"
+    "title": "LILPEPE トークンプレセール | Little Pepe プレセール",
+    "description": "LILPEPE と共に新しい世界秩序へ。止められないミームの力が、低コストで超高速のレイヤー2 EVMプロトコル、Little Pepe Chainによって実現されるホームに出会います。"
   },
   "nav": {
     "home": "ホーム",
@@ -10,7 +10,7 @@
     "whitePaper": "ホワイトペーパー",
     "tokenomics": "トークノミクス",
     "features": "特徴",
-    "buyNow": "$SUBBDを購入",
+    "buyNow": "$LILPEPEを購入",
     "faq": "よくある質問",
     "audit": "監査",
     "roadmap": "ロードマップ",
@@ -19,33 +19,31 @@
   },
   "buyForm": {
     "intro": "購入",
-    "intro1": "プレセール中",
+    "intro1": "プレセール開催中",
     "day": "日",
     "hrs": "時間",
     "mins": "分",
     "sec": "秒",
-    "funRaised": "調達済みUSDT",
+    "funRaised": "調達されたUSDT",
     "wallet": "あなたのウォレット",
-    "boughtAmount": "購入済み",
-    "stakeableAmount": "ステーキング可能",
-    "pay": "支払い方法",
-    "get": "受け取る",
-    "buyNow": "$SUBBDを購入",
+    "boughtAmount": "購入済み数量",
+    "stakeableAmount": "ステーク可能数量",
+    "pay": "支払う通貨",
+    "get": "受け取る通貨",
+    "buyNow": "$LILPEPEを購入",
     "buyMax": "最大購入",
-    "warning": "購入にはMetamaskのインストールが必要です",
-    "link": "こちらをクリック",
+    "warning": "購入にはMetamaskをインストールしてください",
+    "link": "ここをクリック",
     "connectWallet": "ウォレットを接続",
-    "ethOption": "ETHネットワーク",
-    "switchOption": "ネットワークを切り替え",
-    "bnbOption": "BNBネットワーク",
-    "buyStake": "購入してステーキングで69%報酬を獲得",
-    "nextPriceAlert": "次の価格上昇まで",
+    "ethOption": "ETH ネットワーク",
+    "switchOption": "ネットワークを切替",
+    "bnbOption": "BNB ネットワーク",
+    "buyStake": "購入して128%の報酬をステーク",
+    "nextPriceAlert": "価格上昇まで",
     "para1": "1102%のステーキング報酬"
   },
   "header": {
-    "headline": "$SUBBDトークン。No.1のAIエージェントクリエイタープラットフォーム",
-    "description": "$SUBBDトークンは次世代のコンテンツクリエイターを支えます。AIによって駆動されるSUBBDプラットフォームは、クリエイターとファンの関係を革新します。",
-    "tag": "2000人以上のトップ収益クリエイター",
-    "tag1": "合計2億5千万以上のフォロワー"
+    "headline": "新生EVMレイヤー2マシン：Little PEPE",
+    "description": "LILPEPE と共に新しい世界秩序へ。止められないミームの力が、低コストで超高速のレイヤー2 EVMプロトコル、Little Pepe Chainによって実現されるホームに出会います。"
   }
 }

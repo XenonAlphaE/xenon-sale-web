@@ -1,25 +1,25 @@
 {
   "metadata": {
-    "title": "SUBBD | Nền Tảng Tạo Nội Dung Tối Ưu",
-    "description": "SUBBD là nền tảng tạo nội dung tối ưu. Tham gia bản beta để kết nối với khán giả, kiếm tiền từ nội dung và xây dựng cộng đồng của bạn."
+    "title": "LILPEPE Token Presale | Little Pepe Presale",
+    "description": "Bước vào trật tự thế giới mới với LILPEPE, nơi sức mạnh không thể ngăn cản của meme tìm thấy ngôi nhà của chúng trong giao thức layer 2 EVM chi phí thấp, siêu nhanh được kích hoạt bởi Little Pepe Chain."
   },
   "nav": {
     "home": "TRANG CHỦ",
-    "staking": "ĐẦU TƯ",
+    "staking": "ĐẶT CƯỢC",
     "howtobuy": "CÁCH MUA",
     "whitePaper": "SÁCH TRẮNG",
-    "tokenomics": "KINH TẾ TOKEN",
+    "tokenomics": "TOKENOMICS",
     "features": "TÍNH NĂNG",
-    "buyNow": "MUA $SUBBD",
+    "buyNow": "MUA $LILPEPE",
     "faq": "CÂU HỎI THƯỜNG GẶP",
     "audit": "KIỂM TOÁN",
     "roadmap": "LỘ TRÌNH",
-    "airdrop": "PHÁT TOKEN MIỄN PHÍ",
+    "airdrop": "AIRDROP",
     "about": "VỀ CHÚNG TÔI"
   },
   "buyForm": {
     "intro": "Mua",
-    "intro1": "Đang mở bán trước",
+    "intro1": "Presale Now",
     "day": "Ngày",
     "hrs": "Giờ",
     "mins": "Phút",
@@ -27,25 +27,23 @@
     "funRaised": "USDT Đã Gây Quỹ",
     "wallet": "Ví CỦA BẠN",
     "boughtAmount": "SỐ LƯỢNG ĐÃ MUA",
-    "stakeableAmount": "SỐ LƯỢNG CÓ THỂ ĐẦU TƯ",
+    "stakeableAmount": "SỐ LƯỢNG CÓ THỂ ĐẶT CƯỢC",
     "pay": "Thanh toán bằng",
     "get": "Nhận",
-    "buyNow": "MUA $SUBBD",
+    "buyNow": "MUA $LILPEPE",
     "buyMax": "MUA TỐI ĐA",
     "warning": "Vui lòng cài đặt Metamask để mua",
-    "link": "nhấn vào đây",
+    "link": "bấm vào đây",
     "connectWallet": "KẾT NỐI VÍ",
     "ethOption": "MẠNG ETH",
     "switchOption": "CHUYỂN MẠNG",
     "bnbOption": "MẠNG BNB",
-    "buyStake": "Mua và Đầu tư để nhận thưởng 69%",
+    "buyStake": "Mua và Đặt Cược để nhận 128% Phần Thưởng",
     "nextPriceAlert": "ĐẾN KHI GIÁ TĂNG",
-    "para1": "THƯỞNG ĐẦU TƯ 1102%"
+    "para1": "1102% PHẦN THƯỞNG ĐẶT CƯỢC"
   },
   "header": {
-    "headline": "Token $SUBBD. Nền Tảng Tạo AI Agent Số 1",
-    "description": "Token $SUBBD hỗ trợ thế hệ sáng tạo nội dung mới. Được hỗ trợ bởi AI, nền tảng SUBBD cách mạng hóa mối quan hệ giữa nhà sáng tạo và người hâm mộ.",
-    "tag": "Hơn 2000 Nhà Sáng Tạo Thu Nhập Cao",
-    "tag1": "Hơn 250 triệu Người Theo Dõi Tổng Hợp"
+    "headline": "Chiếc Máy EVM Layer 2 Mới Sinh Ra: Little PEPE",
+    "description": "Bước vào trật tự thế giới mới với LILPEPE, nơi sức mạnh không thể ngăn cản của meme tìm thấy ngôi nhà của chúng trong giao thức layer 2 EVM chi phí thấp, siêu nhanh được kích hoạt bởi Little Pepe Chain."
   }
 }

@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "SUBBD | Plataforma Definitiva para Criadores",
-    "description": "SUBBD é a plataforma definitiva para criadores. Participe do beta para conectar-se com seu público, monetizar seu conteúdo e construir sua comunidade."
+    "title": "LILPEPE Token Presale | Little Pepe Presale",
+    "description": "Entre na nova ordem mundial com LILPEPE, onde a força imparável dos memes encontra seu lar em um protocolo EVM layer 2 de baixo custo e alta velocidade habilitado pela Little Pepe Chain."
   },
   "nav": {
     "home": "INÍCIO",
@@ -10,8 +10,8 @@
     "whitePaper": "WHITE PAPER",
     "tokenomics": "TOKENOMICS",
     "features": "RECURSOS",
-    "buyNow": "COMPRAR $SUBBD",
-    "faq": "PERGUNTAS FREQUENTES",
+    "buyNow": "COMPRAR $LILPEPE",
+    "faq": "PERGUNTAS",
     "audit": "AUDITORIA",
     "roadmap": "ROADMAP",
     "airdrop": "AIRDROP",
@@ -25,27 +25,25 @@
     "mins": "Min",
     "sec": "Seg",
     "funRaised": "USDT Arrecadado",
-    "wallet": "Sua Carteira",
-    "boughtAmount": "Seu Comprado",
-    "stakeableAmount": "Seu Stakeável",
+    "wallet": "SUA Carteira",
+    "boughtAmount": "SEU COMPRA",
+    "stakeableAmount": "SEU STAKE",
     "pay": "Pagar com",
     "get": "Receber",
-    "buyNow": "COMPRAR $SUBBD",
+    "buyNow": "COMPRAR $LILPEPE",
     "buyMax": "COMPRAR MÁXIMO",
-    "warning": "Por favor, instale o Metamask para comprar",
+    "warning": "Por favor, instale Metamask para comprar",
     "link": "clique aqui",
     "connectWallet": "CONECTAR CARTEIRA",
     "ethOption": "REDE ETH",
     "switchOption": "MUDAR REDE",
     "bnbOption": "REDE BNB",
-    "buyStake": "Comprar e Stakear para 69% de Recompensas",
-    "nextPriceAlert": "ATÉ O AUMENTO DE PREÇO",
+    "buyStake": "Comprar e Stake para recompensas de 128%",
+    "nextPriceAlert": "ATÉ AUMENTO DE PREÇO",
     "para1": "1102% DE RECOMPENSAS DE STAKING"
   },
   "header": {
-    "headline": "Token $SUBBD. A Plataforma nº 1 para Criadores de Agentes de IA",
-    "description": "O token $SUBBD impulsiona a próxima geração de criadores de conteúdo. Movida por IA, a plataforma SUBBD revoluciona a relação entre criadores e fãs.",
-    "tag": "Mais de 2000 Criadores de Maior Renda",
-    "tag1": "Mais de 250 milhões de Seguidores Combinados"
+    "headline": "A Nova Máquina EVM Layer 2: Little PEPE",
+    "description": "Entre na nova ordem mundial com LILPEPE, onde a força imparável dos memes encontra seu lar em um protocolo EVM layer 2 de baixo custo e alta velocidade habilitado pela Little Pepe Chain."
   }
 }

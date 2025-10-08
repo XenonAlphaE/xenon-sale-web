@@ -1,25 +1,25 @@
 {
   "metadata": {
-    "title": "SUBBD | Ultimate Creator Platform",
-    "description": "SUBBD to najlepsza platforma dla twórców. Dołącz do bety, aby połączyć się ze swoją publicznością, monetyzować swoje treści i budować swoją społeczność."
+    "title": "LILPEPE Token Presale | Little Pepe Presale",
+    "description": "Wejdź w nowy porządek świata z LILPEPE, gdzie niepowstrzymana siła memów spotyka swój dom w tanim, błyskawicznie szybkim protokole warstwy 2 EVM uruchomionym przez Little Pepe Chain."
   },
   "nav": {
     "home": "STRONA GŁÓWNA",
     "staking": "STAKING",
     "howtobuy": "JAK KUPIĆ",
     "whitePaper": "WHITE PAPER",
-    "tokenomics": "TOKENOMICS",
-    "features": "FUNKCJE",
-    "buyNow": "KUP $SUBBD",
+    "tokenomics": "TOKENOMIKA",
+    "features": "CECHY",
+    "buyNow": "KUP $LILPEPE",
     "faq": "FAQ",
     "audit": "AUDYT",
     "roadmap": "MAPA DROGI",
     "airdrop": "AIRDROP",
-    "about": "O NAS"
+    "about": "O PROJEKCIE"
   },
   "buyForm": {
     "intro": "Kup",
-    "intro1": "Przedsprzedaż teraz",
+    "intro1": "Przedsprzedaż Teraz",
     "day": "Dni",
     "hrs": "Godzina",
     "mins": "Min",
@@ -27,25 +27,23 @@
     "funRaised": "Zebrano USDT",
     "wallet": "TWÓJ Portfel",
     "boughtAmount": "TWÓJ ZAKUP",
-    "stakeableAmount": "TWÓJ STAKOWALNY",
-    "pay": "Zapłać z",
+    "stakeableAmount": "DO STAKOWANIA",
+    "pay": "Zapłać za pomocą",
     "get": "Otrzymaj",
-    "buyNow": "KUP $SUBBD",
+    "buyNow": "KUP $LILPEPE",
     "buyMax": "KUP MAX",
-    "warning": "Proszę zainstaluj Metamask, aby kupić",
+    "warning": "Proszę zainstalować Metamask, aby kupić",
     "link": "kliknij tutaj",
     "connectWallet": "POŁĄCZ PORTFEL",
     "ethOption": "SIEĆ ETH",
-    "switchOption": "ZMIANA SIECI",
+    "switchOption": "ZMIENIĆ SIEĆ",
     "bnbOption": "SIEĆ BNB",
-    "buyStake": "Kup i Stakeuj dla 69% nagród",
-    "nextPriceAlert": "DO WZROSTU CENY",
+    "buyStake": "Kup i stakuj dla 128% nagród",
+    "nextPriceAlert": "DO PODWYŻSZENIA CENY",
     "para1": "1102% NAGRÓD ZA STAKING"
   },
   "header": {
-    "headline": "Token $SUBBD. Najlepsza platforma do tworzenia AI Agentów",
-    "description": "Token $SUBBD napędza nową generację twórców treści. Dzięki AI platforma SUBBD rewolucjonizuje relacje między twórcami a fanami.",
-    "tag": "2000+ Najlepiej Zarabiających Twórców",
-    "tag1": "250m+ Łącznych Obserwujących"
+    "headline": "Nowo Narodzona Maszyna Warstwy 2 EVM: Little PEPE",
+    "description": "Wejdź w nowy porządek świata z LILPEPE, gdzie niepowstrzymana siła memów spotyka swój dom w tanim, błyskawicznie szybkim protokole warstwy 2 EVM uruchomionym przez Little Pepe Chain."
   }
 }

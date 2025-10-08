@@ -1,19 +1,19 @@
 {
   "metadata": {
-    "title": "SUBBD | Ultimata Skaparplattformen",
-    "description": "SUBBD är den ultimata skapareplattformen. Gå med i betan för att koppla ihop med din publik, tjäna pengar på ditt innehåll och bygg din community."
+    "title": "LILPEPE Token Presale | Little Pepe Presale",
+    "description": "Gå in i den nya världsordningen med LILPEPE, där den oemotståndliga kraften av memes möter sitt hem i en lågkostnads-, blixtsnabb lager 2 EVM-protokoll möjliggjort av Little Pepe Chain."
   },
   "nav": {
     "home": "HEM",
     "staking": "STAKING",
-    "howtobuy": "HUR MAN KÖPER",
+    "howtobuy": "SÅ HÄR KÖPER DU",
     "whitePaper": "WHITE PAPER",
     "tokenomics": "TOKENOMICS",
     "features": "FUNKTIONER",
-    "buyNow": "KÖP $SUBBD",
-    "faq": "FAQS",
-    "audit": "AUDIT",
-    "roadmap": "ROADMAP",
+    "buyNow": "KÖP $LILPEPE",
+    "faq": "FAQ",
+    "audit": "GRANSKNING",
+    "roadmap": "VÄGKARTA",
     "airdrop": "AIRDROP",
     "about": "OM OSS"
   },
@@ -22,30 +22,28 @@
     "intro1": "Försäljning pågår",
     "day": "Dagar",
     "hrs": "Timmar",
-    "mins": "Min",
-    "sec": "Sek",
+    "mins": "Minuter",
+    "sec": "Sekunder",
     "funRaised": "USDT Insamlat",
     "wallet": "DIN Plånbok",
     "boughtAmount": "DITT KÖP",
-    "stakeableAmount": "DIN INSATS",
+    "stakeableAmount": "Ditt insatsbara belopp",
     "pay": "Betala med",
     "get": "Få",
-    "buyNow": "KÖP $SUBBD",
+    "buyNow": "KÖP $LILPEPE",
     "buyMax": "KÖP MAX",
-    "warning": "Var god installera Metamask för att köpa",
+    "warning": "Vänligen installera Metamask för att köpa",
     "link": "klicka här",
     "connectWallet": "ANSLUT PLÅNBOK",
     "ethOption": "ETH-NÄTVERK",
     "switchOption": "BYT NÄTVERK",
     "bnbOption": "BNB-NÄTVERK",
-    "buyStake": "Köp och satsa för 69% belöning",
-    "nextPriceAlert": "TILLS PRISHÖJNING",
-    "para1": "1102% INSATSBELÖNINGAR"
+    "buyStake": "Köp och satsa för 128% belöning",
+    "nextPriceAlert": "TILLS PRISÖKNING",
+    "para1": "1102% STAKINGBELÖNINGAR"
   },
   "header": {
-    "headline": "$SUBBD Token. Den främsta AI Agent Skaparplattformen",
-    "description": "$SUBBD-token driver nästa generation av innehållsskapare. Drivs av AI revolutionerar SUBBD-plattformen relationen mellan skapare och fans.",
-    "tag": "2000+ Toppinkomstskapare",
-    "tag1": "250m+ Samlade Följare"
+    "headline": "Den nyfödda EVM Layer 2-maskinen: Little PEPE",
+    "description": "Gå in i den nya världsordningen med LILPEPE, där den oemotståndliga kraften av memes möter sitt hem i en lågkostnads-, blixtsnabb lager 2 EVM-protokoll möjliggjort av Little Pepe Chain."
   }
 }

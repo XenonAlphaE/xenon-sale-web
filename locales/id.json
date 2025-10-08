@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "SUBBD | Platform Kreator Terbaik",
-    "description": "SUBBD adalah platform kreator terbaik. Bergabunglah dalam versi beta untuk terhubung dengan audiens Anda, monetisasi konten Anda, dan bangun komunitas Anda."
+    "title": "Presale Token LILPEPE | Presale Little Pepe",
+    "description": "Masuki tatanan dunia baru bersama LILPEPE, di mana kekuatan meme yang tak terbendung menemukan rumahnya dalam protokol EVM layer 2 yang murah dan super cepat yang didukung oleh Little Pepe Chain."
   },
   "nav": {
     "home": "BERANDA",
@@ -10,10 +10,10 @@
     "whitePaper": "WHITE PAPER",
     "tokenomics": "TOKENOMIK",
     "features": "FITUR",
-    "buyNow": "BELI $SUBBD",
+    "buyNow": "BELI $LILPEPE",
     "faq": "FAQ",
     "audit": "AUDIT",
-    "roadmap": "ROADMAP",
+    "roadmap": "PETA JALAN",
     "airdrop": "AIRDROP",
     "about": "TENTANG"
   },
@@ -25,27 +25,25 @@
     "mins": "Menit",
     "sec": "Detik",
     "funRaised": "USDT Terkumpul",
-    "wallet": "Wallet ANDA",
-    "boughtAmount": "JUMLAH DIBELI",
-    "stakeableAmount": "JUMLAH YANG BISA DI-STAKING",
+    "wallet": "Dompet Anda",
+    "boughtAmount": "PEMBELIAN ANDA",
+    "stakeableAmount": "YANG DAPAT DI-STAKING",
     "pay": "Bayar dengan",
     "get": "Terima",
-    "buyNow": "BELI $SUBBD",
-    "buyMax": "BELI MAKSIMUM",
+    "buyNow": "BELI $LILPEPE",
+    "buyMax": "BELI MAKS",
     "warning": "Silakan pasang Metamask untuk membeli",
     "link": "klik di sini",
-    "connectWallet": "HUBUNGKAN WALLET",
+    "connectWallet": "HUBUNGKAN DOMPET",
     "ethOption": "JARINGAN ETH",
     "switchOption": "GANTI JARINGAN",
     "bnbOption": "JARINGAN BNB",
-    "buyStake": "Beli dan Staking untuk Imbalan 69%",
-    "nextPriceAlert": "HINGGA KENAIKAN HARGA",
-    "para1": "1102% IMBALAN STAKING"
+    "buyStake": "Beli dan Staking untuk Imbalan 128%",
+    "nextPriceAlert": "HINGGA HARGA NAIK",
+    "para1": "IMBALAN STAKING 1102%"
   },
   "header": {
-    "headline": "Token $SUBBD. Platform Kreator AI No.1",
-    "description": "Token $SUBBD mendukung generasi berikutnya dari para kreator konten. Didukung oleh AI, platform SUBBD merevolusi hubungan antara kreator dan penggemar.",
-    "tag": "2000+ Kreator Berpenghasilan Tertinggi",
-    "tag1": "250jt+ Pengikut Gabungan"
+    "headline": "Mesin EVM Layer 2 yang Baru Lahir: Little PEPE",
+    "description": "Masuki tatanan dunia baru bersama LILPEPE, di mana kekuatan meme yang tak terbendung menemukan rumahnya dalam protokol EVM layer 2 yang murah dan super cepat yang didukung oleh Little Pepe Chain."
   }
 }

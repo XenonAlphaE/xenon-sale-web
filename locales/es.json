@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "SUBBD | Plataforma Definitiva para Creadores",
-    "description": "SUBBD es la plataforma definitiva para creadores. Únete a la beta para conectar con tu audiencia, monetizar tu contenido y construir tu comunidad."
+    "title": "Preventa del Token LILPEPE | Preventa de Little Pepe",
+    "description": "Entra en el nuevo orden mundial con LILPEPE, donde la fuerza imparable de los memes encuentra su hogar en un protocolo EVM de capa 2 de bajo costo y altísima velocidad habilitado por Little Pepe Chain."
   },
   "nav": {
     "home": "INICIO",
@@ -10,7 +10,7 @@
     "whitePaper": "WHITE PAPER",
     "tokenomics": "TOKENOMÍA",
     "features": "CARACTERÍSTICAS",
-    "buyNow": "COMPRAR $SUBBD",
+    "buyNow": "COMPRAR $LILPEPE",
     "faq": "PREGUNTAS FRECUENTES",
     "audit": "AUDITORÍA",
     "roadmap": "HOJA DE RUTA",
@@ -27,10 +27,10 @@
     "funRaised": "USDT Recaudados",
     "wallet": "TU Billetera",
     "boughtAmount": "TU COMPRA",
-    "stakeableAmount": "TU CANTIDAD PARA STAKEAR",
+    "stakeableAmount": "TU CANTIDAD PARA STAKE",
     "pay": "Pagar con",
     "get": "Recibir",
-    "buyNow": "COMPRAR $SUBBD",
+    "buyNow": "COMPRAR $LILPEPE",
     "buyMax": "COMPRAR MÁXIMO",
     "warning": "Por favor instala Metamask para comprar",
     "link": "haz clic aquí",
@@ -38,14 +38,12 @@
     "ethOption": "RED ETH",
     "switchOption": "CAMBIAR RED",
     "bnbOption": "RED BNB",
-    "buyStake": "Compra y Stakea para 69% de Recompensas",
+    "buyStake": "Comprar y Hacer Staking para 128% de Recompensas",
     "nextPriceAlert": "HASTA EL PRÓXIMO AUMENTO DE PRECIO",
-    "para1": "1102% DE RECOMPENSAS POR STAKING"
+    "para1": "1102% DE RECOMPENSAS EN STAKING"
   },
   "header": {
-    "headline": "Token $SUBBD. La Plataforma de Creadores N.º 1 con Agentes de IA",
-    "description": "El token $SUBBD impulsa a la próxima generación de creadores de contenido. Impulsada por IA, la plataforma SUBBD revoluciona la relación entre creadores y fans.",
-    "tag": "2000+ Creadores Mejor Pagados",
-    "tag1": "250M+ Seguidores Combinados"
+    "headline": "La Nueva Máquina EVM de Capa 2: Little PEPE",
+    "description": "Entra en el nuevo orden mundial con LILPEPE, donde la fuerza imparable de los memes encuentra su hogar en un protocolo EVM de capa 2 de bajo costo y altísima velocidad habilitado por Little Pepe Chain."
   }
 }

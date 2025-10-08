@@ -1,51 +1,49 @@
 {
   "metadata": {
-    "title": "SUBBD | Ultimate Creator Platform",
-    "description": "SUBBD — це найкраща платформа для творців. Приєднуйтесь до бета-версії, щоб спілкуватися зі своєю аудиторією, монетизувати свій контент і будувати спільноту."
+    "title": "LILPEPE Token Presale | Little Pepe Presale",
+    "description": "Вступайте у новий світовий порядок з LILPEPE, де непереборна сила мемів знаходить свій дім у дешевому та надшвидкому протоколі layer 2 EVM, що працює на Little Pepe Chain."
   },
   "nav": {
     "home": "ГОЛОВНА",
     "staking": "СТЕЙКІНГ",
     "howtobuy": "ЯК КУПИТИ",
-    "whitePaper": "БІЛА КНИГА",
+    "whitePaper": "WHITE PAPER",
     "tokenomics": "ТОКЕНОМІКА",
-    "features": "ФУНКЦІЇ",
-    "buyNow": "КУПИТИ $SUBBD",
-    "faq": "ПИТАННЯ ТА ВІДПОВІДІ",
+    "features": "ОСОБЛИВОСТІ",
+    "buyNow": "КУПИТИ $LILPEPE",
+    "faq": "ЧАСТІ ПИТАННЯ",
     "audit": "АУДИТ",
-    "roadmap": "РОДМАП",
-    "airdrop": "ЕЙРДРОП",
-    "about": "ПРО НАС"
+    "roadmap": "ДОРОЖНЯ КАРТА",
+    "airdrop": "AIRDROP",
+    "about": "ПРО ПРОЄКТ"
   },
   "buyForm": {
     "intro": "Купити",
-    "intro1": "Попередній продаж зараз",
-    "day": "Дні",
-    "hrs": "Година",
-    "mins": "Хв",
-    "sec": "Сек",
+    "intro1": "Передпродаж зараз",
+    "day": "Днів",
+    "hrs": "Годин",
+    "mins": "Хвилин",
+    "sec": "Секунд",
     "funRaised": "Зібрано USDT",
     "wallet": "ВАШ Гаманець",
-    "boughtAmount": "ВИ КУПИЛИ",
-    "stakeableAmount": "ВИ МОЖЕТЕ СТЕЙКАТИ",
-    "pay": "Оплатити за допомогою",
+    "boughtAmount": "ВИ ПРИДБАЛИ",
+    "stakeableAmount": "ДОСТУПНО ДЛЯ СТЕЙКІНГУ",
+    "pay": "Платити з",
     "get": "Отримати",
-    "buyNow": "КУПИТИ $SUBBD",
+    "buyNow": "КУПИТИ $LILPEPE",
     "buyMax": "КУПИТИ МАКСИМУМ",
     "warning": "Будь ласка, встановіть Metamask для покупки",
     "link": "натисніть тут",
     "connectWallet": "ПІДКЛЮЧИТИ ГАМАНЕЦЬ",
-    "ethOption": "МЕРЕЖА ETH",
+    "ethOption": "ETH МЕРЕЖА",
     "switchOption": "ЗМІНИТИ МЕРЕЖУ",
-    "bnbOption": "МЕРЕЖА BNB",
-    "buyStake": "Купити та стейкати для 69% винагород",
-    "nextPriceAlert": "ДО ПІДВИЩЕННЯ ЦІНИ",
-    "para1": "1102% ВИНАГОРОДИ ЗА СТЕЙКІНГ"
+    "bnbOption": "BNB МЕРЕЖА",
+    "buyStake": "Купити та стейкати з нагородою 128%",
+    "nextPriceAlert": "ДО ЗРОСТАННЯ ЦІНИ",
+    "para1": "1102% НАГОРОДИ ЗА СТЕЙКІНГ"
   },
   "header": {
-    "headline": "Токен $SUBBD. Платформа №1 для створення AI агентів",
-    "description": "Токен $SUBBD підтримує наступне покоління творців контенту. Завдяки AI, платформа SUBBD революціонізує відносини між творцями і фанатами.",
-    "tag": "2000+ Найкращих творців із високим доходом",
-    "tag1": "250м+ Загальна кількість підписників"
+    "headline": "Нова EVM Layer 2 машина: Little PEPE",
+    "description": "Вступайте у новий світовий порядок з LILPEPE, де непереборна сила мемів знаходить свій дім у дешевому та надшвидкому протоколі layer 2 EVM, що працює на Little Pepe Chain."
   }
 }

@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "title": "SUBBD | 终极创作者平台",
-    "description": "SUBBD 是终极创作者平台。加入测试版，连接你的观众，实现内容变现，打造你的社区。"
+    "title": "LILPEPE Token Presale | Little Pepe 预售",
+    "description": "进入 LILPEPE 的新世界秩序，这里是不可阻挡的表情包力量在低成本、极速的由 Little Pepe Chain 支持的 Layer 2 EVM 协议中找到归属。"
   },
   "nav": {
     "home": "首页",
     "staking": "质押",
     "howtobuy": "如何购买",
     "whitePaper": "白皮书",
-    "tokenomics": "代币经济学",
+    "tokenomics": "代币经济",
     "features": "功能",
-    "buyNow": "购买 $SUBBD",
+    "buyNow": "购买 $LILPEPE",
     "faq": "常见问题",
     "audit": "审计",
     "roadmap": "路线图",
@@ -19,33 +19,31 @@
   },
   "buyForm": {
     "intro": "购买",
-    "intro1": "预售中",
+    "intro1": "预售进行中",
     "day": "天",
     "hrs": "小时",
     "mins": "分钟",
     "sec": "秒",
-    "funRaised": "筹集 USDT",
+    "funRaised": "已筹集 USDT",
     "wallet": "你的钱包",
     "boughtAmount": "你已购买",
     "stakeableAmount": "可质押数量",
     "pay": "支付方式",
-    "get": "获得",
-    "buyNow": "购买 $SUBBD",
+    "get": "接收",
+    "buyNow": "购买 $LILPEPE",
     "buyMax": "购买最大量",
-    "warning": "请安装 Metamask 以购买",
+    "warning": "请安装 Metamask 进行购买",
     "link": "点击这里",
     "connectWallet": "连接钱包",
-    "ethOption": "以太坊网络",
+    "ethOption": "ETH 网络",
     "switchOption": "切换网络",
-    "bnbOption": "币安链网络",
-    "buyStake": "购买并质押，享受 69% 奖励",
-    "nextPriceAlert": "价格上涨倒计时",
+    "bnbOption": "BNB 网络",
+    "buyStake": "购买并质押，享受 128% 奖励",
+    "nextPriceAlert": "距离价格上涨",
     "para1": "1102% 质押奖励"
   },
   "header": {
-    "headline": "$SUBBD Token。第一的 AI 代理创作者平台",
-    "description": "$SUBBD 代币驱动下一代内容创作者。由 AI 支持，SUBBD 平台革新创作者与粉丝的关系。",
-    "tag": "2000+ 顶级高收入创作者",
-    "tag1": "2.5亿+ 综合粉丝"
+    "headline": "新生的 EVM Layer 2 机器：Little PEPE",
+    "description": "进入 LILPEPE 的新世界秩序，这里是不可阻挡的表情包力量在低成本、极速的由 Little Pepe Chain 支持的 Layer 2 EVM 协议中找到归属。"
   }
 }
