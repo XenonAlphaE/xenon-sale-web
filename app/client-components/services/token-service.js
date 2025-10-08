@@ -14,7 +14,6 @@ import { ethers,parseEther,Network, parseUnits , formatUnits} from 'ethers';
 import Decimal from 'decimal.js';
 import { getRandomItemFromArray } from './utils';
 import axios from 'axios';
-import mainConfig from '../config.main'
 
   
 export const getUserPurchaseInfo =  async (globalConfigs, address) => {

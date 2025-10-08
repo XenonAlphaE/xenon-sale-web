@@ -34,7 +34,6 @@ import {
 } from '@rainbow-me/rainbowkit/wallets';
 import { Erc20WalletProvider } from './erc20wallet-provider';
 
-import configs from './client-components/config.main.json'
 import { getRandomItemFromArray } from './client-components/services/utils';
 import { useGlobalConfig } from './globalConfig-provider';
 
