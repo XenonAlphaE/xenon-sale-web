@@ -3,8 +3,8 @@
     "targetToken":{
         "address":"",
         "decimals":18,
-        "symbol": "LILPEPE",
-        "tokenPrice":"0.0022"
+        "symbol": "SUPEPE",
+        "tokenPrice":"0.0001"
     },
     "lastestUpdated": "2025-10-07T00:00:00Z",
     "lastestRaise" : 26810764,
