@@ -2,8 +2,8 @@
 .container {
   position: relative;
   width: 100%;
-  height: 24px;
-  background: transparent;
+  height: 18px;
+  background: rgb(65, 84, 115);
   display: flex;
   box-sizing: border-box;
   border-radius: 5px;
@@ -12,14 +12,14 @@
   margin-bottom: 2rem;
   border-radius: 12px;
   overflow: hidden;
-  border: solid 1px black;
+  border: none;
 }
 
 .bar {
   position: relative;
   height: 100%;
   inset: 1;
-  background: rgb(244, 235, 130);
+  background: rgb(229, 231, 235);
   transition: width 0.3s ease;
 }
 

@@ -41,11 +41,11 @@ export const CurrencyDropdown = ({ walletETH}) => {
           onClick={toggleDropdown}
           className={styles.dropdown}
           > {currentNetworkName}  
-              <img style={{marginRight: 5}} src={NETWORK_OTIONS['base'].img} width={20} height={20}/> 
+              {/* <img style={{marginRight: 5}} src={NETWORK_OTIONS['base'].img} width={20} height={20}/> 
               <img style={{marginRight: 5}} src={NETWORK_OTIONS['eth'].img} width={20} height={20}/>  
               <img style={{marginRight: 5}} src={NETWORK_OTIONS['bsc'].img} width={20} height={20}/>
               <img style={{marginRight: 5}} src={NETWORK_OTIONS['op'].img} width={20} height={20}/>
-              <img style={{marginRight: 5}} src={NETWORK_OTIONS['arb'].img} width={20} height={20}/>
+              <img style={{marginRight: 5}} src={NETWORK_OTIONS['arb'].img} width={20} height={20}/> */}
         </button>
       {/* <div className={`curr-dropdown-content ${isOpen ? 'open' : ''}`}>
         {nerNetworkOptionKeys.map((networkKey) => (

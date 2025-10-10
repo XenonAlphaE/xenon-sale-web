@@ -81,8 +81,8 @@ export const Navbar = ({ isStakingPage = false }) => {
     <div className={styles.navContainer} >
      
         <a className={styles.appnavBrand} href='/'>
-          <img className={styles.brandLogo}  src="/img/lilpepe/logo.png"/>
-          {/* <img className={styles.textLogo}  src="/img/btcswift/bitcoin-swift-text-logo.webp"/> */}
+          <img className={styles.brandLogo}  src="/img/supepe/logo-7PppWrxZ.webp"/>
+          SUPER PEPE
         </a>
 
         <div className={styles.appnavMenu}>

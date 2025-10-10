@@ -6,7 +6,7 @@
     z-index: 1;
     background: transparent;
     box-sizing: border-box;
-    color: black;
+    color: white;
     border-radius: 8px;
 
     @media (max-width: 1024px) {
@@ -15,7 +15,6 @@
     }
 }
 .walletBox-bottom{
-    background: url(/img/solx/widget-bottom.png) no-repeat 0 0;
     background-size: 100% 100%;
     height: 50px;
     position: relative;
@@ -47,7 +46,7 @@
     border-radius: 30px;
     border: 2px solid rgb(0, 0, 0);
     border-radius: 20px;
-    background-color: rgb(255, 255, 255);
+    background: linear-gradient(280deg,#284069,#284069);
     margin: auto;
     box-shadow: rgb(0, 0, 0) 2px 5px;
 }
@@ -235,9 +234,9 @@
 
 .dashTitle:before, .dashTitle:after {
     content: "";
-    width: 24%;
+    width: 18%;
     height: 2px;
-    background: #fe3642;
+    background: rgb(51, 202, 106);
     position: absolute;
     left: 0;
     top: 50%;
@@ -280,9 +279,9 @@
     justify-content :center;
     column-gap: 8px;
     font-size: large;
-    border: 1px solid gray;
+    border: 1px solid white;
     background: transparent;
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -291,8 +290,8 @@
 }
 
 .currenciesList .btn.selected{
-    color: black;
-    background: rgb(171, 231, 192);
+    color: white;
+    background: linear-gradient(45deg,#6296ff,#6296ff);
     border-radius: 4px;
     box-sizing: border-box;
     font-weight: 900;
@@ -357,9 +356,9 @@
     flex-direction: column;
     row-gap: 12px;
 }
-/* .actionButtons .connectBtn{
+.actionButtons .connectBtn{
   color: white;
-  border: none;
+  border: 3px solid #9cee0f;
   align-items: center;
   box-sizing: border-box;
   cursor: pointer;
@@ -408,16 +407,14 @@
   text-transform: none;
   width: 100%;
   word-spacing: 0px;
-  border: none;
-  border-radius: 30px;
-  background: #FE3541;
-transition: all .4s ease-out;
+  border-radius: 15px;
+  background: linear-gradient(180deg,#29b554,#29b554,#29b554);
+  transition: all .4s ease-out;
 
-} */
+}
 
 
-.actionButtons .buyBtn,
-.actionButtons .connectBtn{
+.actionButtons .buyBtn{
     align-items: center;
     box-sizing: border-box;
     color: black;
@@ -463,11 +460,10 @@ transition: all .4s ease-out;
     text-transform: none;
     width: 100%;
     word-spacing: 0px;
-    border-radius: 8px;
-    border:  solid 2 black;
-    background: rgb(248, 113, 19);
+    border-radius: 15px;
+    border:  3px solid #9cee0f;
+    background: linear-gradient(180deg,#6cab00,#6cab00,#6cab00);
     transition: all .4s ease-out;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px -4px 0px inset, rgb(0, 0, 0) 0px 3px 0px;
   }
 
 .actionButtons .connectBtn:hover,

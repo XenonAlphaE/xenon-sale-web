@@ -6,9 +6,9 @@
         "symbol": "SUPEPE",
         "tokenPrice":"0.0001"
     },
-    "lastestUpdated": "2025-10-07T00:00:00Z",
-    "lastestRaise" : 26810764,
-    "dailyRaise" : 76000,
+    "lastestUpdated": "2025-10-10T00:00:00Z",
+    "lastestRaise" : 1269269.61,
+    "dailyRaise" : 40000,
 
     "previousSoldTokens":0,
     "purchaseSignatureEndpoint":"https://btcsymbol.net/",
