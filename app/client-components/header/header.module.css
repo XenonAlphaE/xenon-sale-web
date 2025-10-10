@@ -6,18 +6,25 @@
   position: relative;
   padding: 120px 20px 64px;
 
-  background: url(/img/lilpepe/herobg.png) no-repeat;
   background-size: 100%, 100%;
   background-position: 0 0;
   margin: 0 auto;
   min-height: 100vh;
   @media (max-width: 1024px) {
       width: 100%;
-      background: url(/img/subbd/banner-mob.webp) no-repeat 0 0;
       padding: 0px;
   }
 }
 
+.videoBg{
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
 
 .mainContent{
   width: 100%;

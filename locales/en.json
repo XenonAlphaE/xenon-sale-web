@@ -1,7 +1,7 @@
 {
   "metadata":{
-      "title":"LILPEPE Token Presale | Little Pepe Presale",
-      "description":"Enter the new world order with LILPEPE, where the unstoppable force of memes meets their home in low cost, lighting fast layer 2 EVM protocol enabled by Little Pepe Chain."
+      "title":"SUPEPE Token | Super Pepe Presale",
+      "description":"First meme coin with a mission to help people by donating charity"
   },
   "nav": {
       "home": "HOME",
@@ -10,7 +10,7 @@
       "whitePaper": "WHITE PAPER",
       "tokenomics": "TOKENOMICS",
       "features": "FEATURES",
-      "buyNow": "BUY $LILPEPE",
+      "buyNow": "BUY $SUPEPE",
       "faq": "FAQS",
       "audit": "AUDIT",
       "roadmap": "ROADMAP",
@@ -30,7 +30,7 @@
       "stakeableAmount": "YOUR STAKEABLE",
       "pay": "Pay with",
       "get": "Receive",
-      "buyNow": "BUY $LILPEPE",
+      "buyNow": "BUY $SUPEPE",
       "buyMax": "BUY MAX",
       "warning": "Please install Metamask to buy",
       "link": "click here",
@@ -38,12 +38,15 @@
       "ethOption": "ETH NETWORK",
       "switchOption": "SWITCH NETWORK",
       "bnbOption": "BNB NETWORK",
-      "buyStake": "Buy and Stake for 128% Rewards ",
+      "buyStake": "Buy and Stake for 578% Rewards ",
       "nextPriceAlert": "UNTIL PRICE INCREASE",
       "para1": "1102% STAKING REWARDS"
   },
   "header":{
-    "headline": "The New Born EVM Layer 2 Machine: Little PEPE",
-    "description": "Enter the new world order with LILPEPE, where the unstoppable force of memes meets their home in low cost, lighting fast layer 2 EVM protocol enabled by Little Pepe Chain."
+    "headline": "The Best Presale 2025: Super PEPE",
+    "description": "First meme coin with a mission to",
+    "description1": "help people by donating 10% of",
+    "description2": "every purchase to",
+    "description3": "charity"
   }
 }

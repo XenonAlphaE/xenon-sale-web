@@ -8,19 +8,33 @@ const PresaleSection = () => {
   return (
     <section className={styles.container}>
       <div className={styles.leftPart}>
-        <h2 className={styles.headline}>{sectionText?.headline}</h2>
-        <p className={styles.description}>
+        <div className={styles.topSection}>
+            <img className={styles.logo} src='/img/supepe/titlelogo.gif' />
+            <h2 className={styles.headline}>{sectionText?.headline}</h2>
+            <img className={styles.title} src='/img/supepe/title.webp' />
+            <img className={styles.line} src='/img/supepe/line.webp' />
+            <img className={styles.price} src='/img/supepe/listingprice.webp' />
 
-          {sectionText?.description}
-        </p>
-      
-        <div className={styles.bannerList}>
-          <div className={styles.bannerListItem}>
-            <img className={styles.bannerListImg} src="/img/default/twitter_new_brand_icon.png" alt="banner" />
-          </div>
-          <div className={styles.bannerListItem}>
-            <img className={styles.bannerListImg} src="/img/default/telegram_plane_icon.png" alt="banner" />
-          </div>
+        </div>
+
+        <div className={styles.bottomSection}>
+            <p className={styles.description}>
+
+              {sectionText?.description}
+            </p>
+            <p className={styles.description}>
+
+              {sectionText?.description1}
+            </p>
+            <p className={styles.description}>
+
+              {sectionText?.description2}
+            </p>
+            <p className={styles.description1}>
+
+              {sectionText?.description3}
+            </p>
+
           
         </div>
 

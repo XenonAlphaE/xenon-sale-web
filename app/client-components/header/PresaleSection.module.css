@@ -18,7 +18,7 @@
       width: 100%;
       flex-direction: column;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       row-gap: 2rem;
       @media (max-width: 1024px) {
           width: 100%;
@@ -26,204 +26,52 @@
       }
 
   }
+  .topSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo{
+    width: 140px;
+    height: 140px;
+    border-radius: 70px;
+    overflow: hidden;
+  }
 
   .headline{
-    text-align: left;
-    color: black;
+    color: rgb(229, 198, 2);
+    text-align: center;
+    width: 100%;
     text-transform: uppercase;
-    font-weight: 900;
-    font-size: 4em;
-    margin-block: 1rem;
-    @media (max-width: 1024px) {
-        width: 100%;
-        font-size: x-large;
-        margin-block: 1rem;
-    }    
+    font-weight: 800;
   }
-  .headline1{
-    text-align: left;
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 2.8em;
-    margin-block: 1rem;
-    @media (max-width: 1024px) {
-        width: 100%;
-        font-size: x-large;
-        margin-block: 1rem;
-    }    
+
+  .title{
+    width: 60%;
   }
+
+  .line{
+    width: 20%;
+  }
+
+  .price{
+    width: 40%;
+  }
+
 
   .description{
-    color: black;
-    text-align: left;
-    font-size: 2em;
-    margin-bottom: 0.5rem;
-  }
-
-  .rewards{
-    width: 20%;
-    background: rgb(152, 255, 25);
-    transition: all .4s ease-out;
-    clip-path: polygon(100% 15px, 100% 100%, 15px 100%, 0% calc(100% - 15px), 0% 0%, calc(100% - 15px) 0%);
-    display: flex;
-    font-weight: 900;
-    flex-direction: column;
-    justify-content: space-evenly;  
-    padding: 1rem; 
-    text-transform: uppercase;
-    @media (max-width: 1024px) {
-      width: 100%;
-      max-width: 100%;
-      justify-content: flex-start;
-
-    }
-
-  }
-
-
-  @keyframes resizeBox {
-    0% {
-      width: 35%;
-      transform: scaleY(1);
-    }
-    50% {
-      width: 50%;
-      transform: scaleY(1.15);
-    }
-    100% {
-      width: 35%;
-      transform: scaleY(0.85); /* scaled down below original */
-    }
-  }
-
-
-
-  /* Mobile/tablet animation */
-@keyframes resizeBoxMobile {
-  0% {
-    width: 75%;
-    transform: scaleY(1);
-  }
-  50% {
-    width: 100%;
-  }
-  100% {
-    width: 75%;
-    transform: scaleY(1);
-  }
-}
-
-
-  .buynow{
-    width: 60%;
-    background: rgb(152, 255, 25);
-    transition: all .4s ease-out;
-    clip-path: polygon(100% 15px, 100% 100%, 15px 100%, 0% calc(100% - 15px), 0% 0%, calc(100% - 15px) 0%);
-    display: flex;
-    font-weight: 900;
-    flex-direction: column;
-    justify-content: space-evenly;  
-    padding: 1rem; 
-    text-transform: uppercase;
-    animation: resizeBox 4s infinite;
-
-    @media (max-width: 1024px) {
-      animation: resizeBoxMobile 2s infinite;
-    }
-  }
-
-  .bonus{
-    width: 50%;
-    position: relative;
-    display: flex;
-    font-weight: 900;
-    flex-direction: column;
-    justify-content: space-evenly;  
-    padding: 1rem; 
-    text-transform: uppercase;
     color: white;
-    @media (max-width: 1024px) {
-      width: 100%;
-    }
-  }
-
-  .bonus::before{
-        content: "";
-    position: absolute;
-    inset: 0;
-    background: #333;
-    clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 15px 100%, 0 calc(100% - 15px), 0 0, 1px 1px, 1px calc(100% - 16px), 15px calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), calc(100% - 1px) 15px, calc(100% - 15px) 1px, 1px 1px);
-  }
-
-  .rewards p{
-    margin: 0;
-  }
-
-  .rightPart{
-    z-index: 0;
-    width: 60%;
-      position: absolute;
-      top: 20%;
-      right: -10px;
-      display: flex;
-      flex-direction: column;
-      row-gap: 10px;
-      @media (max-width: 1024px) {
-          width: 100%;
-          position: relative;
-          top: auto;
-          right: auto;
-          flex-direction: column;
-      }
-
-  }
-  
-
-  .videoPlayer{
-    width: 100%;
-    border-radius: 10px;
-
-  }
-
-  .bannerList{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    color: rgb(255, 255, 255);
+    font-size: large;
+    line-height: 36px;
     text-transform: uppercase;
-    font-size: 2em;
-    font-weight: bolder;
-    column-gap: 4rem;
-    margin-block: 2rem;
-    @media (max-width: 1024px) {
-        font-size: 1.8em;
-
-    }
+    font-weight: 700;
   }
-
-  .bannerListImg{
-    width: 46px;
-    height: 46px;
+  .description1{
+    color: rgb(0, 161, 83);
+    font-size: large;
+    line-height: 36px;
+    text-transform: uppercase;
+    font-weight: 700;
 
   }
-  .bannerListItem{
-    max-width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 1rem;
-    @media (max-width: 1024px) {
-      width: 100%;
-      max-width: 100%;
-      justify-content: flex-start;
-
-    }
-  }
-
-.bannerListItem span{
-  line-height: 0.9em;
-  text-align: left;
-  font-size: large;
-
-}
