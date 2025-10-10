@@ -26,7 +26,10 @@ export const SolanaHeader = () => {
   return (
     <section id="intro"  >
       <div className={styles.container}>
-
+        <video autoPlay={true} muted={true} playsInline={true} loop={true} className={styles.videoBg} >
+          <source src="/img/supepe/herobg-BzC8Ps58.mp4" type="video/mp4"/>
+          Your browser does not support the video tag.
+        </video>
         <div className={styles.mainContent}> 
           <div className={styles.leftPart}>
               <PresaleSection />  

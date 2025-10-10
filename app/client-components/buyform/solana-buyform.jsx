@@ -143,9 +143,9 @@ export const SolanaBuyForm = () => {
         <div className={styles.walletBoxContainer} id='walletBox'>
         <div className={styles.walletBox} id='walletBox'>
             <div className={styles.walletBoxInfo} >
-                <div className={styles.walletBoxHeader} >
-                  <img src="/img/subbd/widget-logo.svg"/>
-                </div>
+                {/* <div className={styles.walletBoxHeader} > */}
+                  {/* <img className={styles.logo} src="/img/lilpepe/logo.png"/> */}
+                {/* </div> */}
                 <div className={styles.walletBoxHeader} >
                   <div>
                     <p className={styles.walletBoxHeading} >{sectionText?.intro} <span className={styles.symbol}> ${walletSol?.tokenSymbol} </span> {sectionText?.intro1} </p>
@@ -187,6 +187,7 @@ export const SolanaBuyForm = () => {
 
                 {walletSol.connected && 
                 <div>
+                {/* {truncateMiddle(walletEth.currentAddress)} */}
                 <p className={styles.userPurchasedInfo}>{sectionText.boughtAmount} ${configs?.targetToken?.symbol} = { walletSol?.formatedBought}</p>
                 {/* <img className="img-fluid ms-2 cursor-pointer" src="./img/info-icon.svg" /> */}
                 <p className={styles.userPurchasedInfo}>{sectionText.stakeableAmount} ${configs?.targetToken?.symbol} = {walletSol?.formatedStakeable}</p>
@@ -247,7 +248,7 @@ export const SolanaBuyForm = () => {
                             type="text"
                             placeholder="0" />
                             <div className={styles.amountType} >
-                              <img src='/img/lilpepe/favlogo.png' style={{ 'height': '30px', marginRight:5 }} />
+                              <img src='/img/supepe/logo-7PppWrxZ.webp' style={{ 'height': '30px', marginRight:5, borderRadius:'15px', overflow:'hidden' }} />
                             </div>
                         </div>
                         </div>
@@ -282,9 +283,9 @@ export const SolanaBuyForm = () => {
                 </div>
                 }
                 <div className={styles.externalInfo}  >
-                  <a style={{textDecorationColor:"white", textDecoration:'underline', color: 'black'}} href="https://widget.wert.io/default/widget/?commodity=ETH%3AEthereum" target="_blank">Not enough ETH? Top up now</a>
+                  <a style={{textDecorationColor:"white", textDecoration:'underline', color: 'white'}} href="https://widget.wert.io/default/widget/?commodity=ETH%3AEthereum" target="_blank">Not enough ETH? Top up now</a>
                   {/* <p translate="" className="font-18 text-center m-0 mt-2"><img src="/img/solx/token.svg" style={{ 'height': '35px' }} /> Powered by <a target="_blank" href='/' className=" "><img src="/img/default/W3P_White.svg" alt="" style={{height:25}} /></a></p> */}
-                  <a target="_blank" href='/' className=" "><img src="/img/default/W3P_Black.svg" alt="" style={{height:18}} /> </a>
+                  <a target="_blank" href='/' className=" "><img src="/img/default/W3P_White.svg" alt="" style={{height:18}} /> </a>
                 </div>
             </div>
 
@@ -292,6 +293,5 @@ export const SolanaBuyForm = () => {
         
         </div>
     )
-
 
 }
