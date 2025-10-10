@@ -188,7 +188,6 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
             }
         
             try {
-            
                 const info = await getUserPurchaseInfo(globalConfigs, currAccount.address)
                 if (info) {
                     setTotalBought(info.totalBought)
@@ -199,8 +198,12 @@ export const Erc20WalletProvider = ({ globalConfigs, children }) => {
         
             }
         }
+        if(!currAccount.address || !globalConfigs?.ETH?.purchaseInfo){
+            return
+        }
+
         loadPurchaseInfo()
-    }, [currAccount.address, globalConfigs]); // Empty dependency array ensures this effect runs only once
+    }, [currAccount.address, globalConfigs?.ETH?.purchaseInfo]); // Empty dependency array ensures this effect runs only once
     
     const getContracts = () => {
         let salerInfo = null;
