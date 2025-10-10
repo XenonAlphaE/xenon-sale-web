@@ -143,9 +143,6 @@ export const SolanaBuyForm = () => {
         <div className={styles.walletBoxContainer} id='walletBox'>
         <div className={styles.walletBox} id='walletBox'>
             <div className={styles.walletBoxInfo} >
-                {/* <div className={styles.walletBoxHeader} > */}
-                  {/* <img className={styles.logo} src="/img/lilpepe/logo.png"/> */}
-                {/* </div> */}
                 <div className={styles.walletBoxHeader} >
                   <div>
                     <p className={styles.walletBoxHeading} >{sectionText?.intro} <span className={styles.symbol}> ${walletSol?.tokenSymbol} </span> {sectionText?.intro1} </p>

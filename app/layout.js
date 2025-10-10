@@ -13,7 +13,7 @@ export async function generateMetadata() {
     
   
   
-    keywords: 'LILPEPE, LILPEPE Token, LILPEPE Presale is live now', // Add keywords here
+    keywords: 'SUPEPE, SUPEPE Token, Super Pepe Presale is live now', // Add keywords here
     robots: 'index, follow', // Add robots directives here
     openGraph: {
       title: metadata?.title,
@@ -39,7 +39,7 @@ export async function generateMetadata() {
       image: getOG(), // Path to your Open Graph image,
     },
     alternates: {
-      canonical: "https://lilpepetoken.com", // Set the canonical URL
+      canonical: "https://SUPEPE.com", // Set the canonical URL
     },
   };
 }
