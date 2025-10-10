@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "title": "Προπώληση Token LILPEPE | Προπώληση Little Pepe",
-    "description": "Εισέλθετε στη νέα παγκόσμια τάξη με το LILPEPE, όπου η ασταμάτητη δύναμη των memes συναντά το σπίτι της σε ένα χαμηλού κόστους, αστραπιαία γρήγορο πρωτόκολλο layer 2 EVM ενεργοποιημένο από την Little Pepe Chain."
+    "title": "SUPEPE Token | Προπώληση Super Pepe",
+    "description": "Το πρώτο meme coin με αποστολή να βοηθάει ανθρώπους μέσω φιλανθρωπικών δωρεών"
   },
   "nav": {
     "home": "ΑΡΧΙΚΗ",
-    "staking": "STAKING",
+    "staking": "ΣΤΑΚΙΝΓΚ",
     "howtobuy": "ΠΩΣ ΝΑ ΑΓΟΡΑΣΕΙΣ",
     "whitePaper": "WHITE PAPER",
     "tokenomics": "TOKENOMICS",
     "features": "ΧΑΡΑΚΤΗΡΙΣΤΙΚΑ",
-    "buyNow": "ΑΓΟΡΑ $LILPEPE",
+    "buyNow": "ΑΓΟΡΑΣΕ $SUPEPE",
     "faq": "ΣΥΧΝΕΣ ΕΡΩΤΗΣΕΙΣ",
     "audit": "ΕΛΕΓΧΟΣ",
     "roadmap": "ΟΔΙΚΟΣ ΧΑΡΤΗΣ",
@@ -19,31 +19,34 @@
   },
   "buyForm": {
     "intro": "Αγορά",
-    "intro1": "Προπώληση Τώρα",
+    "intro1": "Προπώληση",
     "day": "Ημέρες",
     "hrs": "Ώρες",
     "mins": "Λεπτά",
     "sec": "Δευτ.",
-    "funRaised": "USDT Συγκεντρώθηκαν",
+    "funRaised": "Συγκεντρωμένα USDT",
     "wallet": "ΤΟ ΠΟΡΤΟΦΟΛΙ ΣΟΥ",
-    "boughtAmount": "Η ΑΓΟΡΑ ΣΟΥ",
-    "stakeableAmount": "ΠΟΣΟ ΓΙΑ STAKING",
-    "pay": "Πληρωμή με",
-    "get": "Λήψη",
-    "buyNow": "ΑΓΟΡΑ $LILPEPE",
-    "buyMax": "ΑΓΟΡΑ MAX",
+    "boughtAmount": "ΑΓΟΡΑΣΕΣ",
+    "stakeableAmount": "ΔΙΑΘΕΣΙΜΟ ΓΙΑ ΣΤΑΚΙΝΓΚ",
+    "pay": "Πλήρωσε με",
+    "get": "Λάβε",
+    "buyNow": "ΑΓΟΡΑΣΕ $SUPEPE",
+    "buyMax": "ΑΓΟΡΑΣΕ ΜΕΓΙΣΤΟ",
     "warning": "Παρακαλώ εγκαταστήστε το Metamask για να αγοράσετε",
-    "link": "πάτησε εδώ",
+    "link": "κάνε κλικ εδώ",
     "connectWallet": "ΣΥΝΔΕΣΗ ΠΟΡΤΟΦΟΛΙΟΥ",
     "ethOption": "ΔΙΚΤΥΟ ETH",
     "switchOption": "ΑΛΛΑΓΗ ΔΙΚΤΥΟΥ",
     "bnbOption": "ΔΙΚΤΥΟ BNB",
-    "buyStake": "Αγορά και Staking για 128% Ανταμοιβές",
+    "buyStake": "Αγόρασε και Κάνε Staking για 578% Ανταμοιβές",
     "nextPriceAlert": "ΜΕΧΡΙ ΤΗΝ ΑΥΞΗΣΗ ΤΙΜΗΣ",
-    "para1": "1102% ΑΝΤΑΜΟΙΒΕΣ ΑΠΟ STAKING"
+    "para1": "1102% ΑΝΤΑΜΟΙΒΕΣ ΣΤΑΚΙΝΓΚ"
   },
   "header": {
-    "headline": "Η Νεογέννητη Μηχανή Layer 2 EVM: Little PEPE",
-    "description": "Εισέλθετε στη νέα παγκόσμια τάξη με το LILPEPE, όπου η ασταμάτητη δύναμη των memes συναντά το σπίτι της σε ένα χαμηλού κόστους, αστραπιαία γρήγορο πρωτόκολλο layer 2 EVM ενεργοποιημένο από την Little Pepe Chain."
+    "headline": "Η Καλύτερη Προπώληση του 2025: Super PEPE",
+    "description": "Το πρώτο meme coin με αποστολή να",
+    "description1": "βοηθάει ανθρώπους δωρίζοντας το 10% από",
+    "description2": "κάθε αγορά σε",
+    "description3": "φιλανθρωπίες"
   }
 }

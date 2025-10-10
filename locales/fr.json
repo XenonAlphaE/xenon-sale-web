@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "title": "Prévente de Jeton LILPEPE | Prévente de Little Pepe",
-    "description": "Entrez dans le nouvel ordre mondial avec LILPEPE, où la force irrésistible des mèmes rencontre leur foyer dans un protocole EVM de couche 2 à faible coût et ultra-rapide, activé par Little Pepe Chain."
+    "title": "SUPEPE Token | Prévente Super Pepe",
+    "description": "La première meme coin avec pour mission d’aider les gens en faisant des dons à des œuvres caritatives"
   },
   "nav": {
     "home": "ACCUEIL",
-    "staking": "MISE",
+    "staking": "STAKING",
     "howtobuy": "COMMENT ACHETER",
     "whitePaper": "LIVRE BLANC",
     "tokenomics": "TOKENOMIE",
     "features": "FONCTIONNALITÉS",
-    "buyNow": "ACHETER $LILPEPE",
+    "buyNow": "ACHETER $SUPEPE",
     "faq": "FAQ",
     "audit": "AUDIT",
     "roadmap": "FEUILLE DE ROUTE",
@@ -19,18 +19,18 @@
   },
   "buyForm": {
     "intro": "Acheter",
-    "intro1": "Prévente Maintenant",
+    "intro1": "Prévente",
     "day": "Jours",
     "hrs": "Heures",
-    "mins": "Min",
-    "sec": "Sec",
+    "mins": "Minutes",
+    "sec": "Secondes",
     "funRaised": "USDT Collectés",
     "wallet": "VOTRE Portefeuille",
     "boughtAmount": "VOTRE ACHAT",
-    "stakeableAmount": "VOTRE MONTANT MISE",
+    "stakeableAmount": "VOTRE MONTANT À STAKER",
     "pay": "Payer avec",
     "get": "Recevoir",
-    "buyNow": "ACHETER $LILPEPE",
+    "buyNow": "ACHETER $SUPEPE",
     "buyMax": "ACHETER MAX",
     "warning": "Veuillez installer Metamask pour acheter",
     "link": "cliquez ici",
@@ -38,12 +38,15 @@
     "ethOption": "RÉSEAU ETH",
     "switchOption": "CHANGER DE RÉSEAU",
     "bnbOption": "RÉSEAU BNB",
-    "buyStake": "Acheter et Miser pour 128% de Récompenses",
-    "nextPriceAlert": "AVANT AUGMENTATION DU PRIX",
-    "para1": "1102% DE RÉCOMPENSES DE MISE"
+    "buyStake": "Acheter et Staker pour 578% de Récompenses",
+    "nextPriceAlert": "AVANT L'AUGMENTATION DU PRIX",
+    "para1": "1102% DE RÉCOMPENSES DE STAKING"
   },
   "header": {
-    "headline": "La nouvelle machine EVM de couche 2 : Little PEPE",
-    "description": "Entrez dans le nouvel ordre mondial avec LILPEPE, où la force irrésistible des mèmes rencontre leur foyer dans un protocole EVM de couche 2 à faible coût et ultra-rapide, activé par Little Pepe Chain."
+    "headline": "La Meilleure Prévente 2025 : Super PEPE",
+    "description": "La première meme coin avec pour mission de",
+    "description1": "venir en aide aux gens en faisant don de 10%",
+    "description2": "de chaque achat à",
+    "description3": "une œuvre caritative"
   }
 }

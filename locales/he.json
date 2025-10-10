@@ -1,49 +1,52 @@
 {
   "metadata": {
-    "title": "מכירת מוקדמת של טוקן LILPEPE | מכירה מוקדמת של Little Pepe",
-    "description": "היכנסו לסדר העולמי החדש עם LILPEPE, שבו הכוח הבלתי ניתן לעצירה של מימים מוצא את ביתו בפרוטוקול EVM שכבת 2 מהיר וחסכוני, המופעל על ידי Little Pepe Chain."
+    "title": "SUPEPE טוקן | המכירה המוקדמת של סופר פפה",
+    "description": "המם-קוין הראשון עם מטרה לעזור לאנשים באמצעות תרומות לצדקה"
   },
   "nav": {
     "home": "בית",
     "staking": "סטייקינג",
     "howtobuy": "איך לקנות",
-    "whitePaper": "וויט פייפר",
-    "tokenomics": "טוקנומיקס",
+    "whitePaper": "מסמך טכני",
+    "tokenomics": "טוקנומיקה",
     "features": "מאפיינים",
-    "buyNow": "קנה $LILPEPE",
+    "buyNow": "קנה $SUPEPE",
     "faq": "שאלות נפוצות",
-    "audit": "אודיט",
+    "audit": "בדיקת אבטחה",
     "roadmap": "מפת דרכים",
-    "airdrop": "איירדרופ",
+    "airdrop": "הטלה אווירית",
     "about": "אודות"
   },
   "buyForm": {
     "intro": "קנייה",
-    "intro1": "מכירה מוקדמת עכשיו",
+    "intro1": "מכירה מוקדמת",
     "day": "ימים",
     "hrs": "שעות",
     "mins": "דקות",
     "sec": "שניות",
-    "funRaised": "USDT שנאספו",
+    "funRaised": "USDT שגויסו",
     "wallet": "הארנק שלך",
     "boughtAmount": "הרכישה שלך",
-    "stakeableAmount": "כמות לסטייק",
+    "stakeableAmount": "כמות לסטייקינג",
     "pay": "שלם באמצעות",
     "get": "קבל",
-    "buyNow": "קנה $LILPEPE",
+    "buyNow": "קנה $SUPEPE",
     "buyMax": "קנייה מקסימלית",
-    "warning": "אנא התקן את Metamask כדי לבצע רכישה",
+    "warning": "אנא התקן את Metamask כדי לבצע קנייה",
     "link": "לחץ כאן",
     "connectWallet": "חבר ארנק",
     "ethOption": "רשת ETH",
     "switchOption": "החלף רשת",
     "bnbOption": "רשת BNB",
-    "buyStake": "קנה וסטייק עבור תגמול של 128%",
+    "buyStake": "קנה ועשה סטייקינג לתשואה של 578%",
     "nextPriceAlert": "עד לעליית המחיר",
-    "para1": "תגמולי סטייקינג של 1102%"
+    "para1": "תשואת סטייקינג של 1102%"
   },
   "header": {
-    "headline": "המכונה החדשה של EVM שכבת 2: Little PEPE",
-    "description": "היכנסו לסדר העולמי החדש עם LILPEPE, שבו הכוח הבלתי ניתן לעצירה של מימים מוצא את ביתו בפרוטוקול EVM שכבת 2 מהיר וחסכוני, המופעל על ידי Little Pepe Chain."
+    "headline": "המכירה המוקדמת הטובה ביותר של 2025: סופר פפה",
+    "description": "המם-קוין הראשון עם מטרה",
+    "description1": "לעזור לאנשים באמצעות תרומה של 10%",
+    "description2": "מכל רכישה ל",
+    "description3": "צדקה"
   }
 }

@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "title": "LILPEPE Token Presale | Little Pepe Presale",
-    "description": "Gå in i den nya världsordningen med LILPEPE, där den oemotståndliga kraften av memes möter sitt hem i en lågkostnads-, blixtsnabb lager 2 EVM-protokoll möjliggjort av Little Pepe Chain."
+    "title": "SUPEPE Token | Super Pepe Försäljning",
+    "description": "Första meme-token med uppdraget att hjälpa människor genom att donera till välgörenhet"
   },
   "nav": {
     "home": "HEM",
     "staking": "STAKING",
-    "howtobuy": "SÅ HÄR KÖPER DU",
-    "whitePaper": "WHITE PAPER",
-    "tokenomics": "TOKENOMICS",
-    "features": "FUNKTIONER",
-    "buyNow": "KÖP $LILPEPE",
+    "howtobuy": "SÅ KÖPER DU",
+    "whitePaper": "VITBOK",
+    "tokenomics": "TOKENOMIK",
+    "features": "FUNKTIONS",
+    "buyNow": "KÖP $SUPEPE",
     "faq": "FAQ",
     "audit": "GRANSKNING",
     "roadmap": "VÄGKARTA",
@@ -19,7 +19,7 @@
   },
   "buyForm": {
     "intro": "Köp",
-    "intro1": "Försäljning pågår",
+    "intro1": "Försäljning",
     "day": "Dagar",
     "hrs": "Timmar",
     "mins": "Minuter",
@@ -27,23 +27,26 @@
     "funRaised": "USDT Insamlat",
     "wallet": "DIN Plånbok",
     "boughtAmount": "DITT KÖP",
-    "stakeableAmount": "Ditt insatsbara belopp",
+    "stakeableAmount": "DINA STAKEABLE",
     "pay": "Betala med",
     "get": "Få",
-    "buyNow": "KÖP $LILPEPE",
+    "buyNow": "KÖP $SUPEPE",
     "buyMax": "KÖP MAX",
     "warning": "Vänligen installera Metamask för att köpa",
     "link": "klicka här",
-    "connectWallet": "ANSLUT PLÅNBOK",
+    "connectWallet": "ANSKUT PLÅNBOK",
     "ethOption": "ETH-NÄTVERK",
     "switchOption": "BYT NÄTVERK",
     "bnbOption": "BNB-NÄTVERK",
-    "buyStake": "Köp och satsa för 128% belöning",
-    "nextPriceAlert": "TILLS PRISÖKNING",
-    "para1": "1102% STAKINGBELÖNINGAR"
+    "buyStake": "Köp och stake för 578% belöning",
+    "nextPriceAlert": "TILLS PRISHÖJNING",
+    "para1": "1102% STAKING-BELÖNINGAR"
   },
   "header": {
-    "headline": "Den nyfödda EVM Layer 2-maskinen: Little PEPE",
-    "description": "Gå in i den nya världsordningen med LILPEPE, där den oemotståndliga kraften av memes möter sitt hem i en lågkostnads-, blixtsnabb lager 2 EVM-protokoll möjliggjort av Little Pepe Chain."
+    "headline": "Den Bästa Försäljningen 2025: Super PEPE",
+    "description": "Första meme-token med uppdraget att",
+    "description1": "hjälpa människor genom att donera 10% av",
+    "description2": "varje köp till",
+    "description3": "välgörenhet"
   }
 }

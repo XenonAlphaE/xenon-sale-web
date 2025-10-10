@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "LILPEPE Token Presale | Little Pepe Presale",
-    "description": "LILPEPE와 함께하는 새로운 세계 질서에 입장하세요. 멈출 수 없는 밈의 힘이 저비용, 초고속 레이어 2 EVM 프로토콜인 Little Pepe Chain에서 그들의 집을 만납니다."
+    "title": "SUPEPE Token | Super Pepe 프리세일",
+    "description": "사람들을 돕기 위해 기부하는 미션을 가진 최초의 밈 코인"
   },
   "nav": {
     "home": "홈",
@@ -10,7 +10,7 @@
     "whitePaper": "백서",
     "tokenomics": "토크노믹스",
     "features": "특징",
-    "buyNow": "$LILPEPE 구매",
+    "buyNow": "$SUPEPE 구매",
     "faq": "자주 묻는 질문",
     "audit": "감사",
     "roadmap": "로드맵",
@@ -19,31 +19,34 @@
   },
   "buyForm": {
     "intro": "구매하기",
-    "intro1": "지금 프리세일",
+    "intro1": "프리세일",
     "day": "일",
     "hrs": "시간",
     "mins": "분",
     "sec": "초",
     "funRaised": "모금된 USDT",
-    "wallet": "당신의 지갑",
-    "boughtAmount": "구매한 양",
-    "stakeableAmount": "스테이킹 가능 양",
+    "wallet": "내 지갑",
+    "boughtAmount": "구매한 금액",
+    "stakeableAmount": "스테이킹 가능 금액",
     "pay": "결제 수단",
-    "get": "받을 양",
-    "buyNow": "$LILPEPE 구매",
+    "get": "받을 금액",
+    "buyNow": "$SUPEPE 구매하기",
     "buyMax": "최대 구매",
     "warning": "구매하려면 Metamask를 설치하세요",
-    "link": "여기를 클릭하세요",
+    "link": "여기를 클릭",
     "connectWallet": "지갑 연결",
     "ethOption": "ETH 네트워크",
-    "switchOption": "네트워크 전환",
+    "switchOption": "네트워크 변경",
     "bnbOption": "BNB 네트워크",
-    "buyStake": "구매 및 128% 보상 스테이킹",
-    "nextPriceAlert": "가격 상승까지",
+    "buyStake": "구매 후 578% 보상 스테이킹",
+    "nextPriceAlert": "가격 상승까지 남은 시간",
     "para1": "1102% 스테이킹 보상"
   },
   "header": {
-    "headline": "새롭게 탄생한 EVM 레이어 2 머신: Little PEPE",
-    "description": "LILPEPE와 함께하는 새로운 세계 질서에 입장하세요. 멈출 수 없는 밈의 힘이 저비용, 초고속 레이어 2 EVM 프로토콜인 Little Pepe Chain에서 그들의 집을 만납니다."
+    "headline": "2025년 최고의 프리세일: Super PEPE",
+    "description": "사람들을 돕기 위해",
+    "description1": "구매 금액의 10%를",
+    "description2": "기부하는",
+    "description3": "최초의 밈 코인"
   }
 }

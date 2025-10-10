@@ -1,49 +1,52 @@
 {
   "metadata": {
-    "title": "LILPEPE Token Vorverkauf | Little Pepe Vorverkauf",
-    "description": "Tritt der neuen Weltordnung mit LILPEPE bei, wo die unaufhaltsame Kraft der Memes ihr Zuhause im kostengünstigen, blitzschnellen Layer-2-EVM-Protokoll findet, ermöglicht durch die Little Pepe Chain."
+    "title": "SUPEPE Token | Super Pepe Vorverkauf",
+    "description": "Die erste Meme-Coin mit der Mission, Menschen durch Spenden an Wohltätigkeit zu helfen"
   },
   "nav": {
     "home": "STARTSEITE",
     "staking": "STAKING",
-    "howtobuy": "WIE KAUFEN",
-    "whitePaper": "WHITE PAPER",
-    "tokenomics": "TOKENOMIK",
-    "features": "FUNKTIONEN",
-    "buyNow": "$LILPEPE KAUFEN",
+    "howtobuy": "KAUFANLEITUNG",
+    "whitePaper": "WHITEPAPER",
+    "tokenomics": "TOKENOMICS",
+    "features": "FEATURES",
+    "buyNow": "JETZT $SUPEPE KAUFEN",
     "faq": "FAQ",
     "audit": "AUDIT",
-    "roadmap": "FAHRPLAN",
+    "roadmap": "ROADMAP",
     "airdrop": "AIRDROP",
     "about": "ÜBER UNS"
   },
   "buyForm": {
     "intro": "Kaufen",
-    "intro1": "Jetzt im Vorverkauf",
+    "intro1": "Vorverkauf",
     "day": "Tage",
-    "hrs": "Stunde",
-    "mins": "Min",
-    "sec": "Sek",
-    "funRaised": "USDT Gesammelt",
+    "hrs": "Stunden",
+    "mins": "Minuten",
+    "sec": "Sekunden",
+    "funRaised": "Gesammelte USDT",
     "wallet": "DEINE Wallet",
-    "boughtAmount": "DEIN KAUFBETRAG",
+    "boughtAmount": "DEIN GEKAUFTER BETRAG",
     "stakeableAmount": "DEIN STAKE-FÄHIGER BETRAG",
     "pay": "Bezahlen mit",
     "get": "Erhalten",
-    "buyNow": "$LILPEPE KAUFEN",
-    "buyMax": "MAX KAUFEN",
+    "buyNow": "JETZT $SUPEPE KAUFEN",
+    "buyMax": "MAXIMAL KAUFEN",
     "warning": "Bitte installiere Metamask, um zu kaufen",
     "link": "hier klicken",
     "connectWallet": "WALLET VERBINDEN",
-    "ethOption": "ETH NETZWERK",
+    "ethOption": "ETH-NETZWERK",
     "switchOption": "NETZWERK WECHSELN",
-    "bnbOption": "BNB NETZWERK",
-    "buyStake": "Kaufen und für 128% Belohnung staken",
+    "bnbOption": "BNB-NETZWERK",
+    "buyStake": "Kaufen und für 578% Belohnungen staken",
     "nextPriceAlert": "BIS ZUR PREISERHÖHUNG",
     "para1": "1102% STAKING-BELOHNUNGEN"
   },
   "header": {
-    "headline": "Die neu geborene EVM Layer-2-Maschine: Little PEPE",
-    "description": "Tritt der neuen Weltordnung mit LILPEPE bei, wo die unaufhaltsame Kraft der Memes ihr Zuhause im kostengünstigen, blitzschnellen Layer-2-EVM-Protokoll findet, ermöglicht durch die Little Pepe Chain."
+    "headline": "Der beste Vorverkauf 2025: Super PEPE",
+    "description": "Die erste Meme-Coin mit der Mission,",
+    "description1": "Menschen zu helfen, indem 10 % jeder",
+    "description2": "Transaktion an",
+    "description3": "Wohltätigkeitsorganisationen gespendet werden"
   }
 }

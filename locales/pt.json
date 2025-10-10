@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "LILPEPE Token Presale | Little Pepe Presale",
-    "description": "Entre na nova ordem mundial com LILPEPE, onde a força imparável dos memes encontra seu lar em um protocolo EVM layer 2 de baixo custo e alta velocidade habilitado pela Little Pepe Chain."
+    "title": "SUPEPE Token | Super Pepe Presale",
+    "description": "A primeira meme coin com a missão de ajudar pessoas doando para instituições de caridade"
   },
   "nav": {
     "home": "INÍCIO",
@@ -9,9 +9,9 @@
     "howtobuy": "COMO COMPRAR",
     "whitePaper": "WHITE PAPER",
     "tokenomics": "TOKENOMICS",
-    "features": "RECURSOS",
-    "buyNow": "COMPRAR $LILPEPE",
-    "faq": "PERGUNTAS",
+    "features": "FUNCIONALIDADES",
+    "buyNow": "COMPRAR $SUPEPE",
+    "faq": "PERGUNTAS FREQUENTES",
     "audit": "AUDITORIA",
     "roadmap": "ROADMAP",
     "airdrop": "AIRDROP",
@@ -19,31 +19,34 @@
   },
   "buyForm": {
     "intro": "Comprar",
-    "intro1": "Pré-venda Agora",
+    "intro1": "Pré-venda",
     "day": "Dias",
-    "hrs": "Hora",
-    "mins": "Min",
-    "sec": "Seg",
+    "hrs": "Horas",
+    "mins": "Minutos",
+    "sec": "Segundos",
     "funRaised": "USDT Arrecadado",
-    "wallet": "SUA Carteira",
+    "wallet": "SEU Carteira",
     "boughtAmount": "SEU COMPRA",
-    "stakeableAmount": "SEU STAKE",
+    "stakeableAmount": "SEU STAKE DISPONÍVEL",
     "pay": "Pagar com",
     "get": "Receber",
-    "buyNow": "COMPRAR $LILPEPE",
+    "buyNow": "COMPRAR $SUPEPE",
     "buyMax": "COMPRAR MÁXIMO",
     "warning": "Por favor, instale Metamask para comprar",
     "link": "clique aqui",
     "connectWallet": "CONECTAR CARTEIRA",
     "ethOption": "REDE ETH",
-    "switchOption": "MUDAR REDE",
+    "switchOption": "TROCAR REDE",
     "bnbOption": "REDE BNB",
-    "buyStake": "Comprar e Stake para recompensas de 128%",
-    "nextPriceAlert": "ATÉ AUMENTO DE PREÇO",
+    "buyStake": "Compre e Faça Stake para 578% de Recompensas",
+    "nextPriceAlert": "ATÉ O AUMENTO DE PREÇO",
     "para1": "1102% DE RECOMPENSAS DE STAKING"
   },
   "header": {
-    "headline": "A Nova Máquina EVM Layer 2: Little PEPE",
-    "description": "Entre na nova ordem mundial com LILPEPE, onde a força imparável dos memes encontra seu lar em um protocolo EVM layer 2 de baixo custo e alta velocidade habilitado pela Little Pepe Chain."
+    "headline": "A Melhor Pré-venda de 2025: Super PEPE",
+    "description": "A primeira meme coin com a missão de",
+    "description1": "ajudar pessoas doando 10% de",
+    "description2": "cada compra para",
+    "description3": "instituições de caridade"
   }
 }

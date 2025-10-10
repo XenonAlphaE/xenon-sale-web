@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "LILPEPE Token Presale | Little Pepe Presale",
-    "description": "Вступите в новый мировой порядок с LILPEPE, где неудержимая сила мемов находит свой дом в недорогом, молниеносно быстром протоколе layer 2 EVM, реализованном на Little Pepe Chain."
+    "title": "SUPEPE Token | Super Pepe Presale",
+    "description": "Первая мем-монета с миссией помогать людям через благотворительные пожертвования"
   },
   "nav": {
     "home": "ГЛАВНАЯ",
@@ -10,40 +10,43 @@
     "whitePaper": "БЕЛАЯ КНИГА",
     "tokenomics": "ТОКЕНОМИКА",
     "features": "ОСОБЕННОСТИ",
-    "buyNow": "КУПИТЬ $LILPEPE",
+    "buyNow": "КУПИТЬ $SUPEPE",
     "faq": "ВОПРОСЫ",
     "audit": "АУДИТ",
-    "roadmap": "ДОРОЖНАЯ КАРТА",
+    "roadmap": "РОДМАП",
     "airdrop": "ЭЙРДРОП",
     "about": "О ПРОЕКТЕ"
   },
   "buyForm": {
     "intro": "Купить",
-    "intro1": "Предпродажа сейчас",
-    "day": "Дни",
-    "hrs": "Час",
+    "intro1": "Пресейл",
+    "day": "Дней",
+    "hrs": "Часов",
     "mins": "Мин",
     "sec": "Сек",
     "funRaised": "Собрано USDT",
     "wallet": "ВАШ Кошелек",
     "boughtAmount": "ВЫ КУПИЛИ",
-    "stakeableAmount": "ВЫ МОЖЕТЕ СТЕЙКАТЬ",
+    "stakeableAmount": "ДОСТУПНО ДЛЯ СТЕЙКИНГА",
     "pay": "Оплатить с помощью",
     "get": "Получить",
-    "buyNow": "КУПИТЬ $LILPEPE",
+    "buyNow": "КУПИТЬ $SUPEPE",
     "buyMax": "КУПИТЬ МАКСИМУМ",
     "warning": "Пожалуйста, установите Metamask для покупки",
     "link": "нажмите здесь",
     "connectWallet": "ПОДКЛЮЧИТЬ КОШЕЛЕК",
-    "ethOption": "ETH СЕТЬ",
+    "ethOption": "СЕТЬ ETH",
     "switchOption": "СМЕНИТЬ СЕТЬ",
-    "bnbOption": "BNB СЕТЬ",
-    "buyStake": "Купить и Стейкать для награды 128%",
+    "bnbOption": "СЕТЬ BNB",
+    "buyStake": "Купить и стейкать для наград 578%",
     "nextPriceAlert": "ДО ПОВЫШЕНИЯ ЦЕНЫ",
-    "para1": "1102% НАГРАДЫ ЗА СТЕЙКИНГ"
+    "para1": "НАГРАДЫ ЗА СТЕЙКИНГ 1102%"
   },
   "header": {
-    "headline": "Новый Рожденный EVM Layer 2 Машина: Little PEPE",
-    "description": "Вступите в новый мировой порядок с LILPEPE, где неудержимая сила мемов находит свой дом в недорогом, молниеносно быстром протоколе layer 2 EVM, реализованном на Little Pepe Chain."
+    "headline": "Лучший пресейл 2025: Super PEPE",
+    "description": "Первая мем-монета с миссией",
+    "description1": "помогать людям, жертвуя 10%",
+    "description2": "от каждой покупки на",
+    "description3": "благотворительность"
   }
 }

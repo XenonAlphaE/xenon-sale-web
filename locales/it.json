@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "title": "LILPEPE Token Presale | Little Pepe Presale",
-    "description": "Entra nel nuovo ordine mondiale con LILPEPE, dove la forza inarrestabile dei meme trova casa in un protocollo layer 2 EVM a basso costo e velocissimo abilitato da Little Pepe Chain."
+    "title": "SUPEPE Token | Presale di Super Pepe",
+    "description": "La prima meme coin con la missione di aiutare le persone donando in beneficenza"
   },
   "nav": {
     "home": "HOME",
     "staking": "STAKING",
-    "howtobuy": "COME COMPRARE",
+    "howtobuy": "COME ACQUISTARE",
     "whitePaper": "WHITE PAPER",
     "tokenomics": "TOKENOMICS",
     "features": "CARATTERISTICHE",
-    "buyNow": "COMPRA $LILPEPE",
+    "buyNow": "ACQUISTA $SUPEPE",
     "faq": "FAQ",
     "audit": "AUDIT",
     "roadmap": "ROADMAP",
@@ -18,32 +18,35 @@
     "about": "INFO"
   },
   "buyForm": {
-    "intro": "Compra",
-    "intro1": "Presale Ora",
+    "intro": "Acquista",
+    "intro1": "Presale",
     "day": "Giorni",
     "hrs": "Ore",
-    "mins": "Minuti",
-    "sec": "Secondi",
-    "funRaised": "USDT Raccolti",
-    "wallet": "IL TUO Wallet",
-    "boughtAmount": "ACQUISTATO",
-    "stakeableAmount": "STAKABILE",
+    "mins": "Min",
+    "sec": "Sec",
+    "funRaised": "USDT Raccimolati",
+    "wallet": "Il TUO Wallet",
+    "boughtAmount": "ACQUISTATI",
+    "stakeableAmount": "STAKABILI",
     "pay": "Paga con",
     "get": "Ricevi",
-    "buyNow": "COMPRA $LILPEPE",
-    "buyMax": "COMPRA MASSIMO",
-    "warning": "Per favore installa Metamask per comprare",
+    "buyNow": "ACQUISTA $SUPEPE",
+    "buyMax": "ACQUISTA MASSIMO",
+    "warning": "Per favore installa Metamask per acquistare",
     "link": "clicca qui",
-    "connectWallet": "CONNETTI WALLET",
+    "connectWallet": "COLLEGA WALLET",
     "ethOption": "RETE ETH",
     "switchOption": "CAMBIA RETE",
     "bnbOption": "RETE BNB",
-    "buyStake": "Compra e Staka per ricompense del 128%",
-    "nextPriceAlert": "FINO A AUMENTO PREZZO",
-    "para1": "RICOMPENSE DI STAKING DEL 1102%"
+    "buyStake": "Acquista e Metti in Stake per un premio del 578%",
+    "nextPriceAlert": "FINO ALL'AUMENTO DI PREZZO",
+    "para1": "1102% DI RICOMPENSE STAKING"
   },
   "header": {
-    "headline": "La Nuova Macchina EVM Layer 2: Little PEPE",
-    "description": "Entra nel nuovo ordine mondiale con LILPEPE, dove la forza inarrestabile dei meme trova casa in un protocollo layer 2 EVM a basso costo e velocissimo abilitato da Little Pepe Chain."
+    "headline": "La Migliore Presale del 2025: Super PEPE",
+    "description": "La prima meme coin con la missione di",
+    "description1": "aiutare le persone donando il 10%",
+    "description2": "di ogni acquisto a",
+    "description3": "beneficenza"
   }
 }

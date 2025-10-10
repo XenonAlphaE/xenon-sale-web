@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "title": "LILPEPE Token Presale | Little Pepe Presale",
-    "description": "Betreed de nieuwe wereldorde met LILPEPE, waar de niet te stoppen kracht van memes hun thuis vindt in een goedkope, razendsnelle layer 2 EVM-protocol mogelijk gemaakt door Little Pepe Chain."
+    "title": "SUPEPE Token | Super Pepe Voorverkoop",
+    "description": "De eerste meme coin met als missie mensen te helpen door middel van liefdadigheidsdonaties"
   },
   "nav": {
-    "home": "START",
+    "home": "HOME",
     "staking": "STAKEN",
     "howtobuy": "HOE TE KOPEN",
-    "whitePaper": "WHITE PAPER",
+    "whitePaper": "WHITEPAPER",
     "tokenomics": "TOKENOMICS",
     "features": "FUNCTIES",
-    "buyNow": "KOOP $LILPEPE",
+    "buyNow": "KOOP $SUPEPE",
     "faq": "VEELGESTELDE VRAGEN",
     "audit": "AUDIT",
     "roadmap": "ROADMAPP",
@@ -19,18 +19,18 @@
   },
   "buyForm": {
     "intro": "Koop",
-    "intro1": "Presale Nu",
+    "intro1": "Voorverkoop",
     "day": "Dagen",
     "hrs": "Uur",
     "mins": "Min",
     "sec": "Sec",
-    "funRaised": "USDT Verzameld",
-    "wallet": "JOUW Wallet",
-    "boughtAmount": "JOUW GEKOCHT",
-    "stakeableAmount": "JOUW STAKEBAAR",
+    "funRaised": "Opgehaald in USDT",
+    "wallet": "JE Wallet",
+    "boughtAmount": "JE GEKOCHT",
+    "stakeableAmount": "JE INZETBAAR",
     "pay": "Betaal met",
     "get": "Ontvang",
-    "buyNow": "KOOP $LILPEPE",
+    "buyNow": "KOOP $SUPEPE",
     "buyMax": "KOOP MAX",
     "warning": "Installeer Metamask om te kopen",
     "link": "klik hier",
@@ -38,12 +38,15 @@
     "ethOption": "ETH NETWERK",
     "switchOption": "WISSEL NETWERK",
     "bnbOption": "BNB NETWERK",
-    "buyStake": "Koop en Stake voor 128% Beloningen",
+    "buyStake": "Koop en Stake voor 578% Beloning",
     "nextPriceAlert": "TOT PRIJSSTIJGING",
-    "para1": "1102% STAKING BELONINGEN"
+    "para1": "1102% STAKE BELONINGEN"
   },
   "header": {
-    "headline": "De pasgeboren EVM Layer 2 Machine: Little PEPE",
-    "description": "Betreed de nieuwe wereldorde met LILPEPE, waar de niet te stoppen kracht van memes hun thuis vindt in een goedkope, razendsnelle layer 2 EVM-protocol mogelijk gemaakt door Little Pepe Chain."
+    "headline": "De Beste Voorverkoop 2025: Super PEPE",
+    "description": "De eerste meme coin met als missie",
+    "description1": "mensen te helpen door 10% van",
+    "description2": "elke aankoop te doneren aan",
+    "description3": "liefdadigheid"
   }
 }

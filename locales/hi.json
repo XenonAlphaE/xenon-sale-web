@@ -1,49 +1,52 @@
 {
   "metadata": {
-    "title": "LILPEPE टोकन प्रीसेल | Little Pepe प्रीसेल",
-    "description": "LILPEPE के साथ नए विश्व व्यवस्था में प्रवेश करें, जहाँ मीम्स की अजेय शक्ति को Little Pepe Chain द्वारा सक्षम कम लागत, तेज़ गति वाली लेयर 2 EVM प्रोटोकॉल में उनका घर मिलता है।"
+    "title": "SUPEPE Token | Super Pepe प्रीसेल",
+    "description": "पहला मीम कॉइन जिसका मिशन लोगों की मदद करना और दान के ज़रिए सहायता करना है।"
   },
   "nav": {
-    "home": "मुखपृष्ठ",
+    "home": "होम",
     "staking": "स्टेकिंग",
     "howtobuy": "कैसे खरीदें",
-    "whitePaper": "श्वेत पत्र",
-    "tokenomics": "टोकनोमिक्स",
+    "whitePaper": "व्हाइट पेपर",
+    "tokenomics": "टोकनॉमिक्स",
     "features": "विशेषताएँ",
-    "buyNow": "$LILPEPE खरीदें",
-    "faq": "प्रश्नोत्तर",
+    "buyNow": "$SUPEPE खरीदें",
+    "faq": "प्रश्नोत्तरी",
     "audit": "ऑडिट",
     "roadmap": "रोडमैप",
     "airdrop": "एयरड्रॉप",
-    "about": "के बारे में"
+    "about": "परिचय"
   },
   "buyForm": {
     "intro": "खरीदें",
-    "intro1": "प्रीसेल अब",
+    "intro1": "प्रीसेल",
     "day": "दिन",
     "hrs": "घंटा",
     "mins": "मिनट",
     "sec": "सेकंड",
-    "funRaised": "उठाया गया USDT",
+    "funRaised": "USDT जुटाए गए",
     "wallet": "आपका वॉलेट",
     "boughtAmount": "आपकी खरीदी गई राशि",
-    "stakeableAmount": "आपकी स्टेकेबल राशि",
+    "stakeableAmount": "आपकी स्टेक की जा सकने वाली राशि",
     "pay": "भुगतान करें",
     "get": "प्राप्त करें",
-    "buyNow": "$LILPEPE खरीदें",
+    "buyNow": "$SUPEPE खरीदें",
     "buyMax": "अधिकतम खरीदें",
-    "warning": "खरीदने के लिए कृपया Metamask इंस्टॉल करें",
+    "warning": "खरीदारी के लिए कृपया मेटामास्क इंस्टॉल करें",
     "link": "यहाँ क्लिक करें",
     "connectWallet": "वॉलेट कनेक्ट करें",
     "ethOption": "ETH नेटवर्क",
     "switchOption": "नेटवर्क बदलें",
     "bnbOption": "BNB नेटवर्क",
-    "buyStake": "खरीदें और 128% रिवॉर्ड्स के लिए स्टेक करें",
-    "nextPriceAlert": "मूल्य वृद्धि तक",
-    "para1": "1102% स्टेकिंग रिवॉर्ड्स"
+    "buyStake": "खरीदें और 578% रिवॉर्ड के लिए स्टेक करें",
+    "nextPriceAlert": "कीमत बढ़ने तक",
+    "para1": "1102% स्टेकिंग रिवॉर्ड"
   },
   "header": {
-    "headline": "नवजन्मा EVM लेयर 2 मशीन: Little PEPE",
-    "description": "LILPEPE के साथ नए विश्व व्यवस्था में प्रवेश करें, जहाँ मीम्स की अजेय शक्ति को Little Pepe Chain द्वारा सक्षम कम लागत, तेज़ गति वाली लेयर 2 EVM प्रोटोकॉल में उनका घर मिलता है।"
+    "headline": "2025 की सबसे बेहतरीन प्रीसेल: Super PEPE",
+    "description": "पहला मीम कॉइन जिसका मिशन है",
+    "description1": "हर खरीदारी का 10% दान में देकर",
+    "description2": "लोगों की मदद करना",
+    "description3": "एवं सेवा करना"
   }
 }

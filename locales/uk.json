@@ -1,36 +1,36 @@
 {
   "metadata": {
-    "title": "LILPEPE Token Presale | Little Pepe Presale",
-    "description": "Вступайте у новий світовий порядок з LILPEPE, де непереборна сила мемів знаходить свій дім у дешевому та надшвидкому протоколі layer 2 EVM, що працює на Little Pepe Chain."
+    "title": "SUPEPE Token | Super Pepe Presale",
+    "description": "Перший мем-монета з місією допомагати людям через пожертви на благодійність"
   },
   "nav": {
     "home": "ГОЛОВНА",
     "staking": "СТЕЙКІНГ",
     "howtobuy": "ЯК КУПИТИ",
-    "whitePaper": "WHITE PAPER",
+    "whitePaper": "БІЛА КНИГА",
     "tokenomics": "ТОКЕНОМІКА",
     "features": "ОСОБЛИВОСТІ",
-    "buyNow": "КУПИТИ $LILPEPE",
-    "faq": "ЧАСТІ ПИТАННЯ",
+    "buyNow": "КУПИТИ $SUPEPE",
+    "faq": "ПИТАННЯ",
     "audit": "АУДИТ",
     "roadmap": "ДОРОЖНЯ КАРТА",
-    "airdrop": "AIRDROP",
+    "airdrop": "ЕЙРДРОП",
     "about": "ПРО ПРОЄКТ"
   },
   "buyForm": {
     "intro": "Купити",
-    "intro1": "Передпродаж зараз",
-    "day": "Днів",
-    "hrs": "Годин",
-    "mins": "Хвилин",
-    "sec": "Секунд",
+    "intro1": "Пресейл",
+    "day": "Дні",
+    "hrs": "Година",
+    "mins": "Хвилина",
+    "sec": "Секунда",
     "funRaised": "Зібрано USDT",
     "wallet": "ВАШ Гаманець",
     "boughtAmount": "ВИ ПРИДБАЛИ",
-    "stakeableAmount": "ДОСТУПНО ДЛЯ СТЕЙКІНГУ",
-    "pay": "Платити з",
+    "stakeableAmount": "ВИ МОЖЕТЕ СТЕЙКАТИ",
+    "pay": "Оплатити через",
     "get": "Отримати",
-    "buyNow": "КУПИТИ $LILPEPE",
+    "buyNow": "КУПИТИ $SUPEPE",
     "buyMax": "КУПИТИ МАКСИМУМ",
     "warning": "Будь ласка, встановіть Metamask для покупки",
     "link": "натисніть тут",
@@ -38,12 +38,15 @@
     "ethOption": "ETH МЕРЕЖА",
     "switchOption": "ЗМІНИТИ МЕРЕЖУ",
     "bnbOption": "BNB МЕРЕЖА",
-    "buyStake": "Купити та стейкати з нагородою 128%",
-    "nextPriceAlert": "ДО ЗРОСТАННЯ ЦІНИ",
-    "para1": "1102% НАГОРОДИ ЗА СТЕЙКІНГ"
+    "buyStake": "Купуйте та стейкайте для отримання 578% винагороди",
+    "nextPriceAlert": "ДО ПІДВИЩЕННЯ ЦІНИ",
+    "para1": "1102% ВИНАГОРОДИ ЗА СТЕЙКІНГ"
   },
   "header": {
-    "headline": "Нова EVM Layer 2 машина: Little PEPE",
-    "description": "Вступайте у новий світовий порядок з LILPEPE, де непереборна сила мемів знаходить свій дім у дешевому та надшвидкому протоколі layer 2 EVM, що працює на Little Pepe Chain."
+    "headline": "Найкращий пресейл 2025: Super PEPE",
+    "description": "Перший мем-монета з місією",
+    "description1": "допомагати людям, жертвуючи 10% від",
+    "description2": "кожної покупки на",
+    "description3": "благодійність"
   }
 }

@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "LILPEPE トークンプレセール | Little Pepe プレセール",
-    "description": "LILPEPE と共に新しい世界秩序へ。止められないミームの力が、低コストで超高速のレイヤー2 EVMプロトコル、Little Pepe Chainによって実現されるホームに出会います。"
+    "title": "SUPEPEトークン | Super Pepe プレセール",
+    "description": "チャリティーへの寄付で人々を助けることを使命とした初のミームコイン"
   },
   "nav": {
     "home": "ホーム",
@@ -10,7 +10,7 @@
     "whitePaper": "ホワイトペーパー",
     "tokenomics": "トークノミクス",
     "features": "特徴",
-    "buyNow": "$LILPEPEを購入",
+    "buyNow": "$SUPEPEを購入",
     "faq": "よくある質問",
     "audit": "監査",
     "roadmap": "ロードマップ",
@@ -19,31 +19,34 @@
   },
   "buyForm": {
     "intro": "購入",
-    "intro1": "プレセール開催中",
+    "intro1": "プレセール",
     "day": "日",
     "hrs": "時間",
     "mins": "分",
     "sec": "秒",
-    "funRaised": "調達されたUSDT",
+    "funRaised": "集めたUSDT",
     "wallet": "あなたのウォレット",
-    "boughtAmount": "購入済み数量",
-    "stakeableAmount": "ステーク可能数量",
+    "boughtAmount": "購入済み",
+    "stakeableAmount": "ステーク可能",
     "pay": "支払う通貨",
     "get": "受け取る通貨",
-    "buyNow": "$LILPEPEを購入",
+    "buyNow": "$SUPEPEを購入",
     "buyMax": "最大購入",
-    "warning": "購入にはMetamaskをインストールしてください",
-    "link": "ここをクリック",
+    "warning": "購入にはMetamaskのインストールが必要です",
+    "link": "こちらをクリック",
     "connectWallet": "ウォレットを接続",
-    "ethOption": "ETH ネットワーク",
-    "switchOption": "ネットワークを切替",
-    "bnbOption": "BNB ネットワーク",
-    "buyStake": "購入して128%の報酬をステーク",
+    "ethOption": "ETHネットワーク",
+    "switchOption": "ネットワークを切り替え",
+    "bnbOption": "BNBネットワーク",
+    "buyStake": "購入してステーキングすると578%の報酬",
     "nextPriceAlert": "価格上昇まで",
     "para1": "1102%のステーキング報酬"
   },
   "header": {
-    "headline": "新生EVMレイヤー2マシン：Little PEPE",
-    "description": "LILPEPE と共に新しい世界秩序へ。止められないミームの力が、低コストで超高速のレイヤー2 EVMプロトコル、Little Pepe Chainによって実現されるホームに出会います。"
+    "headline": "2025年最高のプレセール：Super PEPE",
+    "description": "人々を助けることを使命とした初のミームコイン",
+    "description1": "購入ごとに10％を",
+    "description2": "チャリティーへ寄付",
+    "description3": "します"
   }
 }

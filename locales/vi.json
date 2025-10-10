@@ -1,25 +1,25 @@
 {
   "metadata": {
-    "title": "LILPEPE Token Presale | Little Pepe Presale",
-    "description": "Bước vào trật tự thế giới mới với LILPEPE, nơi sức mạnh không thể ngăn cản của meme tìm thấy ngôi nhà của chúng trong giao thức layer 2 EVM chi phí thấp, siêu nhanh được kích hoạt bởi Little Pepe Chain."
+    "title": "SUPEPE Token | Super Pepe Presale",
+    "description": "Đồng meme đầu tiên với sứ mệnh giúp đỡ mọi người thông qua việc quyên góp từ thiện"
   },
   "nav": {
     "home": "TRANG CHỦ",
-    "staking": "ĐẶT CƯỢC",
+    "staking": "ĐẦU TƯ",
     "howtobuy": "CÁCH MUA",
     "whitePaper": "SÁCH TRẮNG",
     "tokenomics": "TOKENOMICS",
     "features": "TÍNH NĂNG",
-    "buyNow": "MUA $LILPEPE",
+    "buyNow": "MUA $SUPEPE",
     "faq": "CÂU HỎI THƯỜNG GẶP",
     "audit": "KIỂM TOÁN",
     "roadmap": "LỘ TRÌNH",
-    "airdrop": "AIRDROP",
+    "airdrop": "PHÁT TOKEN MIỄN PHÍ",
     "about": "VỀ CHÚNG TÔI"
   },
   "buyForm": {
     "intro": "Mua",
-    "intro1": "Presale Now",
+    "intro1": "Đợt mở bán trước",
     "day": "Ngày",
     "hrs": "Giờ",
     "mins": "Phút",
@@ -27,23 +27,26 @@
     "funRaised": "USDT Đã Gây Quỹ",
     "wallet": "Ví CỦA BẠN",
     "boughtAmount": "SỐ LƯỢNG ĐÃ MUA",
-    "stakeableAmount": "SỐ LƯỢNG CÓ THỂ ĐẶT CƯỢC",
+    "stakeableAmount": "SỐ LƯỢNG CÓ THỂ ĐẦU TƯ",
     "pay": "Thanh toán bằng",
     "get": "Nhận",
-    "buyNow": "MUA $LILPEPE",
+    "buyNow": "MUA $SUPEPE",
     "buyMax": "MUA TỐI ĐA",
     "warning": "Vui lòng cài đặt Metamask để mua",
-    "link": "bấm vào đây",
+    "link": "nhấn vào đây",
     "connectWallet": "KẾT NỐI VÍ",
     "ethOption": "MẠNG ETH",
     "switchOption": "CHUYỂN MẠNG",
     "bnbOption": "MẠNG BNB",
-    "buyStake": "Mua và Đặt Cược để nhận 128% Phần Thưởng",
+    "buyStake": "Mua và Đầu tư để nhận phần thưởng 578%",
     "nextPriceAlert": "ĐẾN KHI GIÁ TĂNG",
-    "para1": "1102% PHẦN THƯỞNG ĐẶT CƯỢC"
+    "para1": "PHẦN THƯỞNG ĐẦU TƯ 1102%"
   },
   "header": {
-    "headline": "Chiếc Máy EVM Layer 2 Mới Sinh Ra: Little PEPE",
-    "description": "Bước vào trật tự thế giới mới với LILPEPE, nơi sức mạnh không thể ngăn cản của meme tìm thấy ngôi nhà của chúng trong giao thức layer 2 EVM chi phí thấp, siêu nhanh được kích hoạt bởi Little Pepe Chain."
+    "headline": "Đợt Mở Bán Tốt Nhất 2025: Super PEPE",
+    "description": "Đồng meme đầu tiên với sứ mệnh",
+    "description1": "giúp đỡ mọi người bằng cách quyên góp 10%",
+    "description2": "từ mỗi giao dịch mua cho",
+    "description3": "tổ chức từ thiện"
   }
 }

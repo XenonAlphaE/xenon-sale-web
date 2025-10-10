@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "title": "LILPEPE Token Ön Satış | Little Pepe Ön Satış",
-    "description": "LILPEPE ile yeni dünya düzenine girin, burada durdurulamaz meme gücü, Little Pepe Chain tarafından etkinleştirilen düşük maliyetli, ışık hızında çalışan layer 2 EVM protokolünde buluşuyor."
+    "title": "SUPEPE Token | Super Pepe Ön Satış",
+    "description": "İnsanlara bağış yaparak yardım etmeyi amaçlayan ilk meme coin"
   },
   "nav": {
     "home": "ANASAYFA",
     "staking": "STAKING",
     "howtobuy": "NASIL ALINIR",
     "whitePaper": "WHITE PAPER",
-    "tokenomics": "TOKENOMICS",
+    "tokenomics": "TOKENOMİK",
     "features": "ÖZELLİKLER",
-    "buyNow": "$LILPEPE SATIN AL",
+    "buyNow": "$SUPEPE AL",
     "faq": "SSS",
     "audit": "DENETİM",
     "roadmap": "YOL HARİTASI",
@@ -19,7 +19,7 @@
   },
   "buyForm": {
     "intro": "Satın Al",
-    "intro1": "Ön Satış Şimdi",
+    "intro1": "Ön Satış",
     "day": "Gün",
     "hrs": "Saat",
     "mins": "Dakika",
@@ -28,22 +28,25 @@
     "wallet": "CÜZDANINIZ",
     "boughtAmount": "SATIN ALDIĞINIZ",
     "stakeableAmount": "STAKELANABİLİR MİKTARINIZ",
-    "pay": "Öde",
-    "get": "Al",
-    "buyNow": "$LILPEPE SATIN AL",
-    "buyMax": "MAKS SATIN AL",
-    "warning": "Satın almak için lütfen Metamask kurun",
+    "pay": "Ödeme yöntemi",
+    "get": "Alacağınız",
+    "buyNow": "$SUPEPE AL",
+    "buyMax": "MAKSİMUM AL",
+    "warning": "Satın almak için lütfen Metamask yükleyin",
     "link": "buraya tıklayın",
     "connectWallet": "CÜZDAN BAĞLA",
     "ethOption": "ETH AĞI",
     "switchOption": "AĞ DEĞİŞTİR",
     "bnbOption": "BNB AĞI",
-    "buyStake": "%128 Ödüller için Satın Al ve Stake Et",
+    "buyStake": "%578 Ödüller için Satın Al ve Stake Et",
     "nextPriceAlert": "FİYAT ARTIŞINA KADAR",
     "para1": "%1102 STAKING ÖDÜLLERİ"
   },
   "header": {
-    "headline": "Yeni Doğan EVM Layer 2 Makinesi: Little PEPE",
-    "description": "LILPEPE ile yeni dünya düzenine girin, burada durdurulamaz meme gücü, Little Pepe Chain tarafından etkinleştirilen düşük maliyetli, ışık hızında çalışan layer 2 EVM protokolünde buluşuyor."
+    "headline": "2025'in En İyi Ön Satışı: Super PEPE",
+    "description": "İnsanlara yardım etmeyi amaçlayan ilk meme coin",
+    "description1": "her satın alımdan %10 bağış yaparak",
+    "description2": "",
+    "description3": "hayır kurumlarına"
   }
 }

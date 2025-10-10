@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "LILPEPE Token Presale | Little Pepe Presale",
-    "description": "Masuki susunan dunia baru dengan LILPEPE, di mana kekuatan memes yang tidak terbendung bertemu dengan rumah mereka dalam protokol EVM lapisan 2 yang kos rendah dan sangat pantas yang didayakan oleh Little Pepe Chain."
+    "title": "Token SUPEPE | Jualan Awal Super Pepe",
+    "description": "Syiling meme pertama dengan misi membantu orang dengan menderma untuk amal"
   },
   "nav": {
     "home": "LAMAN UTAMA",
@@ -10,7 +10,7 @@
     "whitePaper": "KERTAS PUTIH",
     "tokenomics": "TOKENOMIK",
     "features": "CIRI-CIRI",
-    "buyNow": "BELI $LILPEPE",
+    "buyNow": "BELI $SUPEPE",
     "faq": "SOALAN LAZIM",
     "audit": "AUDIT",
     "roadmap": "PELAN JALAN",
@@ -19,18 +19,18 @@
   },
   "buyForm": {
     "intro": "Beli",
-    "intro1": "Presale Sekarang",
+    "intro1": "Jualan Awal",
     "day": "Hari",
     "hrs": "Jam",
     "mins": "Minit",
     "sec": "Saat",
     "funRaised": "USDT Dikumpul",
-    "wallet": "DOMPET ANDA",
-    "boughtAmount": "PEMBELIAN ANDA",
-    "stakeableAmount": "STAKING ANDA",
+    "wallet": "Dompet ANDA",
+    "boughtAmount": "Pembelian ANDA",
+    "stakeableAmount": "Boleh Stake ANDA",
     "pay": "Bayar dengan",
     "get": "Terima",
-    "buyNow": "BELI $LILPEPE",
+    "buyNow": "BELI $SUPEPE",
     "buyMax": "BELI MAKSIMUM",
     "warning": "Sila pasang Metamask untuk membeli",
     "link": "klik di sini",
@@ -38,12 +38,15 @@
     "ethOption": "RANGKAIAN ETH",
     "switchOption": "TUKAR RANGKAIAN",
     "bnbOption": "RANGKAIAN BNB",
-    "buyStake": "Beli dan Stake untuk Ganjaran 128%",
-    "nextPriceAlert": "SEHINGGA HARGA NAIK",
+    "buyStake": "Beli dan Stake untuk Ganjaran 578%",
+    "nextPriceAlert": "HINGGA HARGA NAIK",
     "para1": "GANJARAN STAKING 1102%"
   },
   "header": {
-    "headline": "Mesin EVM Lapisan 2 Baru yang Terlahir: Little PEPE",
-    "description": "Masuki susunan dunia baru dengan LILPEPE, di mana kekuatan memes yang tidak terbendung bertemu dengan rumah mereka dalam protokol EVM lapisan 2 yang kos rendah dan sangat pantas yang didayakan oleh Little Pepe Chain."
+    "headline": "Jualan Awal Terbaik 2025: Super PEPE",
+    "description": "Syiling meme pertama dengan misi untuk",
+    "description1": "membantu orang dengan menderma 10%",
+    "description2": "daripada setiap pembelian kepada",
+    "description3": "amal kebajikan"
   }
 }

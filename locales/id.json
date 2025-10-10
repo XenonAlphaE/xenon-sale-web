@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Presale Token LILPEPE | Presale Little Pepe",
-    "description": "Masuki tatanan dunia baru bersama LILPEPE, di mana kekuatan meme yang tak terbendung menemukan rumahnya dalam protokol EVM layer 2 yang murah dan super cepat yang didukung oleh Little Pepe Chain."
+    "title": "Token SUPEPE | Presale Super Pepe",
+    "description": "Koin meme pertama dengan misi membantu orang melalui donasi amal"
   },
   "nav": {
     "home": "BERANDA",
@@ -10,40 +10,43 @@
     "whitePaper": "WHITE PAPER",
     "tokenomics": "TOKENOMIK",
     "features": "FITUR",
-    "buyNow": "BELI $LILPEPE",
+    "buyNow": "BELI $SUPEPE",
     "faq": "FAQ",
     "audit": "AUDIT",
-    "roadmap": "PETA JALAN",
+    "roadmap": "ROADMAP",
     "airdrop": "AIRDROP",
     "about": "TENTANG"
   },
   "buyForm": {
     "intro": "Beli",
-    "intro1": "Presale Sekarang",
+    "intro1": "Presale",
     "day": "Hari",
     "hrs": "Jam",
     "mins": "Menit",
     "sec": "Detik",
     "funRaised": "USDT Terkumpul",
     "wallet": "Dompet Anda",
-    "boughtAmount": "PEMBELIAN ANDA",
-    "stakeableAmount": "YANG DAPAT DI-STAKING",
+    "boughtAmount": "JUMLAH YANG DIBELI",
+    "stakeableAmount": "JUMLAH YANG BISA DISTAKE",
     "pay": "Bayar dengan",
     "get": "Terima",
-    "buyNow": "BELI $LILPEPE",
-    "buyMax": "BELI MAKS",
-    "warning": "Silakan pasang Metamask untuk membeli",
+    "buyNow": "BELI $SUPEPE",
+    "buyMax": "BELI MAKSIMAL",
+    "warning": "Silakan instal Metamask untuk membeli",
     "link": "klik di sini",
     "connectWallet": "HUBUNGKAN DOMPET",
     "ethOption": "JARINGAN ETH",
     "switchOption": "GANTI JARINGAN",
     "bnbOption": "JARINGAN BNB",
-    "buyStake": "Beli dan Staking untuk Imbalan 128%",
-    "nextPriceAlert": "HINGGA HARGA NAIK",
-    "para1": "IMBALAN STAKING 1102%"
+    "buyStake": "Beli dan Stake untuk Imbal Hasil 578%",
+    "nextPriceAlert": "HINGGA KENAIKAN HARGA",
+    "para1": "IMBAL HASIL STAKING 1102%"
   },
   "header": {
-    "headline": "Mesin EVM Layer 2 yang Baru Lahir: Little PEPE",
-    "description": "Masuki tatanan dunia baru bersama LILPEPE, di mana kekuatan meme yang tak terbendung menemukan rumahnya dalam protokol EVM layer 2 yang murah dan super cepat yang didukung oleh Little Pepe Chain."
+    "headline": "Presale Terbaik 2025: Super PEPE",
+    "description": "Koin meme pertama dengan misi untuk",
+    "description1": "membantu sesama melalui donasi sebesar 10%",
+    "description2": "dari setiap pembelian ke",
+    "description3": "kegiatan amal"
   }
 }

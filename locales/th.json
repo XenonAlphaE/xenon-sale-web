@@ -1,49 +1,52 @@
 {
   "metadata": {
-    "title": "LILPEPE Token Presale | Little Pepe Presale",
-    "description": "เข้าสู่ยุคใหม่ของโลกด้วย LILPEPE ที่ซึ่งพลังที่ไม่หยุดยั้งของมีมพบกับบ้านของพวกเขาในโปรโตคอล layer 2 EVM ที่มีต้นทุนต่ำและรวดเร็ว ที่ขับเคลื่อนโดย Little Pepe Chain"
+    "title": "SUPEPE Token | Super Pepe Presale",
+    "description": "เหรียญมีมแรกที่มีภารกิจช่วยเหลือผู้คนโดยการบริจาคเพื่อการกุศล"
   },
   "nav": {
-    "home": "หน้าแรก",
-    "staking": "การวางเดิมพัน",
+    "home": "หน้าหลัก",
+    "staking": "การฝาก",
     "howtobuy": "วิธีซื้อ",
     "whitePaper": "ไวท์เปเปอร์",
     "tokenomics": "โทเคนโนมิกส์",
     "features": "คุณสมบัติ",
-    "buyNow": "ซื้อ $LILPEPE",
+    "buyNow": "ซื้อ $SUPEPE",
     "faq": "คำถามที่พบบ่อย",
-    "audit": "ตรวจสอบ",
+    "audit": "การตรวจสอบ",
     "roadmap": "แผนงาน",
-    "airdrop": "แจกเหรียญ",
+    "airdrop": "แอร์ดรอป",
     "about": "เกี่ยวกับ"
   },
   "buyForm": {
     "intro": "ซื้อ",
-    "intro1": "เปิดขายล่วงหน้าแล้ว",
+    "intro1": "พรีเซล",
     "day": "วัน",
     "hrs": "ชั่วโมง",
     "mins": "นาที",
     "sec": "วินาที",
-    "funRaised": "USDT ที่ระดมได้",
+    "funRaised": "USDT ที่ระดมทุนได้",
     "wallet": "กระเป๋าเงินของคุณ",
-    "boughtAmount": "จำนวนที่ซื้อ",
-    "stakeableAmount": "จำนวนที่วางเดิมพันได้",
+    "boughtAmount": "จำนวนที่คุณซื้อ",
+    "stakeableAmount": "จำนวนที่สามารถฝากได้",
     "pay": "จ่ายด้วย",
     "get": "รับ",
-    "buyNow": "ซื้อ $LILPEPE",
+    "buyNow": "ซื้อ $SUPEPE",
     "buyMax": "ซื้อสูงสุด",
-    "warning": "กรุณาติดตั้ง Metamask เพื่อซื้อ",
+    "warning": "กรุณาติดตั้ง Metamask เพื่อทำการซื้อ",
     "link": "คลิกที่นี่",
     "connectWallet": "เชื่อมต่อกระเป๋าเงิน",
     "ethOption": "เครือข่าย ETH",
     "switchOption": "เปลี่ยนเครือข่าย",
     "bnbOption": "เครือข่าย BNB",
-    "buyStake": "ซื้อและวางเดิมพันเพื่อรับรางวัล 128%",
+    "buyStake": "ซื้อและฝากรับรางวัล 578%",
     "nextPriceAlert": "จนกว่าราคาจะเพิ่มขึ้น",
-    "para1": "รางวัลการวางเดิมพัน 1102%"
+    "para1": "รางวัลการฝาก 1102%"
   },
   "header": {
-    "headline": "เครื่อง EVM Layer 2 ที่เกิดใหม่: Little PEPE",
-    "description": "เข้าสู่ยุคใหม่ของโลกด้วย LILPEPE ที่ซึ่งพลังที่ไม่หยุดยั้งของมีมพบกับบ้านของพวกเขาในโปรโตคอล layer 2 EVM ที่มีต้นทุนต่ำและรวดเร็ว ที่ขับเคลื่อนโดย Little Pepe Chain"
+    "headline": "พรีเซลที่ดีที่สุดปี 2025: Super PEPE",
+    "description": "เหรียญมีมแรกที่มีภารกิจ",
+    "description1": "ช่วยเหลือผู้คนโดยการบริจาค 10% จาก",
+    "description2": "ทุกการซื้อให้แก่",
+    "description3": "องค์กรการกุศล"
   }
 }

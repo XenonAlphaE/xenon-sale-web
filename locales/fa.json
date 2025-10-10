@@ -1,36 +1,36 @@
 {
   "metadata": {
-    "title": "پیش‌فروش توکن LILPEPE | پیش‌فروش Little Pepe",
-    "description": "وارد نظم نوین جهانی با LILPEPE شوید، جایی که نیروی توقف‌ناپذیر میم‌ها با خانه‌ای در یک پروتکل لایه ۲ EVM با هزینه پایین و سرعت بسیار بالا به نام Little Pepe Chain روبرو می‌شود."
+    "title": "توکن SUPEPE | پیش‌فروش Super Pepe",
+    "description": "اولین میم‌کوین با مأموریتی برای کمک به مردم از طریق اهدای خیریه"
   },
   "nav": {
     "home": "خانه",
     "staking": "استیکینگ",
-    "howtobuy": "چگونه خرید کنیم",
+    "howtobuy": "نحوه خرید",
     "whitePaper": "وایت‌پیپر",
     "tokenomics": "توکنومیکس",
     "features": "ویژگی‌ها",
-    "buyNow": "خرید $LILPEPE",
+    "buyNow": "خرید $SUPEPE",
     "faq": "سؤالات متداول",
     "audit": "ممیزی",
     "roadmap": "نقشه راه",
     "airdrop": "ایردراپ",
-    "about": "درباره"
+    "about": "درباره ما"
   },
   "buyForm": {
     "intro": "خرید",
-    "intro1": "پیش‌فروش اکنون",
+    "intro1": "پیش‌فروش",
     "day": "روز",
     "hrs": "ساعت",
     "mins": "دقیقه",
     "sec": "ثانیه",
-    "funRaised": "مقدار USDT جمع‌آوری‌شده",
+    "funRaised": "میزان جمع‌آوری شده (USDT)",
     "wallet": "کیف پول شما",
     "boughtAmount": "مقدار خریداری‌شده شما",
     "stakeableAmount": "مقدار قابل استیک شما",
     "pay": "پرداخت با",
     "get": "دریافت",
-    "buyNow": "خرید $LILPEPE",
+    "buyNow": "خرید $SUPEPE",
     "buyMax": "خرید حداکثری",
     "warning": "لطفاً برای خرید Metamask را نصب کنید",
     "link": "اینجا کلیک کنید",
@@ -38,12 +38,15 @@
     "ethOption": "شبکه ETH",
     "switchOption": "تغییر شبکه",
     "bnbOption": "شبکه BNB",
-    "buyStake": "خرید و استیک برای دریافت ۱۲۸٪ پاداش",
+    "buyStake": "خرید و استیک با 578٪ پاداش",
     "nextPriceAlert": "تا افزایش قیمت بعدی",
-    "para1": "۱۱۰۲٪ پاداش استیکینگ"
+    "para1": "1102٪ پاداش استیکینگ"
   },
   "header": {
-    "headline": "ماشین تازه‌متولدشده لایه ۲ EVM: Little PEPE",
-    "description": "وارد نظم نوین جهانی با LILPEPE شوید، جایی که نیروی توقف‌ناپذیر میم‌ها با خانه‌ای در یک پروتکل لایه ۲ EVM با هزینه پایین و سرعت بسیار بالا به نام Little Pepe Chain روبرو می‌شود."
+    "headline": "بهترین پیش‌فروش 2025: Super PEPE",
+    "description": "اولین میم‌کوین با مأموریتی برای",
+    "description1": "کمک به مردم از طریق اهدای 10٪ از",
+    "description2": "هر خرید به",
+    "description3": "خیریه"
   }
 }
