@@ -82,15 +82,15 @@ export const Navbar = ({ isStakingPage = false }) => {
      
         <a className={styles.appnavBrand} href='/'>
           <img className={styles.brandLogo}  src="/img/supepe/logo-7PppWrxZ.webp"/>
-          SUPER PEPE
+          <span className={styles.textLogo} >SUPER PEPE</span>
         </a>
 
         <div className={styles.appnavMenu}>
           <a onClick={toggleMenu}  href={isStakingPage ? `/${currentLanguage}/#about` : "#about"}>{sectionText?.about}</a>
-          <a onClick={toggleMenu} style={{background:'rgb(196, 153, 225)'}} href={isStakingPage ? `/${currentLanguage}/#roadmap` : "#roadmap"}>{ sectionText?.roadmap}</a>
-          <a onClick={toggleMenu} style={{background:'rgb(246, 158, 150)'}} href={isStakingPage ? `/${currentLanguage}/#tokenomics` : "#tokenomics"}>{sectionText?.tokenomics}</a>
-          <a onClick={toggleMenu} style={{background:'rgb(171, 231, 192)'}} href={isStakingPage ? `/${currentLanguage}/#roadmap` : "#roadmap"}>{ sectionText?.staking}</a>
-          <a onClick={toggleMenu} style={{background:'rgb(255, 113, 52)'}} href={isStakingPage ? `/${currentLanguage}/#faqs` : "#faqs"} > {sectionText?.faq}</a>
+          <a onClick={toggleMenu}  href={isStakingPage ? `/${currentLanguage}/#roadmap` : "#roadmap"}>{ sectionText?.roadmap}</a>
+          <a onClick={toggleMenu}  href={isStakingPage ? `/${currentLanguage}/#tokenomics` : "#tokenomics"}>{sectionText?.tokenomics}</a>
+          <a onClick={toggleMenu}  href={isStakingPage ? `/${currentLanguage}/#roadmap` : "#roadmap"}>{ sectionText?.staking}</a>
+          <a onClick={toggleMenu}  href={isStakingPage ? `/${currentLanguage}/#faqs` : "#faqs"} > {sectionText?.faq}</a>
           {/* <a href={isStakingPage ? `/${currentLanguage}/#howtobuy` : "#howtobuy"}><img className={styles.menuIcon} src='/img/btcswift/security.svg'/>  {sectionText?.howtobuy}</a> */}
         </div>
 
