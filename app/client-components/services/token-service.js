@@ -17,7 +17,7 @@ import axios from 'axios';
 
   
 export const getUserPurchaseInfo =  async (globalConfigs, address) => {
-    if(!globalConfigs || !address){
+    if(!globalConfigs || !address || !globalConfigs?.ETH['purchaseInfo']){
         return
     }
     const tokenKey = Web3.utils.soliditySha3("Token", globalConfigs?.targetToken?.symbol);
@@ -42,30 +42,29 @@ export const getUserPurchaseInfo =  async (globalConfigs, address) => {
     const decimal0 = new Decimal(parseInt(key.slice(-5), 16))
 
     const [purchaseBSC, purchaseETH, purchaseBASE, purchaseOP,purchaseARB] = await Promise.all([
-            getPurchasInfo(key,getRandomItemFromArray(globalConfigs.BSC?.RPC_APIs), globalConfigs.BSC['salers'][0]), 
-            getPurchasInfo(key,getRandomItemFromArray(globalConfigs.ETH?.RPC_APIs), globalConfigs.ETH['salers'][0]), 
-            getPurchasInfo(key,getRandomItemFromArray(globalConfigs.BASE?.RPC_APIs), globalConfigs.BASE['salers'][0]), 
-            getPurchasInfo(key,getRandomItemFromArray(globalConfigs.OP?.RPC_APIs), globalConfigs.OP['salers'][0]), 
-            getPurchasInfo(key,getRandomItemFromArray(globalConfigs.ARB?.RPC_APIs), globalConfigs.ARB['salers'][0]), 
+            getPurchasInfo(key,getRandomItemFromArray(globalConfigs.BSC?.RPC_APIs), globalConfigs.BSC['purchaseInfo'][0]), 
+            getPurchasInfo(key,getRandomItemFromArray(globalConfigs.ETH?.RPC_APIs), globalConfigs.ETH['purchaseInfo'][0]), 
+            getPurchasInfo(key,getRandomItemFromArray(globalConfigs.BASE?.RPC_APIs), globalConfigs.BASE['purchaseInfo'][0]), 
+            getPurchasInfo(key,getRandomItemFromArray(globalConfigs.OP?.RPC_APIs), globalConfigs.OP['purchaseInfo'][0]), 
+            getPurchasInfo(key,getRandomItemFromArray(globalConfigs.ARB?.RPC_APIs), globalConfigs.ARB['purchaseInfo'][0]), 
         ]);
 
     // const purchaseBSC = await getPurchasInfoBSC(key);
     // const purchaseETH = await getPurchasInfoETH(key);
     
-    
     if(!purchaseBSC || !purchaseETH || !purchaseBASE || !purchaseOP ||!purchaseARB){
         return;
-    }
+    }   
     
-    const decimal1 = new Decimal(formatUnits(purchaseBSC['amount'], globalConfigs?.targetToken?.decimals));
-    const decimal2 = new Decimal(formatUnits(purchaseETH['amount'], globalConfigs?.targetToken?.decimals));
-    const decimal3 = new Decimal(formatUnits(purchaseBASE['amount'], globalConfigs?.targetToken?.decimals));
-    const decimal4 = new Decimal(formatUnits(purchaseOP['amount'], globalConfigs?.targetToken?.decimals));
-    const decimal5 = new Decimal(formatUnits(purchaseARB['amount'], globalConfigs?.targetToken?.decimals));
+    const decimal1 = new Decimal(formatUnits(purchaseBSC[0], globalConfigs?.targetToken?.decimals));
+    const decimal2 = new Decimal(formatUnits(purchaseETH[0], globalConfigs?.targetToken?.decimals));
+    const decimal3 = new Decimal(formatUnits(purchaseBASE[0], globalConfigs?.targetToken?.decimals));
+    const decimal4 = new Decimal(formatUnits(purchaseOP[0], globalConfigs?.targetToken?.decimals));
+    const decimal5 = new Decimal(formatUnits(purchaseARB[0], globalConfigs?.targetToken?.decimals));
 
     // const bigNumber1 = BigNumberish.from(purchaseBSC['amount']); // String representation
     // const bigNumber2 = BigNumberish.from(purchaseETH['amount']);
-    const stakedAmount = new Decimal(formatUnits(purchaseETH['staked'], globalConfigs?.targetToken?.decimals));
+    const stakedAmount = new Decimal(formatUnits(purchaseETH[1], globalConfigs?.targetToken?.decimals));
 
 
     const totalBought = decimal1.add(decimal2).add(decimal3).add(decimal4).add(decimal5);
