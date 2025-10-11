@@ -12,11 +12,11 @@ export const Footer = () => {
     <section id="footer" className={styles.container}>
       <div className={styles.mainContent}>
         <a className={styles.appnavBrand} href='/'>
-          <img className={styles.brandLogo}  src="/img/btcswift/bitcoin-swift-logo-main.webp"/>
-          <img className={styles.textLogo}  src="/img/btcswift/bitcoin-swift-text-logo.webp"/>
+          <img className={styles.brandLogo}  src="/img/pepenode/logo.svg"/>
+          {/* <img className={styles.textLogo}  src="/img/btcswift/bitcoin-swift-text-logo.webp"/> */}
         </a>
-        <p className={styles.copyright}> {sectionText?.text1} </p>
-        <p className={styles.copyright}>©  {sectionText?.text2} </p>
+        <p className={styles.copyright}> {sectionText?.text1}Disclaimer  </p>
+        <p className={styles.copyright}>{sectionText?.text2}Always do your own research about the best crypto to buy, best ICO, or fake 'Pepe Node' imitators. Nothing here is financial advice. This is a meme coin.</p>
         <p className={styles.copyright}> {sectionText?.text3} </p>
       </div>
     </section>

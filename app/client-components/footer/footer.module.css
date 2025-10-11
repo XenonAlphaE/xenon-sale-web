@@ -6,8 +6,8 @@
     align-items: center;
     padding: 2rem;
     gap: 2rem;
-    border: 2px solid rgba(124, 58, 237, 0.3);
-    background-color: rgba(26, 11, 46, 0.5);
+    border: none;
+    background-color: transparent;
     @media (max-width: 1024px) {
       width: 100%;
       padding-inline: 8px;
@@ -44,7 +44,7 @@
 }
 
 .brandLogo{
-  width: 80px;
+  width:220px;
 }
 
 .textLogo{
@@ -55,8 +55,8 @@
 
 .copyright{
     box-sizing: border-box;
-    transform: scaleY(1.5);    /* Increase height by 1.5 times */
-    color: rgb(110, 142, 93);
+    transform: scaleY(1.2);    /* Increase height by 1.5 times */
+    color: white;
     display: block;
     font-family: HeyComic, sans-serif;
     font-size: 14px;

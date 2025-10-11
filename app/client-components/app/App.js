@@ -44,8 +44,8 @@ const App = () => {
           <Tokenomics />
           {/* <TrustedBy/> */}
           <FAQS/>
-          {/* <Footer />  */}
-          <AppSpinner/>
+          <Footer /> 
+          {/* <AppSpinner/> */}
 
     </div>
   );
