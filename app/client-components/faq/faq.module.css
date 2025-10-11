@@ -31,32 +31,17 @@
 
   }
 
-    @keyframes gradientMove {
-    0% {
-      background-position: 0% 50%;
-    }
-    100% {
-      background-position: 100% 50%;
-    }
-  }
-
 
   .title {
     font-size: 6rem;
     font-weight: bold;
     text-align: start;
-    background-color: rgba(0, 0, 0, 0);
-    background-image: linear-gradient(45deg, rgb(247, 147, 26), rgb(255, 20, 147), rgb(153, 69, 255), rgb(247, 147, 26));
       background-size: 300% 300%; /* makes animation visible */
     background-position: 0% 50%;
     background-clip: text;
-
+    color: white;
     background-origin : padding-box;
       background-clip: text;
-    -webkit-background-clip: text; /* for Safari */
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px transparent; /* Adjust thickness and color as needed */
-      animation: gradientMove 5s linear infinite;
 
     @media (max-width: 1024px) {
         font-size: 3rem;
@@ -79,10 +64,9 @@
   .cardList{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
     row-gap: 2rem;
-    justify-content: center;
-    align-items: center;
+
     @media (max-width: 1024px) {
         width: 100%;
     }
@@ -90,18 +74,17 @@
   }
 
 
-
-
   .card{
-    background-color: rgba(0, 0, 0, 0.52);
-    border: 2px solid rgba(233, 30, 99, 0.2);
-    border-radius: 8px;
-    padding: 2rem;
-    display: flex;
-    width: 90%;
-    box-shadow:rgba(247, 147, 26, 0.25) 0px 0px 20px 0px;
-    box-sizing:border-box;
-    flex-direction: column;
+    position: relative;
+    padding: 1rem;
+    filter: drop-shadow(0px 0px 80px rgba(223, 253, 111, .05));
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    scroll-snap-align: start;
+    transform-origin: center;
+    transform: scale(1);
+    transition: transform .5s;
+    
     @media (max-width: 1024px) {
       width: 100%;
     }
@@ -109,67 +92,108 @@
 
 
 
-  .cardCircle{
-    width: 60px;
-    height: 60px;
-    background-color: rgb(247, 147, 26);
-    border-radius: 50%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .card::before{    
+    content: "";
+    position: absolute;
+    inset: -1px;
+    background: #393939;
+    clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 15px 100%, 0 calc(100% - 15px), 0 0, 1px 1px, 1px calc(100% - 16px), 15px calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), calc(100% - 1px) 15px, calc(100% - 15px) 1px, 1px 1px);
   }
 
 
   .cardTop{
-    display: flex;
-    column-gap: 1rem;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
+    padding: 1rem;
+  }
+  .cardBottom{
+    padding: 1rem 3rem 2rem 3rem;
   }
 
-  .cardTitle:hover{
-    color: rgb(233 30 99);
-
+  .cardImgWrapper{
+      margin-inline: auto;
+      height: 64px;
+      width: 64px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      overflow: hidden;
+  }
+  .cardImg{
+      width: 64px;
+      height: 64px;
   }
 
   .cardTitle{
-    color: white;
-    margin-block: 0.5rem;
-    font-weight: 600;
-    font-size: 2.4rem;
-    @media (max-width: 1024px) {
-      font-size: 1.8rem;
-    }
-
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: x-large;
   }
 
   .cardContent{
-    color: rgb(110, 142, 93);
-    font-size: larger;
-    padding-inline: 3rem;
-    display: none;
-    @media (max-width: 1024px) {
-      font-size: 1.5rem;
-      padding-inline: 1.5rem;
+    text-align: center;
+    color: rgb(148, 163, 184);
+  }
 
+  .buyNowContainer {
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: nowrap;
+  }
+  
+
+    /* Mobile/tablet animation */
+  @keyframes resizeBoxMobile {
+    0% {
+      width: 75%;
+      transform: scaleY(1);
     }
+    50% {
+      width: 100%;
+    }
+    100% {
+      width: 75%;
+      transform: scaleY(1);
+    }
+  }
 
-  } 
-
-  .cardContent.active{
-    margin-top: 2rem;
-    display: block;
-    transition: height 5s ease, padding 5s ease; /* Smooth animation */
+  @keyframes resizeBox {
+    0% {
+      width: 35%;
+      transform: scaleY(1);
+    }
+    50% {
+      width: 50%;
+      transform: scaleY(1.15);
+    }
+    100% {
+      width: 35%;
+      transform: scaleY(0.85); /* scaled down below original */
+    }
   }
 
 
-  .buyBtn{
-    color: white;
-    padding: 1rem 3rem;
-    background: linear-gradient(to right, #FF5F8F , #E91E63);
-    border-radius: 8px;
-    font-weight: 800;
-    border: none;
+
+
+  .buynow{
+    width: 60%;
+    background: rgb(152, 255, 25);
+    transition: all .4s ease-out;
+    clip-path: polygon(100% 15px, 100% 100%, 15px 100%, 0% calc(100% - 15px), 0% 0%, calc(100% - 15px) 0%);
+    display: flex;
+    font-weight: 900;
+    flex-direction: column;
+    justify-content: space-evenly;  
+    padding: 1rem; 
+    text-transform: uppercase;
+    animation: resizeBox 4s infinite;
+
+    @media (max-width: 1024px) {
+      animation: resizeBoxMobile 2s infinite;
+    }
   }
+

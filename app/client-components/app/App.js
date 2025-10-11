@@ -43,7 +43,7 @@ const App = () => {
           <Roadmap />
           <Tokenomics />
           {/* <TrustedBy/> */}
-          {/* <FAQS/> */}
+          <FAQS/>
           {/* <Footer />  */}
           <AppSpinner/>
 
