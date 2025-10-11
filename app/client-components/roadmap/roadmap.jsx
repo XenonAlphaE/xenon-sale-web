@@ -65,12 +65,6 @@ export const Roadmap = () => {
             {cardItems?.map((item,idx)=> renderCardItem(item,idx))}
           </div>
                   
-          <div className={styles.buyNowContainer}>
-            <button className={styles.buynow} onClick={scrollToBuySection}>
-                {sectionText?.buyNow} Buy $PEPENODE Presale
-            </button>
-          </div>
-
         </div>
         <img src="/img/pepenode/roadmap_gif.gif" className={styles.decor} />
 

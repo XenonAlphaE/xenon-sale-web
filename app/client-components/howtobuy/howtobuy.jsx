@@ -9,55 +9,6 @@ import HowToBuyPromoBanner from './PromoBanner';
 import { generateRandomId } from '../services/utils';
 
 
-const howToBuyContents = [
-  {
-    "number": "1",
-    "title": "step 1",
-    "contents": [
-      "Get some crypto from your preferred exchange. If you don’t yet have a wallet, consider using MetaMask.",
-    ]
-  },
-
-  {
-    "number": "2",
-    "title": "step 2",
-    "contents": [
-      "With crypto in your wallet, you’re ready to participate in the $HYPER crypto presale. Click any Buy or Connect Wallet buttons on the website to start."
-    ]
-  },
-  
-  {
-    
-    "number": "3",
-    "title": "step 3",
-    "contents": [
-      "Choose the amount of $HYPER you want to buy and confirm the transaction in your wallet. To stake at the same time, select the Buy and Stake option."
-    ]
-  },
-  {
-   
-    "number": "4",
-    "title": "step 4 (Card)",
-    "contents": [
-      "If paying by card, connect your mobile crypto wallet or browser extension wallet and choose Buy With Card. You’ll need this wallet to receive your tokens."
-    ]
-  }
-]
-
-
-function HowToBuyCard({ cardClass, title, contents }) {
-  return (
-      <div className={cardClass}>
-        <div className={styles.cardNumber}></div>
-        <div className={styles.cardTitle}>{title}</div>
-        
-        {contents?.map((content, i) => (
-          <div>{content} </div>
-        ))}
-      </div>
-
-  );
-}
 
 
 export const HowToBuy = () => {
@@ -69,19 +20,19 @@ export const HowToBuy = () => {
       {id: generateRandomId(), img:'/img/pepenode/about3.png', title: sectionText?.cards?.[2]?.title, content:sectionText?.cards?.[2]?.content },
       {id: generateRandomId(), img:'/img/pepenode/about4.png', title: sectionText?.cards?.[3]?.title, content:sectionText?.cards?.[3]?.content },
     ]
-  const renderCardItem = (item) =>{
-    
-    return <div key={item?.id} className={styles.card}>
-                <div className={styles.cardTop}>
-                    <h3 className={styles.cardTitle} > {item?.title} </h3>
-                </div>
-                <div className={styles.cardBottom}>
-                  <p className={styles.cardContent}>{item?.content}</p>
-                </div>
+    const renderCardItem = (item) =>{
+      
+      return <div key={item?.id} className={styles.card}>
+                  <div className={styles.cardTop}>
+                      <h3 className={styles.cardTitle} > {item?.title} </h3>
+                  </div>
+                  <div className={styles.cardBottom}>
+                    <p className={styles.cardContent}>{item?.content}</p>
+                  </div>
 
-            </div>
+              </div>
 
-  }
+    }
 
     const scrollToBuySection = () => {
         // Find the target section to scroll to

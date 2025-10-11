@@ -39,9 +39,9 @@ const App = () => {
           <Header/>
           <About /> 
           <HowToBuy />
-          {/* <Tokenomics /> */}
           {/* <TrustedBy/> */}
           <Roadmap />
+          <Tokenomics />
           {/* <TrustedBy/> */}
           {/* <FAQS/> */}
           {/* <Footer />  */}
