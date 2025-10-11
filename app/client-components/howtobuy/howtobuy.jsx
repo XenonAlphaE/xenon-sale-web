@@ -67,7 +67,7 @@ export const HowToBuy = () => {
       {id: generateRandomId(), img:'/img/pepenode/about1.png', title: sectionText?.cards?.[0]?.title, content:sectionText?.cards?.[0]?.content },
       {id: generateRandomId(), img:'/img/pepenode/about2.png', title: sectionText?.cards?.[1]?.title, content:sectionText?.cards?.[1]?.content },
       {id: generateRandomId(), img:'/img/pepenode/about3.png', title: sectionText?.cards?.[2]?.title, content:sectionText?.cards?.[2]?.content },
-      {id: generateRandomId(), img:'/img/pepenode/about3.png', title: sectionText?.cards?.[2]?.title, content:sectionText?.cards?.[2]?.content },
+      {id: generateRandomId(), img:'/img/pepenode/about4.png', title: sectionText?.cards?.[3]?.title, content:sectionText?.cards?.[3]?.content },
     ]
   const renderCardItem = (item) =>{
     
@@ -115,7 +115,7 @@ export const HowToBuy = () => {
         </div>
 
         <div className={styles.videoWrap}>
-          <video width="100%" autoPlay={true} muted={true} playsinline={true} loop={true} >
+          <video autoPlay={true} muted={true} playsInline={true} loop={true} >
             <source  src="/img/pepenode/how-to-buy.mp4" type="video/mp4"/>
                 Your browser does not support the video tag 
           </video>
