@@ -6,63 +6,33 @@ import { useI18nSection } from '../../../redux/utils/languageUtils';
 
 import styles from './howtobuy.module.css';
 import HowToBuyPromoBanner from './PromoBanner';
+import { generateRandomId } from '../services/utils';
 
 
-const howToBuyContents = [
-  {
-    "number": "1",
-    "title": "step 1",
-    "contents": [
-      "Get some crypto from your preferred exchange. If you don’t yet have a wallet, consider using MetaMask.",
-    ]
-  },
-
-  {
-    "number": "2",
-    "title": "step 2",
-    "contents": [
-      "With crypto in your wallet, you’re ready to participate in the $HYPER crypto presale. Click any Buy or Connect Wallet buttons on the website to start."
-    ]
-  },
-  
-  {
-    
-    "number": "3",
-    "title": "step 3",
-    "contents": [
-      "Choose the amount of $HYPER you want to buy and confirm the transaction in your wallet. To stake at the same time, select the Buy and Stake option."
-    ]
-  },
-  {
-   
-    "number": "4",
-    "title": "step 4 (Card)",
-    "contents": [
-      "If paying by card, connect your mobile crypto wallet or browser extension wallet and choose Buy With Card. You’ll need this wallet to receive your tokens."
-    ]
-  }
-]
-
-
-function HowToBuyCard({ cardClass, title, contents }) {
-  return (
-      <div className={cardClass}>
-        <div className={styles.cardNumber}></div>
-        <div className={styles.cardTitle}>{title}</div>
-        
-        {contents?.map((content, i) => (
-          <div>{content} </div>
-        ))}
-      </div>
-
-  );
-}
 
 
 export const HowToBuy = () => {
     const sectionText = useI18nSection('howtobuy')
 
-    const howToBuyContents = sectionText?.contents
+    const cardItems = [
+      {id: generateRandomId(), img:'/img/pepenode/about1.png', title: sectionText?.cards?.[0]?.title, content:sectionText?.cards?.[0]?.content },
+      {id: generateRandomId(), img:'/img/pepenode/about2.png', title: sectionText?.cards?.[1]?.title, content:sectionText?.cards?.[1]?.content },
+      {id: generateRandomId(), img:'/img/pepenode/about3.png', title: sectionText?.cards?.[2]?.title, content:sectionText?.cards?.[2]?.content },
+      {id: generateRandomId(), img:'/img/pepenode/about4.png', title: sectionText?.cards?.[3]?.title, content:sectionText?.cards?.[3]?.content },
+    ]
+    const renderCardItem = (item) =>{
+      
+      return <div key={item?.id} className={styles.card}>
+                  <div className={styles.cardTop}>
+                      <h3 className={styles.cardTitle} > {item?.title} </h3>
+                  </div>
+                  <div className={styles.cardBottom}>
+                    <p className={styles.cardContent}>{item?.content}</p>
+                  </div>
+
+              </div>
+
+    }
 
     const scrollToBuySection = () => {
         // Find the target section to scroll to
@@ -80,45 +50,30 @@ export const HowToBuy = () => {
 
   return (
     <section  className={styles.container} id='howtobuy'>
-      <div className={styles.mainContent}>
-        <HowToBuyPromoBanner/>
-
-        <h1 className={styles.title}>
-            {sectionText?.title}
-        </h1>
-        
-        <div className={styles.flexRow}>
-          <div className={styles.flex3}>
-              <HowToBuyCard cardClass={styles.card} number={howToBuyContents?.[0].number} title={howToBuyContents?.[0].title}  contents={howToBuyContents?.[0].contents}/>
-          </div>
-          <div className={styles.flex3}>
-              <HowToBuyCard cardClass={`${styles.card} ${styles.operationCard}`} number={howToBuyContents?.[1].number} title={howToBuyContents?.[1].title}  contents={howToBuyContents?.[1].contents}/>
-
-          </div>
-          <div className={styles.flex3}>
-              <HowToBuyCard cardClass={`${styles.card} ${styles.settlementCard}`} number={howToBuyContents?.[2].number} title={howToBuyContents?.[2].title}  contents={howToBuyContents?.[2].contents}/>
-
-          </div>
-          <div className={styles.flex3}>
-              <HowToBuyCard cardClass={`${styles.card} ${styles.settlementCard}`} number={howToBuyContents?.[2].number} title={howToBuyContents?.[2].title}  contents={howToBuyContents?.[2].contents}/>
-
+      <div className={styles.mainContent}>  
+        <h1 className={styles.title}> {sectionText?.title} </h1>
+        <p className={styles.desc}> {sectionText?.desc} </p>
+           
+        <div className={styles.cardList }>
+              {cardItems.map(x=> renderCardItem(x))}
           </div>
 
-        
-        
-        </div>
         
         <div className={styles.buyNowContainer}>
-            <button className={styles.buyNow} onClick={scrollToBuySection}>
-                {sectionText?.buyNow}
-            </button>
-        
-        
+          <button className={styles.buynow} onClick={scrollToBuySection}>
+              {sectionText?.buyNow}
+          </button>
         </div>
-      
 
-    
+        <div className={styles.videoWrap}>
+          <video autoPlay={true} muted={true} playsInline={true} loop={true} >
+            <source  src="/img/pepenode/how-to-buy.mp4" type="video/mp4"/>
+                Your browser does not support the video tag 
+          </video>
+        </div>
       </div>
     </section>
+
+
   );
 };

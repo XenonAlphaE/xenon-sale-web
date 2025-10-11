@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLanguage, useI18nSection } from "../../../redux/utils/languageUtils";
 import styles from './roadmap.module.css'
 import { generateRandomId } from "../services/utils";
@@ -7,6 +7,16 @@ import { generateRandomId } from "../services/utils";
 export const Roadmap = () => {
 
   const sectionText = useI18nSection('roadmap')
+    const [selectedIdx , setSelectedIdx] = useState();
+    
+    const handleSelectSection = (idx) => {
+      if(selectedIdx === idx){
+        setSelectedIdx("")
+      }else{
+        setSelectedIdx(idx)
+      }
+    }
+
   const scrollToBuySection = () => {
     // Find the target section to scroll to
     let section = null;
@@ -23,56 +33,40 @@ export const Roadmap = () => {
 
 
   const cardItems = [
-      {id: generateRandomId(), circleColor:'rgb(247, 147, 26)', img:'/img/btcswift/roadmap1.svg', title: sectionText?.cards?.[0]?.title, subTitle:sectionText?.cards?.[0]?.subTitle, contents:sectionText?.cards?.[0]?.contents},
-      {id: generateRandomId(), circleColor:'rgb(255, 107, 107)', img:'/img/btcswift/roadmap2.svg', title: sectionText?.cards?.[1]?.title, subTitle:sectionText?.cards?.[1]?.subTitle, contents:sectionText?.cards?.[1]?.contents},
-      {id: generateRandomId(), circleColor:'rgb(255, 138, 128)', img:'/img/btcswift/roadmap3.svg', title: sectionText?.cards?.[2]?.title, subTitle:sectionText?.cards?.[2]?.subTitle, contents:sectionText?.cards?.[2]?.contents},
-      {id: generateRandomId(), circleColor:'rgb(255, 95, 143)', img:'/img/btcswift/roadmap4.svg', title: sectionText?.cards?.[3]?.title, subTitle:sectionText?.cards?.[3]?.subTitle, contents:sectionText?.cards?.[3]?.contents},
-      {id: generateRandomId(), circleColor:'rgb(233, 30, 99)', img:'/img/btcswift/roadmap5.svg', title: sectionText?.cards?.[4]?.title, subTitle:sectionText?.cards?.[4]?.subTitle, contents:sectionText?.cards?.[4]?.contents},
+      {id: generateRandomId(),  title: "1. Presale Process", content:"The PEPENODE presale is your early access pass to the future of virtual meme coin mining. Secure $PEPENODE tokens before public launch at progressive pricing phases. Early supporters can also stake their tokens to supercharge their mining rewards from day one. Don't miss your chance to stack $PEPENODE before the rigs go live."},
+      {id: generateRandomId(),  title: "2. TGE Phase", content:"The Token Generation Event (TGE) kicks off the official launch of PEPENODE. Once live, holders can deploy their $PEPENODE tokens to begin building out virtual server rooms, setting up mining nodes, and activating their meme coin earning potential. This marks the moment PEPENODE shifts from hype to hash power—virtually, of course."},
+      {id: generateRandomId(),  title: "3. Mine-to-earn game", content:"Once your virtual rigs are running, it’s time to mine! PEPENODE's Mine-To-Earn system lets users strategically build and upgrade custom mining facilities using $PEPENODE tokens. The more optimized your setup, the more meme coins you generate, ranging from exclusive $PEPENODE boosts to top-tier tokens like Pepe and Fartcoin. Gamify your grind and climb the leaderboard."},
   ]
-
-  const renderRow = (item, idx) => {
-          return(
-
-        <div key={item?.id} className={ idx %2 === 0 ? styles.leftPart : styles.rightPart}>
-
-
-            <div className={styles.card}>
-                <div className={styles.cardTop}>
-                    <div className={styles.cardCircle} style={{backgroundColor:item?.circleColor}}>
-                      <img src={item?.img} className={styles.cardImg} alt="image" />
-                      </div>
-                    <div > 
-                      <div className={styles.cardSubtitle} style={{color:item?.circleColor}}> {item?.subTitle} </div>
-                      <h4 className={styles.cardTitle}>  {item?.title}</h4>
-
-                    </div>
+  const renderCardItem = ( item, idx,) =>{
+    
+    return <div key={item?.id} className={`${styles.card}  ${selectedIdx===idx ? styles.active : ''}`}>
+                <div className={styles.cardTop} onClick={() => handleSelectSection(idx)}>
+                    <h3 className={styles.cardTitle} > {item?.title} </h3>
                 </div>
-                <div >
-                  <ul className={styles.cardContent}>
-                      {item?.contents?.map(x => <li key={generateRandomId()}>{x}</li>)}
-                  </ul>
+                <div className={styles.cardBottom}>
+                  <p className={`${styles.cardContent}  ${selectedIdx===idx ? styles.active : ''}`}>
+                    {item?.content}
+                  </p>
                 </div>
 
             </div>
-          
-      </div>
-          )
+
   }
+
 
   return (
     <section id="roadmap" className={styles.container}>
 
         <div className={styles.mainContent}>
-          <h1 className={styles.title}> {sectionText?.title} </h1>
-          <p className={styles.desc}>{sectionText?.desc} </p>
+          <h1 className={styles.title}> {sectionText?.title} Roadmap</h1>
           
 
-          <div className={styles.cardList}>
-
-            {cardItems.map((item,idx)=> renderRow(item,idx))}
-
+          <div className={styles.cardList }>
+            {cardItems?.map((item,idx)=> renderCardItem(item,idx))}
           </div>
+                  
         </div>
+        <img src="/img/pepenode/roadmap_gif.gif" className={styles.decor} />
 
 
     </section>

@@ -73,5 +73,29 @@
         }
       ]
 
+  },
+  "howtobuy": {
+      "title": "HOW TO Buy PEPENODE",
+      "desc": "Earn Bonuses in Meme Coins — Airdrops For Top Miners in $PEPE and $FARTCOIN",
+      "buyNow": "Buy $PEPENODE Presale NOW!",
+      "cards":[
+        {
+          "title":"Step 1",
+          "content":"Purchase some cryptocurrency through your favorite exchange. If you don’t yet have a wallet or exchange account, consider using options like  Metamask to get started."
+        },
+        {
+          "title":"Step 2",
+          "content":"Once your wallet is funded, head to the website and click on either the “Buy” or “Connect Wallet” button. This will begin the process of purchasing and staking."
+        },
+        {
+          "title":"Step 3",
+          "content":"Decide how much $PEPENODE you want to acquire. You can buy and stake in a single step by choosing the “Buy and Stake” option."
+        },
+        {
+          "title":"step 4 (CARD)",
+          "content":"If you’re using a credit or debit card, first install a mobile crypto wallet or a browser wallet extension. Then connect your wallet to the $PEPENODE site and select the “Card Payment” method to proceed."
+        }
+      ]
+
   }
 }

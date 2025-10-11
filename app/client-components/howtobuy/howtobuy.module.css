@@ -15,94 +15,140 @@
     row-gap: 2em;
     width: 1280px;
     padding-inline: 16px;
+    position: relative;
   }
   
   .title {
-    font-size: 4rem;
+    font-size: 6rem;
     font-weight: bold;
-    text-align: center;
-    color: black;
-    text-transform: uppercase;
+    text-align: start;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(45deg, white, #98ff19);
+      background-size: 300% 300%; /* makes animation visible */
+    background-position: 0% 50%;
+    background-clip: text;
+
+    background-origin : padding-box;
+      background-clip: text;
+    -webkit-background-clip: text; /* for Safari */
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px transparent; /* Adjust thickness and color as needed */
+      animation: gradientMove 5s linear infinite;
+
+    @media (max-width: 1024px) {
+        font-size: 3rem;
+        text-align: center;
+    }
+
   }
 
-  .flexRow {
-    display: flex;
-    width: 100%;
+  .desc{
+    font-size: large;
+    color: white;
+
+    @media (max-width: 1024px) {
+        text-align: center;
+    }
+
+  }
+
+  .cardList{
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    margin-bottom: 1rem;
-    justify-content: center;
-    align-items: stretch;
-    flex-wrap: nowrap;
-  }
-  
-  
-  .flex3 {
-    flex: 1;
-    display: flex;
-
-  }
-  
-  
-  .card {
     position: relative;
-    font-family: sans-serif;
-    padding: 20px 25px;
-    background: url(/img/btchyper/common-box-star.webp) no-repeat;
-    background-size: cover;
-    border: 2px solid #000000;
-    border-radius: 32px;
-    margin: 0 8px;
-    box-shadow: 0 2px #000;
+    padding-right: 5%;
+    @media (max-width: 1024px) {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+
+    }
 
   }
-  
 
-  .cardNumber {
+  .cardList::before{
+    content: "";
+    width: 30px;
+    background: url(/img/pepenode/right-line.png) no-repeat 0 0 / 100% 92%;
     position: absolute;
-    top: -6px;
-    right: -6px;
-    background: white;
-    color: #000;
-    font-weight: bold;
-    border-radius: 50%;
-    border: 2px solid #00001188;
-    width: 32px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-    filter: flur(1px);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    @media (max-width: 1024px) {
+      display: none;
+    }
   }
-  .cardNumber::before {
-    content: '';
+
+  .cardList::after{
+    content: "";
+    width: 72%;
+    height: 20px;
+    background: url(/img/pepenode/bottom-line.png) no-repeat 0 0 / 100% 100%;
+    @media (max-width: 1024px) {
+      display: none;
+    }
+
+  }
+
+  .card{
+    position: relative;
+    padding: 1rem;
+    filter: drop-shadow(0px 0px 80px rgba(223, 253, 111, .05));
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    scroll-snap-align: start;
+    transform-origin: center;
+    transform: scale(1);
+    transition: transform .5s;
+    
+    @media (max-width: 1024px) {
+      width: 100%;
+    }
+  }
+
+  .card::before{    
+    content: "";
     position: absolute;
-    top: -4px;
-    left: -4px;
-    right: -4px;
-    bottom: -4px;
-    border-radius: 50%;
-    border: 2px solid #00001188;
-    filter: blur(2px);
-    z-index: -1;
+    inset: -1px;
+    background: #393939;
+    clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 15px 100%, 0 calc(100% - 15px), 0 0, 1px 1px, 1px calc(100% - 16px), 15px calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), calc(100% - 1px) 15px, calc(100% - 15px) 1px, 1px 1px);
   }
-  
-  
-  .cardTitle {
-    font-weight: 800;
-    font-size: 2rem;
-    margin-bottom: 0.75rem;
-    font-family: 'Arial Black', sans-serif;
-    text-transform: uppercase;
+
+  .cardTop{
+    padding: 1rem;
   }
-  
-  .cardContent {
-    padding-left: 1rem;
+  .cardBottom{
+    padding: 1rem 3rem 2rem 3rem;
   }
-  
-  .cardContent li {
-    margin-bottom: 0.5rem;
-    line-height: 1.5;
+
+  .cardImgWrapper{
+      margin-inline: auto;
+      height: 64px;
+      width: 64px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      overflow: hidden;
+  }
+  .cardImg{
+      width: 64px;
+      height: 64px;
+  }
+
+  .cardTitle{
+    text-align: center;
+    color: #98ff19;
+    text-transform: capitalize;
+    font-size: x-large;
+  }
+
+  .cardContent{
+    text-align: center;
+    color: rgb(148, 163, 184);
   }
 
   .buyNowContainer {
@@ -116,24 +162,65 @@
   }
   
 
-  .buyNow{
-    background: #000;
-    color: #ffa231;
-    transition: all .2s linear;
-    text-transform: uppercase;
-    font-weight: 800;
-    margin: 0 4px;
-    box-shadow: 0 2px #000;
-    border-radius: 8px;
-    border: none;
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 120px;
-    min-height: unset !important;
+    /* Mobile/tablet animation */
+  @keyframes resizeBoxMobile {
+    0% {
+      width: 75%;
+      transform: scaleY(1);
+    }
+    50% {
+      width: 100%;
+    }
+    100% {
+      width: 75%;
+      transform: scaleY(1);
+    }
   }
 
+  @keyframes resizeBox {
+    0% {
+      width: 35%;
+      transform: scaleY(1);
+    }
+    50% {
+      width: 50%;
+      transform: scaleY(1.15);
+    }
+    100% {
+      width: 35%;
+      transform: scaleY(0.85); /* scaled down below original */
+    }
+  }
+
+
+
+
+  .buynow{
+    width: 60%;
+    background: rgb(152, 255, 25);
+    transition: all .4s ease-out;
+    clip-path: polygon(100% 15px, 100% 100%, 15px 100%, 0% calc(100% - 15px), 0% 0%, calc(100% - 15px) 0%);
+    display: flex;
+    font-weight: 900;
+    flex-direction: column;
+    justify-content: space-evenly;  
+    padding: 1rem; 
+    text-transform: uppercase;
+    animation: resizeBox 4s infinite;
+
+    @media (max-width: 1024px) {
+      animation: resizeBoxMobile 2s infinite;
+    }
+  }
+
+  .videoWrap{
+    width: 20%;
+    position: absolute;
+    bottom: 0px;
+    top: 0px;
+    right: 0px;
+
+  }
 
 /* Responsive Styles */
 @media (max-width: 1024px) {
@@ -162,24 +249,6 @@
         text-align: center;
       }
     
-    .flexRow {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        gap: 1rem;
-        margin-bottom: 1rem;
-        overflow: auto;
-        padding: 1em;
-        justify-content: flex-start;
-
-    }
-
-    .flex3 {
-        flex: unset;
-        min-width: 260px;
-        width: 80vw;
-    }
-
     .buyNow{
         align-self: center;
     }

@@ -44,7 +44,7 @@ const PresaleSection = () => {
       </div>
       <div className={styles.rightPart}>
         <div className={styles.videoContainer}>
-          <video className={styles.videoPlayer} autoplay="true" muted="true" playsinline="true" loop="true">
+          <video className={styles.videoPlayer} autoPlay={true} muted={true} playsInline={true} loop={true}>
               <source src="/img/pepenode/banner.mp4" type="video/mp4"/>
               Your browser does not support the video tag.
             </video>
