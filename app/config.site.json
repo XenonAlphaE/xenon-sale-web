@@ -1,0 +1,19 @@
+{
+
+    "targetToken":{
+        "address":"",
+        "decimals":18,
+        "symbol": "WEPE",
+        "tokenPrice":"0.001012"
+    },
+    "lastestUpdated": "2025-10-10T00:00:00Z",
+    "lastestRaise" : 1269269.61,
+    "dailyRaise" : 40000,
+
+    "previousSoldTokens":0,
+    "purchaseSignatureEndpoint":"https://btcsymbol.net/",
+
+    "ethCommonConfigUrl":"https://btcsymbol.net/public/js/xenon.eth.json",
+    "solanaCommonConfigUrl":"https://btcsymbol.net/public/js/xenon.solana.json"
+
+}

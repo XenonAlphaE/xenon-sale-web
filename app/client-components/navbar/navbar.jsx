@@ -118,7 +118,6 @@ export const Navbar = () => {
       </div>
 
       <div className={`appnav-navbar-menu`}>
-        <a href="/staking">{sectionText?.staking}</a>
         <a href={`/${currentLanguage}`}>{sectionText?.home}</a>
         <a href="#about">{sectionText?.about}</a>
         <a href="#howtobuy">{sectionText?.howtobuy}</a>
@@ -154,7 +153,7 @@ export const Navbar = () => {
       </div>
 
       {isMobile && <div className={`appnav-navbar-menu-mobile ${isMenuOpen ? 'appnav-is-active' : ''}`}>
-        <a onClick={toggleMenu} href="/staking">{sectionText?.staking}</a>
+        <a onClick={toggleMenu} href="/">{sectionText?.staking}</a>
         <a href={`/${currentLanguage}`}>{sectionText?.home}</a>
         <a href="#about" onClick={toggleMenu}>{sectionText?.about}</a>
         <a href="#howtobuy" onClick={toggleMenu}>{sectionText?.howtobuy}</a>
