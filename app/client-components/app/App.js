@@ -37,7 +37,7 @@ const App = () => {
     <div className={styles.container}>
           <Navbar />
           <Header/>
-          {/* <About />  */}
+          <About /> 
           {/* <HowToBuy /> */}
           <AppSpinner />
           {/* <Tokenomics /> */}

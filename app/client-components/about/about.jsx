@@ -45,19 +45,16 @@ const About =() => {
   }
   return (
     <section  className={styles.container} id='about'>
-      <div className={styles.mainContent}>  
-        <h1 className={styles.title}> {sectionText?.title} </h1>
-        <p className={styles.desc}> {sectionText?.desc} </p>
-        
-        <div className={styles.listContainer }>
+        <div className={styles.mainContent}>  
+          <h1 className={styles.title}> {sectionText?.title} ABOUT SUPER PEPE</h1>
+          <div className={styles.descWrapper}>
 
-            <div className={styles.cardList }>
-                {cardItems.map(x=> renderCardItem(x))}
-            </div>
+              <p className={styles.desc}> {sectionText?.desc}  THE NEXT EVOLUTION OF MEME COIN.</p>
+              <p className={styles.desc}> {sectionText?.desc}  THE FIRST MEME COIN WITH A MISSION to HELP PEOPLE BY DONATING EVERY PURCHASE BY 10% to CHARITY. </p>
+          </div>
+          
+          <button className={styles.buynow} onClick={scrollToBuySection}> {sectionText?.buyNow} BUY $SUPEPE  </button>
         </div>
-
-        <button className={styles.buynow} onClick={scrollToBuySection}> {sectionText?.buyNow} </button>
-      </div>
     </section>
 
   );

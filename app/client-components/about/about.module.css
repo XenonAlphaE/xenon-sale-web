@@ -51,7 +51,7 @@
     font-weight: bold;
     text-align: start;
     background-color: rgba(0, 0, 0, 0);
-    background-image: linear-gradient(-45deg, white, #fe3642,#e11f28);
+    background-image: linear-gradient(-45deg, white, rgb(0, 108, 40),rgb(229, 198, 2));
       background-size: 300% 300%; /* makes animation visible */
     background-position: 0% 50%;
     background-clip: text;
@@ -70,12 +70,31 @@
 
   }
 
+  .descWrapper{
+    background  : url('/img/supepe/abouttext-LIkSc0LC.png') ;
+    background-size: 100% 100%;
+    padding-inline: 10%;
+    padding-block: 2rem;
+    width: 100%;
+    min-height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+
   .desc{
-    font-size: large;
-    color: white;
-    text-align: center;
+    font-size: 2.5em;
+    color: yellow;                 /* Inner color */
+    -webkit-text-stroke: 2px black;/* Outline thickness and color */
+    font-weight: 1000;              /* Makes stroke look sharper */
+    text-transform: uppercase;
+    text-align: start;
+    line-height: 1.2em;
+    transform: scaleY(1.4);
     @media (max-width: 1024px) {
-        text-align: center;
+        text-align: start;
     }
 
   }
@@ -120,7 +139,7 @@
 
   .buynow{
     width: 320px;
-    background: linear-gradient(90deg,#fe3642,#e11f28);
+    background: linear-gradient(180deg,#64c8eb,#64c8eb,#64c8eb);
     color: white;
     display: flex;
     font-weight: 900;
