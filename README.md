@@ -37,9 +37,4 @@ FLOCK
 0xb419208d081501e827eb315483182d4481f81fd681805121f0077ebe109187c4
 
 
-# Project environment variables for btchyper
-# Context: production
-# Scope: any
-# Date: Sun, 08 Jun 2025 07:59:57 GMT
-
 
