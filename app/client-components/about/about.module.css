@@ -95,6 +95,9 @@
     transform: scaleY(1.4);
     @media (max-width: 1024px) {
         text-align: start;
+        font-size: 1.3em;
+        line-height: 1.2em;
+
     }
 
   }
