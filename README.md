@@ -42,11 +42,4 @@ FLOCK
 # Scope: any
 # Date: Sun, 08 Jun 2025 07:59:57 GMT
 
-BACKLINKS_URL=https://flockez.netlify.app/js/backlinks.json
-LOGO_PATH=/img/pepenode/token.svg
-MAIN_DOMAIN=https://pepenodetoken.com
-MAIN_GTAG=G-DT4375LBL3
-MAIN_SITENAME=pepenode
-MAIN_TWITTER=@pepenode
-OG_PATH=/img/pepenode/OG.jpeg
 
