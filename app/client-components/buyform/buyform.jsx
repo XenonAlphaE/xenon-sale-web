@@ -6,7 +6,6 @@ import { useLanguage, useI18nSection } from "../../../redux/utils/languageUtils"
 
 import {useNativeNetwork, useSetNativeNetwork} from '../../../redux/utils/nativeNetworkUtils'
 import { CURRENCIES,CURR_CODE, NETWORK_OTIONS, VALID_NETWORKS } from '../../../redux/ducks/nativeNetworkDuck';
-import { useWalletERC20 } from "../../erc20wallet-provider";
 import {useCountdown, formatViewNumber, formatIntNumber} from '../services/utils'
 import {
   calculateUSDNeeded, calculateTokenOutput,
@@ -16,13 +15,13 @@ import {CurrencyDropdown} from "../currency-dropdown/CurrencyDropdown";
 import styles from  './buyform.module.css'
 import SolanaLabel from "../solana-ui/SolanaLabel/SolanaLabel";
 import { useGlobalConfig } from "../../globalConfig-provider";
+import { useWalletERC20 } from "@herocoinhunter2/common-service";
 export const BuyForm = () => {
     const sectionText = useI18nSection('buyForm')
-    const nativeNetwork = useNativeNetwork()
     const configs = useGlobalConfig()
 
     const walletEth = useWalletERC20()
-    const currList = CURRENCIES[nativeNetwork]
+    const currList = CURRENCIES[walletEth?.chainSymbol]
     const [selectedCurr, setSelectedCurr] = useState();
     const solanaCurr = CURRENCIES['solana'][0];
   

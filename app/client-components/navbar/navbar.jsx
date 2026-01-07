@@ -6,6 +6,7 @@ import styles from './navbar.module.css';
 import languageOptions from '../../langOptions.json'
 import { useIsMobile, useSetMobile } from '../../../redux/utils/mobileUtils';
 import EthConnectButton from './EthConnectButton';
+import NavbarConnectButton from './NavbarConnectButtion';
 
 
 export const Navbar = ({ isStakingPage = false }) => {
@@ -101,7 +102,7 @@ export const Navbar = ({ isStakingPage = false }) => {
 
           <a  className={styles.appWhitepaper} >White Paper</a>
           {/* <button onClick={scrollToBuySection} className={styles.appnavLogin} >{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button> */}
-          <EthConnectButton toggleMenu={toggleMenu} />
+        <NavbarConnectButton toggleMenu={toggleMenu} />
           <div className={styles.langDropdown} >
             <div className={styles.langDropdownBtn} onClick={toggleLanguageDrpdwn}>
               {/* <span className={languageOptions[currentLanguage].flag}></span> */}
@@ -169,7 +170,7 @@ export const Navbar = ({ isStakingPage = false }) => {
             ))}
           </div>
         </div>
-        <EthConnectButton toggleMenu={toggleMenu} />
+        <NavbarConnectButton toggleMenu={toggleMenu} />
 
         {/* <button onClick={scrollToBuySection} className={styles.appnavLogin} >{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button> */}
 

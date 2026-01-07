@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import  styles from './currencyDropdown.module.css'
-import { useNativeNetwork, useSetNativeNetwork } from '../../../redux/utils/nativeNetworkUtils';
 import { NETWORK_OTIONS } from '../../../redux/ducks/nativeNetworkDuck';
 import { useI18nSection } from '../../../redux/utils/languageUtils';
 
@@ -16,7 +15,6 @@ export const CurrencyDropdown = ({ walletETH}) => {
   const sectionText = useI18nSection('buyForm')
 
 
-  const currentNetwork = useNativeNetwork()
   const currentNetworkName = sectionText?.switchOption
 
 

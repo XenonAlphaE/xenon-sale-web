@@ -5,32 +5,27 @@ import styles from './navbar.module.css';
 import { truncateMiddle } from '../services/wallet-service';
 import { useLanguage, useI18nSection } from "../../../redux/utils/languageUtils";
 
-import {
-  useConnectModal,
-  useAccountModal,
-  useChainModal,
-} from '@rainbow-me/rainbowkit';
-import { useAccount } from 'wagmi'
-import { useWalletERC20 } from '../../erc20wallet-provider';
+
+import { useWalletERC20 } from '@herocoinhunter2/common-service';
+
 export default function EthConnectButton({toggleMenu}) {
     const sectionText = useI18nSection("nav")
-    const currAccount = useAccount()
     const walletEth = useWalletERC20()
-    const { openAccountModal } = useAccountModal();
-    
+
     const scrollToBuySection = async () => {
-        if (!!currAccount.address) {
+        if (!!walletEth?.currentAddress) {
             toggleMenu()
-            openAccountModal();
+            
+            walletEth?.openAcctModal();   // ✅ safe
         }
         else {
             toggleMenu()
-            walletEth?.connect()
+            // toggleSelectChains()
         }
     };
 
   return(
-    <button onClick={scrollToBuySection} className={styles.appnavLogin} >{!!currAccount?.address ? truncateMiddle(currAccount?.address) : sectionText?.buyNow}</button>
+    <button onClick={scrollToBuySection} className={styles.appnavLogin} >{!!walletEth?.currentAddress ? truncateMiddle(walletEth?.currentAddress) : sectionText?.buyNow}</button>
   )
 
 }

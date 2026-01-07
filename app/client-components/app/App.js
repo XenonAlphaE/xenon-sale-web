@@ -17,6 +17,8 @@ import { useSetLanguage } from "../../../redux/utils/languageUtils";
 import About from "../about/about";
 import TrustedBy from "../TrustedBy/TrustedBy";
 import { AppSpinner } from "../spinner/spinner";
+import { useSelectChainsOpen, useToggleChainsDialog } from "../../../redux/utils/dialogUtils";
+import SwitchChains from "../SwitchChains/SwitchChains";
 // export const scroll = new SmoothScroll('a[href*="#"]', {
 //   speed: 1000,
 //   speedAsDuration: true,
@@ -29,6 +31,10 @@ const App = () => {
     const langInput = document.getElementById("current-lang")
     setLanguage(langInput?.value || 'en')
   }, [])
+
+  const isSelectChainsOpen = useSelectChainsOpen() 
+  const toggleSelectChains = useToggleChainsDialog()
+
   // useEffect(() => {
   //   setLandingPageData(JsonData);
   // }, []);
@@ -46,6 +52,7 @@ const App = () => {
           {/* <TrustedBy/> */}
           {/* <FAQS/> */}
           {/* <Footer />  */}
+          <SwitchChains isOpen={isSelectChainsOpen} onClose={toggleSelectChains} />
 
     </div>
   );

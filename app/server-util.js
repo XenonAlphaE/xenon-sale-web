@@ -1,9 +1,20 @@
 import langOptions from './langOptions.json'
-import fetch from 'node-fetch'; // If using Node.js <18, install with: npm install node-fetch
-
+import backlinks from './backlinks.json'
 
 export function getMainDomain(){
     return process.env.MAIN_DOMAIN || "https://flockez.com"
+}
+
+export function getCanonicalDomain(lang){
+    const canoDomain = process.env.CANONICAL_DOMAIN || process.env.MAIN_DOMAIN || '';
+    let localLang = lang == 'en' ? '' : lang
+    localLang = localLang ?? ''
+    return `${canoDomain?.replace(/\/+$/, '')}/${localLang}`;
+}
+
+
+export function getKeywordList(){
+    return process.env.KEYWORD_LIST
 }
 
 export function getGTAG(){
@@ -61,18 +72,18 @@ export function getLangKeys(){
     return Object.keys(langOptions)
 }
 
-async function loadJson(url) {
-    const response = await fetch(url);
-    if (!response.ok) {
-        throw new Error(`Failed to fetch: ${response.statusText}`);
-    }
-    return response.json();
-}
+// async function loadJson(url) {
+//     const response = await fetch(url);
+//     if (!response.ok) {
+//         throw new Error(`Failed to fetch: ${response.statusText}`);
+//     }
+//     return response.json();
+// }
 
 export async function getBacklinkUrls(){
-    const normalizeUrl = (url) => url.replace(/\/+$/, ''); // Remove trailing slashes
+    const normalizeUrl = (url) => url.replace(/\/+$/, '').toLowerCase(); // Remove trailing slashes
     const mainDomain = normalizeUrl(getMainDomain()); // Normalize the main domain
-    const uriList = await loadJson(process.env.BACKLINKS_URL || 'https://btcsymbol.net/public/js/backlinks.json')
 
-    return uriList.filter((item) => normalizeUrl(item.url) !== mainDomain);
+    // Backlinks list will override by build config:
+    return backlinks.filter((item) => normalizeUrl(item.url) !== mainDomain);
 }

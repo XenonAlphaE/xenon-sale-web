@@ -2,7 +2,7 @@
 import React, { useState, useCallback } from "react";
 import { useWallet } from "@solana/wallet-adapter-react";
 import styles from './WalletMultiButton.module.css'
-import { useAppSolanaWallet } from "../../../solanaWallet-provider";
+import { useAppSolanaWallet } from "@herocoinhunter2/common-service";
 
 
 // Wallet select dialog
