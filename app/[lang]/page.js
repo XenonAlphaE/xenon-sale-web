@@ -2,6 +2,7 @@ import App from '../client-components/app/App'
 import { GlobalConfigProvider } from '../globalConfig-provider';
 import { ReduxProvider } from '../redux-provider';
 import { getLangKeys } from '../server-util';
+import { SolanaProvider } from '../SolanaProvider';
 import { WalletProvider } from '../wallet-provider';
 
 export async function generateStaticParams() {
@@ -17,9 +18,12 @@ export default async function Page({ params }) {
     return (    
         <GlobalConfigProvider>
             <WalletProvider>
-                <ReduxProvider><App /></ReduxProvider>
+                <SolanaProvider>
+                    <ReduxProvider><App /></ReduxProvider>
+                </SolanaProvider>
             </WalletProvider>
         </GlobalConfigProvider>
-
     )
 }
+
+

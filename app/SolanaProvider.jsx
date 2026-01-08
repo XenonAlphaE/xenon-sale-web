@@ -4,7 +4,7 @@ import "@solana/wallet-adapter-react-ui/styles.css";
 // import { SolanaMobileWalletAdapter } from "@solana-mobile/wallet-adapter-mobile";
 
 import { SolanaWallet } from "@herocoinhunter2/common-service";
-import { useGlobalConfig } from "../../globalConfig-provider";
+import { useGlobalConfig } from "./globalConfig-provider";
 
 
 export const SolanaProvider = ({ children }) => {

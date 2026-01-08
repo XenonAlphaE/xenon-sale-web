@@ -45,10 +45,10 @@
     "web3": "^1.6.1"
   },
   "scripts": {
-    "nextdev": "next dev",
-    "nextbuild": "next build && npx next-sitemap",
+    "dev": "next dev",
+    "build": "next build && npx next-sitemap",
     "postbuild": "mv ./out/sitemap.xml ./public/sitemap.xml && mv ./out/robots.txt ./public/robots.txt && mv ./out/sitemap-0.xml ./public/sitemap-0.xml",
-    "nextstart": "next start"
+    "start": "next start"
   },
   "browserslist": {
     "production": [

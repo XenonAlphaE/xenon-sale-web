@@ -15,36 +15,34 @@ import {CurrencyDropdown} from "../currency-dropdown/CurrencyDropdown";
 import styles from  './buyform.module.css'
 import SolanaLabel from "../solana-ui/SolanaLabel/SolanaLabel";
 import { useGlobalConfig } from "../../globalConfig-provider";
-import { useWalletERC20 } from "@herocoinhunter2/common-service";
+import { useAppSolanaWallet, useWalletERC20 } from "@herocoinhunter2/common-service";
+import { BuyformConnectButton } from "./BuyformConnectButton";
+import { BuyformCurrList } from "./BuyformCurrList";
+import { PurchaseAmounts } from "./BuyformPurchaseAmounts";
+import { useSiteInfo } from "../../../redux/utils/siteInfoUtils";
 export const BuyForm = () => {
     const sectionText = useI18nSection('buyForm')
-    const configs = useGlobalConfig()
-
+    const siteInfo = useSiteInfo()
     const walletEth = useWalletERC20()
-    const currList = CURRENCIES[walletEth?.chainSymbol]
+    const walletSol = useAppSolanaWallet()
     const [selectedCurr, setSelectedCurr] = useState();
-    const solanaCurr = CURRENCIES['solana'][0];
+    const isWalletConnected  = (walletEth && walletEth?.currentAddress) || (walletSol && walletSol?.connected )
   
     useEffect(()=>{
-        setSelectedCurr(currList[0])
         setTokenInput('')
         setCurrencyInput('')
-    }, [currList])
+    }, [selectedCurr])
   
   
     
-  
-    // const [network, setNetwork] = useState("")
-    // const [networkPrice, setNetworkPrice] = useState(0);
-  
-  
     const { days, hours, minutes, seconds } = useCountdown();
-    // const wallet = useWallet(network, configs);
     const [tokenInput, setTokenInput] = useState('');
   
     const [isClicked, setIsClicked] = useState(false);
     const coolDownTime = 2000; // milliseconds
   
+
+
   
     useEffect(() => {
       if (isClicked) {
@@ -68,6 +66,9 @@ export const BuyForm = () => {
           setTokenInput(value);
           if (selectedCurr.curr === CURR_CODE.BNB || selectedCurr.curr === CURR_CODE.ETH) {
             setCurrencyInput(calculateBNBNeeded(value, selectedCurr.curr === CURR_CODE.BNB ? walletEth?.bnbPrice : walletEth?.ethPrice , walletEth?.tokenPriceInUsdt))
+          }
+          else if (selectedCurr.curr === CURR_CODE.SOL) {
+            setCurrencyInput(calculateBNBNeeded(value, walletSol?.solanaPrice , walletSol?.tokenPriceInUsdt))
           }
           else {
             setCurrencyInput(calculateUSDNeeded(value, walletEth?.tokenPriceInUsdt))
@@ -94,6 +95,9 @@ export const BuyForm = () => {
         if (selectedCurr.curr === CURR_CODE.BNB || selectedCurr.curr === CURR_CODE.ETH) {
           setTokenInput(calculateTokensForBNB(value, selectedCurr.curr === CURR_CODE.BNB ? walletEth?.bnbPrice : walletEth?.ethPrice , walletEth?.tokenPriceInUsdt))
         }
+        else  if (selectedCurr.curr === CURR_CODE.SOL) {
+          setTokenInput(calculateTokensForBNB(value, walletSol?.solanaPrice , walletSol?.tokenPriceInUsdt))
+        }
         else {
           setTokenInput(calculateTokenOutput(value, walletEth?.tokenPriceInUsdt))
         }
@@ -105,11 +109,22 @@ export const BuyForm = () => {
       if (!isClicked) {
         setIsClicked(true);
         // Your button click logic here
-        if (selectedCurr.curr === CURR_CODE.BNB || selectedCurr.curr === CURR_CODE.ETH) {
-            await walletEth?.buyTokensWithRef(currencyInput, tokenInput, "")
+        if(walletEth && walletEth?.currentAddress){
+            if (selectedCurr.curr === CURR_CODE.BNB || selectedCurr.curr === CURR_CODE.ETH) {
+                await walletEth?.buyTokensWithRef(currencyInput, tokenInput, "")
+            }
+            else {
+                await walletEth?.buyTokensUSDTWifRef(currencyInput, tokenInput,"");
+            }
         }
-        else {
-            await walletEth?.buyTokensUSDTWifRef(currencyInput, tokenInput,"");
+
+        if(walletSol&&walletSol?.connected){
+            if (selectedCurr.curr === CURR_CODE.SOL) {
+                await walletSol?.sendBuyWithOracle(currencyInput)
+            }
+            else {
+                await walletSol?.sendBuyWithUsdt(currencyInput);
+            }
         }
       }
   
@@ -129,17 +144,6 @@ export const BuyForm = () => {
       }
     };
   
-  
-    const handleSwitchOption = (idx) => {
-      
-      const curr = currList[idx]
-      setSelectedCurr(curr)
-  
-      setTokenInput('')
-      setCurrencyInput('')
-  
-    };
-  
     return (
         <div className={styles.walletBoxContainer} id='walletBox'>
         <div className={styles.walletBox} id='walletBox'>
@@ -149,7 +153,7 @@ export const BuyForm = () => {
                 </div>
                 <div className={styles.walletBoxHeader} >
                   <div>
-                    <p className={styles.walletBoxHeading} >{sectionText?.intro} <span className={styles.symbol}> ${walletEth?.tokenSymbol} </span> {sectionText?.intro1} </p>
+                    <p className={styles.walletBoxHeading} >{sectionText?.intro} <span className={styles.symbol}> ${siteInfo?.tokenSymbol} </span> {sectionText?.intro1} </p>
                   </div>
                 </div>
 
@@ -183,93 +187,62 @@ export const BuyForm = () => {
                 
             </div>
             <div className={styles.walletBoxAction}>
-                <p className={styles.totalRaised}>{sectionText?.funRaised}:  ${walletEth?.formatedRaise} / ${walletEth?.formatedNextRaise} </p>
-                <ProgressBar percentage={walletEth?.currentRaise *100/ walletEth?.nextRaise }/>
+                <p className={styles.totalRaised}>{sectionText?.funRaised}:  ${siteInfo?.formatedRaise} / ${siteInfo?.formatedNextRaise} </p>
+                <ProgressBar percentage={siteInfo?.currentRaise *100/ siteInfo?.nextRaise }/>
 
-                {walletEth.currentAddress && 
-                <div>
-                {/* {truncateMiddle(walletEth.currentAddress)} */}
-                <p className={styles.userPurchasedInfo}>{sectionText.boughtAmount} ${configs?.targetToken?.symbol} = { walletEth?.formatedBought}</p>
-                {/* <img className="img-fluid ms-2 cursor-pointer" src="./img/info-icon.svg" /> */}
-                <p className={styles.userPurchasedInfo}>{sectionText.stakeableAmount} ${configs?.targetToken?.symbol} = {walletEth?.formatedStakeable}</p>
-                {/* <img className="img-fluid ms-2 cursor-pointer" src="./img/info-icon.svg" /> */}
-                </div>
-                }
-
-                <div className={styles.dashTitle}>1 ${configs?.targetToken?.symbol} = ${configs?.targetToken?.tokenPrice} </div>
+                <PurchaseAmounts />
+                <div className={styles.dashTitle}>1 ${siteInfo?.tokenSymbol} = ${siteInfo?.tokenPriceInUsdt} </div>
 
                 
-                <div className={styles.currenciesList}  >
-                      <SolanaLabel/>
-                </div>
 
-
-                {walletEth.currentAddress && 
-
+                {isWalletConnected && 
                 <div className={styles.swapArea} >
-                
-                <div className={styles.currenciesList}  >
-                    {currList.map((curr, idx) => {
-                        return(
-                            <button key={idx} onClick={() => handleSwitchOption(idx)}
+                    <BuyformCurrList broadcastCurr={setSelectedCurr} selectedCurr={selectedCurr} />
 
-                              className={`${styles.btn}  ${selectedCurr?.text === curr?.text ? styles.selected : ''}`}>
-                              <img height="24" alt="" src={curr.imageSrc} />
-                              <span className="px-2 font-18">{curr.text}</span>
-                            </button>
-                        )
-                    })}
-                  
-                </div>
-                <div className={styles.swapSection} >
-                
-                        <div className={styles.inputContainer}  >
-                        <div  className={styles.inputLable}>
-                            <label > {sectionText?.pay} {selectedCurr?.text}  </label>
-                        </div>
-                        <div className={styles.inputAmount} >
-                            <input
-                            className={styles.inputControlCustom}
-                            value={currencyInput}
-                            onChange={handleCurrencyInputChange}
-                            onKeyPress={handleKeyPressCurr}
-                            type="text"
-                            placeholder="0" />
-                            <div className={styles.amountType} >
-                              <img src={selectedCurr?.icon} style={{ 'height': '30px', marginRight:5 }} />
-                            </div>
-                        </div>
-                        </div>
-                        <div className={styles.inputContainer}  >
-                        <div className={styles.inputLable} >
-                            <label > {sectionText?.get} ${configs?.targetToken?.symbol}     </label>
-                        </div>
-                        <div className={styles.inputAmount} >
-                            <input
-                            className={styles.inputControlCustom}
-                            value={tokenInput}
-                            onChange={handleTokenInputChange}
-                            onKeyPress={handleKeyPressToken}
-                            type="text"
-                            placeholder="0" />
-                            <div className={styles.amountType} >
-                              <img src='/img/subbd/token.png' style={{ 'height': '30px', marginRight:5 }} />
-                            </div>
-                        </div>
-                        </div>
+                    <div className={styles.swapSection} >
                     
-                </div>
+                            <div className={styles.inputContainer}  >
+                            <div  className={styles.inputLable}>
+                                <label > {sectionText?.pay} {selectedCurr?.text}  </label>
+                            </div>
+                            <div className={styles.inputAmount} >
+                                <input
+                                className={styles.inputControlCustom}
+                                value={currencyInput}
+                                onChange={handleCurrencyInputChange}
+                                onKeyPress={handleKeyPressCurr}
+                                type="text"
+                                placeholder="0" />
+                                <div className={styles.amountType} >
+                                  <img src={selectedCurr?.icon} style={{ 'height': '30px', marginRight:5 }} />
+                                </div>
+                            </div>
+                            </div>
+                            <div className={styles.inputContainer}  >
+                            <div className={styles.inputLable} >
+                                <label > {sectionText?.get} ${siteInfo?.symbol}     </label>
+                            </div>
+                            <div className={styles.inputAmount} >
+                                <input
+                                className={styles.inputControlCustom}
+                                value={tokenInput}
+                                onChange={handleTokenInputChange}
+                                onKeyPress={handleKeyPressToken}
+                                type="text"
+                                placeholder="0" />
+                                <div className={styles.amountType} >
+                                  <img src='/img/subbd/token.png' style={{ 'height': '30px', marginRight:5 }} />
+                                </div>
+                            </div>
+                            </div>
+                        
+                    </div>
 
                 </div>
                 }
-                {!walletEth.currentAddress && 
-                <div className={styles.actionButtons} >
-                    <button className={styles.connectBtn}   onClick={walletEth.connect}>
-                        {sectionText?.connectWallet}
-                    </button>
-                </div>
-                }
-                {walletEth.currentAddress && 
+
+                <BuyformConnectButton/>
+                {isWalletConnected && 
                 
                 <div className={styles.actionButtons}  >
                     <button className={styles.buyBtn}  
@@ -278,7 +251,7 @@ export const BuyForm = () => {
                     >
                     {sectionText?.buyStake}
                     </button>
-                    <CurrencyDropdown walletETH={walletEth} />
+                    <CurrencyDropdown />
 
                 </div>
                 }
