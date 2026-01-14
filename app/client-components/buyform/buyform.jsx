@@ -6,6 +6,7 @@ import { useLanguage, useI18nSection } from "../../../redux/utils/languageUtils"
 
 import {useNativeNetwork, useSetNativeNetwork} from '../../../redux/utils/nativeNetworkUtils'
 import { CURRENCIES,CURR_CODE, NETWORK_OTIONS, VALID_NETWORKS } from '../../../redux/ducks/nativeNetworkDuck';
+import { useWalletERC20 } from "@herocoinhunter2/common-service";
 import {useCountdown, formatViewNumber, formatIntNumber} from '../services/utils'
 import {
   calculateUSDNeeded, calculateTokenOutput,
@@ -15,13 +16,14 @@ import {CurrencyDropdown} from "../currency-dropdown/CurrencyDropdown";
 import styles from  './buyform.module.css'
 import SolanaLabel from "../solana-ui/SolanaLabel/SolanaLabel";
 import { useGlobalConfig } from "../../globalConfig-provider";
-import { useAppSolanaWallet, useWalletERC20 } from "@herocoinhunter2/common-service";
-import { BuyformConnectButton } from "./BuyformConnectButton";
-import { BuyformCurrList } from "./BuyformCurrList";
-import { PurchaseAmounts } from "./BuyformPurchaseAmounts";
 import { useSiteInfo } from "../../../redux/utils/siteInfoUtils";
+import { AppConnectButton, BuyformConnectButton, ConnectButton } from "./BuyformConnectButton";
+import { PurchaseAmounts } from "./BuyformPurchaseAmounts";
+import { BuyformCurrList } from "./BuyformCurrList";
+import { useAppSolanaWallet } from '@herocoinhunter2/common-service';
+
 export const BuyForm = () => {
-    const sectionText = useI18nSection('buyForm')
+   const sectionText = useI18nSection('buyForm')
     const siteInfo = useSiteInfo()
     const walletEth = useWalletERC20()
     const walletSol = useAppSolanaWallet()
@@ -143,7 +145,7 @@ export const BuyForm = () => {
         event.preventDefault();
       }
     };
-  
+
     return (
         <div className={styles.walletBoxContainer} id='walletBox'>
         <div className={styles.walletBox} id='walletBox'>
